@@ -39,6 +39,16 @@ export const VERIFIED_ACCOUNTS = {
   '5521056657': { name: '微博韩流', label: '微博韩流官方号', tier: 'media', members: ['group'] },
   '2800982237': { name: '新浪韩娱', label: '新浪韩娱', tier: 'media', members: ['group'] },
   '1665103091': { name: '酷狗音乐', label: '酷狗音乐官方微博', tier: 'media', members: ['group'] },
+  // 九位成员吧主 / 粉丝站官方微博
+  '5284450066': { name: '金珉锡吧_MinSeokBAR', label: '金珉锡吧', tier: 'media', members: ['xiumin'] },
+  '3315140063': { name: '金俊勉吧_SuhoBar北京分会', label: '金俊勉吧', tier: 'media', members: ['suho'] },
+  '1969348660': { name: '张艺兴吧', label: '张艺兴吧', tier: 'media', members: ['lay'] },
+  '2702500972': { name: '边伯贤吧_BaekHyunBar', label: '边伯贤吧', tier: 'media', members: ['baekhyun'] },
+  '5716140286': { name: '金钟大吧', label: '金钟大吧', tier: 'media', members: ['chen'] },
+  '7336354367': { name: 'X-朴灿烈吧CHANBAR', label: '朴灿烈吧', tier: 'media', members: ['chanyeol'] },
+  '2694760221': { name: '都暻秀吧DohkyungsooBar', label: '都暻秀吧', tier: 'media', members: ['do'] },
+  '5786583932': { name: '金钟仁吧KAIBar', label: '金钟仁吧', tier: 'media', members: ['kai'] },
+  '1789532611': { name: '吴世勋吧', label: '吴世勋吧', tier: 'media', members: ['sehun'] },
 };
 
 const SEARCH_QUERIES = [
@@ -49,6 +59,15 @@ const SEARCH_QUERIES = [
   '张艺兴工作室',
   'baekhyunee7',
   'real__pcyyyyy',
+  '金珉锡超话',
+  '金俊勉超话',
+  '张艺兴超话',
+  '边伯贤超话',
+  '金钟大超话',
+  '朴灿烈超话',
+  '都暻秀超话',
+  '金钟仁超话',
+  '吴世勋超话',
 ];
 
 const MEMBER_PATTERNS = [
