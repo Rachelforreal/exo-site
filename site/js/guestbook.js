@@ -4,6 +4,8 @@ import { shatterAndRemove, triggerShockwave } from './vibe-motion.js?v=1';
 
 const STORAGE_KEY = 'exo-guestbook-v1';
 const LIKES_KEY = 'exo-guestbook-likes-v1';
+// 填入部署好的 Cloudflare Worker 地址后，访客留言会同步推送到你的飞书群
+const FEISHU_RELAY_URL = 'https://exo-guestbook.loeyoneandonly.workers.dev';
 const getFoldLimit = () => (window.matchMedia('(max-width: 720px)').matches ? 2 : 3);
 const MAX_BODY = 240;
 
@@ -348,6 +350,22 @@ export function initGuestbook(ctx) {
     enhanceSegs(mount);
     triggerShockwave($('#gb-submit', mount));
     toast('已投递到站长留言板！');
+
+    if (FEISHU_RELAY_URL) {
+      fetch(FEISHU_RELAY_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          topic: note.topic,
+          badge: note.badge,
+          author: note.author,
+          contact: note.contact,
+          text: note.text,
+          time: note.time,
+          page: location.href,
+        }),
+      }).catch(() => {});
+    }
   });
 
   renderList();
