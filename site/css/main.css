@@ -396,12 +396,17 @@ button.mchip:active { transform: scale(.97); }
 }
 @media (max-width: 720px) {
   :root { --bar: 58px; --r: 14px; }
-  .bar { padding: 0 14px; gap: 8px; }
-  .bar__tools { gap: 6px; min-width: 0; }
+  html, body { max-width: 100%; overflow-x: clip; }
+  .bar { padding: 0 12px; gap: 6px; }
+  .bar__tools { gap: 5px; min-width: 0; flex-shrink: 0; }
   .tool--search span, .tool kbd { display: none; }
-  .tool { height: 36px; padding: 0 10px; font-size: 12.5px; gap: 6px; }
-  .topsearch-btn { width: 36px; padding: 0; }
-  .bar__mark span { display: none; }
+  .tool { height: 34px; padding: 0 9px; font-size: 12px; gap: 5px; }
+  .topsearch-btn { width: 34px; padding: 0; }
+  .bar__mark { min-width: 0; gap: 7px; }
+  .bar__mark .glyph { width: 22px; height: 22px; flex-shrink: 0; }
+  .bar__mark b { font-size: 14px; letter-spacing: .12em; white-space: nowrap; }
+  .bar__mark span { font-size: 10.5px; letter-spacing: .07em; }
+  .bar__mark .bar__ed { display: none; }
   .bar__nav { overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; gap: 4px; padding: 4px 6px; }
   .bar__nav::-webkit-scrollbar { display: none; }
   .bar__nav a { min-height: 44px; padding: 10px 13px; font-size: 13px; letter-spacing: .02em; display: inline-flex; align-items: center; justify-content: center; flex: 1 0 auto; }
