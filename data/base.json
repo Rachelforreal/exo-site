@@ -1,0 +1,2406 @@
+{
+  "members": [
+    {
+      "id": "xiumin",
+      "en": "XIUMIN",
+      "ko": "시우민 · 김민석",
+      "zh": "金珉锡",
+      "birth": "1990-03-26",
+      "role": "Vocal、Rap，团里的大哥",
+      "color": "#bfe3ff",
+      "scene": 1,
+      "g": 3,
+      "power": {
+        "zh": "冰霜",
+        "en": "Frost",
+        "line": "冰霜 · Frost"
+      },
+      "solo": [
+        "《Brand New》EP · 2022",
+        "《Interview X》EP · 2025",
+        "《Overdrop》《Fireflies》单曲 · 2025"
+      ],
+      "status": "没有参加 2026 年的《Reverxe》和 EXhOrizon。他和 Baekhyun、Chen 与 INB100 的合约纠纷还在走法律程序，2026 年 9 月 15 日法院暂停了三人的专属合约，等一审判决。",
+      "photo": {
+        "src": "img/m-xiumin.jpg",
+        "color": "img/m-xiumin.jpg",
+        "w": 800,
+        "h": 1000,
+        "fp": "50% 38%",
+        "author": "SM Entertainment",
+        "license": "官方概念照，版权归 SM Entertainment 所有",
+        "license_url": "https://www.smentertainment.com/",
+        "era": "《EXIST》Cream Soda 概念照（2023）",
+        "source_page": "https://kpop.fandom.com/wiki/File:EXO_Xiumin_Cream_Soda_concept_photo_10.png"
+      },
+      "photos": [
+        {
+          "src": "img/m-xiumin.jpg",
+          "color": "img/m-xiumin.jpg",
+          "w": 800,
+          "h": 1000,
+          "fp": "50% 38%",
+          "author": "SM Entertainment",
+          "license": "官方概念照，版权归 SM Entertainment 所有",
+          "license_url": "https://www.smentertainment.com/",
+          "era": "《EXIST》Cream Soda 概念照（2023）",
+          "source_page": "https://kpop.fandom.com/wiki/File:EXO_Xiumin_Cream_Soda_concept_photo_10.png"
+        }
+      ]
+    },
+    {
+      "id": "suho",
+      "en": "SUHO",
+      "ko": "수호 · 김준면",
+      "zh": "金俊勉",
+      "birth": "1991-05-22",
+      "role": "队长、Vocal",
+      "color": "#7cc6ff",
+      "scene": 2,
+      "g": 2,
+      "power": {
+        "zh": "水",
+        "en": "Water",
+        "line": "水 · Water"
+      },
+      "solo": [
+        "《Self-Portrait》EP · 2020",
+        "《Grey Suit》EP · 2022",
+        "《1 to 3》EP · 2024"
+      ],
+      "status": "参加了 2026 年的《Reverxe》和 EXhOrizon 巡演。",
+      "photo": {
+        "src": "img/m-suho.jpg",
+        "color": "img/m-suho.jpg",
+        "w": 800,
+        "h": 1000,
+        "fp": "50% 38%",
+        "author": "SM Entertainment",
+        "license": "官方概念照，版权归 SM Entertainment 所有",
+        "license_url": "https://www.smentertainment.com/",
+        "era": "《EXIST》Cream Soda 概念照（2023）",
+        "source_page": "https://kpop.fandom.com/wiki/File:EXO_Suho_Cream_Soda_concept_photo_9.png"
+      },
+      "photos": [
+        {
+          "src": "img/m-suho.jpg",
+          "color": "img/m-suho.jpg",
+          "w": 800,
+          "h": 1000,
+          "fp": "50% 38%",
+          "author": "SM Entertainment",
+          "license": "官方概念照，版权归 SM Entertainment 所有",
+          "license_url": "https://www.smentertainment.com/",
+          "era": "《EXIST》Cream Soda 概念照（2023）",
+          "source_page": "https://kpop.fandom.com/wiki/File:EXO_Suho_Cream_Soda_concept_photo_9.png"
+        }
+      ]
+    },
+    {
+      "id": "lay",
+      "en": "LAY",
+      "ko": "레이 · 장이싱",
+      "zh": "张艺兴",
+      "birth": "1991-10-07",
+      "role": "主舞、Vocal",
+      "color": "#b9e88f",
+      "scene": 3,
+      "g": 3,
+      "power": {
+        "zh": "治愈",
+        "en": "",
+        "line": "治愈"
+      },
+      "solo": [
+        "《Lose Control》EP · 2016",
+        "《Honey》EP · 2019",
+        "《西》EP · 2022"
+      ],
+      "status": "2022 年离开 SM，表示自己仍是 EXO 成员。参与了《Reverxe》的录制，SM 称他因“不可避免的情况”缺席宣传和巡演。",
+      "photo": {
+        "src": "img/m-lay.jpg",
+        "color": "img/m-lay.jpg",
+        "w": 800,
+        "h": 1000,
+        "fp": "50% 38%",
+        "author": "SM Entertainment",
+        "license": "官方概念照，版权归 SM Entertainment 所有",
+        "license_url": "https://www.smentertainment.com/",
+        "era": "《Crown》概念照（2026）",
+        "source_page": "https://kpop.fandom.com/wiki/File:EXO_Lay_Crown_concept_photo_1.png"
+      },
+      "photos": [
+        {
+          "src": "img/m-lay.jpg",
+          "color": "img/m-lay.jpg",
+          "w": 800,
+          "h": 1000,
+          "fp": "50% 38%",
+          "author": "SM Entertainment",
+          "license": "官方概念照，版权归 SM Entertainment 所有",
+          "license_url": "https://www.smentertainment.com/",
+          "era": "《Crown》概念照（2026）",
+          "source_page": "https://kpop.fandom.com/wiki/File:EXO_Lay_Crown_concept_photo_1.png"
+        }
+      ]
+    },
+    {
+      "id": "baekhyun",
+      "en": "BAEKHYUN",
+      "ko": "백현 · 변백현",
+      "zh": "边伯贤",
+      "birth": "1992-05-06",
+      "role": "主唱",
+      "color": "#ffe7a3",
+      "scene": 4,
+      "g": 2,
+      "power": {
+        "zh": "光",
+        "en": "Light",
+        "line": "光 · Light"
+      },
+      "solo": [
+        "《City Lights》EP · 2019",
+        "《Delight》EP · 2020",
+        "《Bambi》EP · 2021"
+      ],
+      "status": "没有参加 2026 年的《Reverxe》和 EXhOrizon。2026 年 9 月 15 日，法院暂停了 CBX 三人与 INB100 的专属合约，等一审判决。",
+      "photo": {
+        "src": "img/m-baekhyun.jpg",
+        "color": "img/m-baekhyun.jpg",
+        "w": 800,
+        "h": 1000,
+        "fp": "50% 38%",
+        "author": "SM Entertainment",
+        "license": "官方概念照，版权归 SM Entertainment 所有",
+        "license_url": "https://www.smentertainment.com/",
+        "era": "《EXIST》Cream Soda 概念照（2023）",
+        "source_page": "https://kpop.fandom.com/wiki/File:EXO_Baekhyun_Cream_Soda_concept_photo_9.png"
+      },
+      "photos": [
+        {
+          "src": "img/m-baekhyun.jpg",
+          "color": "img/m-baekhyun.jpg",
+          "w": 800,
+          "h": 1000,
+          "fp": "50% 38%",
+          "author": "SM Entertainment",
+          "license": "官方概念照，版权归 SM Entertainment 所有",
+          "license_url": "https://www.smentertainment.com/",
+          "era": "《EXIST》Cream Soda 概念照（2023）",
+          "source_page": "https://kpop.fandom.com/wiki/File:EXO_Baekhyun_Cream_Soda_concept_photo_9.png"
+        }
+      ]
+    },
+    {
+      "id": "chen",
+      "en": "CHEN",
+      "ko": "첸 · 김종대",
+      "zh": "金钟大",
+      "birth": "1992-09-21",
+      "role": "主唱",
+      "color": "#ffd84d",
+      "scene": 5,
+      "g": 3,
+      "power": {
+        "zh": "雷电",
+        "en": "Thunder",
+        "line": "雷电 · Thunder"
+      },
+      "solo": [
+        "《四月，和那天的花》EP · 2019",
+        "《Dear my dear》EP · 2019",
+        "《DOOR》EP · 2024"
+      ],
+      "status": "没有参加 2026 年的《Reverxe》和 EXhOrizon。和 Xiumin、Baekhyun 一样，与 INB100 的专属合约在 2026 年 9 月 15 日被法院暂停。",
+      "photo": {
+        "src": "img/m-chen.jpg",
+        "color": "img/m-chen.jpg",
+        "w": 800,
+        "h": 1000,
+        "fp": "50% 38%",
+        "author": "SM Entertainment",
+        "license": "官方概念照，版权归 SM Entertainment 所有",
+        "license_url": "https://www.smentertainment.com/",
+        "era": "《EXIST》Cream Soda 概念照（2023）",
+        "source_page": "https://kpop.fandom.com/wiki/File:EXO_Chen_Cream_Soda_concept_photo_10.png"
+      },
+      "photos": [
+        {
+          "src": "img/m-chen.jpg",
+          "color": "img/m-chen.jpg",
+          "w": 800,
+          "h": 1000,
+          "fp": "50% 38%",
+          "author": "SM Entertainment",
+          "license": "官方概念照，版权归 SM Entertainment 所有",
+          "license_url": "https://www.smentertainment.com/",
+          "era": "《EXIST》Cream Soda 概念照（2023）",
+          "source_page": "https://kpop.fandom.com/wiki/File:EXO_Chen_Cream_Soda_concept_photo_10.png"
+        }
+      ]
+    },
+    {
+      "id": "chanyeol",
+      "en": "CHANYEOL",
+      "ko": "찬열 · 박찬열",
+      "zh": "朴灿烈",
+      "birth": "1992-11-27",
+      "role": "主 Rap、Vocal",
+      "color": "#ff8a4c",
+      "scene": 6,
+      "g": 2,
+      "power": {
+        "zh": "火焰",
+        "en": "Fire",
+        "line": "火焰 · Fire"
+      },
+      "solo": [
+        "《SSFW》SM STATION · 2019",
+        "《Good Enough》单曲 · 2023",
+        "《Black Out》首张个人 EP · 2024"
+      ],
+      "status": "参加了 2026 年的《Reverxe》和 EXhOrizon 巡演。",
+      "photo": {
+        "src": "img/m-chanyeol.jpg",
+        "color": "img/m-chanyeol.jpg",
+        "w": 800,
+        "h": 1000,
+        "fp": "50% 38%",
+        "author": "SM Entertainment",
+        "license": "官方概念照，版权归 SM Entertainment 所有",
+        "license_url": "https://www.smentertainment.com/",
+        "era": "《EXIST》Cream Soda 概念照（2023）",
+        "source_page": "https://kpop.fandom.com/wiki/File:EXO_Chanyeol_Cream_Soda_concept_photo_9.png"
+      },
+      "photos": [
+        {
+          "src": "img/m-chanyeol.jpg",
+          "color": "img/m-chanyeol.jpg",
+          "w": 800,
+          "h": 1000,
+          "fp": "50% 38%",
+          "author": "SM Entertainment",
+          "license": "官方概念照，版权归 SM Entertainment 所有",
+          "license_url": "https://www.smentertainment.com/",
+          "era": "《EXIST》Cream Soda 概念照（2023）",
+          "source_page": "https://kpop.fandom.com/wiki/File:EXO_Chanyeol_Cream_Soda_concept_photo_9.png"
+        }
+      ]
+    },
+    {
+      "id": "do",
+      "en": "D.O.",
+      "ko": "디오 · 도경수",
+      "zh": "都暻秀",
+      "birth": "1993-01-12",
+      "role": "主唱",
+      "color": "#e2a86a",
+      "scene": 7,
+      "g": 4,
+      "power": {
+        "zh": "力量",
+        "en": "Force",
+        "line": "力量 · Force"
+      },
+      "solo": [
+        "《Empathy》首张 EP · 2021",
+        "《Bliss》首张正规 · 2025",
+        "《Dopamine》EP · 2026"
+      ],
+      "status": "参加了 2026 年的《Reverxe》和 EXhOrizon。个人巡演 Day-Off 正在进行，马尼拉站是 2027 年 1 月 23 日。",
+      "photo": {
+        "src": "img/m-do.jpg",
+        "color": "img/m-do.jpg",
+        "w": 800,
+        "h": 1000,
+        "fp": "50% 38%",
+        "author": "SM Entertainment",
+        "license": "官方概念照，版权归 SM Entertainment 所有",
+        "license_url": "https://www.smentertainment.com/",
+        "era": "《EXIST》Cream Soda 概念照（2023）",
+        "source_page": "https://kpop.fandom.com/wiki/File:EXO_D.O._Cream_Soda_concept_photo_10.png"
+      },
+      "photos": [
+        {
+          "src": "img/m-do.jpg",
+          "color": "img/m-do.jpg",
+          "w": 800,
+          "h": 1000,
+          "fp": "50% 38%",
+          "author": "SM Entertainment",
+          "license": "官方概念照，版权归 SM Entertainment 所有",
+          "license_url": "https://www.smentertainment.com/",
+          "era": "《EXIST》Cream Soda 概念照（2023）",
+          "source_page": "https://kpop.fandom.com/wiki/File:EXO_D.O._Cream_Soda_concept_photo_10.png"
+        }
+      ]
+    },
+    {
+      "id": "kai",
+      "en": "KAI",
+      "ko": "카이 · 김종인",
+      "zh": "金钟仁",
+      "birth": "1994-01-14",
+      "role": "主舞",
+      "color": "#ff7fb6",
+      "scene": 8,
+      "g": 2,
+      "power": {
+        "zh": "瞬移",
+        "en": "Teleportation",
+        "line": "瞬移 · Teleportation"
+      },
+      "solo": [
+        "《KAI》首张 EP · 2020",
+        "《Rover》EP · 2023",
+        "《Wait On Me》EP · 2025"
+      ],
+      "status": "参加了 2026 年的《Reverxe》和 EXhOrizon。SM 在 11 月 2 日确认，他和 Sehun 将在 12 月以 EXO 新小分队发行迷你专辑。",
+      "photo": {
+        "src": "img/m-kai.jpg",
+        "color": "img/m-kai.jpg",
+        "w": 800,
+        "h": 1000,
+        "fp": "50% 38%",
+        "author": "SM Entertainment",
+        "license": "官方概念照，版权归 SM Entertainment 所有",
+        "license_url": "https://www.smentertainment.com/",
+        "era": "《EXIST》Cream Soda 概念照（2023）",
+        "source_page": "https://kpop.fandom.com/wiki/File:EXO_Kai_Cream_Soda_concept_photo_4.png"
+      },
+      "photos": [
+        {
+          "src": "img/m-kai.jpg",
+          "color": "img/m-kai.jpg",
+          "w": 800,
+          "h": 1000,
+          "fp": "50% 38%",
+          "author": "SM Entertainment",
+          "license": "官方概念照，版权归 SM Entertainment 所有",
+          "license_url": "https://www.smentertainment.com/",
+          "era": "《EXIST》Cream Soda 概念照（2023）",
+          "source_page": "https://kpop.fandom.com/wiki/File:EXO_Kai_Cream_Soda_concept_photo_4.png"
+        }
+      ]
+    },
+    {
+      "id": "sehun",
+      "en": "SEHUN",
+      "ko": "세훈 · 오세훈",
+      "zh": "吴世勋",
+      "birth": "1994-04-12",
+      "role": "Rap、舞蹈，忙内",
+      "color": "#9ff0d4",
+      "scene": 9,
+      "g": 3,
+      "power": {
+        "zh": "风",
+        "en": "Wind",
+        "line": "风 · Wind"
+      },
+      "solo": [
+        "EXO-SC《What a Life》· 2019",
+        "EXO-SC《1 Billion Views》· 2020",
+        "中文单曲《失重色》· 2026"
+      ],
+      "status": "参加了 2026 年的《Reverxe》和 EXhOrizon。2025 年 9 月 20 日退伍，成员兵役全部完成。12 月和 Kai 发小分队专辑。",
+      "photo": {
+        "src": "img/m-sehun.jpg",
+        "color": "img/m-sehun.jpg",
+        "w": 800,
+        "h": 1000,
+        "fp": "50% 38%",
+        "author": "SM Entertainment",
+        "license": "官方概念照，版权归 SM Entertainment 所有",
+        "license_url": "https://www.smentertainment.com/",
+        "era": "《EXIST》Cream Soda 概念照（2023）",
+        "source_page": "https://kpop.fandom.com/wiki/File:EXO_Sehun_Cream_Soda_concept_photo_10.png"
+      },
+      "photos": [
+        {
+          "src": "img/m-sehun.jpg",
+          "color": "img/m-sehun.jpg",
+          "w": 800,
+          "h": 1000,
+          "fp": "50% 38%",
+          "author": "SM Entertainment",
+          "license": "官方概念照，版权归 SM Entertainment 所有",
+          "license_url": "https://www.smentertainment.com/",
+          "era": "《EXIST》Cream Soda 概念照（2023）",
+          "source_page": "https://kpop.fandom.com/wiki/File:EXO_Sehun_Cream_Soda_concept_photo_10.png"
+        }
+      ]
+    }
+  ],
+  "eras": [
+    {
+      "title": "MAMA",
+      "album": "Mama",
+      "date": "2012-04-09",
+      "type": "出道 EP",
+      "concept": "黑袍、神秘星球、超能力的起点",
+      "yt": "KH6ZwnqZ7Wo",
+      "color": "#2b2f52",
+      "r": 1.5,
+      "skin": {
+        "bg": "#14162b",
+        "fg": "#fff8e7",
+        "ac": "#c9b27a",
+        "fx": "sigil"
+      },
+      "motif": "双生分队同日启航"
+    },
+    {
+      "title": "Wolf",
+      "album": "XOXO",
+      "date": "2013-06-03",
+      "type": "首张正规",
+      "concept": "狼与美女，森林、洞穴、童话",
+      "yt": "gAal8xHfV0c",
+      "color": "#3d4a3a",
+      "r": 0.8,
+      "skin": {
+        "bg": "#16211a",
+        "fg": "#f1efe4",
+        "ac": "#9fc48a",
+        "fx": "forest"
+      },
+      "motif": "校园年鉴与生命之树"
+    },
+    {
+      "title": "Growl",
+      "album": "XOXO 改版",
+      "date": "2013-08-05",
+      "type": "改版专辑",
+      "concept": "咆哮。仓库里一镜到底，真正爆红的那一首",
+      "yt": "I3dezFzsNss",
+      "color": "#5a5a5a",
+      "r": 1.6,
+      "skin": {
+        "bg": "#1b1b1e",
+        "fg": "#f4f1ea",
+        "ac": "#d8d2c4",
+        "fx": "film"
+      },
+      "motif": "长镜头群舞 · 首个百万销量"
+    },
+    {
+      "title": "Miracles in December",
+      "album": "Miracles in December",
+      "date": "2013-12-09",
+      "type": "冬季特别 EP",
+      "concept": "十二月的奇迹，雪和抒情",
+      "yt": "yVLxRXoLaas",
+      "color": "#d9e6f2",
+      "r": 1,
+      "skin": {
+        "bg": "#dfe9f3",
+        "fg": "#1a2039",
+        "ac": "#5f81ad",
+        "fx": "snow"
+      },
+      "motif": "首张年末冬季特辑"
+    },
+    {
+      "title": "Overdose",
+      "album": "Overdose",
+      "date": "2014-05-07",
+      "type": "第三张 EP",
+      "concept": "上瘾。都市、R&B、暗色舞台",
+      "yt": "TI0DGvqKZTI",
+      "color": "#6b1f2a",
+      "r": 1.3,
+      "skin": {
+        "bg": "#1e0d12",
+        "fg": "#ffeef0",
+        "ac": "#ff4d6d",
+        "fx": "liquid"
+      },
+      "motif": "几何迷宫与都市 R&B"
+    },
+    {
+      "title": "Call Me Baby",
+      "album": "EXODUS",
+      "date": "2015-03-30",
+      "type": "第二张正规",
+      "concept": "白色背景前的一镜到底",
+      "yt": "yWfsla_Uh80",
+      "color": "#e8e1d0",
+      "r": 0.9,
+      "bv": "BV1ek4y1H7qr",
+      "skin": {
+        "bg": "#ece7db",
+        "fg": "#17171c",
+        "ac": "#17171c",
+        "fx": "flash"
+      },
+      "motif": "十城暗号与十版拼封"
+    },
+    {
+      "title": "Love Me Right",
+      "album": "Love Me Right",
+      "date": "2015-06-03",
+      "type": "改版专辑",
+      "concept": "EXODUS 的改版，2015 年夏天",
+      "yt": "RuqaVryDRd0",
+      "color": "#f2c14e",
+      "r": 1.2,
+      "bv": "BV1dh411T7Za",
+      "skin": {
+        "bg": "#1b1430",
+        "fg": "#fff6dc",
+        "ac": "#f2c14e",
+        "fx": "trails"
+      },
+      "motif": "放克铜管 · 双百万达成"
+    },
+    {
+      "title": "Sing For You",
+      "album": "Sing For You",
+      "date": "2015-12-10",
+      "type": "冬季特别 EP",
+      "concept": "冬天、宇航员、鲸鱼",
+      "yt": "nqaSboKBIuA",
+      "color": "#a9c6d9",
+      "r": 1,
+      "bv": "BV1ns4y1y7Un",
+      "skin": {
+        "bg": "#c9dbe8",
+        "fg": "#13233a",
+        "ac": "#3c6e9a",
+        "fx": "snow"
+      },
+      "motif": "深空宇航员与星海巨鲸"
+    },
+    {
+      "title": "Monster",
+      "album": "EX'ACT",
+      "date": "2016-06-09",
+      "type": "第三张正规",
+      "concept": "暗色、强烈，两套视觉概念",
+      "yt": "KSH-FVVtTf0",
+      "color": "#1d1d24",
+      "r": 1.6,
+      "bv": "BV1ks4y1k7gg",
+      "skin": {
+        "bg": "#0e0e12",
+        "fg": "#f3f3f3",
+        "ac": "#ff2a2a",
+        "fx": "siren"
+      },
+      "motif": "白昼实验与暗夜反叛双主打"
+    },
+    {
+      "title": "Lotto",
+      "album": "LOTTO",
+      "date": "2016-08-18",
+      "type": "改版专辑",
+      "concept": "EX'ACT 的改版",
+      "yt": "tbe3pe2BtwA",
+      "color": "#c9a227",
+      "r": 0.8,
+      "bv": "BV1sa4y1w7kd",
+      "skin": {
+        "bg": "#14110a",
+        "fg": "#fff3cf",
+        "ac": "#e8c25a",
+        "fx": "digits"
+      },
+      "motif": "电音变奏与筹码符号"
+    },
+    {
+      "title": "For Life",
+      "album": "For Life",
+      "date": "2016-12-19",
+      "type": "冬季特别 EP",
+      "concept": "冬季特别专辑，温暖的抒情",
+      "yt": "DTiZ0aCm3rs",
+      "color": "#efe6d8",
+      "r": 1.1,
+      "bv": "BV1Zh4y1u7YB",
+      "skin": {
+        "bg": "#f1e8da",
+        "fg": "#2a1d14",
+        "ac": "#a9773f",
+        "fx": "snow"
+      },
+      "motif": "钢琴弦乐与冬夜叙事短片"
+    },
+    {
+      "title": "Ko Ko Bop",
+      "album": "THE WAR",
+      "date": "2017-07-18",
+      "type": "第四张正规",
+      "concept": "夏天、雷鬼、热带",
+      "yt": "IdssuxDdqKk",
+      "color": "#f08a5d",
+      "r": 1.5,
+      "bv": "BV1yM4y1E7T9",
+      "skin": {
+        "bg": "#f6a476",
+        "fg": "#23142e",
+        "ac": "#1d5f5b",
+        "fx": "halftone"
+      },
+      "motif": "雷鬼切分音 · 24天破百万"
+    },
+    {
+      "title": "Power",
+      "album": "THE WAR: The Power of Music",
+      "date": "2017-09-05",
+      "type": "改版专辑",
+      "concept": "电子合成器，后来登上了迪拜音乐喷泉",
+      "yt": "sGRv8ZBLuW0",
+      "color": "#3fb8af",
+      "r": 1,
+      "bv": "BV1da4y1w7gk",
+      "skin": {
+        "bg": "#071a1f",
+        "fg": "#e9fffb",
+        "ac": "#3fe0d0",
+        "fx": "beams"
+      },
+      "motif": "美漫分镜与平昌闭幕式舞台"
+    },
+    {
+      "title": "Universe",
+      "album": "Universe",
+      "date": "2017-12-26",
+      "type": "冬季特别 EP",
+      "concept": "冬季特别专辑，人声抒情",
+      "yt": "leu-cTvMWTA",
+      "color": "#1b2a4a",
+      "r": 1.2,
+      "bv": "BV1ha4y1A79P",
+      "skin": {
+        "bg": "#0c1430",
+        "fg": "#f0f3ff",
+        "ac": "#9fb6ff",
+        "fx": "stars"
+      },
+      "motif": "摇滚抒情与冬日咖啡馆"
+    },
+    {
+      "title": "Tempo",
+      "album": "DON'T MESS UP MY TEMPO",
+      "date": "2018-11-02",
+      "type": "第五张正规",
+      "concept": "摩托、赛道、戏剧感的合成器",
+      "yt": "iwd8N6K-sLk",
+      "color": "#8c1c13",
+      "r": 1.4,
+      "bv": "BV1Ah4y1g7E1",
+      "skin": {
+        "bg": "#1a0705",
+        "fg": "#fff1ea",
+        "ac": "#ff4b2b",
+        "fx": "speed"
+      },
+      "motif": "五连百万 · 累计销量破千万"
+    },
+    {
+      "title": "Love Shot",
+      "album": "LOVE SHOT",
+      "date": "2018-12-13",
+      "type": "改版专辑",
+      "concept": "TEMPO 的改版",
+      "yt": "pSudEWBAYRE",
+      "color": "#b5172a",
+      "r": 0.9,
+      "bv": "BV17F411d7H6",
+      "skin": {
+        "bg": "#0b0607",
+        "fg": "#fbeee6",
+        "ac": "#e01e37",
+        "fx": "scope"
+      },
+      "motif": "切面红钻与经典西装舞台"
+    },
+    {
+      "title": "Obsession",
+      "album": "OBSESSION",
+      "date": "2019-11-27",
+      "type": "第六张正规",
+      "concept": "EXO 与 X-EXO，另一个自己",
+      "yt": "uxmP4b2a0uY",
+      "color": "#111111",
+      "r": 1.3,
+      "bv": "BV1TP411i7nv",
+      "skin": {
+        "bg": "#0a0a0a",
+        "fg": "#f5f5f5",
+        "ac": "#ffffff",
+        "fx": "glitch"
+      },
+      "motif": "EXO 对峙镜像分身 X-EXO"
+    },
+    {
+      "title": "Don't Fight the Feeling",
+      "album": "DON'T FIGHT THE FEELING",
+      "date": "2021-06-07",
+      "type": "特别专辑",
+      "concept": "写给粉丝的礼物，Lay 回归",
+      "yt": "2IkoKhr6Tss",
+      "color": "#e9e2f0",
+      "r": 1,
+      "bv": "BV1te411P7Wa",
+      "skin": {
+        "bg": "#efe8f6",
+        "fg": "#241a38",
+        "ac": "#8a5fc8",
+        "fx": "petals"
+      },
+      "motif": "航母坐标重逢 · 特别百万辑"
+    },
+    {
+      "title": "Cream Soda",
+      "album": "EXIST",
+      "date": "2023-07-10",
+      "type": "第七张正规",
+      "concept": "复古、铜管、轻快的舞曲",
+      "yt": "i5nUufn_FmE",
+      "color": "#7fd1c7",
+      "r": 1.5,
+      "bv": "BV1fN411m7Rg",
+      "skin": {
+        "bg": "#cdeee7",
+        "fg": "#12322f",
+        "ac": "#e8668f",
+        "fx": "bubbles"
+      },
+      "motif": "复古铜管舞曲 · 七度破百万"
+    },
+    {
+      "title": "Crown",
+      "album": "REVERXE",
+      "date": "2026-01-19",
+      "type": "第八张正规",
+      "concept": "生命之树、回归、暗色硬核舞曲",
+      "yt": "BWfKkqo1Mk8",
+      "color": "#2a1f14",
+      "r": 1.6,
+      "bv": "BV1LFkvBbE4Y",
+      "skin": {
+        "bg": "#160f09",
+        "fg": "#fbf0dc",
+        "ac": "#d4a64a",
+        "fx": "tree"
+      },
+      "motif": "全员服役期满合流 · 正规八辑"
+    }
+  ],
+  "songs": [
+    {
+      "id": "s001",
+      "title": "What Is Love",
+      "date": "2012-01-30",
+      "u": "EXO",
+      "al": "What Is Love (Korean Version)"
+    },
+    {
+      "id": "s002",
+      "title": "History",
+      "date": "2012-03-09",
+      "u": "EXO",
+      "al": "History"
+    },
+    {
+      "id": "s003",
+      "title": "Mama",
+      "date": "2012-04-09",
+      "u": "EXO",
+      "al": "Mama"
+    },
+    {
+      "id": "s004",
+      "title": "Angel",
+      "date": "2012-04-08",
+      "u": "EXO",
+      "al": "Mama"
+    },
+    {
+      "id": "s005",
+      "title": "Two Moons",
+      "date": "2012-04-08",
+      "u": "EXO",
+      "al": "Mama"
+    },
+    {
+      "id": "s006",
+      "title": "Machine",
+      "date": "2012-04-08",
+      "u": "EXO",
+      "al": "Mama"
+    },
+    {
+      "id": "s007",
+      "title": "Wolf",
+      "date": "2013-06-03",
+      "u": "EXO",
+      "al": "XOXO"
+    },
+    {
+      "id": "s008",
+      "title": "Baby Don't Cry",
+      "date": "2013-06-03",
+      "u": "EXO",
+      "al": "XOXO"
+    },
+    {
+      "id": "s009",
+      "title": "Black Pearl",
+      "date": "2013-06-03",
+      "u": "EXO",
+      "al": "XOXO"
+    },
+    {
+      "id": "s010",
+      "title": "Don't Go",
+      "date": "2013-06-03",
+      "u": "EXO",
+      "al": "XOXO"
+    },
+    {
+      "id": "s011",
+      "title": "Let Out The Beast",
+      "date": "2013-06-03",
+      "u": "EXO",
+      "al": "XOXO"
+    },
+    {
+      "id": "s012",
+      "title": "3.6.5",
+      "date": "2013-06-03",
+      "u": "EXO",
+      "al": "XOXO"
+    },
+    {
+      "id": "s013",
+      "title": "Heart Attack",
+      "date": "2013-06-03",
+      "u": "EXO",
+      "al": "XOXO"
+    },
+    {
+      "id": "s014",
+      "title": "Peter Pan",
+      "date": "2013-06-03",
+      "u": "EXO",
+      "al": "XOXO"
+    },
+    {
+      "id": "s015",
+      "title": "Baby",
+      "date": "2013-06-03",
+      "u": "EXO",
+      "al": "XOXO"
+    },
+    {
+      "id": "s016",
+      "title": "My Lady",
+      "date": "2013-06-03",
+      "u": "EXO",
+      "al": "XOXO"
+    },
+    {
+      "id": "s017",
+      "title": "XOXO",
+      "date": "2013-08-05",
+      "u": "EXO",
+      "al": "XOXO (Repackage)"
+    },
+    {
+      "id": "s018",
+      "title": "Growl",
+      "date": "2013-08-05",
+      "u": "EXO",
+      "al": "XOXO (Repackage)"
+    },
+    {
+      "id": "s019",
+      "title": "Lucky",
+      "date": "2013-08-05",
+      "u": "EXO",
+      "al": "XOXO (Repackage)"
+    },
+    {
+      "id": "s021",
+      "title": "Miracles in December",
+      "date": "2013-12-09",
+      "u": "EXO",
+      "al": "Miracles in December"
+    },
+    {
+      "id": "s022",
+      "title": "Christmas Day",
+      "date": "2013-12-09",
+      "u": "EXO",
+      "al": "Miracles in December"
+    },
+    {
+      "id": "s023",
+      "title": "The Star",
+      "date": "2013-12-09",
+      "u": "EXO",
+      "al": "Miracles in December"
+    },
+    {
+      "id": "s024",
+      "title": "My Turn to Cry",
+      "date": "2013-12-09",
+      "u": "EXO",
+      "al": "Miracles in December"
+    },
+    {
+      "id": "s025",
+      "title": "The First Snow",
+      "date": "2013-12-09",
+      "u": "EXO",
+      "al": "Miracles in December"
+    },
+    {
+      "id": "s026",
+      "title": "Overdose",
+      "date": "2014-05-07",
+      "u": "EXO",
+      "al": "Overdose"
+    },
+    {
+      "id": "s027",
+      "title": "Moonlight",
+      "date": "2014-05-07",
+      "u": "EXO",
+      "al": "Overdose"
+    },
+    {
+      "id": "s028",
+      "title": "Thunder",
+      "date": "2014-05-07",
+      "u": "EXO",
+      "al": "Overdose"
+    },
+    {
+      "id": "s029",
+      "title": "Run",
+      "date": "2014-05-07",
+      "u": "EXO",
+      "al": "Overdose"
+    },
+    {
+      "id": "s030",
+      "title": "Love, Love, Love",
+      "date": "2014-05-07",
+      "u": "EXO",
+      "al": "Overdose"
+    },
+    {
+      "id": "s031",
+      "title": "CALL ME BABY",
+      "date": "2015-03-30",
+      "u": "EXO",
+      "al": "EXODUS"
+    },
+    {
+      "id": "s032",
+      "title": "TRANSFORMER",
+      "date": "2015-03-30",
+      "u": "EXO",
+      "al": "EXODUS"
+    },
+    {
+      "id": "s033",
+      "title": "What If..",
+      "date": "2015-03-30",
+      "u": "EXO",
+      "al": "EXODUS"
+    },
+    {
+      "id": "s034",
+      "title": "MY ANSWER",
+      "date": "2015-03-30",
+      "u": "EXO",
+      "al": "EXODUS"
+    },
+    {
+      "id": "s035",
+      "title": "EXODUS",
+      "date": "2015-03-30",
+      "u": "EXO",
+      "al": "EXODUS"
+    },
+    {
+      "id": "s036",
+      "title": "EL DORADO",
+      "date": "2015-03-30",
+      "u": "EXO",
+      "al": "EXODUS"
+    },
+    {
+      "id": "s037",
+      "title": "PLAYBOY",
+      "date": "2015-03-30",
+      "u": "EXO",
+      "al": "EXODUS"
+    },
+    {
+      "id": "s038",
+      "title": "HURT",
+      "date": "2015-03-30",
+      "u": "EXO",
+      "al": "EXODUS"
+    },
+    {
+      "id": "s039",
+      "title": "Lady Luck",
+      "date": "2015-03-30",
+      "u": "EXO",
+      "al": "EXODUS"
+    },
+    {
+      "id": "s040",
+      "title": "BEAUTIFUL",
+      "date": "2015-03-30",
+      "u": "EXO",
+      "al": "EXODUS"
+    },
+    {
+      "id": "s041",
+      "title": "LOVE ME RIGHT",
+      "date": "2015-06-03",
+      "u": "EXO",
+      "al": "LOVE ME RIGHT"
+    },
+    {
+      "id": "s042",
+      "title": "TENDER LOVE",
+      "date": "2015-06-03",
+      "u": "EXO",
+      "al": "LOVE ME RIGHT"
+    },
+    {
+      "id": "s043",
+      "title": "FIRST LOVE",
+      "date": "2015-06-03",
+      "u": "EXO",
+      "al": "LOVE ME RIGHT"
+    },
+    {
+      "id": "s044",
+      "title": "Promise (EXO 2014)",
+      "date": "2015-06-03",
+      "u": "EXO",
+      "al": "LOVE ME RIGHT"
+    },
+    {
+      "id": "s045",
+      "title": "Drop That",
+      "date": "2015-11-04",
+      "u": "EXO",
+      "al": "Love Me Right ~romantic universe~"
+    },
+    {
+      "id": "s046",
+      "title": "LIGHTSABER",
+      "date": "2015-11-11",
+      "u": "EXO",
+      "al": "LIGHTSABER"
+    },
+    {
+      "id": "s047",
+      "title": "Unfair",
+      "date": "2015-12-10",
+      "u": "EXO",
+      "al": "SING FOR YOU"
+    },
+    {
+      "id": "s048",
+      "title": "Sing For You",
+      "date": "2015-12-10",
+      "u": "EXO",
+      "al": "SING FOR YOU"
+    },
+    {
+      "id": "s049",
+      "title": "Girl x Friend",
+      "date": "2015-12-10",
+      "u": "EXO",
+      "al": "SING FOR YOU"
+    },
+    {
+      "id": "s050",
+      "title": "On the Snow",
+      "date": "2015-12-10",
+      "u": "EXO",
+      "al": "SING FOR YOU"
+    },
+    {
+      "id": "s051",
+      "title": "Lucky One",
+      "date": "2016-06-09",
+      "u": "EXO",
+      "al": "EX’ACT"
+    },
+    {
+      "id": "s052",
+      "title": "Monster",
+      "date": "2016-06-09",
+      "u": "EXO",
+      "al": "EX’ACT"
+    },
+    {
+      "id": "s053",
+      "title": "Artificial Love",
+      "date": "2016-06-09",
+      "u": "EXO",
+      "al": "EX’ACT"
+    },
+    {
+      "id": "s054",
+      "title": "Cloud 9",
+      "date": "2016-06-09",
+      "u": "EXO",
+      "al": "EX’ACT"
+    },
+    {
+      "id": "s055",
+      "title": "Heaven",
+      "date": "2016-06-09",
+      "u": "EXO",
+      "al": "EX’ACT"
+    },
+    {
+      "id": "s056",
+      "title": "White Noise",
+      "date": "2016-06-09",
+      "u": "EXO",
+      "al": "EX’ACT"
+    },
+    {
+      "id": "s057",
+      "title": "One and Only",
+      "date": "2016-06-09",
+      "u": "EXO",
+      "al": "EX’ACT"
+    },
+    {
+      "id": "s058",
+      "title": "They Never Know",
+      "date": "2016-06-09",
+      "u": "EXO",
+      "al": "EX’ACT"
+    },
+    {
+      "id": "s059",
+      "title": "Stronger",
+      "date": "2016-06-09",
+      "u": "EXO",
+      "al": "EX’ACT"
+    },
+    {
+      "id": "s060",
+      "title": "Lotto",
+      "date": "2016-08-18",
+      "u": "EXO",
+      "al": "LOTTO"
+    },
+    {
+      "id": "s061",
+      "title": "Can’t Bring Me Down",
+      "date": "2016-08-18",
+      "u": "EXO",
+      "al": "LOTTO"
+    },
+    {
+      "id": "s062",
+      "title": "She’s Dreaming",
+      "date": "2016-08-18",
+      "u": "EXO",
+      "al": "LOTTO"
+    },
+    {
+      "id": "s063",
+      "title": "Dancing King",
+      "date": "2016-09-17",
+      "u": "EXO",
+      "al": "Dancing King"
+    },
+    {
+      "id": "s064",
+      "title": "The One",
+      "date": "2016-10-31",
+      "u": "CBX",
+      "al": "Hey Mama!"
+    },
+    {
+      "id": "s065",
+      "title": "Hey Mama!",
+      "date": "2016-10-31",
+      "u": "CBX",
+      "al": "Hey Mama!"
+    },
+    {
+      "id": "s066",
+      "title": "Rhythm After Summer",
+      "date": "2016-10-31",
+      "u": "CBX",
+      "al": "Hey Mama!"
+    },
+    {
+      "id": "s067",
+      "title": "Juliet",
+      "date": "2016-10-31",
+      "u": "CBX",
+      "al": "Hey Mama!"
+    },
+    {
+      "id": "s068",
+      "title": "Cherish",
+      "date": "2016-10-31",
+      "u": "CBX",
+      "al": "Hey Mama!"
+    },
+    {
+      "id": "s069",
+      "title": "Coming Over",
+      "date": "2016-12-07",
+      "u": "EXO",
+      "al": "Coming Over"
+    },
+    {
+      "id": "s070",
+      "title": "TacTix",
+      "date": "2016-12-07",
+      "u": "EXO",
+      "al": "Coming Over"
+    },
+    {
+      "id": "s071",
+      "title": "Run This",
+      "date": "2016-12-07",
+      "u": "EXO",
+      "al": "Coming Over"
+    },
+    {
+      "id": "s072",
+      "title": "Crush U",
+      "date": "2016-12-08",
+      "u": "CBX",
+      "al": "Crush U (N-POP) [with 윤상]"
+    },
+    {
+      "id": "s073",
+      "title": "For Life",
+      "date": "2016-12-19",
+      "u": "EXO",
+      "al": "For Life"
+    },
+    {
+      "id": "s074",
+      "title": "Falling For You",
+      "date": "2016-12-19",
+      "u": "EXO",
+      "al": "For Life"
+    },
+    {
+      "id": "s075",
+      "title": "What I Want For Christmas",
+      "date": "2016-12-19",
+      "u": "EXO",
+      "al": "For Life"
+    },
+    {
+      "id": "s076",
+      "title": "Twenty Four",
+      "date": "2016-12-19",
+      "u": "EXO",
+      "al": "For Life"
+    },
+    {
+      "id": "s077",
+      "title": "Winter Heat",
+      "date": "2016-12-19",
+      "u": "EXO",
+      "al": "For Life"
+    },
+    {
+      "id": "s078",
+      "title": "Girl Problems",
+      "date": "2017-05-24",
+      "u": "CBX",
+      "al": "GIRLS"
+    },
+    {
+      "id": "s079",
+      "title": "Ka-CHING!",
+      "date": "2017-05-24",
+      "u": "CBX",
+      "al": "GIRLS"
+    },
+    {
+      "id": "s080",
+      "title": "Tornado Spiral",
+      "date": "2017-05-24",
+      "u": "CBX",
+      "al": "GIRLS"
+    },
+    {
+      "id": "s081",
+      "title": "Miss You",
+      "date": "2017-05-24",
+      "u": "CBX",
+      "al": "GIRLS"
+    },
+    {
+      "id": "s082",
+      "title": "Diamond Crystal",
+      "date": "2017-05-24",
+      "u": "CBX",
+      "al": "GIRLS"
+    },
+    {
+      "id": "s083",
+      "title": "KING and QUEEN",
+      "date": "2017-05-24",
+      "u": "CBX",
+      "al": "GIRLS"
+    },
+    {
+      "id": "s084",
+      "title": "The Eve",
+      "date": "2017-07-18",
+      "u": "EXO",
+      "al": "THE WAR - The 4th Album (Chinese Version)"
+    },
+    {
+      "id": "s085",
+      "title": "Ko Ko Bop",
+      "date": "2017-07-18",
+      "u": "EXO",
+      "al": "THE WAR - The 4th Album (Chinese Version)"
+    },
+    {
+      "id": "s086",
+      "title": "What U do?",
+      "date": "2017-07-18",
+      "u": "EXO",
+      "al": "THE WAR - The 4th Album (Chinese Version)"
+    },
+    {
+      "id": "s087",
+      "title": "Forever",
+      "date": "2017-07-18",
+      "u": "EXO",
+      "al": "THE WAR - The 4th Album (Chinese Version)"
+    },
+    {
+      "id": "s088",
+      "title": "Diamond",
+      "date": "2017-07-18",
+      "u": "EXO",
+      "al": "THE WAR - The 4th Album (Chinese Version)"
+    },
+    {
+      "id": "s089",
+      "title": "Touch It",
+      "date": "2017-07-18",
+      "u": "EXO",
+      "al": "THE WAR - The 4th Album (Chinese Version)"
+    },
+    {
+      "id": "s090",
+      "title": "Chill",
+      "date": "2017-07-18",
+      "u": "EXO",
+      "al": "THE WAR - The 4th Album (Chinese Version)"
+    },
+    {
+      "id": "s091",
+      "title": "Walk On Memories",
+      "date": "2017-07-18",
+      "u": "EXO",
+      "al": "THE WAR - The 4th Album (Chinese Version)"
+    },
+    {
+      "id": "s092",
+      "title": "Going Crazy",
+      "date": "2017-07-18",
+      "u": "EXO",
+      "al": "THE WAR - The 4th Album (Chinese Version)"
+    },
+    {
+      "id": "s093",
+      "title": "It's Running Time!",
+      "date": "2017-07-29",
+      "u": "CBX",
+      "al": "It’s Running Time!"
+    },
+    {
+      "id": "s094",
+      "title": "Power",
+      "date": "2017-09-05",
+      "u": "EXO",
+      "al": "THE POWER OF MUSIC"
+    },
+    {
+      "id": "s095",
+      "title": "Sweet Lies",
+      "date": "2017-09-05",
+      "u": "EXO",
+      "al": "THE POWER OF MUSIC"
+    },
+    {
+      "id": "s096",
+      "title": "Boomerang",
+      "date": "2017-09-05",
+      "u": "EXO",
+      "al": "THE POWER OF MUSIC"
+    },
+    {
+      "id": "s097",
+      "title": "Cry",
+      "date": "2017-10-25",
+      "u": "CBX",
+      "al": "Cry"
+    },
+    {
+      "id": "s098",
+      "title": "Universe",
+      "date": "2017-12-26",
+      "u": "EXO",
+      "al": "Universe"
+    },
+    {
+      "id": "s099",
+      "title": "Been Through",
+      "date": "2017-12-26",
+      "u": "EXO",
+      "al": "Universe"
+    },
+    {
+      "id": "s100",
+      "title": "Stay",
+      "date": "2017-12-26",
+      "u": "EXO",
+      "al": "Universe"
+    },
+    {
+      "id": "s101",
+      "title": "Fall",
+      "date": "2017-12-26",
+      "u": "EXO",
+      "al": "Universe"
+    },
+    {
+      "id": "s102",
+      "title": "Good Night",
+      "date": "2017-12-26",
+      "u": "EXO",
+      "al": "Universe"
+    },
+    {
+      "id": "s103",
+      "title": "Lights Out",
+      "date": "2017-12-26",
+      "u": "EXO",
+      "al": "Universe"
+    },
+    {
+      "id": "s104",
+      "title": "Electric Kiss",
+      "date": "2018-01-31",
+      "u": "EXO",
+      "al": "COUNTDOWN"
+    },
+    {
+      "id": "s105",
+      "title": "Into My World",
+      "date": "2018-01-31",
+      "u": "EXO",
+      "al": "COUNTDOWN"
+    },
+    {
+      "id": "s106",
+      "title": "Lovin' You Mo'",
+      "date": "2018-01-31",
+      "u": "EXO",
+      "al": "COUNTDOWN"
+    },
+    {
+      "id": "s107",
+      "title": "Cosmic Railway",
+      "date": "2018-01-31",
+      "u": "EXO",
+      "al": "COUNTDOWN"
+    },
+    {
+      "id": "s108",
+      "title": "Someone like you",
+      "date": "2018-03-24",
+      "u": "CBX",
+      "al": "라이브 (Original Television Soundtrack) Pt. 1"
+    },
+    {
+      "id": "s109",
+      "title": "Monday Blues",
+      "date": "2018-04-10",
+      "u": "CBX",
+      "al": "Blooming Days"
+    },
+    {
+      "id": "s110",
+      "title": "Blooming Day",
+      "date": "2018-04-10",
+      "u": "CBX",
+      "al": "Blooming Days"
+    },
+    {
+      "id": "s111",
+      "title": "Sweet Dreams!",
+      "date": "2018-04-10",
+      "u": "CBX",
+      "al": "Blooming Days"
+    },
+    {
+      "id": "s112",
+      "title": "Thursday",
+      "date": "2018-04-10",
+      "u": "CBX",
+      "al": "Blooming Days"
+    },
+    {
+      "id": "s113",
+      "title": "Vroom Vroom",
+      "date": "2018-04-10",
+      "u": "CBX",
+      "al": "Blooming Days"
+    },
+    {
+      "id": "s114",
+      "title": "Playdate",
+      "date": "2018-04-10",
+      "u": "CBX",
+      "al": "Blooming Days"
+    },
+    {
+      "id": "s115",
+      "title": "Lazy",
+      "date": "2018-04-10",
+      "u": "CBX",
+      "al": "Blooming Days"
+    },
+    {
+      "id": "s116",
+      "title": "Beautiful World",
+      "date": "2018-04-22",
+      "u": "CBX",
+      "al": "KONA Electric X EXO-CBX, The Project of Beautiful World"
+    },
+    {
+      "id": "s117",
+      "title": "CBX",
+      "date": "2018-05-09",
+      "u": "CBX",
+      "al": "MAGIC"
+    },
+    {
+      "id": "s118",
+      "title": "Horololo",
+      "date": "2018-05-09",
+      "u": "CBX",
+      "al": "MAGIC"
+    },
+    {
+      "id": "s120",
+      "title": "Off the Wall",
+      "date": "2018-05-09",
+      "u": "CBX",
+      "al": "MAGIC"
+    },
+    {
+      "id": "s122",
+      "title": "Gentleman",
+      "date": "2018-05-09",
+      "u": "CBX",
+      "al": "MAGIC"
+    },
+    {
+      "id": "s124",
+      "title": "In This World",
+      "date": "2018-05-09",
+      "u": "CBX",
+      "al": "MAGIC"
+    },
+    {
+      "id": "s125",
+      "title": "Tempo",
+      "date": "2018-11-02",
+      "u": "EXO",
+      "al": "DON’T MESS UP MY TEMPO – The 5th Album"
+    },
+    {
+      "id": "s126",
+      "title": "Sign",
+      "date": "2018-11-02",
+      "u": "EXO",
+      "al": "DON’T MESS UP MY TEMPO – The 5th Album"
+    },
+    {
+      "id": "s127",
+      "title": "Ooh La La La",
+      "date": "2018-11-02",
+      "u": "EXO",
+      "al": "DON’T MESS UP MY TEMPO – The 5th Album"
+    },
+    {
+      "id": "s128",
+      "title": "Gravity",
+      "date": "2018-11-02",
+      "u": "EXO",
+      "al": "DON’T MESS UP MY TEMPO – The 5th Album"
+    },
+    {
+      "id": "s129",
+      "title": "With You",
+      "date": "2018-11-02",
+      "u": "EXO",
+      "al": "DON’T MESS UP MY TEMPO – The 5th Album"
+    },
+    {
+      "id": "s130",
+      "title": "24/7",
+      "date": "2018-11-02",
+      "u": "EXO",
+      "al": "DON’T MESS UP MY TEMPO – The 5th Album"
+    },
+    {
+      "id": "s131",
+      "title": "Bad Dream",
+      "date": "2018-11-02",
+      "u": "EXO",
+      "al": "DON’T MESS UP MY TEMPO – The 5th Album"
+    },
+    {
+      "id": "s132",
+      "title": "Damage",
+      "date": "2018-11-02",
+      "u": "EXO",
+      "al": "DON’T MESS UP MY TEMPO – The 5th Album"
+    },
+    {
+      "id": "s133",
+      "title": "Smile On My Face",
+      "date": "2018-11-02",
+      "u": "EXO",
+      "al": "DON’T MESS UP MY TEMPO – The 5th Album"
+    },
+    {
+      "id": "s134",
+      "title": "Oasis",
+      "date": "2018-11-02",
+      "u": "EXO",
+      "al": "DON’T MESS UP MY TEMPO – The 5th Album"
+    },
+    {
+      "id": "s135",
+      "title": "Love Shot",
+      "date": "2018-12-13",
+      "u": "EXO",
+      "al": "LOVE SHOT"
+    },
+    {
+      "id": "s136",
+      "title": "Trauma",
+      "date": "2018-12-13",
+      "u": "EXO",
+      "al": "LOVE SHOT"
+    },
+    {
+      "id": "s137",
+      "title": "Wait",
+      "date": "2018-12-13",
+      "u": "EXO",
+      "al": "LOVE SHOT"
+    },
+    {
+      "id": "s138",
+      "title": "Paper Cuts",
+      "date": "2019-04-10",
+      "u": "CBX",
+      "al": "Paper Cuts"
+    },
+    {
+      "id": "s139",
+      "title": "Be My Love",
+      "date": "2019-07-17",
+      "u": "CBX",
+      "al": "Love Playlist4 (Original Soundtrack), Pt. 1"
+    },
+    {
+      "id": "s140",
+      "title": "What a life",
+      "date": "2019-07-22",
+      "u": "SC",
+      "al": "What a life"
+    },
+    {
+      "id": "s141",
+      "title": "Just us 2",
+      "date": "2019-07-22",
+      "u": "SC",
+      "al": "What a life"
+    },
+    {
+      "id": "s142",
+      "title": "Closer to you",
+      "date": "2019-07-22",
+      "u": "SC",
+      "al": "What a life"
+    },
+    {
+      "id": "s143",
+      "title": "Borderline",
+      "date": "2019-07-22",
+      "u": "SC",
+      "al": "What a life"
+    },
+    {
+      "id": "s144",
+      "title": "Roller coaster",
+      "date": "2019-07-22",
+      "u": "SC",
+      "al": "What a life"
+    },
+    {
+      "id": "s145",
+      "title": "Daydreamin'",
+      "date": "2019-07-22",
+      "u": "SC",
+      "al": "What a life"
+    },
+    {
+      "id": "s149",
+      "title": "BIRD",
+      "date": "2019-10-10",
+      "u": "EXO",
+      "al": "BIRD"
+    },
+    {
+      "id": "s150",
+      "title": "Obsession",
+      "date": "2019-11-27",
+      "u": "EXO",
+      "al": "OBSESSION"
+    },
+    {
+      "id": "s151",
+      "title": "Trouble",
+      "date": "2019-11-27",
+      "u": "EXO",
+      "al": "OBSESSION"
+    },
+    {
+      "id": "s152",
+      "title": "Jekyll",
+      "date": "2019-11-27",
+      "u": "EXO",
+      "al": "OBSESSION"
+    },
+    {
+      "id": "s153",
+      "title": "Groove",
+      "date": "2019-11-27",
+      "u": "EXO",
+      "al": "OBSESSION"
+    },
+    {
+      "id": "s154",
+      "title": "Ya Ya Ya",
+      "date": "2019-11-27",
+      "u": "EXO",
+      "al": "OBSESSION"
+    },
+    {
+      "id": "s155",
+      "title": "Baby You Are",
+      "date": "2019-11-27",
+      "u": "EXO",
+      "al": "OBSESSION"
+    },
+    {
+      "id": "s156",
+      "title": "Non Stop",
+      "date": "2019-11-27",
+      "u": "EXO",
+      "al": "OBSESSION"
+    },
+    {
+      "id": "s157",
+      "title": "Day After Day",
+      "date": "2019-11-27",
+      "u": "EXO",
+      "al": "OBSESSION"
+    },
+    {
+      "id": "s158",
+      "title": "Butterfly Effect",
+      "date": "2019-11-27",
+      "u": "EXO",
+      "al": "OBSESSION"
+    },
+    {
+      "id": "s159",
+      "title": "Telephone",
+      "date": "2020-07-07",
+      "u": "SC",
+      "al": "Telephone (feat. 10cm)"
+    },
+    {
+      "id": "s160",
+      "title": "1 Billion Views",
+      "date": "2020-07-13",
+      "u": "SC",
+      "al": "1 Billion Views"
+    },
+    {
+      "id": "s161",
+      "title": "Say It",
+      "date": "2020-07-13",
+      "u": "SC",
+      "al": "1 Billion Views"
+    },
+    {
+      "id": "s162",
+      "title": "Rodeo Station",
+      "date": "2020-07-13",
+      "u": "SC",
+      "al": "1 Billion Views"
+    },
+    {
+      "id": "s163",
+      "title": "Jet Lag",
+      "date": "2020-07-13",
+      "u": "SC",
+      "al": "1 Billion Views"
+    },
+    {
+      "id": "s164",
+      "title": "Fly Away",
+      "date": "2020-07-13",
+      "u": "SC",
+      "al": "1 Billion Views"
+    },
+    {
+      "id": "s167",
+      "title": "Don't fight the feeling",
+      "date": "2021-06-07",
+      "u": "EXO",
+      "al": "DON’T FIGHT THE FEELING"
+    },
+    {
+      "id": "s168",
+      "title": "Paradise",
+      "date": "2021-06-07",
+      "u": "EXO",
+      "al": "DON’T FIGHT THE FEELING"
+    },
+    {
+      "id": "s169",
+      "title": "No matter",
+      "date": "2021-06-07",
+      "u": "EXO",
+      "al": "DON’T FIGHT THE FEELING"
+    },
+    {
+      "id": "s170",
+      "title": "Runaway",
+      "date": "2021-06-07",
+      "u": "EXO",
+      "al": "DON’T FIGHT THE FEELING"
+    },
+    {
+      "id": "s171",
+      "title": "Just as usual",
+      "date": "2021-06-07",
+      "u": "EXO",
+      "al": "DON’T FIGHT THE FEELING"
+    },
+    {
+      "id": "s172",
+      "title": "Let Me In",
+      "date": "2023-06-12",
+      "u": "EXO",
+      "al": "Let Me In"
+    },
+    {
+      "id": "s173",
+      "title": "Hear Me Out",
+      "date": "2023-06-30",
+      "u": "EXO",
+      "al": "Hear Me Out"
+    },
+    {
+      "id": "s174",
+      "title": "Cream Soda",
+      "date": "2023-07-10",
+      "u": "EXO",
+      "al": "EXIST"
+    },
+    {
+      "id": "s175",
+      "title": "Regret It",
+      "date": "2023-07-10",
+      "u": "EXO",
+      "al": "EXIST"
+    },
+    {
+      "id": "s176",
+      "title": "Private Party",
+      "date": "2023-07-10",
+      "u": "EXO",
+      "al": "EXIST"
+    },
+    {
+      "id": "s177",
+      "title": "Cinderella",
+      "date": "2023-07-10",
+      "u": "EXO",
+      "al": "EXIST"
+    },
+    {
+      "id": "s178",
+      "title": "No Makeup",
+      "date": "2023-07-10",
+      "u": "EXO",
+      "al": "EXIST"
+    },
+    {
+      "id": "s179",
+      "title": "Love Fool",
+      "date": "2023-07-10",
+      "u": "EXO",
+      "al": "EXIST"
+    },
+    {
+      "id": "s180",
+      "title": "Another Day",
+      "date": "2023-07-10",
+      "u": "EXO",
+      "al": "EXIST"
+    },
+    {
+      "id": "s181",
+      "title": "Crown",
+      "date": "2026-01-19",
+      "u": "EXO",
+      "al": "REVERXE"
+    },
+    {
+      "id": "s182",
+      "title": "Back It Up",
+      "date": "2026-01-19",
+      "u": "EXO",
+      "al": "REVERXE"
+    },
+    {
+      "id": "s183",
+      "title": "Crazy",
+      "date": "2026-01-19",
+      "u": "EXO",
+      "al": "REVERXE"
+    },
+    {
+      "id": "s184",
+      "title": "Suffocate",
+      "date": "2026-01-19",
+      "u": "EXO",
+      "al": "REVERXE"
+    },
+    {
+      "id": "s185",
+      "title": "Moonlight Shadows",
+      "date": "2026-01-19",
+      "u": "EXO",
+      "al": "REVERXE"
+    },
+    {
+      "id": "s186",
+      "title": "Back Pocket",
+      "date": "2026-01-19",
+      "u": "EXO",
+      "al": "REVERXE"
+    },
+    {
+      "id": "s187",
+      "title": "Touch & Go",
+      "date": "2026-01-19",
+      "u": "EXO",
+      "al": "REVERXE"
+    },
+    {
+      "id": "s188",
+      "title": "Flatline",
+      "date": "2026-01-19",
+      "u": "EXO",
+      "al": "REVERXE"
+    },
+    {
+      "id": "s189",
+      "title": "I'm Home",
+      "date": "2025-12-13",
+      "u": "EXO",
+      "al": "REVERXE"
+    }
+  ],
+  "group": {
+    "debut": "2012-04-08",
+    "anniversaries": [
+      {
+        "kind": "纪念日",
+        "name": "EXO 出道 {n} 周年",
+        "md": [
+          4,
+          8
+        ],
+        "since": 2012
+      },
+      {
+        "kind": "纪念日",
+        "name": "EXO-L 命名 {n} 周年",
+        "md": [
+          8,
+          5
+        ],
+        "since": 2014
+      }
+    ]
+  },
+  "upcoming": [
+    {
+      "kind": "演唱会",
+      "name": "EXhOrizon [dot] 安可 · 首尔 KSPO Dome",
+      "date": "2026-11-06",
+      "end": "2026-11-08",
+      "note": "11 月 6、7、8 日，三场",
+      "source": "https://weverse.io/exo/notice/38458",
+      "major": true,
+      "short": "EXhOrizon [dot] 安可",
+      "where": "首尔 KSPO Dome",
+      "stage": "on-sale",
+      "sessions": [
+        "2026-11-06T19:00:00+09:00",
+        "2026-11-07T18:00:00+09:00",
+        "2026-11-08T17:00:00+09:00"
+      ]
+    },
+    {
+      "kind": "新专辑",
+      "name": "Kai × Sehun 小分队迷你专辑",
+      "date": "2026-12-31",
+      "approx": "12 月",
+      "note": "SM 已确认，名字和日期未公布",
+      "source": "https://www.soompi.com/article/1883567wpp/exos-kai-and-sehun-confirmed-to-debut-as-new-unit-in-december",
+      "major": true,
+      "short": "KAI × SEHUN 小分队",
+      "where": "首张迷你专辑",
+      "stage": "announced",
+      "faces": [
+        "kai",
+        "sehun"
+      ],
+      "announced": "2026-11-02"
+    },
+    {
+      "kind": "个人巡演",
+      "name": "D.O. Day-Off · 马尼拉",
+      "date": "2027-01-23",
+      "note": "Araneta Coliseum",
+      "source": "https://www.philstar.com/entertainment/korean-wave/2026/08/11/2548588/exos-do-sets-manila-return-2027"
+    }
+  ],
+  "road": [
+    {
+      "d": "2012-04-08",
+      "who": "exo",
+      "kind": "group",
+      "t": "出道",
+      "s": "《MAMA》，EXO-K 和 EXO-M 同一天出发"
+    },
+    {
+      "d": "2013-06-03",
+      "who": "exo",
+      "kind": "group",
+      "t": "首张正规《XOXO》",
+      "s": "夏天的《Wolf》，改版的《Growl》让所有人记住了名字"
+    },
+    {
+      "d": "2013-11-22",
+      "who": "exo",
+      "kind": "group",
+      "t": "第一个大赏",
+      "s": "MAMA 年度专辑，之后连拿五年"
+    },
+    {
+      "d": "2014-05-23",
+      "who": "exo",
+      "kind": "live",
+      "t": "第一次巡演",
+      "s": "EXO FROM. EXOPLANET #1 – The Lost Planet，首尔开场"
+    },
+    {
+      "d": "2014-08-05",
+      "who": "exo",
+      "kind": "group",
+      "t": "我们有了名字",
+      "s": "EXO-L：L 夹在 K 和 M 中间"
+    },
+    {
+      "d": "2016-10-28",
+      "who": "lay",
+      "kind": "solo",
+      "t": "个人首张《LOSE CONTROL》",
+      "s": "张艺兴第一张个人专辑"
+    },
+    {
+      "d": "2016-10-31",
+      "who": "unit",
+      "kind": "unit",
+      "t": "EXO-CBX《Hey Mama!》",
+      "s": "金珉锡、边伯贤、金钟大，第一个小分队"
+    },
+    {
+      "d": "2018-02-25",
+      "who": "exo",
+      "kind": "live",
+      "t": "平昌冬奥会闭幕式",
+      "s": "在全世界面前唱《Growl》和《Power》"
+    },
+    {
+      "d": "2019-04-01",
+      "who": "chen",
+      "kind": "solo",
+      "t": "个人首张《四月，和花》",
+      "s": "金钟大第一张个人迷你专辑"
+    },
+    {
+      "d": "2019-05-07",
+      "who": "xiumin",
+      "kind": "service",
+      "t": "第一个去服役",
+      "s": "金珉锡入伍，之后八个人陆续出发"
+    },
+    {
+      "d": "2019-07-10",
+      "who": "baekhyun",
+      "kind": "solo",
+      "t": "个人首张《City Lights》",
+      "s": "边伯贤第一张个人迷你专辑，主打《UN Village》"
+    },
+    {
+      "d": "2019-07-22",
+      "who": "unit",
+      "kind": "unit",
+      "t": "EXO-SC《What a Life》",
+      "s": "朴灿烈、吴世勋"
+    },
+    {
+      "d": "2019-10-04",
+      "who": "unit",
+      "kind": "unit",
+      "t": "SuperM 出道",
+      "s": "边伯贤、金钟仁和 SM 的跨团组合"
+    },
+    {
+      "d": "2020-03-30",
+      "who": "suho",
+      "kind": "solo",
+      "t": "个人首张《自画像》",
+      "s": "金俊勉第一张个人迷你专辑，主打《Let's Love》"
+    },
+    {
+      "d": "2020-07-09",
+      "who": "sehun",
+      "kind": "solo",
+      "t": "第一首个人曲《On Me》",
+      "s": "EXO-SC《1 Billion Views》先行曲"
+    },
+    {
+      "d": "2020-11-30",
+      "who": "kai",
+      "kind": "solo",
+      "t": "个人首张《KAI (开)》",
+      "s": "金钟仁第一张个人迷你专辑，主打《Mmmh》"
+    },
+    {
+      "d": "2021-07-26",
+      "who": "do",
+      "kind": "solo",
+      "t": "个人首张《共感》",
+      "s": "都暻秀第一张个人迷你专辑，主打《Rose》"
+    },
+    {
+      "d": "2022-09-05",
+      "who": "xiumin",
+      "kind": "solo",
+      "t": "个人首张《Brand New》",
+      "s": "金珉锡第一张个人单曲专辑"
+    },
+    {
+      "d": "2024-08-28",
+      "who": "chanyeol",
+      "kind": "solo",
+      "t": "个人首张《Black Out》",
+      "s": "朴灿烈第一张个人迷你专辑",
+      "src": "https://en.wikipedia.org/wiki/Black_Out_(EP)"
+    },
+    {
+      "d": "2025-09-20",
+      "who": "sehun",
+      "kind": "service",
+      "t": "全员回来了",
+      "s": "吴世勋退伍，EXO 的服役期全部结束",
+      "src": "https://www.allkpop.com/article/2025/09/all-exo-members-have-now-completed-their-military-service-as-exos-sehun-was-officially-discharged-from-the-military-today"
+    },
+    {
+      "d": "2026-01-19",
+      "who": "exo",
+      "kind": "group",
+      "t": "第八张正规《REVERXE》",
+      "s": "两年半之后的团体回归，张艺兴也在",
+      "src": "https://en.wikipedia.org/wiki/Reverxe"
+    },
+    {
+      "d": "2026-04-10",
+      "who": "exo",
+      "kind": "live",
+      "t": "第六次巡演 EXhOrizon",
+      "s": "首尔 KSPO Dome 开场，之后 27 场、14 个地区"
+    },
+    {
+      "d": "2026-11-06",
+      "who": "exo",
+      "kind": "live",
+      "t": "安可 EXhOrizon [dot]",
+      "s": "回到首尔 KSPO Dome，三场",
+      "src": "https://www.soompi.com/article/1864228wpp/exo-announces-dates-for-encore-concert-exo-planet-6-exhorizon-dot"
+    },
+    {
+      "d": "2026-12-01",
+      "who": "unit",
+      "kind": "unit",
+      "t": "EXO-KASE《Waking Up The City》",
+      "s": "金钟仁、吴世勋的新小分队，首张迷你专辑出道",
+      "src": "https://weverse.io/exo/notice/40889"
+    }
+  ],
+  "variety": [
+    {
+      "y": "2013",
+      "d": "2013.11 – 2014.02",
+      "t": "EXO's Showtime",
+      "zh": "EXO 的 Showtime",
+      "p": "MBC every1",
+      "who": "全员",
+      "note": "EXO 第一个自己的综艺，宿舍日常全在里面"
+    },
+    {
+      "y": "2014",
+      "d": "2014",
+      "t": "Hot Moment XOXO",
+      "zh": "XOXO EXO",
+      "p": "Mnet",
+      "who": "全员"
+    },
+    {
+      "y": "2014",
+      "d": "2014.08 起",
+      "t": "EXO 90:2014",
+      "zh": "EXO 90:2014",
+      "p": "Mnet",
+      "who": "全员",
+      "note": "翻唱 90 年代 K-pop，每集一位前辈"
+    },
+    {
+      "y": "2015",
+      "d": "2015",
+      "t": "EXO Channel",
+      "zh": "EXO Channel",
+      "p": "东京电视台",
+      "who": "全员"
+    },
+    {
+      "y": "2017",
+      "d": "2017",
+      "t": "EXO Tourgram",
+      "zh": "EXO 巡演日记",
+      "p": "网络",
+      "who": "全员"
+    },
+    {
+      "y": "2018",
+      "d": "2018",
+      "t": "EXO Arcade",
+      "zh": "EXO 游戏厅",
+      "p": "V LIVE",
+      "who": "全员"
+    },
+    {
+      "y": "2018",
+      "d": "2018.05 – 07",
+      "t": "EXO's Travel the World on a Ladder S1",
+      "zh": "爬梯子世界旅行 第一季",
+      "p": "oksusu",
+      "who": "CBX · 日本",
+      "note": "靠画鬼脚（爬梯子）决定一切"
+    },
+    {
+      "y": "2019",
+      "d": "2019.01 – 03",
+      "t": "EXO's Travel the World on a Ladder S2",
+      "zh": "爬梯子世界旅行 第二季",
+      "p": "XtvN",
+      "who": "台湾 高雄 · 垦丁"
+    },
+    {
+      "y": "2022",
+      "d": "2022.04",
+      "t": "EXO's Travel the World on a Ladder S3",
+      "zh": "爬梯子世界旅行 第三季",
+      "p": "Wavve · Beyond LIVE",
+      "who": "南海"
+    },
+    {
+      "y": "2023",
+      "d": "2023.08",
+      "t": "EXO's Travel the World on a Ladder S4",
+      "zh": "爬梯子世界旅行 第四季",
+      "p": "Wavve",
+      "who": "巨济 · 统营"
+    },
+    {
+      "y": "2026",
+      "d": "2026.01",
+      "t": "Jeongwating",
+      "zh": "《Jeongwaja》特别篇",
+      "p": "YouTube",
+      "who": "KAI × SEHUN"
+    },
+    {
+      "y": "2026",
+      "d": "2026.03",
+      "t": "EXO's Travel the World on a Ladder S5",
+      "zh": "爬梯子世界旅行 第五季",
+      "p": "Mnet · Wavve",
+      "who": "济州 · SUHO、CHANYEOL、D.O.、KAI、SEHUN",
+      "src": "https://www.allkpop.com/article/2026/02/exo-returns-with-reality-variety-show-exos-travel-the-world-on-a-ladder-season-5"
+    },
+    {
+      "y": "待播",
+      "d": "待播",
+      "t": "World Dice Tour 4",
+      "zh": "骰子世界旅行 4",
+      "p": "ENA · TEO",
+      "who": "KAI × SEHUN"
+    }
+  ]
+}

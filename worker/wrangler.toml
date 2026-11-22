@@ -1,0 +1,26 @@
+# EXO 快讯 Worker —— 每小时收集新闻，写入 KV，通过 /api/news 提供 JSON。
+name = "exo-news"
+main = "src/index.ts"
+compatibility_date = "2026-11-01"
+
+[triggers]
+crons = ["0 * * * *"]
+
+# 部署前：npx wrangler kv namespace create NEWS ，把输出的 id 粘贴到下面
+[[kv_namespaces]]
+binding = "NEWS"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
+
+[vars]
+# "1" = 不调用 Claude，只存原始标题（本地测试用）。正式上线保持 "0"。
+DRY_RUN = "0"
+# 可选：使用中转服务时才需要（见 README「使用中转服务的 Key」）。
+# 建议用 `npx wrangler secret put ANTHROPIC_BASE_URL` 设置，不要把地址写进仓库。
+# ANTHROPIC_BASE_URL = ""
+
+# 路由：在 Cloudflare 里让 www.exolneverland.com/api/* 走这个 Worker。
+# 把下面三行前面的 # 去掉即可（zone 需要在你登录的账号里）；
+# 也可以不写，改在网页后台添加，详见 README.md。
+# routes = [
+#   { pattern = "www.exolneverland.com/api/*", zone_name = "exolneverland.com" }
+# ]

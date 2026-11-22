@@ -1,0 +1,74 @@
+/* Sharing: export-size picker, preview sizing, member share button, Convert-to-<img> export modal. */
+.share-seg { flex: none; max-width: 100%; }
+.share-seg button { padding: 0 12px; font-size: 13px; }
+.studio__btns { flex-wrap: wrap; justify-content: center; align-items: center; }
+.studio__card { width: min(100%, 480px, calc(72vh * var(--ar, .8))); }
+.issue__btns .share-seg { align-self: center; }
+@media (max-width: 600px) { .studio__btns .share-seg, .issue__btns .share-seg { width: 100%; } }
+
+/* Mobile / WeChat Convert-to-<img> PNG export modal */
+.export-modal {
+  position: fixed; inset: 0; z-index: 88;
+  display: grid; place-items: center;
+  padding: max(14px, env(safe-area-inset-top)) 14px max(14px, env(safe-area-inset-bottom));
+}
+.export-modal__scrim {
+  position: absolute; inset: 0;
+  background: rgba(var(--bg-rgb, 6, 8, 18), .74);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  animation: export-fade .26s both;
+}
+html[data-mode=paper] .export-modal__scrim { background: rgba(17, 22, 37, .52); }
+@keyframes export-fade { from { opacity: 0; } }
+.export-modal__panel {
+  position: relative; z-index: 1;
+  width: min(520px, 100%); max-height: min(90dvh, 90vh); overflow: auto;
+  display: grid; gap: 12px; padding: 18px 18px 20px;
+  border-radius: var(--r, 18px); border: 1px solid var(--line);
+  background: var(--surface, var(--glass-2, #10152b)); color: var(--ink);
+  box-shadow: 0 32px 90px -20px rgba(0, 0, 0, .58);
+  animation: export-rise .32s var(--ease, cubic-bezier(.2, .7, .1, 1)) both;
+}
+html[data-mode=paper] .export-modal__panel {
+  background: var(--surface, #faf9f6);
+  border-color: var(--ink, #111625);
+  box-shadow: 0 28px 70px -18px rgba(17, 22, 37, .34);
+}
+@keyframes export-rise { from { opacity: 0; transform: translateY(14px) scale(.97); } }
+.export-modal__head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.export-modal__title { font: 600 16px/1.35 var(--cn, sans-serif); color: var(--ink); min-width: 0; overflow-wrap: anywhere; }
+.export-modal__meta { display: block; margin-top: 2px; font: 500 11.5px/1.2 var(--grot, sans-serif); letter-spacing: .06em; color: var(--ink-3); }
+.export-modal__x {
+  flex: none; width: 38px; height: 38px; border-radius: 50%;
+  display: grid; place-items: center;
+  border: 1px solid var(--line);
+  background: rgba(var(--ink-rgb, 245, 246, 250), .05); color: var(--ink);
+  transition: border-color .2s, color .2s, background .2s;
+}
+.export-modal__x svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
+.export-modal__x:hover { border-color: var(--ac); color: var(--ac); background: rgba(var(--ac-rgb, 158, 182, 255), .1); }
+.export-modal__stage {
+  display: grid; place-items: center; padding: 10px;
+  border-radius: 12px; border: 1px solid var(--line-2, var(--line));
+  background: rgba(var(--ink-rgb, 245, 246, 250), .04);
+}
+.export-modal__img {
+  display: block; width: auto; max-width: 100%; max-height: min(50dvh, 420px); height: auto;
+  border-radius: 8px;
+  box-shadow: 0 14px 36px -14px rgba(0, 0, 0, .45);
+  -webkit-touch-callout: default; -webkit-user-select: auto; user-select: auto; pointer-events: auto;
+}
+.export-modal__tip {
+  display: grid; gap: 4px; padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(var(--ac-rgb, 158, 182, 255), .34);
+  background: rgba(var(--ac-rgb, 158, 182, 255), .1);
+  color: var(--ink); font-size: 12.5px; line-height: 1.55; text-align: center;
+}
+.export-modal__hint { font-size: 12px; color: var(--ink-2); }
+.export-modal__actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px; }
+.export-modal__dl { text-decoration: none; min-width: 168px; }
+@media (max-width: 520px) {
+  .export-modal__panel { padding: 14px 14px 16px; }
+  .export-modal__actions .cbtn { flex: 1 1 auto; }
+}

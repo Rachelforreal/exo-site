@@ -1,0 +1,902 @@
+[
+  {
+    "id": "xiumin",
+    "no": "01",
+    "en": "XIUMIN",
+    "ko": "시우민",
+    "koReal": "김민석",
+    "zh": "金珉锡",
+    "birth": "1990-03-26",
+    "role": "Vocal · Rap · 大哥",
+    "power": {
+      "zh": "冰霜",
+      "en": "FROST",
+      "line": "六出冰晶印记（2012《MAMA》设定：冻结空间）。EXO-M 出道成员、首支小分队 EXO-CBX 成员，兼顾高音和声与节奏段落；2019 年队内首位入伍、2020 年退伍归队。"
+    },
+    "color": "#bfe3ff",
+    "color2": "#7fb6ff",
+    "scene": 1,
+    "solo": [
+      "《Brand New》EP · 2022",
+      "《Interview X》EP · 2025"
+    ],
+    "photo": "img/members/xiumin.webp",
+    "photo2": "img/group/exist-2.jpg",
+    "thumb": "img/members/xiumin-s.webp",
+    "photoEra": "EXIST · Cream Soda 概念照 · 2023",
+    "photo2Era": "EXIST 团体概念画报 · 2023",
+    "agency": "INB100（首尔中央地方法院 2026.09.15 裁定中止专属合约效力，至一审判决）",
+    "status": "与伯贤、CHEN 共同推进对 INB100 的结算与合约本案诉讼，首次庭审延至 2026 年 12 月；粉丝订阅沟通已于 10 月迁往 Fromm。",
+    "latest": "个人迷你 2 辑《Interview X》（2025）；团体正规 8 辑《REVERXE》（2026.01.19）",
+    "channels": [
+      {
+        "name": "EXO Weverse（团体社区）",
+        "url": "https://weverse.io/exo/notice"
+      }
+    ],
+    "channelsNote": "「bubble for INB100」定于 2026.11.20 11:00 KST 终止服务；个人社交账号与 Fromm 频道仅收录经第一方页面确认的直链。",
+    "statusSources": [
+      {
+        "name": "Korea JoongAng Daily（假处分裁定）",
+        "url": "https://www.koreajoongangdaily.com/entertainment/exocbx-wins-injunction-against-inb100-over-unpaid-earnings/12876472"
+      },
+      {
+        "name": "Star News（庭审延期，2026-11-04）",
+        "url": "https://www.starnewskorea.com/en/music/2026/11/04/2026110408563242012"
+      },
+      {
+        "name": "allkpop（2026-03 生日见面会）",
+        "url": "https://www.allkpop.com/article/2026/03/xiumin-of-exo-completes-birthday-fan-meeting-amid-agencys-unpaid-fee-controversy"
+      }
+    ],
+    "units": [
+      "EXO-CBX"
+    ],
+    "works": [
+      {
+        "kind": "个人 EP",
+        "title": "《Brand New》",
+        "year": "2022",
+        "detail": "首张个人迷你专辑 · 90 年代 New Jack Swing 舞曲主打"
+      },
+      {
+        "kind": "个人 EP",
+        "title": "《Interview X》",
+        "year": "2025",
+        "detail": "第二张个人迷你专辑"
+      },
+      {
+        "kind": "小分队",
+        "title": "EXO-CBX《Hey Mama!》《Blooming Days》",
+        "year": "2016–2018",
+        "detail": "与伯贤、CHEN 组成首支小分队，兼发日文正规辑《MAGIC》"
+      },
+      {
+        "kind": "见面会",
+        "title": "首尔生日见面会（XSCALA）",
+        "year": "2026.03",
+        "detail": "2026 年最近一次公开个人线下专场（03.21）"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "img/members/xiumin.webp",
+        "era": "EXIST · Cream Soda 概念照 · 2023"
+      },
+      {
+        "src": "img/group/exist-2.jpg",
+        "era": "EXIST 团体概念画报 · 2023"
+      },
+      {
+        "src": "img/group/dftf-2.jpg",
+        "era": "DON'T FIGHT THE FEELING 团体概念画报 · 2021"
+      }
+    ]
+  },
+  {
+    "id": "suho",
+    "no": "02",
+    "en": "SUHO",
+    "ko": "수호",
+    "koReal": "김준면",
+    "zh": "金俊勉",
+    "birth": "1991-05-22",
+    "role": "队长 · Vocal",
+    "power": {
+      "zh": "水",
+      "en": "WATER",
+      "line": "水滴波纹印记（2012《MAMA》设定：控水，与火属性相对）。EXO 总队长、高音与叙事声部支点；个人唱片以英伦摇滚与现场乐队编制见长。"
+    },
+    "color": "#6fc1ff",
+    "color2": "#3f7dff",
+    "scene": 2,
+    "solo": [
+      "《Self-Portrait》EP · 2020",
+      "《Grey Suit》EP · 2022",
+      "《1 to 3》EP · 2024"
+    ],
+    "photo": "img/members/suho.webp",
+    "photo2": "img/members/suho-2.webp",
+    "thumb": "img/members/suho-s.webp",
+    "photoEra": "EXIST · Cream Soda 概念照 · 2023",
+    "photo2Era": "REVERXE · Crown 概念照 · 2026",
+    "agency": "SM Entertainment",
+    "status": "11 月 6–8 日带队完成首尔 KSPO Dome 安可演唱会《EXhOrizon [dot]》三场演出；目前作为固定成员出演 SBS 街头音乐综艺《The Listen》第 6 季（每周三 22:50 KST）。",
+    "latest": "节目合作单曲《Let's Stay Well》（2026.10.04）；团体正规 8 辑《REVERXE》（2026.01.19）",
+    "channels": [
+      {
+        "name": "EXO Weverse（团体社区）",
+        "url": "https://weverse.io/exo/notice"
+      }
+    ],
+    "channelsNote": "团体日程与官方通知统一经 EXO Weverse 发布；个人社交账号仅收录经官网直接认证的直链。",
+    "statusSources": [
+      {
+        "name": "Soompi（The Listen 6 阵容）",
+        "url": "https://www.soompi.com/article/1867510wpp/exos-suho-ateezs-jongho-chuu-and-more-confirmed-as-cast-members-for-busking-program-the-listen-6"
+      },
+      {
+        "name": "京乡新闻（安可演出评述）",
+        "url": "https://www.khan.co.kr/en/article/202611091713027/"
+      }
+    ],
+    "units": [],
+    "works": [
+      {
+        "kind": "个人 EP",
+        "title": "《Self-Portrait（自画像）》",
+        "year": "2020",
+        "detail": "首张个人迷你专辑 · 主打《Let's Love》，全专参与概念与作词"
+      },
+      {
+        "kind": "个人 EP",
+        "title": "《Grey Suit》",
+        "year": "2022",
+        "detail": "退伍回归迷你 2 辑 · 现代摇滚乐队编制"
+      },
+      {
+        "kind": "个人 EP",
+        "title": "《1 to 3》",
+        "year": "2024",
+        "detail": "迷你 3 辑 · 双主打英伦摇滚与复古放克"
+      },
+      {
+        "kind": "节目单曲",
+        "title": "《Let's Stay Well》",
+        "year": "2026.10",
+        "detail": "SBS《The Listen 6》项目单曲"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "img/members/suho.webp",
+        "era": "EXIST · Cream Soda 概念照 · 2023"
+      },
+      {
+        "src": "img/members/suho-2.webp",
+        "era": "REVERXE · Crown 概念照 I · 2026"
+      },
+      {
+        "src": "img/members/suho-3.jpg",
+        "era": "REVERXE · Crown 概念照 II · 2026"
+      },
+      {
+        "src": "img/members/suho-4.jpg",
+        "era": "REVERXE · 旷野预告画报 · 2026"
+      }
+    ]
+  },
+  {
+    "id": "lay",
+    "no": "03",
+    "en": "LAY",
+    "ko": "레이",
+    "koReal": "장이씽",
+    "zh": "张艺兴",
+    "birth": "1991-10-07",
+    "role": "主舞 · Vocal",
+    "power": {
+      "zh": "治愈",
+      "en": "HEALING",
+      "line": "独角兽印记（2012《MAMA》设定：治愈复苏）。EXO-M 主舞，长期担任个人专辑词曲创作与编曲制作人，将 Krump 街舞律动与传统民乐器乐融入流行制作。"
+    },
+    "color": "#b9e88f",
+    "color2": "#6fd6a0",
+    "scene": 3,
+    "solo": [
+      "《Lose Control》EP · 2016",
+      "《NAMANANA》· 2018",
+      "《莲》· 2020",
+      "《西》EP · 2022"
+    ],
+    "photo": "img/members/lay.webp",
+    "photo2": "img/members/lay-2.webp",
+    "thumb": "img/members/lay-s.webp",
+    "photoEra": "REVERXE · Crown 概念照 · 2026",
+    "photo2Era": "REVERXE · Crown 概念照 · 2026",
+    "agency": "张艺兴工作室（个人事务）· SM Entertainment（团体唱片合作）",
+    "status": "参与 2026 团体正规 8 辑《REVERXE》全专录音（未参与打歌与巡演场次）；11 月 10 日开启实体专辑《闹天宫》预售，11 月 11 日获授第二十二届中美电影节「国际影视艺术交流大使」。",
+    "latest": "实体专辑《闹天宫》（2026.11.10 开启预售）；团体正规 8 辑《REVERXE》（2026.01.19）",
+    "channels": [
+      {
+        "name": "微博 张艺兴工作室",
+        "url": "https://weibo.com/n/张艺兴工作室"
+      },
+      {
+        "name": "张艺兴工作室微博 新浪公开镜像（免登录可读）",
+        "url": "https://www.sina.cn/media/5582937157"
+      }
+    ],
+    "channelsNote": "微博主页需登录访问，站内同步附新浪公开镜像以便免登录查阅工作室通告。",
+    "statusSources": [
+      {
+        "name": "张艺兴工作室微博帖（预售开启，新浪镜像）",
+        "url": "https://www.sina.cn/news/detail/5363646970465450.html"
+      },
+      {
+        "name": "张艺兴工作室微博帖（中美电影节，新浪镜像）",
+        "url": "https://www.sina.cn/news/detail/5363999874224799.html"
+      },
+      {
+        "name": "Wikipedia: Reverxe（缺席说明）",
+        "url": "https://en.wikipedia.org/wiki/Reverxe"
+      }
+    ],
+    "units": [],
+    "works": [
+      {
+        "kind": "个人 EP",
+        "title": "《LOSE CONTROL》",
+        "year": "2016",
+        "detail": "首张个人迷你专辑 · 全专包办词曲编制作"
+      },
+      {
+        "kind": "个人正规",
+        "title": "《NAMANANA（梦不落雨林）》",
+        "year": "2018",
+        "detail": "中美同步发行双语正规专辑 · M-Pop 概念起点"
+      },
+      {
+        "kind": "个人正规",
+        "title": "《莲（LIT）》",
+        "year": "2020",
+        "detail": "上下篇双章结构 · 传统鼓点融合都市 Trap"
+      },
+      {
+        "kind": "个人 EP",
+        "title": "《西（WEST）》",
+        "year": "2022",
+        "detail": "国风电子与 R&B 迷你专辑"
+      },
+      {
+        "kind": "实体新作",
+        "title": "《闹天宫》",
+        "year": "2026.11",
+        "detail": "《斗战胜佛》前传实体专辑（11.10 开启预售）"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "img/members/lay.webp",
+        "era": "REVERXE · Crown 概念照 I · 2026"
+      },
+      {
+        "src": "img/members/lay-2.webp",
+        "era": "REVERXE · Crown 概念照 II · 2026"
+      },
+      {
+        "src": "img/members/lay-4.jpg",
+        "era": "REVERXE · 旷野预告画报 · 2026"
+      }
+    ]
+  },
+  {
+    "id": "baekhyun",
+    "no": "04",
+    "en": "BAEKHYUN",
+    "ko": "백현",
+    "koReal": "변백현",
+    "zh": "边伯贤",
+    "birth": "1992-05-06",
+    "role": "主唱",
+    "power": {
+      "zh": "光",
+      "en": "LIGHT",
+      "line": "日冕光印记（2012《MAMA》设定：控光）。团内核心主唱，音域宽广且擅长当代 R&B 转音；2020 年凭《Delight》创下韩国时隔 19 年再现的个人专辑百万销量纪录。"
+    },
+    "color": "#ffe7a3",
+    "color2": "#ffc86b",
+    "scene": 4,
+    "solo": [
+      "《City Lights》EP · 2019",
+      "《Delight》EP · 2020",
+      "《Bambi》EP · 2021",
+      "《Hello, World》EP · 2024"
+    ],
+    "photo": "img/members/baekhyun.webp",
+    "photo2": "img/members/baekhyun-2.webp",
+    "thumb": "img/members/baekhyun-s.webp",
+    "photoEra": "EXIST · Cream Soda 概念照 · 2023",
+    "photo2Era": "EXIST · Cream Soda 概念照 · 2023",
+    "agency": "Bion Entertainment（本人任代表，2026.11.09 完成企划业登记）；与 INB100 专属合约效力中止中",
+    "status": "法院 9 月 15 日裁定中止与 INB100 专属合约效力后，其任代表的 Bion Entertainment 已于 11 月 9 日在首尔江南区厅完成大众文化艺术企划业登记；合约本案首次庭审延至 12 月。",
+    "latest": "个人迷你 4 辑《Hello, World》（2024）；团体正规 8 辑《REVERXE》（2026.01.19）",
+    "channels": [
+      {
+        "name": "Weverse BAEKHYUN 社区",
+        "url": "https://weverse.io/baekhyun/notice"
+      },
+      {
+        "name": "EXO Weverse（团体社区）",
+        "url": "https://weverse.io/exo/notice"
+      }
+    ],
+    "channelsNote": "「bubble for INB100」将于 2026.11.20 终止，粉丝订阅已迁往 Fromm；新公司独立官网待公开后补录。",
+    "statusSources": [
+      {
+        "name": "Sports Kyunghyang（2026-11-10）",
+        "url": "https://sports.khan.co.kr/en/article/202611101050007/"
+      },
+      {
+        "name": "Korea Daily",
+        "url": "https://en.koreadaily.com/baekhyun-new-agency/"
+      }
+    ],
+    "units": [
+      "EXO-CBX",
+      "SuperM"
+    ],
+    "works": [
+      {
+        "kind": "个人 EP",
+        "title": "《City Lights》",
+        "year": "2019",
+        "detail": "首张个人迷你专辑 · 主打《UN Village》确立个人 R&B 风格"
+      },
+      {
+        "kind": "个人 EP",
+        "title": "《Delight》",
+        "year": "2020",
+        "detail": "主打《Candy》· 个人首张突破百万销量迷你专辑"
+      },
+      {
+        "kind": "个人 EP",
+        "title": "《Bambi》",
+        "year": "2021",
+        "detail": "入伍前发行的全 R&B 概念迷你 3 辑"
+      },
+      {
+        "kind": "个人 EP",
+        "title": "《Hello, World》",
+        "year": "2024",
+        "detail": "个人迷你 4 辑 · 主打《Pineapple Slice》"
+      },
+      {
+        "kind": "小分队",
+        "title": "EXO-CBX / SuperM",
+        "year": "2016–2020",
+        "detail": "EXO-CBX 主唱；跨团企划组合 SuperM 队长"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "img/members/baekhyun.webp",
+        "era": "EXIST · Cream Soda 概念照 I · 2023"
+      },
+      {
+        "src": "img/members/baekhyun-2.webp",
+        "era": "EXIST · Cream Soda 概念照 II · 2023"
+      }
+    ]
+  },
+  {
+    "id": "chen",
+    "no": "05",
+    "en": "CHEN",
+    "ko": "첸",
+    "koReal": "김종대",
+    "zh": "金钟大",
+    "birth": "1992-09-21",
+    "role": "主唱",
+    "power": {
+      "zh": "雷电",
+      "en": "LIGHTNING",
+      "line": "蝎尾雷电印记（2012《MAMA》设定：召雷）。EXO-M 主唱出身，担纲团内高音爆发与戏剧性华彩段落；个人音乐深耕抒情摇滚、影视原声带（OST）与乐队现场。"
+    },
+    "color": "#ffd84d",
+    "color2": "#8fa8ff",
+    "scene": 5,
+    "solo": [
+      "《April, and a Flower》EP · 2019",
+      "《Dear my dear》EP · 2019",
+      "《Last Scene》EP · 2022",
+      "《DOOR》EP · 2024"
+    ],
+    "photo": "img/members/chen.webp",
+    "photo2": "img/members/chen-2.webp",
+    "thumb": "img/members/chen-s.webp",
+    "photoEra": "EXIST · Cream Soda 概念照 · 2023",
+    "photo2Era": "EXIST · Cream Soda 概念照 · 2023",
+    "agency": "INB100（首尔中央地方法院 2026.09.15 裁定中止专属合约效力，至一审判决）",
+    "status": "与 XIUMIN、伯贤共同推进对 INB100 的合约本案诉讼（首审延至 12 月）。此前社交平台流传的 11 月 14 日澳门见面会未见主办方或艺人方第一方页面证实。",
+    "latest": "个人迷你 4 辑《DOOR》（2024）；团体正规 8 辑《REVERXE》（2026.01.19）",
+    "channels": [
+      {
+        "name": "EXO Weverse（团体社区）",
+        "url": "https://weverse.io/exo/notice"
+      }
+    ],
+    "channelsNote": "「bubble for INB100」将于 2026.11.20 终止，粉丝沟通已迁往 Fromm；个人独立官方渠道待第一方页面公开后补录。",
+    "statusSources": [
+      {
+        "name": "Korea JoongAng Daily（假处分裁定）",
+        "url": "https://www.koreajoongangdaily.com/entertainment/exocbx-wins-injunction-against-inb100-over-unpaid-earnings/12876472"
+      },
+      {
+        "name": "粉丝账号 CHEN GLOBAL（X，澳门见面会转述，未证实）",
+        "url": "https://x.com/CHENGLOBALTEAM/status/2115034394675347472"
+      }
+    ],
+    "units": [
+      "EXO-CBX"
+    ],
+    "works": [
+      {
+        "kind": "个人 EP",
+        "title": "《April, and a Flower（四月，和花）》",
+        "year": "2019",
+        "detail": "首张个人迷你专辑 · 主打《Beautiful goodbye》"
+      },
+      {
+        "kind": "个人 EP",
+        "title": "《Dear my dear（致亲爱的你）》",
+        "year": "2019",
+        "detail": "迷你 2 辑 · 主打《Shall we?》复古抒情曲"
+      },
+      {
+        "kind": "个人 EP",
+        "title": "《Last Scene》",
+        "year": "2022",
+        "detail": "退伍回归迷你 3 辑 · 秋季叙事抒情"
+      },
+      {
+        "kind": "个人 EP",
+        "title": "《DOOR》",
+        "year": "2024",
+        "detail": "个人迷你 4 辑 · 参与多首收录曲作词"
+      },
+      {
+        "kind": "小分队",
+        "title": "EXO-CBX《Hey Mama!》《Blooming Days》",
+        "year": "2016–2018",
+        "detail": "首支小分队高音主唱，横跨韩日巡演"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "img/members/chen.webp",
+        "era": "EXIST · Cream Soda 概念照 I · 2023"
+      },
+      {
+        "src": "img/members/chen-2.webp",
+        "era": "EXIST · Cream Soda 概念照 II · 2023"
+      }
+    ]
+  },
+  {
+    "id": "chanyeol",
+    "no": "06",
+    "en": "CHANYEOL",
+    "ko": "찬열",
+    "koReal": "박찬열",
+    "zh": "朴灿烈",
+    "birth": "1992-11-27",
+    "role": "主 Rap · Vocal",
+    "power": {
+      "zh": "火焰",
+      "en": "FIRE",
+      "line": "火凤印记（2012《MAMA》设定：控火）。低音主 Rapper 兼吉他、架子鼓演奏者，多次参与《Ko Ko Bop》《Love Shot》《Heaven》等团体曲目作词。"
+    },
+    "color": "#ff8a4c",
+    "color2": "#ff4d3d",
+    "scene": 6,
+    "solo": [
+      "《Black Out》EP · 2024",
+      "《Upside Down》EP · 2025"
+    ],
+    "photo": "img/members/chanyeol.webp",
+    "photo2": "img/members/chanyeol-2.webp",
+    "thumb": "img/members/chanyeol-s.webp",
+    "photoEra": "EXIST · Cream Soda 概念照 · 2023",
+    "photo2Era": "REVERXE · Crown 概念照 · 2026",
+    "agency": "SM Entertainment",
+    "status": "11 月 6–8 日完成首尔团体安可演出，11 月 11 日在东京 Zepp DiverCity 收官日本巡演《-The Route-》；11 月 26 日将于首尔 YES24 LIVE HALL 举办生日派对《[B-side]》（同步 Weverse 直播）。",
+    "latest": "日本迷你 2 辑《旅 (Tabi)》（2026.09.28 数字 / 10.02 实体，主打《Song For You》）",
+    "channels": [
+      {
+        "name": "EXO Weverse（团体社区）",
+        "url": "https://weverse.io/exo/notice"
+      },
+      {
+        "name": "EXO 日本官网（日本活动公告）",
+        "url": "https://exo-jp.net/en/news/"
+      }
+    ],
+    "channelsNote": "韩国演出与会员通知经 EXO Weverse 发布，日本唱片及巡演公告经 EXO 日本官网发布。",
+    "statusSources": [
+      {
+        "name": "EXO Weverse 公告（B-day PARTY 售票）",
+        "url": "https://weverse.io/exo/notice/40095"
+      },
+      {
+        "name": "EXO 日本官网公告（东京场追加票）",
+        "url": "https://exo-jp.net/en/news/detail.php?id=1137193"
+      },
+      {
+        "name": "EXO 日本官网公告（《旅》）",
+        "url": "https://exo-jp.net/news/detail.php?id=1135736"
+      }
+    ],
+    "units": [
+      "EXO-SC"
+    ],
+    "works": [
+      {
+        "kind": "个人 EP",
+        "title": "《Black Out》",
+        "year": "2024",
+        "detail": "出道 12 年首张个人迷你专辑 · 流行摇滚曲风"
+      },
+      {
+        "kind": "个人 EP",
+        "title": "《Upside Down》",
+        "year": "2025",
+        "detail": "个人第二张迷你专辑"
+      },
+      {
+        "kind": "日文 EP",
+        "title": "《旅 (Tabi)》",
+        "year": "2026.10",
+        "detail": "日本第 2 张迷你专辑（收录 6 首，主打《Song For You》）"
+      },
+      {
+        "kind": "小分队",
+        "title": "EXO-SC《What a Life》《1 Billion Views》",
+        "year": "2019–2020",
+        "detail": "与吴世勋组成双人小分队，全专参与词曲创作"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "img/members/chanyeol.webp",
+        "era": "EXIST · Cream Soda 概念照 · 2023"
+      },
+      {
+        "src": "img/members/chanyeol-2.webp",
+        "era": "REVERXE · Crown 概念照 I · 2026"
+      },
+      {
+        "src": "img/members/chanyeol-3.jpg",
+        "era": "REVERXE · Crown 概念照 II · 2026"
+      },
+      {
+        "src": "img/members/chanyeol-4.jpg",
+        "era": "REVERXE · 旷野预告画报 · 2026"
+      }
+    ]
+  },
+  {
+    "id": "do",
+    "no": "07",
+    "en": "D.O.",
+    "ko": "디오",
+    "koReal": "도경수",
+    "zh": "都暻秀",
+    "birth": "1993-01-12",
+    "role": "主唱",
+    "power": {
+      "zh": "大地",
+      "en": "EARTH",
+      "line": "大地裂纹印记（2012《MAMA》设定：大地之力）。团内核心主唱，中低音圆润扎实；兼顾电影与剧集主演，个人唱片聚焦原声吉他、民谣流行与灵魂乐。"
+    },
+    "color": "#e2a86a",
+    "color2": "#b8743c",
+    "scene": 7,
+    "solo": [
+      "《Empathy》EP · 2021",
+      "《Expectation》EP · 2023",
+      "《Blossom》EP · 2024",
+      "《Bliss》正规 · 2025"
+    ],
+    "photo": "img/members/do.webp",
+    "photo2": "img/members/do-2.webp",
+    "thumb": "img/members/do-s.webp",
+    "photoEra": "EXIST · Cream Soda 概念照 · 2023",
+    "photo2Era": "REVERXE · Crown 概念照 · 2026",
+    "agency": "Blitzway（唱片发行署名 Blitzway Music）",
+    "status": "11 月完成团体安可演出并发行数字单曲《Darling》；个人亚洲巡演《DAY OFF》持续推进：11 月曼谷与雅加达、12 月高雄，2027 年 1–3 月依次前往新加坡、香港、马尼拉、东京与台北。",
+    "latest": "数字单曲《Darling》（2026.11.11）；个人迷你 4 辑《DOPAMINE》（2026.09.08）",
+    "channels": [
+      {
+        "name": "官方 X @DOHKYUNGSOO_X",
+        "url": "https://x.com/DOHKYUNGSOO_X"
+      },
+      {
+        "name": "EXO Weverse（团体社区）",
+        "url": "https://weverse.io/exo/notice"
+      }
+    ],
+    "channelsNote": "个人巡演场次与单曲预告以官方 X 账号及各地主办通告为准。",
+    "statusSources": [
+      {
+        "name": "都暻秀官方 X 巡演公告（2026-08-11）",
+        "url": "https://x.com/DOHKYUNGSOO_X/status/2087041318468153709"
+      },
+      {
+        "name": "JoyNews24（《Darling》）",
+        "url": "https://www.joynews24.com/view/2023892"
+      },
+      {
+        "name": "每日经济 MK 英文版（《DOPAMINE》）",
+        "url": "https://www.mk.co.kr/en/musics/12135664"
+      }
+    ],
+    "units": [],
+    "works": [
+      {
+        "kind": "个人 EP",
+        "title": "《Empathy（共感）》",
+        "year": "2021",
+        "detail": "首张个人迷你专辑 · 原声吉他主打《Rose》亲自作词"
+      },
+      {
+        "kind": "个人 EP",
+        "title": "《Expectation（期待）》",
+        "year": "2023",
+        "detail": "迷你 2 辑 · 收录先行曲《I Do》与主打《Somebody》"
+      },
+      {
+        "kind": "个人 EP",
+        "title": "《Blossom（成长）》",
+        "year": "2024",
+        "detail": "迷你 3 辑 · 主打《Mars》"
+      },
+      {
+        "kind": "个人正规",
+        "title": "《Bliss》",
+        "year": "2025",
+        "detail": "首张个人正规专辑"
+      },
+      {
+        "kind": "近期新作",
+        "title": "《DOPAMINE》EP · 单曲《Darling》",
+        "year": "2026",
+        "detail": "9 月推出迷你 4 辑，11 月 11 日发行巡演季新单曲"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "img/members/do.webp",
+        "era": "EXIST · Cream Soda 概念照 I · 2023"
+      },
+      {
+        "src": "img/members/do-2.webp",
+        "era": "REVERXE · Crown 概念照 I · 2026"
+      },
+      {
+        "src": "img/members/do-3.jpg",
+        "era": "EXIST · Cream Soda 概念照 II · 2023"
+      },
+      {
+        "src": "img/members/do-4.jpg",
+        "era": "REVERXE · Crown 概念照 II · 2026"
+      },
+      {
+        "src": "img/members/do-5.jpg",
+        "era": "REVERXE · 旷野预告画报 · 2026"
+      }
+    ]
+  },
+  {
+    "id": "kai",
+    "no": "08",
+    "en": "KAI",
+    "ko": "카이",
+    "koReal": "김종인",
+    "zh": "金钟仁",
+    "birth": "1994-01-14",
+    "role": "主舞",
+    "power": {
+      "zh": "瞬移",
+      "en": "TELEPORT",
+      "line": "空间跃迁印记（2012《MAMA》设定：瞬间移动，出道十支个人预告核心串联者）。团内主舞与舞台中心，融合芭蕾线条与都市律动，个人作品以剧场化视觉与 R&B 舞曲著称。"
+    },
+    "color": "#ff7fb6",
+    "color2": "#a57bff",
+    "scene": 8,
+    "solo": [
+      "《KAI (开)》EP · 2020",
+      "《Peaches》EP · 2021",
+      "《Rover》EP · 2023",
+      "《Wait On Me》EP · 2025"
+    ],
+    "photo": "img/members/kai.webp",
+    "photo2": "img/members/kai-2.webp",
+    "thumb": "img/members/kai-s.webp",
+    "photoEra": "EXIST · Cream Soda 概念照 · 2023",
+    "photo2Era": "REVERXE · Crown 概念照 · 2026",
+    "agency": "SM Entertainment",
+    "status": "与吴世勋组成全新双人小分队 EXO-KASE，首张迷你专辑《Waking Up The City》正在预售（11.10–11.30），定于 12 月 1 日 18:00 KST 正式出道；同期搭档出演 ENA《地球玛布尔世界旅行 4》。",
+    "latest": "EXO-KASE 迷你 1 辑《Waking Up The City》（预售中，2026.12.01 发行）；团体《REVERXE》（2026.01.19）",
+    "channels": [
+      {
+        "name": "EXO Weverse（团体社区）",
+        "url": "https://weverse.io/exo/notice"
+      }
+    ],
+    "channelsNote": "EXO-KASE 预售、预告及团体日程统一经 EXO Weverse 与官方微博发布。",
+    "statusSources": [
+      {
+        "name": "EXO Weverse 公告（EXO-KASE 预售）",
+        "url": "https://weverse.io/exo/notice/40889"
+      },
+      {
+        "name": "Soompi（World Dice Tour 4）",
+        "url": "https://www.soompi.com/article/1876008wpp/chun-woo-hee-exos-kai-sehun-and-more-join-world-dice-tour-4-as-new-travel-partners"
+      }
+    ],
+    "units": [
+      "EXO-KASE",
+      "SuperM"
+    ],
+    "works": [
+      {
+        "kind": "个人 EP",
+        "title": "《KAI (开)》",
+        "year": "2020",
+        "detail": "首张个人迷你专辑 · 主打《Mmmh》与全专视觉短片《FILM : KAI》"
+      },
+      {
+        "kind": "个人 EP",
+        "title": "《Peaches》",
+        "year": "2021",
+        "detail": "迷你 2 辑 · 轻柔中板 R&B"
+      },
+      {
+        "kind": "个人 EP",
+        "title": "《Rover》",
+        "year": "2023",
+        "detail": "迷你 3 辑 · Dancehall 节奏主打，获音乐银行与音乐中心一位"
+      },
+      {
+        "kind": "个人 EP",
+        "title": "《Wait On Me》",
+        "year": "2025",
+        "detail": "退伍回归个人迷你 4 辑"
+      },
+      {
+        "kind": "小分队",
+        "title": "EXO-KASE《Waking Up The City》",
+        "year": "2026.12",
+        "detail": "与吴世勋组成新小分队，收录 7 首含各自 SOLO 曲"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "img/members/kai.webp",
+        "era": "EXIST · Cream Soda 概念照 · 2023"
+      },
+      {
+        "src": "img/members/kai-2.webp",
+        "era": "REVERXE · Crown 概念照 I · 2026"
+      },
+      {
+        "src": "img/members/kai-3.jpg",
+        "era": "REVERXE · Crown 概念照 II · 2026"
+      },
+      {
+        "src": "img/members/kai-4.jpg",
+        "era": "REVERXE · 旷野预告画报 · 2026"
+      }
+    ]
+  },
+  {
+    "id": "sehun",
+    "no": "09",
+    "en": "SEHUN",
+    "ko": "세훈",
+    "koReal": "오세훈",
+    "zh": "吴世勋",
+    "birth": "1994-04-12",
+    "role": "Rap · 舞蹈 · 忙内",
+    "power": {
+      "zh": "风",
+      "en": "WIND",
+      "line": "疾风气流印记（2012《MAMA》设定：控风）。团内领舞、低音 Rapper 兼忙内；2025 年 9 月退伍标志 EXO 全员结束服役期，2026 年底迎来继 EXO-SC 后的第二支小分队。"
+    },
+    "color": "#9ff0d4",
+    "color2": "#5ecbe0",
+    "scene": 9,
+    "solo": [
+      "EXO-SC《What a Life》· 2019",
+      "EXO-SC《1 Billion Views》· 2020"
+    ],
+    "photo": "img/members/sehun.webp",
+    "photo2": "img/members/sehun-2.webp",
+    "thumb": "img/members/sehun-s.webp",
+    "photoEra": "EXIST · Cream Soda 概念照 · 2023",
+    "photo2Era": "REVERXE · Crown 概念照 · 2026",
+    "agency": "SM Entertainment",
+    "status": "与 KAI 组成新小分队 EXO-KASE，出道迷你专辑《Waking Up The City》（共 7 首，含个人 SOLO 曲）预售进行中，12 月 1 日正式发行；同期搭档出演 ENA《地球玛布尔世界旅行 4》。",
+    "latest": "EXO-KASE 迷你 1 辑《Waking Up The City》（预售中，2026.12.01 发行）；团体《REVERXE》（2026.01.19）",
+    "channels": [
+      {
+        "name": "EXO Weverse（团体社区）",
+        "url": "https://weverse.io/exo/notice"
+      }
+    ],
+    "channelsNote": "团体及小分队 EXO-KASE 公告统一经 EXO Weverse 与官方微博发布；个人社交账号仅收录经第一方页面确认的直链。",
+    "statusSources": [
+      {
+        "name": "EXO Weverse 公告（EXO-KASE 预售）",
+        "url": "https://weverse.io/exo/notice/40889"
+      },
+      {
+        "name": "Yahoo News Malaysia（2026-11-11）",
+        "url": "https://malaysia.news.yahoo.com/kai-sehun-now-exo-kase-061400372.html"
+      }
+    ],
+    "units": [
+      "EXO-SC",
+      "EXO-KASE"
+    ],
+    "works": [
+      {
+        "kind": "小分队",
+        "title": "EXO-SC《What a Life》",
+        "year": "2019",
+        "detail": "与朴灿烈组成首支双人小分队 · 三主打迷你专辑"
+      },
+      {
+        "kind": "小分队",
+        "title": "EXO-SC《1 Billion Views》",
+        "year": "2020",
+        "detail": "正规 1 辑 · 收录首支个人独唱曲《On Me》"
+      },
+      {
+        "kind": "团体回归",
+        "title": "正规 8 辑《REVERXE》与世巡《EXhOrizon》",
+        "year": "2026",
+        "detail": "退伍归队后完整参与正规八辑及 27 场巡演与首尔安可场"
+      },
+      {
+        "kind": "小分队",
+        "title": "EXO-KASE《Waking Up The City》",
+        "year": "2026.12",
+        "detail": "与金钟仁组成新小分队，收录 7 首含个人 SOLO 曲"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "img/members/sehun.webp",
+        "era": "EXIST · Cream Soda 概念照 I · 2023"
+      },
+      {
+        "src": "img/members/sehun-2.webp",
+        "era": "REVERXE · Crown 概念照 I · 2026"
+      },
+      {
+        "src": "img/members/sehun-3.jpg",
+        "era": "EXIST · Cream Soda 概念照 II · 2023"
+      },
+      {
+        "src": "img/members/sehun-4.jpg",
+        "era": "REVERXE · Crown 概念照 II · 2026"
+      },
+      {
+        "src": "img/members/sehun-5.jpg",
+        "era": "REVERXE · 旷野预告画报 · 2026"
+      }
+    ]
+  }
+]

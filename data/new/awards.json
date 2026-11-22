@@ -1,0 +1,1528 @@
+{
+  "checkedAt": "2026-11-12",
+  "albums": {
+    "mama": {
+      "yearEnd": [
+        {
+          "ceremony": "Mnet Asian Music Awards",
+          "year": 2012,
+          "category": "Best New Asian Artist",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Credited to 'Exo'; MAMA was the group's only release in the 2012 eligibility period."
+        },
+        {
+          "ceremony": "Golden Disc Awards",
+          "year": 2013,
+          "category": "Newcomer Award",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Credited to 'Exo-K'; attached by eligibility period (2012 debut)."
+        },
+        {
+          "ceremony": "Seoul Music Awards",
+          "year": 2013,
+          "category": "New Artist Award",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Credited to 'Exo-K'; attached by eligibility period (2012 debut)."
+        }
+      ],
+      "showWins": {
+        "total": 0,
+        "bySong": {},
+        "list": [],
+        "source": "https://en.wikipedia.org/wiki/Mama_(EP)",
+        "note": "No music show wins for 'MAMA' are recorded on the EP's Wikipedia page."
+      }
+    },
+    "xoxo": {
+      "yearEnd": [
+        {
+          "ceremony": "Mnet Asian Music Awards",
+          "year": 2013,
+          "category": "Album of the Year",
+          "daesang": true,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/XOXO_(Exo_album)",
+          "verification": "wiki",
+          "note": ""
+        },
+        {
+          "ceremony": "Golden Disc Awards",
+          "year": 2014,
+          "category": "Disc Daesang",
+          "daesang": true,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/XOXO_(Exo_album)",
+          "verification": "wiki",
+          "note": ""
+        },
+        {
+          "ceremony": "Golden Disc Awards",
+          "year": 2014,
+          "category": "Disc Bonsang",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/XOXO_(Exo_album)",
+          "verification": "wiki",
+          "note": ""
+        },
+        {
+          "ceremony": "Gaon Chart Music Awards",
+          "year": 2014,
+          "category": "Album of the Year – 3rd Quarter",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/XOXO_(Exo_album)",
+          "verification": "wiki",
+          "note": "Credited to 'XOXO'. Q3 2013 covers the August 'Growl' repackage, but the award is credited to the album as a whole."
+        },
+        {
+          "ceremony": "Seoul Music Awards",
+          "year": 2014,
+          "category": "Daesang",
+          "daesang": true,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Group-level award credited to 'Exo' (not a specific album); attached by eligibility period, inferred, not stated by the source. The 23rd SMA covered 2013 releases (XOXO/Growl, Miracles in December)."
+        },
+        {
+          "ceremony": "Seoul Music Awards",
+          "year": 2014,
+          "category": "Bonsang",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Group-level award credited to 'Exo' (not a specific album); attached by eligibility period, inferred, not stated by the source."
+        },
+        {
+          "ceremony": "Melon Music Awards",
+          "year": 2013,
+          "category": "Top 10 Artists",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Group-level award credited to 'Exo' (not a specific album); attached by eligibility period, inferred, not stated by the source."
+        },
+        {
+          "ceremony": "Korean Music Awards",
+          "year": 2014,
+          "category": "Group Musician of the Year (Netizen Vote)",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Group-level award credited to 'Exo' (not a specific album); attached by eligibility period, inferred, not stated by the source."
+        }
+      ],
+      "showWins": {
+        "total": 4,
+        "bySong": {
+          "Wolf": 4
+        },
+        "list": [
+          {
+            "show": "Music Bank",
+            "date": "2013-06-14",
+            "song": "Wolf"
+          },
+          {
+            "show": "Show! Music Core",
+            "date": "2013-06-15",
+            "song": "Wolf"
+          },
+          {
+            "show": "Inkigayo",
+            "date": "2013-06-16",
+            "song": "Wolf"
+          },
+          {
+            "show": "Show Champion",
+            "date": "2013-06-19",
+            "song": "Wolf"
+          }
+        ],
+        "source": "https://en.wikipedia.org/wiki/Wolf_(Exo_song)",
+        "note": "Agrees with the EXO Charts fan account (4); individual dates also match Wikipedia's Music Bank, Inkigayo and Show Champion 2013 chart lists."
+      }
+    },
+    "growl": {
+      "yearEnd": [
+        {
+          "ceremony": "Melon Music Awards",
+          "year": 2013,
+          "category": "Song of the Year",
+          "daesang": true,
+          "song": "Growl",
+          "source": "https://en.wikipedia.org/wiki/Growl_(song)",
+          "verification": "wiki",
+          "note": ""
+        },
+        {
+          "ceremony": "Seoul Music Awards",
+          "year": 2014,
+          "category": "Best Song",
+          "daesang": false,
+          "song": "Growl",
+          "source": "https://en.wikipedia.org/wiki/Growl_(song)",
+          "verification": "wiki",
+          "note": ""
+        },
+        {
+          "ceremony": "Korean Music Awards",
+          "year": 2014,
+          "category": "Best Dance & Electronic Song",
+          "daesang": false,
+          "song": "Growl",
+          "source": "https://en.wikipedia.org/wiki/Growl_(song)",
+          "verification": "wiki",
+          "note": "The song page labels this '2013' (eligibility year); the awards list gives 2014 (ceremony year)."
+        }
+      ],
+      "showWins": {
+        "total": 14,
+        "bySong": {
+          "Growl": 14
+        },
+        "list": [
+          {
+            "show": "Music Bank",
+            "date": "2013-08-16",
+            "song": "Growl"
+          },
+          {
+            "show": "Inkigayo",
+            "date": "2013-08-18",
+            "song": "Growl"
+          },
+          {
+            "show": "Show Champion",
+            "date": "2013-08-21",
+            "song": "Growl"
+          },
+          {
+            "show": "M Countdown",
+            "date": "2013-08-22",
+            "song": "Growl"
+          },
+          {
+            "show": "Music Bank",
+            "date": "2013-08-23",
+            "song": "Growl"
+          },
+          {
+            "show": "Show! Music Core",
+            "date": "2013-08-24",
+            "song": "Growl"
+          },
+          {
+            "show": "Inkigayo",
+            "date": "2013-08-25",
+            "song": "Growl"
+          },
+          {
+            "show": "Show Champion",
+            "date": "2013-08-28",
+            "song": "Growl"
+          },
+          {
+            "show": "M Countdown",
+            "date": "2013-08-29",
+            "song": "Growl"
+          },
+          {
+            "show": "Show! Music Core",
+            "date": "2013-08-31",
+            "song": "Growl"
+          },
+          {
+            "show": "Inkigayo",
+            "date": "2013-09-01",
+            "song": "Growl"
+          },
+          {
+            "show": "Show Champion",
+            "date": "2013-09-04",
+            "song": "Growl"
+          },
+          {
+            "show": "M Countdown",
+            "date": "2013-09-05",
+            "song": "Growl"
+          },
+          {
+            "show": "Show! Music Core",
+            "date": "2013-09-07",
+            "song": "Growl"
+          }
+        ],
+        "source": "https://en.wikipedia.org/wiki/Growl_(song)",
+        "note": "Agrees with the EXO Charts fan account and kpopping (14). Year-end awards for XOXO itself are listed under 'xoxo'."
+      }
+    },
+    "miracles-in-december": {
+      "yearEnd": [
+        {
+          "ceremony": "Gaon Chart Music Awards",
+          "year": 2014,
+          "category": "Album of the Year – 4th Quarter",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/Miracles_in_December",
+          "verification": "wiki",
+          "note": ""
+        }
+      ],
+      "showWins": {
+        "total": 9,
+        "bySong": {
+          "Miracles in December": 9
+        },
+        "list": [
+          {
+            "show": "Show! Music Core",
+            "date": "2013-12-14",
+            "song": "Miracles in December"
+          },
+          {
+            "show": "Inkigayo",
+            "date": "2013-12-15",
+            "song": "Miracles in December"
+          },
+          {
+            "show": "Show Champion",
+            "date": "2013-12-18",
+            "song": "Miracles in December"
+          },
+          {
+            "show": "M Countdown",
+            "date": "2013-12-19",
+            "song": "Miracles in December"
+          },
+          {
+            "show": "Music Bank",
+            "date": "2013-12-20",
+            "song": "Miracles in December"
+          },
+          {
+            "show": "Show! Music Core",
+            "date": "2013-12-21",
+            "song": "Miracles in December"
+          },
+          {
+            "show": "Inkigayo",
+            "date": "2013-12-22",
+            "song": "Miracles in December"
+          },
+          {
+            "show": "M Countdown",
+            "date": "2013-12-26",
+            "song": "Miracles in December"
+          },
+          {
+            "show": "M Countdown",
+            "date": "2014-01-02",
+            "song": "Miracles in December"
+          }
+        ],
+        "source": "https://en.wikipedia.org/wiki/Miracles_in_December_(song)",
+        "note": "Wikipedia and kpopping both give 9; the EXO Charts fan account (x.com/exochartstats/status/1740711957551100346) gives 10 (unresolved). Separately, the B-side 'The First Snow' reportedly won once on Music Bank in December 2023 (fan sources only, unverified; not counted here)."
+      }
+    },
+    "overdose": {
+      "yearEnd": [
+        {
+          "ceremony": "Mnet Asian Music Awards",
+          "year": 2014,
+          "category": "Album of the Year",
+          "daesang": true,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/Overdose_(EP)",
+          "verification": "wiki",
+          "note": ""
+        },
+        {
+          "ceremony": "Golden Disc Awards",
+          "year": 2015,
+          "category": "Disc Daesang",
+          "daesang": true,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/Overdose_(EP)",
+          "verification": "wiki",
+          "note": ""
+        },
+        {
+          "ceremony": "Golden Disc Awards",
+          "year": 2015,
+          "category": "Disc Bonsang",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/Overdose_(EP)",
+          "verification": "wiki",
+          "note": ""
+        },
+        {
+          "ceremony": "Gaon Chart Music Awards",
+          "year": 2015,
+          "category": "Album of the Year – 2nd Quarter",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/Overdose_(EP)",
+          "verification": "wiki",
+          "note": ""
+        },
+        {
+          "ceremony": "Mnet Asian Music Awards",
+          "year": 2014,
+          "category": "Artist of the Year",
+          "daesang": true,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Group-level award credited to 'Exo' (not a specific album); attached by eligibility period, inferred, not stated by the source. The awards list doesn't explicitly call this a daesang; MAMA treats Artist of the Year as a grand prize."
+        },
+        {
+          "ceremony": "Mnet Asian Music Awards",
+          "year": 2014,
+          "category": "Best Male Group",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Group-level award credited to 'Exo' (not a specific album); attached by eligibility period, inferred, not stated by the source."
+        },
+        {
+          "ceremony": "Seoul Music Awards",
+          "year": 2015,
+          "category": "Daesang",
+          "daesang": true,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Group-level award credited to 'Exo' (not a specific album); attached by eligibility period, inferred, not stated by the source. The 24th SMA covered the 2014 eligibility year."
+        },
+        {
+          "ceremony": "Seoul Music Awards",
+          "year": 2015,
+          "category": "Bonsang",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Group-level award credited to 'Exo' (not a specific album); attached by eligibility period, inferred, not stated by the source."
+        },
+        {
+          "ceremony": "Melon Music Awards",
+          "year": 2014,
+          "category": "Top 10 Artists",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Group-level award credited to 'Exo' (not a specific album); attached by eligibility period, inferred, not stated by the source."
+        }
+      ],
+      "showWins": {
+        "total": 8,
+        "bySong": {
+          "Overdose": 8
+        },
+        "list": [
+          {
+            "show": "Show Champion",
+            "date": "2014-05-14",
+            "song": "Overdose"
+          },
+          {
+            "show": "M Countdown",
+            "date": "2014-05-15",
+            "song": "Overdose"
+          },
+          {
+            "show": "Show! Music Core",
+            "date": "2014-05-17",
+            "song": "Overdose"
+          },
+          {
+            "show": "Inkigayo",
+            "date": "2014-05-18",
+            "song": "Overdose"
+          },
+          {
+            "show": "M Countdown",
+            "date": "2014-05-22",
+            "song": "Overdose"
+          },
+          {
+            "show": "Show! Music Core",
+            "date": "2014-05-24",
+            "song": "Overdose"
+          },
+          {
+            "show": "Inkigayo",
+            "date": "2014-05-25",
+            "song": "Overdose"
+          },
+          {
+            "show": "Inkigayo",
+            "date": "2014-06-01",
+            "song": "Overdose"
+          }
+        ],
+        "source": "https://en.wikipedia.org/wiki/Overdose_(Exo_song)",
+        "note": "Korean version (Exo-K) only, 8 wins. The article says the Chinese version (Exo-M) won another 2 but doesn't list them; the EXO Charts fan account gives 10 in total."
+      }
+    },
+    "exodus": {
+      "yearEnd": [
+        {
+          "ceremony": "Mnet Asian Music Awards",
+          "year": 2015,
+          "category": "Album of the Year",
+          "daesang": true,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/Exodus_(Exo_album)",
+          "verification": "wiki",
+          "note": ""
+        },
+        {
+          "ceremony": "Melon Music Awards",
+          "year": 2015,
+          "category": "Album of the Year",
+          "daesang": true,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/Exodus_(Exo_album)",
+          "verification": "wiki",
+          "note": ""
+        },
+        {
+          "ceremony": "Golden Disc Awards",
+          "year": 2016,
+          "category": "Disc Daesang",
+          "daesang": true,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/Exodus_(Exo_album)",
+          "verification": "wiki",
+          "note": ""
+        },
+        {
+          "ceremony": "Golden Disc Awards",
+          "year": 2016,
+          "category": "Disc Bonsang",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/Exodus_(Exo_album)",
+          "verification": "wiki",
+          "note": ""
+        },
+        {
+          "ceremony": "Gaon Chart Music Awards",
+          "year": 2016,
+          "category": "Album of the Year – 1st Quarter",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/Exodus_(Exo_album)",
+          "verification": "wiki",
+          "note": ""
+        },
+        {
+          "ceremony": "Seoul Music Awards",
+          "year": 2016,
+          "category": "Daesang",
+          "daesang": true,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Group-level award credited to 'Exo' (not a specific album); attached by eligibility period, inferred, not stated by the source. The 25th SMA covered the 2015 eligibility year."
+        },
+        {
+          "ceremony": "Seoul Music Awards",
+          "year": 2016,
+          "category": "Bonsang",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Group-level award credited to 'Exo' (not a specific album); attached by eligibility period, inferred, not stated by the source."
+        },
+        {
+          "ceremony": "Mnet Asian Music Awards",
+          "year": 2015,
+          "category": "Best Male Group",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Group-level award credited to 'Exo' (not a specific album); attached by eligibility period, inferred, not stated by the source."
+        },
+        {
+          "ceremony": "Melon Music Awards",
+          "year": 2015,
+          "category": "Top 10 Artists",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Group-level award credited to 'Exo' (not a specific album); attached by eligibility period, inferred, not stated by the source."
+        }
+      ],
+      "showWins": {
+        "total": 18,
+        "bySong": {
+          "Call Me Baby": 18
+        },
+        "list": [
+          {
+            "show": "Music Bank",
+            "date": "2015-04-03",
+            "song": "Call Me Baby"
+          },
+          {
+            "show": "Inkigayo",
+            "date": "2015-04-05",
+            "song": "Call Me Baby"
+          },
+          {
+            "show": "Show Champion",
+            "date": "2015-04-08",
+            "song": "Call Me Baby"
+          },
+          {
+            "show": "M Countdown",
+            "date": "2015-04-09",
+            "song": "Call Me Baby"
+          },
+          {
+            "show": "Music Bank",
+            "date": "2015-04-10",
+            "song": "Call Me Baby"
+          },
+          {
+            "show": "Show! Music Core",
+            "date": "2015-04-11",
+            "song": "Call Me Baby"
+          },
+          {
+            "show": "Inkigayo",
+            "date": "2015-04-12",
+            "song": "Call Me Baby"
+          },
+          {
+            "show": "Show Champion",
+            "date": "2015-04-15",
+            "song": "Call Me Baby"
+          },
+          {
+            "show": "M Countdown",
+            "date": "2015-04-16",
+            "song": "Call Me Baby"
+          },
+          {
+            "show": "Show! Music Core",
+            "date": "2015-04-18",
+            "song": "Call Me Baby"
+          },
+          {
+            "show": "Show Champion",
+            "date": "2015-04-22",
+            "song": "Call Me Baby"
+          },
+          {
+            "show": "Music Bank",
+            "date": "2015-04-24",
+            "song": "Call Me Baby"
+          },
+          {
+            "show": "Show! Music Core",
+            "date": "2015-04-25",
+            "song": "Call Me Baby"
+          },
+          {
+            "show": "Inkigayo",
+            "date": "2015-04-26",
+            "song": "Call Me Baby"
+          },
+          {
+            "show": "The Show",
+            "date": "2015-04-28",
+            "song": "Call Me Baby"
+          },
+          {
+            "show": "M Countdown",
+            "date": "2015-04-30",
+            "song": "Call Me Baby"
+          },
+          {
+            "show": "Music Bank",
+            "date": "2015-05-01",
+            "song": "Call Me Baby"
+          },
+          {
+            "show": "Show! Music Core",
+            "date": "2015-05-02",
+            "song": "Call Me Baby"
+          }
+        ],
+        "source": "https://en.wikipedia.org/wiki/Call_Me_Baby",
+        "note": "18 wins; Wikipedia, kpopping and the EXO Charts fan account agree."
+      }
+    },
+    "love-me-right": {
+      "yearEnd": [
+        {
+          "ceremony": "Gaon Chart Music Awards",
+          "year": 2016,
+          "category": "Album of the Year – 2nd Quarter",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/Exodus_(Exo_album)",
+          "verification": "wiki",
+          "note": ""
+        }
+      ],
+      "showWins": {
+        "total": 11,
+        "bySong": {
+          "Love Me Right": 11
+        },
+        "list": [
+          {
+            "show": "Show Champion",
+            "date": "2015-06-10",
+            "song": "Love Me Right"
+          },
+          {
+            "show": "Music Bank",
+            "date": "2015-06-12",
+            "song": "Love Me Right"
+          },
+          {
+            "show": "Show! Music Core",
+            "date": "2015-06-13",
+            "song": "Love Me Right"
+          },
+          {
+            "show": "The Show",
+            "date": "2015-06-16",
+            "song": "Love Me Right"
+          },
+          {
+            "show": "Show Champion",
+            "date": "2015-06-17",
+            "song": "Love Me Right"
+          },
+          {
+            "show": "M Countdown",
+            "date": "2015-06-18",
+            "song": "Love Me Right"
+          },
+          {
+            "show": "Music Bank",
+            "date": "2015-06-19",
+            "song": "Love Me Right"
+          },
+          {
+            "show": "Show! Music Core",
+            "date": "2015-06-20",
+            "song": "Love Me Right"
+          },
+          {
+            "show": "Inkigayo",
+            "date": "2015-06-21",
+            "song": "Love Me Right"
+          },
+          {
+            "show": "Show Champion",
+            "date": "2015-06-24",
+            "song": "Love Me Right"
+          },
+          {
+            "show": "Show! Music Core",
+            "date": "2015-06-27",
+            "song": "Love Me Right"
+          }
+        ],
+        "source": "https://en.wikipedia.org/wiki/Love_Me_Right_(song)",
+        "note": "Agrees with the EXO Charts fan account (11)."
+      }
+    },
+    "sing-for-you": {
+      "yearEnd": [
+        {
+          "ceremony": "Gaon Chart Music Awards",
+          "year": 2016,
+          "category": "Album of the Year – 4th Quarter",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/Sing_for_You_(EP)",
+          "verification": "wiki",
+          "note": ""
+        }
+      ],
+      "showWins": {
+        "total": 4,
+        "bySong": {
+          "Sing For You": 4,
+          "Unfair": 0
+        },
+        "list": [
+          {
+            "show": "Music Bank",
+            "date": "2015-12-18",
+            "song": "Sing For You"
+          },
+          {
+            "show": "Music Bank",
+            "date": "2015-12-25",
+            "song": "Sing For You"
+          },
+          {
+            "show": "M Countdown",
+            "date": "2015-12-31",
+            "song": "Sing For You"
+          },
+          {
+            "show": "Music Bank",
+            "date": "2016-01-01",
+            "song": "Sing For You"
+          }
+        ],
+        "source": "https://en.wikipedia.org/wiki/Sing_for_You_(EP)",
+        "note": "Wikipedia gives 4; the EXO Charts fan account gives 3. Wikipedia's 2016 Music Bank list confirms the Jan 1, 2016 win but notes no episode aired that week (winner announced on the website), which may explain the gap. No wins recorded for 'Unfair'."
+      }
+    },
+    "exact": {
+      "yearEnd": [
+        {
+          "ceremony": "Mnet Asian Music Awards",
+          "year": 2016,
+          "category": "Album of the Year",
+          "daesang": true,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/Ex'Act",
+          "verification": "wiki",
+          "note": ""
+        },
+        {
+          "ceremony": "Golden Disc Awards",
+          "year": 2017,
+          "category": "Disc Daesang",
+          "daesang": true,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/Ex'Act",
+          "verification": "wiki",
+          "note": ""
+        },
+        {
+          "ceremony": "Golden Disc Awards",
+          "year": 2017,
+          "category": "Disc Bonsang",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/Ex'Act",
+          "verification": "wiki",
+          "note": ""
+        },
+        {
+          "ceremony": "Gaon Chart Music Awards",
+          "year": 2017,
+          "category": "Album of the Year – 2nd Quarter",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/Ex'Act",
+          "verification": "wiki",
+          "note": "Korean version."
+        },
+        {
+          "ceremony": "Melon Music Awards",
+          "year": 2016,
+          "category": "Best Male Dance",
+          "daesang": false,
+          "song": "Monster",
+          "source": "https://en.wikipedia.org/wiki/Monster_(Exo_song)",
+          "verification": "wiki",
+          "note": ""
+        },
+        {
+          "ceremony": "Melon Music Awards",
+          "year": 2016,
+          "category": "Artist of the Year",
+          "daesang": true,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Group-level award credited to 'Exo' (not a specific album); attached by eligibility period, inferred, not stated by the source. 2016 releases were EX'ACT/Lotto (and For Life in December)."
+        },
+        {
+          "ceremony": "Melon Music Awards",
+          "year": 2016,
+          "category": "Top 10 Artists",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Group-level award credited to 'Exo' (not a specific album); attached by eligibility period, inferred, not stated by the source."
+        },
+        {
+          "ceremony": "Seoul Music Awards",
+          "year": 2017,
+          "category": "Daesang",
+          "daesang": true,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Group-level award credited to 'Exo' (not a specific album); attached by eligibility period, inferred, not stated by the source. The 26th SMA covered the 2016 eligibility year."
+        },
+        {
+          "ceremony": "Seoul Music Awards",
+          "year": 2017,
+          "category": "Bonsang",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Group-level award credited to 'Exo' (not a specific album); attached by eligibility period, inferred, not stated by the source."
+        },
+        {
+          "ceremony": "Mnet Asian Music Awards",
+          "year": 2016,
+          "category": "Best Male Group",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Group-level award credited to 'Exo' (not a specific album); attached by eligibility period, inferred, not stated by the source."
+        }
+      ],
+      "showWins": {
+        "total": 9,
+        "bySong": {
+          "Monster": 9,
+          "Lucky One": 0
+        },
+        "list": [
+          {
+            "show": "M Countdown",
+            "date": "2016-06-16",
+            "song": "Monster"
+          },
+          {
+            "show": "Music Bank",
+            "date": "2016-06-17",
+            "song": "Monster"
+          },
+          {
+            "show": "Inkigayo",
+            "date": "2016-06-19",
+            "song": "Monster"
+          },
+          {
+            "show": "Show Champion",
+            "date": "2016-06-22",
+            "song": "Monster"
+          },
+          {
+            "show": "M Countdown",
+            "date": "2016-06-23",
+            "song": "Monster"
+          },
+          {
+            "show": "Music Bank",
+            "date": "2016-06-24",
+            "song": "Monster"
+          },
+          {
+            "show": "Inkigayo",
+            "date": "2016-06-26",
+            "song": "Monster"
+          },
+          {
+            "show": "M Countdown",
+            "date": "2016-06-30",
+            "song": "Monster"
+          },
+          {
+            "show": "Music Bank",
+            "date": "2016-07-01",
+            "song": "Monster"
+          }
+        ],
+        "source": "https://en.wikipedia.org/wiki/Monster_(Exo_song)",
+        "note": "Wikipedia and kpopping give 9 for Monster; the EXO Charts fan account gives 10 (unresolved). Wikipedia's 2016 Music Bank, M Countdown, Inkigayo and Show Champion lists confirm all 9 dates. No wins recorded for 'Lucky One'."
+      }
+    },
+    "lotto": {
+      "yearEnd": [
+        {
+          "ceremony": "Gaon Chart Music Awards",
+          "year": 2017,
+          "category": "Album of the Year – 3rd Quarter",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/Ex'Act",
+          "verification": "wiki",
+          "note": "Korean version."
+        }
+      ],
+      "showWins": {
+        "total": 7,
+        "bySong": {
+          "Lotto": 7
+        },
+        "list": [
+          {
+            "show": "M Countdown",
+            "date": "2016-08-25",
+            "song": "Lotto"
+          },
+          {
+            "show": "Music Bank",
+            "date": "2016-08-26",
+            "song": "Lotto"
+          },
+          {
+            "show": "Inkigayo",
+            "date": "2016-08-28",
+            "song": "Lotto"
+          },
+          {
+            "show": "Show Champion",
+            "date": "2016-08-31",
+            "song": "Lotto"
+          },
+          {
+            "show": "M Countdown",
+            "date": "2016-09-01",
+            "song": "Lotto"
+          },
+          {
+            "show": "Music Bank",
+            "date": "2016-09-02",
+            "song": "Lotto"
+          },
+          {
+            "show": "Inkigayo",
+            "date": "2016-09-04",
+            "song": "Lotto"
+          }
+        ],
+        "source": "https://en.wikipedia.org/wiki/Lotto_(song)",
+        "note": "7 wins; Wikipedia and the EXO Charts fan account agree. On KBS/MBC/Mnet the song was performed as 'Louder' with altered lyrics."
+      }
+    },
+    "for-life": {
+      "yearEnd": [],
+      "showWins": {
+        "total": 1,
+        "bySong": {
+          "For Life": 1
+        },
+        "list": [
+          {
+            "show": "Music Bank",
+            "date": "2016-12-30",
+            "song": "For Life"
+          }
+        ],
+        "source": "https://en.wikipedia.org/wiki/For_Life_(EP)",
+        "note": "No episode aired that week; the win was announced on the Music Bank website (per Wikipedia's 2016 Music Bank list)."
+      }
+    },
+    "the-war": {
+      "yearEnd": [
+        {
+          "ceremony": "Mnet Asian Music Awards",
+          "year": 2017,
+          "category": "Album of the Year",
+          "daesang": true,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/The_War_(album)",
+          "verification": "wiki",
+          "note": ""
+        },
+        {
+          "ceremony": "Golden Disc Awards",
+          "year": 2018,
+          "category": "Disc Bonsang",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/The_War_(album)",
+          "verification": "wiki",
+          "note": ""
+        },
+        {
+          "ceremony": "Mnet Asian Music Awards",
+          "year": 2017,
+          "category": "Global Fans' Choice",
+          "daesang": false,
+          "song": "Ko Ko Bop",
+          "source": "https://en.wikipedia.org/wiki/Ko_Ko_Bop",
+          "verification": "wiki",
+          "note": ""
+        },
+        {
+          "ceremony": "Melon Music Awards",
+          "year": 2017,
+          "category": "Best Male Dance",
+          "daesang": false,
+          "song": "Ko Ko Bop",
+          "source": "https://en.wikipedia.org/wiki/Ko_Ko_Bop",
+          "verification": "wiki",
+          "note": ""
+        },
+        {
+          "ceremony": "Gaon Chart Music Awards",
+          "year": 2018,
+          "category": "Song of the Year – July",
+          "daesang": false,
+          "song": "Ko Ko Bop",
+          "source": "https://en.wikipedia.org/wiki/Ko_Ko_Bop",
+          "verification": "wiki",
+          "note": ""
+        },
+        {
+          "ceremony": "Melon Music Awards",
+          "year": 2017,
+          "category": "Artist of the Year",
+          "daesang": true,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Group-level award credited to 'Exo' (not a specific album); attached by eligibility period, inferred, not stated by the source."
+        },
+        {
+          "ceremony": "Melon Music Awards",
+          "year": 2017,
+          "category": "Top 10 Artists",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Group-level award credited to 'Exo' (not a specific album); attached by eligibility period, inferred, not stated by the source."
+        },
+        {
+          "ceremony": "Seoul Music Awards",
+          "year": 2018,
+          "category": "Bonsang",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Group-level award credited to 'Exo' (not a specific album); attached by eligibility period, inferred, not stated by the source. The 27th SMA eligibility period also includes For Life (Dec 2016)."
+        }
+      ],
+      "showWins": {
+        "total": 11,
+        "bySong": {
+          "Ko Ko Bop": 11
+        },
+        "list": [
+          {
+            "show": "Show Champion",
+            "date": "2017-07-26",
+            "song": "Ko Ko Bop"
+          },
+          {
+            "show": "M Countdown",
+            "date": "2017-07-27",
+            "song": "Ko Ko Bop"
+          },
+          {
+            "show": "Music Bank",
+            "date": "2017-07-28",
+            "song": "Ko Ko Bop"
+          },
+          {
+            "show": "Inkigayo",
+            "date": "2017-07-30",
+            "song": "Ko Ko Bop"
+          },
+          {
+            "show": "Show Champion",
+            "date": "2017-08-02",
+            "song": "Ko Ko Bop"
+          },
+          {
+            "show": "M Countdown",
+            "date": "2017-08-03",
+            "song": "Ko Ko Bop"
+          },
+          {
+            "show": "Music Bank",
+            "date": "2017-08-04",
+            "song": "Ko Ko Bop"
+          },
+          {
+            "show": "Show! Music Core",
+            "date": "2017-08-05",
+            "song": "Ko Ko Bop"
+          },
+          {
+            "show": "Inkigayo",
+            "date": "2017-08-06",
+            "song": "Ko Ko Bop"
+          },
+          {
+            "show": "M Countdown",
+            "date": "2017-08-10",
+            "song": "Ko Ko Bop"
+          },
+          {
+            "show": "Show! Music Core",
+            "date": "2017-08-12",
+            "song": "Ko Ko Bop"
+          }
+        ],
+        "source": "https://en.wikipedia.org/wiki/Ko_Ko_Bop",
+        "note": "11 wins; Wikipedia, kpopping and the EXO Charts fan account agree."
+      }
+    },
+    "the-power-of-music": {
+      "yearEnd": [],
+      "showWins": {
+        "total": 5,
+        "bySong": {
+          "Power": 5
+        },
+        "list": [
+          {
+            "show": "Show Champion",
+            "date": "2017-09-13",
+            "song": "Power"
+          },
+          {
+            "show": "M Countdown",
+            "date": "2017-09-14",
+            "song": "Power"
+          },
+          {
+            "show": "Music Bank",
+            "date": "2017-09-15",
+            "song": "Power"
+          },
+          {
+            "show": "Inkigayo",
+            "date": "2017-09-17",
+            "song": "Power"
+          },
+          {
+            "show": "Music Bank",
+            "date": "2017-09-22",
+            "song": "Power"
+          }
+        ],
+        "source": "https://en.wikipedia.org/wiki/Power_(Exo_song)",
+        "note": "5 wins; agrees with the EXO Charts fan account. The Sept 14 M Countdown win was Exo's 100th music show win (The War album page). Year-end awards are credited to The War (see 'the-war')."
+      }
+    },
+    "universe": {
+      "yearEnd": [],
+      "showWins": {
+        "total": 3,
+        "bySong": {
+          "Universe": 3
+        },
+        "list": [
+          {
+            "show": "Music Bank",
+            "date": "2018-01-05",
+            "song": "Universe"
+          },
+          {
+            "show": "Show! Music Core",
+            "date": "2018-01-06",
+            "song": "Universe"
+          },
+          {
+            "show": "Music Bank",
+            "date": "2018-01-12",
+            "song": "Universe"
+          }
+        ],
+        "source": "https://en.wikipedia.org/wiki/Universe_(Exo_EP)",
+        "note": "CONFLICT: the Universe EP page lists 4 wins, including M Countdown on 2018-01-04. Wikipedia's 'List of M Countdown Chart winners (2018)' says Jan 4 was 'No Broadcast or Winner', and the EXO Charts fan account and kpopping both give 3, so that win is excluded here. The other 3 are confirmed by Wikipedia's 2018 Music Bank and Show! Music Core lists. Year-end: nominations only (Gaon Album Q4, Melon Album of the Year)."
+      }
+    },
+    "countdown": {
+      "yearEnd": [],
+      "showWins": {
+        "total": 0,
+        "bySong": {},
+        "list": [],
+        "source": null,
+        "note": "Japanese release; not eligible for Korean music shows. No Japan Gold Disc Award found: Tokyohive's 2019 (33rd) winners list (https://www.tokyohive.com/article/2019/02/amuro-namie-wins-artist-of-the-year-at-the-japan-gold-disc-award-for-the-second-consecutive-year) doesn't include Countdown in Best 3 Albums (Asia). The album was RIAJ Gold certified, which is a certification, not an award. Exo's 2016 Japan Gold Disc 'New Artist of the Year (Asian)' and 'Best 3 New Artists' predate this album and are not attached to it."
+      }
+    },
+    "dmumt": {
+      "yearEnd": [
+        {
+          "ceremony": "Golden Disc Awards",
+          "year": 2019,
+          "category": "Disc Bonsang",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/Don't_Mess_Up_My_Tempo",
+          "verification": "wiki",
+          "note": ""
+        },
+        {
+          "ceremony": "Gaon Chart Music Awards",
+          "year": 2019,
+          "category": "Album of the Year – 4th Quarter",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/Don't_Mess_Up_My_Tempo",
+          "verification": "wiki",
+          "note": ""
+        },
+        {
+          "ceremony": "Seoul Music Awards",
+          "year": 2019,
+          "category": "Bonsang",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Group-level award credited to 'Exo' (not a specific album); attached by eligibility period, inferred, not stated by the source."
+        },
+        {
+          "ceremony": "Melon Music Awards",
+          "year": 2018,
+          "category": "Top 10 Artists",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Group-level award credited to 'Exo' (not a specific album); attached by eligibility period, inferred, not stated by the source. The 2018 eligibility period may also include Universe (Dec 26, 2017)."
+        }
+      ],
+      "showWins": {
+        "total": 3,
+        "bySong": {
+          "Tempo": 3
+        },
+        "list": [
+          {
+            "show": "Music Bank",
+            "date": "2018-11-09",
+            "song": "Tempo"
+          },
+          {
+            "show": "Music Bank",
+            "date": "2018-11-16",
+            "song": "Tempo"
+          },
+          {
+            "show": "Music Bank",
+            "date": "2019-01-04",
+            "song": "Tempo"
+          }
+        ],
+        "source": "https://en.wikipedia.org/wiki/Tempo_(Exo_song)",
+        "note": "3 wins, all on Music Bank; agrees with the EXO Charts fan account and kpopping. Nov 9 and 16 are confirmed by Wikipedia's 2018 Music Bank list."
+      }
+    },
+    "love-shot": {
+      "yearEnd": [
+        {
+          "ceremony": "Melon Music Awards",
+          "year": 2019,
+          "category": "Top 10 Artists",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Group-level award credited to 'Exo' (not a specific album); attached by eligibility period, inferred, not stated by the source. Love Shot was Exo's main release in the Melon 2019 eligibility window. This attribution is uncertain; the window may also include Obsession (Nov 27, 2019)."
+        }
+      ],
+      "showWins": {
+        "total": 3,
+        "bySong": {
+          "Love Shot": 3
+        },
+        "list": [
+          {
+            "show": "Music Bank",
+            "date": "2018-12-21",
+            "song": "Love Shot"
+          },
+          {
+            "show": "Show! Music Core",
+            "date": "2018-12-22",
+            "song": "Love Shot"
+          },
+          {
+            "show": "Music Bank",
+            "date": "2018-12-28",
+            "song": "Love Shot"
+          }
+        ],
+        "source": "https://en.wikipedia.org/wiki/Love_Shot",
+        "note": "3 wins; agrees with the EXO Charts fan account. The Dec 28 Music Bank win had no broadcast (announced on the website)."
+      }
+    },
+    "obsession": {
+      "yearEnd": [
+        {
+          "ceremony": "Golden Disc Awards",
+          "year": 2021,
+          "category": "Disc Bonsang",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Credited to 'Obsession' in the awards list."
+        },
+        {
+          "ceremony": "Gaon Chart Music Awards",
+          "year": 2020,
+          "category": "Album of the Year – 4th Quarter",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/Obsession_(Exo_album)",
+          "verification": "wiki",
+          "note": ""
+        },
+        {
+          "ceremony": "Gaon Chart Music Awards",
+          "year": 2020,
+          "category": "Top Kit Seller of the Year",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/Obsession_(Exo_album)",
+          "verification": "wiki",
+          "note": "Credited to 'Exo' in the awards list; the Obsession album page lists it as won."
+        },
+        {
+          "ceremony": "Seoul Music Awards",
+          "year": 2020,
+          "category": "Bonsang",
+          "daesang": false,
+          "song": null,
+          "source": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Exo",
+          "verification": "wiki",
+          "note": "Group-level award credited to 'Exo' (not a specific album); attached by eligibility period, inferred, not stated by the source. The 29th SMA (2019 eligibility) would cover Love Shot and/or Obsession; attribution uncertain."
+        }
+      ],
+      "showWins": {
+        "total": 5,
+        "bySong": {
+          "Obsession": 5
+        },
+        "list": [
+          {
+            "show": "Music Bank",
+            "date": "2019-12-06",
+            "song": "Obsession"
+          },
+          {
+            "show": "Show! Music Core",
+            "date": "2019-12-07",
+            "song": "Obsession"
+          },
+          {
+            "show": "Show Champion",
+            "date": "2019-12-11",
+            "song": "Obsession"
+          },
+          {
+            "show": "Music Bank",
+            "date": "2019-12-13",
+            "song": "Obsession"
+          },
+          {
+            "show": "Show! Music Core",
+            "date": "2019-12-14",
+            "song": "Obsession"
+          }
+        ],
+        "source": "https://en.wikipedia.org/wiki/Obsession_(Exo_song)",
+        "note": "5 wins; agrees with the EXO Charts fan account."
+      }
+    },
+    "dftf": {
+      "yearEnd": [],
+      "showWins": {
+        "total": 1,
+        "bySong": {
+          "Don't Fight the Feeling": 1
+        },
+        "list": [
+          {
+            "show": "Music Bank",
+            "date": "2021-06-18",
+            "song": "Don't Fight the Feeling"
+          }
+        ],
+        "source": "https://en.wikipedia.org/wiki/Don't_Fight_the_Feeling_(EP)",
+        "note": "1 win; agrees with the EXO Charts fan account."
+      }
+    },
+    "exist": {
+      "yearEnd": [],
+      "showWins": {
+        "total": 1,
+        "bySong": {
+          "Cream Soda": 1
+        },
+        "list": [
+          {
+            "show": "Music Bank",
+            "date": "2023-07-21",
+            "song": "Cream Soda"
+          }
+        ],
+        "source": "https://en.wikipedia.org/wiki/Cream_Soda_(song)",
+        "note": "1 win, earned without Exo appearing on the show. No Circle Chart or other year-end win found."
+      }
+    },
+    "reverxe": {
+      "yearEnd": [],
+      "showWins": {
+        "total": 5,
+        "bySong": {
+          "Crown": 5
+        },
+        "list": [
+          {
+            "show": "Show Champion",
+            "date": "2026-01-28",
+            "song": "Crown"
+          },
+          {
+            "show": "M Countdown",
+            "date": "2026-01-29",
+            "song": "Crown"
+          },
+          {
+            "show": "Music Bank",
+            "date": "2026-01-30",
+            "song": "Crown"
+          },
+          {
+            "show": "Show! Music Core",
+            "date": "2026-01-31",
+            "song": "Crown"
+          },
+          {
+            "show": "Inkigayo",
+            "date": "2026-02-01",
+            "song": "Crown"
+          }
+        ],
+        "source": "https://en.wikipedia.org/wiki/Crown_(Exo_song)",
+        "note": "5 wins ('grand slam', per Wikipedia), earned without live performances. No second source found. The 2026-27 year-end ceremonies (e.g. MAMA 2026, held after 2026-11-12) haven't happened yet or weren't found."
+      }
+    }
+  }
+}

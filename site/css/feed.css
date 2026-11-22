@@ -1,0 +1,17 @@
+/* 快讯 · 自动整理 — third block under the two 此刻 lanes. Reuses .lane / .tag / .badge; editions come from the shared variables. */
+.lane--feed { margin-top: clamp(14px, 1.6vw, 24px); background: var(--glass); border: 1px solid var(--line-2); border-top: 2px solid var(--ink-3); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+.lane--feed[hidden] { display: none; }
+.lane--feed .lane__head { grid-template-columns: 1fr auto; }
+.feed__note { margin-top: 12px; padding: 9px 12px; border-radius: 10px; background: rgba(var(--ink-rgb), .05); border-left: 2px solid var(--ink-3); color: var(--ink-2); font-size: 13.5px; line-height: 1.65; }
+.feed__list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(20px, 3vw, 48px); }
+.fitem { padding: 16px 0; border-bottom: 1px solid var(--line-2); min-width: 0; }
+.fitem__tags { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.fitem__ago { margin-left: auto; font-size: 12.5px; color: var(--ink-3); white-space: nowrap; }
+.fitem h4 { font: 600 16px/1.55 var(--cn); margin-top: 8px; text-wrap: pretty; }
+.fitem h4 a { color: inherit; text-decoration: none; background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat; transition: background-size .3s; }
+.fitem h4 a:hover, .fitem h4 a:focus-visible { background-size: 100% 1px; }
+.fitem p { color: var(--ink-2); font-size: 14px; line-height: 1.7; margin-top: 4px; }
+.fitem__src { display: block; margin-top: 6px; font-size: 12.5px; color: var(--ink-3); }
+/* paper: the generic `html[data-mode=paper] .lane` rule already supplies the card colour and removes blur */
+html[data-mode=paper] .lane--feed { border-top-color: var(--ink-2); }
+@media (max-width: 860px) { .feed__list { grid-template-columns: 1fr; } }

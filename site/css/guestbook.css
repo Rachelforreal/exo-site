@@ -1,0 +1,100 @@
+/* ---------- 站长意见留言板 (Guestbook & Errata Mailbox) ---------- */
+.gb { display: grid; grid-template-columns: minmax(0, .92fr) minmax(0, 1.38fr); gap: clamp(18px, 2.4vw, 32px); align-items: start; margin-top: 24px; }
+
+.gb__compose, .gb-card {
+  border-radius: var(--r); border: 1px solid var(--line); background: var(--glass);
+  backdrop-filter: blur(16px) saturate(1.2); -webkit-backdrop-filter: blur(16px) saturate(1.2);
+}
+html[data-mode=paper] .gb__compose,
+html[data-mode=paper] .gb-card {
+  background: var(--surface); backdrop-filter: none; -webkit-backdrop-filter: none;
+  box-shadow: 0 18px 36px -28px rgba(17, 22, 37, .22);
+}
+
+.gb__compose { padding: clamp(18px, 2.2vw, 26px); display: grid; gap: 14px; }
+.gb__compose-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 12px; }
+.gb__compose-head small { font-size: 12px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.gb__lbl { display: grid; gap: 6px; font-size: 12.5px; color: var(--ink-2); letter-spacing: .04em; }
+.gb__lbl em { font-style: normal; color: var(--ink-3); font-weight: 400; margin-left: 4px; }
+.gb__row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.gb__compose .field { height: 42px; border-radius: 10px; padding: 0 13px; background: rgba(var(--ink-rgb), .03); backdrop-filter: none; -webkit-backdrop-filter: none; }
+.gb__compose .field input { font-size: 14px; color: var(--ink); }
+
+.gb__textarea {
+  width: 100%; min-height: 102px; resize: vertical; padding: 12px 13px;
+  border-radius: 10px; border: 1px solid var(--line); background: rgba(var(--ink-rgb), .03);
+  color: var(--ink); font: 400 14px/1.65 var(--sans); outline: 0;
+  transition: border-color .22s, box-shadow .22s;
+}
+.gb__textarea::placeholder { color: var(--ink-4); }
+.gb__textarea:focus { border-color: var(--ac); box-shadow: 0 0 0 4px rgba(var(--ac-rgb), .14); }
+
+.gb__badges { display: flex; flex-wrap: wrap; gap: 6px; }
+.gb__badge-btn {
+  display: inline-flex; align-items: center; gap: 5px; height: 30px; padding: 0 10px;
+  border-radius: 99px; border: 1px solid var(--line); background: transparent;
+  color: var(--ink-2); font: 500 12px/1 var(--sans);
+  transition: border-color .2s, background-color .2s, color .2s, transform .2s var(--ease);
+}
+.gb__badge-btn svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.5; flex: none; }
+.gb__badge-btn:hover { border-color: var(--ac); color: var(--ink); transform: translateY(-1px); }
+.gb__badge-btn[aria-pressed=true] { border-color: var(--ac); background: rgba(var(--ac-rgb), .14); color: var(--ac); font-weight: 600; }
+
+.gb__submit-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 14px; padding-top: 2px; }
+.gb__hint { font-size: 12px; line-height: 1.6; color: var(--ink-3); flex: 1 1 200px; }
+
+.gb__wall { display: grid; gap: 14px; min-width: 0; }
+.gb__bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 14px; }
+.gb__count { font-size: 13px; color: var(--ink-3); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.gb__count b { color: var(--ink); font-weight: 600; }
+
+.gb__list { display: grid; gap: 12px; list-style: none; padding: 0; margin: 0; }
+.gb-card { padding: 16px 18px; display: grid; gap: 10px; transition: border-color .25s var(--ease); }
+.gb-card:hover { border-color: rgba(var(--ac-rgb), .42); }
+.gb-card__top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px; }
+.gb-card__who { display: inline-flex; align-items: center; gap: 8px; min-width: 0; }
+.gb-card__sigil { width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; border: 1px solid var(--line); color: var(--ac); background: rgba(var(--ac-rgb), .08); flex: none; }
+.gb-card__sigil svg { width: 13px; height: 13px; fill: none; stroke: currentColor; stroke-width: 1.5; }
+.gb-card__name { font: 600 14.5px/1.3 var(--cn); color: var(--ink); overflow-wrap: anywhere; }
+.gb-card__meta { display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 12px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.gb-card__body { font-size: 14.5px; line-height: 1.75; color: var(--ink-2); white-space: pre-wrap; overflow-wrap: anywhere; }
+
+.gb-card__reply {
+  padding: 10px 12px; border-radius: 10px;
+  border-left: 2px solid var(--ac); background: rgba(var(--ac-rgb), .06);
+  font-size: 13px; line-height: 1.65; color: var(--ink-2);
+}
+.gb-card__reply b { color: var(--ac); font-weight: 600; margin-right: 6px; }
+
+.gb-card__foot { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding-top: 4px; border-top: 1px dashed var(--line-2); }
+.gb-act {
+  display: inline-flex; align-items: center; gap: 5px; height: 28px; padding: 0 10px;
+  border-radius: 99px; border: 1px solid var(--line); background: transparent;
+  font: 500 12px/1 var(--sans); color: var(--ink-2);
+  transition: border-color .2s, background-color .2s, color .2s, transform .2s var(--ease);
+}
+.gb-act:hover { border-color: var(--ac); color: var(--ink); }
+.gb-act[aria-pressed=true] { border-color: var(--ac); color: var(--ac); background: rgba(var(--ac-rgb), .12); font-weight: 600; }
+.gb-act--del { margin-left: auto; color: var(--ink-3); }
+.gb-act--del:hover { color: var(--og); border-color: rgba(var(--og-rgb), .55); }
+
+.gb__empty { padding: 36px 18px; text-align: center; border-radius: var(--r); border: 1px dashed var(--line); color: var(--ink-3); font-size: 14px; }
+.gb__fold-wrap { display: flex; justify-content: center; }
+
+@media (max-width: 960px) {
+  .gb { grid-template-columns: 1fr; }
+}
+@media (max-width: 720px) {
+  .gb { margin-top: 16px; gap: 14px; }
+  .gb__compose { padding: 14px; gap: 10px; }
+  .gb__badges { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+  .gb__badges::-webkit-scrollbar { display: none; }
+  .gb__badge-btn { flex: none; }
+  .gb__textarea { min-height: 76px; }
+  .gb-card { padding: 13px 14px; gap: 8px; }
+}
+@media (max-width: 600px) {
+  .gb__row { grid-template-columns: 1fr; }
+  .gb__bar .seg { width: 100%; }
+  .gb__bar .seg button { flex: 1 0 auto; padding: 0 10px; font-size: 12px; }
+}

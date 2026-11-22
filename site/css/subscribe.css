@@ -1,0 +1,13 @@
+/* 订阅日历：行程区按钮 + 弹窗 */
+.subrow { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin: 0 0 18px; }
+.subrow__hint { font-size: 13px; opacity: .7; }
+
+.subdlg { border: 0; padding: 0; background: transparent; color: var(--ink); max-width: min(440px, calc(100vw - 32px)); width: 100%; }
+.subdlg::backdrop { background: rgba(0, 0, 0, .45); backdrop-filter: blur(3px); }
+.subdlg__box { position: relative; background: var(--bg); border-radius: 18px; padding: 28px 26px 24px; box-shadow: 0 20px 60px rgba(0, 0, 0, .3); display: flex; flex-direction: column; gap: 12px; }
+.subdlg__x { position: absolute; top: 10px; right: 12px; width: 34px; height: 34px; border: 0; background: none; color: var(--ink); font-size: 24px; line-height: 1; cursor: pointer; }
+.subdlg__h { margin: 0; font-family: var(--serif); font-size: 24px; font-weight: 600; }
+.subdlg__lead, .subdlg__note { margin: 0; font-size: 14px; line-height: 1.7; opacity: .8; }
+.subdlg__note { font-size: 12.5px; opacity: .6; }
+.subdlg__list { display: flex; flex-direction: column; gap: 10px; margin-top: 4px; }
+.subdlg__list .cbtn { justify-content: center; }

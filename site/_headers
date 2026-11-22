@@ -1,0 +1,27 @@
+# Cloudflare Pages response headers
+/*
+  X-Content-Type-Options: nosniff
+
+# Immutable-ish static assets (file names are versioned or rarely change)
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+/img/*
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+/vendor/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Code and styles are referenced with ?v=N: cache for a day, revalidate after
+/js/*
+  Cache-Control: public, max-age=86400, must-revalidate
+/css/*
+  Cache-Control: public, max-age=86400, must-revalidate
+
+# Content that changes: always revalidate (ETag makes it a cheap 304)
+/
+  Cache-Control: public, max-age=0, must-revalidate
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+/data/*
+  Cache-Control: public, max-age=300, must-revalidate
+/cal/*
+  Cache-Control: public, max-age=300, must-revalidate

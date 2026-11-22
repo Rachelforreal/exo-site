@@ -1,0 +1,11 @@
+/* 签到打卡：今日刊里的签到行 + 累计徽章边框（<html data-tier>） */
+.issue__ck { margin-top: 10px; max-width: 24em; font: 500 13px/1.7 var(--sans); color: var(--ink-3); letter-spacing: .02em; }
+.issue__ck b { color: var(--ink-2); font-weight: 700; }
+html[data-tier] .mag__ph { outline: 3px solid var(--tier); outline-offset: 6px; }
+html[data-tier="7"] { --tier: #c9ced8; }
+html[data-tier="30"] { --tier: #e8c15a; }
+html[data-tier="100"] { --tier: #7fe3d6; }
+html[data-tier="365"] { --tier: #ff9ad5; }
+
+.issue__ckbtn { margin-top: 10px; }
+.issue__ckbtn:disabled { opacity: .55; cursor: default; transform: none; }

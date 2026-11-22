@@ -1,0 +1,9 @@
+{
+  "name": "exo-site-tools",
+  "private": true,
+  "type": "module",
+  "description": "Build-time helpers (og.mjs needs sharp). node_modules is not committed.",
+  "dependencies": {
+    "sharp": "^0.35.5"
+  }
+}

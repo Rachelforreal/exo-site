@@ -1,0 +1,1078 @@
+[
+  {
+    "id": "ev-wb-cultural-night-20261128",
+    "date": "2026-11-28",
+    "title": "2026 微博国际文化交流之夜（中国·香港）",
+    "category": "演唱会",
+    "city": "香港",
+    "venue": "中国·香港（微博国际文化交流之夜盛典）",
+    "members": [
+      "group",
+      "kai",
+      "sehun"
+    ],
+    "verification": "official",
+    "channel": "微博",
+    "summary": "EXO 官方微博 11/22 正式官宣受邀出席 11 月 28 日于中国香港举办的「2026 微博国际文化交流之夜」。",
+    "sources": [
+      {
+        "name": "EXO 官方微博官宣帖",
+        "url": "https://m.weibo.cn/detail/5368008697447571"
+      }
+    ]
+  },
+  {
+    "id": "ev-020",
+    "title": "都暻秀 DAY OFF 巡演 首场（高阳 KINTEX）",
+    "summary": "巡演首站三场：10/2 19:30、10/3 与 10/4 17:00（韩国时间）。原定场馆 Ticketlink Live Arena，后改至高阳 KINTEX 第 5 展厅。",
+    "members": [
+      "do"
+    ],
+    "category": "演唱会",
+    "date": "2026-10-02",
+    "endDate": "2026-10-04",
+    "timeKST": "19:30",
+    "venue": "KINTEX 第 5 展厅",
+    "city": "高阳",
+    "ticket": {
+      "platform": null,
+      "url": null,
+      "onSale": null,
+      "note": null
+    },
+    "status": "done",
+    "verification": "media",
+    "channel": "媒体",
+    "sources": [
+      {
+        "name": "每日经济 MK 英文版（场馆变更）",
+        "url": "https://www.mk.co.kr/en/hot-issues/12147078"
+      },
+      {
+        "name": "都暻秀官方 X 巡演公告（2026-08-11）",
+        "url": "https://x.com/DOHKYUNGSOO_X/status/2087041318468153709"
+      }
+    ],
+    "series": "都暻秀 2026–2027 亚巡 [DAY OFF]"
+  },
+  {
+    "id": "ev-021",
+    "title": "灿烈日本迷你 2 辑《旅》实体发行",
+    "summary": "CHANYEOL 日本第 2 张迷你专辑《旅 (Tabi)》，收录 6 首，主打曲《Song For You》。数字音源 9/28 0:00（韩国/日本时间）先行上线，实体 10/2 发行。",
+    "members": [
+      "chanyeol"
+    ],
+    "category": "发行",
+    "date": "2026-10-02",
+    "endDate": null,
+    "timeKST": null,
+    "venue": null,
+    "city": null,
+    "ticket": {
+      "platform": null,
+      "url": null,
+      "onSale": null,
+      "note": null
+    },
+    "status": "done",
+    "verification": "official",
+    "channel": "官网",
+    "sources": [
+      {
+        "name": "EXO 日本官网 exo-jp.net 公告",
+        "url": "https://exo-jp.net/news/detail.php?id=1135736"
+      },
+      {
+        "name": "EXO 官方微博帖（发行日程，新浪镜像）",
+        "url": "https://www.sina.cn/news/detail/5338112714867540.html"
+      }
+    ]
+  },
+  {
+    "id": "ev-022",
+    "title": "SUHO 出演 SBS《The Listen》第 6 季 首播",
+    "summary": "SBS 街头音乐综艺《The Listen：我们停留的季节》第 6 季于 10/7 首播，SUHO 为固定出演歌手之一（每周三 22:50 KST 播出），同期发行节目合作单曲《Let's Stay Well》（10/4）。",
+    "members": [
+      "suho"
+    ],
+    "category": "影视综艺",
+    "date": "2026-10-07",
+    "endDate": null,
+    "timeKST": "22:50",
+    "venue": null,
+    "city": null,
+    "ticket": {
+      "platform": null,
+      "url": null,
+      "onSale": null,
+      "note": null
+    },
+    "status": "done",
+    "verification": "media",
+    "channel": "媒体",
+    "sources": [
+      {
+        "name": "Soompi（阵容确认）",
+        "url": "https://www.soompi.com/article/1867510wpp/exos-suho-ateezs-jongho-chuu-and-more-confirmed-as-cast-members-for-busking-program-the-listen-6"
+      },
+      {
+        "name": "SBS Star（首播报道）",
+        "url": "https://sbsstar.net/article/N1008786460/recordbreaking-14-vocalists-assemble-the-listen-premieres-tonight-featuring-exos-suho-ateezs-jongho-and-chuu"
+      },
+      {
+        "name": "EXO 官方微博播出提醒帖（新浪镜像）",
+        "url": "https://www.sina.cn/news/detail/5359107370648555.html"
+      }
+    ]
+  },
+  {
+    "id": "ev-023",
+    "title": "灿烈日本巡演 -The Route- 神奈川、爱知、大阪场",
+    "summary": "CHANYEOL JAPAN TOUR 2026 -The Route- 前三站：10/14 神奈川 KT Zepp Yokohama、10/29 爱知 Zepp Nagoya、11/2 大阪 Zepp Osaka Bayside。东京终场见 11/11 条目。",
+    "members": [
+      "chanyeol"
+    ],
+    "category": "演唱会",
+    "date": "2026-10-14",
+    "endDate": "2026-11-02",
+    "timeKST": null,
+    "venue": "KT Zepp Yokohama / Zepp Nagoya / Zepp Osaka Bayside",
+    "city": "横滨、名古屋、大阪",
+    "ticket": {
+      "platform": null,
+      "url": null,
+      "onSale": null,
+      "note": null
+    },
+    "status": "done",
+    "verification": "official",
+    "channel": "官网",
+    "sources": [
+      {
+        "name": "EXO 日本官网 exo-jp.net 巡演公告",
+        "url": "http://exo-jp.net/en/news/detail.php?id=1134632"
+      }
+    ],
+    "series": "灿烈 2026 日本巡演 [-The Route-]"
+  },
+  {
+    "id": "ev-024",
+    "title": "都暻秀 DAY OFF 巡演 澳门站",
+    "summary": "10/17–10/18 于澳门新濠影汇综艺馆（Studio City Event Center）连演两场；场次与场馆依据 8/11 官方巡演日程公告。",
+    "members": [
+      "do"
+    ],
+    "category": "演唱会",
+    "date": "2026-10-17",
+    "endDate": "2026-10-18",
+    "timeKST": null,
+    "venue": "Studio City Event Center",
+    "city": "澳门",
+    "ticket": {
+      "platform": null,
+      "url": null,
+      "onSale": null,
+      "note": null
+    },
+    "status": "done",
+    "verification": "media",
+    "channel": "媒体",
+    "sources": [
+      {
+        "name": "allkpop（巡演日程公告）",
+        "url": "https://www.allkpop.com/article/2026/08/doh-kyung-soo-announces-packed-2026-2027-day-off-concert-tour"
+      },
+      {
+        "name": "都暻秀官方 X 巡演公告（2026-08-11）",
+        "url": "https://x.com/DOHKYUNGSOO_X/status/2087041318468153709"
+      }
+    ],
+    "series": "都暻秀 2026–2027 亚巡 [DAY OFF]"
+  },
+  {
+    "id": "ev-025",
+    "title": "ENA《地球玛布尔世界旅行 4》首播（KAI、世勋为旅行搭档）",
+    "summary": "ENA 旅行综艺《地球玛布尔世界旅行 4》（World Dice Tour 4）于 10/17（周六）19:50 KST 首播，KAI 与吴世勋于 10/7 官宣作为本季旅行搭档加盟。",
+    "members": [
+      "kai",
+      "sehun"
+    ],
+    "category": "影视综艺",
+    "date": "2026-10-17",
+    "endDate": null,
+    "timeKST": "19:50",
+    "venue": null,
+    "city": null,
+    "ticket": {
+      "platform": null,
+      "url": null,
+      "onSale": null,
+      "note": null
+    },
+    "status": "done",
+    "verification": "media",
+    "channel": "媒体",
+    "sources": [
+      {
+        "name": "Soompi",
+        "url": "https://www.soompi.com/article/1876008wpp/chun-woo-hee-exos-kai-sehun-and-more-join-world-dice-tour-4-as-new-travel-partners"
+      }
+    ]
+  },
+  {
+    "id": "ev-003",
+    "title": "EXhOrizon [dot] 官方周边线上预购截止",
+    "summary": "安可演唱会官方周边线上预购期为 11/5 15:00 至 11/11 23:59（韩国时间）。日本地区同期通过 SMTOWN OFFICIAL ONLINE STORE 预购进口周边，2027 年 2 月中旬起发货（部分商品 3 月中旬）。",
+    "members": [
+      "group"
+    ],
+    "category": "会员与周边",
+    "date": "2026-11-05",
+    "endDate": "2026-11-11",
+    "timeKST": "15:00",
+    "endTimeKST": "23:59",
+    "venue": null,
+    "city": null,
+    "ticket": {
+      "platform": "Weverse Shop / Berriz（日本：SMTOWN OFFICIAL ONLINE STORE）",
+      "url": "https://shop.weverse.io/en/shop/USD/artists/124/notices/14855",
+      "onSale": "2026-11-05 15:00 KST",
+      "note": "11/11 23:59（韩国时间）截止；第 2 轮预购及发货细则以 Weverse Shop 官方公告为准"
+    },
+    "status": "upcoming",
+    "verification": "official",
+    "channel": "Weverse",
+    "sources": [
+      {
+        "name": "EXO Weverse 公告（官方周边销售）",
+        "url": "https://weverse.io/exo/notice/40574"
+      },
+      {
+        "name": "EXO 日本官网公告（进口周边预购）",
+        "url": "https://exo-jp.net/en/news/detail.php?id=1137070"
+      },
+      {
+        "name": "SMTOWN OFFICIAL ONLINE STORE（日本）专区",
+        "url": "https://shop-smtown.jp/category/exo_dot"
+      }
+    ]
+  },
+  {
+    "id": "ev-026",
+    "title": "EXO PLANET #6 - EXhOrizon [dot] 安可演唱会",
+    "summary": "第六次巡演的安可场，11/6 19:00、11/7 18:00、11/8 17:00（韩国时间）连开三天，含视野受限席在内全部售罄，约 3.3 万人到场。SUHO、灿烈、D.O.、KAI、世勋五人登台，共 32 首，《Suffocate》首次搬上舞台，末场以《Peter Pan》收尾。主巡演 4/10 自首尔出发，7/26 在新加坡结束，14 个地区 27 场。",
+    "members": [
+      "group"
+    ],
+    "category": "演唱会",
+    "date": "2026-11-06",
+    "endDate": "2026-11-08",
+    "timeKST": "19:00",
+    "venue": "KSPO DOME",
+    "city": "首尔",
+    "ticket": {
+      "platform": "Melon Ticket",
+      "url": null,
+      "onSale": "2026-08-31 20:00 KST",
+      "note": "粉丝俱乐部预售 8/27（韩国）、8/28（全球）；一般发售 8/31 20:00"
+    },
+    "status": "done",
+    "verification": "official",
+    "channel": "Weverse",
+    "sources": [
+      {
+        "name": "EXO Weverse 公告（安可演唱会）",
+        "url": "https://weverse.io/exo/notice/38455"
+      },
+      {
+        "name": "SBS 新闻（2026-11-09，演后报道）",
+        "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008837441"
+      },
+      {
+        "name": "京乡新闻（2026-11-09，演出评述）",
+        "url": "https://www.khan.co.kr/en/article/202611091713027/"
+      },
+      {
+        "name": "EXO 官方微博帖（日程，新浪镜像）",
+        "url": "https://www.sina.cn/news/detail/5333974936977928.html"
+      }
+    ]
+  },
+  {
+    "id": "ev-027",
+    "title": "EXhOrizon [dot] 第二天 线上直播",
+    "summary": "11/7 场通过 Beyond LIVE 与 Weverse 同步付费直播，18:00（韩国时间）开始。",
+    "members": [
+      "group"
+    ],
+    "category": "演唱会",
+    "date": "2026-11-07",
+    "endDate": null,
+    "timeKST": "18:00",
+    "venue": "线上（Beyond LIVE / Weverse）",
+    "city": null,
+    "ticket": {
+      "platform": "Weverse / Beyond LIVE",
+      "url": "https://shop.weverse.io/en/shop/USD/artists/124/notices/14436",
+      "onSale": null,
+      "note": "线上直播票"
+    },
+    "status": "done",
+    "verification": "official",
+    "channel": "Weverse",
+    "sources": [
+      {
+        "name": "EXO Weverse 公告（线上直播）",
+        "url": "https://weverse.io/exo/notice/39629"
+      },
+      {
+        "name": "Weverse Shop 公告（线上直播票）",
+        "url": "https://shop.weverse.io/en/shop/USD/artists/124/notices/14436"
+      }
+    ]
+  },
+  {
+    "id": "ev-028",
+    "title": "EXhOrizon [dot] 末场 影院 Live Viewing",
+    "summary": "11/8 末场 17:00（韩国时间）起在影院同步放映。SBS 演后报道为 24 个地区 768 家影院（演前公布数字为 23 个地区 757 家）。日本场次票价 5,200 日元，附日语字幕。",
+    "members": [
+      "group"
+    ],
+    "category": "演唱会",
+    "date": "2026-11-08",
+    "endDate": null,
+    "timeKST": "17:00",
+    "venue": "各地影院",
+    "city": null,
+    "ticket": {
+      "platform": null,
+      "url": null,
+      "onSale": null,
+      "note": "各地区票务不同"
+    },
+    "status": "done",
+    "verification": "official",
+    "channel": "Weverse",
+    "sources": [
+      {
+        "name": "EXO Weverse 公告（in CINEMAS）",
+        "url": "https://weverse.io/exo/notice/40094"
+      },
+      {
+        "name": "EXO 日本官网公告（Live Viewing 详情）",
+        "url": "https://exo-jp.net/en/news/detail.php?id=1136599"
+      },
+      {
+        "name": "SBS 新闻（2026-11-09）",
+        "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008837441"
+      }
+    ]
+  },
+  {
+    "id": "ev-010",
+    "title": "EXO-KASE《Waking Up The City》预售期",
+    "summary": "EXO-KASE 首张迷你专辑预售：11/10 至 11/30 23:59（韩国时间），Weverse Shop 标注 11/10 12:30 开始。版本：Photobook Ver.（随机/套装）、Poster Ver.、SMini Ver.（SMART ALBUM，随机/套装）。官方公告列出的店铺为 Berriz、Aladin、YES24；Weverse Shop 页面未列预售特典或签售。",
+    "members": [
+      "kai",
+      "sehun"
+    ],
+    "category": "发行",
+    "date": "2026-11-10",
+    "endDate": "2026-11-30",
+    "timeKST": "12:30",
+    "endTimeKST": "23:59",
+    "venue": null,
+    "city": null,
+    "ticket": {
+      "platform": "Weverse Shop / Berriz / Aladin / YES24",
+      "url": "https://shop.weverse.io/en/shop/USD/artists/124/notices/14915",
+      "onSale": "2026-11-10 12:30 KST",
+      "note": "11/30 23:59 截止；销量计入 Hanteo / Circle 榜单"
+    },
+    "status": "upcoming",
+    "verification": "official",
+    "channel": "Weverse",
+    "sources": [
+      {
+        "name": "EXO Weverse 公告（预售通知）",
+        "url": "https://weverse.io/exo/notice/40889"
+      },
+      {
+        "name": "Weverse Shop 公告",
+        "url": "https://shop.weverse.io/en/shop/USD/artists/124/notices/14915"
+      }
+    ]
+  },
+  {
+    "id": "ev-029",
+    "title": "张艺兴《闹天宫》实体专辑开启预售",
+    "summary": "张艺兴工作室微博公告：《斗战胜佛》前传《闹天宫》实体专辑于 11/10 10:07 开启预售，含实体 CD、画胶、磁带多版本，另有磁带数码播放机。预售入口为工作室帖内的 QQ 音乐、酷狗音乐短链。",
+    "members": [
+      "lay"
+    ],
+    "category": "发行",
+    "date": "2026-11-10",
+    "endDate": null,
+    "timeKST": null,
+    "timeLocal": "10:07（北京时间，工作室公告）",
+    "venue": null,
+    "city": null,
+    "ticket": {
+      "platform": "QQ 音乐 / 酷狗音乐",
+      "url": null,
+      "onSale": null,
+      "note": "11/10 开启线上预售，截止日期以各平台商品页为准"
+    },
+    "status": "done",
+    "verification": "official",
+    "channel": "微博",
+    "sources": [
+      {
+        "name": "张艺兴工作室微博帖（预售开启，新浪镜像）",
+        "url": "https://www.sina.cn/news/detail/5363646970465450.html"
+      },
+      {
+        "name": "张艺兴工作室微博帖（多版本配置，新浪镜像）",
+        "url": "https://www.sina.cn/news/detail/5362197384398442.html"
+      }
+    ]
+  },
+  {
+    "id": "ev-001",
+    "title": "灿烈日本巡演 -The Route- 东京终场",
+    "summary": "CHANYEOL JAPAN TOUR 2026 -The Route- 最后一站。开场 17:30 / 开演 18:30（日本时间，与韩国时间相同）。11/10 18:00 起通过 mu-mo shop 开放追加先到先得门票，票价 14,800 日元，入场另付 600 日元饮料费。",
+    "members": [
+      "chanyeol"
+    ],
+    "category": "演唱会",
+    "date": "2026-11-11",
+    "endDate": null,
+    "timeKST": "18:30",
+    "venue": "Zepp DiverCity (TOKYO)",
+    "city": "东京",
+    "ticket": {
+      "platform": "mu-mo shop",
+      "url": "https://shop.mu-mo.net/avx/sv/tourDetail?tour_code=00005852",
+      "onSale": "2026-11-10 18:00 KST",
+      "note": "追加票，先到先得；14,800 日元 + 饮料费 600 日元"
+    },
+    "status": "upcoming",
+    "verification": "official",
+    "channel": "官网",
+    "sources": [
+      {
+        "name": "EXO 日本官网 exo-jp.net 公告（东京场追加票）",
+        "url": "https://exo-jp.net/en/news/detail.php?id=1137193"
+      }
+    ],
+    "series": "灿烈 2026 日本巡演 [-The Route-]"
+  },
+  {
+    "id": "ev-002",
+    "title": "都暻秀数字单曲《Darling》发行",
+    "summary": "据 JoyNews24 11/9 报道，都暻秀数字单曲《Darling》定于 11/11 18:00（韩国时间）在各大音源平台发行，预告视觉经其官方 SNS 公开，发行署名 Blitzway Music。",
+    "members": [
+      "do"
+    ],
+    "category": "发行",
+    "date": "2026-11-11",
+    "endDate": null,
+    "timeKST": "18:00",
+    "venue": null,
+    "city": null,
+    "ticket": {
+      "platform": null,
+      "url": null,
+      "onSale": null,
+      "note": null
+    },
+    "status": "upcoming",
+    "verification": "media",
+    "channel": "媒体",
+    "sources": [
+      {
+        "name": "JoyNews24 报道（2026-11-09）",
+        "url": "https://www.joynews24.com/view/2023892"
+      }
+    ]
+  },
+  {
+    "id": "ev-030",
+    "title": "灿烈出演东京电视台《あのちゃんの電電電波♪》",
+    "summary": "日本官网公告的播出时间为「11 月 10 日（周二）26:00」，即 11/11 凌晨 2:00（日本时间，与韩国时间相同）。",
+    "members": [
+      "chanyeol"
+    ],
+    "category": "影视综艺",
+    "date": "2026-11-11",
+    "endDate": null,
+    "timeKST": "02:00",
+    "venue": null,
+    "city": null,
+    "ticket": {
+      "platform": null,
+      "url": null,
+      "onSale": null,
+      "note": null
+    },
+    "status": "done",
+    "verification": "official",
+    "channel": "官网",
+    "sources": [
+      {
+        "name": "EXO 日本官网 exo-jp.net 公告",
+        "url": "https://exo-jp.net/en/news/detail.php?id=1137071"
+      }
+    ]
+  },
+  {
+    "id": "ev-004",
+    "title": "CHEN 澳门见面会 [ONCE UPON A NIGHT]（未证实）",
+    "summary": "社交平台粉丝账号转述主办方「StarDream星梦引力」消息：2026 CHEN in MACAU [ONCE UPON A NIGHT] 传将于 11/14 在澳门渔人码头会议展览中心举行，并称 10/29 12:00（北京时间）在携程/Trip.com、猫眼、UUTIX 开票；截至核验日未见主办方原始公告、官方售票页或经纪方确认。",
+    "members": [
+      "chen"
+    ],
+    "category": "粉丝见面",
+    "date": "2026-11-14",
+    "endDate": null,
+    "timeKST": null,
+    "venue": "澳门渔人码头会议展览中心",
+    "city": "澳门",
+    "ticket": {
+      "platform": "携程/Trip.com、猫眼、UUTIX（据粉丝转述）",
+      "url": null,
+      "onSale": null,
+      "note": "社交平台转述 10/29 12:00 开票，未见官方售票页面"
+    },
+    "status": "upcoming",
+    "verification": "unverified",
+    "channel": "X",
+    "missing": "主办方 StarDream星梦引力 原始正式公告、携程/猫眼/UUTIX 官方售票页及艺人方确认通知（仅见社交平台二手转述）",
+    "sources": [
+      {
+        "name": "粉丝账号 CHEN GLOBAL（X）转述",
+        "url": "https://x.com/CHENGLOBALTEAM/status/2115034394675347472"
+      },
+      {
+        "name": "粉丝账号 EXO Chile（X）转述 10/31 主办方微博视频",
+        "url": "https://x.com/EXOChileOficial/status/2116704293872894174"
+      },
+      {
+        "name": "Threads 用户帖（2026-10-27）",
+        "url": "https://www.threads.com/@fayeesaur/post/De_pyRbGaVb/"
+      }
+    ]
+  },
+  {
+    "id": "ev-005",
+    "title": "都暻秀 DAY OFF 巡演 曼谷站",
+    "summary": "2026-2027 DOH KYUNG SOO CONCERT TOUR [DAY OFF] 曼谷两场：11/14 18:00、11/15 17:00（当地时间）。主办 Grand Prix Xpectrum，票价 2,900–6,500 泰铢，经 All Ticket 售票，入场细则请以售票页与主办方最新公告为准。",
+    "members": [
+      "do"
+    ],
+    "category": "演唱会",
+    "date": "2026-11-14",
+    "endDate": "2026-11-15",
+    "timeKST": null,
+    "timeLocal": "11/14 18:00、11/15 17:00（泰国时间）",
+    "venue": "Thunder Dome, Muang Thong Thani",
+    "city": "曼谷",
+    "ticket": {
+      "platform": "All Ticket",
+      "url": "https://www.allticket.com/event/2026-2027_DOH_KYUNGSOO_CONCERT_TOUR_DAYOFF_IN_BKK",
+      "onSale": null,
+      "note": "票价 2,900–6,500 泰铢"
+    },
+    "status": "upcoming",
+    "verification": "media",
+    "channel": "媒体",
+    "sources": [
+      {
+        "name": "Thairath 英文版报道",
+        "url": "https://en.thairath.co.th/entertain/inter/2957714"
+      },
+      {
+        "name": "都暻秀官方 X 巡演公告（2026-08-11）",
+        "url": "https://x.com/DOHKYUNGSOO_X/status/2087041318468153709"
+      }
+    ],
+    "series": "都暻秀 2026–2027 亚巡 [DAY OFF]"
+  },
+  {
+    "id": "ev-006",
+    "title": "都暻秀 DAY OFF 马尼拉站 开票",
+    "summary": "马尼拉站（2027-01-23）门票于 11/20（周五）经 TicketNet 线上及售票点发售。开票时刻两处说法不一：主办 Wilbros Live 的帖文为 12:00，GMA Entertainment 报道为 14:00（均为菲律宾时间），购票前请以 TicketNet 页面为准。票价：VIP Seated ₱16,800、LB Premium ₱13,800、LB Regular ₱10,600、UB Premium ₱8,400、UB Regular ₱4,200、GA ₱3,200。",
+    "members": [
+      "do"
+    ],
+    "category": "票务",
+    "date": "2026-11-20",
+    "endDate": null,
+    "timeKST": null,
+    "timeLocal": "12:00 或 14:00（菲律宾时间，媒体报道时刻存在分歧）",
+    "venue": "Smart Araneta Coliseum",
+    "city": "马尼拉",
+    "ticket": {
+      "platform": "TicketNet",
+      "url": null,
+      "onSale": null,
+      "note": "一般发售经 TicketNet 开售；具体整点时刻以 TicketNet 官方活动页为准"
+    },
+    "status": "upcoming",
+    "verification": "media",
+    "channel": "媒体",
+    "sources": [
+      {
+        "name": "GMA News（2026-11-07，内嵌主办 Wilbros Live 帖文）",
+        "url": "https://www.gmanetwork.com/news/lifestyle/hobbiesandactivities/1008638/doh-kyungsoo-in-manila-ticket-prices-fan-benefits-for-day-off-concert-in-january/story/"
+      },
+      {
+        "name": "GMA Entertainment（2026-11-08）",
+        "url": "https://www.gmanetwork.com/entertainment/showbiznews/doh-kyung-soos-day-off-in-manila-ticket-prices-seat-plan-and-more/140865/"
+      }
+    ],
+    "timeConflict": true
+  },
+  {
+    "id": "ev-007",
+    "title": "「bubble for INB100」服务终止",
+    "summary": "CBX 三人告知粉丝 9/30 起停止使用 Bubble，并于 10/7 转至 Fromm（프롬）。Bubble 运营方 10/9 发表声明称此举为单方面决定，将于 11/20 终止「bubble for INB100」服务（Singlelist 报道为 11:00）。",
+    "members": [
+      "xiumin",
+      "baekhyun",
+      "chen"
+    ],
+    "category": "会员与周边",
+    "date": "2026-11-20",
+    "endDate": null,
+    "timeKST": "11:00",
+    "venue": null,
+    "city": null,
+    "ticket": {
+      "platform": null,
+      "url": null,
+      "onSale": null,
+      "note": null
+    },
+    "status": "upcoming",
+    "verification": "media",
+    "channel": "媒体",
+    "sources": [
+      {
+        "name": "SPOTV News（2026-10-10）",
+        "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1012394"
+      },
+      {
+        "name": "Singlelist",
+        "url": "https://www.slist.kr/news/articleView.html?idxno=772256"
+      }
+    ]
+  },
+  {
+    "id": "ev-008",
+    "title": "都暻秀 DAY OFF 巡演 雅加达站",
+    "summary": "雅加达两场：11/21 19:00、11/22 15:00（印尼西部时间）。主办 LIT Xperience；雅加达旅游官网所列活动网站为 dohkyungsoojakarta2026.com。",
+    "members": [
+      "do"
+    ],
+    "category": "演唱会",
+    "date": "2026-11-21",
+    "endDate": "2026-11-22",
+    "timeKST": null,
+    "timeLocal": "11/21 19:00、11/22 15:00（WIB）",
+    "venue": "Istora Senayan (GBK)",
+    "city": "雅加达",
+    "ticket": {
+      "platform": "主办 LIT Xperience 活动网站",
+      "url": null,
+      "onSale": null,
+      "note": "媒体报道票价 Rp1,350,000 起 · 主办活动站 dohkyungsoojakarta2026.com"
+    },
+    "status": "upcoming",
+    "verification": "media",
+    "channel": "媒体",
+    "sources": [
+      {
+        "name": "Enjoy Jakarta（雅加达旅游官网）活动页",
+        "url": "https://enjoy.jakarta.go.id/events/2026-2027-doh-kyung-soo-concert-tour-day-off-in-jakarta"
+      },
+      {
+        "name": "The Seoul Story",
+        "url": "https://theseoulstory.com/upcoming-event-doh-kyungsoo-day-off-concert-in-jakarta/"
+      },
+      {
+        "name": "Today Stage（票价）",
+        "url": "https://todaystage.com/articles/events/back-again-here-are-the-ticket-prices-for-doh-kyung-soo-jakarta-concert/"
+      }
+    ],
+    "series": "都暻秀 2026–2027 亚巡 [DAY OFF]"
+  },
+  {
+    "id": "ev-009",
+    "title": "灿烈生日派对 2026 CHANYEOL B-day PARTY [B-side]",
+    "summary": "11/26（周四）20:00（韩国时间）于 YES24 LIVE HALL 举行，全席 77,000 韩元，每人限购 1 张。粉丝俱乐部认证 10/19 14:00–10/26 23:59，会员预售 10/26 20:00–23:59，一般发售 10/27 20:00 起。同步开放 Weverse 线上直播票，票档与销售时段见 Weverse Shop 公告页。",
+    "members": [
+      "chanyeol"
+    ],
+    "category": "粉丝见面",
+    "date": "2026-11-26",
+    "endDate": null,
+    "timeKST": "20:00",
+    "venue": "YES24 LIVE HALL",
+    "city": "首尔",
+    "ticket": {
+      "platform": "YES24 Ticket（线上直播：Weverse）",
+      "url": "https://ticket.yes24.com/Perf/60597",
+      "onSale": "2026-10-27 20:00 KST",
+      "note": "会员预售 10/26 20:00–23:59；一般发售 10/27 20:00 起；海外购票页 https://ticket.yes24.com/English/Perf/60597"
+    },
+    "status": "upcoming",
+    "verification": "official",
+    "channel": "Weverse",
+    "sources": [
+      {
+        "name": "EXO Weverse 公告（售票公告）",
+        "url": "https://weverse.io/exo/notice/40095"
+      },
+      {
+        "name": "Weverse Shop 公告（线上直播票）",
+        "url": "https://shop.weverse.io/en/shop/USD/artists/124/notices/14864"
+      },
+      {
+        "name": "EXO 官方微博帖（新浪镜像）",
+        "url": "https://www.sina.cn/news/detail/5355719941426625.html"
+      }
+    ]
+  },
+  {
+    "id": "ev-011",
+    "title": "KT4 EXO-KASE 预售特典赠送活动截止",
+    "summary": "Ktown4u 中文站开展「[EXO-KASE] 预售特典赠送活动（至 12/1）」。带特典商品为 Poster Ver.，随单加赠 Ktown4u 独家自拍小卡（4 种随机 1 种，参考折后价 RMB 81.29）；其余在售版本含 Photobook 随机版 / 2CD 套装与 SMini 随机版 / 2CD 套装，具体截止时刻与实时汇率价以活动页为准。",
+    "members": [
+      "kai",
+      "sehun"
+    ],
+    "category": "签售特典",
+    "date": "2026-12-01",
+    "endDate": null,
+    "timeKST": null,
+    "venue": null,
+    "city": null,
+    "ticket": {
+      "platform": "Ktown4u（KT4）",
+      "url": "https://cn.ktown4u.com/eventinfo?eve_no=44631274&biz_no=599",
+      "onSale": null,
+      "note": "活动页标注截止日为 12/1，实时人民币结算价随汇率浮动"
+    },
+    "status": "upcoming",
+    "verification": "official",
+    "channel": "KT4",
+    "sources": [
+      {
+        "name": "Ktown4u 活动页（EXO-KASE 预售特典赠送）",
+        "url": "https://cn.ktown4u.com/eventinfo?eve_no=44631274&biz_no=599"
+      },
+      {
+        "name": "Ktown4u 商品页（Poster Ver.，带特典）",
+        "url": "https://cn.ktown4u.com/iteminfo?goods_no=172049"
+      },
+      {
+        "name": "Ktown4u 商品页（Photobook 随机版）",
+        "url": "https://cn.ktown4u.com/iteminfo?goods_no=172043"
+      },
+      {
+        "name": "Ktown4u 商品页（Photobook 2CD 套装）",
+        "url": "https://cn.ktown4u.com/iteminfo?goods_no=172047"
+      },
+      {
+        "name": "Ktown4u 商品页（SMini 随机版）",
+        "url": "https://cn.ktown4u.com/iteminfo?goods_no=172050"
+      },
+      {
+        "name": "Ktown4u 商品页（SMini 2CD 套装）",
+        "url": "https://cn.ktown4u.com/iteminfo?goods_no=172053"
+      }
+    ]
+  },
+  {
+    "id": "ev-012",
+    "title": "EXO-KASE 首张迷你专辑《Waking Up The City》发行",
+    "summary": "KAI 与世勋的新小分队 EXO-KASE 以首张迷你专辑出道，12/1 18:00（韩国时间）正式发行。共收录 7 首曲目，含同名主打曲及两人各自的 SOLO 曲；完整曲目表与打歌宣传日程以官方后续公告为准。",
+    "members": [
+      "kai",
+      "sehun"
+    ],
+    "category": "发行",
+    "date": "2026-12-01",
+    "endDate": null,
+    "timeKST": "18:00",
+    "venue": null,
+    "city": null,
+    "ticket": {
+      "platform": null,
+      "url": null,
+      "onSale": null,
+      "note": null
+    },
+    "status": "upcoming",
+    "verification": "official",
+    "channel": "微博",
+    "sources": [
+      {
+        "name": "EXO 官方微博帖（发行日期，新浪镜像）",
+        "url": "https://www.sina.cn/news/detail/5363479118874970.html"
+      },
+      {
+        "name": "EXO 官方微博帖（7 首、含 SOLO 曲，新浪镜像）",
+        "url": "https://www.sina.cn/news/detail/5364035147268353.html"
+      },
+      {
+        "name": "EXO Weverse 公告（预售通知）",
+        "url": "https://weverse.io/exo/notice/40889"
+      },
+      {
+        "name": "Korea Herald（2026-11-11）",
+        "url": "https://www.koreaherald.com/article/10933633"
+      },
+      {
+        "name": "Soompi",
+        "url": "https://www.soompi.com/article/1885364wpp/exos-kai-and-sehun-gear-up-for-unit-debut-as-exo-kase-with-waking-up-the-city-teaser"
+      }
+    ]
+  },
+  {
+    "id": "ev-013",
+    "title": "都暻秀 DAY OFF 巡演 高雄站",
+    "summary": "高雄两场：12/19 18:00、12/20 17:00（当地时间），主办 D.SHOW Taiwan，场馆为高雄流行音乐中心海音馆。市场流传经 ibon 售票（参考票价 NT$3,880–6,480），具体开售时段与最终票价以主办方及 ibon 正式售票页为准。",
+    "members": [
+      "do"
+    ],
+    "category": "演唱会",
+    "date": "2026-12-19",
+    "endDate": "2026-12-20",
+    "timeKST": null,
+    "timeLocal": "12/19 18:00、12/20 17:00（当地时间，据公开演出日历）",
+    "venue": "高雄流行音乐中心 海音馆",
+    "city": "高雄",
+    "ticket": {
+      "platform": "ibon 售票系统（待售票页复核）",
+      "url": null,
+      "onSale": null,
+      "note": "开售批次与票价待主办方正式售票页公布"
+    },
+    "status": "upcoming",
+    "verification": "media",
+    "channel": "媒体",
+    "sources": [
+      {
+        "name": "TVBS 新闻（日期、场馆、主办）",
+        "url": "https://news.tvbs.com.tw/entertainment/jk-pop/4006415"
+      },
+      {
+        "name": "TimeTree 公开日历（场次时间、票价，二手）",
+        "url": "https://timetreeapp.com/public_calendars/taiwanconcert/events/3037734746735138006?locale=zh-TW"
+      }
+    ],
+    "series": "都暻秀 2026–2027 亚巡 [DAY OFF]"
+  },
+  {
+    "id": "ev-014",
+    "title": "EXO 2027 SEASON'S GREETINGS 开始发货",
+    "summary": "2027 年历周边自 10/13 15:00（韩国时间）起预售至售罄，12/24 起按单发货。品项含 Kit、Set 与 Wall Calendar；Weverse Shop 赠独家小卡套组与茶杯垫，Ktown4u 中文站另供附 5 张独家小卡的特典版本（实时价格以各平台结算页为准）。",
+    "members": [
+      "group"
+    ],
+    "category": "会员与周边",
+    "date": "2026-12-24",
+    "endDate": null,
+    "timeKST": null,
+    "venue": null,
+    "city": null,
+    "ticket": {
+      "platform": "Weverse Shop / Ktown4u",
+      "url": "https://shop.weverse.io/en/shop/USD/artists/124/notices/14553",
+      "onSale": "2026-10-13 15:00 KST",
+      "note": "10/13 起预售至售罄，12/24 起按订单顺序出库发货"
+    },
+    "status": "upcoming",
+    "verification": "official",
+    "channel": "Weverse",
+    "sources": [
+      {
+        "name": "Weverse Shop 公告（2027 SEASON'S GREETINGS）",
+        "url": "https://shop.weverse.io/en/shop/USD/artists/124/notices/14553"
+      },
+      {
+        "name": "Ktown4u 商品页（带特典版）",
+        "url": "https://cn.ktown4u.com/iteminfo?goods_no=170427"
+      }
+    ]
+  },
+  {
+    "id": "ev-015",
+    "title": "都暻秀 DAY OFF 巡演 新加坡站",
+    "summary": "2027/1/9（周六）19:00 开演，17:30 入场（新加坡时间）。主办 UnUsUaL Entertainment。票价 VIP S$328、CAT1 S$298、CAT2 S$268、CAT3 S$238；一般发售自 2026/9/23 12:00 起。",
+    "members": [
+      "do"
+    ],
+    "category": "演唱会",
+    "date": "2027-01-09",
+    "endDate": null,
+    "timeKST": null,
+    "timeLocal": "19:00（新加坡时间）",
+    "venue": "Singapore Indoor Stadium",
+    "city": "新加坡",
+    "ticket": {
+      "platform": "Ticketmaster Singapore",
+      "url": "https://ticketmaster.sg",
+      "onSale": null,
+      "note": "一般发售 2026-09-23 12:00（新加坡时间）起"
+    },
+    "status": "upcoming",
+    "verification": "official",
+    "channel": "官网",
+    "sources": [
+      {
+        "name": "The Kallang（场馆官方）活动页",
+        "url": "https://www.thekallang.com.sg/en/things-to-do/events/2026-2027-doh-kyung-soo-concert-tour-day-off-in-singapore.html"
+      }
+    ],
+    "series": "都暻秀 2026–2027 亚巡 [DAY OFF]"
+  },
+  {
+    "id": "ev-016",
+    "title": "都暻秀 DAY OFF 巡演 香港站",
+    "summary": "2027/1/16（周六）于香港亚洲国际博览馆 10 号展馆举行；具体开演时刻、票价及售票平台待主办方后续公布。",
+    "members": [
+      "do"
+    ],
+    "category": "演唱会",
+    "date": "2027-01-16",
+    "endDate": null,
+    "timeKST": null,
+    "venue": "亚洲国际博览馆 10 号展馆",
+    "city": "香港",
+    "ticket": {
+      "platform": null,
+      "url": null,
+      "onSale": null,
+      "note": null
+    },
+    "status": "upcoming",
+    "verification": "media",
+    "channel": "媒体",
+    "sources": [
+      {
+        "name": "Soompi 2027 巡演总表",
+        "url": "https://www.soompi.com/article/1880039wpp/2027-k-pop-tour-masterlist-concerts-fan-meetings-and-more"
+      },
+      {
+        "name": "点新闻 dotdotnews（2026-08-11）",
+        "url": "https://www.dotdotnews.com/a/202608/11/AP6a7ae34ae4b04b6c5d365c19.html"
+      }
+    ],
+    "series": "都暻秀 2026–2027 亚巡 [DAY OFF]",
+    "detailNote": "场馆定于亚洲国际博览馆 10 号展馆；开演时间、票价与售票平台待主办方后续公布"
+  },
+  {
+    "id": "ev-017",
+    "title": "都暻秀 DAY OFF 巡演 马尼拉站",
+    "summary": "2027/1/23（周六）18:00（菲律宾时间），主办 Wilbros Live。票价 ₱3,200–₱16,800，11/20 经 TicketNet 开票（见开票条目）。",
+    "members": [
+      "do"
+    ],
+    "category": "演唱会",
+    "date": "2027-01-23",
+    "endDate": null,
+    "timeKST": null,
+    "timeLocal": "18:00（菲律宾时间）",
+    "venue": "Smart Araneta Coliseum",
+    "city": "马尼拉",
+    "ticket": {
+      "platform": "TicketNet",
+      "url": null,
+      "onSale": null,
+      "note": "2026-11-20 开票，时刻有 12:00 / 14:00（菲律宾时间）两种说法"
+    },
+    "status": "upcoming",
+    "verification": "media",
+    "channel": "媒体",
+    "sources": [
+      {
+        "name": "GMA News（2026-11-07）",
+        "url": "https://www.gmanetwork.com/news/lifestyle/hobbiesandactivities/1008638/doh-kyungsoo-in-manila-ticket-prices-fan-benefits-for-day-off-concert-in-january/story/"
+      },
+      {
+        "name": "Philstar（2026-08-11）",
+        "url": "https://www.philstar.com/entertainment/korean-wave/2026/08/11/2548588/exos-do-sets-manila-return-2027"
+      }
+    ],
+    "series": "都暻秀 2026–2027 亚巡 [DAY OFF]"
+  },
+  {
+    "id": "ev-018",
+    "title": "都暻秀 DAY OFF 巡演 东京站",
+    "summary": "2027/2/27–28 于东京京王 Arena TOKYO 连演两场；具体开演时刻、官方票价与先行抽选日程待日本主办方正式发布。",
+    "members": [
+      "do"
+    ],
+    "category": "演唱会",
+    "date": "2027-02-27",
+    "endDate": "2027-02-28",
+    "timeKST": null,
+    "venue": "京王 Arena TOKYO",
+    "city": "东京",
+    "ticket": {
+      "platform": null,
+      "url": null,
+      "onSale": null,
+      "note": null
+    },
+    "status": "upcoming",
+    "verification": "media",
+    "channel": "媒体",
+    "sources": [
+      {
+        "name": "Soompi 2027 巡演总表",
+        "url": "https://www.soompi.com/article/1880039wpp/2027-k-pop-tour-masterlist-concerts-fan-meetings-and-more"
+      }
+    ],
+    "series": "都暻秀 2026–2027 亚巡 [DAY OFF]",
+    "detailNote": "场馆定于京王 Arena TOKYO；官方票务与抽选日程待公布"
+  },
+  {
+    "id": "ev-019",
+    "title": "都暻秀 DAY OFF 巡演 台北站",
+    "summary": "2027/3/13–14 于台北流行音乐中心连演两场，主办方为 D.SHOW Taiwan；具体开演时刻与售票安排待后续公布。",
+    "members": [
+      "do"
+    ],
+    "category": "演唱会",
+    "date": "2027-03-13",
+    "endDate": "2027-03-14",
+    "timeKST": null,
+    "venue": "台北流行音乐中心",
+    "city": "台北",
+    "ticket": {
+      "platform": null,
+      "url": null,
+      "onSale": null,
+      "note": null
+    },
+    "status": "upcoming",
+    "verification": "media",
+    "channel": "媒体",
+    "sources": [
+      {
+        "name": "TVBS 新闻",
+        "url": "https://news.tvbs.com.tw/entertainment/jk-pop/4006415"
+      },
+      {
+        "name": "Soompi 2027 巡演总表",
+        "url": "https://www.soompi.com/article/1880039wpp/2027-k-pop-tour-masterlist-concerts-fan-meetings-and-more"
+      }
+    ],
+    "series": "都暻秀 2026–2027 亚巡 [DAY OFF]",
+    "detailNote": "场馆定于台北流行音乐中心；开演时间、票价与售票平台待主办方后续公布"
+  }
+]

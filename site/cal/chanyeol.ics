@@ -1,0 +1,74 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//exolneverland.com//EXO 星球//ZH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:EXO 星球 · CHANYEOL
+X-WR-TIMEZONE:Asia/Seoul
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:ev-023@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:灿烈日本巡演 -The Route- 神奈川、爱知、大阪场
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261103
+DESCRIPTION:CHANYEOL JAPAN TOUR 2026 -The Route- 前三站：10/14 神奈
+ 川 KT Zepp Yokohama、10/29 爱知 Zepp Nagoya、11/2 大阪 Zepp Osaka B
+ ayside。东京终场见 11/11 条目。\n核验：官方\nhttp://exo-jp.n
+ et/en/news/detail.php?id=1134632
+LOCATION:KT Zepp Yokohama / Zepp Nagoya / Zepp Osaka Bayside\, 横滨、名
+ 古屋、大阪
+URL:https://www.exolneverland.com/member.html?id=chanyeol
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-001@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:灿烈日本巡演 -The Route- 东京终场
+DTSTART:20261111T093000Z
+DTEND:20261111T113000Z
+DESCRIPTION:CHANYEOL JAPAN TOUR 2026 -The Route- 最后一站。开场 17:3
+ 0 / 开演 18:30（日本时间，与韩国时间相同）。11/10 18:00 
+ 起通过 mu-mo shop 开放追加先到先得门票，票价 14\,800 日
+ 元，入场另付 600 日元饮料费。\n核验：官方\nhttps://exo-jp
+ .net/en/news/detail.php?id=1137193
+LOCATION:Zepp DiverCity (TOKYO)\, 东京
+URL:https://www.exolneverland.com/member.html?id=chanyeol
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-030@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:灿烈出演东京电视台《あのちゃんの電電電波♪》
+DTSTART:20261110T170000Z
+DTEND:20261110T190000Z
+DESCRIPTION:日本官网公告的播出时间为「11 月 10 日（周二
+ ）26:00」，即 11/11 凌晨 2:00（日本时间，与韩国时间相同
+ ）。\n核验：官方\nhttps://exo-jp.net/en/news/detail.php?id=1137071
+URL:https://www.exolneverland.com/member.html?id=chanyeol
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-009@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:灿烈生日派对 2026 CHANYEOL B-day PARTY [B-side]
+DTSTART:20261126T110000Z
+DTEND:20261126T130000Z
+DESCRIPTION:11/26（周四）20:00（韩国时间）于 YES24 LIVE HALL 举
+ 行，全席 77\,000 韩元，每人限购 1 张。粉丝俱乐部认证 1
+ 0/19 14:00–10/26 23:59，会员预售 10/26 20:00–23:59，一般发售
+  10/27 20:00 起。同步开放 Weverse 线上直播票，票档与销售
+ 时段见 Weverse Shop 公告页。\n核验：官方\nhttps://weverse.io/e
+ xo/notice/40095
+LOCATION:YES24 LIVE HALL\, 首尔
+URL:https://www.exolneverland.com/member.html?id=chanyeol
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-chanyeol@exolneverland.com
+DTSTAMP:20261122T140918Z
+DTSTART;VALUE=DATE:19921127
+DTEND;VALUE=DATE:19921128
+RRULE:FREQ=YEARLY
+SUMMARY:朴灿烈（CHANYEOL）生日
+URL:https://www.exolneverland.com/member.html?id=chanyeol
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//exolneverland.com//EXO 星球//ZH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:EXO 星球 · CHEN
+X-WR-TIMEZONE:Asia/Seoul
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:ev-007@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:「bubble for INB100」服务终止
+DTSTART:20261120T020000Z
+DTEND:20261120T040000Z
+DESCRIPTION:CBX 三人告知粉丝 9/30 起停止使用 Bubble，并于 10/
+ 7 转至 Fromm（프롬）。Bubble 运营方 10/9 发表声明称此举
+ 为单方面决定，将于 11/20 终止「bubble for INB100」服务（Si
+ nglelist 报道为 11:00）。\n核验：媒体\nhttps://www.spotvnews.co.
+ kr/news/articleView.html?idxno=1012394
+URL:https://www.exolneverland.com/member.html?id=chen
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-chen@exolneverland.com
+DTSTAMP:20261122T140918Z
+DTSTART;VALUE=DATE:19920921
+DTEND;VALUE=DATE:19920922
+RRULE:FREQ=YEARLY
+SUMMARY:金钟大（CHEN）生日
+URL:https://www.exolneverland.com/member.html?id=chen
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

@@ -20,7 +20,3 @@ cd site && python3 -m http.server 8766
 ## 版权说明
 
 网站中的成员照片版权属于 SM Entertainment，仅用于粉丝向展示，请勿商用。
-
-## 获取源码
-
-下载并解压 `exo-site-source.zip`，其中包含 `site/`、`data/`、`tools/` 和 `worker/`。

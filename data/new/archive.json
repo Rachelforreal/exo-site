@@ -1,0 +1,1392 @@
+{
+  "road": [
+    {
+      "d": "2011-12-23",
+      "who": "kai",
+      "kind": "group",
+      "t": "首支预告《MY LADY》公开",
+      "s": "KAI 率先亮相，长达百日的 23 支出道预告企划正式开启"
+    },
+    {
+      "d": "2012-01-30",
+      "who": "exo",
+      "kind": "group",
+      "t": "首支先行曲《What Is Love》",
+      "s": "韩中双语版本同日释出，主唱声线首次完整揭晓"
+    },
+    {
+      "d": "2012-03-31",
+      "who": "exo",
+      "kind": "live",
+      "t": "EXO 出道前首尔 Showcase",
+      "s": "EXO-K 与 EXO-M 在首尔奥林匹克公园 Olympic Hall 同台，以《HISTORY》开场。",
+      "src": "https://www.fnnews.com/news/201203312109088996",
+      "srcLabel": "韩国 Financial News"
+    },
+    {
+      "d": "2012-04-08",
+      "who": "exo",
+      "kind": "group",
+      "t": "EXO-K 与 EXO-M 正式出道",
+      "s": "两个小队在韩国与中国同一天以《MAMA》出道。",
+      "img": "img/group/mama-exo-k.jpg",
+      "src": "https://en.yna.co.kr/view/AEN20220317006700315",
+      "srcLabel": "韩联社"
+    },
+    {
+      "d": "2012-11-30",
+      "who": "exo",
+      "kind": "group",
+      "t": "MAMA 最佳亚洲新人团体奖",
+      "s": "香港亚洲国际博览馆捧起出道首座重量级新人奖杯"
+    },
+    {
+      "d": "2013-06-03",
+      "who": "exo",
+      "kind": "group",
+      "t": "正规一辑《XOXO (Kiss & Hug)》",
+      "s": "全员首次合体回归，《Wolf》拿下出道后首个音乐节目一位",
+      "img": "img/group/xoxo-1.jpg"
+    },
+    {
+      "d": "2013-08-05",
+      "who": "exo",
+      "kind": "group",
+      "t": "改版神曲《Growl（咆哮）》席卷全亚洲",
+      "s": "一镜到底校服运镜成时代符号，实体总销量突破百万张（韩国歌坛时隔 12 年首张百万专）",
+      "img": "img/group/growl-1.webp"
+    },
+    {
+      "d": "2013-11-22",
+      "who": "exo",
+      "kind": "group",
+      "t": "《XOXO》获 MAMA 年度专辑奖",
+      "s": "EXO 凭首张正规专辑《XOXO》获奖。",
+      "src": "https://www.youtube.com/watch?v=G6ALs6ofLCI",
+      "srcLabel": "MAMA 历届获奖回顾"
+    },
+    {
+      "d": "2013-12-09",
+      "who": "exo",
+      "kind": "group",
+      "t": "冬季特别专辑《十二月的奇迹》",
+      "s": "《Miracles in December》推出韩语版和中文版本。",
+      "src": "https://en.wikipedia.org/wiki/Miracles_in_December",
+      "srcLabel": "维基百科 · 发行资料",
+      "img": "img/covers/miracles-in-december.webp"
+    },
+    {
+      "d": "2014-05-07",
+      "who": "exo",
+      "kind": "group",
+      "t": "迷你二辑《Overdose（上瘾）》",
+      "s": "迷宫编舞横扫榜单，EXO-K 版创下当年韩国唱片年榜销量冠军"
+    },
+    {
+      "d": "2014-05-23",
+      "who": "exo",
+      "kind": "live",
+      "t": "首次单独巡演《The Lost Planet》",
+      "s": "首尔奥林匹克体操竞技场连开三场，正式开启全球巡演版图"
+    },
+    {
+      "d": "2014-07-23",
+      "who": "do",
+      "kind": "solo",
+      "t": "《没关系，是爱情啊》演员初啼声",
+      "s": "都暻秀饰演韩江宇感动无数观众，金钟大献唱首支个人 OST《最佳的幸运》"
+    },
+    {
+      "d": "2014-08-05",
+      "who": "exo",
+      "kind": "group",
+      "t": "官方粉丝名「EXO-L」诞生",
+      "s": "英文字母 L 恰在 K 与 M 正中央，寓意 EXO-LOVE，我们终于有了共同的名字"
+    },
+    {
+      "d": "2014-12-03",
+      "who": "exo",
+      "kind": "group",
+      "t": "《Overdose》获 MAMA 年度专辑奖",
+      "s": "EXO 获年度专辑奖及亚洲年度艺人奖。",
+      "src": "https://prtimes.jp/main/html/rd/p/000000225.000003711.html",
+      "srcLabel": "CJ E&M 官方新闻稿"
+    },
+    {
+      "d": "2015-03-07",
+      "who": "exo",
+      "kind": "live",
+      "t": "二巡《The EXO'luXion》体操场五连开",
+      "s": "全球首创体操竞技场单轮五场完售纪录，激光雨与夜店风舞台封神"
+    },
+    {
+      "d": "2015-03-30",
+      "who": "exo",
+      "kind": "group",
+      "t": "正规二辑《EXODUS》",
+      "s": "发行第二张正规专辑，主打《CALL ME BABY》。",
+      "img": "img/group/exodus-1.jpg",
+      "src": "https://music.apple.com/us/artist/exo/657630070",
+      "srcLabel": "Apple Music · 发行目录"
+    },
+    {
+      "d": "2015-06-03",
+      "who": "exo",
+      "kind": "group",
+      "t": "正规二辑改版《LOVE ME RIGHT》",
+      "s": "改版收录同名主打，以及《约定（EXO 2014）》等新曲。",
+      "src": "https://en.wikipedia.org/wiki/Exodus_(Exo_album)",
+      "srcLabel": "维基百科 · 发行资料",
+      "img": "img/group/love-me-right-1.jpg"
+    },
+    {
+      "d": "2015-10-10",
+      "who": "exo",
+      "kind": "live",
+      "t": "韩国首座巨蛋开馆首唱歌手",
+      "s": "于首尔高尺天空巨蛋举办《EXO-Love CONCERT in DOME》，两万两千名爱丽银海见证历史"
+    },
+    {
+      "d": "2015-11-04",
+      "who": "exo",
+      "kind": "group",
+      "t": "日本出道单曲《Love Me Right ～romantic universe～》",
+      "s": "在日本发行首张单曲，另收录《Drop That》。",
+      "src": "https://avexnet.jp/contents/EXOXX-XXXX-XXXX/discography/1011011",
+      "srcLabel": "Avex 官方唱片目录"
+    },
+    {
+      "d": "2015-12-10",
+      "who": "exo",
+      "kind": "group",
+      "t": "冬季特别专辑《Sing For You》",
+      "s": "以同名歌曲为主打，推出韩语版和中文版本。",
+      "src": "https://music.apple.com/us/album/sing-for-you-winter-special-album-2015/1064933592",
+      "srcLabel": "Apple Music · 发行页",
+      "img": "img/covers/sing-for-you.webp"
+    },
+    {
+      "d": "2016-06-09",
+      "who": "exo",
+      "kind": "group",
+      "t": "正规三辑《EX'ACT》与三白金百万纪录",
+      "s": "双主打《Monster》《Lucky One》及改版《LOTTO》再破百万，三巡《The EXO'rDIUM》首尔六连开再刷纪录",
+      "img": "img/group/exact-2016.jpg"
+    },
+    {
+      "d": "2016-07-22",
+      "who": "exo",
+      "kind": "live",
+      "t": "三巡《The EXO’rDIUM》首尔开场",
+      "s": "巡演从奥林匹克公园体操竞技场开启，7 月 22 日是后来加开的首场。",
+      "src": "https://cn.yna.co.kr/view/ACK20160701002700881",
+      "srcLabel": "韩联社"
+    },
+    {
+      "d": "2016-08-18",
+      "who": "exo",
+      "kind": "group",
+      "t": "正规三辑改版《LOTTO》",
+      "s": "《EX’ACT》改版发行，同名歌曲《Lotto》为主打。",
+      "src": "https://en.wikipedia.org/wiki/Exo_discography",
+      "srcLabel": "维基百科 · 唱片目录",
+      "img": "img/covers/lotto.webp"
+    },
+    {
+      "d": "2016-09-17",
+      "who": "exo",
+      "kind": "group",
+      "t": "《无限挑战》合作曲《Dancing King》",
+      "s": "与刘在石在曼谷演唱会完成特级合作舞台，音源收益全额公益捐赠"
+    },
+    {
+      "d": "2016-10-28",
+      "who": "lay",
+      "kind": "solo",
+      "t": "个人首张迷你专辑《LOSE CONTROL》",
+      "s": "张艺兴包揽全专词曲编制作，开启队内个人实体唱片先河"
+    },
+    {
+      "d": "2016-10-31",
+      "who": "unit",
+      "kind": "unit",
+      "t": "首支小分队 EXO-CBX《Hey Mama!》出道",
+      "s": "金珉锡、边伯贤、金钟大组成复古放克三人组，愉快能量席卷舞台"
+    },
+    {
+      "d": "2016-12-02",
+      "who": "exo",
+      "kind": "group",
+      "t": "《EX’ACT》获 MAMA 年度专辑奖",
+      "s": "EXO 同晚获得最佳男子团体奖。",
+      "src": "https://mama.mnetplus.world/history/2016/winners",
+      "srcLabel": "MAMA 官方获奖名单"
+    },
+    {
+      "d": "2016-12-19",
+      "who": "exo",
+      "kind": "group",
+      "t": "冬季特别专辑《For Life》",
+      "s": "发行冬季特别专辑，以《For Life》为主打。",
+      "src": "https://en.wikipedia.org/wiki/Exo_discography",
+      "srcLabel": "维基百科 · 唱片目录",
+      "img": "img/covers/for-life.webp"
+    },
+    {
+      "d": "2017-05-27",
+      "who": "exo",
+      "kind": "live",
+      "t": "首尔蚕室主竞技场安可场《The EXO'rDIUM [dot]》",
+      "s": "挺进韩国最大规模室外体育场，两晚动员逾七万名观众共织彩虹灯海"
+    },
+    {
+      "d": "2017-07-18",
+      "who": "exo",
+      "kind": "group",
+      "t": "正规四辑《THE WAR》",
+      "s": "发行第四张正规专辑，主打《Ko Ko Bop》。",
+      "img": "img/group/the-war-1.webp",
+      "src": "https://music.apple.com/us/album/the-war-the-4th-album/1260294767",
+      "srcLabel": "Apple Music · 发行页"
+    },
+    {
+      "d": "2017-09-05",
+      "who": "exo",
+      "kind": "group",
+      "t": "正规四辑改版《The Power of Music》",
+      "s": "《THE WAR》改版发行，主打曲为《Power》。",
+      "src": "https://en.wikipedia.org/wiki/Exo_discography",
+      "srcLabel": "维基百科 · 唱片目录",
+      "img": "img/group/the-war-power.jpg"
+    },
+    {
+      "d": "2017-11-24",
+      "who": "exo",
+      "kind": "live",
+      "t": "四巡《The EℓyXiOn》首尔开场",
+      "s": "第四次巡演在首尔高尺天空巨蛋开演。",
+      "src": "https://sbsstar.net/article/N1004502943/exo-mesmerizes-fans-at-the-eyxion-dome-concert",
+      "srcLabel": "SBS Star"
+    },
+    {
+      "d": "2017-12-26",
+      "who": "exo",
+      "kind": "group",
+      "t": "冬日经典特别专辑《Universe》",
+      "s": "摇滚抒情主打《Universe（为心导航）》成为每年初雪必听曲目"
+    },
+    {
+      "d": "2018-01-16",
+      "who": "exo",
+      "kind": "live",
+      "t": "《Power》响彻迪拜哈利法塔音乐喷泉",
+      "s": "史上首支入选世界最大音乐喷泉常设剧目的 K-pop 歌曲，全员亲赴迪拜见证首演",
+      "img": "img/group/the-war-power.jpg"
+    },
+    {
+      "d": "2018-01-31",
+      "who": "exo",
+      "kind": "group",
+      "t": "首张日文正规专辑《COUNTDOWN》",
+      "s": "由 Avex 发行，收录《Electric Kiss》。",
+      "src": "https://avexnet.jp/contents/EXOXX-XXXX-XXXX/discography/1015421",
+      "srcLabel": "Avex 官方唱片目录"
+    },
+    {
+      "d": "2018-02-25",
+      "who": "exo",
+      "kind": "live",
+      "t": "平昌冬奥会闭幕式代表舞台",
+      "s": "面向全球亿万观众压轴演绎《Growl》与《Power》",
+      "img": "img/group/kbs-2018-pin.webp"
+    },
+    {
+      "d": "2018-04-10",
+      "who": "unit",
+      "kind": "unit",
+      "t": "EXO-CBX 迷你二辑《Blooming Days》",
+      "s": "从周一唱到周日的七首精致流行曲，同期展开日本竞技场巡演《MAGICAL CIRCUS》"
+    },
+    {
+      "d": "2018-11-02",
+      "who": "exo",
+      "kind": "group",
+      "t": "正规五辑《DON’T MESS UP MY TEMPO》",
+      "s": "发行第五张正规专辑，主打《Tempo》。",
+      "img": "img/group/dmumt-1.jpg",
+      "src": "https://music.apple.com/us/artist/exo/657630070",
+      "srcLabel": "Apple Music · 发行目录"
+    },
+    {
+      "d": "2018-12-13",
+      "who": "exo",
+      "kind": "group",
+      "t": "正规五辑改版《LOVE SHOT》",
+      "s": "《DON’T MESS UP MY TEMPO》改版发行，主打同名歌曲。",
+      "src": "https://en.wikipedia.org/wiki/Exo_discography",
+      "srcLabel": "维基百科 · 唱片目录",
+      "img": "img/group/love-shot-1.jpg"
+    },
+    {
+      "d": "2019-04-01",
+      "who": "chen",
+      "kind": "solo",
+      "t": "CHEN 首张个人专辑《四月，和花》",
+      "s": "主打《Beautiful goodbye（四月后的离别）》横扫春季音源榜首"
+    },
+    {
+      "d": "2019-05-07",
+      "who": "xiumin",
+      "kind": "service",
+      "t": "军白期启程 · 大哥金珉锡率先入伍",
+      "s": "发表个人单曲《理由 (You)》告别粉丝，同年 7 月都暻秀亦携《没关系 (That's okay)》低调入伍"
+    },
+    {
+      "d": "2019-07-10",
+      "who": "baekhyun",
+      "kind": "solo",
+      "t": "BAEKHYUN 首张个人 EP《City Lights》",
+      "s": "主打《UN Village》创下当年韩国 SOLO 歌手最高销量纪录"
+    },
+    {
+      "d": "2019-07-19",
+      "who": "exo",
+      "kind": "live",
+      "t": "五巡《EXplOration》首尔开场",
+      "s": "第五次巡演在首尔奥林匹克公园 KSPO DOME 开演。",
+      "src": "https://www.koreatimes.co.kr/entertainment/k-pop/20190728/exo-concert-idols-fans-complete-concert-together",
+      "srcLabel": "The Korea Times"
+    },
+    {
+      "d": "2019-07-22",
+      "who": "unit",
+      "kind": "unit",
+      "t": "第二支小分队 EXO-SC《What a life》出道",
+      "s": "朴灿烈、吴世勋参与全专词曲，同期团体五巡《EXplOration》首尔六场火热开唱"
+    },
+    {
+      "d": "2019-10-04",
+      "who": "unit",
+      "kind": "unit",
+      "t": "跨团企划组合 SuperM 北美出道",
+      "s": "边伯贤（担任队长）与金钟仁合流，首专空降美国 Billboard 200 专辑榜冠军"
+    },
+    {
+      "d": "2019-11-27",
+      "who": "exo",
+      "kind": "group",
+      "t": "正规六辑《OBSESSION》双生概念回归",
+      "s": "EXO 与镜像克隆 X-EXO 正面对峙，暗黑前卫曲风刷新舞台美学高度",
+      "img": "img/group/obsession-1.webp"
+    },
+    {
+      "d": "2020-03-30",
+      "who": "suho",
+      "kind": "solo",
+      "t": "SUHO 首张个人专辑《自画像 (Self-Portrait)》",
+      "s": "全专参与概念企划与作词，主打《Let's Love（相爱吧）》致敬团队口号"
+    },
+    {
+      "d": "2020-05-25",
+      "who": "baekhyun",
+      "kind": "solo",
+      "t": "《Delight》突破百万销量 · 双百万里程碑",
+      "s": "主打《Candy》掀起挑战热潮，边伯贤成为时隔 19 年首位达成团体与个人双百万销量的歌手"
+    },
+    {
+      "d": "2020-07-09",
+      "who": "sehun",
+      "kind": "solo",
+      "t": "吴世勋《On Me》MV 公开",
+      "s": "吴世勋的个人曲，收录于 EXO-SC 正规专辑《1 Billion Views》。",
+      "src": "https://www.youtube.com/watch?v=6SbXGBC7GU4",
+      "srcLabel": "SMTOWN 官方 MV"
+    },
+    {
+      "d": "2020-07-13",
+      "who": "unit",
+      "kind": "unit",
+      "t": "EXO-SC 首张正规专辑《1 Billion Views》",
+      "s": "竹马小分队销量破 50 万张，收录吴世勋首支个人独唱曲《On Me》"
+    },
+    {
+      "d": "2020-11-30",
+      "who": "kai",
+      "kind": "solo",
+      "t": "KAI 首张个人专辑《KAI (开)》",
+      "s": "主打《Mmmh》与全曲目电影级视觉短片《FILM : KAI》惊艳全球，顺利接力退伍的大哥 XIUMIN"
+    },
+    {
+      "d": "2021-06-07",
+      "who": "exo",
+      "kind": "group",
+      "t": "特别专辑《DON’T FIGHT THE FEELING》",
+      "s": "XIUMIN、LAY、BAEKHYUN、CHANYEOL、D.O.、KAI 与 SEHUN 七位成员参与。",
+      "img": "img/group/dftf-1.webp",
+      "src": "https://www.bandwagon.asia/articles/exo-comeback-album-dont-fight-the-feeling-song-new-release-kai-chanyeol-lay-zhang-do-baekhyun-sehun-xiumin-sm-entertainment-listen-music-video-watch-june-2021",
+      "srcLabel": "Bandwagon"
+    },
+    {
+      "d": "2021-07-26",
+      "who": "do",
+      "kind": "solo",
+      "t": "D.O. 首张个人专辑《共感 (Empathy)》",
+      "s": "原木吉他主打《Rose》亲自作词，展现纯粹温暖的不插电声学质感"
+    },
+    {
+      "d": "2022-04-04",
+      "who": "suho",
+      "kind": "solo",
+      "t": "SUHO 发行迷你二辑《Grey Suit》",
+      "s": "退伍后发行的首张个人专辑，收录六首歌曲。",
+      "src": "https://www.nme.com/news/music/exo-suho-release-new-grey-suit-mini-album-music-video-comeback-3197334",
+      "srcLabel": "NME"
+    },
+    {
+      "d": "2022-04-09",
+      "who": "exo",
+      "kind": "live",
+      "t": "出道十周年纪念见面会",
+      "s": "SUHO、XIUMIN、D.O.、KAI 与 SEHUN 在首尔蚕室室内体育馆与粉丝见面。",
+      "src": "https://en.yna.co.kr/view/AEN20220317006700315",
+      "srcLabel": "韩联社"
+    },
+    {
+      "d": "2022-09-26",
+      "who": "xiumin",
+      "kind": "solo",
+      "t": "XIUMIN 首张个人专辑《Brand New》",
+      "s": "复古千禧 90 年代 New Jack Swing 舞曲能量满格",
+      "src": "https://music.apple.com/us/album/brand-new-the-1st-mini-album-ep/1646020373",
+      "srcLabel": "Apple Music · 发行页"
+    },
+    {
+      "d": "2023-04-08",
+      "who": "exo",
+      "kind": "live",
+      "t": "十一周年见面会《EXO’ CLOCK》",
+      "s": "八位成员在首尔 KSPO DOME 亮相，见面会于 4 月 8 日和 9 日举行。",
+      "src": "https://www.liputan6.com/showbiz/read/5255772/exo-gelar-fanmeeting-exo-clock-rayakan-anniversary-ke-11-tahun-di-kspo-dome-tampil-ot8-dan-tiup-lilin-bareng",
+      "srcLabel": "Liputan6 现场报道"
+    },
+    {
+      "d": "2023-07-10",
+      "who": "exo",
+      "kind": "group",
+      "t": "正规七辑《EXIST》· 七度加冕百万销量",
+      "s": "清凉感假音主打《Cream Soda》与先行曲《Let Me In》《Hear Me Out》获乐评与商业双丰收",
+      "img": "img/group/exist-1.webp"
+    },
+    {
+      "d": "2024-04-14",
+      "who": "exo",
+      "kind": "live",
+      "t": "EXO 粉丝见面会《ONE》",
+      "s": "官方公告列出 INSPIRE ARENA 的下午、晚上两场演出。",
+      "src": "https://weverse.io/exo/notice/17854",
+      "srcLabel": "EXO 官方公告 · Weverse"
+    },
+    {
+      "d": "2024-08-28",
+      "who": "chanyeol",
+      "kind": "solo",
+      "t": "CHANYEOL 首张个人专辑《Black Out》",
+      "s": "出道十二年迎来首张个人迷你辑并展开亚洲巡演，至此九位成员全员完成个人音乐作品拼图",
+      "src": "https://en.wikipedia.org/wiki/Black_Out_(EP)",
+      "srcLabel": "维基百科 · 发行资料"
+    },
+    {
+      "d": "2025-04-21",
+      "who": "kai",
+      "kind": "solo",
+      "t": "KAI 发行迷你四辑《Wait On Me》",
+      "s": "继《Rover》后时隔两年推出个人专辑，收录同名主打歌在内的七首歌曲。",
+      "src": "https://cn.yna.co.kr/view/ACK20250421003700881",
+      "srcLabel": "韩联社"
+    },
+    {
+      "d": "2025-09-20",
+      "who": "sehun",
+      "kind": "service",
+      "t": "忙内吴世勋退伍 · 六年军白期正式画上句号",
+      "s": "自 2019.05 至 2025.09，九颗行星终于全部回到同一片星空下",
+      "src": "https://www.allkpop.com/article/2025/09/all-exo-members-have-now-completed-their-military-service-as-exos-sehun-was-officially-discharged-from-the-military-today",
+      "srcLabel": "allkpop"
+    },
+    {
+      "d": "2025-12-13",
+      "who": "exo",
+      "kind": "group",
+      "t": "冬日先行曲《I'm Home》温情回归",
+      "s": "正规八辑序章揭幕，唱出漫长等待后的归家重逢",
+      "img": "img/group/reverxe-im-home.jpg"
+    },
+    {
+      "d": "2026-01-19",
+      "who": "exo",
+      "kind": "group",
+      "t": "正规八辑《REVERXE》与主打《Crown》",
+      "s": "时隔两年半团体正规辑重磅回归，张艺兴合流参与，荒原之上重铸王冠",
+      "img": "img/group/reverxe-2.webp",
+      "src": "https://en.wikipedia.org/wiki/Reverxe",
+      "srcLabel": "维基百科 · 发行资料"
+    },
+    {
+      "d": "2026-04-10",
+      "who": "exo",
+      "kind": "live",
+      "t": "第六次世界巡演《EXO PLANET #6 – EXhOrizon》",
+      "s": "首尔 KSPO Dome 揭幕，横跨 14 个地区共 27 场大型巡演",
+      "img": "img/group/reverxe-crown.jpg"
+    },
+    {
+      "d": "2026-11-06",
+      "who": "exo",
+      "kind": "live",
+      "t": "首尔安可演唱会《EXhOrizon [dot]》",
+      "s": "重返首尔奥林匹克体操竞技场连唱三晚，为六巡画下璀璨句点",
+      "src": "https://www.soompi.com/article/1864228wpp/exo-announces-dates-for-encore-concert-exo-planet-6-exhorizon-dot",
+      "srcLabel": "Soompi"
+    },
+    {
+      "d": "2026-12-01",
+      "who": "unit",
+      "kind": "unit",
+      "t": "EXO-KASE 首张迷你专辑预计发行",
+      "s": "金钟仁与吴世勋组成小分队，首张迷你专辑《Waking Up The City》预计于当日发行。",
+      "src": "https://weverse.io/exo/notice/40889",
+      "srcLabel": "EXO 官方预售公告 · Weverse"
+    },
+    {
+      "d": "2026-11-28",
+      "who": "exo",
+      "members": [
+        "group",
+        "kai",
+        "sehun"
+      ],
+      "kind": "milestone",
+      "t": "出席香港「2026 微博国际文化交流之夜」",
+      "s": "EXO 官方微博 11/22 官宣于 11 月 28 日赴中国香港出席 2026 微博国际文化交流之夜盛典。",
+      "src": "https://m.weibo.cn/detail/5368008697447571",
+      "srcLabel": "EXO 官方微博",
+      "status": "官方微博已官宣"
+    }
+  ],
+  "variety": [
+    {
+      "y": "2012",
+      "d": "2012.06 / 13.07 / 14.07",
+      "t": "Happy Camp EXO Specials",
+      "zh": "快乐大本营 EXO 专场（三期合集）",
+      "p": "湖南卫视",
+      "who": "全员",
+      "cat": "guest",
+      "members": [
+        "exo"
+      ],
+      "img": "img/group/mama-exo-m.jpg",
+      "note": "2012 出道合体首秀、2013《Wolf》飞鹰游戏、2014 男神季读信催泪名场面，无数中饭的入坑起点"
+    },
+    {
+      "y": "2013",
+      "d": "2013.07 – 08",
+      "t": "Weekly Idol EP.105 & EP.108",
+      "zh": "一周的偶像 EXO 篇（两期）",
+      "p": "MBC every1",
+      "who": "全员",
+      "cat": "guest",
+      "members": [
+        "exo"
+      ],
+      "note": "地下三层首次公开展示「中二超能力」实景特效与韩牛烤肉争夺战，韩综入坑必看"
+    },
+    {
+      "y": "2013",
+      "d": "2013.08",
+      "t": "Midsummer Night's Growl",
+      "zh": "仲夏夜之咆哮",
+      "p": "Naver Starcast",
+      "who": "全员",
+      "cat": "group",
+      "members": [
+        "exo"
+      ],
+      "note": "《Growl》回归期校园风直播团综特辑"
+    },
+    {
+      "y": "2013",
+      "d": "2013.11",
+      "t": "Running Man EP.171 – 172",
+      "zh": "Running Man 铃铛撕名牌篇",
+      "p": "SBS",
+      "who": "全员",
+      "cat": "guest",
+      "members": [
+        "exo"
+      ],
+      "note": "全员化身年轻猎人与跑男团展开百货大楼攻守撕名牌大战"
+    },
+    {
+      "y": "2013",
+      "d": "2013.11 – 2014.02",
+      "t": "EXO's Showtime",
+      "zh": "EXO 的 Showtime（全 12 集）",
+      "p": "MBC every1",
+      "who": "全员",
+      "cat": "group",
+      "members": [
+        "exo"
+      ],
+      "img": "img/group/growl-1.webp",
+      "note": "EXO 首档专属真人秀团综：一人一只炸鸡、练习室飙高音、鬼屋探险、东海日出，爱丽补档圣经"
+    },
+    {
+      "y": "2013",
+      "d": "2013.12 / 15.07 / 21.04",
+      "t": "Law of the Jungle",
+      "zh": "丛林的法则（密克罗尼西亚 · 文莱 · 郁陵岛篇）",
+      "p": "SBS",
+      "who": "CHANYEOL",
+      "cat": "solo",
+      "members": [
+        "chanyeol"
+      ],
+      "img": "img/members/chanyeol.webp",
+      "note": "灿烈三度出征荒野担任忙内生存王，更亲自为文莱篇创作并献唱 OST《Last Hunter》"
+    },
+    {
+      "y": "2014",
+      "d": "2014.05",
+      "t": "Hot Moment XOXO EXO",
+      "zh": "炽热瞬间 XOXO EXO（全 4 集）",
+      "p": "Mnet",
+      "who": "全员",
+      "cat": "group",
+      "members": [
+        "exo"
+      ],
+      "note": "跟拍日本见面会后台与海外行程日常的纪实团综"
+    },
+    {
+      "y": "2014",
+      "d": "2014.05 – 09",
+      "t": "Roommate Season 1",
+      "zh": "Roommate 第一季",
+      "p": "SBS",
+      "who": "CHANYEOL（固定成员）",
+      "cat": "solo",
+      "members": [
+        "chanyeol"
+      ],
+      "note": "11 位艺人城北洞合宿生活真人秀，清晨做早餐与弹钢琴日常圈粉无数"
+    },
+    {
+      "y": "2014",
+      "d": "2014.08 – 10",
+      "t": "EXO 90:2014",
+      "zh": "EXO 90:2014（全 11 集）",
+      "p": "Mnet",
+      "who": "全员",
+      "cat": "group",
+      "members": [
+        "exo"
+      ],
+      "note": "每集致敬一组 90 年代 K-pop 传奇前辈并由成员担任男主角重拍经典 MV"
+    },
+    {
+      "y": "2015",
+      "d": "2015.02",
+      "t": "SurpLINEs EXO",
+      "zh": "SurpLINEs · EXO 露营篇",
+      "p": "LINE TV",
+      "who": "XIUMIN · CHANYEOL · KAI · SEHUN",
+      "cat": "unit",
+      "members": [
+        "xiumin",
+        "chanyeol",
+        "kai",
+        "sehun"
+      ],
+      "note": "冬季郊外露营做饭与胜负欲爆棚的桌游对决"
+    },
+    {
+      "y": "2015",
+      "d": "2015.04",
+      "t": "Fluttering India",
+      "zh": "扑通扑通印度（全 4 集）",
+      "p": "KBS2",
+      "who": "SUHO（固定成员）",
+      "cat": "solo",
+      "members": [
+        "suho"
+      ],
+      "img": "img/members/suho.webp",
+      "note": "与圭贤、珉豪、圣圭、宗泫远赴孟买完成新闻采访任务，俊勉综艺反差萌名作"
+    },
+    {
+      "y": "2015",
+      "d": "2015.04 – 05",
+      "t": "EXO Next Door",
+      "zh": "我的邻居是 EXO（全 16 集）",
+      "p": "LINE TV · Naver",
+      "who": "全员",
+      "cat": "group",
+      "members": [
+        "exo"
+      ],
+      "img": "img/group/exodus-1.jpg",
+      "note": "全员本色出演的浪漫喜剧微综，灿烈、伯贤、D.O.、世勋主演，点击量破五千万"
+    },
+    {
+      "y": "2015",
+      "d": "2015 – 2020",
+      "t": "Go Fighting! S1 – S6",
+      "zh": "极限挑战 第一至六季",
+      "p": "东方卫视",
+      "who": "LAY 张艺兴（常驻 MC）",
+      "cat": "solo",
+      "members": [
+        "lay"
+      ],
+      "img": "img/members/lay.webp",
+      "note": "陪伴六季的国民级户外真人秀，见证「极限男人帮」小绵羊一路成长为小狐狸"
+    },
+    {
+      "y": "2015",
+      "d": "2015.08",
+      "t": "EXO Channel",
+      "zh": "EXO Channel（全 21 集）",
+      "p": "日本东京电视台",
+      "who": "全员",
+      "cat": "group",
+      "members": [
+        "exo"
+      ],
+      "note": "日本首档冠名地面波番组，短篇主题问答与巨蛋幕后"
+    },
+    {
+      "y": "2015",
+      "d": "2015.08",
+      "t": "King of Mask Singer EP.21 – 22",
+      "zh": "蒙面歌王「传说中的吉他手」篇",
+      "p": "MBC",
+      "who": "CHEN",
+      "cat": "solo",
+      "members": [
+        "chen"
+      ],
+      "img": "img/members/chen.webp",
+      "note": "金钟大蒙面连闯三关杀入歌王战，《醉中真谈》《染迹》高音震撼全场评审"
+    },
+    {
+      "y": "2015",
+      "d": "2015.09 / 2016.05",
+      "t": "Two Yoo Project – Sugar Man",
+      "zh": "Sugar Man 逆袭金曲篇",
+      "p": "JTBC",
+      "who": "CHEN · CHANYEOL / BAEKHYUN",
+      "cat": "unit",
+      "members": [
+        "chen",
+        "chanyeol",
+        "baekhyun"
+      ],
+      "note": "钟大与灿烈改编合唱《如果再次相爱》拿下高票优胜，成为韩网百万播放神现场"
+    },
+    {
+      "y": "2016",
+      "d": "2016.06 – 07",
+      "t": "EXOMENTARY LIVE",
+      "zh": "EXOMENTARY LIVE（全 15 集 + 保龄球赛）",
+      "p": "V LIVE+",
+      "who": "全员",
+      "cat": "group",
+      "members": [
+        "exo"
+      ],
+      "note": "《EX'ACT》回归季个人定制直播企划与全员深夜保龄球锦标赛"
+    },
+    {
+      "y": "2016",
+      "d": "2016.08",
+      "t": "Travel without Manager",
+      "zh": "没有经纪人的旅行（全 8 集）",
+      "p": "Cookat TV",
+      "who": "XIUMIN × CHEN",
+      "cat": "unit",
+      "members": [
+        "xiumin",
+        "chen"
+      ],
+      "note": "珉锡与钟大脱离经纪人独自自驾前往庆州治愈旅行，哥哥弟弟氛围感拉满"
+    },
+    {
+      "y": "2016",
+      "d": "2016.09",
+      "t": "Infinite Challenge EP.498 Dancing King",
+      "zh": "无限挑战 · 忙内刘在石与曼谷舞台篇",
+      "p": "MBC",
+      "who": "全员 × 刘在石",
+      "cat": "guest",
+      "members": [
+        "exo"
+      ],
+      "img": "img/group/exact-2016.jpg",
+      "note": "刘在石化身「EXO 第十位成员」苦练刀群舞，登上曼谷万人演唱会同台演出《Dancing King》"
+    },
+    {
+      "y": "2016",
+      "d": "2016.09",
+      "t": "Star Show 360 EP.1 – 2",
+      "zh": "Star Show 360 开播特辑",
+      "p": "MBC every1",
+      "who": "全员",
+      "cat": "guest",
+      "members": [
+        "exo"
+      ],
+      "note": "九人完整体长篇访谈、个人隐藏摄像机小剧场与全员笑到飙泪的爆料局"
+    },
+    {
+      "y": "2017",
+      "d": "2017.07 / 18.12 / 19.12",
+      "t": "Knowing Bros EP.85 · EP.159 · EP.208",
+      "zh": "认识的哥哥 EXO 三度出击合集",
+      "p": "JTBC",
+      "who": "全员",
+      "cat": "guest",
+      "members": [
+        "exo",
+        "kai",
+        "baekhyun"
+      ],
+      "img": "img/group/love-shot-1.jpg",
+      "note": "韩综史上播放量封神名场面：EP.159 伯贤 × KAI「寂静中的呐喊 · 裤子里的两个字」笑疯全网！"
+    },
+    {
+      "y": "2017",
+      "d": "2017.08 – 2018.05",
+      "t": "It's Dangerous Beyond The Blankets",
+      "zh": "被子外面很危险（试播及正规季）",
+      "p": "MBC",
+      "who": "XIUMIN（固定成员）",
+      "cat": "solo",
+      "members": [
+        "xiumin"
+      ],
+      "img": "img/members/xiumin.webp",
+      "note": "精致洁癖宅男金珉锡的休假慢综艺，敷面膜、打扫房间治愈力满分"
+    },
+    {
+      "y": "2017",
+      "d": "2017.10",
+      "t": "JYP's Party People EXO Special",
+      "zh": "朴轸永的 Party People · EXO 专场",
+      "p": "SBS",
+      "who": "全员",
+      "cat": "guest",
+      "members": [
+        "exo"
+      ],
+      "note": "全现场乐队重新编曲演绎《Growl》《Boomerang》与走心深夜音乐对谈"
+    },
+    {
+      "y": "2017",
+      "d": "2017.10 – 12",
+      "t": "Master Key",
+      "zh": "Master Key 心理游戏推理综",
+      "p": "SBS",
+      "who": "BAEKHYUN（固定成员）· CHANYEOL 嘉宾",
+      "cat": "solo",
+      "members": [
+        "baekhyun",
+        "chanyeol"
+      ],
+      "img": "img/members/baekhyun.webp",
+      "note": "「天才游戏玩家边伯贤」心理博弈与话术反转高光舞台"
+    },
+    {
+      "y": "2017",
+      "d": "2017.10",
+      "t": "EXO Tourgram",
+      "zh": "EXO 巡演日记（全 30 集）",
+      "p": "V LIVE+",
+      "who": "全员",
+      "cat": "group",
+      "members": [
+        "exo"
+      ],
+      "note": "北美巡演旅途跟拍、游乐园放风与后台日常"
+    },
+    {
+      "y": "2018",
+      "d": "2018.01 – 04",
+      "t": "Idol Producer",
+      "zh": "偶像练习生",
+      "p": "爱奇艺",
+      "who": "LAY 张艺兴（全民制作人代表）",
+      "cat": "solo",
+      "members": [
+        "lay"
+      ],
+      "note": "开创内娱男团选秀元年的代表作，「Balance」专业舞台标准深入人心"
+    },
+    {
+      "y": "2018",
+      "d": "2018.05 – 07",
+      "t": "EXO's Travel the World on a Ladder S1",
+      "zh": "爬梯子世界旅行 第一季 · CBX日本鸟取篇",
+      "p": "oksusu · XtvN",
+      "who": "EXO-CBX（珉锡 · 伯贤 · 钟大）",
+      "cat": "group",
+      "members": [
+        "xiumin",
+        "baekhyun",
+        "chen"
+      ],
+      "note": "零花钱与三餐全凭「画鬼脚（爬梯子）」决定，和牛拉面吃播下饭神综"
+    },
+    {
+      "y": "2018",
+      "d": "2018.05 – 06",
+      "t": "Salty Tour (San Francisco & LA)",
+      "zh": "心酸旅行 · 美国旧金山与洛杉矶篇",
+      "p": "tvN",
+      "who": "CHANYEOL",
+      "cat": "solo",
+      "members": [
+        "chanyeol"
+      ],
+      "note": "灿烈化身专属旅行摄影师，沿加州海岸开启欢脱穷游之旅"
+    },
+    {
+      "y": "2018",
+      "d": "2018 – 2021",
+      "t": "Busted! Season 1 – 3",
+      "zh": "犯人就是你！第一至三季",
+      "p": "Netflix",
+      "who": "SEHUN（全三季固定侦探）· SUHO 客串",
+      "cat": "solo",
+      "members": [
+        "sehun",
+        "suho"
+      ],
+      "img": "img/members/sehun.webp",
+      "note": "搭档刘在石、李光洙、朴敏英、金世正连续三季破案，忙内侦探胜负欲全开"
+    },
+    {
+      "y": "2018",
+      "d": "2018.12 – 2019.01",
+      "t": "EXO Arcade Season 1",
+      "zh": "给你看 EXO — EXO 娱乐馆 第一季",
+      "p": "V LIVE",
+      "who": "全员",
+      "cat": "group",
+      "members": [
+        "exo"
+      ],
+      "note": "指压板跳绳、迷你椅子争夺战、歌名竞猜，每分钟都在高分贝爆笑"
+    },
+    {
+      "y": "2019",
+      "d": "2019.01 – 03",
+      "t": "EXO's Travel the World on a Ladder S2",
+      "zh": "爬梯子世界旅行 第二季 · 高雄垦丁篇",
+      "p": "XtvN · oksusu",
+      "who": "全员（8 人合体）",
+      "cat": "group",
+      "members": [
+        "exo",
+        "xiumin",
+        "suho",
+        "baekhyun",
+        "chen",
+        "chanyeol",
+        "do",
+        "kai",
+        "sehun"
+      ],
+      "img": "img/group/the-war-1.webp",
+      "note": "公认必刷团综巅峰：夜市美食、卡丁车、泳池大战与大型失控「守护天使」揭晓夜"
+    },
+    {
+      "y": "2019",
+      "d": "2019.02 – 03",
+      "t": "Coffee Friends (Jeju)",
+      "zh": "Coffee Friends · 济州柑橘园咖啡厅",
+      "p": "tvN",
+      "who": "SEHUN（打工生）",
+      "cat": "solo",
+      "members": [
+        "sehun"
+      ],
+      "note": "柳演锡、孙浩俊公益咖啡厅迎来的「黄金万能兼职生」世勋，默默剥橘洗碗超圈粉"
+    },
+    {
+      "y": "2019",
+      "d": "2019.03 – 2020.11",
+      "t": "Heart 4 U (Sim For You)",
+      "zh": "EXO 的心框 Heart 4 U（四季接力）",
+      "p": "V LIVE",
+      "who": "XIUMIN · CHEN · SUHO · CHANYEOL",
+      "cat": "group",
+      "members": [
+        "xiumin",
+        "chen",
+        "suho",
+        "chanyeol"
+      ],
+      "note": "乔迁温居、公交路演、露营与工作室日常的四人四色个人接力真人秀"
+    },
+    {
+      "y": "2019",
+      "d": "2019.10 – 2020.02",
+      "t": "Five Cranky Brothers",
+      "zh": "怪癖的五兄弟",
+      "p": "JTBC",
+      "who": "BAEKHYUN（固定 MC）",
+      "cat": "solo",
+      "members": [
+        "baekhyun"
+      ],
+      "note": "与徐章勋、金钟国围绕奇葩辩题展开无逻辑爆笑排序辩论"
+    },
+    {
+      "y": "2020",
+      "d": "2020 – 2021",
+      "t": "Street Dance of China S3 & S4",
+      "zh": "这！就是街舞 第三至四季",
+      "p": "优酷",
+      "who": "LAY 张艺兴（队长）",
+      "cat": "solo",
+      "members": [
+        "lay"
+      ],
+      "img": "img/members/lay-2.webp",
+      "note": "「核兴舞器」队长亲自下场斗舞，Krump 舞台《帽子戏法》燃炸出圈"
+    },
+    {
+      "y": "2020",
+      "d": "2020.09 – 10",
+      "t": "SuperM's Mtopia",
+      "zh": "SuperM 的 Mtopia（全 12 集）",
+      "p": "Wavve",
+      "who": "BAEKHYUN × KAI",
+      "cat": "unit",
+      "members": [
+        "baekhyun",
+        "kai"
+      ],
+      "note": "伯贤与钟仁带队定制理想假期，水上乐园与神秘间谍任务笑点密集"
+    },
+    {
+      "y": "2021",
+      "d": "2021.04 – 2023.07",
+      "t": "Back to Field S5 – S7",
+      "zh": "向往的生活 第五至七季",
+      "p": "湖南卫视",
+      "who": "LAY 张艺兴（常驻 MC）",
+      "cat": "solo",
+      "members": [
+        "lay"
+      ],
+      "note": "加盟蘑菇屋大家庭，为种地专门考取拖拉机驾照的田园慢综时光"
+    },
+    {
+      "y": "2021",
+      "d": "2021.05 – 06",
+      "t": "EXO Arcade Season 2",
+      "zh": "EXO 娱乐馆 第二季",
+      "p": "YouTube",
+      "who": "XIUMIN · BAEKHYUN · CHANYEOL · D.O. · KAI · SEHUN",
+      "cat": "group",
+      "members": [
+        "exo",
+        "xiumin",
+        "baekhyun",
+        "chanyeol",
+        "do",
+        "kai",
+        "sehun"
+      ],
+      "img": "img/group/dftf-1.webp",
+      "note": "《DFTF》回归预热团综，舞王猜歌与滑溜溜足球赛名场面频出"
+    },
+    {
+      "y": "2021",
+      "d": "2021.05 – 12",
+      "t": "Idol Dictation Contest / Honeymoon Tavern / New World",
+      "zh": "偶像听写大会 · 牛岛酒馆 · 新世界：虚拟货币争霸战",
+      "p": "TVING · tvN · Netflix",
+      "who": "KAI（三档固定班底）",
+      "cat": "solo",
+      "members": [
+        "kai"
+      ],
+      "img": "img/members/kai.webp",
+      "note": "2021「综神金钟仁」爆发年：横跨音综听写、济州岛治愈民宿与 Netflix 孤岛巨制博弈"
+    },
+    {
+      "y": "2021",
+      "d": "2021.06 – 2022.01",
+      "t": "Drink with God S1 & S2",
+      "zh": "与神同饮 第一至二季",
+      "p": "Channel S",
+      "who": "XIUMIN（固定 MC）",
+      "cat": "solo",
+      "members": [
+        "xiumin"
+      ],
+      "note": "搭档申东烨、成始璄为观众定制佐酒菜单与故事对谈"
+    },
+    {
+      "y": "2021",
+      "d": "2021.09",
+      "t": "House on Wheels: For Rent",
+      "zh": "借给你带轮子的家（全 3 集）",
+      "p": "tvN",
+      "who": "SEHUN",
+      "cat": "solo",
+      "members": [
+        "sehun"
+      ],
+      "note": "与《海盗2》剧组姜河那、韩孝周、李光洙开启无房东自助山谷露营"
+    },
+    {
+      "y": "2022",
+      "d": "2022.04 – 06",
+      "t": "EXO's Travel the World on a Ladder S3",
+      "zh": "爬梯子世界旅行 第三季 · 南海篇",
+      "p": "Wavve · Beyond LIVE",
+      "who": "SUHO · XIUMIN · D.O. · KAI · SEHUN",
+      "cat": "group",
+      "members": [
+        "exo",
+        "suho",
+        "xiumin",
+        "do",
+        "kai",
+        "sehun"
+      ],
+      "note": "出道十周年南海治愈之旅，高空滑索与海鲜大餐梯子对决"
+    },
+    {
+      "y": "2022",
+      "d": "2022.05 / 2022.10",
+      "t": "Off The Grid / Besties in Wonderland",
+      "zh": "潜迹（D.O. 篇）/ 只要去一次 · 澳洲篇（SUHO & KAI）",
+      "p": "Discovery · SBS",
+      "who": "D.O. / SUHO · KAI",
+      "cat": "unit",
+      "members": [
+        "do",
+        "suho",
+        "kai"
+      ],
+      "note": "暻秀一人一车三天两夜南海公路独行纪实；俊勉与钟仁奔赴澳大利亚昆士兰拥抱考拉与大海"
+    },
+    {
+      "y": "2023",
+      "d": "2023.03 – 05",
+      "t": "No Math School Trip",
+      "zh": "没有数学的修学旅行（全 10 集）",
+      "p": "SBS",
+      "who": "D.O. 都暻秀（固定成员）",
+      "cat": "solo",
+      "members": [
+        "do"
+      ],
+      "img": "img/members/do.webp",
+      "note": "与 ZICO、Crush、崔政勋及梁世灿、李龙真同游北海道雪国，冷面笑匠暻秀封神之作"
+    },
+    {
+      "y": "2023",
+      "d": "2023.08 – 09",
+      "t": "EXO's Travel the World on a Ladder S4",
+      "zh": "爬梯子世界旅行 第四季 · 巨济统营篇",
+      "p": "Wavve",
+      "who": "全员（7 人合体）",
+      "cat": "group",
+      "members": [
+        "exo",
+        "xiumin",
+        "suho",
+        "baekhyun",
+        "chen",
+        "chanyeol",
+        "do",
+        "sehun"
+      ],
+      "img": "img/group/exist-1.webp",
+      "note": "《EXIST》回归季全员泥滩大战与悬念拉满的「EXO Man」卧底追击战"
+    },
+    {
+      "y": "2023",
+      "d": "2023.10 – 12",
+      "t": "GBRB: Reap What You Sow",
+      "zh": "种豆得豆（콩콩팥팥 · 全 9 集）",
+      "p": "tvN",
+      "who": "D.O. 都暻秀（固定成员）",
+      "cat": "solo",
+      "members": [
+        "do"
+      ],
+      "img": "img/members/do-3.jpg",
+      "note": "罗暎锡 PD 团队出品！与至亲李光洙、金宇彬、金基邦开垦五百坪农田，忙内主厨料理与农活天赋满点"
+    },
+    {
+      "y": "2025",
+      "d": "2025.01 – 02",
+      "t": "GBRB Spinoff: Cafeteria Operation",
+      "zh": "豆豆饭饭（콩콩밥밥 · 社长李光洙与主厨都暻秀）",
+      "p": "tvN · YouTube",
+      "who": "D.O. 都暻秀（主厨）",
+      "cat": "solo",
+      "members": [
+        "do"
+      ],
+      "img": "img/members/do-2.webp",
+      "note": "炊事兵出身的都主厨掌勺制作公司百人食堂，硬核刀工与大锅料理看饿全网"
+    },
+    {
+      "y": "2025",
+      "d": "2025.03 – 2026",
+      "t": "Jeongwaja (Changing Majors)",
+      "zh": "转学生 Jeongwaja（第 2 代常驻 MC + 世勋特别篇）",
+      "p": "ootb STUDIO · YouTube",
+      "who": "KAI（常驻 MC）· SEHUN 嘉宾",
+      "cat": "solo",
+      "members": [
+        "kai",
+        "sehun"
+      ],
+      "img": "img/members/kai-2.webp",
+      "note": "金钟仁退伍后接棒成为大学各专业一日体验生，亲和力爆棚，2026.01 更迎世勋合体特别篇"
+    },
+    {
+      "y": "2026",
+      "d": "2026.03",
+      "t": "EXO's Travel the World on a Ladder S5",
+      "zh": "爬梯子世界旅行 第五季 · 济州岛篇",
+      "p": "Mnet · Wavve",
+      "who": "SUHO · CHANYEOL · D.O. · KAI · SEHUN",
+      "cat": "group",
+      "members": [
+        "exo",
+        "suho",
+        "chanyeol",
+        "do",
+        "kai",
+        "sehun"
+      ],
+      "img": "img/group/reverxe-2.webp",
+      "note": "军白期结束后久违重启的第五季爬梯子，济州春日爆笑升级",
+      "src": "https://www.allkpop.com/article/2026/02/exo-returns-with-reality-variety-show-exos-travel-the-world-on-a-ladder-season-5"
+    },
+    {
+      "y": "2026",
+      "d": "2026.06",
+      "t": "GBRB: Farm Operation – Go Go Farm",
+      "zh": "种豆得豆：牧场篇（济州岛 6 集）",
+      "p": "tvN",
+      "who": "D.O. 都暻秀（固定成员）",
+      "cat": "solo",
+      "members": [
+        "do"
+      ],
+      "note": "李光洙、金宇彬、都暻秀黄金挚友三人组再聚济州岛开启牧场生活"
+    },
+    {
+      "y": "2026",
+      "d": "2026.10 播出中",
+      "t": "The Listen Season 6",
+      "zh": "The Listen：我们一起唱歌的时间 第六季",
+      "p": "SBS",
+      "who": "SUHO（固定成员）",
+      "cat": "solo",
+      "members": [
+        "suho"
+      ],
+      "img": "img/members/suho-2.webp",
+      "note": "每周三晚播出的秋日街头乐队路演音综，展现队长清澈治愈的现场感染力"
+    },
+    {
+      "y": "待播",
+      "d": "待播",
+      "t": "World Dice Tour 4",
+      "zh": "地球玛布尔世界旅行 4（骰子世界旅行）",
+      "p": "ENA · TEO",
+      "who": "KAI × SEHUN",
+      "cat": "unit",
+      "members": [
+        "kai",
+        "sehun"
+      ],
+      "img": "img/group/reverxe-crown.jpg",
+      "note": "金泰浩 PD 团队王牌旅行综第四季，EXO-KASE 竹马双人组搭档出发"
+    }
+  ],
+  "eraGallery": [
+    {
+      "era": "2012 · MAMA",
+      "title": "未知行星降临 · 双子小队同日启航",
+      "img": "img/group/mama-exo-k.jpg",
+      "cover": "img/covers/mama.webp"
+    },
+    {
+      "era": "2013 · XOXO / GROWL",
+      "title": "街巷皆闻《咆哮》· 时隔十二年重开韩流百万销量时代",
+      "img": "img/group/growl-1.webp",
+      "cover": "img/covers/growl.webp"
+    },
+    {
+      "era": "2015 · EXODUS / LOVE ME RIGHT",
+      "title": "黄金双百万与高尺巨蛋首唱 · 写下《约定》的一年",
+      "img": "img/group/love-me-right-1.jpg",
+      "cover": "img/covers/love-me-right.webp"
+    },
+    {
+      "era": "2016 · EX'ACT / MONSTER",
+      "title": "暗黑与白昼双概念封神 · 年度专辑四连霸",
+      "img": "img/group/exact-2016.jpg",
+      "cover": "img/covers/exact.webp"
+    },
+    {
+      "era": "2017 · THE WAR / POWER",
+      "title": "仲夏夜雷鬼浪潮 · 哈利法塔音乐喷泉首支韩语曲",
+      "img": "img/group/the-war-1.webp",
+      "cover": "img/covers/the-war.webp"
+    },
+    {
+      "era": "2018 · TEMPO / LOVE SHOT",
+      "title": "无伴奏阿卡贝拉大桥与红玫瑰西装 · 累积销量破千万",
+      "img": "img/group/love-shot-1.jpg",
+      "cover": "img/covers/love-shot.webp"
+    },
+    {
+      "era": "2019 · OBSESSION",
+      "title": "EXO vs X-EXO · 镜像人格与实验暗黑美学",
+      "img": "img/group/obsession-1.webp",
+      "cover": "img/covers/obsession.webp"
+    },
+    {
+      "era": "2021 · DON'T FIGHT THE FEELING",
+      "title": "跨越军白期的宇宙航母重聚 · 六度达成百万销量",
+      "img": "img/group/dftf-1.webp",
+      "cover": "img/covers/dftf.webp"
+    },
+    {
+      "era": "2023 · EXIST / CREAM SODA",
+      "title": "十一年后的松弛与醇熟 · 第七张百万销量正规辑",
+      "img": "img/group/exist-1.webp",
+      "cover": "img/covers/exist.webp"
+    },
+    {
+      "era": "2026 · REVERXE / CROWN",
+      "title": "全员军白期终结 · 荒原重铸王冠与世巡 EXhOrizon",
+      "img": "img/group/reverxe-crown.jpg",
+      "cover": "img/covers/reverxe.webp"
+    }
+  ]
+}

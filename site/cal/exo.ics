@@ -1,0 +1,458 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//exolneverland.com//EXO 星球//ZH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:EXO 星球 · 行程
+X-WR-TIMEZONE:Asia/Seoul
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:ev-wb-cultural-night-20261128@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:2026 微博国际文化交流之夜（中国·香港）
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+DESCRIPTION:EXO 官方微博 11/22 正式官宣受邀出席 11 月 28 日
+ 于中国香港举办的「2026 微博国际文化交流之夜」。\n核
+ 验：官方\nhttps://m.weibo.cn/detail/5368008697447571
+LOCATION:中国·香港（微博国际文化交流之夜盛典）\, 香港
+URL:https://www.exolneverland.com/#schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-023@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:灿烈日本巡演 -The Route- 神奈川、爱知、大阪场
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261103
+DESCRIPTION:CHANYEOL JAPAN TOUR 2026 -The Route- 前三站：10/14 神奈
+ 川 KT Zepp Yokohama、10/29 爱知 Zepp Nagoya、11/2 大阪 Zepp Osaka B
+ ayside。东京终场见 11/11 条目。\n核验：官方\nhttp://exo-jp.n
+ et/en/news/detail.php?id=1134632
+LOCATION:KT Zepp Yokohama / Zepp Nagoya / Zepp Osaka Bayside\, 横滨、名
+ 古屋、大阪
+URL:https://www.exolneverland.com/#schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-003@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:EXhOrizon [dot] 官方周边线上预购截止
+DTSTART:20261105T060000Z
+DTEND:20261111T145900Z
+DESCRIPTION:安可演唱会官方周边线上预购期为 11/5 15:00 至 11
+ /11 23:59（韩国时间）。日本地区同期通过 SMTOWN OFFICIAL ONL
+ INE STORE 预购进口周边，2027 年 2 月中旬起发货（部分商
+ 品 3 月中旬）。\n核验：官方\nhttps://weverse.io/exo/notice/4057
+ 4
+URL:https://www.exolneverland.com/#schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-026@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:EXO PLANET #6 - EXhOrizon [dot] 安可演唱会
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261109
+DESCRIPTION:第六次巡演的安可场，11/6 19:00、11/7 18:00、11/8 17
+ :00（韩国时间）连开三天，含视野受限席在内全部售罄
+ ，约 3.3 万人到场。SUHO、灿烈、D.O.、KAI、世勋五人登台
+ ，共 32 首，《Suffocate》首次搬上舞台，末场以《Peter Pan
+ 》收尾。主巡演 4/10 自首尔出发，7/26 在新加坡结束，14 
+ 个地区 27 场。\n核验：官方\nhttps://weverse.io/exo/notice/38455
+LOCATION:KSPO DOME\, 首尔
+URL:https://www.exolneverland.com/#schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-027@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:EXhOrizon [dot] 第二天 线上直播
+DTSTART:20261107T090000Z
+DTEND:20261107T110000Z
+DESCRIPTION:11/7 场通过 Beyond LIVE 与 Weverse 同步付费直播，18:
+ 00（韩国时间）开始。\n核验：官方\nhttps://weverse.io/exo/not
+ ice/39629
+LOCATION:线上（Beyond LIVE / Weverse）
+URL:https://www.exolneverland.com/#schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-028@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:EXhOrizon [dot] 末场 影院 Live Viewing
+DTSTART:20261108T080000Z
+DTEND:20261108T100000Z
+DESCRIPTION:11/8 末场 17:00（韩国时间）起在影院同步放映。S
+ BS 演后报道为 24 个地区 768 家影院（演前公布数字为 23 
+ 个地区 757 家）。日本场次票价 5\,200 日元，附日语字幕
+ 。\n核验：官方\nhttps://weverse.io/exo/notice/40094
+LOCATION:各地影院
+URL:https://www.exolneverland.com/#schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-010@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:EXO-KASE《Waking Up The City》预售期
+DTSTART:20261110T033000Z
+DTEND:20261130T145900Z
+DESCRIPTION:EXO-KASE 首张迷你专辑预售：11/10 至 11/30 23:59（韩
+ 国时间），Weverse Shop 标注 11/10 12:30 开始。版本：Photobook
+  Ver.（随机/套装）、Poster Ver.、SMini Ver.（SMART ALBUM，随机
+ /套装）。官方公告列出的店铺为 Berriz、Aladin、YES24；Weve
+ rse Shop 页面未列预售特典或签售。\n核验：官方\nhttps://we
+ verse.io/exo/notice/40889
+URL:https://www.exolneverland.com/#schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-029@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:张艺兴《闹天宫》实体专辑开启预售
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+DESCRIPTION:张艺兴工作室微博公告：《斗战胜佛》前传《闹
+ 天宫》实体专辑于 11/10 10:07 开启预售，含实体 CD、画胶
+ 、磁带多版本，另有磁带数码播放机。预售入口为工作
+ 室帖内的 QQ 音乐、酷狗音乐短链。\n核验：官方\nhttps://w
+ ww.sina.cn/news/detail/5363646970465450.html
+URL:https://www.exolneverland.com/#schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-001@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:灿烈日本巡演 -The Route- 东京终场
+DTSTART:20261111T093000Z
+DTEND:20261111T113000Z
+DESCRIPTION:CHANYEOL JAPAN TOUR 2026 -The Route- 最后一站。开场 17:3
+ 0 / 开演 18:30（日本时间，与韩国时间相同）。11/10 18:00 
+ 起通过 mu-mo shop 开放追加先到先得门票，票价 14\,800 日
+ 元，入场另付 600 日元饮料费。\n核验：官方\nhttps://exo-jp
+ .net/en/news/detail.php?id=1137193
+LOCATION:Zepp DiverCity (TOKYO)\, 东京
+URL:https://www.exolneverland.com/#schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-002@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:都暻秀数字单曲《Darling》发行
+DTSTART:20261111T090000Z
+DTEND:20261111T110000Z
+DESCRIPTION:据 JoyNews24 11/9 报道，都暻秀数字单曲《Darling》
+ 定于 11/11 18:00（韩国时间）在各大音源平台发行，预告
+ 视觉经其官方 SNS 公开，发行署名 Blitzway Music。\n核验：
+ 媒体\nhttps://www.joynews24.com/view/2023892
+URL:https://www.exolneverland.com/#schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-030@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:灿烈出演东京电视台《あのちゃんの電電電波♪》
+DTSTART:20261110T170000Z
+DTEND:20261110T190000Z
+DESCRIPTION:日本官网公告的播出时间为「11 月 10 日（周二
+ ）26:00」，即 11/11 凌晨 2:00（日本时间，与韩国时间相同
+ ）。\n核验：官方\nhttps://exo-jp.net/en/news/detail.php?id=1137071
+URL:https://www.exolneverland.com/#schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-005@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:都暻秀 DAY OFF 巡演 曼谷站
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261116
+DESCRIPTION:2026-2027 DOH KYUNG SOO CONCERT TOUR [DAY OFF] 曼谷两场：1
+ 1/14 18:00、11/15 17:00（当地时间）。主办 Grand Prix Xpectrum，
+ 票价 2\,900–6\,500 泰铢，经 All Ticket 售票，入场细则请以
+ 售票页与主办方最新公告为准。\n核验：媒体\nhttps://en.th
+ airath.co.th/entertain/inter/2957714
+LOCATION:Thunder Dome\, Muang Thong Thani\, 曼谷
+URL:https://www.exolneverland.com/#schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-006@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:都暻秀 DAY OFF 马尼拉站 开票
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+DESCRIPTION:马尼拉站（2027-01-23）门票于 11/20（周五）经 Tick
+ etNet 线上及售票点发售。开票时刻两处说法不一：主办 W
+ ilbros Live 的帖文为 12:00，GMA Entertainment 报道为 14:00（均
+ 为菲律宾时间），购票前请以 TicketNet 页面为准。票价：
+ VIP Seated ₱16\,800、LB Premium ₱13\,800、LB Regular ₱10\,600、UB
+  Premium ₱8\,400、UB Regular ₱4\,200、GA ₱3\,200。\n核验：媒
+ 体\nhttps://www.gmanetwork.com/news/lifestyle/hobbiesandactivities/100863
+ 8/doh-kyungsoo-in-manila-ticket-prices-fan-benefits-for-day-off-concert-in
+ -january/story/
+LOCATION:Smart Araneta Coliseum\, 马尼拉
+URL:https://www.exolneverland.com/#schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-007@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:「bubble for INB100」服务终止
+DTSTART:20261120T020000Z
+DTEND:20261120T040000Z
+DESCRIPTION:CBX 三人告知粉丝 9/30 起停止使用 Bubble，并于 10/
+ 7 转至 Fromm（프롬）。Bubble 运营方 10/9 发表声明称此举
+ 为单方面决定，将于 11/20 终止「bubble for INB100」服务（Si
+ nglelist 报道为 11:00）。\n核验：媒体\nhttps://www.spotvnews.co.
+ kr/news/articleView.html?idxno=1012394
+URL:https://www.exolneverland.com/#schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-008@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:都暻秀 DAY OFF 巡演 雅加达站
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261123
+DESCRIPTION:雅加达两场：11/21 19:00、11/22 15:00（印尼西部时
+ 间）。主办 LIT Xperience；雅加达旅游官网所列活动网站为
+  dohkyungsoojakarta2026.com。\n核验：媒体\nhttps://enjoy.jakarta.go.
+ id/events/2026-2027-doh-kyung-soo-concert-tour-day-off-in-jakarta
+LOCATION:Istora Senayan (GBK)\, 雅加达
+URL:https://www.exolneverland.com/#schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-009@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:灿烈生日派对 2026 CHANYEOL B-day PARTY [B-side]
+DTSTART:20261126T110000Z
+DTEND:20261126T130000Z
+DESCRIPTION:11/26（周四）20:00（韩国时间）于 YES24 LIVE HALL 举
+ 行，全席 77\,000 韩元，每人限购 1 张。粉丝俱乐部认证 1
+ 0/19 14:00–10/26 23:59，会员预售 10/26 20:00–23:59，一般发售
+  10/27 20:00 起。同步开放 Weverse 线上直播票，票档与销售
+ 时段见 Weverse Shop 公告页。\n核验：官方\nhttps://weverse.io/e
+ xo/notice/40095
+LOCATION:YES24 LIVE HALL\, 首尔
+URL:https://www.exolneverland.com/#schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-011@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:KT4 EXO-KASE 预售特典赠送活动截止
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+DESCRIPTION:Ktown4u 中文站开展「[EXO-KASE] 预售特典赠送活动
+ （至 12/1）」。带特典商品为 Poster Ver.，随单加赠 Ktown4u 
+ 独家自拍小卡（4 种随机 1 种，参考折后价 RMB 81.29）；
+ 其余在售版本含 Photobook 随机版 / 2CD 套装与 SMini 随机版 
+ / 2CD 套装，具体截止时刻与实时汇率价以活动页为准。\n
+ 核验：官方\nhttps://cn.ktown4u.com/eventinfo?eve_no=44631274&biz_no=5
+ 99
+URL:https://www.exolneverland.com/#schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-012@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:EXO-KASE 首张迷你专辑《Waking Up The City》发行
+DTSTART:20261201T090000Z
+DTEND:20261201T110000Z
+DESCRIPTION:KAI 与世勋的新小分队 EXO-KASE 以首张迷你专辑出
+ 道，12/1 18:00（韩国时间）正式发行。共收录 7 首曲目，
+ 含同名主打曲及两人各自的 SOLO 曲；完整曲目表与打歌
+ 宣传日程以官方后续公告为准。\n核验：官方\nhttps://www.s
+ ina.cn/news/detail/5363479118874970.html
+URL:https://www.exolneverland.com/#schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-013@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:都暻秀 DAY OFF 巡演 高雄站
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261221
+DESCRIPTION:高雄两场：12/19 18:00、12/20 17:00（当地时间），
+ 主办 D.SHOW Taiwan，场馆为高雄流行音乐中心海音馆。市场
+ 流传经 ibon 售票（参考票价 NT$3\,880–6\,480），具体开售
+ 时段与最终票价以主办方及 ibon 正式售票页为准。\n核验
+ ：媒体\nhttps://news.tvbs.com.tw/entertainment/jk-pop/4006415
+LOCATION:高雄流行音乐中心 海音馆\, 高雄
+URL:https://www.exolneverland.com/#schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-014@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:EXO 2027 SEASON'S GREETINGS 开始发货
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261225
+DESCRIPTION:2027 年历周边自 10/13 15:00（韩国时间）起预售至
+ 售罄，12/24 起按单发货。品项含 Kit、Set 与 Wall Calendar；W
+ everse Shop 赠独家小卡套组与茶杯垫，Ktown4u 中文站另供附
+  5 张独家小卡的特典版本（实时价格以各平台结算页为
+ 准）。\n核验：官方\nhttps://shop.weverse.io/en/shop/USD/artists/12
+ 4/notices/14553
+URL:https://www.exolneverland.com/#schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-015@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:都暻秀 DAY OFF 巡演 新加坡站
+DTSTART;VALUE=DATE:20270109
+DTEND;VALUE=DATE:20270110
+DESCRIPTION:2027/1/9（周六）19:00 开演，17:30 入场（新加坡时
+ 间）。主办 UnUsUaL Entertainment。票价 VIP S$328、CAT1 S$298、CA
+ T2 S$268、CAT3 S$238；一般发售自 2026/9/23 12:00 起。\n核验：
+ 官方\nhttps://www.thekallang.com.sg/en/things-to-do/events/2026-2027-doh
+ -kyung-soo-concert-tour-day-off-in-singapore.html
+LOCATION:Singapore Indoor Stadium\, 新加坡
+URL:https://www.exolneverland.com/#schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-016@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:都暻秀 DAY OFF 巡演 香港站
+DTSTART;VALUE=DATE:20270116
+DTEND;VALUE=DATE:20270117
+DESCRIPTION:2027/1/16（周六）于香港亚洲国际博览馆 10 号展
+ 馆举行；具体开演时刻、票价及售票平台待主办方后续
+ 公布。\n核验：媒体\nhttps://www.soompi.com/article/1880039wpp/2027
+ -k-pop-tour-masterlist-concerts-fan-meetings-and-more
+LOCATION:亚洲国际博览馆 10 号展馆\, 香港
+URL:https://www.exolneverland.com/#schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-017@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:都暻秀 DAY OFF 巡演 马尼拉站
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270124
+DESCRIPTION:2027/1/23（周六）18:00（菲律宾时间），主办 Wilbro
+ s Live。票价 ₱3\,200–₱16\,800，11/20 经 TicketNet 开票（见
+ 开票条目）。\n核验：媒体\nhttps://www.gmanetwork.com/news/lifes
+ tyle/hobbiesandactivities/1008638/doh-kyungsoo-in-manila-ticket-prices-fan
+ -benefits-for-day-off-concert-in-january/story/
+LOCATION:Smart Araneta Coliseum\, 马尼拉
+URL:https://www.exolneverland.com/#schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-018@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:都暻秀 DAY OFF 巡演 东京站
+DTSTART;VALUE=DATE:20270227
+DTEND;VALUE=DATE:20270301
+DESCRIPTION:2027/2/27–28 于东京京王 Arena TOKYO 连演两场；具
+ 体开演时刻、官方票价与先行抽选日程待日本主办方正
+ 式发布。\n核验：媒体\nhttps://www.soompi.com/article/1880039wpp/2
+ 027-k-pop-tour-masterlist-concerts-fan-meetings-and-more
+LOCATION:京王 Arena TOKYO\, 东京
+URL:https://www.exolneverland.com/#schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:ev-019@exolneverland.com
+DTSTAMP:20261122T140918Z
+SUMMARY:都暻秀 DAY OFF 巡演 台北站
+DTSTART;VALUE=DATE:20270313
+DTEND;VALUE=DATE:20270315
+DESCRIPTION:2027/3/13–14 于台北流行音乐中心连演两场，主办
+ 方为 D.SHOW Taiwan；具体开演时刻与售票安排待后续公布。
+ \n核验：媒体\nhttps://news.tvbs.com.tw/entertainment/jk-pop/4006415
+LOCATION:台北流行音乐中心\, 台北
+URL:https://www.exolneverland.com/#schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-xiumin@exolneverland.com
+DTSTAMP:20261122T140918Z
+DTSTART;VALUE=DATE:19900326
+DTEND;VALUE=DATE:19900327
+RRULE:FREQ=YEARLY
+SUMMARY:金珉锡（XIUMIN）生日
+URL:https://www.exolneverland.com/#schedule
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-suho@exolneverland.com
+DTSTAMP:20261122T140918Z
+DTSTART;VALUE=DATE:19910522
+DTEND;VALUE=DATE:19910523
+RRULE:FREQ=YEARLY
+SUMMARY:金俊勉（SUHO）生日
+URL:https://www.exolneverland.com/#schedule
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-lay@exolneverland.com
+DTSTAMP:20261122T140918Z
+DTSTART;VALUE=DATE:19911007
+DTEND;VALUE=DATE:19911008
+RRULE:FREQ=YEARLY
+SUMMARY:张艺兴（LAY）生日
+URL:https://www.exolneverland.com/#schedule
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-baekhyun@exolneverland.com
+DTSTAMP:20261122T140918Z
+DTSTART;VALUE=DATE:19920506
+DTEND;VALUE=DATE:19920507
+RRULE:FREQ=YEARLY
+SUMMARY:边伯贤（BAEKHYUN）生日
+URL:https://www.exolneverland.com/#schedule
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-chen@exolneverland.com
+DTSTAMP:20261122T140918Z
+DTSTART;VALUE=DATE:19920921
+DTEND;VALUE=DATE:19920922
+RRULE:FREQ=YEARLY
+SUMMARY:金钟大（CHEN）生日
+URL:https://www.exolneverland.com/#schedule
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-chanyeol@exolneverland.com
+DTSTAMP:20261122T140918Z
+DTSTART;VALUE=DATE:19921127
+DTEND;VALUE=DATE:19921128
+RRULE:FREQ=YEARLY
+SUMMARY:朴灿烈（CHANYEOL）生日
+URL:https://www.exolneverland.com/#schedule
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-do@exolneverland.com
+DTSTAMP:20261122T140918Z
+DTSTART;VALUE=DATE:19930112
+DTEND;VALUE=DATE:19930113
+RRULE:FREQ=YEARLY
+SUMMARY:都暻秀（D.O.）生日
+URL:https://www.exolneverland.com/#schedule
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-kai@exolneverland.com
+DTSTAMP:20261122T140918Z
+DTSTART;VALUE=DATE:19940114
+DTEND;VALUE=DATE:19940115
+RRULE:FREQ=YEARLY
+SUMMARY:金钟仁（KAI）生日
+URL:https://www.exolneverland.com/#schedule
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-sehun@exolneverland.com
+DTSTAMP:20261122T140918Z
+DTSTART;VALUE=DATE:19940412
+DTEND;VALUE=DATE:19940413
+RRULE:FREQ=YEARLY
+SUMMARY:吴世勋（SEHUN）生日
+URL:https://www.exolneverland.com/#schedule
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:anniversary-1@exolneverland.com
+DTSTAMP:20261122T140918Z
+DTSTART;VALUE=DATE:20120408
+DTEND;VALUE=DATE:20120409
+RRULE:FREQ=YEARLY
+SUMMARY:EXO 出道纪念日
+URL:https://www.exolneverland.com/#schedule
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:anniversary-2@exolneverland.com
+DTSTAMP:20261122T140918Z
+DTSTART;VALUE=DATE:20140805
+DTEND;VALUE=DATE:20140806
+RRULE:FREQ=YEARLY
+SUMMARY:EXO-L 命名纪念日
+URL:https://www.exolneverland.com/#schedule
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

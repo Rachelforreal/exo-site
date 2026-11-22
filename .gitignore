@@ -1,0 +1,5 @@
+src-old/
+src-new/
+.DS_Store
+src-v1/
+.claude/

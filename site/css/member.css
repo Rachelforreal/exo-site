@@ -1,0 +1,170 @@
+/* ---------- 单人专栏 · member page (both editions) ---------- */
+.mp { padding-top: var(--bar); }
+.mp__loading { padding: 40vh var(--gut); text-align: center; color: var(--ink-3); }
+
+.mp-hero { position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: clamp(28px, 5vw, 80px); align-items: center;
+  max-width: var(--max); margin: 0 auto; min-height: calc(100svh - var(--bar)); padding: clamp(28px, 4vw, 56px) var(--gut) clamp(40px, 6vw, 80px); }
+.mp-hero__aura { display: none; }
+.mp-hero__name { margin-top: 18px; font: 300 min(176px, 11vw, calc(46vw / (var(--len, 4) * .7)))/.86 var(--serif); letter-spacing: -.02em; white-space: nowrap; }
+.mp-hero__real { margin-top: 14px; color: var(--ink-2); font-size: clamp(15px, 1.3vw, 18px); }
+.mp-power { display: flex; gap: 18px; align-items: flex-start; margin-top: clamp(22px, 3vw, 40px); padding: 20px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.mp-power__glyph { flex: none; width: 64px; height: 64px; padding: 14px; border-radius: 50%; color: var(--mc); background: rgba(var(--ink-rgb), .04); box-shadow: inset 0 0 0 1px var(--line); stroke-width: 1.6; }
+.mp-power__t { display: flex; align-items: baseline; gap: 12px; }
+.mp-power__t b { font-family: var(--cn); font-weight: 500; font-size: 28px; color: var(--ac); }
+.mp-power__t span { font: 500 12px/1 var(--sans); letter-spacing: .28em; color: var(--ink-3); }
+.mp-power__line { margin-top: 8px; color: var(--ink-2); line-height: 1.8; max-width: 34em; }
+.mp-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; margin: 22px 0 0; border-radius: var(--r-s); overflow: hidden; background: var(--line); }
+.mp-stats div { padding: 14px 14px; background: var(--bg); min-width: 0; }
+html[data-mode=galaxy] .mp-stats div { background: rgba(var(--bg-rgb), .72); }
+.mp-stats dt { font: 500 11px/1 var(--sans); letter-spacing: .16em; color: var(--ink-3); }
+.mp-stats dd { margin: 8px 0 0; font-size: 16.5px; font-weight: 600; line-height: 1.3; font-variant-numeric: tabular-nums; word-break: break-word; }
+.mp-stats dd small { display: block; margin-top: 3px; font-size: 12px; font-weight: 400; color: var(--ink-3); }
+.mp-stats .is-hot dd { color: var(--ac); }
+.mp-btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.mp-hero__ph { position: relative; margin: 0; }
+.mp-hero__ph img#mp-img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 24%; border-radius: var(--r); box-shadow: 0 0 0 1px var(--line), 0 50px 90px -40px rgba(var(--ac-rgb), .6); }
+.mp-looks { position: absolute; right: 14px; bottom: 50px; display: flex; gap: 8px; }
+.mp-looks button { width: 42px; height: 54px; border-radius: 8px; overflow: hidden; border: 1.5px solid rgba(255, 255, 255, .4); opacity: .7; transition: opacity .25s, border-color .25s; }
+.mp-looks button[aria-pressed=true] { opacity: 1; border-color: var(--mc); }
+.mp-looks img { width: 100%; height: 100%; object-fit: cover; }
+.mp-hero__ph figcaption { margin-top: 14px; font-size: 12px; color: var(--ink-3); }
+
+.mp-sec .sec__head { margin-bottom: 28px; }
+.mp-cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 clamp(24px, 4vw, 64px); max-width: var(--max); margin: 0 auto; }
+.mp-cols .sec { padding-left: 0; padding-right: 0; }
+.mp-cols .sec__lead { display: none; }
+.mp-now { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 16px 48px; }
+.mp-now__s { font-family: var(--cn); font-size: clamp(18px, 1.55vw, 22px); line-height: 1.8; }
+.mp-now__agency { margin-top: 12px; font-size: 14px; color: var(--ink-2); line-height: 1.7; padding: 10px 14px; border-radius: 8px; background: rgba(var(--ink-rgb), .04); border: 1px solid var(--line-2); }
+.mp-now__l { padding-left: 18px; border-left: 2px solid var(--ac); color: var(--ink-2); line-height: 1.8; align-self: start; }
+.mp-now__l span { display: block; font: 600 11px/1.6 var(--sans); letter-spacing: .2em; color: var(--ink-3); }
+.mp-now .item__src { grid-column: 1 / -1; }
+.mp-scope-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px; margin-bottom: 18px; }
+.mp-scope-note { font-size: 13px; color: var(--ink-3); }
+.mp-none { color: var(--ink-3); font-size: 14.5px; line-height: 1.7; }
+.mp-evs { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 12px; }
+.mp-ev { display: grid; grid-template-columns: 78px minmax(0, 1fr); gap: 16px; padding: 18px; border-radius: var(--r-s); background: var(--glass); box-shadow: inset 0 0 0 1px var(--line); min-width: 0; }
+.mp-ev.is-ongoing { box-shadow: inset 3px 0 0 var(--og), inset 0 0 0 1px rgba(var(--og-rgb), .42); }
+.mp-ev time b { display: block; font: 700 28px/1 var(--grot); font-variant-numeric: tabular-nums; }
+.mp-ev time span { display: block; margin-top: 4px; font-size: 12px; color: var(--ink-3); }
+.mp-ev__k { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 8px; font-size: 12.5px; color: var(--ink-3); }
+.mp-ev h3 { font-size: 16.5px; font-weight: 600; font-family: var(--cn); line-height: 1.45; }
+.mp-ev__w { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin-top: 6px; font-size: 13px; color: var(--ink-2); }
+.mp-ev__w span { display: inline-flex; align-items: center; gap: 5px; }
+.mp-ev__w svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.5; flex: none; }
+.mp-ev__sum { margin-top: 6px; font-size: 13.5px; color: var(--ink-2); line-height: 1.65; }
+.mp-ev .item__src { margin-top: 10px; }
+.mp-ev.is-past { opacity: .68; }
+.mp-past { margin-top: 18px; }
+.mp-past summary { cursor: pointer; color: var(--ac); font-weight: 500; font-size: 14px; margin-bottom: 14px; }
+.mp-news li { padding: 18px 0; border-top: 1px solid var(--line); }
+.mp-news li.is-rumor { padding: 16px; margin: 8px 0; border: 1px dashed rgba(var(--rm-rgb), .48); border-radius: 10px; background: rgba(var(--rm-rgb), .04); }
+.mp-news h3 { font-family: var(--cn); font-weight: 600; font-size: 18px; margin-bottom: 6px; }
+.mp-news p { color: var(--ink-2); line-height: 1.8; }
+.mp-news .item__src { margin-top: 10px; }
+.mp-works-cards { display: grid; gap: 10px; }
+.mp-works-cards li { padding: 14px 16px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface, rgba(var(--ink-rgb), .03)); }
+.mp-work__top { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 6px; }
+.mp-work__top time { font: 600 12.5px/1 var(--grot); color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.mp-works-cards b { display: block; font: 600 16px/1.4 var(--cn); }
+.mp-works-cards p { margin-top: 4px; font-size: 13.5px; color: var(--ink-2); line-height: 1.65; }
+.mp-unit-note { margin-top: 12px; font-size: 13px; color: var(--ink-3); }
+.mp-links { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.mp-links a { display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 16px; border-radius: 99px; box-shadow: inset 0 0 0 1px var(--line); font-size: 14px; }
+.mp-links a:hover { box-shadow: inset 0 0 0 1px var(--ac); color: var(--ac); }
+.mp-links svg { width: 13px; height: 13px; fill: none; stroke: currentColor; stroke-width: 1.6; }
+.mp-road li { display: grid; grid-template-columns: 110px 1fr; gap: 18px; padding: 14px 0 14px 20px; border-left: 2px solid var(--pc); }
+.mp-road time { color: var(--ink-3); font-size: 13px; }
+.mp-road b { display: block; font-family: var(--cn); font-weight: 500; }
+.mp-road span { color: var(--ink-3); font-size: 14px; }
+.mp-variety li { display: grid; grid-template-columns: 60px 1fr auto; gap: 2px 16px; padding: 12px 0; border-top: 1px solid var(--line); }
+.mp-variety span { font-family: var(--serif); color: var(--ink-3); }
+.mp-variety small { grid-column: 2; color: var(--ink-3); }
+.mp-variety a { grid-row: 1; grid-column: 3; color: var(--ac); font-size: 13px; }
+
+.mp__roster { padding: 0 var(--gut) 40px; max-width: var(--max); margin: 0 auto; }
+.mp__grid { display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 8px; margin-top: 14px; }
+.mp__grid a { display: grid; justify-items: center; gap: 6px; padding: 18px 6px; border-radius: var(--r-s); box-shadow: inset 0 0 0 1px var(--line); transition: background .25s, box-shadow .25s; }
+.mp__grid a:hover, .mp__grid a[aria-current] { box-shadow: inset 0 0 0 1px var(--mc); background: rgba(var(--ink-rgb), .05); }
+.mp__grid .glyph { width: 26px; height: 26px; color: var(--mc); }
+.mp__grid b { font-size: 12.5px; letter-spacing: .06em; font-weight: 500; }
+.mp__grid span { font-size: 12px; color: var(--ink-3); }
+.mp__pn { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 16px; margin-top: 20px; font-size: 14px; }
+
+@media (max-width: 900px) {
+  .mp-hero { grid-template-columns: 1fr; min-height: 0; }
+  .mp-hero__ph { order: -1; max-width: 440px; }
+  .mp-hero__name { font-size: min(120px, calc(88vw / (var(--len, 4) * .7))); }
+  .mp-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .mp-now, .mp-cols { grid-template-columns: 1fr; }
+  .mp__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 520px) {
+  .mp-ev { grid-template-columns: 62px minmax(0, 1fr); gap: 12px; padding: 14px; }
+  .mp-ev time b { font-size: 22px; }
+  .mp-road li { grid-template-columns: 84px minmax(0, 1fr); gap: 12px; padding-left: 14px; }
+  .mp-variety li { grid-template-columns: 44px minmax(0, 1fr) auto; gap: 2px 10px; }
+}
+
+/* ---------- 银河: the power is the protagonist ---------- */
+html[data-mode=galaxy] .mp-hero__name { background: linear-gradient(100deg, #fff8e7 10%, var(--mc) 55%, var(--mc2) 95%); -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: drop-shadow(0 0 28px color-mix(in srgb, var(--mc) 45%, transparent)); }
+html[data-mode=galaxy] .mp-power__glyph { width: 80px; height: 80px; padding: 16px; filter: drop-shadow(0 0 12px var(--mc)); stroke-dasharray: 240; stroke-dashoffset: 240; animation: glyph-draw 2.4s var(--ease) .3s forwards; }
+html[data-mode=galaxy] .mp-power__t b { font-size: 36px; color: var(--mc); text-shadow: 0 0 24px color-mix(in srgb, var(--mc) 60%, transparent); }
+html[data-mode=galaxy] .mp-power__t span { color: var(--mc2); }
+html[data-mode=galaxy] .mp-power { border-color: color-mix(in srgb, var(--mc) 40%, transparent); }
+@keyframes glyph-draw { to { stroke-dashoffset: 0; } }
+/* the aura: three layers drawn differently for each of the nine powers */
+html[data-mode=galaxy] .mp-hero__aura{display:block;position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.mp-hero__aura i{position:absolute;inset:0}
+
+/* 冰霜 frost — a slow snowflake lattice and a rim of rime */
+[data-power=xiumin] .mp-hero__aura i:nth-child(1){background:repeating-conic-gradient(from 0deg at 72% 46%,rgba(191,227,255,.16) 0 1deg,transparent 1deg 30deg);animation:spin 80s linear infinite;transform-origin:72% 46%}
+[data-power=xiumin] .mp-hero__aura i:nth-child(2){background:radial-gradient(circle at 72% 46%,transparent 30%,rgba(191,227,255,.12) 31%,transparent 32%,transparent 44%,rgba(191,227,255,.1) 45%,transparent 46%)}
+[data-power=xiumin] .mp-hero__aura i:nth-child(3){box-shadow:inset 0 0 120px rgba(191,227,255,.28);animation:breathe 7s ease-in-out infinite}
+/* 水 water — rings spreading outward */
+[data-power=suho] .mp-hero__aura i{background:radial-gradient(circle at 70% 50%,transparent 0 20%,rgba(124,199,255,.22) 21%,transparent 23%);animation:ripple 6s ease-out infinite;transform-origin:70% 50%}
+[data-power=suho] .mp-hero__aura i:nth-child(2){animation-delay:2s}
+[data-power=suho] .mp-hero__aura i:nth-child(3){animation-delay:4s}
+/* 治愈 healing — a soft green pulse and rising motes */
+[data-power=lay] .mp-hero__aura i:nth-child(1){background:radial-gradient(circle at 70% 55%,rgba(185,232,143,.26),transparent 50%);animation:breathe 5s ease-in-out infinite}
+[data-power=lay] .mp-hero__aura i:nth-child(2),[data-power=lay] .mp-hero__aura i:nth-child(3){background-image:radial-gradient(circle,rgba(185,232,143,.9) 0 1.5px,transparent 2.5px),radial-gradient(circle,rgba(111,214,160,.7) 0 1px,transparent 2px);background-size:130px 170px,90px 120px;animation:rise 14s linear infinite;opacity:.55}
+[data-power=lay] .mp-hero__aura i:nth-child(3){animation-duration:22s;background-position:40px 60px,10px 30px;opacity:.35}
+/* 光 light — rotating rays */
+[data-power=baekhyun] .mp-hero__aura i:nth-child(1){background:repeating-conic-gradient(from 0deg at 72% 40%,rgba(255,231,163,.18) 0 4deg,transparent 4deg 18deg);animation:spin 60s linear infinite;transform-origin:72% 40%;-webkit-mask:radial-gradient(circle at 72% 40%,#000,transparent 65%);mask:radial-gradient(circle at 72% 40%,#000,transparent 65%)}
+[data-power=baekhyun] .mp-hero__aura i:nth-child(2){background:radial-gradient(circle at 72% 40%,rgba(255,231,163,.4),transparent 28%);animation:breathe 4s ease-in-out infinite}
+/* 雷电 lightning — a storm that flashes now and then */
+[data-power=chen] .mp-hero__aura i:nth-child(1){background:radial-gradient(ellipse at 70% 20%,rgba(143,168,255,.3),transparent 60%)}
+[data-power=chen] .mp-hero__aura i:nth-child(2){background:linear-gradient(rgba(255,216,77,.22),rgba(143,168,255,.1));opacity:0;animation:flash 7s steps(1) infinite}
+[data-power=chen] .mp-hero__aura i:nth-child(3){background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 300'><path d='M60 0 38 120h22L30 300 78 100H54z' fill='none' stroke='%23ffd84d' stroke-width='2'/></svg>") 78% 0/120px 100% no-repeat;opacity:0;animation:flash 7s steps(1) infinite .08s;filter:drop-shadow(0 0 8px #ffd84d)}
+/* 火焰 fire — embers rising from the floor */
+[data-power=chanyeol] .mp-hero__aura i:nth-child(1){background:radial-gradient(120% 60% at 60% 110%,rgba(255,77,61,.45),rgba(255,154,92,.18) 40%,transparent 70%);animation:flicker 2.6s ease-in-out infinite alternate}
+[data-power=chanyeol] .mp-hero__aura i:nth-child(2),[data-power=chanyeol] .mp-hero__aura i:nth-child(3){background-image:radial-gradient(circle,#ffb27a 0 1.5px,transparent 2.5px),radial-gradient(circle,#ff6a4d 0 1px,transparent 2px);background-size:110px 150px,70px 110px;animation:rise 7s linear infinite;opacity:.7}
+[data-power=chanyeol] .mp-hero__aura i:nth-child(3){animation-duration:11s;background-position:30px 50px,15px 20px;opacity:.45}
+/* 大地 earth — strata that settle slowly */
+[data-power=do] .mp-hero__aura i:nth-child(1){background:repeating-linear-gradient(176deg,transparent 0 46px,rgba(232,181,124,.14) 46px 48px,transparent 48px 90px,rgba(184,116,60,.1) 90px 93px);animation:settle 18s ease-in-out infinite alternate}
+[data-power=do] .mp-hero__aura i:nth-child(2){background:radial-gradient(90% 50% at 50% 115%,rgba(232,181,124,.3),transparent 70%)}
+/* 瞬移 teleport — the name slips between places */
+[data-power=kai] .mp-hero__aura i:nth-child(1){background:radial-gradient(circle at 25% 40%,rgba(255,143,192,.22),transparent 35%),radial-gradient(circle at 78% 60%,rgba(165,123,255,.24),transparent 38%);animation:blink 6s steps(1) infinite}
+[data-power=kai] .mp-hero__aura i:nth-child(2){background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(255,143,192,.05) 3px 4px)}
+html[data-mode=galaxy][data-power=kai] .mp-hero__name{animation:warp 6s steps(1) infinite}
+/* 风 wind — streaks crossing the page */
+[data-power=sehun] .mp-hero__aura i{background:repeating-linear-gradient(-14deg,transparent 0 60px,rgba(159,240,212,.12) 60px 61px,transparent 61px 140px);background-size:600px 600px;animation:gust 9s linear infinite}
+[data-power=sehun] .mp-hero__aura i:nth-child(2){animation-duration:14s;opacity:.6;background-size:900px 900px}
+[data-power=sehun] .mp-hero__aura i:nth-child(3){background:radial-gradient(ellipse at 70% 50%,rgba(94,203,224,.18),transparent 60%);animation:breathe 6s ease-in-out infinite}
+
+@keyframes spin{to{transform:rotate(1turn)}}
+@keyframes breathe{50%{opacity:.45}}
+@keyframes ripple{from{transform:scale(.4);opacity:1}to{transform:scale(2.6);opacity:0}}
+@keyframes rise{from{background-position-y:0,0}to{background-position-y:-600px,-440px}}
+@keyframes flash{0%{opacity:0}62%{opacity:1}63%{opacity:0}66%{opacity:.8}67%{opacity:0}}
+@keyframes flicker{to{opacity:.7;transform:scaleY(1.06)}}
+@keyframes settle{to{transform:translateY(14px)}}
+@keyframes blink{0%{transform:none}48%{transform:translate(-6%,4%)}52%{transform:none}}
+@keyframes warp{0%,46%,54%,100%{transform:none;text-shadow:none}48%{transform:translateX(-14px);text-shadow:6px 0 rgba(255,143,192,.8),-6px 0 rgba(165,123,255,.8)}50%{transform:translateX(10px);opacity:.4}52%{transform:none;text-shadow:3px 0 rgba(165,123,255,.6)}}
+@keyframes gust{to{background-position:600px 0}}
+
+@media (prefers-reduced-motion:reduce){
+  .mp-hero__aura i, html[data-mode=galaxy] .mp-hero__name, html[data-mode=galaxy] .mp-power__glyph { animation: none !important; stroke-dashoffset: 0; }
+}
+html[data-mode=paper] .mp-power__glyph { color: color-mix(in srgb, var(--mc) 55%, #1a2039); }

@@ -1,0 +1,105 @@
+/* ---------- 书刊 · EXOPLANET 14TH ANNIVERSARY COLLECTOR'S GIFTBOX EDITION ----------
+   60% Warm museum cotton-rag paper (#F6F1E7 / #EFE8D8)
+   30% Espresso-charcoal ink (#1D1A16 / #544D44) & architectural hairlines
+   10% Champagne gold foil (#A87E43), crimson postal stamp (#A63A2B) & member spot inks */
+
+html[data-mode=paper] {
+  --bg: #f6f1e7; --bg-2: #efe8d8; --bg-rgb: 246, 241, 231;
+  --surface: #fcf9f2; --surface-2: #f3ece0;
+  --ink: #1d1a16; --ink-rgb: 29, 26, 22;
+  --ink-2: #544d44; --ink-3: #7a7166; --ink-4: rgba(29, 26, 22, .34);
+  --line: rgba(29, 26, 22, .15); --line-2: rgba(29, 26, 22, .08);
+  --glass: rgba(252, 249, 242, .92); --glass-2: rgba(253, 251, 247, .98);
+  --foil: #a87e43; --foil-rgb: 168, 126, 67;
+  --stamp: #a63a2b; --stamp-rgb: 166, 58, 43;
+  --ac: #9a6f38; --ac-2: #b88b4d; --ac-rgb: 154, 111, 56; --ac-ink: #fcf9f2;
+  --ok: #1f6848; --ok-rgb: 31, 104, 72; --md: #8c632b; --md-rgb: 140, 99, 43; --rm: #9e4b14; --rm-rgb: 158, 75, 20;
+  --og: #a63a2b; --og-rgb: 166, 58, 43;
+  --r: 4px;
+  color-scheme: light;
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(920px 640px at 10% 8%, rgba(168, 126, 67, .10), transparent 64%),
+    radial-gradient(780px 680px at 90% 16%, rgba(var(--ac-rgb), .085), transparent 62%),
+    radial-gradient(900px 720px at 78% 84%, rgba(168, 126, 67, .07), transparent 66%),
+    radial-gradient(125% 110% at 50% 45%, transparent 58%, rgba(206, 193, 170, .24) 100%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='720' height='720' viewBox='0 0 720 720'%3E%3Cg fill='none' stroke='%23a87e43' stroke-opacity='.07'%3E%3Ccircle cx='360' cy='360' r='290' stroke-width='1'/%3E%3Ccircle cx='360' cy='360' r='218' stroke-width='.9' stroke-dasharray='4 8'/%3E%3Ccircle cx='360' cy='360' r='134' stroke-width='.8'/%3E%3Cellipse cx='360' cy='360' rx='335' ry='118' transform='rotate(-22 360 360)' stroke-width='.8'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 720px 720px;
+  background-attachment: fixed, fixed, fixed, fixed, scroll;
+  background-position: 0 0, 0 0, 0 0, 0 0, center 40px;
+}
+html[data-mode=paper][data-power=xiumin]   { --ac: #285d8a; --ac-2: #467ca8; --ac-rgb: 40, 93, 138; }
+html[data-mode=paper][data-power=suho]     { --ac: #21519c; --ac-2: #3a6cb8; --ac-rgb: 33, 81, 156; }
+html[data-mode=paper][data-power=lay]      { --ac: #336b2b; --ac-2: #2d7858; --ac-rgb: 51, 107, 43; }
+html[data-mode=paper][data-power=baekhyun] { --ac: #9a6316; --ac-2: #b57722; --ac-rgb: 154, 99, 22; }
+html[data-mode=paper][data-power=chen]     { --ac: #8c640e; --ac-2: #525ea3; --ac-rgb: 140, 100, 14; }
+html[data-mode=paper][data-power=chanyeol] { --ac: #a63a2b; --ac-2: #bd3b26; --ac-rgb: 166, 58, 43; }
+html[data-mode=paper][data-power=do]       { --ac: #7d4718; --ac-2: #663c16; --ac-rgb: 125, 71, 24; }
+html[data-mode=paper][data-power=kai]      { --ac: #942b5a; --ac-2: #633ea3; --ac-rgb: 148, 43, 90; }
+html[data-mode=paper][data-power=sehun]    { --ac: #1b6b5c; --ac-2: #237082; --ac-rgb: 27, 107, 92; }
+
+/* no universe canvas on paper; subtle rag-paper grain */
+html[data-mode=paper] #universe, html[data-mode=paper] .veil, html[data-mode=paper] #fx { display: none; }
+html[data-mode=paper] .grain { opacity: .28; mix-blend-mode: multiply; filter: contrast(.94); }
+html[data-mode=paper] ::selection { background: var(--ink); color: var(--bg); }
+
+/* planetary chronicle typography & folio headers (no generic fashion-magazine italic clichés) */
+html[data-mode=paper] .sec { border-top: 2px solid var(--ink); position: relative; }
+html[data-mode=paper] .sec::before { content: ''; position: absolute; left: var(--gut); right: var(--gut); top: 3px; height: 1px; background: var(--line); pointer-events: none; }
+html[data-mode=paper] .sec__head { position: relative; }
+html[data-mode=paper] .sec__head::after { content: 'EXOPLANET // OBSERVATORY FOLIO'; position: absolute; right: 0; top: -32px; font: 500 10.5px/1 var(--sans); letter-spacing: .22em; color: var(--ink-3); }
+@media (max-width: 720px) { html[data-mode=paper] .sec__head::after { display: none; } }
+html[data-mode=paper] .sec__h { font-weight: 600; letter-spacing: -.01em; }
+html[data-mode=paper] .sec__h em { display: inline-block; font-style: normal; color: var(--ac); border-bottom: 2px solid rgba(var(--ac-rgb), .28); padding-bottom: 2px; }
+html[data-mode=paper] .sec__no { font-family: var(--grot); font-style: normal; font-weight: 700; color: transparent; -webkit-text-stroke: 1.2px rgba(var(--ink-rgb), .2); }
+
+/* header: architectural masthead strip (desktop) + floating paper dock (mobile/tablet) */
+@media (min-width: 1101px) {
+  html[data-mode=paper] .bar.is-stuck, html[data-mode=paper] .bar { background: rgba(242, 240, 235, .95); box-shadow: 0 1px 0 var(--ink); }
+  html[data-mode=paper] .bar__nav { background: transparent; }
+}
+@media (max-width: 1100px) {
+  html[data-mode=paper] .bar::before, html[data-mode=paper] .bar.is-stuck::before { background: rgba(242, 240, 235, .95); border-bottom: 1px solid var(--ink); backdrop-filter: none; -webkit-backdrop-filter: none; }
+  html[data-mode=paper] .bar__nav { background: rgba(250, 249, 246, .96); border: 1px solid var(--ink); box-shadow: 0 14px 36px -8px rgba(17, 22, 37, .28); backdrop-filter: none; -webkit-backdrop-filter: none; }
+}
+html[data-mode=paper] .tool, html[data-mode=paper] .bar__nav a { color: var(--ink); }
+
+/* cards & panels: crisp archival stock with architectural hairlines */
+html[data-mode=paper] :is(.mcard, .lane, .next, .level, .ch, .item, .ev, .sched__list > *, .palette__panel, .dial__panel, .credits__panel) {
+  -webkit-backdrop-filter: none; backdrop-filter: none; }
+html[data-mode=paper] .mcard { background: var(--surface); border-color: var(--line); box-shadow: 0 18px 36px -28px rgba(17, 22, 37, .28); }
+html[data-mode=paper] .mcard::after { opacity: .25; }
+html[data-mode=paper] .mcard__go { color: var(--ac); }
+html[data-mode=paper] .lane, html[data-mode=paper] .level, html[data-mode=paper] .ch, html[data-mode=paper] .ev, html[data-mode=paper] .mp-ev { background: var(--surface); }
+html[data-mode=paper] .next { background: linear-gradient(125deg, rgba(var(--ac-rgb), .07), transparent 55%), var(--surface); border-color: rgba(var(--ac-rgb), .32); box-shadow: 0 24px 56px -40px rgba(17, 22, 37, .3); }
+html[data-mode=paper] .ticker { border-color: var(--ink); background: var(--ink); color: var(--bg); }
+html[data-mode=paper] .ticker * { color: inherit; }
+html[data-mode=paper] .foot { background: var(--ink); color: var(--bg); --ink: #f2f0eb; --ink-rgb: 242, 240, 235; --ink-2: rgba(242, 240, 235, .78); --ink-3: rgba(242, 240, 235, .58); --line: rgba(242, 240, 235, .2); --ac: #b8cdf8; --ac-rgb: 184, 205, 248; }
+html[data-mode=paper] .foot__big { color: transparent; -webkit-text-stroke: 1px rgba(242, 240, 235, .36); }
+
+/* fix sheet drawer in paper mode so it reads as an archival dossier rather than a black void */
+html[data-mode=paper] .sheet__panel { background: var(--surface); color: var(--ink); border-left: 1px solid var(--ink); box-shadow: -24px 0 60px rgba(17, 22, 37, .22); }
+html[data-mode=paper] .sheet__hero::after { background: linear-gradient(180deg, rgba(17, 22, 37, .38) 0, transparent 28%, transparent 50%, rgba(17, 22, 37, .86) 100%); }
+html[data-mode=paper] .sheet__name, html[data-mode=paper] .sheet__era { color: #f8f9fc; }
+html[data-mode=paper] .sheet__name p { color: rgba(248, 249, 252, .84); }
+html[data-mode=paper] .sheet__x { background: rgba(17, 22, 37, .64); color: #fff; border-color: rgba(255, 255, 255, .28); }
+html[data-mode=paper] .sheet__power::before { background: rgba(250, 249, 246, .84); }
+html[data-mode=paper] .sheet__power .glyph { color: var(--ac); filter: none; }
+html[data-mode=paper] .facts div { background: var(--surface); }
+
+/* albums keep their own printed sleeve colours; the stage sits like a collector's insert */
+html[data-mode=paper] .stage { box-shadow: 0 40px 80px -48px rgba(17, 22, 37, .5); }
+html[data-mode=paper] .sleeve span, html[data-mode=paper] .sleeve small { color: var(--ink-2); }
+
+/* things on photos stay light */
+html[data-mode=paper] .mcard__pic, html[data-mode=paper] .frame { color: #fff8e7; }
+
+/* dial & palette overlays */
+html[data-mode=paper] .dial__scrim, html[data-mode=paper] .palette__scrim, html[data-mode=paper] .sheet__scrim, html[data-mode=paper] .mv__scrim { background: rgba(17, 22, 37, .48); }
+html[data-mode=paper] .dial__panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); box-shadow: 0 32px 80px -24px rgba(17, 22, 37, .35); }
+html[data-mode=paper] .dial__btn:hover span, html[data-mode=paper] .dial__btn[aria-pressed=true] span { color: #0a0c18; }
+
+/* the switch itself: a soft page-turn when the edition changes */
+::view-transition-new(root) { animation: edition-in .7s cubic-bezier(.65, 0, .2, 1); }
+::view-transition-old(root) { animation: none; }
+@keyframes edition-in { from { clip-path: circle(0 at var(--vx, 90%) var(--vy, 30px)); } to { clip-path: circle(150% at var(--vx, 90%) var(--vy, 30px)); } }

@@ -1,0 +1,1274 @@
+/* ============================================================================
+   VIBE MOTION & ANTI-AI TEXTURE PACK
+   Directly implementing specs inspected from:
+   - vibedesign.tips:
+     #006 Book Cards (left-hinged multi-leaf page fan, +28ms layer stagger)
+     #010 Liquid Glass (6-layer specular rim refraction & chromatic sheen)
+     #013 Shockwave Glow (1000ms chromatic split Red 1.08x / Blue 0.92x halo)
+     #014 Card Delete (Blocks/Plume particle shatter + 520ms spring reflow)
+     #016 Toast (500ms cubic-bezier(.25,.1,.25,1), 8px->0 blur drop + sheen sweep + 5s Undo ring)
+     #018 Holo Card (kubai-holo-card: pointer rim light --lx/--ly + counter-sliding prism bands)
+   - www.asterloom.cn:
+     Keycap 3D tactile press & subtle pointer star-trail micro-particles
+   - recent.design & 2027 Trends:
+     Tactile punched ticket stub notches (.ev__ticket) & OBSERVATORY VERIFIED stamp
+   ============================================================================ */
+
+/* ---------- 1. #018 Holo Card (kubai-holo-card) & #010 Liquid Glass Rim ---------- */
+.mag, .portal-card, .mcard, .mstrip-card, .studio__card, .gb-card, .ch, .next {
+  --lx: 50%;
+  --ly: 35%;
+  --holo-alpha: 0;
+}
+
+/* Pointer-lit 1.5px specular rim + counter-sliding prism rainbow bands */
+.mag::after,
+.portal-card::after,
+.studio__card::after,
+.gb-card::after,
+.ch::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 5;
+  opacity: var(--holo-alpha, 0);
+  transition: opacity .32s cubic-bezier(.22, 1, .36, 1);
+  background:
+    radial-gradient(280px circle at var(--lx, 50%) var(--ly, 35%),
+      rgba(255, 255, 255, .34) 0%,
+      rgba(var(--ac-rgb), .18) 34%,
+      transparent 72%),
+    linear-gradient(118deg,
+      transparent 18%,
+      rgba(255, 120, 210, .14) 36%,
+      rgba(110, 220, 255, .18) 48%,
+      rgba(255, 230, 130, .14) 60%,
+      transparent 78%);
+  background-size: 100% 100%, 220% 220%;
+  background-position: 0 0, calc(var(--lx, 50%) * .7) calc(var(--ly, 50%) * .7);
+  mix-blend-mode: soft-light;
+}
+html[data-mode=galaxy] :is(.portal-card, .studio__card, .gb-card, .ch)::after {
+  mix-blend-mode: screen;
+}
+:is(.mag, .portal-card, .studio__card, .gb-card, .ch):hover {
+  --holo-alpha: 1;
+}
+
+/* 1.5px pointer-following rim highlight mask */
+:is(.portal-card, .gb-card, .ch, .next):hover {
+  box-shadow:
+    inset 0 0 0 1px rgba(var(--ac-rgb), .42),
+    0 22px 48px -26px rgba(var(--ac-rgb), .38);
+}
+
+/* Liquid Glass chromatic rim on floating bottom/top nav pill */
+.bar__nav {
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .28),
+    inset 0 -1px 0 rgba(var(--ac-rgb), .22),
+    0 16px 40px -16px rgba(10, 14, 28, .28);
+}
+
+/* ---------- 2. #006 Book Cards (Left-hinged 4-layer page stack fan on hover) ---------- */
+.portal-card::before {
+  content: '';
+  position: absolute;
+  inset: 4px -4px -4px 8px;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: -1;
+  background: transparent;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  box-shadow:
+    4px 3px 0 -1px var(--bg),
+    5px 3px 0 0 var(--line),
+    8px 6px 0 -1px var(--bg),
+    9px 6px 0 0 var(--line);
+  transform-origin: left center;
+  transform: translate3d(-4px, -3px, 0);
+  transition: transform .42s cubic-bezier(.22, 1.28, .36, 1) 28ms, opacity .32s;
+  opacity: 0;
+}
+.portal-card:hover::before {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* ---------- 3. Focus Dimming (Spotlight hover on sibling cards) ---------- */
+@media (hover: hover) and (pointer: fine) {
+  .portal-grid:has(.portal-card:hover) .portal-card:not(:hover),
+  .chan:has(.ch:hover) .ch:not(:hover),
+  .gb__list:has(.gb-card:hover) .gb-card:not(:hover),
+  .plush-shelf:has(.plush-card:hover) .plush-card:not(:hover),
+  .levels:has(.level:hover) .level:not(:hover) {
+    opacity: .56;
+    filter: saturate(.76);
+    transform: scale(.992);
+  }
+  .portal-card, .ch, .gb-card, .plush-card, .level {
+    transition:
+      opacity .32s cubic-bezier(.22, 1, .36, 1),
+      filter .32s cubic-bezier(.22, 1, .36, 1),
+      transform .42s cubic-bezier(.22, 1.28, .36, 1),
+      border-color .28s var(--ease),
+      box-shadow .35s var(--ease);
+  }
+}
+
+/* ---------- 4. #016 Toast (8px->0 blur drop + completion sheen + 5s Undo ring) ---------- */
+.toast {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+  filter: blur(8px);
+  transform: translate3d(-50%, 14px, 0) scale(.97);
+  transition:
+    transform .5s cubic-bezier(.25, .1, .25, 1),
+    opacity .36s cubic-bezier(.25, .1, .25, 1),
+    filter .5s cubic-bezier(.25, .1, .25, 1);
+}
+.toast.is-on {
+  filter: blur(0);
+  transform: translate3d(-50%, 0, 0) scale(1);
+  pointer-events: auto;
+}
+.toast::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 20%, rgba(255, 255, 255, .36) 50%, transparent 80%);
+  transform: translateX(-130%);
+  pointer-events: none;
+}
+.toast.is-on::after {
+  animation: toast-sheen .75s cubic-bezier(.22, 1, .36, 1) .12s both;
+}
+@keyframes toast-sheen {
+  to { transform: translateX(130%); }
+}
+.toast__undo {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  height: 24px;
+  padding: 0 9px;
+  margin-left: 4px;
+  border-radius: 99px;
+  border: 1px solid rgba(255, 255, 255, .35);
+  background: rgba(255, 255, 255, .14);
+  color: inherit;
+  font: 600 12px/1 var(--sans);
+  cursor: pointer;
+}
+.toast__undo:hover {
+  background: rgba(255, 255, 255, .26);
+}
+
+/* ---------- 5. #013 Shockwave Glow (Chromatic Split Halo on Input Focus/Submit) ---------- */
+.vibe-shockwave {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  margin-top: -12px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 94;
+  box-shadow:
+    0 0 0 2px rgba(var(--ac-rgb), .75),
+    0 0 18px 4px rgba(255, 90, 140, .42),
+    0 0 28px 8px rgba(80, 195, 255, .42);
+  animation: shockwave-expand .92s cubic-bezier(.16, 1, .3, 1) forwards;
+}
+@keyframes shockwave-expand {
+  0% {
+    transform: translate3d(var(--sx), var(--sy), 0) scale(.4);
+    opacity: .95;
+  }
+  100% {
+    transform: translate3d(var(--sx), var(--sy), 0) scale(11);
+    opacity: 0;
+  }
+}
+
+/* ---------- 6. #014 Card Delete Particle Fragments ---------- */
+.vibe-frag {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 95;
+  border-radius: 3px;
+  will-change: transform, opacity;
+}
+
+/* ---------- 7. 2027 Collage & recent.design Tactile Ticket Stub + Stamp ---------- */
+.ev__ticket {
+  position: relative;
+  padding-left: 18px;
+  padding-right: 18px;
+  overflow: hidden;
+}
+.ev__ticket::before,
+.ev__ticket::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 11px;
+  height: 11px;
+  margin-top: -5.5px;
+  border-radius: 50%;
+  background: var(--surface, var(--bg));
+  border: 1px solid rgba(var(--ac-rgb), .48);
+  pointer-events: none;
+}
+.ev__ticket::before { left: -6px; }
+.ev__ticket::after { right: -6px; }
+
+/* Counter odometer digit flip */
+.count b {
+  transition: transform .26s cubic-bezier(.22, 1.35, .36, 1);
+}
+.count b.is-tick {
+  animation: digit-flip .28s cubic-bezier(.22, 1.35, .36, 1);
+}
+@keyframes digit-flip {
+  0% { transform: translateY(-6px); opacity: .55; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Footer Love Easter-Egg Tooltip (vibedesign.tips playful human micro-copy) */
+.foot__love {
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: transform .28s cubic-bezier(.22, 1.35, .36, 1), text-shadow .28s;
+}
+.foot__love:hover {
+  transform: translateY(-2px);
+  text-shadow: 0 0 18px rgba(var(--ac-rgb), .55);
+}
+.foot__love-egg {
+  position: fixed;
+  z-index: 96;
+  pointer-events: none;
+  padding: 7px 13px;
+  border-radius: 99px;
+  background: var(--ink);
+  color: var(--bg);
+  font: 600 12px/1.3 var(--sans);
+  letter-spacing: .04em;
+  box-shadow: 0 14px 34px -8px rgba(0, 0, 0, .45);
+  white-space: nowrap;
+  animation: egg-float 2.2s cubic-bezier(.22, 1, .36, 1) forwards;
+}
+@keyframes egg-float {
+  0% { opacity: 0; transform: translate3d(-50%, 6px, 0) scale(.9); }
+  14% { opacity: 1; transform: translate3d(-50%, -8px, 0) scale(1); }
+  82% { opacity: 1; transform: translate3d(-50%, -18px, 0) scale(1); }
+  100% { opacity: 0; transform: translate3d(-50%, -26px, 0) scale(.95); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vibe-shockwave, .vibe-frag, .foot__love-egg { display: none !important; }
+  .portal-card::before { display: none; }
+}
+
+/* ==========================================================================
+   Editorial Giftbox Polish (B-Route: 14th Anniversary Collector's Box Set)
+   60-30-10 Color Proportion · Tactile Unboxing Craft · Silky 60fps Motion
+   ========================================================================== */
+
+:root {
+  --foil: #a87e43;
+  --foil-rgb: 168, 126, 67;
+  --stamp: #a63a2b;
+  --stamp-rgb: 166, 58, 43;
+  --tape: rgba(232, 212, 168, 0.76);
+}
+html[data-mode=galaxy] {
+  --foil: #d6dfef;
+  --foil-rgb: 214, 223, 239;
+  --stamp: #e89685;
+  --stamp-rgb: 232, 150, 133;
+  --tape: rgba(186, 206, 240, 0.24);
+}
+
+/* ---------- 0. Top Book-Spine Masthead & Eribong Collection Badge ---------- */
+.bar__mark .glyph {
+  color: var(--foil);
+}
+.bar__mark b {
+  font-family: var(--serif);
+  letter-spacing: 0.14em;
+  font-weight: 600;
+}
+.bar__ed {
+  border-radius: 2px !important;
+  border-color: rgba(var(--foil-rgb), 0.42) !important;
+  color: var(--ink-2) !important;
+  letter-spacing: 0.08em !important;
+  white-space: nowrap !important;
+}
+@media (min-width: 1101px) {
+  html[data-mode=paper] .bar__nav {
+    border: 0;
+    box-shadow: none;
+    background: transparent;
+    gap: 6px;
+  }
+  html[data-mode=paper] .bar__nav a {
+    border-radius: 3px;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+  }
+  html[data-mode=paper] .bar__nav a.is-on,
+  html[data-mode=paper] .bar__nav a[aria-current="page"] {
+    background: var(--ink);
+    color: var(--bg);
+  }
+}
+
+.tool--eribong {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0 12px;
+  height: 36px;
+  border-radius: 999px;
+  border: 1px solid rgba(var(--foil-rgb), 0.45);
+  background: rgba(var(--foil-rgb), 0.10);
+  font: 500 12px/1 var(--sans);
+  color: var(--ink);
+  transition: border-color 0.25s, background 0.25s, transform 0.25s;
+}
+.tool--eribong:hover {
+  border-color: var(--foil);
+  background: rgba(var(--foil-rgb), 0.18);
+  transform: translateY(-1px);
+}
+.eribong-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #dce8ff;
+  box-shadow: 0 0 8px #8db8ff, 0 0 16px rgba(141, 184, 255, 0.85);
+}
+@media (max-width: 860px) {
+  .tool--eribong { display: none; }
+}
+
+/* ---------- 1. Spacious 2-Column Giftbox Unboxing Hero Spread (#cover) ---------- */
+html[data-mode=paper] .issue {
+  grid-template-columns: minmax(340px, 0.96fr) minmax(380px, 1.04fr);
+  gap: clamp(28px, 4.2vw, 62px);
+  padding: calc(var(--bar) + 34px) var(--gut) 56px;
+  align-items: start;
+  min-height: 0;
+}
+
+/* Left Column: Physical Album Sleeve & Flippable Photocard */
+.issue__stage {
+  display: grid;
+  justify-items: stretch;
+  gap: 14px;
+  width: 100%;
+}
+.mag-wrap {
+  max-width: 100%;
+  width: 100%;
+}
+.mag {
+  padding: 18px 18px 16px 22px;
+  border-radius: 3px;
+  background: #fcf9f2;
+  border: 1px solid rgba(29, 26, 22, 0.22);
+  box-shadow:
+    4px 4px 0 #efe8d8,
+    5px 5px 0 rgba(29, 26, 22, 0.14),
+    8px 8px 0 #e6decb,
+    9px 9px 0 rgba(29, 26, 22, 0.11),
+    0 28px 64px -26px rgba(29, 26, 22, 0.26);
+}
+/* Inner gold-foil hairline frame */
+.mag::before {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  border: 1px solid rgba(168, 126, 67, 0.36);
+  pointer-events: none;
+  z-index: 4;
+}
+.mag__tape {
+  position: absolute;
+  top: -10px;
+  left: 38px;
+  width: 96px;
+  height: 22px;
+  z-index: 7;
+  pointer-events: none;
+  background: var(--tape);
+  border-left: 1px dashed rgba(29, 26, 22, 0.18);
+  border-right: 1px dashed rgba(29, 26, 22, 0.18);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transform: rotate(-3.2deg);
+}
+.mag__stamp {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  z-index: 7;
+  padding: 4px 10px;
+  border: 1.5px solid var(--stamp);
+  color: var(--stamp);
+  background: rgba(252, 249, 242, 0.92);
+  font: 700 10px/1.1 var(--grot);
+  letter-spacing: 0.14em;
+  transform: rotate(3.6deg);
+  box-shadow: 0 4px 12px -4px rgba(166, 58, 43, 0.22);
+}
+.mag__top {
+  padding: 0 116px 9px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(29, 26, 22, 0.14);
+  color: #544d44;
+}
+.mag__coord {
+  color: #8c6632;
+}
+.mag__ph {
+  aspect-ratio: 4 / 4.45;
+  border-radius: 2px;
+  perspective: 1200px;
+}
+.mag__foot {
+  position: relative;
+  z-index: 5;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.mag__meta {
+  margin-top: 0;
+  font-size: 11px;
+  color: #6e655a;
+  gap: 8px;
+}
+.mag__meta span:first-child {
+  color: #8c6632;
+}
+.mag__flip-btn {
+  position: static;
+  height: 28px;
+  padding: 0 12px;
+  border-radius: 99px;
+  font: 600 11.5px/1 var(--sans);
+  color: #1d1a16;
+  background: rgba(168, 126, 67, 0.15);
+  border: 1px solid rgba(168, 126, 67, 0.38);
+  box-shadow: none;
+  cursor: pointer;
+  flex: none;
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), background 0.2s, border-color 0.2s;
+}
+.mag__flip-btn:hover {
+  transform: translateY(-1px);
+  background: rgba(168, 126, 67, 0.26);
+  border-color: var(--foil);
+}
+.mag__flip-btn[aria-pressed="true"] {
+  background: #1d1a16;
+  color: #fcf9f2;
+  border-color: #1d1a16;
+}
+
+.issue__ctrl {
+  max-width: 100%;
+}
+.sigil-pick {
+  border-radius: 3px;
+}
+
+/* Right Column: Big Editorial Headline + Boarding Pass Ritual + Lyric Bookmark */
+.issue__side {
+  padding-top: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.issue__top-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+.issue__folio {
+  width: auto;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+  color: var(--ink-3);
+  font-size: 11px;
+  letter-spacing: 0.15em;
+}
+.issue__folio b {
+  color: var(--foil);
+  font-weight: 700;
+  margin-left: 3px;
+}
+.issue__checkin-row {
+  margin: 0;
+  padding: 4px 6px 4px 10px;
+  border-radius: 4px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.issue__checkin-row .issue__ck {
+  margin: 0 !important;
+  font-size: 11.5px;
+  color: var(--ink-2);
+}
+.issue__checkin-row .issue__ckbtn {
+  margin: 0 !important;
+  height: 26px;
+  padding: 0 10px;
+  font-size: 11.5px;
+  border-radius: 3px;
+}
+
+.issue__hero-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+}
+.issue__hero-en {
+  margin: 0;
+  font: 500 clamp(44px, 5.2vw, 72px)/0.95 var(--serif);
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.issue__hero-zh {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font: 500 18px/1.2 var(--cn);
+  color: var(--ink-2);
+}
+.issue__hero-sigil {
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  color: var(--pc, var(--foil));
+}
+.issue__hero-sigil .glyph {
+  width: 20px;
+  height: 20px;
+}
+
+.issue__today {
+  margin: 0;
+  max-width: none;
+  font-size: 14.8px;
+  line-height: 1.78;
+  color: var(--ink-2);
+}
+
+/* Boarding Pass Ritual Box ("你是哪一年登上这颗星球的？") */
+.exo-era-anchor {
+  margin: 0;
+  padding: 18px 20px;
+  border-radius: 4px;
+  border: 1px solid rgba(var(--ink-rgb), 0.22);
+  background: var(--surface);
+  box-shadow: 0 14px 32px -18px rgba(29, 26, 22, 0.18);
+}
+.exo-era-anchor__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.exo-era-anchor__title {
+  font: 600 15.5px/1.3 var(--cn);
+  color: var(--ink);
+}
+.exo-era-anchor__sub {
+  font-size: 12px;
+  color: var(--ink-3);
+}
+.exo-era-anchor__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+.exo-era-chip {
+  padding: 5px 11px;
+  border-radius: 3px;
+  font-size: 12px;
+  border: 1px solid rgba(var(--ink-rgb), 0.2);
+  background: var(--bg);
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: all 0.24s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.exo-era-chip:hover {
+  transform: translateY(-1px);
+  border-color: var(--foil);
+  color: var(--ink);
+}
+.exo-era-chip[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+  font-weight: 600;
+}
+.exo-era-boarding {
+  padding: 13px 16px;
+  background: var(--surface-2, #f3ece0);
+  border-left: 3px solid var(--foil);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: center;
+}
+.exo-era-boarding__days {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.exo-era-boarding__days b {
+  font: 600 26px/1.05 var(--serif);
+  color: var(--ink);
+}
+.exo-era-boarding__days span {
+  font-size: 12.5px;
+  color: var(--ink-2);
+}
+.exo-era-anchor__note {
+  margin: 4px 0 0;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+.exo-era-boarding__stamp {
+  display: grid;
+  place-items: center;
+  padding: 6px 11px;
+  border: 1px dashed var(--foil);
+  color: var(--foil);
+  font: 600 10.5px/1.25 var(--grot);
+  letter-spacing: 0.1em;
+  text-align: center;
+  transition: background 0.2s, transform 0.2s;
+}
+.exo-era-boarding__stamp b {
+  font-size: 12px;
+}
+.exo-era-boarding__stamp:hover {
+  background: rgba(var(--foil-rgb), 0.14);
+  transform: translateY(-1px);
+}
+
+/* Gold-foil bookmark lyric card */
+.issue__lyric {
+  margin: 0;
+  padding: 12px 15px;
+  border-top: 0;
+  border-radius: 3px;
+  border: 1px solid rgba(var(--foil-rgb), 0.28);
+  border-left: 3px solid var(--foil);
+  background: linear-gradient(135deg, rgba(var(--foil-rgb), 0.08), transparent 80%);
+}
+.issue__lyric figcaption {
+  color: var(--foil);
+  letter-spacing: 0.18em;
+}
+.issue__lyric blockquote {
+  margin: 6px 0 4px;
+  padding-left: 0;
+  border-left: 0;
+}
+.issue__lyric .ko {
+  font-size: 15.5px;
+  line-height: 1.45;
+}
+.issue__lyric blockquote p + p {
+  font-size: 13px;
+}
+
+.issue__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 0;
+}
+.cbtn {
+  border-radius: 4px;
+}
+.issue__btns {
+  margin-top: -4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.issue__btns .seg {
+  height: 34px;
+  padding: 2px;
+  border-radius: 4px;
+}
+.issue__btns .seg button {
+  height: 28px;
+  padding: 0 10px;
+  font-size: 11.5px;
+  border-radius: 3px;
+}
+
+/* Full-Width Bottom Giftbox Compartment Ribbon */
+.issue__side--r {
+  grid-column: 1 / -1;
+  margin-top: 8px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+.issue__box-strip {
+  display: grid;
+  grid-template-columns: minmax(0, 1.85fr) minmax(290px, 0.85fr);
+  gap: 24px;
+  align-items: stretch;
+}
+.issue__toc-wrap .kicker {
+  margin-bottom: 10px;
+  color: var(--foil);
+  font-weight: 600;
+}
+.issue__toc {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  border-bottom: 0;
+}
+.issue__toc a {
+  grid-template-columns: 26px minmax(0, 1fr);
+  gap: 6px;
+  padding: 11px 13px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--surface);
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.2s, box-shadow 0.25s;
+}
+.issue__toc a:hover {
+  padding-left: 13px;
+  transform: translateY(-2px);
+  border-color: var(--foil);
+  box-shadow: 0 12px 26px -16px rgba(29, 26, 22, 0.22);
+}
+.issue__toc i {
+  color: var(--foil);
+}
+.issue__toc b {
+  font-size: 14.5px;
+}
+.issue__toc span span {
+  font-size: 11.8px;
+  line-height: 1.42;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.issue__radar {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+@media (max-width: 1080px) {
+  html[data-mode=paper] .issue {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .issue__box-strip {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .issue__toc {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  .issue__toc {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .exo-era-boarding {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* ---------- 2. Collector Photocard 3D Back-Flip ---------- */
+.mag__back {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  padding: 36px 22px 20px;
+  background:
+    radial-gradient(320px circle at 85% 15%, color-mix(in srgb, var(--pc, #a87e43) 18%, transparent), transparent 70%),
+    linear-gradient(160deg, #fcf9f2 0%, #f1e9d8 100%);
+  color: #1c1916;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: rotateY(180deg) scale(0.96);
+  transition:
+    opacity 0.42s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.54s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.mag__ph.is-flipped .mag__back {
+  opacity: 1;
+  pointer-events: auto;
+  transform: rotateY(0deg) scale(1);
+}
+.mag__ph.is-flipped > img,
+.mag__ph.is-flipped > .mag__cl,
+.mag__ph.is-flipped > .mag__vert {
+  opacity: 0.06;
+  filter: blur(4px);
+  transition: opacity 0.4s ease, filter 0.4s ease;
+}
+.mag__back-in {
+  border: 1px dashed rgba(28, 25, 22, 0.24);
+  border-radius: 4px;
+  padding: 18px 18px 15px;
+  background: rgba(255, 253, 248, 0.82);
+  box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.55);
+  display: grid;
+  gap: 11px;
+  text-align: center;
+}
+.mag__back-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  font: 600 9.5px/1.2 var(--sans);
+  letter-spacing: 0.12em;
+  color: #6e655a;
+  border-bottom: 1px solid rgba(28, 25, 22, 0.12);
+  padding-bottom: 8px;
+}
+.mag__back-top b {
+  color: var(--stamp);
+  font-weight: 700;
+}
+.mag__back-plush {
+  margin: 2px auto 0;
+  filter: drop-shadow(0 6px 12px rgba(28, 25, 22, 0.12));
+}
+.mag__back-ko {
+  font: 600 16px/1.55 var(--cn);
+  color: #1c1916;
+}
+.mag__back-zh {
+  font: 400 13.5px/1.72 var(--cn);
+  color: #3f3931;
+  text-align: left;
+  padding: 10px 13px;
+  border-radius: 4px;
+  background: rgba(168, 126, 67, 0.10);
+  border-left: 2.5px solid var(--pc, #a87e43);
+}
+.mag__back-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 12px;
+  font: 500 11px/1.3 var(--sans);
+  color: #6e655a;
+}
+.mag__back-sign {
+  font: italic 500 13px/1.2 var(--serif);
+  letter-spacing: 0.06em;
+  color: #8c6632;
+}
+
+/* Cover page-turn silky settle */
+.mag__ph img {
+  transition:
+    opacity 0.5s ease,
+    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.45s ease;
+}
+.mag.is-turning .mag__ph img {
+  animation: page-settle 0.62s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes page-settle {
+  0% { opacity: 0.52; transform: scale(1.045) translateX(8px); filter: blur(1.5px); }
+  100% { opacity: 1; transform: scale(1) translateX(0); filter: blur(0); }
+}
+
+/* ---------- 3. Live Ticket Stub in Hero Strip ---------- */
+.radar-card--ticket {
+  position: relative;
+  padding: 0;
+  border-radius: 4px;
+  border: 1px solid rgba(var(--foil-rgb), 0.42);
+  background:
+    radial-gradient(240px circle at 100% 0%, rgba(var(--foil-rgb), 0.12), transparent 70%),
+    var(--surface);
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.radar-card--ticket::before,
+.radar-card--ticket::after {
+  content: "";
+  position: absolute;
+  top: 56%;
+  width: 12px;
+  height: 12px;
+  margin-top: -6px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 1px solid rgba(var(--foil-rgb), 0.45);
+  pointer-events: none;
+}
+.radar-card--ticket::before { left: -7px; }
+.radar-card--ticket::after { right: -7px; }
+.radar-card__main {
+  display: grid;
+  gap: 6px;
+  padding: 14px 16px 12px;
+}
+.radar-card__main:hover b {
+  color: var(--ac);
+}
+.radar-card__sub {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 9px 16px;
+  border-top: 1px dashed rgba(var(--foil-rgb), 0.36);
+  background: rgba(var(--ink-rgb), 0.03);
+  font-size: 11.8px;
+  color: var(--ink-2);
+  transition: background 0.2s, color 0.2s;
+}
+.radar-card__sub span {
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+.radar-card__sub b {
+  font: 600 12px/1.3 var(--cn);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.radar-card__sub:hover {
+  background: rgba(var(--foil-rgb), 0.12);
+  color: var(--ac);
+}
+
+/* ---------- 4. Architectural Print Geometry & Section Pacing ---------- */
+.sec {
+  padding-top: clamp(76px, 8.5vw, 120px);
+  padding-bottom: clamp(76px, 8.5vw, 120px);
+}
+.sec__head {
+  margin-bottom: clamp(32px, 3.8vw, 48px);
+}
+html[data-mode=paper] .sec__head::after {
+  content: "EXOPLANET // 14TH ANNIVERSARY BOX SET";
+  color: var(--foil);
+}
+html[data-mode=paper] .mstrip-card {
+  border-radius: 4px !important;
+  border: 1px solid rgba(29, 26, 22, 0.22);
+}
+html[data-mode=paper] .next {
+  border-radius: 4px;
+  border: 1px solid rgba(29, 26, 22, 0.22);
+  box-shadow: 0 24px 54px -32px rgba(29, 26, 22, 0.22);
+}
+html[data-mode=paper] .lane--official {
+  background: var(--surface);
+  border: 1px solid rgba(29, 26, 22, 0.16);
+  border-top: 3px solid var(--ink);
+  border-radius: 4px;
+}
+html[data-mode=paper] .lane--rumor {
+  background:
+    repeating-linear-gradient(135deg, rgba(168, 126, 67, 0.035) 0 10px, transparent 10px 20px),
+    var(--surface);
+  border: 1px dashed rgba(158, 75, 20, 0.38);
+  border-top: 3px dashed var(--rm);
+  border-radius: 4px;
+}
+html[data-mode=paper] .portal-card {
+  border-radius: 4px;
+  border: 1px solid rgba(29, 26, 22, 0.22);
+  background: var(--surface);
+}
+
+/* ---------- 5. Tactile Perforated Concert Ticket Stubs & Tear-Off Action (#schedule) ---------- */
+.ev {
+  position: relative;
+  border-radius: 4px !important;
+  transition:
+    transform 0.42s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.42s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.32s ease;
+}
+.ev:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 42px -22px rgba(29, 26, 22, 0.26);
+}
+.ev__date {
+  position: relative;
+  padding-right: 18px;
+  border-right: 1.5px dashed rgba(var(--ink-rgb), 0.18);
+}
+.ev__date::before,
+.ev__date::after {
+  content: "";
+  position: absolute;
+  right: -7px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  pointer-events: none;
+}
+.ev__date::before { top: -24px; }
+.ev__date::after { bottom: -24px; }
+
+.ev__side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  padding-left: 16px;
+  border-left: 1.5px dashed rgba(var(--ink-rgb), 0.16);
+}
+.ev__stamp {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font: 700 9.5px/1.1 var(--grot);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border: 1.5px double currentColor;
+  transform: rotate(-3deg);
+  opacity: 0.84;
+  transition: transform 0.32s cubic-bezier(0.22, 1.28, 0.36, 1), opacity 0.25s;
+}
+.ev:hover .ev__stamp {
+  transform: rotate(-0.5deg) scale(1.04);
+  opacity: 0.98;
+}
+.ev__stamp--official {
+  color: var(--stamp);
+  background: rgba(var(--stamp-rgb), 0.06);
+}
+.ev__stamp--media {
+  color: var(--foil);
+  background: rgba(var(--foil-rgb), 0.08);
+}
+.ev__stamp--unverified {
+  color: var(--rm);
+  background: rgba(var(--rm-rgb), 0.07);
+}
+
+.tear-stub-btn {
+  width: auto !important;
+  height: 32px !important;
+  padding: 0 11px !important;
+  border-radius: 3px !important;
+  display: inline-flex !important;
+  align-items: center;
+  gap: 6px;
+  font: 500 12px/1 var(--sans);
+  border: 1px solid rgba(var(--ink-rgb), 0.24) !important;
+  background: var(--bg) !important;
+  color: var(--ink) !important;
+  white-space: nowrap;
+  transition: all 0.24s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.tear-stub-btn svg {
+  width: 13px !important;
+  height: 13px !important;
+}
+.tear-stub-btn:hover {
+  border-color: var(--foil) !important;
+  background: rgba(var(--foil-rgb), 0.14) !important;
+  transform: translateY(-1px);
+}
+.tear-stub-btn[aria-pressed="true"] {
+  background: var(--stamp) !important;
+  color: #fcf9f2 !important;
+  border-color: var(--stamp) !important;
+}
+@media (max-width: 720px) {
+  .ev__stamp { display: none; }
+  .ev__date::before, .ev__date::after { display: none; }
+  .ev__side { border-left: 0; padding-left: 0; }
+}
+
+/* ---------- 6. Heartfelt Milestone Notes (#albums & archive.html #road) ---------- */
+.stage__memory {
+  margin-top: 12px;
+  padding: 12px 15px;
+  border-radius: 3px;
+  border: 1px solid color-mix(in srgb, var(--a-ac, #d4af37) 34%, transparent);
+  border-left: 3px solid var(--a-ac, #d4af37);
+  background: color-mix(in srgb, var(--a-ac, #d4af37) 10%, rgba(255, 255, 255, 0.03));
+}
+.stage__memory-k {
+  display: block;
+  font: 600 10px/1.2 var(--sans);
+  letter-spacing: 0.18em;
+  color: var(--a-ac, #d4af37);
+  margin-bottom: 5px;
+}
+.stage__memory p {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.68;
+  color: var(--a-fg, #f5f6fa);
+  opacity: 0.92;
+}
+
+/* Milestone Bookmarks & Heartfelt Whispers in archive.html */
+.road-bookmarks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  margin: 14px 0 18px;
+  padding: 12px 15px;
+  border-radius: 4px;
+  border: 1px solid rgba(var(--foil-rgb), 0.36);
+  background: linear-gradient(135deg, rgba(var(--foil-rgb), 0.10), rgba(var(--ac-rgb), 0.03));
+}
+.road-bookmarks__k {
+  font: 600 11px/1.2 var(--sans);
+  letter-spacing: 0.12em;
+  color: var(--foil);
+  margin-right: 4px;
+}
+.road-bm {
+  height: 30px;
+  padding: 0 11px;
+  border-radius: 3px;
+  font: 500 12px/1 var(--cn);
+  color: var(--ink);
+  background: var(--surface, rgba(255, 255, 255, 0.08));
+  border: 1px solid var(--line);
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.2s, background 0.2s;
+}
+.road-bm:hover {
+  transform: translateY(-1px);
+  border-color: var(--foil);
+  background: rgba(var(--foil-rgb), 0.14);
+}
+.ry.is-bm-flash {
+  animation: bm-highlight 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+@keyframes bm-highlight {
+  0%, 35% { box-shadow: 0 0 0 2px var(--foil), 0 18px 42px -16px rgba(var(--foil-rgb), 0.45); }
+  100% { box-shadow: none; }
+}
+
+.rd.rd--heart {
+  position: relative;
+  padding-left: 14px !important;
+  border-left: 3px solid var(--stamp) !important;
+  background: linear-gradient(90deg, rgba(var(--foil-rgb), 0.13), transparent 72%);
+  border-radius: 2px 6px 6px 2px;
+}
+.rd__whisper {
+  display: block;
+  margin-top: 6px;
+  padding: 7px 11px;
+  border-radius: 3px;
+  background: rgba(var(--foil-rgb), 0.10);
+  border: 1px dashed rgba(var(--foil-rgb), 0.4);
+  font-size: 12.8px;
+  line-height: 1.62;
+  color: var(--ink-2);
+}
+.rd__whisper em {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--stamp);
+  margin-right: 8px;
+  letter-spacing: 0.04em;
+}
+
+/* ---------- 7. Silky Scroll-Linked Stagger Reveal & Galaxy Silver Ocean ---------- */
+.vibe-reveal {
+  opacity: 0;
+  transform: translate3d(0, 18px, 0) scale(0.988);
+  transition:
+    opacity 0.68s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.68s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--stagger, 0ms);
+}
+.vibe-reveal.is-in {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vibe-reveal { opacity: 1; transform: none; transition: none; }
+  .mag.is-turning .mag__ph img { animation: none; }
+}
+
+html[data-mode=galaxy] body::before {
+  content: "";
+  position: fixed;
+  inset: -10%;
+  pointer-events: none;
+  z-index: -2;
+  background:
+    radial-gradient(640px 520px at 18% 22%, rgba(168, 196, 255, 0.12), transparent 65%),
+    radial-gradient(720px 560px at 84% 28%, rgba(188, 162, 255, 0.09), transparent 68%),
+    radial-gradient(580px 500px at 56% 78%, rgba(226, 238, 255, 0.08), transparent 66%),
+    radial-gradient(120px 120px at 26% 68%, rgba(235, 244, 255, 0.09), transparent 70%),
+    radial-gradient(90px 90px at 74% 58%, rgba(210, 228, 255, 0.08), transparent 70%);
+  animation: silver-nebula-drift 22s ease-in-out infinite alternate;
+}
+@keyframes silver-nebula-drift {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  100% { transform: translate3d(-1.5%, 1.5%, 0) scale(1.04); }
+}

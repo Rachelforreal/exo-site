@@ -1,0 +1,43 @@
+name: 每日自动同步微博资讯到四大板块
+
+on:
+  schedule:
+    # 每天北京时间 09:00 与 21:00 自动运行（UTC 01:00 与 13:00）
+    - cron: '0 1,13 * * *'
+  workflow_dispatch: # 支持在 GitHub Actions 页面手动点按钮立即同步
+
+permissions:
+  contents: write
+
+jobs:
+  sync-weibo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库源码
+        uses: actions/checkout@v4
+
+      - name: 安装 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: 拉取微博并分拣到「此刻星讯 / 票根与票夹 / 唱片封套 / 来时路与团综」
+        env:
+          # 可在 GitHub 仓库 Settings -> Secrets and variables -> Actions 中配置：
+          # WEIBO_COOKIE: 浏览器访问 m.weibo.cn 时的 SUB=... 访客 Cookie（可选，提高拉取稳定性）
+          # RSSHUB_BASE: 如果使用自建或公共 RSSHub（如 https://rsshub.app），填写地址即可免 Cookie 拉取
+          WEIBO_COOKIE: ${{ secrets.WEIBO_COOKIE }}
+          RSSHUB_BASE: ${{ secrets.RSSHUB_BASE }}
+        run: node tools/sync-weibo.mjs
+
+      - name: 自动提交更新后的 JSON 数据与日历 (.ics)
+        run: |
+          git config user.name "exoplanet-bot"
+          git config user.email "bot@exolneverland.com"
+          if [[ -n "$(git status --porcelain data/ site/data/ site/cal/)" ]]; then
+            git add data/ site/data/ site/cal/
+            git commit -m "chore(data): 每日自动同步微博资讯与行程"
+            git push
+          else
+            echo "今日暂无新增微博资讯"
+          fi
