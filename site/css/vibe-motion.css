@@ -819,12 +819,133 @@ html[data-mode=paper] .issue {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 760px) {
+  /* 1. Prevent any horizontal overflow in paper cover & grids */
+  html[data-mode=paper] .issue {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    padding: calc(var(--bar) + 14px) 16px 28px;
+  }
+  .issue__stage,
+  .issue__side,
+  .issue__side--r,
+  .mag-wrap,
+  .mag,
+  .issue__ctrl {
+    min-width: 0;
+    max-width: calc(100vw - 32px);
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .mag__nav--prev { left: 6px; }
+  .mag__nav--next { right: 6px; }
+  .mag {
+    padding: 13px 13px 13px 15px;
+    margin-right: 0;
+    box-shadow:
+      3px 3px 0 #efe8d8,
+      4px 4px 0 rgba(29, 26, 22, 0.12),
+      0 14px 32px -18px rgba(29, 26, 22, 0.22);
+  }
+  .mag__stamp {
+    top: 11px;
+    right: 11px;
+    padding: 3px 7px;
+    font-size: 9px;
+  }
+  .mag__top {
+    padding: 0 86px 8px 0;
+    font-size: 9px;
+    letter-spacing: 0.03em;
+    flex-wrap: wrap;
+    gap: 3px 8px;
+  }
+  .mag__foot {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .mag__meta {
+    min-width: 0;
+    flex: 1 1 170px;
+    font-size: 10.5px;
+  }
+  .mag__flip-btn {
+    height: 28px;
+    padding: 0 10px;
+    font-size: 11px;
+  }
+  .issue__ctrl-k {
+    white-space: normal;
+    word-break: break-word;
+    font-size: 10.5px;
+    line-height: 1.45;
+  }
+  .issue__pick {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+  }
+  .sigil-pick {
+    min-width: 0;
+    padding: 0 6px;
+    gap: 5px;
+  }
   .issue__toc {
     grid-template-columns: minmax(0, 1fr);
   }
   .exo-era-boarding {
     grid-template-columns: minmax(0, 1fr);
+  }
+  .gb__badges {
+    flex-wrap: wrap;
+  }
+
+  /* 2. Crisp mobile typography */
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", var(--sans), sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .issue__hero-en {
+    font-size: clamp(34px, 10vw, 46px);
+  }
+  .issue__hero-zh {
+    font-size: 16px;
+  }
+  .issue__today,
+  .feed-card__body,
+  .ev__detail,
+  .stage__memory p {
+    font-size: 13.5px;
+    line-height: 1.65;
+  }
+  section[id],
+  .sec[id] {
+    scroll-margin-top: calc(var(--bar) + 12px);
+  }
+
+  /* 3. Tone down mobile animations so scrolling & taps feel natural, never janky */
+  .vibe-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .ev:hover,
+  .radar-card:hover,
+  .issue__toc a:hover,
+  .sigil-pick:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  .mag.is-turning .mag__ph img {
+    animation: none;
+  }
+  .jelly-press:active,
+  .jelly-pill:active,
+  .seg button:active,
+  .pick:active,
+  .sigil-pick:active,
+  .plush-card:active,
+  .cbtn:active {
+    transform: scale(0.985);
   }
 }
 
@@ -1261,11 +1382,11 @@ html[data-mode=galaxy] body::before {
   pointer-events: none;
   z-index: -2;
   background:
-    radial-gradient(640px 520px at 18% 22%, rgba(168, 196, 255, 0.12), transparent 65%),
-    radial-gradient(720px 560px at 84% 28%, rgba(188, 162, 255, 0.09), transparent 68%),
-    radial-gradient(580px 500px at 56% 78%, rgba(226, 238, 255, 0.08), transparent 66%),
-    radial-gradient(120px 120px at 26% 68%, rgba(235, 244, 255, 0.09), transparent 70%),
-    radial-gradient(90px 90px at 74% 58%, rgba(210, 228, 255, 0.08), transparent 70%);
+    radial-gradient(520px 420px at 18% 20%, rgba(178, 206, 255, 0.24), transparent 64%),
+    radial-gradient(560px 460px at 84% 26%, rgba(196, 172, 255, 0.20), transparent 66%),
+    radial-gradient(480px 420px at 52% 76%, rgba(226, 238, 255, 0.16), transparent 64%),
+    radial-gradient(180px 180px at 26% 62%, rgba(235, 244, 255, 0.15), transparent 70%),
+    radial-gradient(150px 150px at 76% 54%, rgba(210, 228, 255, 0.14), transparent 70%);
   animation: silver-nebula-drift 22s ease-in-out infinite alternate;
 }
 @keyframes silver-nebula-drift {
