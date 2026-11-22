@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="paper" data-member="baekhyun">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>EXOPLANET CHRONICLE · VOL. XIV</title>
+<link rel="stylesheet" href="fonts/web/fonts.css?v=2">
+<style>
+/* ============================================================================
+   EXOPLANET CHRONICLE — MONOGRAPH EDITION
+   Architectural restraint · Editorial typography · Tactile craft
+   ============================================================================ */
+:root {
+  --display: 'Cormorant Garamond', 'Songti SC', 'Noto Serif SC', 'STSong', Georgia, serif;
+  --serif: 'Songti SC', 'Noto Serif SC', 'STSong', 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Jost', -apple-system, 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+  --mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --ease: cubic-bezier(.19, 1, .22, 1);
+  --ease-soft: cubic-bezier(.25, .46, .45, .94);
+  --maxw: 1320px;
+}
+
+/* 01 · 宣纸与墨 (ALABASTER & SUMI) */
+html[data-theme="paper"] {
+  color-scheme: light;
+  --bg: #f4f1ea;
+  --bg-alt: #ece8de;
+  --surface: #f9f7f2;
+  --ink: #141413;
+  --ink-2: #3b3833;
+  --ink-3: #646058;
+  --line: rgba(20, 20, 19, .13);
+  --line-strong: rgba(20, 20, 19, .34);
+  --ac: #18273d;
+  --ac-ink: #f7f5f0;
+  --seal: #8f3020;        /* low-saturation archival cinnabar seal */
+  --seal-ink: #faf7f2;
+  --glow: rgba(24, 39, 61, .08);
+  --img-matte: #e6e1d5;
+  --grain-op: .035;
+}
+
+/* 02 · 黑曜与银海 (OBSIDIAN & SILVER OCEAN) */
+html[data-theme="obsidian"] {
+  color-scheme: dark;
+  --bg: #090a0d;
+  --bg-alt: #0f1116;
+  --surface: #12141a;
+  --ink: #efece6;
+  --ink-2: #c4c2bc;
+  --ink-3: #8a8d96;
+  --line: rgba(239, 236, 230, .11);
+  --line-strong: rgba(239, 236, 230, .30);
+  --ac: #dce2ec;
+  --ac-ink: #090a0d;
+  --seal: #c9b594;
+  --seal-ink: #0e0e0d;
+  --glow: rgba(214, 224, 240, .09);
+  --img-matte: #151820;
+  --grain-op: .04;
+}
+
+/* 03 · 月蚀与香槟 (ECLIPSE SLATE & CHAMPAGNE) */
+html[data-theme="eclipse"] {
+  color-scheme: dark;
+  --bg: #0f141c;
+  --bg-alt: #141b25;
+  --surface: #17202c;
+  --ink: #efeae0;
+  --ink-2: #c5c0b6;
+  --ink-3: #8c96a6;
+  --line: rgba(239, 234, 224, .12);
+  --line-strong: rgba(201, 173, 127, .42);
+  --ac: #c9ad7f;
+  --ac-ink: #10141b;
+  --seal: #c9ad7f;
+  --seal-ink: #10141b;
+  --glow: rgba(201, 173, 127, .10);
+  --img-matte: #161f2b;
+  --grain-op: .038;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; background: var(--bg); color: var(--ink); overflow-x: clip; }
+body {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 14.5px;
+  line-height: 1.7;
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  transition: background-color .55s var(--ease), color .45s var(--ease);
+}
+
+/* Subtle archival paper / film grain — barely perceptible texture */
+body::before {
+  content: "";
+  position: fixed; inset: 0; z-index: 90; pointer-events: none;
+  opacity: var(--grain-op);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+button, input, select { font: inherit; color: inherit; }
+button { cursor: pointer; background: none; border: 0; padding: 0; }
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+
+.wrap { width: min(var(--maxw), calc(100% - 64px)); margin: 0 auto; }
+
+/* ======================== MASTHEAD (Quiet Architectural Bar) ======================== */
+.masthead {
+  position: sticky; top: 0; z-index: 50;
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--line);
+}
+.masthead__inner {
+  height: 58px;
+  display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px;
+}
+.brand {
+  display: inline-flex; align-items: center; gap: 11px; justify-self: start;
+}
+.brand svg { width: 20px; height: 20px; stroke: var(--ink); fill: none; stroke-width: 1.3; opacity: .85; }
+.brand__word {
+  font-family: var(--display); font-size: 16px; font-weight: 500;
+  letter-spacing: .22em; text-transform: uppercase; line-height: 1;
+}
+
+.nav { display: flex; align-items: center; gap: 28px; }
+.nav a {
+  font-size: 11.5px; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--ink-3); position: relative; padding: 6px 0;
+  transition: color .25s ease;
+}
+.nav a:hover { color: var(--ink); }
+.nav a::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px;
+  background: var(--ink); transform: scaleX(0); transform-origin: right;
+  transition: transform .35s var(--ease);
+}
+.nav a:hover::after { transform: scaleX(1); transform-origin: left; }
+
+.theme-switch {
+  display: inline-flex; align-items: center; gap: 16px; justify-self: end;
+}
+.theme-opt {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 11.5px; letter-spacing: .1em; color: var(--ink-3);
+  padding: 4px 0; border-bottom: 1px solid transparent;
+  transition: color .25s ease, border-color .25s ease;
+}
+.theme-opt:hover { color: var(--ink); }
+.theme-opt[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--ac); }
+.theme-swatch {
+  width: 8px; height: 8px; border-radius: 50%;
+  border: 1px solid var(--line-strong);
+}
+
+/* ======================== 01. EDITORIAL COVER SPREAD ======================== */
+.spread {
+  padding: 44px 0 72px;
+  border-bottom: 1px solid var(--line);
+}
+.spread__grid {
+  display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: clamp(32px, 5vw, 84px); align-items: stretch;
+}
+
+/* Left: Clean Museum Plate Portrait */
+.plate-col { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.plate-frame {
+  position: relative; aspect-ratio: 4 / 5; max-height: 680px; width: 100%;
+  background: var(--img-matte); overflow: hidden;
+  transform-style: preserve-3d;
+  transition: transform .45s var(--ease);
+}
+.plate-img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: center 16%;
+  transform: scale(1.015);
+  transition: transform 1.1s var(--ease), opacity .55s ease;
+}
+.plate-frame:hover .plate-img { transform: scale(1.045); }
+
+/* Editorial curtain reveal on member change */
+.plate-curtain {
+  position: absolute; inset: 0; z-index: 4; pointer-events: none;
+  background: var(--bg);
+  transform: scaleY(0); transform-origin: top;
+}
+.plate-curtain.is-sweeping {
+  animation: curtainSweep .68s var(--ease) both;
+}
+@keyframes curtainSweep {
+  0% { transform: scaleY(0); transform-origin: bottom; }
+  45% { transform: scaleY(1); transform-origin: bottom; }
+  55% { transform: scaleY(1); transform-origin: top; }
+  100% { transform: scaleY(0); transform-origin: top; }
+}
+
+/* Whisper-quiet atmospheric power aura canvas over portrait */
+.aura-canvas {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  pointer-events: none; z-index: 3; mix-blend-mode: screen; opacity: .78;
+}
+html[data-theme="paper"] .aura-canvas { mix-blend-mode: soft-light; opacity: .88; }
+
+.plate-sheen {
+  position: absolute; inset: 0; pointer-events: none; z-index: 2;
+  background: radial-gradient(520px circle at var(--mx, 50%) var(--my, 35%), rgba(255,255,255,.16), transparent 62%);
+  opacity: 0; transition: opacity .45s ease;
+}
+.plate-frame:hover .plate-sheen { opacity: 1; }
+
+.plate-caption {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 16px;
+  font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--ink-3); font-family: var(--mono);
+  padding-top: 2px;
+}
+.plate-caption__right { display: inline-flex; align-items: center; gap: 7px; }
+.plate-caption svg { width: 13px; height: 13px; color: var(--ink-2); }
+
+/* Right: Editorial Typography + Contact Sheet */
+.folio-col {
+  display: flex; flex-direction: column; justify-content: space-between;
+  padding: 6px 0 26px; min-width: 0;
+}
+.folio-kicker {
+  display: flex; justify-content: space-between; align-items: center;
+  padding-bottom: 14px; border-bottom: 1px solid var(--line);
+  font-family: var(--mono); font-size: 11px; letter-spacing: .18em;
+  text-transform: uppercase; color: var(--ink-3);
+}
+.folio-head { padding: 34px 0 28px; }
+.folio-en {
+  margin: 0;
+  font-family: var(--display); font-weight: 300;
+  font-size: clamp(48px, 6.2vw, 86px); line-height: .94;
+  letter-spacing: -.015em; color: var(--ink);
+  transition: opacity .35s ease, transform .5s var(--ease);
+}
+.folio-zh-row {
+  margin-top: 14px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+}
+.folio-zh {
+  font-family: var(--serif); font-size: 20px; font-weight: 400;
+  letter-spacing: .14em; color: var(--ink-2);
+}
+.folio-power {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 11.5px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--ink-3); padding-left: 14px; border-left: 1px solid var(--line-strong);
+}
+.folio-power svg { width: 14px; height: 14px; color: var(--ac); }
+.folio-bio {
+  margin: 22px 0 0; max-width: 46ch;
+  font-size: 14.5px; line-height: 1.85; color: var(--ink-2);
+}
+.folio-credit {
+  margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--line);
+  display: flex; flex-wrap: wrap; gap: 6px 18px;
+  font-size: 12px; color: var(--ink-3); letter-spacing: .04em;
+}
+.folio-credit span { display: inline-flex; align-items: baseline; gap: 6px; }
+.folio-credit b { font-family: var(--mono); font-size: 10px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); opacity: .78; }
+
+.folio-actions {
+  margin-top: 28px; display: flex; align-items: center; gap: 26px; flex-wrap: wrap;
+}
+.link-rule {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 12.5px; letter-spacing: .12em; text-transform: uppercase;
+  padding-bottom: 4px; border-bottom: 1px solid var(--ink);
+  color: var(--ink); transition: opacity .25s ease, gap .3s var(--ease);
+}
+.link-rule:hover { gap: 13px; opacity: .72; }
+.link-quiet {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 12.5px; letter-spacing: .1em; color: var(--ink-3);
+  padding-bottom: 4px; border-bottom: 1px solid transparent;
+  transition: color .25s ease, border-color .25s ease;
+}
+.link-quiet:hover { color: var(--ink); border-bottom-color: var(--line-strong); }
+
+/* 9-Member Analog Contact Sheet */
+.sheet-block { margin-top: 38px; padding-top: 20px; border-top: 1px solid var(--line); }
+.sheet-meta {
+  display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 14px;
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: .16em;
+  text-transform: uppercase; color: var(--ink-3);
+}
+.contact-sheet {
+  display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 6px;
+}
+.cs-item {
+  position: relative; display: flex; flex-direction: column; gap: 6px; text-align: left;
+  transition: opacity .35s var(--ease);
+}
+.contact-sheet:hover .cs-item { opacity: .36; }
+.contact-sheet:hover .cs-item:hover,
+.contact-sheet .cs-item.is-active { opacity: 1; }
+
+.cs-thumb {
+  position: relative; aspect-ratio: 3 / 4.2; width: 100%; overflow: hidden;
+  background: var(--img-matte);
+}
+.cs-thumb img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center 16%;
+  filter: grayscale(35%) contrast(1.02);
+  transition: transform .55s var(--ease), filter .4s ease;
+}
+.cs-item:hover .cs-thumb img,
+.cs-item.is-active .cs-thumb img {
+  filter: grayscale(0%) contrast(1);
+  transform: scale(1.06);
+}
+.cs-item::after {
+  content: ""; display: block; height: 1.5px; width: 100%;
+  background: transparent; transition: background-color .3s ease;
+}
+.cs-item.is-active::after { background: var(--ac); }
+.cs-code {
+  font-family: var(--mono); font-size: 9.5px; letter-spacing: .08em;
+  color: var(--ink-3); text-align: center;
+}
+.cs-item.is-active .cs-code { color: var(--ink); font-weight: 600; }
+
+/* ======================== 02. ARCHIVAL CATALOGUE (Museum Ledger) ======================== */
+.section { padding: 76px 0; border-bottom: 1px solid var(--line); }
+.sec-head {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 24px;
+  margin-bottom: 34px;
+}
+.sec-num {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .2em;
+  text-transform: uppercase; color: var(--ink-3); margin-bottom: 10px;
+}
+.sec-title {
+  margin: 0; font-family: var(--display); font-weight: 300;
+  font-size: clamp(32px, 4vw, 52px); line-height: 1.06; letter-spacing: -.01em;
+}
+.sec-title em { font-style: italic; font-weight: 300; color: var(--ink-2); }
+.sec-note {
+  max-width: 38ch; text-align: right; font-size: 13px; color: var(--ink-3); line-height: 1.65;
+}
+
+/* Architectural Index Tabs — replaces 6 chunky dashboard boxes */
+.index-tabs {
+  display: flex; align-items: stretch; gap: clamp(18px, 3vw, 40px);
+  overflow-x: auto; scrollbar-width: none;
+  border-top: 1px solid var(--line-strong);
+  border-bottom: 1px solid var(--line);
+}
+.index-tabs::-webkit-scrollbar { display: none; }
+.idx-tab {
+  position: relative; flex: 0 0 auto;
+  display: inline-flex; align-items: baseline; gap: 6px;
+  padding: 18px 2px;
+  font-family: var(--serif); font-size: 16px; letter-spacing: .04em;
+  color: var(--ink-3); transition: color .25s ease;
+}
+.idx-tab:hover { color: var(--ink); }
+.idx-tab[aria-selected="true"] { color: var(--ink); }
+.idx-tab[aria-selected="true"]::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -1px;
+  height: 2px; background: var(--ac);
+}
+.idx-tab sup {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: .04em;
+  color: var(--ink-3); vertical-align: super;
+}
+.idx-tab[aria-selected="true"] sup { color: var(--ac); }
+
+/* Clean single-line editorial toolbar */
+.ledger-tools {
+  display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;
+  padding: 20px 0 14px;
+}
+.search-underline {
+  display: flex; align-items: center; gap: 10px;
+  flex: 1 1 280px; max-width: 420px;
+  border-bottom: 1px solid var(--line-strong); padding: 6px 0;
+  transition: border-color .25s ease;
+}
+.search-underline:focus-within { border-bottom-color: var(--ink); }
+.search-underline svg { width: 15px; height: 15px; stroke: var(--ink-3); fill: none; stroke-width: 1.5; flex-shrink: 0; }
+.search-underline input {
+  width: 100%; border: 0; outline: 0; background: transparent; font-size: 14px;
+}
+.search-underline input::placeholder { color: var(--ink-3); }
+
+.tool-right { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+.select-clean {
+  appearance: none; background: transparent; border: 0; border-bottom: 1px solid var(--line-strong);
+  padding: 6px 20px 6px 2px; font-size: 13px; color: var(--ink); outline: 0; cursor: pointer;
+  background-image: linear-gradient(45deg, transparent 50%, var(--ink-3) 50%), linear-gradient(135deg, var(--ink-3) 50%, transparent 50%);
+  background-position: calc(100% - 8px) 52%, calc(100% - 3px) 52%;
+  background-size: 5px 5px, 5px 5px; background-repeat: no-repeat;
+}
+.tool-btn {
+  font-size: 12px; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink-3); padding: 4px 0; border-bottom: 1px solid transparent;
+  transition: color .2s ease, border-color .2s ease;
+}
+.tool-btn:hover { color: var(--ink); border-bottom-color: var(--line-strong); }
+.tool-btn.is-on { color: var(--ink); border-bottom-color: var(--ac); }
+
+/* Quiet member filter line */
+.member-rail {
+  display: flex; align-items: center; gap: 18px;
+  overflow-x: auto; scrollbar-width: none;
+  padding: 10px 0 18px; border-bottom: 1px solid var(--line);
+}
+.member-rail::-webkit-scrollbar { display: none; }
+.m-flt {
+  flex: 0 0 auto; display: inline-flex; align-items: center; gap: 6px;
+  font-size: 12px; letter-spacing: .08em; color: var(--ink-3);
+  padding: 4px 0; border-bottom: 1px solid transparent;
+  transition: color .2s ease, border-color .2s ease;
+}
+.m-flt svg { width: 12px; height: 12px; opacity: .7; }
+.m-flt:hover { color: var(--ink); }
+.m-flt[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--ac); }
+.m-flt[aria-pressed="true"] svg { opacity: 1; color: var(--ac); }
+
+/* Optional Era Film Strip (Collapsed quietly until toggled) */
+.era-drawer {
+  display: none; padding: 20px 0 24px; border-bottom: 1px solid var(--line);
+}
+.era-drawer.is-open { display: block; animation: fadeIn .35s var(--ease); }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+.era-strip {
+  display: grid; grid-auto-flow: column; grid-auto-columns: 188px; gap: 14px;
+  overflow-x: auto; scrollbar-width: thin; padding-bottom: 6px;
+}
+.era-card { text-align: left; display: flex; flex-direction: column; gap: 8px; }
+.era-card__img {
+  aspect-ratio: 16 / 10; overflow: hidden; background: var(--img-matte); position: relative;
+}
+.era-card__img img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform .55s var(--ease);
+}
+.era-card:hover .era-card__img img { transform: scale(1.06); }
+.era-card.is-on .era-card__img { outline: 1.5px solid var(--ac); outline-offset: 2px; }
+.era-card__y { font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; color: var(--ink-3); }
+.era-card__t { font-size: 12px; color: var(--ink-2); line-height: 1.4; }
+
+/* Status & Count Line */
+.ledger-meta {
+  display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;
+  padding: 16px 0 10px;
+  font-family: var(--mono); font-size: 11px; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--ink-3);
+}
+.ledger-meta strong { color: var(--ink); font-size: 14px; font-weight: 500; }
+.view-toggle { display: inline-flex; gap: 14px; }
+
+/* Archival Ledger Rows — Zero pill soup, crisp Swiss/editorial rhythm */
+.ledger-list { border-top: 1px solid var(--line); }
+.year-chapter {
+  padding: 26px 0 8px;
+  font-family: var(--display); font-size: 28px; font-weight: 300; letter-spacing: .04em;
+  color: var(--ink); border-bottom: 1px solid var(--line-strong);
+  display: flex; justify-content: space-between; align-items: baseline;
+}
+.year-chapter span {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .14em; color: var(--ink-3);
+}
+
+.row { border-bottom: 1px solid var(--line); }
+.row__btn {
+  width: 100%; text-align: left;
+  display: grid; grid-template-columns: 108px 98px minmax(0, 1fr) auto;
+  align-items: baseline; gap: 20px;
+  padding: 16px 8px;
+  transition: background-color .25s ease, padding-left .3s var(--ease);
+}
+.row__btn:hover { background: var(--glow); padding-left: 14px; }
+.row__date {
+  font-family: var(--mono); font-size: 12px; font-variant-numeric: tabular-nums;
+  letter-spacing: .04em; color: var(--ink-3);
+}
+.row__kind {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 11.5px; letter-spacing: .08em; color: var(--ink-3);
+}
+.row__dot { width: 5px; height: 5px; border-radius: 50%; background: var(--ink-3); flex-shrink: 0; }
+.row__dot[data-k="milestone"] { background: var(--seal); }
+.row__dot[data-k="release"] { background: var(--ac); }
+.row__dot[data-k="variety"] { background: var(--ink-2); }
+
+.row__main { min-width: 0; }
+.row__title {
+  font-family: var(--serif); font-size: 16px; font-weight: 500;
+  color: var(--ink); line-height: 1.45;
+}
+.row__sub {
+  margin-top: 3px; font-size: 13px; color: var(--ink-3);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.row__right {
+  display: inline-flex; align-items: center; gap: 14px; justify-self: end;
+  font-family: var(--mono); font-size: 11px; letter-spacing: .06em; color: var(--ink-3);
+  white-space: nowrap;
+}
+.row__src {
+  padding-left: 12px; border-left: 1px solid var(--line);
+  font-style: italic; font-family: var(--display); font-size: 13.5px; letter-spacing: .02em;
+}
+.row__src--ext { opacity: .82; }
+
+.row__detail {
+  display: none; padding: 4px 8px 22px 226px;
+  font-size: 13.5px; line-height: 1.8; color: var(--ink-2);
+}
+.row.is-open .row__detail { display: block; animation: fadeIn .28s var(--ease); }
+.row__detail-meta {
+  margin-top: 10px; display: flex; gap: 18px; flex-wrap: wrap;
+  font-family: var(--mono); font-size: 11px; letter-spacing: .08em; color: var(--ink-3);
+}
+mark {
+  background: color-mix(in srgb, var(--ac) 16%, transparent);
+  color: var(--ink); padding: 0 2px;
+}
+
+.ledger-more {
+  margin-top: 28px; display: flex; justify-content: center;
+}
+.btn-editorial {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 11px 26px; border: 1px solid var(--line-strong);
+  font-size: 12px; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--ink); transition: background-color .25s ease, color .25s ease, border-color .25s ease;
+}
+.btn-editorial:hover { background: var(--ac); color: var(--ac-ink); border-color: var(--ac); }
+.btn-editorial--solid { background: var(--ac); color: var(--ac-ink); border-color: var(--ac); }
+.btn-editorial--solid:hover { opacity: .86; }
+
+/* ======================== 03. SCHEDULE TICKETS & MONOGRAPH STUDIO ======================== */
+.craft-grid {
+  display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr);
+  gap: clamp(36px, 5vw, 76px); align-items: start;
+}
+.sub-kicker {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: .18em;
+  text-transform: uppercase; color: var(--ink-3);
+  padding-bottom: 12px; border-bottom: 1px solid var(--line); margin-bottom: 22px;
+  display: flex; justify-content: space-between;
+}
+
+/* Letterpress Physical Concert Ticket */
+.tickets { display: flex; flex-direction: column; gap: 18px; }
+.ticket {
+  position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 128px;
+  border: 1px solid var(--line-strong); background: var(--surface);
+  transition: border-color .3s ease;
+}
+.ticket::before, .ticket::after {
+  content: ""; position: absolute; right: 121px; width: 14px; height: 14px;
+  border-radius: 50%; background: var(--bg);
+  border: 1px solid var(--line-strong); z-index: 2;
+}
+.ticket::before { top: -8px; clip-path: inset(50% 0 0 0); }
+.ticket::after { bottom: -8px; clip-path: inset(0 0 50% 0); }
+
+.ticket__main {
+  padding: 20px 24px; position: relative;
+  border-right: 1px dashed var(--line-strong);
+}
+.ticket__top {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  font-family: var(--mono); font-size: 11px; letter-spacing: .12em; color: var(--ink-3);
+}
+.ticket__verif {
+  padding-right: 12px; border-right: 1px solid var(--line);
+  color: var(--ink-2);
+}
+.ticket__verif--off { color: var(--seal); }
+.ticket__title {
+  margin: 10px 0 4px; font-family: var(--serif); font-size: 17px; font-weight: 500;
+  line-height: 1.4;
+}
+.ticket__venue { font-size: 13px; color: var(--ink-3); }
+
+/* Understated Dry-Embossed Stamp */
+.ticket__seal {
+  position: absolute; right: 18px; top: 16px;
+  padding: 3px 9px; border: 1px solid var(--seal); color: var(--seal);
+  font-family: var(--mono); font-size: 10px; letter-spacing: .14em; text-transform: uppercase;
+  transform: rotate(-7deg) scale(1.4); opacity: 0; pointer-events: none;
+  transition: transform .35s var(--ease), opacity .28s ease;
+}
+.ticket.is-torn .ticket__seal { transform: rotate(-6deg) scale(1); opacity: .92; }
+
+.ticket__stub {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
+  padding: 16px 10px;
+  transition: transform .55s var(--ease), opacity .4s ease;
+  transform-origin: left bottom;
+}
+.ticket.is-torn .ticket__stub { transform: translate(26px, 24px) rotate(11deg); opacity: 0; pointer-events: none; }
+.ticket__no { font-family: var(--mono); font-size: 10px; letter-spacing: .16em; color: var(--ink-3); }
+.ticket__tear {
+  font-size: 11.5px; letter-spacing: .14em; text-transform: uppercase;
+  padding: 6px 12px; border: 1px solid var(--line-strong); color: var(--ink);
+  transition: background-color .22s ease, color .22s ease;
+}
+.ticket__tear:hover { background: var(--ac); color: var(--ac-ink); border-color: var(--ac); }
+
+/* Monograph Lock-Screen Wallpaper Studio */
+.studio-layout {
+  display: grid; grid-template-columns: 204px minmax(0, 1fr); gap: 28px; align-items: start;
+}
+.wp-stage {
+  border: 1px solid var(--line-strong); padding: 8px; background: var(--bg-alt);
+}
+.wp-stage canvas { width: 100%; height: auto; display: block; }
+.studio-controls { display: flex; flex-direction: column; gap: 18px; }
+.ctrl-label {
+  display: block; font-family: var(--mono); font-size: 10.5px; letter-spacing: .16em;
+  text-transform: uppercase; color: var(--ink-3); margin-bottom: 6px;
+}
+.ctrl-input {
+  width: 100%; border: 0; border-bottom: 1px solid var(--line-strong);
+  background: transparent; padding: 7px 0; font-family: var(--serif); font-size: 15px;
+  outline: 0;
+}
+.ctrl-input:focus { border-bottom-color: var(--ink); }
+.ctrl-row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+.ctrl-opt {
+  font-size: 12px; letter-spacing: .08em; color: var(--ink-3);
+  padding: 4px 0; border-bottom: 1px solid transparent;
+}
+.ctrl-opt[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--ac); }
+.studio-meta { font-size: 12.5px; color: var(--ink-3); line-height: 1.7; }
+
+/* ======================== COLOPHON (Bookbinder's Mark & Plushie Easter Egg) ======================== */
+.colophon { padding: 54px 0 68px; }
+.colophon__grid {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center; gap: 28px;
+}
+.colophon__note {
+  font-size: 12.5px; color: var(--ink-3); line-height: 1.8;
+}
+.colophon__note strong { font-weight: 500; color: var(--ink-2); }
+
+/* Tactile Spring Bookplate Plushie — understated & playful on drag */
+.exlibris {
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  padding: 14px 26px; border-left: 1px solid var(--line); border-right: 1px solid var(--line);
+  user-select: none;
+}
+.exlibris__stage {
+  width: 92px; height: 92px; display: grid; place-items: center;
+  cursor: grab; touch-action: none; position: relative;
+}
+.exlibris__stage:active { cursor: grabbing; }
+.exlibris__doll { width: 74px; height: 74px; will-change: transform; }
+.exlibris__say {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; color: var(--ink-3);
+  text-align: center; min-height: 18px;
+}
+.exlibris__next {
+  font-size: 11px; letter-spacing: .12em; color: var(--ink-3);
+  border-bottom: 1px solid var(--line); padding-bottom: 1px;
+}
+.exlibris__next:hover { color: var(--ink); }
+
+.colophon__right {
+  justify-self: end; text-align: right; display: flex; flex-direction: column; align-items: flex-end; gap: 10px;
+}
+.silver-trigger {
+  display: inline-flex; align-items: center; gap: 9px;
+  font-family: var(--display); font-style: italic; font-size: 17px; letter-spacing: .04em;
+  color: var(--ink-2); padding-bottom: 3px; border-bottom: 1px solid var(--line);
+  transition: color .25s ease, border-color .25s ease;
+}
+.silver-trigger:hover { color: var(--ink); border-bottom-color: var(--ac); }
+.silver-trigger svg { width: 15px; height: 15px; stroke: currentColor; fill: none; stroke-width: 1.4; }
+.colophon__small {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; color: var(--ink-3);
+}
+
+/* Subtle Silver Ocean Toast */
+.toast-rail {
+  position: fixed; left: 50%; bottom: 26px; transform: translateX(-50%); z-index: 80;
+  display: flex; flex-direction: column; gap: 8px; align-items: center; pointer-events: none;
+}
+.toast {
+  pointer-events: auto;
+  display: inline-flex; align-items: center; gap: 14px;
+  padding: 10px 18px; background: var(--ink); color: var(--bg);
+  font-size: 12.5px; letter-spacing: .04em;
+  animation: toastIn .35s var(--ease);
+}
+.toast__undo {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
+  padding-left: 12px; border-left: 1px solid color-mix(in srgb, var(--bg) 32%, transparent);
+  color: var(--bg); white-space: nowrap;
+}
+@keyframes toastIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+
+/* Silver Ocean Pulse Overlay */
+.silver-wave {
+  position: fixed; inset: 0; pointer-events: none; z-index: 75; opacity: 0;
+  background: radial-gradient(circle at 50% 85%, rgba(220, 232, 250, .28), transparent 62%);
+  transition: opacity .8s var(--ease);
+}
+.silver-wave.is-lit { opacity: 1; }
+
+/* ======================== RESPONSIVE ======================== */
+@media (max-width: 980px) {
+  .wrap { width: calc(100% - 40px); }
+  .masthead__inner { grid-template-columns: auto 1fr; }
+  .nav { display: none; }
+  .spread__grid { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+  .plate-frame { max-height: 520px; }
+  .craft-grid { grid-template-columns: minmax(0, 1fr); gap: 52px; }
+  .sec-head { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .sec-note { text-align: left; }
+  .row__btn { grid-template-columns: 92px minmax(0, 1fr); gap: 6px 14px; }
+  .row__kind { grid-column: 1 / -1; order: -1; }
+  .row__right { grid-column: 1 / -1; justify-self: start; padding-left: 0; }
+  .row__detail { padding: 4px 8px 18px 8px; }
+  .colophon__grid { grid-template-columns: minmax(0, 1fr); text-align: center; }
+  .exlibris { border-left: 0; border-right: 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 22px 0; }
+  .colophon__right { justify-self: center; align-items: center; text-align: center; }
+}
+@media (max-width: 600px) {
+  .wrap { width: calc(100% - 28px); }
+  .masthead__inner { height: 52px; }
+  .brand__word { font-size: 13px; letter-spacing: .16em; }
+  .theme-switch { gap: 11px; }
+  .theme-opt { font-size: 11px; }
+  .spread { padding: 24px 0 48px; }
+  .plate-frame { aspect-ratio: 4 / 4.6; max-height: 410px; }
+  .folio-head { padding: 22px 0 18px; }
+  .folio-actions { gap: 14px 20px; }
+  .contact-sheet { grid-template-columns: repeat(9, 54px); max-width: 100%; overflow-x: auto; padding-bottom: 4px; scrollbar-width: none; }
+  .contact-sheet::-webkit-scrollbar { display: none; }
+  .section { padding: 48px 0; }
+  .idx-tab { padding: 14px 2px; font-size: 14.5px; }
+  .ticket { grid-template-columns: minmax(0, 1fr) 94px; }
+  .ticket::before, .ticket::after { right: 87px; }
+  .ticket__main { padding: 14px 16px; }
+  .studio-layout { grid-template-columns: minmax(0, 1fr); }
+  .wp-stage { max-width: 220px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
+}
+</style>
+</head>
+<body>
+
+<!-- Authentic MAMA Power Glyphs & Minimal Line Icons -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="g-galaxy" viewBox="0 0 48 48"><path d="M24 5 40.5 14.5v19L24 43 7.5 33.5v-19z"/><path d="M24 5v38M7.5 14.5l33 19M40.5 14.5l-33 19" opacity=".5"/></symbol>
+    <symbol id="g-xiumin" viewBox="0 0 48 48"><path d="M8.6 28.6 L28.6 8.6 M19.4 8.6 L39.4 28.6 M39.4 19.4 L19.4 39.4 M8.6 19.4 L28.6 39.4" fill="none" stroke="currentColor" stroke-width="3.2"/><path d="M10.4 16.2 H16.2 V10.4 M31.8 10.4 V16.2 H37.6 M37.6 31.8 H31.8 V37.6 M10.4 31.8 H16.2 V37.6" fill="none" stroke="currentColor" stroke-width="2.8"/></symbol>
+    <symbol id="g-suho" viewBox="0 0 48 48"><path d="M24 5 L15.1 29.7 A9.5 9.5 0 1 0 32.9 29.7 Z" fill="none" stroke="currentColor" stroke-width="2.9"/><path d="M23.6 14.5 L21.6 20.2 L24.5 21.6 L22.3 26.4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="M15.4 31.2 C18.6 27.2, 25.4 26.8, 31.8 30.2 M16.4 35.4 C19.6 33.2, 23.2 34.8, 25.8 39.2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="28.2" cy="33.8" r="2.3" fill="currentColor"/></symbol>
+    <symbol id="g-lay" viewBox="0 0 48 48"><path d="M19.8 18.0 L8.5 11.2 L16.8 21.4 Z" fill="currentColor"/><path d="M19.8 17.6 L22.2 13.8 L24.6 16.6 C28.6 16.2, 31.8 18.2, 33.4 22.0 M19.8 17.6 C17.2 20.4, 15.4 24.4, 12.8 28.0 C11.0 30.6, 11.8 34.0, 14.8 34.8 C17.6 35.5, 20.6 33.4, 23.8 31.0 C22.6 35.2, 22.4 39.0, 23.2 42.4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M25.6 19.8 C27.2 24.2, 26.2 28.6, 23.8 31.0" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M29.8 17.8 C33.2 19.4, 35.2 22.8, 38.8 23.2 M31.2 22.6 C34.2 25.0, 36.2 28.0, 40.0 28.6 M31.0 27.6 C33.8 30.2, 35.6 32.6, 39.2 33.4 M30.2 32.4 C32.4 35.2, 34.0 37.2, 37.0 38.0" fill="none" stroke="currentColor" stroke-width="2.0" stroke-linecap="round"/></symbol>
+    <symbol id="g-baekhyun" viewBox="0 0 48 48"><path fill="currentColor" fill-rule="evenodd" d="M 24.00 6.00 L 25.50 16.45 L 28.29 13.65 L 28.28 17.60 L 34.11 13.89 L 30.40 19.72 L 34.35 19.71 L 31.55 22.50 L 42.00 24.00 L 31.55 25.50 L 34.35 28.29 L 30.40 28.28 L 34.11 34.11 L 28.28 30.40 L 28.29 34.35 L 25.50 31.55 L 24.00 42.00 L 22.50 31.55 L 19.71 34.35 L 19.72 30.40 L 13.89 34.11 L 17.60 28.28 L 13.65 28.29 L 16.45 25.50 L 6.00 24.00 L 16.45 22.50 L 13.65 19.71 L 17.60 19.72 L 13.89 13.89 L 19.72 17.60 L 19.71 13.65 L 22.50 16.45 Z M 28.6 24 A 4.6 4.6 0 1 0 19.4 24 A 4.6 4.6 0 1 0 28.6 24 Z"/></symbol>
+    <symbol id="g-chen" viewBox="0 0 48 48"><path d="M18 25.5 L25.5 18 L31.5 24 L24 31.5 Z M21.8 21.8 L27.8 27.8" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M28.6 20.8 L32.6 19.0 L33.0 14.4 L38.2 9.2" fill="none" stroke="currentColor" stroke-width="2.8"/><path d="M34.2 8.4 L39.8 7.8 L39.2 13.4 Z" fill="currentColor"/><path d="M19.2 24.4 L9.6 26.4 L6.4 29.4 L11.4 34.2 L9.8 29.5 L18.4 27.4 Z M25.0 30.2 L23.0 39.8 L20.0 43.0 L15.2 38.0 L19.9 39.6 L22.0 31.0 Z" fill="currentColor"/></symbol>
+    <symbol id="g-chanyeol" viewBox="0 0 48 48"><path fill="currentColor" fill-rule="evenodd" d="M16.2 9.8 C22.6 8.8, 28.8 11.4, 32.6 16.0 C35.4 14.2, 38.8 14.2, 42.0 16.6 C39.4 17.4, 37.4 18.6, 35.8 20.6 C38.6 25.8, 38.0 33.6, 33.2 42.2 C33.0 37.8, 32.4 34.6, 31.2 32.2 C30.6 35.8, 29.2 38.8, 27.0 41.0 C27.4 37.2, 27.0 34.0, 26.0 31.6 C24.8 34.2, 23.2 36.2, 21.2 37.6 C22.8 33.8, 24.4 30.2, 25.8 27.4 L15.4 35.4 L23.6 25.4 L8.8 30.4 L24.4 22.2 C19.8 22.0, 16.0 20.6, 13.8 18.4 C17.2 18.6, 20.2 18.0, 22.4 16.6 C18.2 16.4, 14.8 15.0, 13.0 12.8 C16.6 13.2, 19.8 12.8, 22.0 11.8 C19.4 11.2, 17.4 10.6, 16.2 9.8 Z"/></symbol>
+    <symbol id="g-do" viewBox="0 0 48 48"><path fill="currentColor" fill-rule="evenodd" d="M19.5 28.0 L19.5 18.6 L14.4 14.6 L15.6 12.8 L6.4 8.2 L9.8 15.2 L8.2 15.8 L12.4 27.6 L16.8 38.8 L18.6 42.8 L21.2 36.6 L24.0 41.8 L26.8 36.6 L29.4 42.8 L31.2 38.8 L35.6 27.6 L39.8 15.8 L38.2 15.2 L41.6 8.2 L32.4 12.8 L33.6 14.6 L28.5 18.6 L28.5 28.0 Q24.0 29.4 19.5 28.0 Z M16.0 27.6 L19.4 22.4 L19.4 31.2 Q24.0 32.6 28.6 31.2 L28.6 22.4 L32.0 27.6 L29.4 34.4 L18.6 34.4 Z"/></symbol>
+    <symbol id="g-kai" viewBox="0 0 48 48"><path d="M24 6.5 L42.2 39.5 L5.8 39.5 Z" fill="none" stroke="currentColor" stroke-width="3.1"/><circle cx="24" cy="28.4" r="5.1" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="24" cy="28.4" r="2.3" fill="currentColor"/></symbol>
+    <symbol id="g-sehun" viewBox="0 0 48 48"><g transform="rotate(0 24 24)"><path fill="currentColor" d="M 17.5 19.5 C 20.5 13.0, 29.8 11.2, 36.2 16.4 C 38.6 18.4, 39.6 21.4, 39.2 24.2 C 38.0 20.2, 34.8 16.8, 29.8 15.8 C 24.2 14.7, 19.4 17.2, 17.5 19.5 Z"/></g><g transform="rotate(72 24 24)"><path fill="currentColor" d="M 17.5 19.5 C 20.5 13.0, 29.8 11.2, 36.2 16.4 C 38.6 18.4, 39.6 21.4, 39.2 24.2 C 38.0 20.2, 34.8 16.8, 29.8 15.8 C 24.2 14.7, 19.4 17.2, 17.5 19.5 Z"/></g><g transform="rotate(144 24 24)"><path fill="currentColor" d="M 17.5 19.5 C 20.5 13.0, 29.8 11.2, 36.2 16.4 C 38.6 18.4, 39.6 21.4, 39.2 24.2 C 38.0 20.2, 34.8 16.8, 29.8 15.8 C 24.2 14.7, 19.4 17.2, 17.5 19.5 Z"/></g><g transform="rotate(216 24 24)"><path fill="currentColor" d="M 17.5 19.5 C 20.5 13.0, 29.8 11.2, 36.2 16.4 C 38.6 18.4, 39.6 21.4, 39.2 24.2 C 38.0 20.2, 34.8 16.8, 29.8 15.8 C 24.2 14.7, 19.4 17.2, 17.5 19.5 Z"/></g><g transform="rotate(288 24 24)"><path fill="currentColor" d="M 17.5 19.5 C 20.5 13.0, 29.8 11.2, 36.2 16.4 C 38.6 18.4, 39.6 21.4, 39.2 24.2 C 38.0 20.2, 34.8 16.8, 29.8 15.8 C 24.2 14.7, 19.4 17.2, 17.5 19.5 Z"/></g></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/></symbol>
+  </defs>
+</svg>
+
+<div class="silver-wave" id="silverWave" aria-hidden="true"></div>
+<div class="toast-rail" id="toastRail" aria-live="polite"></div>
+
+<!-- ======================== MASTHEAD ======================== -->
+<header class="masthead">
+  <div class="wrap masthead__inner">
+    <a class="brand" href="#cover">
+      <svg viewBox="0 0 48 48"><use href="#g-galaxy"/></svg>
+      <span class="brand__word">EXOPLANET</span>
+    </a>
+
+    <nav class="nav" aria-label="主目录">
+      <a href="#cover">I · 封面人物</a>
+      <a href="#archive">II · 编年总目</a>
+      <a href="#craft">III · 票根与印版</a>
+    </nav>
+
+    <div class="theme-switch" role="group" aria-label="纸色与氛围切换">
+      <button type="button" class="theme-opt" data-theme-set="paper" aria-pressed="true">
+        <span class="theme-swatch" style="background:#f4f1ea"></span>宣纸
+      </button>
+      <button type="button" class="theme-opt" data-theme-set="obsidian" aria-pressed="false">
+        <span class="theme-swatch" style="background:#090a0d"></span>黑曜
+      </button>
+      <button type="button" class="theme-opt" data-theme-set="eclipse" aria-pressed="false">
+        <span class="theme-swatch" style="background:#17202c;border-color:#c9ad7f"></span>月蚀
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- ======================== I. MONOGRAPH COVER SPREAD ======================== -->
+  <section id="cover" class="spread">
+    <div class="spread__grid">
+      <div class="plate-col">
+        <div class="plate-frame" id="plateFrame">
+          <img class="plate-img" id="plateImg" src="" alt="">
+          <canvas class="aura-canvas" id="auraCanvas"></canvas>
+          <div class="plate-sheen" id="plateSheen"></div>
+          <div class="plate-curtain" id="plateCurtain"></div>
+        </div>
+        <div class="plate-caption">
+          <span id="plateNo">PLATE 04 / 09</span>
+          <span class="plate-caption__right">
+            <svg viewBox="0 0 48 48"><use id="plateGlyph" href="#g-baekhyun"/></svg>
+            <span id="platePowerEn">LIGHT · 04</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="folio-col">
+        <div>
+          <div class="folio-kicker">
+            <span>ISSUE NO. XIV · 2012—2026</span>
+            <span>ARCHIVAL MONOGRAPH</span>
+          </div>
+
+          <div class="folio-head">
+            <h1 class="folio-en" id="folioEn">BAEKHYUN</h1>
+            <div class="folio-zh-row">
+              <span class="folio-zh" id="folioZh">边伯贤</span>
+              <span class="folio-power">
+                <svg viewBox="0 0 48 48"><use id="folioGlyph" href="#g-baekhyun"/></svg>
+                <span id="folioPower">超能力 · 光</span>
+              </span>
+            </div>
+            <p class="folio-bio" id="folioBio"></p>
+            <div class="folio-credit" id="folioCredit"></div>
+
+            <div class="folio-actions">
+              <a href="#archive" class="link-rule" id="btnViewMember">查阅 TA 的全部记录 →</a>
+              <button type="button" class="link-quiet" id="btnReplayAura">重映超能力微光</button>
+              <button type="button" class="link-quiet" id="btnNextMember">翻阅下一位</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="sheet-block">
+          <div class="sheet-meta">
+            <span>CONTACT SHEET · NINE MEMBERS</span>
+            <span>点击切换封面</span>
+          </div>
+          <div class="contact-sheet" id="contactSheet" role="tablist" aria-label="九位成员封面切换"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== II. ARCHIVAL CATALOGUE ======================== -->
+  <section id="archive" class="section">
+    <div class="sec-head">
+      <div>
+        <div class="sec-num">SECTION II · ARCHIVE 2010—2026</div>
+        <h2 class="sec-title">编年总目 <em>&amp;</em> 综艺档案</h2>
+      </div>
+      <p class="sec-note">收录 552 条编年记录与 443 档团体及个人综艺。所有筛选实时写入链接，刷新不丢失，每条均标注数据来源。</p>
+    </div>
+
+    <div class="index-tabs" id="indexTabs" role="tablist" aria-label="档案分类目录">
+      <button type="button" class="idx-tab" role="tab" data-drawer="all-road" aria-selected="true">全部编年<sup data-cnt="all-road">0</sup></button>
+      <button type="button" class="idx-tab" role="tab" data-drawer="milestone" aria-selected="false">大事里程碑<sup data-cnt="milestone">0</sup></button>
+      <button type="button" class="idx-tab" role="tab" data-drawer="release" aria-selected="false">作品发行<sup data-cnt="release">0</sup></button>
+      <button type="button" class="idx-tab" role="tab" data-drawer="appearance" aria-selected="false">出席活动<sup data-cnt="appearance">0</sup></button>
+      <button type="button" class="idx-tab" role="tab" data-drawer="credit" aria-selected="false">创作署名<sup data-cnt="credit">0</sup></button>
+      <button type="button" class="idx-tab" role="tab" data-drawer="variety" aria-selected="false">综艺全集<sup data-cnt="variety">0</sup></button>
+    </div>
+
+    <div class="ledger-tools">
+      <label class="search-underline">
+        <svg viewBox="0 0 24 24"><use href="#i-search"/></svg>
+        <input id="archQuery" type="search" placeholder="检索歌名、专辑、综艺或成员（如 History / 爬梯子 / 世勋）">
+      </label>
+
+      <div class="tool-right">
+        <select id="archYear" class="select-clean" aria-label="按年份筛选">
+          <option value="">全部年份</option>
+        </select>
+        <button type="button" class="tool-btn" id="btnToggleEra">按时期画报筛选</button>
+        <button type="button" class="tool-btn" id="btnCopyHash">复制链接</button>
+        <button type="button" class="tool-btn" id="btnReset">清空</button>
+      </div>
+    </div>
+
+    <div class="era-drawer" id="eraDrawer">
+      <div class="era-strip" id="eraStrip"></div>
+    </div>
+
+    <div class="member-rail" id="memberRail" role="group" aria-label="按成员筛选"></div>
+
+    <div class="ledger-meta">
+      <div>命中 <strong id="hitCount">0</strong> 条记录</div>
+      <div class="view-toggle">
+        <button type="button" class="tool-btn is-on" data-view="flat">编年流</button>
+        <button type="button" class="tool-btn" data-view="grouped">按年份分章</button>
+      </div>
+    </div>
+
+    <div class="ledger-list" id="ledgerList"></div>
+    <div class="ledger-more" id="ledgerMore" style="display:none">
+      <button type="button" class="btn-editorial" id="btnLoadMore">继续展开更多档案</button>
+    </div>
+  </section>
+
+  <!-- ======================== III. TICKET STUB & MONOGRAPH WALLPAPER ======================== -->
+  <section id="craft" class="section">
+    <div class="sec-head">
+      <div>
+        <div class="sec-num">SECTION III · SCHEDULE &amp; EDITION STUDIO</div>
+        <h2 class="sec-title">近期票根 <em>&amp;</em> 精装印版</h2>
+      </div>
+      <p class="sec-note">官方公告与媒体报道严格分标，可沿齿孔撕下副券留存；右侧同步当前纸色与封面人物，导出高清锁屏壁纸。</p>
+    </div>
+
+    <div class="craft-grid">
+      <div>
+        <div class="sub-kicker">
+          <span>UPCOMING &amp; RECENT STUBS</span>
+          <span>点击副券撕下 · 支持 5 秒撤销</span>
+        </div>
+        <div class="tickets" id="ticketList"></div>
+      </div>
+
+      <div>
+        <div class="sub-kicker">
+          <span>LOCK-SCREEN MONOGRAPH PLATE</span>
+          <span id="studioSyncLabel">PAPER · BAEKHYUN</span>
+        </div>
+        <div class="studio-layout">
+          <div class="wp-stage">
+            <canvas id="wpCanvas" width="540" height="960"></canvas>
+          </div>
+          <div class="studio-controls">
+            <div>
+              <label class="ctrl-label" for="wpLine">刊印短句 / LYRIC</label>
+              <input class="ctrl-input" id="wpLine" type="text" maxlength="36" value="WE ARE ONE · EXO 사랑하자">
+            </div>
+            <div>
+              <span class="ctrl-label">印记样式 / MARK</span>
+              <div class="ctrl-row">
+                <button type="button" class="ctrl-opt" data-mark="glyph" aria-pressed="true">超能力细线图腾</button>
+                <button type="button" class="ctrl-opt" data-mark="doll" aria-pressed="false">官娃藏书票</button>
+                <button type="button" class="ctrl-opt" data-mark="none" aria-pressed="false">纯摄影留白</button>
+              </div>
+            </div>
+            <p class="studio-meta">
+              画幅比例 9:16（540×960 PNG），与顶部「宣纸 / 黑曜 / 月蚀」氛围及当前选中的封面人物实时同步，锁屏时间位置自动留白。
+            </p>
+            <div>
+              <button type="button" class="btn-editorial btn-editorial--solid" id="btnExportWp">导出高清壁纸 PNG</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ======================== COLOPHON (Bookbinder's Mark & Spring Doll) ======================== -->
+<footer class="wrap colophon">
+  <div class="colophon__grid">
+    <div class="colophon__note">
+      <strong>EXOPLANET CHRONICLE · VOL. XIV</strong><br>
+      粉丝自制非官方档案刊物。官方公告、媒体报道与历史词条各自独立署名，不混合推定。
+    </div>
+
+    <div class="exlibris" aria-label="可拖拽回弹的官娃藏书票">
+      <div class="exlibris__stage" id="dollStage" title="按住向任意方向轻拽，松手回弹">
+        <div class="exlibris__doll" id="dollNode"></div>
+      </div>
+      <div class="exlibris__say" id="dollSay">轻拽藏书票</div>
+      <button type="button" class="exlibris__next" id="dollNext">换一枚印记</button>
+    </div>
+
+    <div class="colophon__right">
+      <button type="button" class="silver-trigger" id="btnSilverOcean">
+        <svg viewBox="0 0 48 48"><use href="#g-galaxy"/></svg>
+        <span>EXO, 사랑하자 · 点亮银海</span>
+      </button>
+      <div class="colophon__small">2012.04.08 — 2026 · WE ARE ONE</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const IMG_BASE = window.__EXO_IMG_BASE__ || '';
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
+
+  /* Minimal monochrome / archival-ink bookplate dolls (respects 7 official dolls + name seals) */
+  const DOLLS = [
+    {
+      id: 'baekhyun', label: '特来骑 · BAEKHYUN', line: '轻拽特来骑会回弹',
+      svg: `<svg viewBox="0 0 120 120"><path d="M29 48 C20 35, 32 22, 44 30 C52 21, 68 21, 76 30 C88 22, 100 35, 91 48 C100 58, 97 76, 85 84 C77 95, 43 95, 35 84 C23 76, 20 58, 29 48 Z" fill="var(--surface)" stroke="var(--ink)" stroke-width="2.4"/><circle cx="47" cy="58" r="3.4" fill="var(--ink)"/><circle cx="73" cy="58" r="3.4" fill="var(--ink)"/><ellipse cx="60" cy="64" rx="3.2" ry="2.2" fill="var(--ink)"/><path d="M54 68 Q60 73 66 68" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/><circle cx="38" cy="65" r="4.5" fill="var(--seal)" opacity=".28"/><circle cx="82" cy="65" r="4.5" fill="var(--seal)" opacity=".28"/></svg>`
+    },
+    {
+      id: 'suho', label: '偏耳兔 · SUHO', line: 'SUHO 兔守着页码',
+      svg: `<svg viewBox="0 0 120 120"><ellipse cx="45" cy="27" rx="8" ry="21" transform="rotate(-10 45 27)" fill="var(--surface)" stroke="var(--ink)" stroke-width="2.4"/><ellipse cx="77" cy="31" rx="8" ry="20" transform="rotate(24 77 31)" fill="var(--surface)" stroke="var(--ink)" stroke-width="2.4"/><ellipse cx="60" cy="68" rx="31" ry="26" fill="var(--surface)" stroke="var(--ink)" stroke-width="2.4"/><circle cx="48" cy="64" r="3.2" fill="var(--ink)"/><circle cx="72" cy="64" r="3.2" fill="var(--ink)"/><path d="M55 72 Q60 76 65 72" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/></svg>`
+    },
+    {
+      id: 'chanyeol', label: '官娃 · CHANYEOL', line: '灿烈的小火苗印记',
+      svg: `<svg viewBox="0 0 120 120"><path d="M24 58 C16 44, 24 30, 36 38 L42 46 Z" fill="var(--surface)" stroke="var(--ink)" stroke-width="2.4"/><path d="M96 58 C104 44, 96 30, 84 38 L78 46 Z" fill="var(--surface)" stroke="var(--ink)" stroke-width="2.4"/><circle cx="60" cy="64" r="29" fill="var(--surface)" stroke="var(--ink)" stroke-width="2.4"/><circle cx="48" cy="60" r="3.4" fill="var(--ink)"/><circle cx="72" cy="60" r="3.4" fill="var(--ink)"/><path d="M52 72 Q60 79 68 72" fill="none" stroke="var(--ink)" stroke-width="2.2" stroke-linecap="round"/></svg>`
+    },
+    {
+      id: 'sehun', label: '官娃 · SEHUN', line: '一阵清风吹过页角',
+      svg: `<svg viewBox="0 0 120 120"><path d="M35 45 L28 21 L50 35 Z" fill="var(--surface)" stroke="var(--ink)" stroke-width="2.4" stroke-linejoin="round"/><path d="M85 45 L92 21 L70 35 Z" fill="var(--surface)" stroke="var(--ink)" stroke-width="2.4" stroke-linejoin="round"/><ellipse cx="60" cy="64" rx="29" ry="26" fill="var(--surface)" stroke="var(--ink)" stroke-width="2.4"/><path d="M44 60 Q48 56 52 60 M68 60 Q72 56 76 60" fill="none" stroke="var(--ink)" stroke-width="2.2" stroke-linecap="round"/><path d="M56 72 Q60 76 64 72" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/></svg>`
+    },
+    {
+      id: 'xiumin', label: '姓名章 · XIUMIN', line: '无官娃成员以姓名章印记',
+      svg: `<svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="40" fill="var(--surface)" stroke="var(--ink)" stroke-width="2"/><circle cx="60" cy="60" r="33" fill="none" stroke="var(--line-strong)" stroke-dasharray="3 3"/><text x="60" y="56" text-anchor="middle" font-size="13" letter-spacing="2.2" fill="var(--ink)" font-family="serif">XIUMIN</text><text x="60" y="75" text-anchor="middle" font-size="12" letter-spacing="3" fill="var(--ink-3)" font-family="serif">金珉锡</text></svg>`
+    }
+  ];
+
+  const THEMES = {
+    paper:    { label: 'PAPER',    wp: { bg: '#f4f1ea', mat: '#e6e1d5', ink: '#141413', sub: '#646058', rule: 'rgba(20,20,19,.24)', ac: '#18273d' } },
+    obsidian: { label: 'OBSIDIAN', wp: { bg: '#090a0d', mat: '#151820', ink: '#efece6', sub: '#8a8d96', rule: 'rgba(239,236,230,.22)', ac: '#dce2ec' } },
+    eclipse:  { label: 'ECLIPSE',  wp: { bg: '#0f141c', mat: '#161f2b', ink: '#efeae0', sub: '#8c96a6', rule: 'rgba(201,173,127,.34)', ac: '#c9ad7f' } }
+  };
+
+  const SILVER_LINES = [
+    'EXO, 사랑하자 · 银海一直都在。',
+    '从 2012.04.08 到第 14 年，相约未曾失约。',
+    'WE ARE ONE · 谢谢你们一直在舞台上发光。',
+    '把星光折进纸页，也留给下一次重逢。'
+  ];
+
+  const state = {
+    theme: 'paper',
+    members: [],
+    activeIdx: 3, // BAEKHYUN
+    roadAll: [],
+    varietyAll: [],
+    eraGallery: [],
+    events: [],
+    drawer: 'all-road',
+    query: '',
+    year: '',
+    memberFilter: '',
+    view: 'flat',
+    pageSize: 16,
+    wpMark: 'glyph',
+    dollIdx: 0,
+    tornIds: new Set()
+  };
+
+  /* ---------------- Subtle Toast ---------------- */
+  function toast(msg, undoLabel, onUndo) {
+    const rail = document.getElementById('toastRail');
+    const el = document.createElement('div');
+    el.className = 'toast';
+    el.innerHTML = `<span>${esc(msg)}</span>` + (undoLabel ? `<button type="button" class="toast__undo">${esc(undoLabel)}</button>` : '');
+    rail.appendChild(el);
+    let timer = setTimeout(() => el.remove(), undoLabel ? 5000 : 2400);
+    if (undoLabel && onUndo) {
+      el.querySelector('.toast__undo').addEventListener('click', () => {
+        clearTimeout(timer);
+        onUndo();
+        el.remove();
+      });
+    }
+  }
+
+  /* ---------------- URL Hash Sync ---------------- */
+  function readHash() {
+    const p = new URLSearchParams(location.hash.replace(/^#/, ''));
+    if (p.get('theme') && THEMES[p.get('theme')]) state.theme = p.get('theme');
+    if (p.get('drawer')) state.drawer = p.get('drawer');
+    if (p.get('year')) state.year = p.get('year');
+    if (p.get('member')) state.memberFilter = p.get('member');
+    if (p.get('q')) state.query = p.get('q');
+    if (p.get('view') === 'grouped') state.view = 'grouped';
+  }
+  function writeHash() {
+    const p = new URLSearchParams();
+    if (state.theme !== 'paper') p.set('theme', state.theme);
+    if (state.drawer !== 'all-road') p.set('drawer', state.drawer);
+    if (state.year) p.set('year', state.year);
+    if (state.memberFilter) p.set('member', state.memberFilter);
+    if (state.query) p.set('q', state.query);
+    if (state.view !== 'flat') p.set('view', state.view);
+    const next = p.toString() ? '#' + p.toString() : location.pathname + location.search;
+    history.replaceState(null, '', next);
+  }
+
+  /* ---------------- Theme Switch ---------------- */
+  function applyTheme(t, sync = true) {
+    state.theme = THEMES[t] ? t : 'paper';
+    document.documentElement.dataset.theme = state.theme;
+    document.querySelectorAll('[data-theme-set]').forEach(b => {
+      b.setAttribute('aria-pressed', String(b.dataset.themeSet === state.theme));
+    });
+    if (sync) writeHash();
+    drawWallpaper();
+  }
+  document.querySelectorAll('[data-theme-set]').forEach(b => {
+    b.addEventListener('click', () => applyTheme(b.dataset.themeSet));
+  });
+
+  /* ---------------- Understated Atmospheric Aura Canvas ---------------- */
+  let auraRAF = 0;
+  function playAura(memberId) {
+    const cv = document.getElementById('auraCanvas');
+    const rect = cv.getBoundingClientRect();
+    if (!rect.width) return;
+    cv.width = rect.width * 2;
+    cv.height = rect.height * 2;
+    const ctx = cv.getContext('2d');
+    ctx.scale(2, 2);
+    const W = rect.width, H = rect.height;
+
+    const tone = {
+      xiumin: '214,232,250', suho: '192,220,248', lay: '220,235,212',
+      baekhyun: '255,244,218', chen: '224,234,255', chanyeol: '245,198,162',
+      do: '218,210,196', kai: '205,212,232', sehun: '218,236,240'
+    }[memberId] || '235,235,240';
+
+    const motes = Array.from({ length: 28 }, () => ({
+      x: Math.random() * W,
+      y: H * (.2 + Math.random() * .75),
+      vx: (Math.random() - .5) * .45,
+      vy: -(0.22 + Math.random() * .55),
+      r: 0.9 + Math.random() * 2.2,
+      life: 1,
+      decay: 0.008 + Math.random() * .007
+    }));
+
+    cancelAnimationFrame(auraRAF);
+    let t = 0;
+    function tick() {
+      t += 1;
+      ctx.clearRect(0, 0, W, H);
+      // Soft diagonal light wash that fades cleanly
+      const washAlpha = Math.max(0, 0.24 * Math.sin(Math.min(1, t / 75) * Math.PI));
+      if (washAlpha > 0.003) {
+        const g = ctx.createRadialGradient(W * .5, H * .32, 10, W * .5, H * .32, W * .75);
+        g.addColorStop(0, `rgba(${tone},${washAlpha})`);
+        g.addColorStop(1, `rgba(${tone},0)`);
+        ctx.fillStyle = g;
+        ctx.fillRect(0, 0, W, H);
+      }
+      let alive = washAlpha > 0.004;
+      for (const p of motes) {
+        p.x += p.vx; p.y += p.vy; p.life -= p.decay;
+        if (p.life <= 0) continue;
+        alive = true;
+        ctx.beginPath();
+        ctx.fillStyle = `rgba(${tone},${(p.life * .55).toFixed(3)})`;
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      if (alive && t < 130) auraRAF = requestAnimationFrame(tick);
+      else ctx.clearRect(0, 0, W, H);
+    }
+    auraRAF = requestAnimationFrame(tick);
+  }
+
+  /* Subtle magnetic light sheen on portrait frame */
+  const plateFrame = document.getElementById('plateFrame');
+  plateFrame.addEventListener('pointermove', e => {
+    const r = plateFrame.getBoundingClientRect();
+    const px = ((e.clientX - r.left) / r.width) * 100;
+    const py = ((e.clientY - r.top) / r.height) * 100;
+    plateFrame.style.setProperty('--mx', px + '%');
+    plateFrame.style.setProperty('--my', py + '%');
+  });
+
+  /* ---------------- Cover Member Switching ---------------- */
+  function selectMember(idx, animate = true) {
+    state.activeIdx = (idx + state.members.length) % state.members.length;
+    const m = state.members[state.activeIdx];
+    if (!m) return;
+    document.documentElement.dataset.member = m.id;
+
+    const curtain = document.getElementById('plateCurtain');
+    const swap = () => {
+      document.getElementById('plateImg').src = IMG_BASE + m.photo;
+      document.getElementById('plateImg').alt = `${m.en} ${m.zh}`;
+      document.getElementById('plateNo').textContent = `PLATE ${String(state.activeIdx + 1).padStart(2, '0')} / 09`;
+      document.getElementById('plateGlyph').setAttribute('href', `#g-${m.id}`);
+      document.getElementById('platePowerEn').textContent = `${m.power.en.toUpperCase()} · ${String(state.activeIdx + 1).padStart(2, '0')}`;
+      document.getElementById('folioEn').textContent = m.en;
+      document.getElementById('folioZh').textContent = m.zh;
+      document.getElementById('folioGlyph').setAttribute('href', `#g-${m.id}`);
+      document.getElementById('folioPower').textContent = `超能力 · ${m.power.zh}`;
+      document.getElementById('folioBio').textContent = m.power?.line || m.latest || '';
+      const creditEl = document.getElementById('folioCredit');
+      if (creditEl) {
+        const parts = [];
+        if (m.role) parts.push(`<span><b>POSITION</b>${esc(m.role)}</span>`);
+        if (m.photoEra) parts.push(`<span><b>PLATE</b>${esc(m.photoEra)}</span>`);
+        if (m.latest) parts.push(`<span><b>RECENT</b>${esc(m.latest)}</span>`);
+        creditEl.innerHTML = parts.join('');
+      }
+      document.querySelectorAll('.cs-item').forEach((el, i) => {
+        el.classList.toggle('is-active', i === state.activeIdx);
+        el.setAttribute('aria-selected', String(i === state.activeIdx));
+      });
+      drawWallpaper();
+      if (animate) playAura(m.id);
+    };
+
+    if (animate) {
+      curtain.classList.remove('is-sweeping');
+      void curtain.offsetWidth;
+      curtain.classList.add('is-sweeping');
+      setTimeout(swap, 260);
+    } else {
+      swap();
+    }
+  }
+
+  document.getElementById('btnNextMember').addEventListener('click', () => selectMember(state.activeIdx + 1, true));
+  document.getElementById('btnReplayAura').addEventListener('click', () => {
+    const m = state.members[state.activeIdx];
+    if (m) playAura(m.id);
+  });
+  document.getElementById('btnViewMember').addEventListener('click', () => {
+    const m = state.members[state.activeIdx];
+    if (!m) return;
+    state.memberFilter = m.id;
+    state.pageSize = 16;
+    syncMemberRail();
+    renderLedger(true);
+  });
+
+  /* ---------------- Archive Filtering & Ledger ---------------- */
+  const KIND_LABEL = {
+    milestone: '大事里程碑',
+    release: '作品发行',
+    appearance: '出席活动',
+    credit: '创作署名',
+    variety: '综艺节目'
+  };
+
+  function getFiltered() {
+    let list = state.drawer === 'variety'
+      ? state.varietyAll
+      : state.drawer === 'all-road'
+        ? state.roadAll
+        : state.roadAll.filter(x => x._cat === state.drawer);
+
+    if (state.year) list = list.filter(x => x._year === state.year);
+    if (state.memberFilter) {
+      const m = state.members.find(x => x.id === state.memberFilter);
+      const keys = m ? [m.id, m.en.toLowerCase(), m.zh.toLowerCase()] : [state.memberFilter];
+      list = list.filter(x => {
+        const hay = x._memberHay;
+        return keys.some(k => hay.includes(k));
+      });
+    }
+    if (state.query.trim()) {
+      const q = state.query.trim().toLowerCase();
+      list = list.filter(x => x._searchHay.includes(q));
+    }
+    return list;
+  }
+
+  function highlight(text, q) {
+    if (!q.trim()) return esc(text);
+    const re = new RegExp('(' + q.trim().replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'ig');
+    return esc(text).replace(re, '<mark>$1</mark>');
+  }
+
+  function rowHTML(item) {
+    const q = state.query;
+    const isExt = !item._curated;
+    return `
+      <article class="row">
+        <button type="button" class="row__btn" aria-expanded="false">
+          <span class="row__date">${esc(item._date.replace(/-/g, '.'))}</span>
+          <span class="row__kind"><i class="row__dot" data-k="${item._cat}"></i>${esc(KIND_LABEL[item._cat] || '档案')}</span>
+          <span class="row__main">
+            <div class="row__title">${highlight(item._title, q)}</div>
+            ${item._sub ? `<div class="row__sub">${highlight(item._sub, q)}</div>` : ''}
+          </span>
+          <span class="row__right">
+            <span>${esc(item._who)}</span>
+            <span class="row__src${isExt ? ' row__src--ext' : ''}">${esc(item._src)}</span>
+          </span>
+        </button>
+        <div class="row__detail">
+          <div>${esc(item._note || item._sub || '收录于 EXO 编年与综艺索引档案。')}</div>
+          <div class="row__detail-meta">
+            <span>日期 ${esc(item._date)}</span>
+            <span>归属 ${esc(item._who)}</span>
+            <span>出处 ${esc(item._src)}（${isExt ? '历史补充目录' : '站内精编主档'}）</span>
+          </div>
+        </div>
+      </article>`;
+  }
+
+  function renderLedger(sync = true) {
+    const list = getFiltered();
+    document.getElementById('hitCount').textContent = String(list.length);
+    const box = document.getElementById('ledgerList');
+    const slice = list.slice(0, state.pageSize);
+
+    if (!slice.length) {
+      box.innerHTML = `<div style="padding:48px 0;text-align:center;color:var(--ink-3);font-size:13.5px">当前筛选条件下暂无匹配记录。</div>`;
+    } else if (state.view === 'grouped') {
+      const groups = new Map();
+      slice.forEach(item => {
+        const y = item._year || '未标年份';
+        if (!groups.has(y)) groups.set(y, []);
+        groups.get(y).push(item);
+      });
+      box.innerHTML = [...groups.entries()].map(([y, items]) => `
+        <div class="year-chapter">${esc(y)}<span>${items.length} ENTRIES</span></div>
+        ${items.map(rowHTML).join('')}
+      `).join('');
+    } else {
+      box.innerHTML = slice.map(rowHTML).join('');
+    }
+
+    box.querySelectorAll('.row__btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const row = btn.closest('.row');
+        const open = row.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', String(open));
+      });
+    });
+
+    const more = document.getElementById('ledgerMore');
+    if (list.length > state.pageSize) {
+      more.style.display = 'flex';
+      document.getElementById('btnLoadMore').textContent = `展开更多档案（剩余 ${list.length - state.pageSize} 条）`;
+    } else {
+      more.style.display = 'none';
+    }
+
+    document.querySelectorAll('[data-drawer]').forEach(t => {
+      t.setAttribute('aria-selected', String(t.dataset.drawer === state.drawer));
+    });
+    document.querySelectorAll('[data-view]').forEach(b => {
+      b.classList.toggle('is-on', b.dataset.view === state.view);
+    });
+    document.getElementById('archYear').value = state.year;
+    document.getElementById('archQuery').value = state.query;
+    if (sync) writeHash();
+  }
+
+  function syncMemberRail() {
+    document.querySelectorAll('.m-flt').forEach(b => {
+      b.setAttribute('aria-pressed', String(b.dataset.mf === state.memberFilter));
+    });
+  }
+
+  document.querySelectorAll('[data-drawer]').forEach(tab => {
+    tab.addEventListener('click', () => {
+      state.drawer = tab.dataset.drawer;
+      state.pageSize = 16;
+      renderLedger(true);
+    });
+  });
+  document.getElementById('archQuery').addEventListener('input', e => {
+    state.query = e.target.value;
+    state.pageSize = 16;
+    renderLedger(true);
+  });
+  document.getElementById('archYear').addEventListener('change', e => {
+    state.year = e.target.value;
+    state.pageSize = 16;
+    renderLedger(true);
+  });
+  document.querySelectorAll('[data-view]').forEach(b => {
+    b.addEventListener('click', () => {
+      state.view = b.dataset.view;
+      renderLedger(true);
+    });
+  });
+  document.getElementById('btnLoadMore').addEventListener('click', () => {
+    state.pageSize += 24;
+    renderLedger(false);
+  });
+  document.getElementById('btnToggleEra').addEventListener('click', e => {
+    const open = document.getElementById('eraDrawer').classList.toggle('is-open');
+    e.currentTarget.classList.toggle('is-on', open);
+  });
+  document.getElementById('btnReset').addEventListener('click', () => {
+    state.query = ''; state.year = ''; state.memberFilter = ''; state.pageSize = 16;
+    syncMemberRail();
+    document.querySelectorAll('.era-card').forEach(c => c.classList.remove('is-on'));
+    renderLedger(true);
+    toast('已重置筛选条件');
+  });
+  document.getElementById('btnCopyHash').addEventListener('click', async () => {
+    writeHash();
+    try { await navigator.clipboard.writeText(location.href); toast('已复制当前筛选链接'); }
+    catch { toast('筛选参数已同步至地址栏'); }
+  });
+
+  /* ---------------- Letterpress Concert Ticket Stubs ---------------- */
+  function renderTickets() {
+    const sample = state.events.slice(0, 3);
+    const box = document.getElementById('ticketList');
+    box.innerHTML = sample.map((ev, i) => {
+      const isOff = ev.verification === 'official';
+      const dateStr = ev.endDate ? `${ev.date.replace(/-/g, '.')} — ${ev.endDate.slice(5).replace(/-/g, '.')}` : ev.date.replace(/-/g, '.');
+      return `
+        <article class="ticket${state.tornIds.has(ev.id) ? ' is-torn' : ''}" data-tid="${esc(ev.id)}">
+          <div class="ticket__main">
+            <div class="ticket__top">
+              <span class="ticket__verif${isOff ? ' ticket__verif--off' : ''}">${isOff ? '官方公告 · OFFICIAL' : '媒体报道 · MEDIA'}</span>
+              <span>${esc(dateStr)}</span>
+            </div>
+            <h3 class="ticket__title">${esc(ev.title)}</h3>
+            <div class="ticket__venue">${esc(ev.venue || '详见官方公告')}</div>
+            <div class="ticket__seal">${isOff ? 'ARCHIVED · OFFICIAL' : 'ARCHIVED · MEDIA'}</div>
+          </div>
+          <div class="ticket__stub">
+            <span class="ticket__no">NO. 0${i + 1}</span>
+            <button type="button" class="ticket__tear" data-tear="${esc(ev.id)}">撕下副券</button>
+          </div>
+        </article>`;
+    }).join('');
+
+    box.querySelectorAll('[data-tear]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.dataset.tear;
+        state.tornIds.add(id);
+        renderTickets();
+        toast('已撕下副券并盖上来源钢印', '撤销', () => {
+          state.tornIds.delete(id);
+          renderTickets();
+        });
+      });
+    });
+  }
+
+  /* ---------------- Editorial Monograph Wallpaper Canvas ---------------- */
+  const imgCache = new Map();
+  function loadImage(src) {
+    if (imgCache.has(src)) return imgCache.get(src);
+    const p = new Promise(resolve => {
+      const im = new Image();
+      im.crossOrigin = 'anonymous';
+      im.onload = () => resolve(im);
+      im.onerror = () => resolve(null);
+      im.src = src;
+    });
+    imgCache.set(src, p);
+    return p;
+  }
+
+  async function drawWallpaper() {
+    const cv = document.getElementById('wpCanvas');
+    const ctx = cv.getContext('2d');
+    const W = cv.width, H = cv.height;
+    const theme = THEMES[state.theme] || THEMES.paper;
+    const t = theme.wp;
+    const m = state.members[state.activeIdx];
+    if (!m) return;
+
+    document.getElementById('studioSyncLabel').textContent = `${theme.label} · ${m.en}`;
+
+    // Paper/Obsidian ground
+    ctx.fillStyle = t.bg;
+    ctx.fillRect(0, 0, W, H);
+
+    // Outer hairline editorial frame
+    ctx.strokeStyle = t.rule;
+    ctx.lineWidth = 1;
+    ctx.strokeRect(24, 24, W - 48, H - 48);
+
+    // Lock-screen top quiet zone (time placeholder spacing + issue header)
+    ctx.fillStyle = t.sub;
+    ctx.textAlign = 'center';
+    ctx.font = '400 13px "Jost", sans-serif';
+    ctx.fillText('EXOPLANET CHRONICLE  ·  VOL. XIV', W / 2, 66);
+
+    ctx.fillStyle = t.ink;
+    ctx.font = '300 66px "Cormorant Garamond", Georgia, serif';
+    ctx.fillText('14:08', W / 2, 152);
+
+    // Clean sharp art-book photograph plate
+    const px = 48, py = 200, pw = W - 96, ph = 532;
+    ctx.fillStyle = t.mat;
+    ctx.fillRect(px, py, pw, ph);
+
+    const img = await loadImage(IMG_BASE + m.photo);
+    if (img) {
+      ctx.save();
+      ctx.beginPath();
+      ctx.rect(px, py, pw, ph);
+      ctx.clip();
+      const s = Math.max(pw / img.width, ph / img.height);
+      const dw = img.width * s, dh = img.height * s;
+      ctx.drawImage(img, px + (pw - dw) / 2, py + (ph - dh) * 0.16, dw, dh);
+      ctx.restore();
+    }
+
+    // Hairline divider below plate
+    ctx.strokeStyle = t.rule;
+    ctx.beginPath(); ctx.moveTo(48, 764); ctx.lineTo(W - 48, 764); ctx.stroke();
+
+    // Left: Member name & power
+    ctx.textAlign = 'left';
+    ctx.fillStyle = t.ink;
+    ctx.font = '300 40px "Cormorant Garamond", Georgia, serif';
+    ctx.fillText(m.en, 48, 818);
+
+    ctx.fillStyle = t.sub;
+    ctx.font = '400 15px "PingFang SC", sans-serif';
+    ctx.fillText(`${m.zh}  ·  ${m.power.zh}`, 48, 848);
+
+    // Custom lyric line
+    const line = (document.getElementById('wpLine').value || '').trim();
+    if (line) {
+      ctx.fillStyle = t.sub;
+      ctx.font = '400 13px "Jost", "PingFang SC", sans-serif';
+      ctx.fillText(line, 48, 898);
+    }
+
+    // Right: Optional understated seal or doll mark
+    if (state.wpMark === 'glyph') {
+      ctx.save();
+      ctx.translate(W - 76, 822);
+      ctx.strokeStyle = t.ac;
+      ctx.lineWidth = 1.4;
+      ctx.beginPath();
+      for (let i = 0; i < 6; i++) {
+        const a = (Math.PI / 3) * i - Math.PI / 2;
+        const x = Math.cos(a) * 22, y = Math.sin(a) * 22;
+        i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+      }
+      ctx.closePath(); ctx.stroke();
+      ctx.fillStyle = t.ac;
+      ctx.textAlign = 'center';
+      ctx.font = '500 11px "Jost", sans-serif';
+      ctx.fillText('XIV', 0, 4);
+      ctx.restore();
+    } else if (state.wpMark === 'doll') {
+      ctx.save();
+      ctx.translate(W - 78, 824);
+      ctx.strokeStyle = t.ink;
+      ctx.lineWidth = 1.5;
+      ctx.beginPath(); ctx.arc(0, 0, 24, 0, Math.PI * 2); ctx.stroke();
+      ctx.fillStyle = t.ink;
+      ctx.beginPath(); ctx.arc(-7, -2, 2.2, 0, Math.PI * 2); ctx.arc(7, -2, 2.2, 0, Math.PI * 2); ctx.fill();
+      ctx.beginPath(); ctx.arc(0, 4, 4, 0.1 * Math.PI, 0.9 * Math.PI); ctx.stroke();
+      ctx.restore();
+    }
+  }
+
+  document.getElementById('wpLine').addEventListener('input', drawWallpaper);
+  document.querySelectorAll('[data-mark]').forEach(b => {
+    b.addEventListener('click', () => {
+      state.wpMark = b.dataset.mark;
+      document.querySelectorAll('[data-mark]').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.mark === state.wpMark)));
+      drawWallpaper();
+    });
+  });
+  document.getElementById('btnExportWp').addEventListener('click', () => {
+    const m = state.members[state.activeIdx];
+    const a = document.createElement('a');
+    a.download = `EXO-${m ? m.id : 'monograph'}-${state.theme}.png`;
+    a.href = document.getElementById('wpCanvas').toDataURL('image/png');
+    a.click();
+    toast('已导出 540×960 精装锁屏壁纸 PNG');
+  });
+
+  /* ---------------- Spring Physics Colophon Bookplate Doll ---------------- */
+  const dollStage = document.getElementById('dollStage');
+  const dollNode = document.getElementById('dollNode');
+  let dx = 0, dy = 0, vx = 0, vy = 0, dragging = false, sx = 0, sy = 0, springRAF = 0;
+
+  function renderDoll() {
+    const d = DOLLS[state.dollIdx];
+    dollNode.innerHTML = d.svg;
+    document.getElementById('dollSay').textContent = d.label;
+  }
+  function stepSpring() {
+    if (dragging) return;
+    const k = 0.15, damp = 0.76;
+    vx = (vx - dx * k) * damp;
+    vy = (vy - dy * k) * damp;
+    dx += vx; dy += vy;
+    const stretch = Math.min(0.16, Math.hypot(dx, dy) / 240);
+    dollNode.style.transform = `translate3d(${dx.toFixed(1)}px,${dy.toFixed(1)}px,0) scale(${(1 + stretch).toFixed(3)},${(1 - stretch * .5).toFixed(3)})`;
+    if (Math.hypot(dx, dy) > 0.25 || Math.hypot(vx, vy) > 0.25) {
+      springRAF = requestAnimationFrame(stepSpring);
+    } else {
+      dx = dy = vx = vy = 0;
+      dollNode.style.transform = '';
+    }
+  }
+  dollStage.addEventListener('pointerdown', e => {
+    dragging = true; cancelAnimationFrame(springRAF);
+    sx = e.clientX - dx; sy = e.clientY - dy;
+    try { dollStage.setPointerCapture(e.pointerId); } catch {}
+    document.getElementById('dollSay').textContent = DOLLS[state.dollIdx].line;
+  });
+  dollStage.addEventListener('pointermove', e => {
+    if (!dragging) return;
+    dx = Math.max(-52, Math.min(52, e.clientX - sx));
+    dy = Math.max(-34, Math.min(34, e.clientY - sy));
+    const stretch = Math.min(0.2, Math.hypot(dx, dy) / 220);
+    dollNode.style.transform = `translate3d(${dx}px,${dy}px,0) rotate(${(dx * .16).toFixed(1)}deg) scale(${(1 + stretch).toFixed(3)},${(1 - stretch * .55).toFixed(3)})`;
+  });
+  const releaseDoll = () => {
+    if (!dragging) return;
+    dragging = false;
+    springRAF = requestAnimationFrame(stepSpring);
+  };
+  dollStage.addEventListener('pointerup', releaseDoll);
+  dollStage.addEventListener('pointercancel', releaseDoll);
+  document.getElementById('dollNext').addEventListener('click', () => {
+    state.dollIdx = (state.dollIdx + 1) % DOLLS.length;
+    renderDoll();
+  });
+
+  /* ---------------- Silver Ocean Subtle Colophon Pulse ---------------- */
+  let silverIdx = 0;
+  document.getElementById('btnSilverOcean').addEventListener('click', () => {
+    const wave = document.getElementById('silverWave');
+    wave.classList.add('is-lit');
+    setTimeout(() => wave.classList.remove('is-lit'), 950);
+    toast(SILVER_LINES[silverIdx++ % SILVER_LINES.length]);
+  });
+
+  /* ---------------- Bootstrap Real Local EXO Data ---------------- */
+  async function init() {
+    readHash();
+    const boot = window.__EXO_BOOT__;
+    const [members, archive, events] = boot
+      ? [boot.members, boot.archive, boot.events]
+      : await Promise.all([
+          fetch('data/members.json').then(r => r.json()),
+          fetch('data/archive.json').then(r => r.json()),
+          fetch('data/events.json').then(r => r.json())
+        ]);
+
+    state.members = members;
+    state.events = events;
+    state.eraGallery = archive.eraGallery || [];
+
+    const milestones = (archive.road || []).map(r => ({
+      _cat: 'milestone', _curated: true,
+      _date: r.d || '', _year: (r.d || '').slice(0, 4),
+      _title: r.t || '', _sub: r.s || '', _note: r.s || '',
+      _who: 'EXO', _src: '编年主档',
+      _memberHay: ('exo ' + (r.t || '') + ' ' + (r.s || '')).toLowerCase(),
+      _searchHay: `${r.d} ${r.t} ${r.s}`.toLowerCase()
+    }));
+
+    const supRoad = ((archive.supplement && archive.supplement.road) || []).map(r => ({
+      _cat: ['release', 'appearance', 'credit'].includes(r.kind) ? r.kind : 'milestone',
+      _curated: false,
+      _date: r.d || '', _year: (r.d || '').slice(0, 4),
+      _title: r.t || '', _sub: r.s || '', _note: r.note || r.s || '',
+      _who: r.who || 'EXO', _src: r.source || '历史目录',
+      _memberHay: `${r.who || ''} ${r.t || ''} ${r.s || ''}`.toLowerCase(),
+      _searchHay: `${r.d} ${r.t} ${r.s} ${r.who || ''} ${r.source || ''}`.toLowerCase()
+    }));
+
+    state.roadAll = [...milestones, ...supRoad].sort((a, b) => b._date.localeCompare(a._date));
+
+    const vMain = (archive.variety || []).map(v => ({
+      _cat: 'variety', _curated: true,
+      _date: v.y || '', _year: (v.y || '').slice(0, 4),
+      _title: v.t || '', _sub: `${v.cat || '团综'} · ${v.n || ''}`, _note: v.n || '',
+      _who: v.who || 'EXO', _src: '精选综艺',
+      _memberHay: `${v.who || ''} ${v.t || ''} ${v.n || ''}`.toLowerCase(),
+      _searchHay: `${v.y} ${v.t} ${v.cat || ''} ${v.n || ''} ${v.who || ''}`.toLowerCase()
+    }));
+
+    const vSup = ((archive.supplement && archive.supplement.variety) || []).map(v => ({
+      _cat: 'variety', _curated: false,
+      _date: v.y || '', _year: (v.y || '').slice(0, 4),
+      _title: v.t || '', _sub: `${v.programType || v.cat || '节目'} · ${v.n || ''}`, _note: v.n || '',
+      _who: v.who || 'EXO', _src: v.source || 'NamuWiki',
+      _memberHay: `${v.who || ''} ${v.t || ''} ${v.n || ''}`.toLowerCase(),
+      _searchHay: `${v.y} ${v.t} ${v.programType || ''} ${v.n || ''} ${v.who || ''} ${v.source || ''}`.toLowerCase()
+    }));
+
+    state.varietyAll = [...vMain, ...vSup].sort((a, b) => b._date.localeCompare(a._date));
+
+    const counts = {
+      'all-road': state.roadAll.length,
+      milestone: milestones.length,
+      release: supRoad.filter(x => x._cat === 'release').length,
+      appearance: supRoad.filter(x => x._cat === 'appearance').length,
+      credit: supRoad.filter(x => x._cat === 'credit').length,
+      variety: state.varietyAll.length
+    };
+    Object.entries(counts).forEach(([k, n]) => {
+      const el = document.querySelector(`[data-cnt="${k}"]`);
+      if (el) el.textContent = String(n);
+    });
+
+    // Years
+    const years = [...new Set([...state.roadAll, ...state.varietyAll].map(x => x._year).filter(y => /^\d{4}$/.test(y)))].sort().reverse();
+    const ySel = document.getElementById('archYear');
+    years.forEach(y => {
+      const o = document.createElement('option');
+      o.value = y; o.textContent = `${y} 年`;
+      ySel.appendChild(o);
+    });
+
+    // 9-Member Contact Sheet
+    const sheet = document.getElementById('contactSheet');
+    sheet.innerHTML = members.map((m, i) => `
+      <button type="button" class="cs-item${i === state.activeIdx ? ' is-active' : ''}" role="tab" aria-selected="${i === state.activeIdx}" data-mi="${i}" aria-label="${esc(m.en)} ${esc(m.zh)}">
+        <span class="cs-thumb"><img src="${esc(IMG_BASE + m.photo)}" alt="${esc(m.en)}" loading="lazy"></span>
+        <span class="cs-code">${String(i + 1).padStart(2, '0')}</span>
+      </button>`).join('');
+    sheet.querySelectorAll('.cs-item').forEach(b => {
+      b.addEventListener('click', () => selectMember(Number(b.dataset.mi), true));
+    });
+
+    // Member Filter Rail
+    const rail = document.getElementById('memberRail');
+    rail.innerHTML = `<button type="button" class="m-flt" data-mf="" aria-pressed="${!state.memberFilter}">全部成员</button>` +
+      members.map(m => `<button type="button" class="m-flt" data-mf="${m.id}" aria-pressed="${state.memberFilter === m.id}">
+        <svg viewBox="0 0 48 48"><use href="#g-${m.id}"/></svg>${esc(m.en)}
+      </button>`).join('');
+    rail.querySelectorAll('.m-flt').forEach(b => {
+      b.addEventListener('click', () => {
+        state.memberFilter = b.dataset.mf;
+        state.pageSize = 16;
+        syncMemberRail();
+        renderLedger(true);
+      });
+    });
+
+    // Era Film Strip
+    const strip = document.getElementById('eraStrip');
+    strip.innerHTML = state.eraGallery.map(g => {
+      const y = (g.era || '').match(/\d{4}/)?.[0] || '';
+      return `<button type="button" class="era-card" data-ey="${y}">
+        <span class="era-card__img"><img src="${esc(IMG_BASE + g.img)}" alt="${esc(g.era)}" loading="lazy"></span>
+        <span class="era-card__y">${esc(g.era)}</span>
+        <span class="era-card__t">${esc(g.title)}</span>
+      </button>`;
+    }).join('');
+    strip.querySelectorAll('.era-card').forEach(b => {
+      b.addEventListener('click', () => {
+        const y = b.dataset.ey;
+        state.year = state.year === y ? '' : y;
+        state.pageSize = 16;
+        strip.querySelectorAll('.era-card').forEach(c => c.classList.toggle('is-on', c.dataset.ey === state.year && !!state.year));
+        renderLedger(true);
+      });
+    });
+
+    selectMember(state.activeIdx, false);
+    applyTheme(state.theme, false);
+    renderLedger(false);
+    renderTickets();
+    renderDoll();
+  }
+
+  init().catch(err => {
+    console.error(err);
+    toast('本地数据读取失败，请确认预览服务 http://127.0.0.1:4193/ 已运行');
+  });
+})();
+</script>
+</body>
+</html>
