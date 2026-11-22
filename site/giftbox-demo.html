@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-mode="paper" data-member="baekhyun">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>EXO 星球 · 十四年典藏礼盒</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;500;600;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #F6F1E7;
+  --bg-2: #EFE8D8;
+  --surface: #FCF9F2;
+  --surface-2: #F3ECE0;
+  --ink: #1D1A16;
+  --ink-2: #544D44;
+  --ink-3: #7A7166;
+  --line: rgba(29, 26, 22, 0.12);
+  --line-strong: rgba(29, 26, 22, 0.24);
+  --foil: #A87E43;
+  --foil-soft: rgba(168, 126, 67, 0.14);
+  --stamp: #A63A2B;
+  --tape: rgba(232, 212, 168, 0.72);
+  --member-ac: #D9863B;
+  --shadow-box: 0 24px 60px -24px rgba(29, 26, 22, 0.22), 0 4px 14px -4px rgba(29, 26, 22, 0.08);
+  --shadow-card: 0 14px 32px -16px rgba(29, 26, 22, 0.2);
+
+  --display: "Cormorant Garamond", "Noto Serif SC", Georgia, serif;
+  --serif: "Noto Serif SC", "Cormorant Garamond", Georgia, serif;
+  --hand: "ZCOOL XiaoWei", "Noto Serif SC", cursive, serif;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, monospace;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+html[data-mode="galaxy"] {
+  --bg: #080B13;
+  --bg-2: #0F1422;
+  --surface: #121828;
+  --surface-2: #171F33;
+  --ink: #F2EEE7;
+  --ink-2: #C2C8D6;
+  --ink-3: #8D96AA;
+  --line: rgba(220, 231, 255, 0.13);
+  --line-strong: rgba(220, 231, 255, 0.28);
+  --foil: #D6DFEF;
+  --foil-soft: rgba(214, 223, 239, 0.12);
+  --stamp: #E89685;
+  --tape: rgba(186, 206, 240, 0.24);
+  --shadow-box: 0 28px 70px -24px rgba(0, 0, 0, 0.72), 0 0 0 1px rgba(220, 231, 255, 0.08);
+  --shadow-card: 0 18px 36px -14px rgba(0, 0, 0, 0.62);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; background: var(--bg); color: var(--ink); overflow-x: clip; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 14.5px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.55s var(--ease), color 0.45s var(--ease);
+}
+
+/* Subtle paper grain or silver-ocean canvas */
+body::before {
+  content: "";
+  position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  opacity: 0.032;
+  background-image: radial-gradient(rgba(29,26,22,.65) 0.6px, transparent 0.6px);
+  background-size: 14px 14px;
+}
+html[data-mode="galaxy"] body::before { opacity: 0.04; background-image: radial-gradient(rgba(220,231,255,.55) 0.7px, transparent 0.7px); }
+
+#galaxyCanvas {
+  position: fixed; inset: 0; width: 100%; height: 100%;
+  pointer-events: none; z-index: 0;
+  opacity: 0; transition: opacity 0.6s ease;
+}
+html[data-mode="galaxy"] #galaxyCanvas { opacity: 1; }
+
+main, header, footer { position: relative; z-index: 1; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+img { display: block; max-width: 100%; }
+
+.wrap { width: min(1240px, calc(100% - 56px)); margin: 0 auto; }
+
+/* ---------------- Top Spine Masthead ---------------- */
+.spine-bar {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(246, 241, 231, 0.88);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--line);
+  transition: background-color 0.5s var(--ease);
+}
+html[data-mode="galaxy"] .spine-bar { background: rgba(8, 11, 19, 0.86); }
+
+.spine-inner {
+  min-height: 60px; display: flex; align-items: center; justify-content: space-between; gap: 18px;
+}
+.brand { display: inline-flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.brand svg { width: 20px; height: 20px; color: var(--foil); }
+.brand-title {
+  font-family: var(--display); font-size: 16px; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase;
+}
+.brand-sub {
+  font-size: 11px; color: var(--ink-3); letter-spacing: 0.08em;
+  padding-left: 10px; border-left: 1px solid var(--line-strong);
+}
+
+.spine-nav { display: flex; align-items: center; gap: 22px; }
+.spine-nav a {
+  font-size: 12.5px; color: var(--ink-2); letter-spacing: 0.04em;
+  padding: 6px 0; position: relative; transition: color 0.25s ease;
+}
+.spine-nav a:hover { color: var(--ink); }
+.spine-nav a::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px;
+  background: var(--foil); transform: scaleX(0); transition: transform 0.3s var(--ease);
+}
+.spine-nav a:hover::after { transform: scaleX(1); }
+
+.spine-tools { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.pill-badge {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 5px 12px; border-radius: 999px;
+  border: 1px solid var(--line-strong); background: var(--surface);
+  font-size: 12px; color: var(--ink-2); transition: all 0.25s ease;
+}
+.pill-badge:hover { border-color: var(--foil); color: var(--ink); }
+.pill-badge.is-lit { border-color: var(--foil); background: var(--foil-soft); color: var(--ink); }
+.eribong-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--ink-3); opacity: 0.4; transition: all 0.35s ease;
+}
+.pill-badge.is-lit .eribong-dot {
+  background: #E8F1FF; opacity: 1;
+  box-shadow: 0 0 10px #A9C8FF, 0 0 20px rgba(169,200,255,.7);
+}
+
+.mode-toggle {
+  display: inline-flex; padding: 3px; border-radius: 999px;
+  border: 1px solid var(--line-strong); background: var(--surface);
+}
+.mode-btn {
+  padding: 4px 12px; border-radius: 999px; font-size: 12px; color: var(--ink-3);
+  transition: all 0.28s var(--ease);
+}
+.mode-btn[aria-pressed="true"] {
+  background: var(--ink); color: var(--bg); font-weight: 500;
+}
+
+/* ---------------- Section I: Giftbox Hero + Era Onboarding ---------------- */
+.hero-box {
+  padding: 36px 0 56px;
+  border-bottom: 1px solid var(--line);
+}
+.hero-grid {
+  display: grid; grid-template-columns: minmax(0, 1.02fr) minmax(0, 1fr);
+  gap: clamp(28px, 4.5vw, 64px); align-items: center;
+}
+
+/* Left: Physical Album Sleeve & Flippable Photocard */
+.sleeve-stage {
+  position: relative; padding: 18px;
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  box-shadow: var(--shadow-box);
+  transform-style: preserve-3d;
+  transition: transform 0.4s var(--ease);
+}
+.sleeve-stage::before {
+  content: ""; position: absolute; inset: 8px;
+  border: 1px solid var(--foil); opacity: 0.35; pointer-events: none; z-index: 4;
+}
+.washi-tape {
+  position: absolute; top: -11px; left: 32px; z-index: 6;
+  width: 96px; height: 24px;
+  background: var(--tape);
+  border-left: 1px dashed rgba(29,26,22,.15);
+  border-right: 1px dashed rgba(29,26,22,.15);
+  transform: rotate(-3.2deg);
+  backdrop-filter: blur(4px);
+}
+.sleeve-stamp {
+  position: absolute; top: 20px; right: 20px; z-index: 6;
+  padding: 5px 10px;
+  border: 1.5px solid var(--stamp);
+  color: var(--stamp);
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em;
+  transform: rotate(4deg);
+  background: rgba(252, 249, 242, 0.85);
+}
+html[data-mode="galaxy"] .sleeve-stamp { background: rgba(18, 24, 40, 0.85); }
+
+.photocard-flip {
+  position: relative; aspect-ratio: 4 / 4.7; width: 100%;
+  perspective: 1200px; cursor: pointer;
+}
+.photocard-inner {
+  position: relative; width: 100%; height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.78s var(--spring);
+}
+.photocard-flip.is-flipped .photocard-inner { transform: rotateY(180deg); }
+
+.pc-face {
+  position: absolute; inset: 0; backface-visibility: hidden; overflow: hidden;
+  background: var(--bg-2);
+}
+.pc-front img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center 16%;
+  transition: transform 0.9s var(--ease);
+}
+.sleeve-stage:hover .pc-front img { transform: scale(1.03); }
+.pc-aura {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  pointer-events: none; mix-blend-mode: screen; opacity: 0.85;
+}
+html[data-mode="paper"] .pc-aura { mix-blend-mode: soft-light; opacity: 0.92; }
+
+.pc-back {
+  transform: rotateY(180deg);
+  background: var(--surface-2);
+  padding: 36px 32px;
+  display: flex; flex-direction: column; justify-content: space-between;
+  border: 1px solid var(--line);
+}
+.pc-back-top {
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: var(--mono); font-size: 11px; color: var(--ink-3); letter-spacing: 0.12em;
+  border-bottom: 1px dashed var(--line-strong); padding-bottom: 12px;
+}
+.pc-back-note {
+  font-family: var(--hand); font-size: clamp(20px, 2.3vw, 25px);
+  line-height: 1.7; color: var(--ink);
+  margin: 0;
+}
+.pc-back-sign {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  padding-top: 16px; border-top: 1px dashed var(--line-strong);
+}
+.pc-sign-name { font-family: var(--display); font-size: 24px; font-style: italic; color: var(--foil); }
+
+.sleeve-foot {
+  margin-top: 14px; display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  font-size: 12px; color: var(--ink-3);
+}
+.flip-hint {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 10px; border-radius: 999px;
+  background: var(--foil-soft); color: var(--ink); font-size: 11.5px;
+}
+
+/* Right: Editorial Title + "Which year did you land?" Ritual */
+.hero-right { display: flex; flex-direction: column; gap: 22px; min-width: 0; }
+.issue-kicker {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--ink-3);
+}
+.issue-kicker .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--foil); }
+
+.hero-name-row { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.hero-en {
+  margin: 0; font-family: var(--display); font-weight: 500;
+  font-size: clamp(44px, 5.4vw, 72px); line-height: 0.96; letter-spacing: -0.01em;
+}
+.hero-zh-pill {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--serif); font-size: 18px; color: var(--ink-2);
+}
+.hero-zh-pill svg { width: 18px; height: 18px; color: var(--member-ac); }
+
+.hero-line {
+  margin: 0; font-size: 15px; line-height: 1.8; color: var(--ink-2);
+}
+
+/* Era Onboarding Card */
+.era-ritual {
+  padding: 20px 22px;
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  box-shadow: var(--shadow-card);
+  position: relative;
+}
+.era-ritual-head {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.era-ritual-title {
+  font-family: var(--serif); font-size: 16px; font-weight: 600; color: var(--ink);
+}
+.era-ritual-sub { font-size: 12px; color: var(--ink-3); }
+
+.era-chips {
+  display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 16px;
+}
+.era-chip {
+  padding: 6px 11px; font-size: 12px; border-radius: 4px;
+  border: 1px solid var(--line-strong); background: var(--bg);
+  color: var(--ink-2); transition: all 0.25s var(--ease);
+}
+.era-chip:hover { border-color: var(--foil); color: var(--ink); transform: translateY(-1px); }
+.era-chip[aria-pressed="true"] {
+  background: var(--ink); color: var(--bg); border-color: var(--ink); font-weight: 500;
+}
+
+.boarding-pass {
+  padding: 14px 16px;
+  background: var(--surface-2);
+  border-left: 3px solid var(--foil);
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px; align-items: center;
+}
+.bp-days {
+  font-family: var(--display); font-size: 28px; font-weight: 600; line-height: 1.1; color: var(--ink);
+}
+.bp-days span { font-size: 13px; font-family: var(--sans); font-weight: 400; color: var(--ink-2); margin-left: 6px; }
+.bp-quote { margin: 4px 0 0; font-size: 13px; color: var(--ink-2); }
+.bp-tag {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.1em;
+  padding: 6px 10px; border: 1px dashed var(--foil); color: var(--foil);
+  text-align: center;
+}
+
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 18px; border-radius: 4px;
+  background: var(--ink); color: var(--bg); font-size: 13px; font-weight: 500;
+  transition: transform 0.25s var(--spring), opacity 0.2s ease;
+}
+.btn-primary:hover { transform: translateY(-2px); opacity: 0.92; }
+.btn-ghost {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 9px 16px; border-radius: 4px;
+  border: 1px solid var(--line-strong); background: var(--surface);
+  font-size: 13px; color: var(--ink-2); transition: all 0.25s ease;
+}
+.btn-ghost:hover { border-color: var(--foil); color: var(--ink); }
+
+/* ---------------- Section II: 9-Member Jelly Strip ---------------- */
+.section { padding: 64px 0; border-bottom: 1px solid var(--line); overflow-x: clip; }
+.sec-head {
+  display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+.sec-kicker {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em;
+  color: var(--foil); text-transform: uppercase; margin-bottom: 6px;
+}
+.sec-title {
+  margin: 0; font-family: var(--serif); font-size: clamp(26px, 3vw, 36px); font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.sec-desc { margin: 6px 0 0; font-size: 13.5px; color: var(--ink-2); max-width: 56ch; }
+
+.jelly-strip {
+  display: flex; gap: 8px; height: 420px; align-items: stretch;
+}
+.jelly-card {
+  position: relative; flex: 1 1 0%; min-width: 0; overflow: hidden;
+  border: 1px solid var(--line-strong); background: var(--surface);
+  transition: flex 0.56s var(--spring), opacity 0.35s ease, transform 0.45s var(--spring), border-color 0.3s ease;
+  cursor: pointer; text-align: left;
+}
+.jelly-strip:hover .jelly-card { opacity: 0.56; }
+.jelly-strip:hover .jelly-card:hover,
+.jelly-card.is-active {
+  flex: 2.85 1 0%; opacity: 1 !important;
+  border-color: var(--member-ac);
+  box-shadow: var(--shadow-box);
+}
+.jelly-card img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: center 16%;
+  transition: transform 0.7s var(--ease);
+}
+.jelly-card:hover img { transform: scale(1.04); }
+.jelly-fx {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  pointer-events: none; z-index: 2; mix-blend-mode: screen;
+}
+.jelly-scrim {
+  position: absolute; inset: 0; z-index: 3;
+  background: linear-gradient(180deg, rgba(10,12,18,.08) 0%, rgba(10,12,18,.18) 52%, rgba(10,12,18,.88) 100%);
+}
+.jelly-top {
+  position: absolute; top: 12px; left: 12px; right: 12px; z-index: 4;
+  display: flex; justify-content: space-between; align-items: center; color: #fff;
+}
+.jelly-no { font-family: var(--mono); font-size: 11px; opacity: 0.85; }
+.jelly-glyph { width: 18px; height: 18px; opacity: 0.92; }
+
+.jelly-bot {
+  position: absolute; left: 14px; right: 14px; bottom: 14px; z-index: 4; color: #fff;
+}
+.jelly-en {
+  font-family: var(--display); font-size: 16px; font-weight: 500; letter-spacing: 0.04em;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  transition: font-size 0.35s var(--ease);
+}
+.jelly-card:hover .jelly-en,
+.jelly-card.is-active .jelly-en { font-size: 22px; }
+.jelly-meta {
+  font-size: 12px; color: rgba(255,255,255,.84); margin-top: 2px;
+  opacity: 0; max-height: 0; overflow: hidden;
+  transition: opacity 0.35s ease, max-height 0.4s ease;
+}
+.jelly-card:hover .jelly-meta,
+.jelly-card.is-active .jelly-meta { opacity: 1; max-height: 80px; }
+.jelly-fan-note {
+  margin-top: 6px; padding-top: 6px; border-top: 1px dashed rgba(255,255,255,.28);
+  font-family: var(--hand); font-size: 13.5px; color: #F7E9D0;
+}
+
+/* ---------------- Section III: Memory Lane (Warm Daily + Emotional Promise) ---------------- */
+.era-filmstrip {
+  display: flex; gap: 14px; overflow-x: auto; padding: 6px 2px 16px;
+  scrollbar-width: thin; margin-bottom: 24px;
+}
+.film-card {
+  flex: 0 0 236px; background: var(--surface);
+  border: 1px solid var(--line-strong); padding: 10px;
+  box-shadow: var(--shadow-card); transition: transform 0.35s var(--spring);
+  cursor: pointer;
+}
+.film-card:hover { transform: translateY(-4px) rotate(-0.8deg); border-color: var(--foil); }
+.film-card img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+.film-era { font-family: var(--mono); font-size: 10.5px; color: var(--foil); margin-top: 8px; }
+.film-title { font-size: 13px; font-weight: 500; margin-top: 2px; color: var(--ink); }
+
+/* Emotional Anchor Banner (especially Promise 2015 / MAMA / REVERXE) */
+.promise-letter {
+  margin-bottom: 26px; padding: 22px 26px;
+  background: var(--surface);
+  border: 1px solid var(--foil);
+  box-shadow: var(--shadow-card);
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 20px; align-items: center;
+  position: relative;
+}
+.promise-letter::before {
+  content: "MEMORY ANCHOR"; position: absolute; top: -9px; left: 20px;
+  padding: 0 8px; background: var(--bg);
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.16em; color: var(--foil);
+}
+.promise-quote {
+  margin: 0; font-family: var(--serif); font-size: 16px; line-height: 1.85; color: var(--ink);
+}
+.promise-sub { margin: 6px 0 0; font-size: 12.5px; color: var(--ink-3); }
+
+/* Archive Controls */
+.arch-tabs {
+  display: flex; gap: 6px; flex-wrap: wrap; border-bottom: 1px solid var(--line); padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+.arch-tab {
+  padding: 7px 14px; border-radius: 4px; font-size: 13px; color: var(--ink-2);
+  border: 1px solid transparent; transition: all 0.25s ease;
+}
+.arch-tab:hover { color: var(--ink); background: var(--surface); }
+.arch-tab[aria-selected="true"] {
+  background: var(--ink); color: var(--bg); font-weight: 500;
+}
+.arch-tab b { font-family: var(--mono); font-size: 11px; opacity: 0.75; margin-left: 5px; }
+
+.arch-filters {
+  display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 18px;
+}
+.arch-input, .arch-select {
+  height: 36px; padding: 0 12px; border-radius: 4px;
+  border: 1px solid var(--line-strong); background: var(--surface);
+  color: var(--ink); font-size: 13px;
+}
+.arch-input { min-width: 220px; flex: 1 1 220px; }
+.member-totems { display: flex; gap: 5px; flex-wrap: wrap; }
+.totem-btn {
+  width: 34px; height: 34px; border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  border: 1px solid var(--line-strong); background: var(--surface);
+  color: var(--ink-2); transition: all 0.25s var(--spring);
+}
+.totem-btn svg { width: 16px; height: 16px; }
+.totem-btn:hover { transform: scale(1.1); border-color: var(--foil); color: var(--ink); }
+.totem-btn[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
+.arch-list { display: grid; gap: 10px; }
+.arch-item {
+  padding: 14px 18px; background: var(--surface);
+  border: 1px solid var(--line); transition: border-color 0.25s ease;
+}
+.arch-item:hover { border-color: var(--foil); }
+.arch-item.is-emotional {
+  border-left: 3px solid var(--stamp);
+  background: linear-gradient(90deg, var(--foil-soft), var(--surface) 45%);
+}
+.arch-row {
+  display: grid; grid-template-columns: 108px 92px minmax(0, 1fr) auto;
+  gap: 12px; align-items: baseline;
+}
+.arch-date { font-family: var(--mono); font-size: 12px; color: var(--ink-3); }
+.arch-badge {
+  font-size: 11px; padding: 2px 8px; border-radius: 3px;
+  background: var(--surface-2); color: var(--ink-2); text-align: center;
+}
+.arch-title { font-weight: 500; color: var(--ink); }
+.arch-who { font-size: 12px; color: var(--ink-3); }
+.arch-desc { margin: 6px 0 0 212px; font-size: 13px; color: var(--ink-2); }
+
+/* ---------------- Section IV: Tearable Ticket Stubs + Wallet ---------------- */
+.tickets-grid {
+  display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+  gap: 28px; align-items: start;
+}
+.ticket-list { display: grid; gap: 14px; }
+.ticket {
+  display: grid; grid-template-columns: minmax(0, 1fr) 120px;
+  background: var(--surface); border: 1px solid var(--line-strong);
+  position: relative; transition: transform 0.3s ease;
+}
+.ticket::before, .ticket::after {
+  content: ""; position: absolute; right: 113px; width: 14px; height: 14px;
+  border-radius: 50%; background: var(--bg); border: 1px solid var(--line-strong); z-index: 2;
+}
+.ticket::before { top: -8px; clip-path: inset(50% 0 0 0); }
+.ticket::after { bottom: -8px; clip-path: inset(0 0 50% 0); }
+
+.ticket-main { padding: 16px 20px; border-right: 1px dashed var(--line-strong); position: relative; }
+.ticket-meta {
+  display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
+  font-family: var(--mono); font-size: 11px; color: var(--ink-3); margin-bottom: 6px;
+}
+.src-tag {
+  padding: 2px 7px; border-radius: 3px; font-weight: 500;
+  border: 1px solid var(--line-strong);
+}
+.src-tag--official { color: var(--stamp); border-color: var(--stamp); }
+.src-tag--media { color: var(--foil); border-color: var(--foil); }
+.ticket-title { font-family: var(--serif); font-size: 17px; font-weight: 600; margin: 0; }
+.ticket-venue { font-size: 12.5px; color: var(--ink-2); margin-top: 4px; }
+.ticket-kept-stamp {
+  position: absolute; right: 16px; top: 14px;
+  padding: 4px 9px; border: 1.5px solid var(--stamp); color: var(--stamp);
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em;
+  opacity: 0; transform: scale(1.25) rotate(-8deg);
+  transition: all 0.35s var(--spring); pointer-events: none;
+}
+.ticket.is-torn .ticket-kept-stamp { opacity: 0.92; transform: scale(1) rotate(-6deg); }
+
+.ticket-stub {
+  padding: 14px 12px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 8px;
+  transition: transform 0.55s var(--ease), opacity 0.45s ease;
+}
+.ticket.is-torn .ticket-stub { transform: translate(24px, 20px) rotate(12deg); opacity: 0; pointer-events: none; }
+.tear-btn {
+  padding: 6px 10px; border: 1px solid var(--line-strong); border-radius: 3px;
+  font-size: 12px; background: var(--bg); color: var(--ink);
+  transition: all 0.2s ease;
+}
+.tear-btn:hover { background: var(--ink); color: var(--bg); }
+
+/* Personal Ticket Wallet */
+.wallet-card {
+  padding: 22px; background: var(--surface);
+  border: 1px solid var(--line-strong); box-shadow: var(--shadow-card);
+  position: sticky; top: 80px;
+}
+.wallet-head {
+  display: flex; justify-content: space-between; align-items: center;
+  padding-bottom: 12px; border-bottom: 1px solid var(--line); margin-bottom: 14px;
+}
+.wallet-list { display: grid; gap: 8px; max-height: 300px; overflow-y: auto; }
+.wallet-item {
+  padding: 10px 12px; background: var(--surface-2); border-left: 2px solid var(--foil);
+  font-size: 12.5px;
+}
+.wallet-empty { font-size: 13px; color: var(--ink-3); padding: 16px 0; }
+
+/* ---------------- Section V: Plushie Treasure + DIY Workshop ---------------- */
+.craft-grid {
+  display: grid; grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 32px; align-items: start;
+}
+.plush-box {
+  padding: 24px; background: var(--surface); border: 1px solid var(--line-strong);
+  box-shadow: var(--shadow-card);
+}
+.plush-shelf {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px;
+  margin-top: 16px;
+}
+.plush-tile {
+  padding: 12px 8px; border: 1px solid var(--line); background: var(--bg);
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  transition: transform 0.35s var(--spring), border-color 0.25s ease;
+  position: relative;
+}
+.plush-tile:hover { transform: translateY(-4px) scale(1.03); border-color: var(--foil); }
+.plush-tile.is-found { border-color: var(--foil); background: var(--surface); }
+.plush-tile svg { width: 58px; height: 58px; transition: transform 0.35s var(--spring); }
+.plush-tile:active svg { transform: scale(1.16, 0.86); }
+.plush-name { font-size: 11.5px; font-weight: 500; color: var(--ink); text-align: center; }
+.plush-tag { font-size: 10px; color: var(--ink-3); }
+.plush-speech {
+  margin-top: 14px; padding: 12px 14px; background: var(--surface-2);
+  border-radius: 4px; font-size: 13px; color: var(--ink-2);
+  border-left: 2px solid var(--member-ac);
+}
+
+/* DIY Studio */
+.studio-box {
+  padding: 24px; background: var(--surface); border: 1px solid var(--line-strong);
+  box-shadow: var(--shadow-box);
+  display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 22px; align-items: start;
+}
+.canvas-stage {
+  position: relative; width: 260px; aspect-ratio: 9 / 16;
+  background: var(--bg-2); border: 1px solid var(--line-strong);
+  overflow: hidden; cursor: grab; user-select: none; touch-action: none;
+}
+.canvas-stage:active { cursor: grabbing; }
+.canvas-stage canvas { width: 100%; height: 100%; display: block; }
+.drop-hint {
+  margin-top: 8px; font-size: 11.5px; color: var(--ink-3); text-align: center;
+}
+.studio-controls { display: grid; gap: 14px; }
+.ctrl-label {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.12em;
+  color: var(--ink-3); text-transform: uppercase; margin-bottom: 6px; display: block;
+}
+.seg-row { display: flex; gap: 6px; flex-wrap: wrap; }
+.seg-btn {
+  padding: 5px 10px; font-size: 12px; border: 1px solid var(--line-strong);
+  border-radius: 3px; background: var(--bg); color: var(--ink-2);
+}
+.seg-btn[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
+/* Floating Bouncy Plushie Egg */
+.floating-plush {
+  position: fixed; right: 20px; bottom: 24px; z-index: 40;
+  width: 66px; height: 66px; border-radius: 50%;
+  background: var(--surface); border: 1px solid var(--line-strong);
+  box-shadow: var(--shadow-box);
+  display: flex; align-items: center; justify-content: center;
+  cursor: grab; transition: transform 0.35s var(--spring);
+}
+.floating-plush:hover { transform: scale(1.1) rotate(-6deg); }
+.floating-plush svg { width: 48px; height: 48px; }
+
+/* Toast */
+.toast-wrap {
+  position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%);
+  z-index: 80; display: grid; gap: 8px;
+}
+.toast {
+  padding: 10px 16px; background: var(--ink); color: var(--bg);
+  font-size: 13px; border-radius: 4px; box-shadow: var(--shadow-box);
+  display: inline-flex; align-items: center; gap: 12px;
+}
+.toast button { color: #F7D89C; text-decoration: underline; font-size: 12.5px; }
+
+footer { padding: 40px 0 64px; text-align: center; color: var(--ink-3); font-size: 12.5px; }
+footer .f-main { font-family: var(--serif); font-size: 18px; color: var(--ink); margin-bottom: 6px; }
+
+@media (max-width: 980px) {
+  .wrap { width: calc(100% - 36px); }
+  .spine-nav { display: none; }
+  .hero-grid, .tickets-grid, .craft-grid, .studio-box { grid-template-columns: minmax(0, 1fr); }
+  .canvas-stage { margin: 0 auto; }
+  .jelly-strip { height: 340px; overflow-x: auto; }
+  .jelly-card { flex: 0 0 130px; }
+  .jelly-card.is-active, .jelly-strip:hover .jelly-card:hover { flex: 0 0 220px; }
+  .arch-row { grid-template-columns: 96px minmax(0, 1fr); }
+  .arch-badge, .arch-who { grid-column: 1 / -1; justify-self: start; }
+  .arch-desc { margin-left: 0; }
+}
+@media (max-width: 600px) {
+  .wrap { width: calc(100% - 26px); }
+  .spine-inner { gap: 8px; }
+  .brand-title { font-size: 13.5px; letter-spacing: 0.1em; }
+  .brand-sub { display: none; }
+  .spine-tools { gap: 6px; }
+  .pill-badge { padding: 4px 8px; font-size: 11px; gap: 5px; }
+  .mode-btn { padding: 3px 9px; font-size: 11px; }
+  .plush-shelf { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .ticket { grid-template-columns: minmax(0, 1fr) 92px; }
+  .ticket::before, .ticket::after { right: 85px; }
+  .boarding-pass { grid-template-columns: minmax(0, 1fr); }
+  .promise-letter { grid-template-columns: minmax(0, 1fr); padding: 18px; }
+  .canvas-stage { width: 230px; }
+}
+</style>
+</head>
+<body>
+<canvas id="galaxyCanvas" aria-hidden="true"></canvas>
+
+<!-- MAMA Official Power Glyphs -->
+<svg width="0" height="0" style="position:absolute;visibility:hidden" aria-hidden="true">
+  <defs>
+    <symbol id="g-galaxy" viewBox="0 0 48 48"><path d="M24 5 40.5 14.5v19L24 43 7.5 33.5v-19z" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M24 5v38M7.5 14.5l33 19M40.5 14.5l-33 19" stroke="currentColor" stroke-width="1.6" opacity=".5"/></symbol>
+    <symbol id="g-xiumin" viewBox="0 0 48 48"><path d="M8.6 28.6 L28.6 8.6 M19.4 8.6 L39.4 28.6 M39.4 19.4 L19.4 39.4 M8.6 19.4 L28.6 39.4" fill="none" stroke="currentColor" stroke-width="3.2"/><path d="M10.4 16.2 H16.2 V10.4 M31.8 10.4 V16.2 H37.6 M37.6 31.8 H31.8 V37.6 M10.4 31.8 H16.2 V37.6" fill="none" stroke="currentColor" stroke-width="2.8"/></symbol>
+    <symbol id="g-suho" viewBox="0 0 48 48"><path d="M24 5 L15.1 29.7 A9.5 9.5 0 1 0 32.9 29.7 Z" fill="none" stroke="currentColor" stroke-width="2.9"/><path d="M23.6 14.5 L21.6 20.2 L24.5 21.6 L22.3 26.4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="M15.4 31.2 C18.6 27.2, 25.4 26.8, 31.8 30.2 M16.4 35.4 C19.6 33.2, 23.2 34.8, 25.8 39.2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="28.2" cy="33.8" r="2.3" fill="currentColor"/></symbol>
+    <symbol id="g-lay" viewBox="0 0 48 48"><path d="M19.8 18.0 L8.5 11.2 L16.8 21.4 Z" fill="currentColor"/><path d="M19.8 17.6 L22.2 13.8 L24.6 16.6 C28.6 16.2, 31.8 18.2, 33.4 22.0 M19.8 17.6 C17.2 20.4, 15.4 24.4, 12.8 28.0 C11.0 30.6, 11.8 34.0, 14.8 34.8 C17.6 35.5, 20.6 33.4, 23.8 31.0 C22.6 35.2, 22.4 39.0, 23.2 42.4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M25.6 19.8 C27.2 24.2, 26.2 28.6, 23.8 31.0" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M29.8 17.8 C33.2 19.4, 35.2 22.8, 38.8 23.2 M31.2 22.6 C34.2 25.0, 36.2 28.0, 40.0 28.6 M31.0 27.6 C33.8 30.2, 35.6 32.6, 39.2 33.4 M30.2 32.4 C32.4 35.2, 34.0 37.2, 37.0 38.0" fill="none" stroke="currentColor" stroke-width="2.0" stroke-linecap="round"/></symbol>
+    <symbol id="g-baekhyun" viewBox="0 0 48 48"><path fill="currentColor" fill-rule="evenodd" d="M 24.00 6.00 L 25.50 16.45 L 28.29 13.65 L 28.28 17.60 L 34.11 13.89 L 30.40 19.72 L 34.35 19.71 L 31.55 22.50 L 42.00 24.00 L 31.55 25.50 L 34.35 28.29 L 30.40 28.28 L 34.11 34.11 L 28.28 30.40 L 28.29 34.35 L 25.50 31.55 L 24.00 42.00 L 22.50 31.55 L 19.71 34.35 L 19.72 30.40 L 13.89 34.11 L 17.60 28.28 L 13.65 28.29 L 16.45 25.50 L 6.00 24.00 L 16.45 22.50 L 13.65 19.71 L 17.60 19.72 L 13.89 13.89 L 19.72 17.60 L 19.71 13.65 L 22.50 16.45 Z M 28.6 24 A 4.6 4.6 0 1 0 19.4 24 A 4.6 4.6 0 1 0 28.6 24 Z"/></symbol>
+    <symbol id="g-chen" viewBox="0 0 48 48"><path d="M18 25.5 L25.5 18 L31.5 24 L24 31.5 Z M21.8 21.8 L27.8 27.8" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M28.6 20.8 L32.6 19.0 L33.0 14.4 L38.2 9.2" fill="none" stroke="currentColor" stroke-width="2.8"/><path d="M34.2 8.4 L39.8 7.8 L39.2 13.4 Z" fill="currentColor"/><path d="M19.2 24.4 L9.6 26.4 L6.4 29.4 L11.4 34.2 L9.8 29.5 L18.4 27.4 Z M25.0 30.2 L23.0 39.8 L20.0 43.0 L15.2 38.0 L19.9 39.6 L22.0 31.0 Z" fill="currentColor"/></symbol>
+    <symbol id="g-chanyeol" viewBox="0 0 48 48"><path fill="currentColor" fill-rule="evenodd" d="M16.2 9.8 C22.6 8.8, 28.8 11.4, 32.6 16.0 C35.4 14.2, 38.8 14.2, 42.0 16.6 C39.4 17.4, 37.4 18.6, 35.8 20.6 C38.6 25.8, 38.0 33.6, 33.2 42.2 C33.0 37.8, 32.4 34.6, 31.2 32.2 C30.6 35.8, 29.2 38.8, 27.0 41.0 C27.4 37.2, 27.0 34.0, 26.0 31.6 C24.8 34.2, 23.2 36.2, 21.2 37.6 C22.8 33.8, 24.4 30.2, 25.8 27.4 L15.4 35.4 L23.6 25.4 L8.8 30.4 L24.4 22.2 C19.8 22.0, 16.0 20.6, 13.8 18.4 C17.2 18.6, 20.2 18.0, 22.4 16.6 C18.2 16.4, 14.8 15.0, 13.0 12.8 C16.6 13.2, 19.8 12.8, 22.0 11.8 C19.4 11.2, 17.4 10.6, 16.2 9.8 Z"/></symbol>
+    <symbol id="g-do" viewBox="0 0 48 48"><path fill="currentColor" fill-rule="evenodd" d="M19.5 28.0 L19.5 18.6 L14.4 14.6 L15.6 12.8 L6.4 8.2 L9.8 15.2 L8.2 15.8 L12.4 27.6 L16.8 38.8 L18.6 42.8 L21.2 36.6 L24.0 41.8 L26.8 36.6 L29.4 42.8 L31.2 38.8 L35.6 27.6 L39.8 15.8 L38.2 15.2 L41.6 8.2 L32.4 12.8 L33.6 14.6 L28.5 18.6 L28.5 28.0 Q24.0 29.4 19.5 28.0 Z M16.0 27.6 L19.4 22.4 L19.4 31.2 Q24.0 32.6 28.6 31.2 L28.6 22.4 L32.0 27.6 L29.4 34.4 L18.6 34.4 Z"/></symbol>
+    <symbol id="g-kai" viewBox="0 0 48 48"><path d="M24 6.5 L42.2 39.5 L5.8 39.5 Z" fill="none" stroke="currentColor" stroke-width="3.1"/><circle cx="24" cy="28.4" r="5.1" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="24" cy="28.4" r="2.3" fill="currentColor"/></symbol>
+    <symbol id="g-sehun" viewBox="0 0 48 48"><g transform="rotate(0 24 24)"><path fill="currentColor" d="M 17.5 19.5 C 20.5 13.0, 29.8 11.2, 36.2 16.4 C 38.6 18.4, 39.6 21.4, 39.2 24.2 C 38.0 20.2, 34.8 16.8, 29.8 15.8 C 24.2 14.7, 19.4 17.2, 17.5 19.5 Z"/></g><g transform="rotate(72 24 24)"><path fill="currentColor" d="M 17.5 19.5 C 20.5 13.0, 29.8 11.2, 36.2 16.4 C 38.6 18.4, 39.6 21.4, 39.2 24.2 C 38.0 20.2, 34.8 16.8, 29.8 15.8 C 24.2 14.7, 19.4 17.2, 17.5 19.5 Z"/></g><g transform="rotate(144 24 24)"><path fill="currentColor" d="M 17.5 19.5 C 20.5 13.0, 29.8 11.2, 36.2 16.4 C 38.6 18.4, 39.6 21.4, 39.2 24.2 C 38.0 20.2, 34.8 16.8, 29.8 15.8 C 24.2 14.7, 19.4 17.2, 17.5 19.5 Z"/></g><g transform="rotate(216 24 24)"><path fill="currentColor" d="M 17.5 19.5 C 20.5 13.0, 29.8 11.2, 36.2 16.4 C 38.6 18.4, 39.6 21.4, 39.2 24.2 C 38.0 20.2, 34.8 16.8, 29.8 15.8 C 24.2 14.7, 19.4 17.2, 17.5 19.5 Z"/></g><g transform="rotate(288 24 24)"><path fill="currentColor" d="M 17.5 19.5 C 20.5 13.0, 29.8 11.2, 36.2 16.4 C 38.6 18.4, 39.6 21.4, 39.2 24.2 C 38.0 20.2, 34.8 16.8, 29.8 15.8 C 24.2 14.7, 19.4 17.2, 17.5 19.5 Z"/></g></symbol>
+  </defs>
+</svg>
+
+<header class="spine-bar">
+  <div class="wrap spine-inner">
+    <a class="brand" href="#top">
+      <svg><use href="#g-galaxy"/></svg>
+      <span class="brand-title">EXOPLANET</span>
+      <span class="brand-sub">十四年典藏礼盒 · VOL. XIV</span>
+    </a>
+    <nav class="spine-nav" aria-label="礼盒章节">
+      <a href="#members">九人人物带</a>
+      <a href="#memory">来时路与综艺</a>
+      <a href="#tickets">票根与票夹</a>
+      <a href="#craft">官娃与工坊</a>
+    </nav>
+    <div class="spine-tools">
+      <a class="pill-badge" id="eribongBadge" href="#craft" title="收集 9 位官娃/姓名印记点亮爱丽棒">
+        <span class="eribong-dot"></span>
+        <span>爱丽棒集章 <strong id="plushCount">0</strong>/9</span>
+      </a>
+      <div class="mode-toggle" role="group" aria-label="阅读模式">
+        <button class="mode-btn" type="button" data-mode-set="paper" aria-pressed="true">书刊</button>
+        <button class="mode-btn" type="button" data-mode-set="galaxy" aria-pressed="false">银河</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <!-- SECTION I: GIFTBOX HERO + ONBOARDING ERA -->
+  <section class="hero-box">
+    <div class="wrap hero-grid">
+      <!-- Left: Physical Photocard Sleeve -->
+      <div class="sleeve-stage" id="sleeveStage">
+        <div class="washi-tape" aria-hidden="true"></div>
+        <div class="sleeve-stamp" id="sleeveStamp">EXO-L · NO. 04</div>
+        <div class="photocard-flip" id="photocardFlip" role="button" tabindex="0" aria-label="点击翻看小卡背面手写寄语">
+          <div class="photocard-inner">
+            <div class="pc-face pc-front">
+              <img id="heroImg" src="img/members/baekhyun.webp" alt="BAEKHYUN">
+              <canvas class="pc-aura" id="heroAura"></canvas>
+            </div>
+            <div class="pc-face pc-back">
+              <div class="pc-back-top">
+                <span id="pcBackTag">PHOTOCARD BACK · 04</span>
+                <span id="pcBackEra">EXIST · 2023</span>
+              </div>
+              <p class="pc-back-note" id="pcBackNote"></p>
+              <div class="pc-back-sign">
+                <div>
+                  <div style="font-size:11px;color:var(--ink-3);letter-spacing:.1em;">TO EXO-L</div>
+                  <div class="pc-sign-name" id="pcBackSign">Baekhyun</div>
+                </div>
+                <svg style="width:26px;height:26px;color:var(--foil);"><use id="pcBackGlyph" href="#g-baekhyun"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sleeve-foot">
+          <span id="heroEraLabel">EXIST · Cream Soda 概念照 · 2023</span>
+          <button class="flip-hint" type="button" id="btnFlipCard">翻面看小卡手写寄语</button>
+        </div>
+      </div>
+
+      <!-- Right: Member Header + Era Boarding Ritual -->
+      <div class="hero-right">
+        <div class="issue-kicker">
+          <span>2012.04.08 — 2026</span>
+          <span class="dot"></span>
+          <span>SPECIAL GIFTBOX EDITION</span>
+        </div>
+
+        <div class="hero-name-row">
+          <h1 class="hero-en" id="heroEn">BAEKHYUN</h1>
+          <span class="hero-zh-pill">
+            <svg><use id="heroGlyph" href="#g-baekhyun"/></svg>
+            <span id="heroZh">边伯贤 · 光</span>
+          </span>
+        </div>
+
+        <p class="hero-line" id="heroLine"></p>
+
+        <!-- "Which year did you land?" Ritual -->
+        <div class="era-ritual">
+          <div class="era-ritual-head">
+            <span class="era-ritual-title">你是哪一年登上这颗星球的？</span>
+            <span class="era-ritual-sub">选择入坑节点，印进你的专属票根与 L 卡</span>
+          </div>
+          <div class="era-chips" id="eraChips"></div>
+          <div class="boarding-pass">
+            <div>
+              <div class="bp-days" id="bpDays">4,977 天<span>与 EXO 一起走过</span></div>
+              <p class="bp-quote" id="bpQuote"></p>
+            </div>
+            <div class="bp-tag" id="bpTag">CLASS OF<br>2013</div>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn-primary" href="#craft">带这张小卡去做 DIY 壁纸</a>
+          <button class="btn-ghost" type="button" id="btnFilterThisMember">查看 TA 的编年与综艺</button>
+          <a class="btn-ghost" href="index.html">返回原主站</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION II: 9-MEMBER HORIZONTAL JELLY STRIP -->
+  <section class="section" id="members">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="sec-kicker">CHAPTER I · NINE STARS</div>
+          <h2 class="sec-title">九人横向果冻人物带</h2>
+          <p class="sec-desc">悬停触发各成员《MAMA》超能力特效与弹性展开，点击切换上方典藏小卡与手写背面寄语。</p>
+        </div>
+        <span style="font-size:12px;color:var(--ink-3);">小提示：点击上方小卡可翻面看寄语</span>
+      </div>
+      <div class="jelly-strip" id="jellyStrip"></div>
+    </div>
+  </section>
+
+  <!-- SECTION III: MEMORY LANE & VARIETY ARCHIVE -->
+  <section class="section" id="memory">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="sec-kicker">CHAPTER II · CHRONICLE &amp; VARIETY</div>
+          <h2 class="sec-title">来时路与综艺档案</h2>
+          <p class="sec-desc">平时逛起来暖甜好笑，翻到重要里程碑与《约定》时有爱丽才懂的走心记忆锚点。保留全部真实编年、综艺、曲目与时期画报。</p>
+        </div>
+        <span style="font-family:var(--mono);font-size:12px;color:var(--ink-3);">当前命中 <strong id="archHitCount">0</strong> 条</span>
+      </div>
+
+      <!-- Era Filmstrip -->
+      <div class="era-filmstrip" id="eraFilmstrip"></div>
+
+      <!-- Emotional Memory Anchor -->
+      <div class="promise-letter" id="promiseLetter">
+        <div>
+          <p class="promise-quote" id="promiseQuote">「谢谢你等我，谢谢你一直站在银海里。」—— 2015 年春天写下的《约定 (EXO 2014)》，至今仍是每次巡演安可全场一起唱完的暗号。</p>
+          <p class="promise-sub" id="promiseSub">点击左侧画报或切换年份，查看不同时期的爱丽记忆注记。</p>
+        </div>
+        <button class="btn-ghost" type="button" id="btnJumpPromise">定位到《约定》2015</button>
+      </div>
+
+      <!-- Tabs & Filters -->
+      <div class="arch-tabs" id="archTabs" role="tablist">
+        <button class="arch-tab" type="button" role="tab" data-tab="road" aria-selected="true">来时路编年 <b id="cntRoad">0</b></button>
+        <button class="arch-tab" type="button" role="tab" data-tab="variety" aria-selected="false">综艺合集 <b id="cntVariety">0</b></button>
+        <button class="arch-tab" type="button" role="tab" data-tab="songs" aria-selected="false">发行曲目 <b id="cntSongs">0</b></button>
+      </div>
+
+      <div class="arch-filters">
+        <input class="arch-input" id="archSearch" type="search" placeholder="搜歌名、综艺、巡演或关键词…">
+        <select class="arch-select" id="archYear"><option value="">全部年份</option></select>
+        <div class="member-totems" id="archTotems" aria-label="按成员筛选"></div>
+        <button class="btn-ghost" type="button" id="btnArchReset">重置</button>
+      </div>
+
+      <div class="arch-list" id="archList"></div>
+      <div style="margin-top:16px;text-align:center;">
+        <button class="btn-ghost" type="button" id="btnArchMore">展开更多记录</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION IV: TEARABLE TICKETS & PERSONAL WALLET -->
+  <section class="section" id="tickets">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="sec-kicker">CHAPTER III · TICKET STUBS</div>
+          <h2 class="sec-title">可撕行程票根与个人票夹</h2>
+          <p class="sec-desc">严格区分「官方公告」与「媒体报道」来源，绝不混标。撕下的副券会印上你的入坑年份，自动收进右侧个人票夹。</p>
+        </div>
+      </div>
+
+      <div class="tickets-grid">
+        <div class="ticket-list" id="ticketList"></div>
+        <aside class="wallet-card">
+          <div class="wallet-head">
+            <strong style="font-family:var(--serif);font-size:17px;">我的个人票夹</strong>
+            <span style="font-family:var(--mono);font-size:11px;color:var(--foil);" id="walletCount">0 张已留存</span>
+          </div>
+          <div style="font-size:12px;color:var(--ink-3);margin-bottom:10px;" id="walletEraBanner">入坑印记：2013 · 咆哮入坑</div>
+          <div class="wallet-list" id="walletList">
+            <div class="wallet-empty">还没有撕下票根。点左边任意一张行程右侧的「撕下存根」，把它收进你的纪念票夹吧。</div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION V: PLUSHIE TREASURE & DIY GIFTBOX STUDIO -->
+  <section class="section" id="craft" style="border-bottom:0;">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="sec-kicker">CHAPTER IV · PLUSHIES &amp; DIY STUDIO</div>
+          <h2 class="sec-title">官娃寻宝图鉴与 DIY 周边工坊</h2>
+          <p class="sec-desc">7 位已有官娃成员（含特来骑 Teolaegi）用简笔画呈现，XIUMIN、CHEN 以专属姓名印记占位。集齐全部可点亮爱丽棒徽章，还能直接拖进右侧工坊导出高清锁屏/小卡。</p>
+        </div>
+      </div>
+
+      <div class="craft-grid">
+        <!-- Left: Plushie Shelf -->
+        <div class="plush-box">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;">
+            <strong style="font-family:var(--serif);font-size:18px;">官娃与姓名印记图鉴</strong>
+            <button class="btn-ghost" type="button" id="btnCollectAll" style="padding:5px 10px;font-size:12px;">一键体验集齐</button>
+          </div>
+          <div class="plush-shelf" id="plushShelf"></div>
+          <div class="plush-speech" id="plushSpeech">点一点任意官娃或姓名印记，它会跳出来和你说话，并贴上右侧 DIY 画布。</div>
+        </div>
+
+        <!-- Right: DIY Drag & Upload Studio -->
+        <div class="studio-box">
+          <div>
+            <div class="canvas-stage" id="canvasStage" title="画布内可拖拽调整构图">
+              <canvas id="diyCanvas" width="540" height="960"></canvas>
+            </div>
+            <div class="drop-hint">可直接拖入你的本地图片，或在画布内拖动贴纸位置</div>
+          </div>
+
+          <div class="studio-controls">
+            <div>
+              <span class="ctrl-label">1. 画幅风格</span>
+              <div class="seg-row" id="studioFrameBtns">
+                <button class="seg-btn" type="button" data-frame="lockscreen" aria-pressed="true">手机锁屏</button>
+                <button class="seg-btn" type="button" data-frame="photocard" aria-pressed="false">实体小卡</button>
+                <button class="seg-btn" type="button" data-frame="polaroid" aria-pressed="false">拍立得留白</button>
+              </div>
+            </div>
+
+            <div>
+              <span class="ctrl-label">2. 上传底图 / 切换照片</span>
+              <div class="seg-row">
+                <label class="btn-ghost" style="cursor:pointer;padding:6px 12px;font-size:12px;">
+                  上传本地照片
+                  <input id="uploadInput" type="file" accept="image/*" hidden>
+                </label>
+                <button class="btn-ghost" type="button" id="btnResetPhoto" style="padding:6px 12px;font-size:12px;">用回成员概念照</button>
+              </div>
+            </div>
+
+            <div>
+              <span class="ctrl-label">3. 应援手写词</span>
+              <input class="arch-input" id="diyQuote" type="text" value="WE ARE ONE · 우리 오래 보자" style="width:100%;">
+            </div>
+
+            <div>
+              <span class="ctrl-label">4. 贴纸开关</span>
+              <div class="seg-row">
+                <button class="seg-btn" type="button" id="togPlush" aria-pressed="true">官娃贴纸</button>
+                <button class="seg-btn" type="button" id="togGlyph" aria-pressed="true">MAMA 图腾</button>
+                <button class="seg-btn" type="button" id="togEraStamp" aria-pressed="true">入坑年份印章</button>
+              </div>
+            </div>
+
+            <div style="padding-top:6px;">
+              <button class="btn-primary" type="button" id="btnExportPng" style="width:100%;justify-content:center;">导出高清 PNG 纪念图</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<button class="floating-plush" id="floatingPlush" type="button" title="抓到一只 Q 弹官娃彩蛋！点击互动"></button>
+<div class="toast-wrap" id="toastWrap" aria-live="polite"></div>
+
+<footer>
+  <div class="wrap">
+    <div class="f-main">EXO, 사랑하자 · 엑소엘, 사랑해</div>
+    <div>十四年典藏礼盒 Demo · 保留书刊/银河双模式、真实档案数据、严格来源分标与全部互动工坊</div>
+  </div>
+</footer>
+
+<script>
+(() => {
+  'use strict';
+  const IMG_BASE = window.__EXO_IMG_BASE__ || '';
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, m => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[m]));
+
+  /* ---------------- Era Onboarding Data ---------------- */
+  const ERAS = [
+    { id: '2012', date: '2012-04-08', label: '2012 · MAMA 初遇', note: '从百日 23 支预告开始，看着未知行星降落的那一年。' },
+    { id: '2013', date: '2013-08-05', label: '2013 · 咆哮入坑', note: '校服和一镜到底的《Growl》，整个夏天都在单曲循环。' },
+    { id: '2015', date: '2015-03-30', label: '2015 · 约定之年', note: '「谢谢你等我」，每次听到《Promise》前奏还是会鼻酸。' },
+    { id: '2016', date: '2016-06-09', label: '2016 · Monster', note: '暗黑美学封神的夏天，银海在体育场亮成一整片宇宙。' },
+    { id: '2018', date: '2018-11-02', label: '2018 · Tempo', note: '那段清唱无伴奏桥段一出来，就知道还是无人能替的 EXO。' },
+    { id: '2021', date: '2021-06-07', label: '2021 · DFTF 归来', note: '等大哥和弟弟们陆续归队，只要合体唱起歌就安心了。' },
+    { id: '2023', date: '2023-07-10', label: '2023 · EXIST', note: '十年之后依然清爽又游刃有余的《Cream Soda》。' },
+    { id: '2026', date: '2026-01-19', label: '2026 · REVERXE', note: '全员军毕后的正规八辑，新的章节现在也一起走下去。' }
+  ];
+
+  /* ---------------- Photocard Fan Notes (Warm Daily + Emotional) ---------------- */
+  const FAN_NOTES = {
+    xiumin:   { back: '「大哥永远是看起来最安静、其实把大家都照顾得稳稳的那个人。今天也要好好吃饭，别累着啦。」', daily: '冻龄童颜大哥 · 永远稳稳接住和声' },
+    suho:     { back: '「当了十几年队长辛苦了！在台下喊出 WE ARE ONE 的每一秒，我们都在。」', daily: '最温柔的守护队长 · 银海最安心的支点' },
+    lay:      { back: '「只要舞台音乐响起，还是那个眼里有光的努力努力再努力。」', daily: '治愈系舞台匠人 · 独角兽微光' },
+    baekhyun: { back: '「爱丽们今天开心吗？不管过了多少年，都要像第一次见面那样，长长久久地见面吧！」', daily: '小狗眼日光主唱 · 特来骑爸爸' },
+    chen:     { back: '「你的高音一出来，好像所有的阴天都会放晴。继续唱自己喜欢的歌吧，我们在听。」', daily: '天籁 OST 匠人 · 温柔闪电主唱' },
+    chanyeol: { back: '「Happy Virus 一直都在！以后也一起写歌、一起在现场大声合唱吧。」', daily: '185 大型快乐小狗 · 吉他与低音炮' },
+    do:       { back: '「不说话的时候很酷，一笑起来露出心形嘴就让人瞬间心软的都演员兼主唱。」', daily: '心形嘴主唱 · 实力演技派' },
+    kai:      { back: '「舞台上的性感王者，舞台下会因为小熊玩偶笑出声的钟仁呀，一直自由地跳舞吧。」', daily: '舞台神级直拍 · 齐刘海小熊' },
+    sehun:    { back: '「从忙内长成可靠的大人啦，但被哥哥们宠着的时候，永远还是那个爱笑的吴世勋。」', daily: '被团宠的忙内 · 贵公子门面' }
+  };
+
+  /* ---------------- Official 7 Dolls + 2 Name Seals ---------------- */
+  const PLUSHIES = [
+    { id: 'xiumin', no: '01', hasDoll: false, name: 'XIUMIN', bg: '#e6f1ff', accent: '#3c7db8', zh: '金珉锡', line: '「大哥虽然暂未出官娃，但名字印记永远在九人队列的第一位。」' },
+    { id: 'suho', no: '02', hasDoll: true, name: 'SUHO 兔兔', bg: '#e3f0ff', accent: '#2463c9', zh: '金俊勉', line: '「队长兔兔报到！集齐 9 位就能点亮顶部的银海爱丽棒哦。」' },
+    { id: 'lay', no: '03', hasDoll: true, name: 'LAY 独角兽', bg: '#f0e6f7', accent: '#7b5299', zh: '张艺兴', line: '「紫鬃独角兽挥挥翅膀，今天也在努力发光！」' },
+    { id: 'baekhyun', no: '04', hasDoll: true, name: '特来骑 Teolaegi', bg: '#fff3d6', accent: '#c77724', zh: '边伯贤', line: '「汪！我是伯贤亲手画的特来骑，嘴角那颗小痣是灵魂～」' },
+    { id: 'chen', no: '05', hasDoll: false, name: 'CHEN', bg: '#fff6d9', accent: '#9c7400', zh: '金钟大', line: '「CHEN 暂用专属姓名印记占位，可以直接印在你的纪念壁纸上。」' },
+    { id: 'chanyeol', no: '06', hasDoll: true, name: 'CHANYEOL 粉狗', bg: '#ffe6ea', accent: '#d15366', zh: '朴灿烈', line: '「戴上珊瑚粉小狗兜帽，快乐病毒即刻送达！」' },
+    { id: 'do', no: '07', hasDoll: true, name: 'D.O. 桃子企鹅', bg: '#ffe8eb', accent: '#c95f6b', zh: '都暻秀', line: '「头顶长出小绿叶的粉桃企鹅，今天也稳稳营业中。」' },
+    { id: 'kai', no: '08', hasDoll: true, name: 'KAI 棕熊', bg: '#f5e6dc', accent: '#6a4b3b', zh: '金钟仁', line: '「齐刘海棕熊举手！要不要把我拖到你的锁屏壁纸上？」' },
+    { id: 'sehun', no: '09', hasDoll: true, name: 'SEHUN 小鸡', bg: '#fff9cc', accent: '#c98a12', zh: '吴世勋', line: '「> < 忙内小鸡眯眼笑！逛完别忘了导出你的专属小卡。」' }
+  ];
+
+  function plushieSVG(id, size = 64) {
+    const p = PLUSHIES.find(x => x.id === id) || PLUSHIES[0];
+    let inner = '';
+    if (!p.hasDoll) {
+      const fs = p.id === 'xiumin' ? 16.5 : 20;
+      inner = `<circle cx="50" cy="52" r="39" fill="${p.bg}" stroke="${p.accent}" stroke-width="2.6"/>
+        <circle cx="50" cy="52" r="33" fill="none" stroke="${p.accent}" stroke-width="1.2" stroke-dasharray="3 3" opacity=".55"/>
+        <text x="50" y="34" text-anchor="middle" font-family="sans-serif" font-size="9.5" font-weight="700" letter-spacing="1.4" fill="${p.accent}">NO.${p.no}</text>
+        <text x="50" y="57" text-anchor="middle" font-family="sans-serif" font-size="${fs}" font-weight="800" fill="#151a2d">${p.name}</text>
+        <text x="50" y="73" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="${p.accent}">${p.zh}</text>`;
+    } else if (id === 'suho') {
+      inner = `<ellipse cx="50" cy="91" rx="24" ry="4" fill="rgba(17,22,37,.09)"/>
+        <path d="M54 35 C67 16, 87 18, 87 33 C87 44, 73 50, 60 47 Z" fill="#fff" stroke="#231f20" stroke-width="3.6" stroke-linejoin="round"/>
+        <path d="M62 37 C69 26, 80 27, 80 34 C80 40, 71 43, 63 42 Z" fill="#f7b7c7"/>
+        <path d="M40 33 C48 9, 71 8, 73 23 C75 34, 62 42, 48 39 Z" fill="#fff" stroke="#231f20" stroke-width="3.6" stroke-linejoin="round"/>
+        <path d="M48 31 C53 17, 66 16, 67 24 C68 30, 59 35, 50 34 Z" fill="#f7b7c7"/>
+        <path d="M17 64 C16 40, 31 29, 50 29 C69 29, 84 40, 83 64 C82 80, 68 87, 50 87 C32 87, 18 80, 17 64 Z" fill="#fff" stroke="#231f20" stroke-width="3.6" stroke-linejoin="round"/>
+        <path d="M35 48 Q39 45.5 43 48.5 M65 48 Q61 45.5 57 48.5" fill="none" stroke="#231f20" stroke-width="3" stroke-linecap="round"/>
+        <ellipse cx="39.5" cy="58" rx="5" ry="5.5" fill="#231f20"/><ellipse cx="38.4" cy="56" rx="2.4" ry="2.2" fill="#fff"/>
+        <ellipse cx="60.5" cy="58" rx="5" ry="5.5" fill="#231f20"/><ellipse cx="59.4" cy="56" rx="2.4" ry="2.2" fill="#fff"/>
+        <ellipse cx="31.5" cy="65.5" rx="5.8" ry="3.6" fill="#f7b7c7"/><ellipse cx="68.5" cy="65.5" rx="5.8" ry="3.6" fill="#f7b7c7"/>
+        <path d="M46.5 65.5 Q49.8 59.5 53 64.5" fill="none" stroke="#231f20" stroke-width="2.8" stroke-linecap="round"/><circle cx="50" cy="60.5" r="1.5" fill="#231f20"/>`;
+    } else if (id === 'lay') {
+      inner = `<ellipse cx="50" cy="92" rx="26" ry="4" fill="rgba(17,22,37,.09)"/>
+        <path d="M24 37 C14 37, 10 47, 15 55 C9 62, 12 74, 21 77 C24 85, 36 88, 44 84 C48 87, 52 87, 56 84 C64 88, 76 85, 79 77 C88 74, 91 62, 85 55 C90 47, 86 37, 76 37 C73 26, 61 22, 50 25 C39 22, 27 26, 24 37 Z" fill="#b796c6" stroke="#231f20" stroke-width="3.6" stroke-linejoin="round"/>
+        <path d="M28 43 C17 38, 17 29, 31 34 Z M72 43 C83 38, 83 29, 69 34 Z" fill="#fff" stroke="#231f20" stroke-width="3.2" stroke-linejoin="round"/>
+        <path d="M23 58 C23 41, 35 33, 50 33 C65 33, 77 41, 77 58 C77 73, 66 80, 50 80 C34 80, 23 73, 23 58 Z" fill="#fff" stroke="#231f20" stroke-width="3.4"/>
+        <path d="M44 33 L50 13 L56 33 Z" fill="#f7e38c" stroke="#231f20" stroke-width="3" stroke-linejoin="round"/>
+        <circle cx="38" cy="53" r="4" fill="#231f20"/><circle cx="62" cy="53" r="4" fill="#231f20"/>
+        <ellipse cx="50" cy="64.5" rx="9.5" ry="6.5" fill="#f7aec0"/><ellipse cx="47" cy="64.5" rx="1.5" ry="2.2" fill="#231f20"/><ellipse cx="53" cy="64.5" rx="1.5" ry="2.2" fill="#231f20"/>`;
+    } else if (id === 'baekhyun') {
+      const hp = 'M21 44 C19 18, 35 11, 47 27 Q50 26.5 53 27 C65 11, 81 18, 79 44 C85 56, 83 76, 70 84 C59 90, 41 90, 30 84 C17 76, 15 56, 21 44 Z';
+      inner = `<ellipse cx="50" cy="92" rx="26" ry="4" fill="rgba(17,22,37,.09)"/>
+        <path d="${hp}" fill="#ffe0a3"/><path d="M22 78 C30 64, 41 58, 50 58 C59 58, 70 64, 78 78 C67 88, 33 88, 22 78 Z" fill="#fff"/>
+        <path d="${hp}" fill="none" stroke="#d88935" stroke-width="3.8" stroke-linejoin="round"/>
+        <path d="M27 39 C26 25, 35 21, 42 32 C37 35, 31 37, 27 39 Z M73 39 C74 25, 65 21, 58 32 C63 35, 69 37, 73 39 Z" fill="#fff" stroke="#d88935" stroke-width="3" stroke-linejoin="round"/>
+        <ellipse cx="38.5" cy="54.5" rx="2.6" ry="4.3" transform="rotate(14 38.5 54.5)" fill="#d88935"/>
+        <ellipse cx="61.5" cy="54.5" rx="2.6" ry="4.3" transform="rotate(10 61.5 54.5)" fill="#d88935"/>
+        <path d="M46.2 70.5 L50.2 62.5 M49.8 64.2 L55.2 69.5" fill="none" stroke="#d88935" stroke-width="3.6" stroke-linecap="round"/><circle cx="42.5" cy="68.5" r="1.4" fill="#9c6a44"/>`;
+    } else if (id === 'chanyeol') {
+      inner = `<ellipse cx="50" cy="91" rx="25" ry="4" fill="rgba(17,22,37,.09)"/>
+        <path d="M26 33 C11 36, 4 53, 10 63 C14 68, 21 63, 22 54 Z M74 33 C89 36, 96 53, 90 63 C86 68, 79 63, 78 54 Z" fill="#ec7b8a" stroke="#231f20" stroke-width="3.5" stroke-linejoin="round"/>
+        <path d="M18 61 C18 34, 31 24, 50 24 C69 24, 82 34, 82 61 C82 78, 69 86, 50 86 C31 86, 18 78, 18 61 Z" fill="#ec7b8a" stroke="#231f20" stroke-width="3.6"/>
+        <path d="M24 62 C24 41, 35 33, 50 33 C65 33, 76 41, 76 62 C76 76, 65 83, 50 83 C35 83, 24 76, 24 62 Z" fill="#fde2b8" stroke="#231f20" stroke-width="3.4"/>
+        <circle cx="31" cy="64" r="5.8" fill="#f18b99"/><circle cx="69" cy="64" r="5.8" fill="#f18b99"/>
+        <ellipse cx="50" cy="64" rx="11" ry="8.6" fill="#fff"/><ellipse cx="50" cy="59.5" rx="3.4" ry="2.4" fill="#231f20"/>
+        <path d="M44.5 63.5 Q47.2 67.5 50 63.5 Q52.8 67.5 55.5 63.5" fill="none" stroke="#231f20" stroke-width="2.6" stroke-linecap="round"/>
+        <circle cx="37" cy="56.5" r="3.2" fill="#231f20"/><circle cx="63" cy="56.5" r="3.2" fill="#231f20"/>`;
+    } else if (id === 'do') {
+      inner = `<ellipse cx="50" cy="91" rx="24" ry="4" fill="rgba(17,22,37,.09)"/>
+        <path d="M50 28 L49 20" stroke="#231f20" stroke-width="3.2" stroke-linecap="round"/>
+        <path d="M49.5 21.5 C53 14, 64 15.5, 62 22.5 C59 26.5, 52 25, 49.5 21.5 Z" fill="#8ed06b" stroke="#231f20" stroke-width="3"/>
+        <path d="M19 63 C19 36, 32 27, 50 27 C68 27, 81 36, 81 63 C81 79, 68 86, 50 86 C32 86, 19 79, 19 63 Z" fill="#f5a7ad" stroke="#231f20" stroke-width="3.6"/>
+        <path d="M27 64 C27 44, 36 38, 50 38 C64 38, 73 44, 73 64 C73 77, 63 82, 50 82 C37 82, 27 77, 27 64 Z" fill="#fff"/>
+        <rect x="34" y="46.5" width="9.5" height="3.8" rx="1.9" fill="#231f20"/><rect x="56.5" y="46.5" width="9.5" height="3.8" rx="1.9" fill="#231f20"/>
+        <ellipse cx="39" cy="56.5" rx="3.5" ry="4.5" fill="#231f20"/><circle cx="38" cy="54.8" r="1.4" fill="#fff"/>
+        <ellipse cx="61" cy="56.5" rx="3.5" ry="4.5" fill="#231f20"/><circle cx="60" cy="54.8" r="1.4" fill="#fff"/>
+        <ellipse cx="50" cy="64" rx="2.5" ry="3.3" fill="#f39aa3" stroke="#231f20" stroke-width="2.4"/>`;
+    } else if (id === 'kai') {
+      const bh = 'M15 61 C15 35, 30 26, 50 26 C70 26, 85 35, 85 61 C85 79, 71 86, 50 86 C29 86, 15 79, 15 61 Z';
+      inner = `<ellipse cx="50" cy="91" rx="26" ry="4" fill="rgba(17,22,37,.09)"/>
+        <circle cx="23" cy="32" r="10.5" fill="#6a4b3b" stroke="#231f20" stroke-width="3.6"/><circle cx="23" cy="32" r="5" fill="#e2bc9b"/>
+        <circle cx="77" cy="32" r="10.5" fill="#6a4b3b" stroke="#231f20" stroke-width="3.6"/><circle cx="77" cy="32" r="5" fill="#e2bc9b"/>
+        <path d="${bh}" fill="#6a4b3b"/>
+        <path d="M21 57 C27 54, 34 49, 37 42 C42 49, 58 49, 63 42 C66 49, 73 54, 79 57 C81 71, 72 82, 50 82 C28 82, 19 71, 21 57 Z" fill="#eac4a3"/>
+        <path d="${bh}" fill="none" stroke="#231f20" stroke-width="3.6"/>
+        <circle cx="36.5" cy="62" r="4.8" fill="#231f20"/><circle cx="35" cy="60.2" r="1.7" fill="#fff"/>
+        <circle cx="63.5" cy="62" r="4.8" fill="#231f20"/><circle cx="62" cy="60.2" r="1.7" fill="#fff"/>
+        <ellipse cx="28" cy="70" rx="5.5" ry="3.6" fill="#e29598"/><ellipse cx="72" cy="70" rx="5.5" ry="3.6" fill="#e29598"/>
+        <ellipse cx="50" cy="64.5" rx="2" ry="2.6" fill="#231f20"/><circle cx="50" cy="71.5" r="2.1" fill="#d98c8c" stroke="#231f20" stroke-width="1.9"/>`;
+    } else {
+      inner = `<ellipse cx="50" cy="91" rx="25" ry="4" fill="rgba(17,22,37,.09)"/>
+        <path d="M15 63 C15 38, 30 30, 50 30 C70 30, 85 38, 85 63 C85 79, 70 86, 50 86 C30 86, 15 79, 15 63 Z" fill="#fff066" stroke="#231f20" stroke-width="3.6"/>
+        <ellipse cx="26" cy="68" rx="5.5" ry="3.5" fill="#f8b4c4" opacity=".88"/><ellipse cx="74" cy="68" rx="5.5" ry="3.5" fill="#f8b4c4" opacity=".88"/>
+        <path d="M26 56.5 H37.5 M34 57 L29 62 M33.5 58.5 L37.5 62 M62.5 56.5 H74 M66 57 L71 62 M66.5 58.5 L62.5 62" fill="none" stroke="#231f20" stroke-width="3.2" stroke-linecap="round"/>
+        <path d="M44.2 61.5 L50 57 L55.8 61.5 L50 66 Z" fill="#ffad33" stroke="#231f20" stroke-width="3.1" stroke-linejoin="round"/>`;
+    }
+    return `<svg viewBox="0 0 100 100" width="${size}" height="${size}" aria-hidden="true">${inner}</svg>`;
+  }
+
+  /* ---------------- Global State ---------------- */
+  const state = {
+    mode: 'paper',
+    members: [],
+    archive: null,
+    events: [],
+    activeId: 'baekhyun',
+    eraId: localStorage.getItem('exo-gift-era') || '2013',
+    tab: 'road',
+    year: '',
+    who: '',
+    q: '',
+    limit: 12,
+    torn: new Set(JSON.parse(localStorage.getItem('exo-gift-torn') || '[]')),
+    foundPlush: new Set(JSON.parse(localStorage.getItem('exo-gift-plush') || '["baekhyun"]')),
+    frame: 'lockscreen',
+    uploadImg: null,
+    showPlush: true,
+    showGlyph: true,
+    showEraStamp: true,
+    stickerOffset: { x: 0, y: 0 },
+    photoOffset: { x: 0, y: 0 },
+    dragging: null
+  };
+
+  /* ---------------- Toast with optional Undo ---------------- */
+  function showToast(msg, undoFn) {
+    const wrap = $('#toastWrap');
+    const el = document.createElement('div');
+    el.className = 'toast';
+    el.innerHTML = `<span>${esc(msg)}</span>${undoFn ? '<button type="button">撤销</button>' : ''}`;
+    wrap.appendChild(el);
+    if (undoFn) {
+      el.querySelector('button').addEventListener('click', () => { undoFn(); el.remove(); });
+    }
+    setTimeout(() => el.remove(), undoFn ? 5000 : 2800);
+  }
+
+  /* ---------------- Galaxy Silver Ocean Canvas ---------------- */
+  (function initGalaxyStars() {
+    const cvs = $('#galaxyCanvas');
+    const ctx = cvs.getContext('2d');
+    let stars = [];
+    const resize = () => {
+      const dpr = Math.min(2, window.devicePixelRatio || 1);
+      cvs.width = window.innerWidth * dpr;
+      cvs.height = window.innerHeight * dpr;
+      stars = Array.from({ length: 85 }, () => ({
+        x: Math.random() * cvs.width,
+        y: Math.random() * cvs.height,
+        r: (0.8 + Math.random() * 1.8) * dpr,
+        p: Math.random() * Math.PI * 2,
+        s: 0.012 + Math.random() * 0.02
+      }));
+    };
+    resize();
+    window.addEventListener('resize', resize);
+    const loop = () => {
+      if (state.mode === 'galaxy') {
+        ctx.clearRect(0, 0, cvs.width, cvs.height);
+        for (const st of stars) {
+          st.p += st.s;
+          const a = 0.25 + Math.sin(st.p) * 0.35;
+          ctx.fillStyle = `rgba(218, 232, 255, ${a})`;
+          ctx.beginPath(); ctx.arc(st.x, st.y, st.r, 0, Math.PI * 2); ctx.fill();
+        }
+      }
+      requestAnimationFrame(loop);
+    };
+    requestAnimationFrame(loop);
+  })();
+
+  /* ---------------- Mode Switching ---------------- */
+  $$('[data-mode-set]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      state.mode = btn.dataset.modeSet;
+      document.documentElement.dataset.mode = state.mode;
+      $$('[data-mode-set]').forEach(b => b.setAttribute('aria-pressed', String(b === btn)));
+      drawDiy();
+    });
+  });
+
+  /* ---------------- Superpower Canvas Effect ---------------- */
+  function playPowerBurst(canvas, memberId) {
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const rect = canvas.getBoundingClientRect();
+    const dpr = Math.min(2, window.devicePixelRatio || 1);
+    canvas.width = Math.max(120, rect.width * dpr);
+    canvas.height = Math.max(120, rect.height * dpr);
+    const m = state.members.find(x => x.id === memberId);
+    const col = m?.color || '#ffd9a0';
+    const parts = Array.from({ length: 26 }, () => ({
+      x: canvas.width * (0.2 + Math.random() * 0.6),
+      y: canvas.height * (0.25 + Math.random() * 0.55),
+      vx: (Math.random() - 0.5) * 1.4,
+      vy: -0.6 - Math.random() * 1.6,
+      r: 2 + Math.random() * 6,
+      life: 1
+    }));
+    let frame = 0;
+    const tick = () => {
+      frame++;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (const p of parts) {
+        p.x += p.vx; p.y += p.vy; p.life -= 0.022;
+        if (p.life <= 0) continue;
+        ctx.fillStyle = col;
+        ctx.globalAlpha = p.life * 0.65;
+        ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2); ctx.fill();
+      }
+      ctx.globalAlpha = 1;
+      if (frame < 46) requestAnimationFrame(tick);
+      else ctx.clearRect(0, 0, canvas.width, canvas.height);
+    };
+    requestAnimationFrame(tick);
+  }
+
+  /* ---------------- Render Era Ritual ---------------- */
+  function renderEraRitual() {
+    const box = $('#eraChips');
+    box.innerHTML = ERAS.map(e => `<button class="era-chip" type="button" data-era="${e.id}" aria-pressed="${e.id === state.eraId}">${esc(e.label)}</button>`).join('');
+    const current = ERAS.find(e => e.id === state.eraId) || ERAS[1];
+    const days = Math.max(1, Math.floor((Date.now() - new Date(current.date).getTime()) / 86400000));
+    $('#bpDays').innerHTML = `${days.toLocaleString()} 天<span>从 ${current.id} 年走到今天</span>`;
+    $('#bpQuote').textContent = current.note;
+    $('#bpTag').innerHTML = `CLASS OF<br>${current.id}`;
+    $('#walletEraBanner').textContent = `入坑印记：${current.label}（已同行 ${days.toLocaleString()} 天）`;
+
+    $$('[data-era]', box).forEach(b => {
+      b.addEventListener('click', () => {
+        state.eraId = b.dataset.era;
+        localStorage.setItem('exo-gift-era', state.eraId);
+        renderEraRitual();
+        drawDiy();
+      });
+    });
+  }
+
+  /* ---------------- Select Active Member ---------------- */
+  function selectMember(id) {
+    state.activeId = id;
+    const m = state.members.find(x => x.id === id) || state.members[0];
+    if (!m) return;
+    document.documentElement.dataset.member = m.id;
+    document.documentElement.style.setProperty('--member-ac', m.color || '#D9863B');
+
+    $('#heroImg').src = IMG_BASE + m.photo;
+    $('#heroImg').alt = `${m.en} ${m.zh}`;
+    $('#heroEn').textContent = m.en;
+    $('#heroZh').textContent = `${m.zh} · ${m.power?.zh || ''}`;
+    $('#heroGlyph').setAttribute('href', `#g-${m.id}`);
+    $('#heroLine').textContent = m.power?.line || m.latest || '';
+    $('#heroEraLabel').textContent = m.photoEra || '';
+    $('#sleeveStamp').textContent = `EXO-L · NO. ${m.no}`;
+
+    const fn = FAN_NOTES[m.id] || { back: m.latest || '' };
+    $('#pcBackTag').textContent = `PHOTOCARD BACK · ${m.no}`;
+    $('#pcBackEra').textContent = (m.photoEra || '').split('·')[0] || 'EXO';
+    $('#pcBackNote').textContent = fn.back;
+    $('#pcBackSign').textContent = m.en;
+    $('#pcBackGlyph').setAttribute('href', `#g-${m.id}`);
+
+    $$('.jelly-card').forEach(c => c.classList.toggle('is-active', c.dataset.mid === m.id));
+    playPowerBurst($('#heroAura'), m.id);
+    drawDiy();
+  }
+
+  /* ---------------- Render 9-Member Jelly Strip ---------------- */
+  function renderJellyStrip() {
+    const strip = $('#jellyStrip');
+    strip.innerHTML = state.members.map(m => {
+      const fn = FAN_NOTES[m.id] || {};
+      return `
+        <button class="jelly-card ${m.id === state.activeId ? 'is-active' : ''}" type="button" data-mid="${esc(m.id)}">
+          <img src="${esc(IMG_BASE + m.photo)}" alt="${esc(m.en)}" loading="lazy">
+          <canvas class="jelly-fx"></canvas>
+          <div class="jelly-scrim"></div>
+          <div class="jelly-top">
+            <span class="jelly-no">${esc(m.no)}</span>
+            <svg class="jelly-glyph"><use href="#g-${esc(m.id)}"/></svg>
+          </div>
+          <div class="jelly-bot">
+            <div class="jelly-en">${esc(m.en)}</div>
+            <div class="jelly-meta">
+              <div>${esc(m.zh)} · ${esc(m.power?.zh || '')}</div>
+              <div class="jelly-fan-note">${esc(fn.daily || '')}</div>
+            </div>
+          </div>
+        </button>`;
+    }).join('');
+
+    $$('.jelly-card', strip).forEach(card => {
+      card.addEventListener('mouseenter', () => playPowerBurst($('.jelly-fx', card), card.dataset.mid));
+      card.addEventListener('click', () => {
+        selectMember(card.dataset.mid);
+        $('#top').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  }
+
+  /* ---------------- Archive & Emotional Memory Anchor ---------------- */
+  function renderArchiveSection() {
+    const a = state.archive;
+    if (!a) return;
+    $('#cntRoad').textContent = a.road.length;
+    $('#cntVariety').textContent = a.variety.length;
+    $('#cntSongs').textContent = a.songs.length;
+
+    // Era filmstrip
+    const strip = $('#eraFilmstrip');
+    strip.innerHTML = (a.eraGallery || []).map(g => `
+      <div class="film-card" data-era-pick="${esc((g.era || '').slice(0, 4))}">
+        <img src="${esc(IMG_BASE + g.img)}" alt="${esc(g.title)}" loading="lazy">
+        <div class="film-era">${esc(g.era)}</div>
+        <div class="film-title">${esc(g.title)}</div>
+      </div>`).join('');
+
+    $$('.film-card', strip).forEach(fc => {
+      fc.addEventListener('click', () => {
+        const yr = fc.dataset.eraPick;
+        state.tab = 'road';
+        state.year = yr;
+        $('#archYear').value = yr;
+        syncTabs();
+        renderArchList();
+        if (yr === '2015') {
+          $('#promiseQuote').textContent = '「2015 · 约定 (EXO 2014)：谢谢你等我，谢谢你一直站在银海里。」';
+          $('#promiseSub').textContent = '已为你定位到 2015 年编年记录，这一年写下的《Promise》至今仍是全场的共同暗号。';
+        } else {
+          $('#promiseQuote').textContent = `「${fc.querySelector('.film-era').textContent}」— ${fc.querySelector('.film-title').textContent}`;
+          $('#promiseSub').textContent = '已为你筛选该时期的全部编年记录。';
+        }
+      });
+    });
+
+    // Years dropdown
+    const years = new Set();
+    a.road.forEach(r => r.d && years.add(r.d.slice(0, 4)));
+    a.variety.forEach(v => v.y && years.add(String(v.y)));
+    a.songs.forEach(s => s.date && years.add(s.date.slice(0, 4)));
+    const sel = $('#archYear');
+    Array.from(years).sort((x, y) => y.localeCompare(x)).forEach(y => {
+      const opt = document.createElement('option');
+      opt.value = y; opt.textContent = y + ' 年';
+      sel.appendChild(opt);
+    });
+
+    // Member totems
+    $('#archTotems').innerHTML = state.members.map(m => `
+      <button class="totem-btn" type="button" data-who="${esc(m.id)}" aria-pressed="false" title="${esc(m.en + ' ' + m.zh)}">
+        <svg><use href="#g-${esc(m.id)}"/></svg>
+      </button>`).join('');
+
+    $$('.totem-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        state.who = state.who === btn.dataset.who ? '' : btn.dataset.who;
+        $$('.totem-btn').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.who === state.who)));
+        state.limit = 12;
+        renderArchList();
+      });
+    });
+
+    function syncTabs() {
+      $$('.arch-tab').forEach(t => t.setAttribute('aria-selected', String(t.dataset.tab === state.tab)));
+    }
+    $$('.arch-tab').forEach(t => {
+      t.addEventListener('click', () => {
+        state.tab = t.dataset.tab;
+        state.limit = 12;
+        syncTabs();
+        renderArchList();
+      });
+    });
+
+    $('#archSearch').addEventListener('input', e => { state.q = e.target.value.trim().toLowerCase(); state.limit = 12; renderArchList(); });
+    $('#archYear').addEventListener('change', e => { state.year = e.target.value; state.limit = 12; renderArchList(); });
+    $('#btnArchReset').addEventListener('click', () => {
+      state.year = ''; state.who = ''; state.q = ''; state.limit = 12;
+      $('#archSearch').value = ''; $('#archYear').value = '';
+      $$('.totem-btn').forEach(b => b.setAttribute('aria-pressed', 'false'));
+      renderArchList();
+    });
+    $('#btnArchMore').addEventListener('click', () => { state.limit += 18; renderArchList(); });
+    $('#btnJumpPromise').addEventListener('click', () => {
+      state.tab = 'road'; state.year = '2015'; state.q = '';
+      $('#archYear').value = '2015'; $('#archSearch').value = '';
+      syncTabs(); renderArchList();
+      $('#archList').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+
+    renderArchList();
+  }
+
+  function renderArchList() {
+    const a = state.archive;
+    if (!a) return;
+    let items = [];
+    if (state.tab === 'road') {
+      items = a.road.map(r => ({
+        date: r.d || '', badge: r.kind || '编年', title: r.t || '',
+        who: r.who || 'EXO', desc: r.s || '',
+        emotional: /约定|Promise|MAMA|咆哮|Growl|REVERXE|出道/i.test((r.t || '') + (r.s || ''))
+      }));
+    } else if (state.tab === 'variety') {
+      items = a.variety.map(v => ({
+        date: v.d || v.y || '', badge: v.p || '综艺', title: v.zh || v.t || '',
+        who: v.who || '全员', desc: v.note || v.t || '',
+        members: v.members || []
+      }));
+    } else {
+      items = a.songs.map(s => ({
+        date: s.date || '', badge: s.u || 'EXO', title: s.title || '',
+        who: s.al || '', desc: ''
+      }));
+    }
+
+    const filtered = items.filter(it => {
+      if (state.year && !String(it.date).startsWith(state.year)) return false;
+      if (state.who) {
+        const hay = (it.who + ' ' + it.title + ' ' + it.desc + ' ' + (it.members || []).join(' ')).toLowerCase();
+        const m = state.members.find(x => x.id === state.who);
+        if (!hay.includes(state.who) && !(m && hay.includes(m.zh))) return false;
+      }
+      if (state.q) {
+        const hay = (it.title + ' ' + it.desc + ' ' + it.who + ' ' + it.badge).toLowerCase();
+        if (!hay.includes(state.q)) return false;
+      }
+      return true;
+    });
+
+    $('#archHitCount').textContent = filtered.length;
+    const shown = filtered.slice(0, state.limit);
+    $('#btnArchMore').style.display = filtered.length > shown.length ? 'inline-flex' : 'none';
+
+    $('#archList').innerHTML = shown.map(it => `
+      <article class="arch-item ${it.emotional ? 'is-emotional' : ''}">
+        <div class="arch-row">
+          <span class="arch-date">${esc(it.date)}</span>
+          <span class="arch-badge">${esc(it.badge)}</span>
+          <span class="arch-title">${esc(it.title)}</span>
+          <span class="arch-who">${esc(it.who)}</span>
+        </div>
+        ${it.desc ? `<p class="arch-desc">${esc(it.desc)}</p>` : ''}
+      </article>`).join('') || '<div style="padding:24px;text-align:center;color:var(--ink-3);">没有找到匹配的记录，试试清空筛选条件。</div>';
+  }
+
+  /* ---------------- Tearable Ticket Stubs & Wallet ---------------- */
+  function renderTickets() {
+    const list = $('#ticketList');
+    const items = state.events.slice(0, 6);
+    list.innerHTML = items.map(ev => {
+      const isOff = ev.verification === 'official';
+      const torn = state.torn.has(ev.id);
+      return `
+        <article class="ticket ${torn ? 'is-torn' : ''}" data-tid="${esc(ev.id)}">
+          <div class="ticket-main">
+            <div class="ticket-meta">
+              <span class="src-tag ${isOff ? 'src-tag--official' : 'src-tag--media'}">${isOff ? '官方公告 · OFFICIAL' : '媒体报道 · MEDIA'}</span>
+              <span>${esc(ev.date)}${ev.endDate ? ' – ' + esc(ev.endDate) : ''}</span>
+            </div>
+            <h3 class="ticket-title">${esc(ev.title)}</h3>
+            <div class="ticket-venue">${esc([ev.city, ev.venue, ev.category].filter(Boolean).join(' · '))}</div>
+            <div class="ticket-kept-stamp">KEPT · ${isOff ? 'OFFICIAL' : 'MEDIA'}</div>
+          </div>
+          <div class="ticket-stub">
+            <span style="font-family:var(--mono);font-size:10px;color:var(--ink-3);">${esc(state.eraId)} 爱丽存根</span>
+            <button class="tear-btn" type="button" data-tear="${esc(ev.id)}">撕下存根</button>
+          </div>
+        </article>`;
+    }).join('');
+
+    $$('[data-tear]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.dataset.tear;
+        state.torn.add(id);
+        localStorage.setItem('exo-gift-torn', JSON.stringify(Array.from(state.torn)));
+        renderTickets();
+        renderWallet();
+        showToast('已撕下副券并收进你的个人票夹', () => {
+          state.torn.delete(id);
+          localStorage.setItem('exo-gift-torn', JSON.stringify(Array.from(state.torn)));
+          renderTickets();
+          renderWallet();
+        });
+      });
+    });
+    renderWallet();
+  }
+
+  function renderWallet() {
+    const kept = state.events.filter(ev => state.torn.has(ev.id));
+    $('#walletCount').textContent = `${kept.length} 张已留存`;
+    const box = $('#walletList');
+    if (!kept.length) {
+      box.innerHTML = '<div class="wallet-empty">还没有撕下票根。点左边任意一张行程右侧的「撕下存根」，把它收进你的纪念票夹吧。</div>';
+      return;
+    }
+    box.innerHTML = kept.map(ev => `
+      <div class="wallet-item">
+        <div style="font-family:var(--mono);font-size:10.5px;color:var(--ink-3);">${esc(ev.date)} · ${ev.verification === 'official' ? 'OFFICIAL' : 'MEDIA'}</div>
+        <div style="font-weight:500;margin-top:2px;">${esc(ev.title)}</div>
+      </div>`).join('');
+  }
+
+  /* ---------------- Plushie Treasure Shelf & Floating Egg ---------------- */
+  function renderPlushies() {
+    const shelf = $('#plushShelf');
+    shelf.innerHTML = PLUSHIES.map(p => {
+      const found = state.foundPlush.has(p.id);
+      return `
+        <button class="plush-tile ${found ? 'is-found' : ''}" type="button" data-pid="${esc(p.id)}">
+          ${plushieSVG(p.id, 58)}
+          <span class="plush-name">${esc(p.name)}</span>
+          <span class="plush-tag">${found ? '已点亮' : '待寻宝'}</span>
+        </button>`;
+    }).join('');
+
+    $$('.plush-tile', shelf).forEach(tile => {
+      tile.addEventListener('click', () => {
+        const id = tile.dataset.pid;
+        const p = PLUSHIES.find(x => x.id === id);
+        state.foundPlush.add(id);
+        localStorage.setItem('exo-gift-plush', JSON.stringify(Array.from(state.foundPlush)));
+        $('#plushSpeech').textContent = `${p.name}：${p.line}`;
+        selectMember(id);
+        renderPlushies();
+        updateEribongBadge();
+      });
+    });
+    updateEribongBadge();
+  }
+
+  function updateEribongBadge() {
+    const n = state.foundPlush.size;
+    $('#plushCount').textContent = n;
+    $('#eribongBadge').classList.toggle('is-lit', n >= 9);
+    const cur = PLUSHIES.find(x => x.id === state.activeId) || PLUSHIES[3];
+    $('#floatingPlush').innerHTML = plushieSVG(cur.id, 46);
+  }
+
+  /* ---------------- DIY Giftbox Canvas Studio ---------------- */
+  function drawDiy() {
+    const cvs = $('#diyCanvas');
+    if (!cvs) return;
+    const ctx = cvs.getContext('2d');
+    const W = cvs.width, H = cvs.height;
+    const m = state.members.find(x => x.id === state.activeId) || state.members[3];
+    const isGalaxy = state.mode === 'galaxy';
+
+    // Background paper or galaxy
+    ctx.fillStyle = isGalaxy ? '#0B0F1A' : '#F6F1E7';
+    ctx.fillRect(0, 0, W, H);
+    ctx.strokeStyle = isGalaxy ? 'rgba(214,223,239,0.28)' : 'rgba(168,126,67,0.4)';
+    ctx.lineWidth = 2;
+    ctx.strokeRect(22, 22, W - 44, H - 44);
+
+    // Frame geometry
+    let px = 54, py = state.frame === 'lockscreen' ? 210 : 96, pw = W - 108, ph = state.frame === 'polaroid' ? 460 : 520;
+    if (state.frame === 'lockscreen') {
+      ctx.fillStyle = isGalaxy ? '#DCE7FF' : '#7A7166';
+      ctx.font = '500 18px "JetBrains Mono", monospace';
+      ctx.textAlign = 'center';
+      ctx.fillText('EXOPLANET · GIFTBOX', W / 2, 74);
+      ctx.fillStyle = isGalaxy ? '#F2EEE7' : '#1D1A16';
+      ctx.font = '400 74px "Cormorant Garamond", serif';
+      ctx.fillText('14:08', W / 2, 162);
+    }
+
+    // Photo draw (supports custom upload + drag offset)
+    const imgSrc = state.uploadImg || (m ? IMG_BASE + m.photo : '');
+    const renderRest = () => {
+      // Name + quote
+      ctx.textAlign = 'left';
+      ctx.fillStyle = isGalaxy ? '#F2EEE7' : '#1D1A16';
+      ctx.font = '600 36px "Cormorant Garamond", serif';
+      ctx.fillText(m ? m.en : 'EXO', 54, py + ph + 56);
+
+      ctx.fillStyle = isGalaxy ? '#9AA6BF' : '#6A6258';
+      ctx.font = '400 20px "Noto Serif SC", serif';
+      ctx.fillText($('#diyQuote').value || 'WE ARE ONE', 54, py + ph + 94);
+
+      if (state.showEraStamp) {
+        ctx.save();
+        ctx.translate(W - 115, py + ph + 64);
+        ctx.rotate(-0.08);
+        ctx.strokeStyle = '#A63A2B';
+        ctx.lineWidth = 2.2;
+        ctx.strokeRect(-58, -22, 116, 44);
+        ctx.fillStyle = '#A63A2B';
+        ctx.font = '600 13px "JetBrains Mono", monospace';
+        ctx.textAlign = 'center';
+        ctx.fillText(`EXO-L · ${state.eraId}`, 0, 5);
+        ctx.restore();
+      }
+
+      // Plushie sticker (draggable!)
+      if (state.showPlush && m) {
+        const svgStr = plushieSVG(m.id, 130).replace('<svg ', '<svg xmlns="http://www.w3.org/2000/svg" ');
+        const simg = new Image();
+        simg.onload = () => {
+          ctx.drawImage(simg, W - 180 + state.stickerOffset.x, py + ph - 90 + state.stickerOffset.y, 130, 130);
+        };
+        simg.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svgStr);
+      }
+    };
+
+    if (imgSrc) {
+      const im = new Image();
+      im.crossOrigin = 'anonymous';
+      im.onload = () => {
+        ctx.save();
+        ctx.beginPath();
+        ctx.rect(px, py, pw, ph);
+        ctx.clip();
+        const scale = Math.max(pw / im.width, ph / im.height);
+        const dw = im.width * scale, dh = im.height * scale;
+        ctx.drawImage(im, px + (pw - dw) / 2 + state.photoOffset.x, py + (ph - dh) / 2 + state.photoOffset.y, dw, dh);
+        ctx.restore();
+        renderRest();
+      };
+      im.src = imgSrc;
+    } else {
+      renderRest();
+    }
+  }
+
+  function initStudioEvents() {
+    $$('[data-frame]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        state.frame = btn.dataset.frame;
+        $$('[data-frame]').forEach(b => b.setAttribute('aria-pressed', String(b === btn)));
+        drawDiy();
+      });
+    });
+
+    const toggleBtn = (id, key) => {
+      $(id).addEventListener('click', () => {
+        state[key] = !state[key];
+        $(id).setAttribute('aria-pressed', String(state[key]));
+        drawDiy();
+      });
+    };
+    toggleBtn('#togPlush', 'showPlush');
+    toggleBtn('#togGlyph', 'showGlyph');
+    toggleBtn('#togEraStamp', 'showEraStamp');
+    $('#diyQuote').addEventListener('input', drawDiy);
+
+    const loadFile = file => {
+      if (!file || !file.type.startsWith('image/')) return;
+      const reader = new FileReader();
+      reader.onload = ev => { state.uploadImg = ev.target.result; state.photoOffset = { x: 0, y: 0 }; drawDiy(); showToast('已载入你的底图，可在画布内拖动构图'); };
+      reader.readAsDataURL(file);
+    };
+    $('#uploadInput').addEventListener('change', e => loadFile(e.target.files[0]));
+    $('#btnResetPhoto').addEventListener('click', () => { state.uploadImg = null; state.photoOffset = { x: 0, y: 0 }; drawDiy(); });
+
+    const stage = $('#canvasStage');
+    stage.addEventListener('dragover', e => e.preventDefault());
+    stage.addEventListener('drop', e => { e.preventDefault(); loadFile(e.dataTransfer?.files?.[0]); });
+
+    stage.addEventListener('pointerdown', e => {
+      state.dragging = { x: e.clientX, y: e.clientY, shift: e.shiftKey };
+    });
+    window.addEventListener('pointermove', e => {
+      if (!state.dragging) return;
+      const dx = (e.clientX - state.dragging.x) * 2;
+      const dy = (e.clientY - state.dragging.y) * 2;
+      state.dragging.x = e.clientX; state.dragging.y = e.clientY;
+      if (state.dragging.shift) {
+        state.stickerOffset.x += dx; state.stickerOffset.y += dy;
+      } else {
+        state.photoOffset.x += dx; state.photoOffset.y += dy;
+      }
+      drawDiy();
+    });
+    window.addEventListener('pointerup', () => { state.dragging = null; });
+
+    $('#btnExportPng').addEventListener('click', () => {
+      const a = document.createElement('a');
+      a.download = `exo-giftbox-${state.activeId}-${state.eraId}.png`;
+      a.href = $('#diyCanvas').toDataURL('image/png');
+      a.click();
+      showToast('已生成高清 PNG 纪念图');
+    });
+  }
+
+  /* ---------------- Boot ---------------- */
+  async function boot() {
+    let members, archive, events;
+    if (window.__EXO_BOOT__) {
+      ({ members, archive, events } = window.__EXO_BOOT__);
+    } else {
+      [members, archive, events] = await Promise.all([
+        fetch('data/members.json').then(r => r.json()),
+        fetch('data/archive.json').then(r => r.json()),
+        fetch('data/events.json').then(r => r.json())
+      ]);
+    }
+    state.members = members;
+    state.archive = archive;
+    state.events = events;
+
+    renderEraRitual();
+    renderJellyStrip();
+    selectMember('baekhyun');
+    renderArchiveSection();
+    renderTickets();
+    renderPlushies();
+    initStudioEvents();
+
+    // Flip photocard
+    const flip = () => $('#photocardFlip').classList.toggle('is-flipped');
+    $('#photocardFlip').addEventListener('click', flip);
+    $('#btnFlipCard').addEventListener('click', flip);
+
+    $('#btnFilterThisMember').addEventListener('click', () => {
+      state.who = state.activeId;
+      $$('.totem-btn').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.who === state.who)));
+      renderArchList();
+      $('#memory').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    $('#btnCollectAll').addEventListener('click', () => {
+      PLUSHIES.forEach(p => state.foundPlush.add(p.id));
+      localStorage.setItem('exo-gift-plush', JSON.stringify(Array.from(state.foundPlush)));
+      renderPlushies();
+      showToast('已点亮全部 9 位印记！顶部银海爱丽棒徽章已亮起');
+    });
+
+    $('#floatingPlush').addEventListener('click', () => {
+      const p = PLUSHIES.find(x => x.id === state.activeId) || PLUSHIES[3];
+      state.foundPlush.add(p.id);
+      localStorage.setItem('exo-gift-plush', JSON.stringify(Array.from(state.foundPlush)));
+      renderPlushies();
+      showToast(`${p.name}：${p.line}`);
+    });
+  }
+
+  boot();
+})();
+</script>
+</body>
+</html>
