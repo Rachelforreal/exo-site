@@ -1,5 +1,56 @@
 [
   {
+    "id": "bili-BV1P9yDzLEei",
+    "date": "2026-11-23",
+    "title": "【金珉锡/XIUMIN】2026.11.21泡泡直播中译完整版",
+    "summary": "B站 UP 主「xyan-27」上传成员直播录屏：【金珉锡/XIUMIN】2026.11.21泡泡直播中译完整版",
+    "members": [
+      "xiumin"
+    ],
+    "verification": "media",
+    "channel": "Bilibili",
+    "sources": [
+      {
+        "name": "B站 · xyan-27",
+        "url": "https://www.bilibili.com/video/BV1P9yDzLEei"
+      }
+    ]
+  },
+  {
+    "id": "wb-5368461531284325",
+    "date": "2026-11-23",
+    "title": "Delete Me🕶️ 金珉锡 INB100_XIUMIN的微博视频",
+    "summary": "Delete Me🕶️ 金珉锡 #金珉锡# #秀珉# #XIUMIN# #SecretAgentX# #XIUMINinMACAU# INB100_XIUMIN的微博视频",
+    "members": [
+      "xiumin"
+    ],
+    "verification": "official",
+    "channel": "微博",
+    "sources": [
+      {
+        "name": "金珉锡官方微博（微博原帖）",
+        "url": "https://m.weibo.cn/detail/5368461531284325"
+      }
+    ]
+  },
+  {
+    "id": "wb-5368538263191752",
+    "date": "2026-11-23",
+    "title": "边伯贤「BAEKHYUN LAND · KyoongMI QUIZ」粉丝默契问答征集开启",
+    "summary": "边伯贤 【边吧观演提示】 本周末BAEKHYUN LAND即将开启，在此之前，边吧有如下事项希望告知： 📍携带物品提示，请在出行前确认： - 有效的港澳通行证与签注（或其他证照），并在入境澳门后妥善保管逗留许可 - 实体票，请务必确认携带；电子票，请提前打印PDF，如需兑换实体票，则需要准 ...",
+    "members": [
+      "baekhyun"
+    ],
+    "verification": "media",
+    "channel": "微博",
+    "sources": [
+      {
+        "name": "边伯贤大吧 FearlessBaek（微博原帖）",
+        "url": "https://m.weibo.cn/detail/5368538263191752"
+      }
+    ]
+  },
+  {
     "id": "bili-BV1y5ynzbEwK",
     "date": "2026-11-23",
     "title": "【金俊勉】【4k】【高清】don‘t go蝴蝶少女直拍",
@@ -2370,6 +2421,23 @@
     ],
     "missing": "主办方「StarDream星梦引力」原始公告、携程/猫眼/UUTIX 官方售票页面、具体开演时间与票价，以及艺人方面的正式确认。",
     "image": "img/members/chen.webp"
+  },
+  {
+    "id": "bili-BV1eTHN6bETb",
+    "date": "2026-10-24",
+    "title": "【都暻秀DAYOFF】Rose 261018",
+    "summary": "B站 UP 主「点三口土寸」上传成员直播录屏：【都暻秀DAYOFF】Rose 261018",
+    "members": [
+      "do"
+    ],
+    "verification": "media",
+    "channel": "Bilibili",
+    "sources": [
+      {
+        "name": "B站 · 点三口土寸",
+        "url": "https://www.bilibili.com/video/BV1eTHN6bETb"
+      }
+    ]
   },
   {
     "id": "bili-BV1CCHw6TEL1",
