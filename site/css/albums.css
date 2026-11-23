@@ -7,9 +7,29 @@
 
 .albums { max-width: none; padding-inline: 0; }
 .albums .sec__head { max-width: calc(var(--max) + var(--gut) * 2); margin-inline: auto; padding-inline: var(--gut); }
+.albums .kicker { line-height: 1.5; }
+html[data-mode=paper] .albums .sec__head::after { right: var(--gut); }
+
+/* Catalog controls share the site's existing segmented-button treatment. */
+.album-catalog { max-width: calc(var(--max) + var(--gut) * 2); margin: 20px auto 0; padding-inline: var(--gut); display: flex; align-items: center; flex-wrap: wrap; gap: 14px 22px; }
+.album-catalog__scope { max-width: 100%; overflow-x: auto; flex-wrap: nowrap; scrollbar-width: thin; }
+.album-catalog__scope button { flex: none; min-height: 42px; white-space: nowrap; }
+.album-catalog__member { display: flex; align-items: center; gap: 10px; color: var(--ink-3); font-size: 13px; }
+.album-catalog__member select { min-height: 42px; max-width: 100%; padding: 8px 30px 8px 12px; border: 1px solid var(--line); border-radius: 99px; background: var(--glass); color: var(--ink); font: inherit; cursor: pointer; }
+.album-catalog__member select:disabled { opacity: .5; cursor: default; }
+.album-catalog__count { flex: 1 0 100%; color: var(--ink-3); font-size: 13px; letter-spacing: .04em; }
+.album-empty { max-width: var(--max); margin: 24px auto; padding: 26px var(--gut); color: var(--ink-2); line-height: 1.8; }
+.album-empty a, .album-empty button { display: inline-block; margin: 12px 20px 0 0; color: var(--ac); text-decoration: underline; text-underline-offset: 4px; }
+.stage[hidden], .shelf[hidden], .album-empty[hidden] { display: none; }
+.stage__artist { margin-top: 20px; font: 500 13px/1.4 var(--sans); letter-spacing: .16em; }
+.stage__sources { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin-top: 18px; font-size: 12px; opacity: .85; overflow-wrap: anywhere; }
+.stage__sources .src { color: inherit; background: transparent; border-color: currentColor; }
+.stage__edition-note { margin-top: 12px; font-size: 12.5px; line-height: 1.7; opacity: .74; }
+.sleeve .sleeve__artist { margin-top: 4px; letter-spacing: .06em; font-size: 9px; }
+@media (max-width: 540px) { .album-catalog { gap: 12px; } .album-catalog__scope { width: 100%; } .album-catalog__member { flex: 1 0 100%; } .album-catalog__member select { flex: 1; } }
 
 /* shelf */
-.shelf { position: relative; overflow-x: auto; overflow-y: hidden; scrollbar-width: none; cursor: grab; padding: 26px 0 8px; user-select: none; -webkit-user-select: none; scroll-behavior: smooth;
+.shelf { position: relative; overflow-x: auto; overflow-y: hidden; scrollbar-width: none; cursor: grab; padding: 26px 0 8px; user-select: none; -webkit-user-select: none;
   -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 6%, #000 94%, transparent 100%); mask-image: linear-gradient(90deg, transparent 0, #000 6%, #000 94%, transparent 100%); }
 .shelf::-webkit-scrollbar { display: none; }
 .shelf.is-drag { cursor: grabbing; scroll-behavior: auto; }

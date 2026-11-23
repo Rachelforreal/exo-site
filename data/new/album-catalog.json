@@ -1,0 +1,3744 @@
+{
+  "checkedAt": "2026-11-23",
+  "scopeNote": "已发行的团体、个人、分队、企划录音室及现场专辑；同专辑加曲版合并，单曲、OST 与未发行企划不混入。",
+  "items": [
+    {
+      "no": "S01",
+      "slug": "xiumin-brand-new",
+      "title": "Brand New",
+      "artist": "XIUMIN",
+      "scope": "solo",
+      "members": [
+        "xiumin"
+      ],
+      "zh": "金珉锡",
+      "date": "2022-09-26",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#312c27",
+        "bg2": "#7a6b52",
+        "fg": "#f5f0e7",
+        "ac": "#d5bd8c"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "XIUMIN · 个人迷你专辑",
+      "concept": "个人迷你 1 辑。",
+      "tracks": [
+        "Brand New",
+        "Feedback",
+        "How We Do (feat. MARK)",
+        "Love Letter",
+        "Serenity"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/xiumin-brand-new.webp",
+      "thumb": "img/covers/catalog/xiumin-brand-new-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/brand-new-the-1st-mini-album-ep/1646020373",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/brand-new-the-1st-mini-album-ep/1646020373"
+        },
+        {
+          "name": "INB100 官方作品目录",
+          "url": "http://inb100.com/41"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1646020373,
+        "artistId": 1053793430,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/eb/cf/be/ebcfbedb-089f-32db-e605-764fdfdaf88a/XIUMIN_DigitalCover.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S02",
+      "slug": "xiumin-interview-x",
+      "title": "Interview X",
+      "artist": "XIUMIN",
+      "scope": "solo",
+      "members": [
+        "xiumin"
+      ],
+      "zh": "金珉锡",
+      "date": "2025-03-10",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#f6f4ee",
+        "bg2": "#f6f4f1",
+        "fg": "#201e20",
+        "ac": "#655b62"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "XIUMIN · 个人迷你专辑",
+      "concept": "个人迷你 2 辑。",
+      "tracks": [
+        "Can't Help Myself",
+        "WHEE!",
+        "Make You LaLa",
+        "Switch Off",
+        "Lost Paradise",
+        "Love is U"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/xiumin-interview-x.webp",
+      "thumb": "img/covers/catalog/xiumin-interview-x-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/interview-x-ep/1799677358",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/interview-x-ep/1799677358"
+        },
+        {
+          "name": "INB100 官方作品目录",
+          "url": "http://inb100.com/41"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1799677358,
+        "artistId": 1053793430,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a1/1a/ca/a11acaf4-abb7-466f-5321-29f16f92c151/5034644518732.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S03",
+      "slug": "suho-self-portrait",
+      "title": "Self-Portrait",
+      "artist": "SUHO",
+      "scope": "solo",
+      "members": [
+        "suho"
+      ],
+      "zh": "金俊勉",
+      "date": "2020-03-30",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#26252d",
+        "bg2": "#5c5863",
+        "fg": "#f5f0e7",
+        "ac": "#bfae98"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "SUHO · 个人迷你专辑",
+      "concept": "个人迷你 1 辑。",
+      "tracks": [
+        "O2",
+        "Let’s Love",
+        "Made In You",
+        "Starry Night",
+        "Self-Portrait",
+        "For You Now (feat. Younha)",
+        "Writer's Note : Behind the Self-Portrait (Special Track)"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/suho-self-portrait.webp",
+      "thumb": "img/covers/catalog/suho-self-portrait-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/self-portrait-the-1st-mini-album/1504639677",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/self-portrait-the-1st-mini-album/1504639677"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1504639677,
+        "artistId": 80064157,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/2c/20/01/2c200125-5b47-34e2-109a-4fa7de1497e9/Album_Cover_SUHO_Self-Portrait.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S04",
+      "slug": "suho-grey-suit",
+      "title": "Grey Suit",
+      "artist": "SUHO",
+      "scope": "solo",
+      "members": [
+        "suho"
+      ],
+      "zh": "金俊勉",
+      "date": "2022-04-04",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#2d251f",
+        "bg2": "#70583c",
+        "fg": "#f5f0e7",
+        "ac": "#ceaf7b"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "SUHO · 个人迷你专辑",
+      "concept": "个人迷你 2 辑。",
+      "tracks": [
+        "Morning Star",
+        "Grey Suit",
+        "Hurdle",
+        "Decanting",
+        "Bear Hug",
+        "Moment"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/suho-grey-suit.webp",
+      "thumb": "img/covers/catalog/suho-grey-suit-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/grey-suit-the-2nd-mini-album-ep/1616435291",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/grey-suit-the-2nd-mini-album-ep/1616435291"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1616435291,
+        "artistId": 80064157,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/17/e6/d4/17e6d404-4b7e-f65c-a621-ba39335d8b6d/SUHO-M2-Digital_Cover.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S05",
+      "slug": "suho-1-to-3",
+      "title": "1 to 3",
+      "artist": "SUHO",
+      "scope": "solo",
+      "members": [
+        "suho"
+      ],
+      "zh": "金俊勉",
+      "date": "2024-05-31",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#eee7e0",
+        "bg2": "#e5dad4",
+        "fg": "#201e20",
+        "ac": "#59474c"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "SUHO · 个人迷你专辑",
+      "concept": "个人迷你 3 辑。",
+      "tracks": [
+        "Mayday",
+        "1 to 3",
+        "Cheese (feat. WENDY)",
+        "Wishful Thinking",
+        "Moonlight",
+        "Alright Alright (feat. GIRIBOY)",
+        "Zero Gravity"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/suho-1-to-3.webp",
+      "thumb": "img/covers/catalog/suho-1-to-3-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/1-to-3-the-3rd-mini-album/1748049093",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/1-to-3-the-3rd-mini-album/1748049093"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1748049093,
+        "artistId": 80064157,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/16/dc/ca/16dccaea-5189-4ef8-78f2-f9ae624a9767/SH_M03_1to3_DC.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S06",
+      "slug": "suho-who-are-you",
+      "title": "Who Are You",
+      "artist": "SUHO",
+      "scope": "solo",
+      "members": [
+        "suho"
+      ],
+      "zh": "金俊勉",
+      "date": "2025-09-22",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#222830",
+        "bg2": "#535f69",
+        "fg": "#f5f0e7",
+        "ac": "#b8b49d"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "SUHO · 个人迷你专辑",
+      "concept": "个人迷你 4 辑。",
+      "tracks": [
+        "Who Are You",
+        "Light The Fire",
+        "Medicine",
+        "Birthday",
+        "Golden Hour",
+        "Fadeout",
+        "Who Are You (English Version)"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/suho-who-are-you.webp",
+      "thumb": "img/covers/catalog/suho-who-are-you-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/who-are-you-the-4th-mini-album/1839185594",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/who-are-you-the-4th-mini-album/1839185594"
+        },
+        {
+          "name": "EXO 日本官网 · Who Are You",
+          "url": "https://exo-jp.net/en/news/detail.php?id=1128165"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1839185594,
+        "artistId": 80064157,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/26/e3/97/26e397f7-8a0e-322b-c10a-5535b357528e/9_15_00_SUHO_M04_Digital_Cover-F.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S07",
+      "slug": "lay-lose-control",
+      "title": "LOSE CONTROL",
+      "artist": "LAY",
+      "scope": "solo",
+      "members": [
+        "lay"
+      ],
+      "zh": "张艺兴",
+      "date": "2016-10-28",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#08090f",
+        "bg2": "#0c0c10",
+        "fg": "#f5f0e7",
+        "ac": "#83755b"
+      },
+      "face": "serif-caps",
+      "fx": "terrain",
+      "tagline": "LAY · 个人迷你专辑",
+      "concept": "首张个人迷你专辑。",
+      "tracks": [
+        "LOSE CONTROL",
+        "what U need?",
+        "TONIGHT",
+        "MYM",
+        "MYM (Acoustic Version)",
+        "RELAX"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/lay-lose-control.webp",
+      "thumb": "img/covers/catalog/lay-lose-control-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/lose-control-the-1st-mini-album-ep/1168552291",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/lose-control-the-1st-mini-album-ep/1168552291"
+        },
+        {
+          "name": "LAY 官方发行目录",
+          "url": "https://www.youtube.com/@layzhang/releases"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1168552291,
+        "artistId": 1118027719,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music71/v4/71/10/7c/71107cca-21f5-33bc-b12d-cd69cb12bf69/LAY-1st-MINI-COVER.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S08",
+      "slug": "lay-sheep",
+      "title": "SHEEP",
+      "artist": "LAY",
+      "scope": "solo",
+      "members": [
+        "lay"
+      ],
+      "zh": "张艺兴",
+      "date": "2017-10-07",
+      "type": "个人正规专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#25242a",
+        "bg2": "#5a555a",
+        "fg": "#f5f0e7",
+        "ac": "#bead92"
+      },
+      "face": "serif-caps",
+      "fx": "terrain",
+      "tagline": "LAY · 个人正规专辑",
+      "concept": "个人正规专辑。",
+      "tracks": [
+        "Sheep",
+        "I Need U",
+        "Peach",
+        "Hand",
+        "Boss",
+        "Shake",
+        "Too Much",
+        "Mask",
+        "Director",
+        "X Back"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/lay-sheep.webp",
+      "thumb": "img/covers/catalog/lay-sheep-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/lay-02-sheep/1290920676",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/lay-02-sheep/1290920676"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1290920676,
+        "artistId": 1118027719,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/62/6b/77/626b77c5-2061-73b9-a02f-da2449c88bec/Cover_4000.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S09",
+      "slug": "lay-winter-special-gift",
+      "title": "Winter Special Gift",
+      "artist": "LAY",
+      "scope": "solo",
+      "members": [
+        "lay"
+      ],
+      "zh": "张艺兴",
+      "date": "2017-12-22",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#ede9e4",
+        "bg2": "#e3dfdc",
+        "fg": "#201e20",
+        "ac": "#574b52"
+      },
+      "face": "serif-caps",
+      "fx": "terrain",
+      "tagline": "LAY · 个人迷你专辑",
+      "concept": "冬季特别迷你专辑。",
+      "tracks": [
+        "Goodbye Christmas (Chinese Version)",
+        "Can you feel me (Chinese Version)",
+        "Christmas Love (Chinese Version)",
+        "Gift to XBACK (Chinese Version)",
+        "Goodbye Christmas (English Version)",
+        "Goodbye Christmas (Instrumental)"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/lay-winter-special-gift.webp",
+      "thumb": "img/covers/catalog/lay-winter-special-gift-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/winter-special-gift-ep/1327815494",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/winter-special-gift-ep/1327815494"
+        },
+        {
+          "name": "LAY 官方发行目录",
+          "url": "https://www.youtube.com/@layzhang/releases"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1327815494,
+        "artistId": 1118027719,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/fc/1e/cd/fc1ecd37-910d-c4c8-c792-1b0a70a6b55b/Untitled.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S10",
+      "slug": "lay-namanana",
+      "title": "NAMANANA",
+      "artist": "LAY",
+      "scope": "solo",
+      "members": [
+        "lay"
+      ],
+      "zh": "张艺兴",
+      "date": "2018-10-19",
+      "type": "个人正规专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#202218",
+        "bg2": "#4c4f29",
+        "fg": "#f5f0e7",
+        "ac": "#b3a86d"
+      },
+      "face": "serif-caps",
+      "fx": "terrain",
+      "tagline": "LAY · 个人正规专辑",
+      "concept": "中英双语个人正规专辑。",
+      "tracks": [
+        "集結號",
+        "夢不落雨林",
+        "愛到這",
+        "催眠術",
+        "愛的引力",
+        "堅持",
+        "幸福上癮",
+        "麻婆豆腐",
+        "香水",
+        "快門回溯",
+        "貝殼女孩",
+        "The Assembly Call",
+        "NAMANANA",
+        "Give Me A Chance",
+        "Lay U Down",
+        "Save You",
+        "Hold On",
+        "Thing for You",
+        "Mapo Tofu",
+        "Flavor",
+        "Don’t Let Me Go",
+        "Tattoo"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/lay-namanana.webp",
+      "thumb": "img/covers/catalog/lay-namanana-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/namanana-the-3rd-album/1439328418",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/namanana-the-3rd-album/1439328418"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1439328418,
+        "artistId": 1118027719,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/63/10/d2/6310d215-3307-991f-b824-b91091b446e4/cover.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S11",
+      "slug": "lay-honey",
+      "title": "HONEY",
+      "artist": "LAY",
+      "scope": "solo",
+      "members": [
+        "lay"
+      ],
+      "zh": "张艺兴",
+      "date": "2019-06-14",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#221b11",
+        "bg2": "#533c16",
+        "fg": "#f5f0e7",
+        "ac": "#b89a5f"
+      },
+      "face": "serif-caps",
+      "fx": "terrain",
+      "tagline": "LAY · 个人迷你专辑",
+      "concept": "个人迷你专辑。",
+      "tracks": [
+        "Honey",
+        "Bad",
+        "Amusement Park",
+        "和你"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/lay-honey.webp",
+      "thumb": "img/covers/catalog/lay-honey-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/honey-ep/6810967098",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/honey-ep/6810967098"
+        },
+        {
+          "name": "LAY 官方发行目录",
+          "url": "https://www.youtube.com/@layzhang/releases"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 6810967098,
+        "artistId": 1118027719,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b5/07/be/b507be82-8a4c-de67-4cdb-9c6d2595b02e/3615939323990.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S12",
+      "slug": "lay-lit",
+      "title": "莲 / LIT",
+      "artist": "LAY",
+      "scope": "solo",
+      "members": [
+        "lay"
+      ],
+      "zh": "张艺兴",
+      "date": "2020",
+      "datePrecision": "year",
+      "type": "个人正规专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#f1ece6",
+        "bg2": "#ebe4e0",
+        "fg": "#201e20",
+        "ac": "#5d4e55"
+      },
+      "face": "serif-caps",
+      "fx": "terrain",
+      "tagline": "LAY · 个人正规专辑",
+      "concept": "分两部分发行的个人正规专辑。",
+      "tracks": [
+        "LIT",
+        "Jade",
+        "Eagle",
+        "H2O",
+        "Fly",
+        "Soul",
+        "Changsha",
+        "Mama",
+        "Boom",
+        "Call My Name",
+        "Late Night",
+        "Wish"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/lay-lit.webp",
+      "thumb": "img/covers/catalog/lay-lit-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/%E8%93%AE/6810969091",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/%E8%93%AE/6810969091"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 6810969091,
+        "artistId": 1118027719,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0c/6c/6f/0c6c6f09-c018-6209-a17b-3b6317b8073b/886448618713.jpg/600x600bb.jpg"
+      },
+      "sortDate": "2020-06-01"
+    },
+    {
+      "no": "S13",
+      "slug": "lay-producer",
+      "title": "PRODUCER",
+      "artist": "LAY",
+      "scope": "solo",
+      "members": [
+        "lay"
+      ],
+      "zh": "张艺兴",
+      "date": "2021-02-05",
+      "type": "个人专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#2a0b10",
+        "bg2": "#670f12",
+        "fg": "#f5f0e7",
+        "ac": "#c7785c"
+      },
+      "face": "serif-caps",
+      "fx": "terrain",
+      "tagline": "LAY · 个人专辑",
+      "concept": "个人专辑。",
+      "tracks": [
+        "Joker",
+        "Love Lay",
+        "Flipped",
+        "Ambush",
+        "Stay With Me",
+        "Horse",
+        "Descendants of the Dragon",
+        "Obsessed",
+        "XiangJiang River (feat. KungFuPen)"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/lay-producer.webp",
+      "thumb": "img/covers/catalog/lay-producer-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/producer/1639054119",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/producer/1639054119"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1639054119,
+        "artistId": 1118027719,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/9c/22/72/9c2272e5-bc17-9509-0524-f9f86e715ff2/196925335041.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S14",
+      "slug": "lay-east",
+      "title": "東 / EAST",
+      "artist": "LAY",
+      "scope": "solo",
+      "members": [
+        "lay"
+      ],
+      "zh": "张艺兴",
+      "date": "2021-10-15",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#0e1821",
+        "bg2": "#1a3442",
+        "fg": "#f5f0e7",
+        "ac": "#8e9480"
+      },
+      "face": "serif-caps",
+      "fx": "terrain",
+      "tagline": "LAY · 个人迷你专辑",
+      "concept": "个人迷你专辑。",
+      "tracks": [
+        "Flying Apsaras",
+        "Samadhi Real Fire",
+        "Ascetic Monk",
+        "The Shepherd Boy"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/lay-east.webp",
+      "thumb": "img/covers/catalog/lay-east-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/%E6%9D%B1-ep/1588217432",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/%E6%9D%B1-ep/1588217432"
+        },
+        {
+          "name": "LAY 官方发行目录",
+          "url": "https://www.youtube.com/@layzhang/releases"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1588217432,
+        "artistId": 1118027719,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/11/b4/95/11b495cc-22cd-399c-c39e-ac5f5b3f914d/196292531503.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S15",
+      "slug": "lay-west",
+      "title": "西 / WEST",
+      "artist": "LAY",
+      "scope": "solo",
+      "members": [
+        "lay"
+      ],
+      "zh": "张艺兴",
+      "date": "2022-09-24",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#231b30",
+        "bg2": "#533b6b",
+        "fg": "#f5f0e7",
+        "ac": "#b9999f"
+      },
+      "face": "serif-caps",
+      "fx": "terrain",
+      "tagline": "LAY · 个人迷你专辑",
+      "concept": "个人迷你专辑。",
+      "tracks": [
+        "Veil (Chinese Version)",
+        "3 Wishes",
+        "Understand",
+        "I Don't Care",
+        "Veil (English Version)"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/lay-west.webp",
+      "thumb": "img/covers/catalog/lay-west-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/%E8%A5%BF-ep/6810966976",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/%E8%A5%BF-ep/6810966976"
+        },
+        {
+          "name": "LAY 官方发行目录",
+          "url": "https://www.youtube.com/@layzhang/releases"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 6810966976,
+        "artistId": 1118027719,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b5/8d/d4/b58dd4f9-1df9-51b6-0110-d9647c0acbe7/3617051138490.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S16",
+      "slug": "lay-step",
+      "title": "STEP",
+      "artist": "LAY",
+      "scope": "solo",
+      "members": [
+        "lay"
+      ],
+      "zh": "张艺兴",
+      "date": "2024-06-14",
+      "type": "个人正规专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#201e28",
+        "bg2": "#4c4555",
+        "fg": "#f5f0e7",
+        "ac": "#b3a08e"
+      },
+      "face": "serif-caps",
+      "fx": "terrain",
+      "tagline": "LAY · 个人正规专辑",
+      "concept": "全英文专辑，含后续 Deluxe Version。",
+      "tracks": [
+        "Run Back To You",
+        "Psychic",
+        "Step",
+        "Fresh",
+        "Music Is Your Love",
+        "Right Now",
+        "Mornings With You",
+        "Staring At The Sun",
+        "Human In You",
+        "I'm Still Learning"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/lay-step.webp",
+      "thumb": "img/covers/catalog/lay-step-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/step/1746479514",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/step/1746479514"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1746479514,
+        "artistId": 1118027719,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fe/82/75/fe827534-059c-268f-12be-25e6a5925fcc/5021732381927.jpg/600x600bb.jpg"
+      },
+      "editions": [
+        {
+          "name": "Deluxe Version",
+          "date": "2024-06-25",
+          "note": "2024.06.25 发行的加曲版本，新增 3 首曲目。",
+          "tracks": [
+            "Run Back To You",
+            "Psychic",
+            "Step",
+            "Fresh",
+            "Music Is Your Love",
+            "Daisy",
+            "Right Now",
+            "Before You Let Go",
+            "Mornings With You",
+            "Staring At The Sun",
+            "Human In You",
+            "I'm Still Learning",
+            "A Legend (feat. Jackie Chan, Kim Hee-sun)"
+          ],
+          "sources": [
+            {
+              "name": "Apple Music · Deluxe 曲目",
+              "url": "https://music.apple.com/us/album/step-deluxe-version/1752795536"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "no": "S17",
+      "slug": "lay-rock-the-heavenly-palace",
+      "title": "闹天宫 / ROCK THE HEAVENLY PALACE",
+      "artist": "LAY",
+      "scope": "solo",
+      "members": [
+        "lay"
+      ],
+      "zh": "张艺兴",
+      "date": "2025",
+      "datePrecision": "year",
+      "type": "个人正规专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#171f34",
+        "bg2": "#344675",
+        "fg": "#f5f0e7",
+        "ac": "#a1a1a6"
+      },
+      "face": "serif-caps",
+      "fx": "terrain",
+      "tagline": "LAY · 个人正规专辑",
+      "concept": "2025 年个人正规专辑。",
+      "tracks": [
+        "ROCK THE HEAVENLY PALACE",
+        "OTHER SIDE",
+        "ASHES",
+        "WOULD U BE MINE",
+        "TRACTOR",
+        "STYLE",
+        "KID",
+        "SUCKER",
+        "CALLING",
+        "HUMAN",
+        "ALWAYS HERE",
+        "MENTIONED YOU",
+        "OTHER SIDE (MANDARIN VERSION)"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/lay-rock-the-heavenly-palace.webp",
+      "thumb": "img/covers/catalog/lay-rock-the-heavenly-palace-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/rock-the-heavenly-palace/6810967448",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/rock-the-heavenly-palace/6810967448"
+        },
+        {
+          "name": "LAY 官方发行目录",
+          "url": "https://www.youtube.com/@layzhang/releases"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 6810967448,
+        "artistId": 1118027719,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a3/6b/c5/a36bc55e-7e1d-11cb-3d3f-c088036a0b0f/3618024275365.jpg/600x600bb.jpg"
+      },
+      "sortDate": "2025-09-07"
+    },
+    {
+      "no": "S18",
+      "slug": "lay-flawed-crown",
+      "title": "斗战胜佛 / Flawed Crown",
+      "artist": "LAY",
+      "scope": "solo",
+      "members": [
+        "lay"
+      ],
+      "zh": "张艺兴",
+      "date": "2026-07-03",
+      "type": "个人正规专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#251d21",
+        "bg2": "#594142",
+        "fg": "#f5f0e7",
+        "ac": "#bd9d80"
+      },
+      "face": "serif-caps",
+      "fx": "terrain",
+      "tagline": "LAY · 个人正规专辑",
+      "concept": "2026 年个人正规专辑。",
+      "tracks": [
+        "INTRO",
+        "Call My Name",
+        "Flawed Crown",
+        "Higher",
+        "Whoever",
+        "Again",
+        "Living",
+        "Smoke & Mirrors",
+        "You in My Mind",
+        "The Performer",
+        "Mistakes",
+        "The Sun",
+        "Rainy Beijing",
+        "No Love Songs",
+        "But You Don't Know Me",
+        "Birthday Blues",
+        "Fragrance",
+        "Rest / Pause",
+        "Crimson Love",
+        "Stutter Love"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/lay-flawed-crown.webp",
+      "thumb": "img/covers/catalog/lay-flawed-crown-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/%E6%96%97%E6%88%98%E8%83%9C%E4%BD%9B/6795019803",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/%E6%96%97%E6%88%98%E8%83%9C%E4%BD%9B/6795019803"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 6795019803,
+        "artistId": 1118027719,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/58/43/88/58438848-9724-5f48-bcee-01528fd6a9bb/4896010576279.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S19",
+      "slug": "baekhyun-city-lights",
+      "title": "City Lights",
+      "artist": "BAEKHYUN",
+      "scope": "solo",
+      "members": [
+        "baekhyun"
+      ],
+      "zh": "边伯贤",
+      "date": "2019-07-10",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#272224",
+        "bg2": "#61504a",
+        "fg": "#f5f0e7",
+        "ac": "#c2a986"
+      },
+      "face": "serif-caps",
+      "fx": "beams",
+      "tagline": "BAEKHYUN · 个人迷你专辑",
+      "concept": "个人迷你 1 辑。",
+      "tracks": [
+        "UN Village",
+        "Stay Up (feat. Beenzino)",
+        "Betcha",
+        "Ice Queen",
+        "Diamond",
+        "Psycho (Bonus Track)"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/baekhyun-city-lights.webp",
+      "thumb": "img/covers/catalog/baekhyun-city-lights-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/city-lights-the-1st-mini-album-ep/1471975981",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/city-lights-the-1st-mini-album-ep/1471975981"
+        },
+        {
+          "name": "BAEKHYUN 官方作品目录",
+          "url": "https://baekhyun-official.jp/profile"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1471975981,
+        "artistId": 987357639,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/0b/50/d8/0b50d8cd-c836-2e71-6911-aaa0f597695b/cover.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S20",
+      "slug": "baekhyun-delight",
+      "title": "Delight",
+      "artist": "BAEKHYUN",
+      "scope": "solo",
+      "members": [
+        "baekhyun"
+      ],
+      "zh": "边伯贤",
+      "date": "2020-05-25",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#1d101d",
+        "bg2": "#431e37",
+        "fg": "#f5f0e7",
+        "ac": "#ac8378"
+      },
+      "face": "serif-caps",
+      "fx": "beams",
+      "tagline": "BAEKHYUN · 个人迷你专辑",
+      "concept": "个人迷你 2 辑。",
+      "tracks": [
+        "Candy",
+        "R U Ridin’?",
+        "Bungee",
+        "Underwater",
+        "Poppin’",
+        "Ghost",
+        "Love Again"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/baekhyun-delight.webp",
+      "thumb": "img/covers/catalog/baekhyun-delight-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/delight-the-2nd-mini-album/1514738803",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/delight-the-2nd-mini-album/1514738803"
+        },
+        {
+          "name": "BAEKHYUN 官方作品目录",
+          "url": "https://baekhyun-official.jp/profile"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1514738803,
+        "artistId": 987357639,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/11/86/9e/11869e74-02cc-67d7-1ef8-5121dcf5e807/cover.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S21",
+      "slug": "baekhyun-japan",
+      "title": "BAEKHYUN",
+      "artist": "BAEKHYUN",
+      "scope": "solo",
+      "members": [
+        "baekhyun"
+      ],
+      "zh": "边伯贤",
+      "date": "2021-01-20",
+      "type": "日文迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#2f2524",
+        "bg2": "#74574b",
+        "fg": "#f5f0e7",
+        "ac": "#d1ae86"
+      },
+      "face": "serif-caps",
+      "fx": "beams",
+      "tagline": "BAEKHYUN · 日文迷你专辑",
+      "concept": "日本首张迷你专辑。",
+      "tracks": [
+        "Get You Alone",
+        "Addicted",
+        "WHIPPIN'",
+        "Drown",
+        "Disappeared",
+        "Stars"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/baekhyun-japan.webp",
+      "thumb": "img/covers/catalog/baekhyun-japan-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/baekhyun-ep/1545888767",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/baekhyun-ep/1545888767"
+        },
+        {
+          "name": "BAEKHYUN 官方作品目录",
+          "url": "https://baekhyun-official.jp/profile"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1545888767,
+        "artistId": 987357639,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c2/dc/0e/c2dc0ea4-60e5-2630-72c1-d1dd1557bf08/dj.fxpbhujz.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S22",
+      "slug": "baekhyun-bambi",
+      "title": "Bambi",
+      "artist": "BAEKHYUN",
+      "scope": "solo",
+      "members": [
+        "baekhyun"
+      ],
+      "zh": "边伯贤",
+      "date": "2021-03-30",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#2f2828",
+        "bg2": "#766054",
+        "fg": "#f5f0e7",
+        "ac": "#d3b58e"
+      },
+      "face": "serif-caps",
+      "fx": "beams",
+      "tagline": "BAEKHYUN · 个人迷你专辑",
+      "concept": "韩语个人迷你 3 辑。",
+      "tracks": [
+        "Love Scene",
+        "Bambi",
+        "All I Got",
+        "Amusement Park",
+        "Privacy",
+        "Cry for Love"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/baekhyun-bambi.webp",
+      "thumb": "img/covers/catalog/baekhyun-bambi-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/bambi-the-3rd-mini-album-ep/1559839878",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/bambi-the-3rd-mini-album-ep/1559839878"
+        },
+        {
+          "name": "BAEKHYUN 官方作品目录",
+          "url": "https://baekhyun-official.jp/profile"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1559839878,
+        "artistId": 987357639,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/4c/96/38/4c963899-798d-bc31-a1f8-eb5efc6f8d3c/Digital_Cover_BAEKHYUN_Bambi.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S23",
+      "slug": "baekhyun-hello-world",
+      "title": "Hello, World",
+      "artist": "BAEKHYUN",
+      "scope": "solo",
+      "members": [
+        "baekhyun"
+      ],
+      "zh": "边伯贤",
+      "date": "2024-09-06",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#2a201d",
+        "bg2": "#684a36",
+        "fg": "#f5f0e7",
+        "ac": "#c8a477"
+      },
+      "face": "serif-caps",
+      "fx": "beams",
+      "tagline": "BAEKHYUN · 个人迷你专辑",
+      "concept": "韩语个人迷你 4 辑。",
+      "tracks": [
+        "Good Morning",
+        "Pineapple Slice",
+        "Rendez-Vous",
+        "Cold Heart",
+        "Woo",
+        "Truth Be Told"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/baekhyun-hello-world.webp",
+      "thumb": "img/covers/catalog/baekhyun-hello-world-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/hello-world-the-4th-mini-album-ep/1761521605",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/hello-world-the-4th-mini-album-ep/1761521605"
+        },
+        {
+          "name": "BAEKHYUN 官方作品目录",
+          "url": "https://baekhyun-official.jp/profile"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1761521605,
+        "artistId": 987357639,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/79/48/31/794831c7-968d-e3e7-02ff-e885f894f7a4/191953381428.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S24",
+      "slug": "baekhyun-essence-of-reverie",
+      "title": "Essence of Reverie",
+      "artist": "BAEKHYUN",
+      "scope": "solo",
+      "members": [
+        "baekhyun"
+      ],
+      "zh": "边伯贤",
+      "date": "2025-05-19",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#2b2b32",
+        "bg2": "#69696f",
+        "fg": "#f5f0e7",
+        "ac": "#c9bba1"
+      },
+      "face": "serif-caps",
+      "fx": "beams",
+      "tagline": "BAEKHYUN · 个人迷你专辑",
+      "concept": "韩语个人迷你 5 辑。",
+      "tracks": [
+        "Chocolate",
+        "Elevator",
+        "Lemonade",
+        "Love Comes Back",
+        "No Problem",
+        "Black Dreams",
+        "Late Night Calls"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/baekhyun-essence-of-reverie.webp",
+      "thumb": "img/covers/catalog/baekhyun-essence-of-reverie-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/essence-of-reverie/1811564481",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/essence-of-reverie/1811564481"
+        },
+        {
+          "name": "BAEKHYUN 官方作品目录",
+          "url": "https://baekhyun-official.jp/profile"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1811564481,
+        "artistId": 987357639,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/69/13/56/6913568e-c2c3-b161-0686-a3a82016501d/5034644655246.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S25",
+      "slug": "chen-april-and-a-flower",
+      "title": "April, and a Flower",
+      "artist": "CHEN",
+      "scope": "solo",
+      "members": [
+        "chen"
+      ],
+      "zh": "金钟大",
+      "date": "2019-04-01",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#1b2320",
+        "bg2": "#40513d",
+        "fg": "#f5f0e7",
+        "ac": "#aaa97c"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "CHEN · 个人迷你专辑",
+      "concept": "个人迷你 1 辑。",
+      "tracks": [
+        "Flower",
+        "Beautiful goodbye",
+        "Sorry not sorry",
+        "Love words",
+        "I'll be there",
+        "Portrait of you"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/chen-april-and-a-flower.webp",
+      "thumb": "img/covers/catalog/chen-april-and-a-flower-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/april-and-a-flower-the-1st-mini-album/1457960480",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/april-and-a-flower-the-1st-mini-album/1457960480"
+        },
+        {
+          "name": "Spotify · CHEN 发行目录",
+          "url": "https://open.spotify.com/artist/0UEP2XBR9aC5NBKcAKnBIq"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1457960480,
+        "artistId": 902290176,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/b1/d6/48/b1d6483f-d636-2b78-ed0a-e01ce24f0e67/CHEN_M01_DigitalCover_s.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S26",
+      "slug": "chen-dear-my-dear",
+      "title": "Dear my dear",
+      "artist": "CHEN",
+      "scope": "solo",
+      "members": [
+        "chen"
+      ],
+      "zh": "金钟大",
+      "date": "2019-10-01",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#171728",
+        "bg2": "#343053",
+        "fg": "#f5f0e7",
+        "ac": "#a1918d"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "CHEN · 个人迷你专辑",
+      "concept": "个人迷你 2 辑。",
+      "tracks": [
+        "Shall we?",
+        "My dear",
+        "Amaranth",
+        "Hold you tight",
+        "You never know",
+        "Good night"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/chen-dear-my-dear.webp",
+      "thumb": "img/covers/catalog/chen-dear-my-dear-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/dear-my-dear-the-2nd-mini-album-ep/1481446116",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/dear-my-dear-the-2nd-mini-album-ep/1481446116"
+        },
+        {
+          "name": "Spotify · CHEN 发行目录",
+          "url": "https://open.spotify.com/artist/0UEP2XBR9aC5NBKcAKnBIq"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1481446116,
+        "artistId": 902290176,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/fa/79/e6/fa79e604-3485-9680-7b5e-d96e981d5149/Digital_Cover_CHEN_Dear_my_dear.re.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S27",
+      "slug": "chen-last-scene",
+      "title": "Last Scene",
+      "artist": "CHEN",
+      "scope": "solo",
+      "members": [
+        "chen"
+      ],
+      "zh": "金钟大",
+      "date": "2022-11-14",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#ebeae1",
+        "bg2": "#e0e0d7",
+        "fg": "#201e20",
+        "ac": "#554b4e"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "CHEN · 个人迷你专辑",
+      "concept": "个人迷你 3 辑。",
+      "tracks": [
+        "Last Scene",
+        "Photograph",
+        "Traveler",
+        "I Don’t Even Mind",
+        "Reminisce",
+        "Your Shelter"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/chen-last-scene.webp",
+      "thumb": "img/covers/catalog/chen-last-scene-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/last-scene-the-3rd-mini-album-ep/1651173227",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/last-scene-the-3rd-mini-album-ep/1651173227"
+        },
+        {
+          "name": "CHEN 官方作品目录",
+          "url": "https://chen-official.jp/profile"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1651173227,
+        "artistId": 902290176,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/55/8e/98/558e9858-d52d-f385-f093-ead6ac61b6a8/cover.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S28",
+      "slug": "chen-polaris",
+      "title": "Polaris / ポラリス",
+      "artist": "CHEN",
+      "scope": "solo",
+      "members": [
+        "chen"
+      ],
+      "zh": "金钟大",
+      "date": "2023-08-17",
+      "type": "日文迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#1e2630",
+        "bg2": "#475b6a",
+        "fg": "#f5f0e7",
+        "ac": "#afb19e"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "CHEN · 日文迷你专辑",
+      "concept": "日本首张迷你专辑。",
+      "tracks": [
+        "Break Out",
+        "FREE WORLD",
+        "On the road",
+        "Mirage of Flower",
+        "My Sunshine",
+        "Light Of My life"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/chen-polaris.webp",
+      "thumb": "img/covers/catalog/chen-polaris-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/%E3%83%9D%E3%83%A9%E3%83%AA%E3%82%B9-ep/1700439152",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/%E3%83%9D%E3%83%A9%E3%83%AA%E3%82%B9-ep/1700439152"
+        },
+        {
+          "name": "EXO 日本官网 · Polaris",
+          "url": "https://exo-jp.net/chen/2023"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1700439152,
+        "artistId": 902290176,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/56/d2/5f/56d25f31-0b2c-d9c2-a318-d45b23bec8db/ANTCD-A0000010947.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S29",
+      "slug": "chen-door",
+      "title": "DOOR",
+      "artist": "CHEN",
+      "scope": "solo",
+      "members": [
+        "chen"
+      ],
+      "zh": "金钟大",
+      "date": "2024-05-28",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#0d0e13",
+        "bg2": "#19181c",
+        "fg": "#f5f0e7",
+        "ac": "#8c7f63"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "CHEN · 个人迷你专辑",
+      "concept": "韩语个人迷你 4 辑。",
+      "tracks": [
+        "Empty",
+        "Dandelion",
+        "PLAYLIST (feat. HAON, BE'O)",
+        "Fall In Love Again",
+        "Starlight",
+        "Remember"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/chen-door.webp",
+      "thumb": "img/covers/catalog/chen-door-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/door-the-4th-mini-album-ep/1746885825",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/door-the-4th-mini-album-ep/1746885825"
+        },
+        {
+          "name": "CHEN 官方作品目录",
+          "url": "https://chen-official.jp/profile"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1746885825,
+        "artistId": 902290176,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/19/42/831942d5-d4f9-a721-2325-450658d5d7dd/191953366203.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S30",
+      "slug": "chen-arcadia",
+      "title": "Arcadia",
+      "artist": "CHEN",
+      "scope": "solo",
+      "members": [
+        "chen"
+      ],
+      "zh": "金钟大",
+      "date": "2025-09-29",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#1c1e23",
+        "bg2": "#434347",
+        "fg": "#f5f0e7",
+        "ac": "#ac9f84"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "CHEN · 个人迷你专辑",
+      "concept": "个人迷你 5 辑。",
+      "tracks": [
+        "Arcadia",
+        "No Gravity",
+        "Help Me (Somebody 2 Love)",
+        "In My Life",
+        "Deja-Vu"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/chen-arcadia.webp",
+      "thumb": "img/covers/catalog/chen-arcadia-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/arcadia-ep/1840325644",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/arcadia-ep/1840325644"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1840325644,
+        "artistId": 902290176,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5c/16/98/5c169889-ce01-9f53-509e-023be7e2a483/5026854029351.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S31",
+      "slug": "chen-polaris-live",
+      "title": "CHEN JAPAN TOUR 2023 - Polaris -",
+      "artist": "CHEN",
+      "scope": "solo",
+      "members": [
+        "chen"
+      ],
+      "zh": "金钟大",
+      "date": "2024-02-14",
+      "type": "现场专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#090d16",
+        "bg2": "#0d1524",
+        "fg": "#f5f0e7",
+        "ac": "#837c69"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "CHEN · 现场专辑",
+      "concept": "2023 年日本个人巡演现场专辑。",
+      "tracks": [
+        "Photograph (CHEN JAPAN TOUR 2023 - Polaris -)",
+        "Love words (CHEN JAPAN TOUR 2023 - Polaris -)",
+        "My dear (CHEN JAPAN TOUR 2023 - Polaris -)",
+        "Traveler (CHEN JAPAN TOUR 2023 - Polaris -)",
+        "Hold you tight (CHEN JAPAN TOUR 2023 - Polaris -)",
+        "Amaranth (CHEN JAPAN TOUR 2023 - Polaris -)",
+        "Your Shelter (CHEN JAPAN TOUR 2023 - Polaris -)",
+        "You never know (CHEN JAPAN TOUR 2023 - Polaris -)",
+        "Last Scene (CHEN JAPAN TOUR 2023 - Polaris -)",
+        "Beautiful goodbye (CHEN JAPAN TOUR 2023 - Polaris -)",
+        "I Don't Even Mind (CHEN JAPAN TOUR 2023 - Polaris -)",
+        "On the road (CHEN JAPAN TOUR 2023 - Polaris -)",
+        "Mirage of Flower (CHEN JAPAN TOUR 2023 - Polaris -)",
+        "FREE WORLD (CHEN JAPAN TOUR 2023 - Polaris -)",
+        "Break Out (CHEN JAPAN TOUR 2023 - Polaris -)",
+        "Watch Out (CHEN JAPAN TOUR 2023 - Polaris -)",
+        "Light Of My life (CHEN JAPAN TOUR 2023 - Polaris -)",
+        "Best Luck (CHEN JAPAN TOUR 2023 - Polaris -)",
+        "Shall we? (CHEN JAPAN TOUR 2023 - Polaris -)",
+        "My Sunshine (CHEN JAPAN TOUR 2023 - Polaris -)"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/chen-polaris-live.webp",
+      "thumb": "img/covers/catalog/chen-polaris-live-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/chen-japan-tour-2023-polaris/1729103088",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/chen-japan-tour-2023-polaris/1729103088"
+        },
+        {
+          "name": "EXO 日本官网 · Polaris",
+          "url": "https://exo-jp.net/chen/2023"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1729103088,
+        "artistId": 902290176,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/3b/13/bf/3b13bf41-bf6b-d8e6-0c66-dcc674c457f4/ANTCD-A0000012507.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S32",
+      "slug": "chanyeol-black-out",
+      "title": "Black Out",
+      "artist": "CHANYEOL",
+      "scope": "solo",
+      "members": [
+        "chanyeol"
+      ],
+      "zh": "朴灿烈",
+      "date": "2024-08-28",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#2b2b31",
+        "bg2": "#69676d",
+        "fg": "#f5f0e7",
+        "ac": "#c9baa0"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "CHANYEOL · 个人迷你专辑",
+      "concept": "个人迷你 1 辑。",
+      "tracks": [
+        "Black Out",
+        "Hasta La Vista",
+        "Ease Up",
+        "Back Again",
+        "I'm on your side too",
+        "Clover"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/chanyeol-black-out.webp",
+      "thumb": "img/covers/catalog/chanyeol-black-out-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/black-out-the-1st-mini-album-ep/1764185668",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/black-out-the-1st-mini-album-ep/1764185668"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1764185668,
+        "artistId": 935192676,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c8/8a/84/c88a8466-1803-1a49-9863-5d7c5ea82994/CY_M01_BlackOut_DC-F.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S33",
+      "slug": "chanyeol-upside-down",
+      "title": "Upside Down",
+      "artist": "CHANYEOL",
+      "scope": "solo",
+      "members": [
+        "chanyeol"
+      ],
+      "zh": "朴灿烈",
+      "date": "2025-08-25",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#201a1d",
+        "bg2": "#4c3937",
+        "fg": "#f5f0e7",
+        "ac": "#b39778"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "CHANYEOL · 个人迷你专辑",
+      "concept": "韩语个人迷你 2 辑。",
+      "tracks": [
+        "Upside Down",
+        "Back & Forth",
+        "Ocean Drive",
+        "High & Dry",
+        "Happy Accident (feat. SOLE)",
+        "123 Dance"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/chanyeol-upside-down.webp",
+      "thumb": "img/covers/catalog/chanyeol-upside-down-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/upside-down-the-2nd-mini-album-ep/1832921552",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/upside-down-the-2nd-mini-album-ep/1832921552"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1832921552,
+        "artistId": 935192676,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/49/1e/80/491e80b5-d18a-1e02-7d02-5aadc69c1741/CYM02_DC-F.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S34",
+      "slug": "chanyeol-hibi",
+      "title": "日々 / Hibi",
+      "artist": "CHANYEOL",
+      "scope": "solo",
+      "members": [
+        "chanyeol"
+      ],
+      "zh": "朴灿烈",
+      "date": "2025-09-26",
+      "type": "日文迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#171223",
+        "bg2": "#342246",
+        "fg": "#f5f0e7",
+        "ac": "#a18683"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "CHANYEOL · 日文迷你专辑",
+      "concept": "日本首张迷你专辑。",
+      "tracks": [
+        "Zuruiyo",
+        "Cherry",
+        "Kangaetemitara",
+        "Tokyo Tower",
+        "Up to You",
+        "Trace"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/chanyeol-hibi.webp",
+      "thumb": "img/covers/catalog/chanyeol-hibi-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/hibi-ep/1840595912",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/hibi-ep/1840595912"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1840595912,
+        "artistId": 935192676,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f9/ed/d7/f9edd7df-08fd-0bed-589e-59b06b49e848/PA00200151_0_229986_jacket.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S35",
+      "slug": "chanyeol-tabi",
+      "title": "旅 / Tabi",
+      "artist": "CHANYEOL",
+      "scope": "solo",
+      "members": [
+        "chanyeol"
+      ],
+      "zh": "朴灿烈",
+      "date": "2026-10-02",
+      "type": "日文迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#1a1619",
+        "bg2": "#3b2e2c",
+        "fg": "#f5f0e7",
+        "ac": "#a68f6f"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "CHANYEOL · 日文迷你专辑",
+      "concept": "日本迷你 2 辑。",
+      "tracks": [
+        "Song for You",
+        "Reburning",
+        "Infinity",
+        "Timeless",
+        "Stay with U",
+        "Madoromi (feat. Sangatsu no Phantasia)"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/chanyeol-tabi.webp",
+      "thumb": "img/covers/catalog/chanyeol-tabi-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/tabi-ep/6813370798",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/tabi-ep/6813370798"
+        },
+        {
+          "name": "EXO 日本官网 · Tabi",
+          "url": "https://exo-jp.net/en/news/detail.php?id=1135736"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 6813370798,
+        "artistId": 935192676,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/21/66/a7/2166a737-da8d-e422-5694-c666a45f7759/PA00225163_3_255287_jacket.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S36",
+      "slug": "do-empathy",
+      "title": "Empathy / 共感",
+      "artist": "D.O.",
+      "scope": "solo",
+      "members": [
+        "do"
+      ],
+      "zh": "都暻秀",
+      "date": "2021-07-26",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#0e0f14",
+        "bg2": "#1c1b1f",
+        "fg": "#f5f0e7",
+        "ac": "#8f8165"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "D.O. · 个人迷你专辑",
+      "concept": "个人迷你 1 辑。",
+      "tracks": [
+        "Rose",
+        "I'm Gonna Love You (feat. Wonstein)",
+        "My Love",
+        "It's Love",
+        "Dad",
+        "I'm Fine",
+        "Rose (English Version)",
+        "Si Fueras Mía"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/do-empathy.webp",
+      "thumb": "img/covers/catalog/do-empathy-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/empathy-the-1st-mini-album/1576354507",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/empathy-the-1st-mini-album/1576354507"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1576354507,
+        "artistId": 1364148883,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/00/f6/64/00f66459-9fb2-de35-7172-4a31ff6da8d9/Digital_Cover_D.O._Empathy_-_The_1st_Mini_Album.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S37",
+      "slug": "do-expectation",
+      "title": "Expectation / 期待",
+      "artist": "D.O.",
+      "scope": "solo",
+      "members": [
+        "do"
+      ],
+      "zh": "都暻秀",
+      "date": "2023-09-18",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#1f1a1a",
+        "bg2": "#4a3a2e",
+        "fg": "#f5f0e7",
+        "ac": "#b19871"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "D.O. · 个人迷你专辑",
+      "concept": "个人迷你 2 辑。",
+      "tracks": [
+        "Somebody",
+        "Wonder",
+        "I Do",
+        "Lost",
+        "Ordinary Days",
+        "The View",
+        "Lost (Acoustic Version)"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/do-expectation.webp",
+      "thumb": "img/covers/catalog/do-expectation-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/expectation-the-2nd-mini-album/1707120677",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/expectation-the-2nd-mini-album/1707120677"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1707120677,
+        "artistId": 1364148883,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c9/9e/09/c99e09ab-9ed5-35d5-2910-f1e3733d5048/2_-_-s.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S38",
+      "slug": "do-blossom",
+      "title": "BLOSSOM / 成长",
+      "artist": "D.O.",
+      "scope": "solo",
+      "members": [
+        "do"
+      ],
+      "zh": "都暻秀",
+      "date": "2024-05-07",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#2a2b30",
+        "bg2": "#67676a",
+        "fg": "#f5f0e7",
+        "ac": "#c7ba9e"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "D.O. · 个人迷你专辑",
+      "concept": "个人迷你 3 辑。",
+      "tracks": [
+        "Mars",
+        "Simple Joys",
+        "Popcorn",
+        "Good Night",
+        "My Dear",
+        "About Time"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/do-blossom.webp",
+      "thumb": "img/covers/catalog/do-blossom-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/blossom-the-3rd-mini-album-ep/1743749264",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/blossom-the-3rd-mini-album-ep/1743749264"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1743749264,
+        "artistId": 1364148883,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c8/f8/7c/c8f87c57-f335-2faa-5260-5bd6de49cc9f/191953349695.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S39",
+      "slug": "do-bliss",
+      "title": "BLISS",
+      "artist": "D.O.",
+      "scope": "solo",
+      "members": [
+        "do"
+      ],
+      "zh": "都暻秀",
+      "date": "2025-07-07",
+      "type": "个人正规专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#3e2919",
+        "bg2": "#7d4b1e",
+        "fg": "#f5f0e7",
+        "ac": "#f1b76f"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "D.O. · 个人正规专辑",
+      "concept": "首张个人正规专辑。",
+      "tracks": [
+        "Nobody Knows It",
+        "Do you remember?",
+        "Fit",
+        "SING ALONG!",
+        "5 minutes",
+        "I’ll Be There",
+        "Draw my path",
+        "Where You Were",
+        "IN ANOTHER LIFE",
+        "Love to Love U"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/do-bliss.webp",
+      "thumb": "img/covers/catalog/do-bliss-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/the-1st-full-album-bliss/1823614705",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/the-1st-full-album-bliss/1823614705"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1823614705,
+        "artistId": 1364148883,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/35/99/383599cf-0832-bc2e-d0c4-dd36377adff3/191953457505.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S40",
+      "slug": "do-dopamine",
+      "title": "DOPAMINE",
+      "artist": "D.O.",
+      "scope": "solo",
+      "members": [
+        "do"
+      ],
+      "zh": "都暻秀",
+      "date": "2026-09-08",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#201816",
+        "bg2": "#4c3422",
+        "fg": "#f5f0e7",
+        "ac": "#b39368"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "D.O. · 个人迷你专辑",
+      "concept": "个人迷你 4 辑。",
+      "tracks": [
+        "Sing It Loud",
+        "Dancing Party",
+        "Guitarist",
+        "Don't You",
+        "Dear"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/do-dopamine.webp",
+      "thumb": "img/covers/catalog/do-dopamine-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/dopamine-the-4th-mini-album-ep/6807359386",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/dopamine-the-4th-mini-album-ep/6807359386"
+        },
+        {
+          "name": "Spotify · D.O.",
+          "url": "https://open.spotify.com/artist/2CQZr2RPZmrcvDnaod1ldC"
+        },
+        {
+          "name": "每日经济 · 发行报道",
+          "url": "https://www.mk.co.kr/en/musics/12202660"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 6807359386,
+        "artistId": 1364148883,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a8/15/c1/a815c10b-f685-c245-aed1-aaf6505e5403/191953574820.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S41",
+      "slug": "kai-kai",
+      "title": "KAI / 开",
+      "artist": "KAI",
+      "scope": "solo",
+      "members": [
+        "kai"
+      ],
+      "zh": "金钟仁",
+      "date": "2020-11-30",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#111117",
+        "bg2": "#222025",
+        "fg": "#f5f0e7",
+        "ac": "#94856a"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "KAI · 个人迷你专辑",
+      "concept": "个人迷你 1 辑。",
+      "tracks": [
+        "Mmmh",
+        "Nothing On Me",
+        "Amnesia",
+        "Reason",
+        "Ride Or Die",
+        "Hello Stranger"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/kai-kai.webp",
+      "thumb": "img/covers/catalog/kai-kai-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/kai-the-1st-mini-album-ep/1541265888",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/kai-the-1st-mini-album-ep/1541265888"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1541265888,
+        "artistId": 1508288900,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/cd/7b/86/cd7b8623-b22c-35f5-22c8-171b88a38790/Digital_Cover_KAI_KAI_-_The_1st_Mini_Album.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S42",
+      "slug": "kai-peaches",
+      "title": "Peaches",
+      "artist": "KAI",
+      "scope": "solo",
+      "members": [
+        "kai"
+      ],
+      "zh": "金钟仁",
+      "date": "2021-11-30",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#2b1c22",
+        "bg2": "#6a3f44",
+        "fg": "#f5f0e7",
+        "ac": "#ca9c81"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "KAI · 个人迷你专辑",
+      "concept": "个人迷你 2 辑。",
+      "tracks": [
+        "Peaches",
+        "Vanilla",
+        "Domino",
+        "Come In",
+        "To Be Honest",
+        "Blue"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/kai-peaches.webp",
+      "thumb": "img/covers/catalog/kai-peaches-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/peaches-the-2nd-mini-album-ep/1596130025",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/peaches-the-2nd-mini-album-ep/1596130025"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1596130025,
+        "artistId": 1508288900,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/67/7e/1b/677e1be1-bc96-5732-c388-b193fab00ebd/KAI_M02_Peaches_4000_4000.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S43",
+      "slug": "kai-rover",
+      "title": "Rover",
+      "artist": "KAI",
+      "scope": "solo",
+      "members": [
+        "kai"
+      ],
+      "zh": "金钟仁",
+      "date": "2023-03-13",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#24242a",
+        "bg2": "#56555a",
+        "fg": "#f5f0e7",
+        "ac": "#baad92"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "KAI · 个人迷你专辑",
+      "concept": "个人迷你 3 辑。",
+      "tracks": [
+        "Rover",
+        "Black Mirror",
+        "Slidin'",
+        "Bomba",
+        "Say You Love Me",
+        "Sinner"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/kai-rover.webp",
+      "thumb": "img/covers/catalog/kai-rover-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/rover-the-3rd-mini-album-ep/1676048221",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/rover-the-3rd-mini-album-ep/1676048221"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1676048221,
+        "artistId": 1508288900,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/c5/09/f1/c509f19f-d565-c84a-d8da-7d4d280b5a9f/KAI_M03_Rover_DC.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "S44",
+      "slug": "kai-wait-on-me",
+      "title": "Wait On Me",
+      "artist": "KAI",
+      "scope": "solo",
+      "members": [
+        "kai"
+      ],
+      "zh": "金钟仁",
+      "date": "2025-04-21",
+      "type": "个人迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#212222",
+        "bg2": "#4f4f45",
+        "fg": "#f5f0e7",
+        "ac": "#b5a882"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "KAI · 个人迷你专辑",
+      "concept": "个人迷你 4 辑。",
+      "tracks": [
+        "Wait On Me",
+        "Walls Don't Talk",
+        "Pressure",
+        "Ridin'",
+        "Off and Away",
+        "Adult Swim",
+        "Flight to Paris"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/kai-wait-on-me.webp",
+      "thumb": "img/covers/catalog/kai-wait-on-me-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/wait-on-me-the-4th-mini-album/1807956819",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/wait-on-me-the-4th-mini-album/1807956819"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1807956819,
+        "artistId": 1508288900,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f4/0d/db/f40ddbdc-0717-485a-86ef-58707fa58555/KAI_M04_Wait_On_Me_DC.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "U45",
+      "slug": "cbx-hey-mama",
+      "title": "Hey Mama!",
+      "artist": "EXO-CBX",
+      "scope": "unit",
+      "members": [
+        "xiumin",
+        "baekhyun",
+        "chen"
+      ],
+      "zh": "EXO-CBX",
+      "date": "2016-10-31",
+      "type": "分队迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#edefe5",
+        "bg2": "#e3e9dd",
+        "fg": "#201e20",
+        "ac": "#575353"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "EXO-CBX · 分队迷你专辑",
+      "concept": "韩语迷你 1 辑。",
+      "tracks": [
+        "The One",
+        "Hey Mama!",
+        "Rhythm After Summer",
+        "Juliet",
+        "Cherish"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/cbx-hey-mama.webp",
+      "thumb": "img/covers/catalog/cbx-hey-mama-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/hey-mama-the-1st-mini-album-ep/1170407927",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/hey-mama-the-1st-mini-album-ep/1170407927"
+        },
+        {
+          "name": "INB100 官方作品目录",
+          "url": "http://inb100.com/41"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1170407927,
+        "artistId": 1170408504,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b2/ee/f8/b2eef8ab-58ba-1bc4-7321-a199d2403739/CBX_M01_Cover.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "U46",
+      "slug": "cbx-girls",
+      "title": "GIRLS",
+      "artist": "EXO-CBX",
+      "scope": "unit",
+      "members": [
+        "xiumin",
+        "baekhyun",
+        "chen"
+      ],
+      "zh": "EXO-CBX",
+      "date": "2017-05-24",
+      "type": "分队迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#2c2326",
+        "bg2": "#6d514f",
+        "fg": "#f5f0e7",
+        "ac": "#cca98a"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "EXO-CBX · 分队迷你专辑",
+      "concept": "日本出道迷你专辑。",
+      "tracks": [
+        "Girl Problems",
+        "Ka-CHING!",
+        "Hey Mama!",
+        "Tornado Spiral",
+        "Miss You",
+        "Diamond Crystal",
+        "KING and QUEEN"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/cbx-girls.webp",
+      "thumb": "img/covers/catalog/cbx-girls-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/girls/1234849721",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/girls/1234849721"
+        },
+        {
+          "name": "EXO 日本官网 · CBX 发行目录",
+          "url": "https://exo-jp.net/en/discography/index.php?page=7"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1234849721,
+        "artistId": 1170408504,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music111/v4/b0/45/cc/b045cc84-4ba7-cbaf-788d-c6e1d910ceb3/ANTCD-22695.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "U47",
+      "slug": "cbx-blooming-days",
+      "title": "Blooming Days",
+      "artist": "EXO-CBX",
+      "scope": "unit",
+      "members": [
+        "xiumin",
+        "baekhyun",
+        "chen"
+      ],
+      "zh": "EXO-CBX",
+      "date": "2018-04-10",
+      "type": "分队迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#2e2f23",
+        "bg2": "#5a5a36",
+        "fg": "#f5f0e7",
+        "ac": "#d0c283"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "EXO-CBX · 分队迷你专辑",
+      "concept": "韩语迷你 2 辑。",
+      "tracks": [
+        "Monday Blues",
+        "Blooming Day",
+        "Sweet Dreams!",
+        "Thursday",
+        "Vroom Vroom",
+        "Playdate",
+        "Lazy",
+        "Blooming Day (Instrumental)"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/cbx-blooming-days.webp",
+      "thumb": "img/covers/catalog/cbx-blooming-days-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/blooming-days-the-2nd-mini-album/1369902432",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/blooming-days-the-2nd-mini-album/1369902432"
+        },
+        {
+          "name": "INB100 官方作品目录",
+          "url": "http://inb100.com/41"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1369902432,
+        "artistId": 1170408504,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/e9/0c/c4/e90cc450-6226-db43-ba3c-9c4d1d888d81/EXO_CBX_M02_DIGITAL_COVER.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "U48",
+      "slug": "cbx-magic",
+      "title": "MAGIC",
+      "artist": "EXO-CBX",
+      "scope": "unit",
+      "members": [
+        "xiumin",
+        "baekhyun",
+        "chen"
+      ],
+      "zh": "EXO-CBX",
+      "date": "2018-05-09",
+      "type": "分队正规专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#2c2327",
+        "bg2": "#6c5351",
+        "fg": "#f5f0e7",
+        "ac": "#cbab8b"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "EXO-CBX · 分队正规专辑",
+      "concept": "日本首张正规专辑。",
+      "tracks": [
+        "CBX",
+        "Ka-CHING!",
+        "Horololo",
+        "Girl Problems",
+        "Shake (XIUMIN Solo)",
+        "Off The Wall",
+        "Ringa Ringa Ring (BAEKHYUN Solo)",
+        "Gentleman",
+        "Watch Out (CHEN Solo)",
+        "Cry",
+        "In This World"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/cbx-magic.webp",
+      "thumb": "img/covers/catalog/cbx-magic-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/magic/1373127358",
+      "sources": [
+        {
+          "name": "avex · 官方完整曲目",
+          "url": "https://avexnet.jp/contents/EXOXX-XXXX-XXXX/discography/1015701"
+        },
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/magic/1373127358"
+        },
+        {
+          "name": "EXO 日本官网 · CBX 发行目录",
+          "url": "https://exo-jp.net/en/discography/index.php?page=7"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1373127358,
+        "artistId": 1170408504,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/af/80/85/af808539-4daa-0e28-44ab-cc1d51a431a2/AVCK-79456.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "U49",
+      "slug": "cbx-magical-circus-live",
+      "title": "MAGICAL CIRCUS 2019 -Special Edition-",
+      "artist": "EXO-CBX",
+      "scope": "unit",
+      "members": [
+        "xiumin",
+        "baekhyun",
+        "chen"
+      ],
+      "zh": "EXO-CBX",
+      "date": "2019-08-21",
+      "type": "现场 EP",
+      "lead": "",
+      "skin": {
+        "bg": "#24202f",
+        "bg2": "#564b66",
+        "fg": "#f5f0e7",
+        "ac": "#baa59b"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "EXO-CBX · 现场 EP",
+      "concept": "2019 年日本特别场现场音源选辑。",
+      "tracks": [
+        "KING and QUEEN (EXO-CBX \"MAGICAL CIRCUS\" 2019 -Special Edition-)",
+        "Beautiful goodbye (EXO-CBX \"MAGICAL CIRCUS\" 2019 -Special Edition-)",
+        "Watashi Konomamade Iinokana (EXO-CBX \"MAGICAL CIRCUS\" 2019 -Special Edition-)",
+        "Don't Go (EXO-CBX \"MAGICAL CIRCUS\" 2019 -Special Edition-)",
+        "Paper Cuts (EXO-CBX \"MAGICAL CIRCUS\" 2019 -Special Edition-)",
+        "Ka-CHING! (EXO-CBX \"MAGICAL CIRCUS\" 2019 -Special Edition-)"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/cbx-magical-circus-live.webp",
+      "thumb": "img/covers/catalog/cbx-magical-circus-live-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/exo-cbx-magical-circus-2019-special-edition-ep/1479735303",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/exo-cbx-magical-circus-2019-special-edition-ep/1479735303"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1479735303,
+        "artistId": 1170408504,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/75/51/4e/75514e42-b806-d689-957c-3d68b9f41cd5/ANTCD-A0000000284.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "U50",
+      "slug": "sc-what-a-life",
+      "title": "What a life",
+      "artist": "EXO-SC",
+      "scope": "unit",
+      "members": [
+        "chanyeol",
+        "sehun"
+      ],
+      "zh": "EXO-SC",
+      "date": "2019-07-22",
+      "type": "分队迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#2d2c2e",
+        "bg2": "#706966",
+        "fg": "#f5f0e7",
+        "ac": "#cebb9b"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "EXO-SC · 分队迷你专辑",
+      "concept": "首张迷你专辑；灿烈、世勋。",
+      "tracks": [
+        "What a life",
+        "Just us 2 (feat. Gaeko)",
+        "Closer to you",
+        "Borderline",
+        "Roller coaster",
+        "Daydreamin'"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/sc-what-a-life.webp",
+      "thumb": "img/covers/catalog/sc-what-a-life-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/what-a-life-the-1st-mini-album-ep/1473561750",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/what-a-life-the-1st-mini-album-ep/1473561750"
+        },
+        {
+          "name": "Qobuz · EXO-SC 发行目录",
+          "url": "https://www.qobuz.com/us-en/interpreter/exo-sc/4942606"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1473561750,
+        "artistId": 1473561751,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a9/10/ce/a910cee0-8111-6a25-162f-caeeefff2020/Album_Cover.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "U51",
+      "slug": "sc-1-billion-views",
+      "title": "1 Billion Views",
+      "artist": "EXO-SC",
+      "scope": "unit",
+      "members": [
+        "chanyeol",
+        "sehun"
+      ],
+      "zh": "EXO-SC",
+      "date": "2020-07-13",
+      "type": "分队正规专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#25242b",
+        "bg2": "#5a555d",
+        "fg": "#f5f0e7",
+        "ac": "#bead94"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "EXO-SC · 分队正规专辑",
+      "concept": "首张正规专辑；含灿烈《Nothin’》和世勋《On Me》。",
+      "tracks": [
+        "1 Billion Views (feat. MOON)",
+        "Say It (feat. PENOMECO)",
+        "Rodeo Station",
+        "Telephone (feat. 10cm)",
+        "Jet Lag",
+        "Fly Away (feat. Gaeko)",
+        "Nothin’",
+        "On Me",
+        "1 Billion Views (feat. MOON) [Instrumental]"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/sc-1-billion-views.webp",
+      "thumb": "img/covers/catalog/sc-1-billion-views-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/1-billion-views-the-1st-album/1522828394",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/1-billion-views-the-1st-album/1522828394"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1522828394,
+        "artistId": 1473561751,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d5/d3/6c/d5d36cfd-4186-f650-c2cd-7adf724dea69/EXO-SC_01_DC.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "P52",
+      "slug": "superm-superm",
+      "title": "SuperM",
+      "artist": "SuperM",
+      "scope": "project",
+      "members": [
+        "baekhyun",
+        "kai"
+      ],
+      "zh": "SuperM",
+      "date": "2019-10-04",
+      "type": "企划组合迷你专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#0b0c11",
+        "bg2": "#131216",
+        "fg": "#f5f0e7",
+        "ac": "#887a5f"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "SuperM · 企划组合迷你专辑",
+      "concept": "伯贤、KAI 参与的跨团企划组合首张迷你专辑。",
+      "tracks": [
+        "Jopping",
+        "I Can't Stand The Rain",
+        "2 Fast",
+        "Super Car",
+        "No Manners",
+        "Jopping (Instrumental)",
+        "I Can't Stand The Rain (Instrumental)"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/superm-superm.webp",
+      "thumb": "img/covers/catalog/superm-superm-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/superm-the-1st-mini-album/1477917587",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/superm-the-1st-mini-album/1477917587"
+        },
+        {
+          "name": "环球音乐 · SuperM 发行目录",
+          "url": "https://www.universal-music.co.jp/superm/discography"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1477917587,
+        "artistId": 1144790711,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f0/47/69/f0476948-1859-8fb7-c0ea-94465871f540/19UMGIM77186.rgb.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "P53",
+      "slug": "superm-super-one",
+      "title": "Super One",
+      "artist": "SuperM",
+      "scope": "project",
+      "members": [
+        "baekhyun",
+        "kai"
+      ],
+      "zh": "SuperM",
+      "date": "2020-09-25",
+      "type": "企划组合正规专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#191a1f",
+        "bg2": "#38383c",
+        "fg": "#f5f0e7",
+        "ac": "#a4977b"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "SuperM · 企划组合正规专辑",
+      "concept": "SuperM 首张正规专辑。",
+      "tracks": [
+        "One (Monster & Infinity)",
+        "Infinity",
+        "Monster",
+        "Wish You Were Here",
+        "Big Chance",
+        "100",
+        "Tiger Inside",
+        "Better Days",
+        "Together At Home",
+        "Drip",
+        "Line 'Em Up",
+        "Dangerous Woman",
+        "Step Up",
+        "So Long",
+        "With You"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "tracklistNote": "Extended Ver. 另附音乐视频，音频曲目同为 15 首。",
+      "cover": "img/covers/catalog/superm-super-one.webp",
+      "thumb": "img/covers/catalog/superm-super-one-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/super-one-the-1st-album/1527210758",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/super-one-the-1st-album/1527210758"
+        },
+        {
+          "name": "环球音乐 · Super One 发行公告",
+          "url": "https://www.universalmusic.ca/press-releases/superms-debut-album-super-one-is-out-today/"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1527210758,
+        "artistId": 1144790711,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/48/bb/76/48bb762c-aabd-b64c-4f58-90d1065f93a8/20UMGIM70113.rgb.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "G54",
+      "slug": "exo-exology-live",
+      "title": "EXOLOGY CHAPTER 1: THE LOST PLANET",
+      "artist": "EXO",
+      "scope": "group",
+      "members": [
+        "group"
+      ],
+      "zh": "EXO",
+      "date": "2014-12-22",
+      "type": "现场专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#0e0f15",
+        "bg2": "#1b1b21",
+        "fg": "#f5f0e7",
+        "ac": "#8e8167"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "EXO · 现场专辑",
+      "concept": "正式发行的巡演现场音源。",
+      "tracks": [
+        "The Lost Planet (Live)",
+        "Haka (Live)",
+        "MAMA (Rearranged) [Live]",
+        "Let Out The Beast (Live)",
+        "I'm Lay (LAY Solo) [Live]",
+        "Moonlight (Live)",
+        "Delight (CHANYEOL Solo) [Live]",
+        "Angel (Live)",
+        "Black Pearl (Rearranged) [Live]",
+        "Up Rising (CHEN Solo) [Live]",
+        "XOXO (Kisses & Hugs) [Live]",
+        "Beat Maker (SEHUN Solo) [Live]",
+        "Love, Love, Love (Rearranged) [Live]",
+        "Thunder (Live)",
+        "Tell Me What Is Love (D.O. Solo) [Live]",
+        "My Lady (Live)",
+        "My Turn To Cry (BAEKHYUN Solo) [Live]",
+        "Baby Don't Cry (Live)",
+        "Machine (Live)",
+        "Breakin' Machine (XIUMIN Solo) [Live]",
+        "3.6.5 (Live)",
+        "History (Live)",
+        "Beautiful (SUHO Solo) [Live]",
+        "Peter Pan (Live)",
+        "Metal (TAO Solo) [Live]",
+        "Deep Breath (KAI Solo) [Live]",
+        "Overdose (Live)",
+        "Wolf - The Legend Begins (Live)",
+        "Wolf (Live)",
+        "Growl (Live)",
+        "Lucky (Live)",
+        "Black Pearl (Rearranged) [Studio Version]",
+        "Love, Love, Love (Acoustic Version) [Studio Version]",
+        "Wolf (Stage Version) [Studio Version]",
+        "Growl (Stage Version) [Studio Version]",
+        "December, 2014 (The Winter’s Tale)"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/exo-exology-live.webp",
+      "thumb": "img/covers/catalog/exo-exology-live-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/exology-chapter-1-the-lost-planet-live/952213726",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/exology-chapter-1-the-lost-planet-live/952213726"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 952213726,
+        "artistId": 657630070,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/62/10/cb/6210cb29-aae1-8a5b-4097-fe3ffaf88bce/1.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "G55",
+      "slug": "exo-exordium-dot-live",
+      "title": "EXO PLANET #3 - The EXO’rDIUM (dot)",
+      "artist": "EXO",
+      "scope": "group",
+      "members": [
+        "group"
+      ],
+      "zh": "EXO",
+      "date": "2017-10-25",
+      "type": "现场专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#090a10",
+        "bg2": "#0e0e12",
+        "fg": "#f5f0e7",
+        "ac": "#85775c"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "EXO · 现场专辑",
+      "concept": "正式发行的巡演现场音源。",
+      "tracks": [
+        "Mama (Live)",
+        "Monster (Live)",
+        "Wolf (Live)",
+        "White Noise (Live)",
+        "Thunder (Live)",
+        "Playboy (Live)",
+        "Artificial Love (Live)",
+        "Unfair (Live)",
+        "My Lady (Live)",
+        "Moonlight (Live)",
+        "Sing For You (Live)",
+        "Call Me Baby (Live)",
+        "Lady Luck (Live)",
+        "Tender Love (Live)",
+        "Cloud 9 (Live)",
+        "Love Me Right (Live)",
+        "Heaven (Live)",
+        "Girl x Friend (Live)",
+        "3.6.5 (Live)",
+        "Overdose (Live)",
+        "Transformer (Live)",
+        "Lightsaber (Live)",
+        "Together (Live)",
+        "Full Moon (Live)",
+        "Drop That (Live)",
+        "EXO Keep On Dancing (Live)",
+        "Lucky (Live)",
+        "Run (Live)",
+        "Lotto (Live)",
+        "Growl (Live)",
+        "For Life (Live)"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/exo-exordium-dot-live.webp",
+      "thumb": "img/covers/catalog/exo-exordium-dot-live-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/exo-planet-3-the-exordium-dot-live/1299688509",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/exo-planet-3-the-exordium-dot-live/1299688509"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1299688509,
+        "artistId": 657630070,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/b9/12/1c/b9121c6b-448a-0ef9-b255-df5aee4d8387/online_4000.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "G56",
+      "slug": "exo-elyxion-dot-live",
+      "title": "EXO PLANET #4 - The EℓyXiOn (dot)",
+      "artist": "EXO",
+      "scope": "group",
+      "members": [
+        "group"
+      ],
+      "zh": "EXO",
+      "date": "2019-01-30",
+      "type": "现场专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#121217",
+        "bg2": "#252325",
+        "fg": "#f5f0e7",
+        "ac": "#96876a"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "EXO · 现场专辑",
+      "concept": "正式发行的巡演现场音源。",
+      "tracks": [
+        "The Eve (Live)",
+        "Forever (Live)",
+        "Ko Ko Bop (Live)",
+        "Growl (Live)",
+        "I See You (Live)",
+        "Call Me Baby (Live)",
+        "Touch It (Live)",
+        "Chill (Live)",
+        "For Life (English Version) [Live]",
+        "Going Crazy (Live)",
+        "Sweet Lies (Live)",
+        "Boomerang (Live)",
+        "Lotto (Live)",
+        "Ka-CHING! (Korean Version) [Live]",
+        "Sing For You (Live)",
+        "Playboy (Live)",
+        "Psycho (Live)",
+        "Heaven (Live)",
+        "What U do? (Live)",
+        "Lucky One (Live)",
+        "Tender Love (Live)",
+        "3.6.5 (Live)",
+        "Walk On Memories (Live)",
+        "Moonlight (Live)",
+        "We Young (Live)",
+        "Electric Kiss (Live)",
+        "Coming Over (Korean Version) [Live]",
+        "Run This (Korean Version) [Live]",
+        "Drop That (Korean Version) [Live]",
+        "Power (Live)",
+        "Beyond (Live)",
+        "Years (Korean Version) [Live]",
+        "Lucky (Live)",
+        "Run (Live)",
+        "Universe (Live)"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/exo-elyxion-dot-live.webp",
+      "thumb": "img/covers/catalog/exo-elyxion-dot-live-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/exo-planet-4-the-e%E2%84%93yxion-dot-live/1450612105",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/exo-planet-4-the-e%E2%84%93yxion-dot-live/1450612105"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1450612105,
+        "artistId": 657630070,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f8/d6/09/f8d60952-69b0-ae07-db15-32912e05a254/190117.jpg/600x600bb.jpg"
+      }
+    },
+    {
+      "no": "G57",
+      "slug": "exo-exploration-live",
+      "title": "EXO PLANET #5 - EXplOration",
+      "artist": "EXO",
+      "scope": "group",
+      "members": [
+        "group"
+      ],
+      "zh": "EXO",
+      "date": "2020-04-21",
+      "type": "现场专辑",
+      "lead": "",
+      "skin": {
+        "bg": "#111117",
+        "bg2": "#222225",
+        "fg": "#f5f0e7",
+        "ac": "#94866a"
+      },
+      "face": "serif-caps",
+      "fx": "facets",
+      "tagline": "EXO · 现场专辑",
+      "concept": "正式发行的巡演现场音源。",
+      "tracks": [
+        "EXplOration (Live)",
+        "Tempo (Live)",
+        "Transformer (Live)",
+        "Gravity (Live)",
+        "Sign (Live)",
+        "UN Village (Live)",
+        "24/7 (Live)",
+        "Love Shot (Live)",
+        "Ooh La La La (Live)",
+        "Monster (Live)",
+        "Oasis (Live)",
+        "Been Through (Live)",
+        "Lights Out (Live)",
+        "What a Life (Live)",
+        "Closer to You (Live)",
+        "Falling For You (Live)",
+        "Wait (Live)",
+        "Power (Live)",
+        "Confession (Live)",
+        "Bad Dream (Live)",
+        "Damage (Live)",
+        "Growl (Live)",
+        "Overdose (Live)",
+        "Call Me Baby (Live)",
+        "Unfair (Live)",
+        "On The Snow (Live)",
+        "Smile On My Face (Live)"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "cover": "img/covers/catalog/exo-exploration-live.webp",
+      "thumb": "img/covers/catalog/exo-exploration-live-s.webp",
+      "listenUrl": "https://music.apple.com/us/album/exo-planet-5-exploration-live-album/1508288493",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/exo-planet-5-exploration-live-album/1508288493"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "catalogSource": {
+        "platform": "Apple Music / iTunes",
+        "collectionId": 1508288493,
+        "artistId": 657630070,
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/3e/4a/5a/3e4a5ac4-fdd8-9de8-d6f3-5e206883f514/Digital_Cover_EXO_EXO_PLANET_5_EXplOration.jpg/600x600bb.jpg"
+      }
+    }
+  ],
+  "overrides": {
+    "mama": {
+      "tracks": [
+        "Mama",
+        "What Is Love",
+        "History",
+        "Angel",
+        "Two Moons (feat. Key)",
+        "Machine"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "listenUrl": "https://music.apple.com/us/album/mama-the-1st-mini-album-ep/854917291",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/mama-the-1st-mini-album-ep/854917291"
+        }
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    "xoxo": {
+      "tracks": [
+        "Wolf",
+        "Baby Don't Cry",
+        "Black Pearl",
+        "Don't Go",
+        "Let Out The Beast",
+        "3.6.5",
+        "Heart Attack",
+        "Peter Pan",
+        "Baby",
+        "My Lady",
+        "Wolf (EXO-K Version)",
+        "Wolf (Chinese Version · Kiss Ver. Bonus)",
+        "Wolf (Chinese Version)",
+        "Baby Don't Cry (Chinese Version)",
+        "Black Pearl (Chinese Version)",
+        "Don't Go (Chinese Version)",
+        "Let Out The Beast (Chinese Version)",
+        "3.6.5 (Chinese Version)",
+        "Heart Attack (Chinese Version)",
+        "Peter Pan (Chinese Version)",
+        "Baby (Chinese Version)",
+        "My Lady (Chinese Version)",
+        "Wolf (EXO-M Version)",
+        "Wolf (Korean Version)"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "listenUrl": "https://music.apple.com/us/album/the-1st-album-xoxo/980274346",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/the-1st-album-xoxo/980274346"
+        }
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    "growl": {
+      "tracks": [
+        "Growl",
+        "Wolf",
+        "XOXO (Kisses & Hugs)",
+        "Lucky",
+        "Baby Don't Cry",
+        "Black Pearl",
+        "Don't Go",
+        "Let Out the Beast",
+        "3.6.5",
+        "Heart Attack",
+        "Peter Pan",
+        "Baby",
+        "My Lady",
+        "Growl (EXO-K Version)",
+        "Growl (Chinese Version)",
+        "Wolf (Chinese Version)",
+        "XOXO (Chinese Version)",
+        "Lucky (Chinese Version)",
+        "Baby Don't Cry (Chinese Version)",
+        "Black Pearl (Chinese Version)",
+        "Don't Go (Chinese Version)",
+        "Let Out the Beast (Chinese Version)",
+        "3.6.5 (Chinese Version)",
+        "Heart Attack (Chinese Version)",
+        "Peter Pan (Chinese Version)",
+        "Baby (Chinese Version)",
+        "My Lady (Chinese Version)",
+        "Growl (EXO-M Version) [Chinese Version]"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "listenUrl": "https://music.apple.com/us/album/the-1st-album-xoxo-repackage/854908236",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/the-1st-album-xoxo-repackage/854908236"
+        }
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    "miracles-in-december": {
+      "tracks": [
+        "Miracles in December",
+        "Christmas Day",
+        "The Star",
+        "My Turn to Cry",
+        "The First Snow",
+        "Miracles in December (Classical Orchestra Version)"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "listenUrl": "https://music.apple.com/us/album/miracles-in-december-ep/854908527",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/miracles-in-december-ep/854908527"
+        }
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    "overdose": {
+      "tracks": [
+        "Overdose",
+        "Moonlight",
+        "Thunder",
+        "Run",
+        "Love, Love, Love"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "listenUrl": "https://music.apple.com/us/album/the-2nd-mini-album-overdose-ep/874164741",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/the-2nd-mini-album-overdose-ep/874164741"
+        }
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    "exodus": {
+      "tracks": [
+        "CALL ME BABY",
+        "TRANSFORMER",
+        "What If..",
+        "MY ANSWER",
+        "EXODUS",
+        "EL DORADO",
+        "PLAYBOY",
+        "HURT",
+        "Lady Luck",
+        "BEAUTIFUL"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "listenUrl": "https://music.apple.com/us/album/the-2nd-album-exodus/979878364",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/the-2nd-album-exodus/979878364"
+        }
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    "love-me-right": {
+      "tracks": [
+        "LOVE ME RIGHT",
+        "TENDER LOVE",
+        "CALL ME BABY",
+        "TRANSFORMER",
+        "What If..",
+        "MY ANSWER",
+        "EXODUS",
+        "EL DORADO",
+        "PLAYBOY",
+        "FIRST LOVE",
+        "HURT",
+        "Lady Luck",
+        "BEAUTIFUL",
+        "Promise EXO 2014"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "listenUrl": "https://music.apple.com/us/album/love-me-right-the-2nd-album-repackage/999674716",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/love-me-right-the-2nd-album-repackage/999674716"
+        }
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    "sing-for-you": {
+      "tracks": [
+        "Unfair",
+        "Sing For You",
+        "Girl x Friend",
+        "On the Snow",
+        "LIGHTSABER (Bonus Track)",
+        "Unfair (Chinese Version)",
+        "Sing For You (Chinese Version)",
+        "Girl x Friend (Chinese Version)",
+        "On the Snow (Chinese Version)",
+        "LIGHTSABER (Chinese Version) [Bonus Track]"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "listenUrl": "https://music.apple.com/us/album/sing-for-you-winter-special-album-2015/1064933592",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/sing-for-you-winter-special-album-2015/1064933592"
+        }
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    "exact": {
+      "tracks": [
+        "Lucky One",
+        "Monster",
+        "Artificial Love",
+        "Cloud 9",
+        "Heaven",
+        "White Noise",
+        "One and Only",
+        "They Never Know",
+        "Stronger",
+        "Lucky One (Instrumental)",
+        "Monster (Instrumental)",
+        "Lucky One (Chinese Version)",
+        "Monster (Chinese Version)",
+        "Artificial Love (Chinese Version)",
+        "Cloud 9 (Chinese Version)",
+        "Heaven (Chinese Version)",
+        "White Noise (Chinese Version)",
+        "One and Only (Chinese Version)",
+        "They Never Know (Chinese Version)",
+        "Stronger (Chinese Version)",
+        "Lucky One (Chinese Version) [Instrumental]",
+        "Monster (Chinese Version) [Instrumental]"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "listenUrl": "https://music.apple.com/us/album/exact-the-3rd-album/1121473062",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/exact-the-3rd-album/1121473062"
+        }
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    "lotto": {
+      "tracks": [
+        "Lotto",
+        "Lucky One",
+        "Monster",
+        "Artificial Love",
+        "Can’t Bring Me Down",
+        "Cloud 9",
+        "Heaven",
+        "She’s Dreaming",
+        "White Noise",
+        "One and Only",
+        "They Never Know",
+        "Stronger",
+        "Monster (LDN Noise Creeper Bass Remix)",
+        "Lotto (Chinese Version)",
+        "Lucky One (Chinese Version)",
+        "Monster (Chinese Version)",
+        "Artificial Love (Chinese Version)",
+        "Can’t Bring Me Down (Chinese Version)",
+        "Cloud 9 (Chinese Version)",
+        "Heaven (Chinese Version)",
+        "She’s Dreaming (Chinese Version)",
+        "White Noise (Chinese Version)",
+        "One and Only (Chinese Version)",
+        "They Never Know (Chinese Version)",
+        "Stronger (Chinese Version)",
+        "Monster (LDN Noise Creeper Bass Remix [Chinese Version])"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "listenUrl": "https://music.apple.com/us/album/lotto-the-3rd-album-repackage/1143527580",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/lotto-the-3rd-album-repackage/1143527580"
+        }
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    "for-life": {
+      "tracks": [
+        "For Life",
+        "Falling For You",
+        "What I Want For Christmas",
+        "Twenty Four",
+        "Winter Heat",
+        "For Life (Chinese Version)",
+        "Falling For You (Chinese Version)",
+        "What I Want For Christmas (Chinese Version)",
+        "Twenty Four (Chinese Version)",
+        "Winter Heat (Chinese Version)"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "listenUrl": "https://music.apple.com/us/album/for-life-winter-special-album-2016/1187031996",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/for-life-winter-special-album-2016/1187031996"
+        }
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    "the-war": {
+      "tracks": [
+        "The Eve",
+        "Ko Ko Bop",
+        "What U do?",
+        "Forever",
+        "Diamond",
+        "Touch It",
+        "Chill",
+        "Walk On Memories",
+        "Going Crazy"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "listenUrl": "https://music.apple.com/us/album/the-war-the-4th-album/1260294767",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/the-war-the-4th-album/1260294767"
+        }
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    "the-power-of-music": {
+      "tracks": [
+        "The Eve",
+        "Power",
+        "Sweet Lies",
+        "Ko Ko Bop",
+        "What U do?",
+        "Forever",
+        "Boomerang",
+        "Diamond",
+        "Touch It",
+        "Chill",
+        "Walk On Memories",
+        "Going Crazy"
+      ],
+      "tracklistLabel": "实体版完整曲目",
+      "tracklistNote": "实体版含完整 12 首，下方另附平台数字增补版。",
+      "listenUrl": "https://music.apple.com/us/album/the-power-of-music-the-4th-album-the-war-repackage-ep/1278808856",
+      "sources": [
+        {
+          "name": "Ktown4u · 实体版完整曲目",
+          "url": "https://www.ktown4u.com/iteminfo?goods_no=30493"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "editions": [
+        {
+          "name": "数字增补版",
+          "tracks": [
+            "Power",
+            "Sweet Lies",
+            "Boomerang",
+            "Power (Instrumental)"
+          ],
+          "note": "平台数字版仅收录改版新增曲目。",
+          "sources": [
+            {
+              "name": "Apple Music · 发行与曲目",
+              "url": "https://music.apple.com/us/album/the-power-of-music-the-4th-album-the-war-repackage-ep/1278808856"
+            }
+          ]
+        }
+      ]
+    },
+    "universe": {
+      "tracks": [
+        "Universe",
+        "Universe (Chinese Version)",
+        "Been Through",
+        "Stay",
+        "Fall",
+        "Good Night",
+        "Lights Out",
+        "Universe (CD Version)"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "listenUrl": "https://music.apple.com/us/album/universe-winter-special-album-2017/1328808145",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/universe-winter-special-album-2017/1328808145"
+        }
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    "countdown": {
+      "tracks": [
+        "Electric Kiss",
+        "Coming Over",
+        "Love Me Right - Romantic Universe",
+        "Lightsaber (JP version)",
+        "Tactix",
+        "Into My World",
+        "Lovin' You Mo'",
+        "Drop That (JP version)",
+        "Run This",
+        "Cosmic Railway"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "listenUrl": "https://music.apple.com/us/album/countdown/1336847916",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/countdown/1336847916"
+        }
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    "dmumt": {
+      "tracks": [
+        "Tempo",
+        "Sign",
+        "Ooh La La La",
+        "Gravity",
+        "With You",
+        "24/7",
+        "Bad Dream",
+        "Damage",
+        "Smile On My Face",
+        "Oasis",
+        "Tempo (Chinese Version)"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "listenUrl": "https://music.apple.com/us/album/dont-mess-up-my-tempo-the-5th-album/1440782229",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/dont-mess-up-my-tempo-the-5th-album/1440782229"
+        }
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    "love-shot": {
+      "tracks": [
+        "Love Shot",
+        "Tempo",
+        "Trauma",
+        "Wait",
+        "Sign",
+        "Ooh La La La",
+        "Gravity",
+        "With You",
+        "24/7",
+        "Bad Dream",
+        "Damage",
+        "Smile On My Face",
+        "Oasis",
+        "Love Shot (Chinese Version)",
+        "Tempo (Chinese Version)"
+      ],
+      "tracklistLabel": "实体版完整曲目",
+      "tracklistNote": "实体版含完整 15 首，下方另附平台数字增补版。",
+      "listenUrl": "https://music.apple.com/us/album/love-shot-the-5th-album-repackage-ep/1446231540",
+      "sources": [
+        {
+          "name": "YES24 · 实体版完整曲目",
+          "url": "https://m.yes24.com/goods/detail/67212282"
+        }
+      ],
+      "checkedAt": "2026-11-23",
+      "editions": [
+        {
+          "name": "数字增补版",
+          "tracks": [
+            "Love Shot",
+            "Trauma",
+            "Wait",
+            "Love Shot (Chinese Version)"
+          ],
+          "note": "平台数字版仅收录改版新增曲目。",
+          "sources": [
+            {
+              "name": "Apple Music · 发行与曲目",
+              "url": "https://music.apple.com/us/album/love-shot-the-5th-album-repackage-ep/1446231540"
+            }
+          ]
+        }
+      ]
+    },
+    "obsession": {
+      "tracks": [
+        "Obsession",
+        "Trouble",
+        "Jekyll",
+        "Groove",
+        "Ya Ya Ya",
+        "Baby You Are",
+        "Non Stop",
+        "Day After Day",
+        "Butterfly Effect",
+        "Obsession (Chinese Version)"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "listenUrl": "https://music.apple.com/us/album/obsession-the-6th-album/1488308374",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/obsession-the-6th-album/1488308374"
+        }
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    "dftf": {
+      "tracks": [
+        "Don't fight the feeling",
+        "Paradise",
+        "No matter",
+        "Runaway",
+        "Just as usual"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "listenUrl": "https://music.apple.com/us/album/dont-fight-the-feeling-special-album-ep/1570253219",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/dont-fight-the-feeling-special-album-ep/1570253219"
+        }
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    "exist": {
+      "tracks": [
+        "Cream Soda",
+        "Regret It",
+        "Hear Me Out",
+        "Private Party",
+        "Cinderella",
+        "No Makeup",
+        "Love Fool",
+        "Another Day",
+        "Let Me In"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "listenUrl": "https://music.apple.com/us/album/exist-the-7th-album/1695833432",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/exist-the-7th-album/1695833432"
+        }
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    "reverxe": {
+      "tracks": [
+        "Crown",
+        "Back It Up",
+        "Crazy",
+        "Suffocate",
+        "Moonlight Shadows",
+        "Back Pocket",
+        "Touch & Go",
+        "Flatline",
+        "I’m Home"
+      ],
+      "tracklistLabel": "发行版曲目",
+      "listenUrl": "https://music.apple.com/us/album/reverxe-the-8th-album/1868596000",
+      "sources": [
+        {
+          "name": "Apple Music · 发行与曲目",
+          "url": "https://music.apple.com/us/album/reverxe-the-8th-album/1868596000"
+        }
+      ],
+      "checkedAt": "2026-11-23"
+    }
+  }
+}

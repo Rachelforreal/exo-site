@@ -1,6 +1,6 @@
 // Schedule + ticketing: dual-axis state (verification × lifecycle), tour grouping, favourites, calendar export.
 import { $, $$, esc, glyph, icon, badge, phaseBadge, detailBadges, sources, safeUrl, reveal, store, toast, md, weekday, dayDiff, eventTimeLabel, instant, eventState, isConfirmed, hasTicketInfo, enhanceSegs, animateDetails, reduced } from './util.js';
-import { memberChips } from './sections.js';
+import { memberChips } from './sections.js?v=16';
 
 const MONTH_EN = ['JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE', 'JULY', 'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER'];
 const WHEN_LABELS = { active: '进行中与即将', ongoing: '进行中', upcoming: '即将开始', done: '已结束', all: '全部时间' };

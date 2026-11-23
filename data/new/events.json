@@ -1,27 +1,5 @@
 [
   {
-    "id": "ev-wb-cultural-night-20261128",
-    "date": "2026-11-28",
-    "title": "2026 微博国际文化交流之夜（中国·香港）",
-    "category": "演唱会",
-    "city": "香港",
-    "venue": "中国·香港（微博国际文化交流之夜盛典）",
-    "members": [
-      "group",
-      "kai",
-      "sehun"
-    ],
-    "verification": "official",
-    "channel": "微博",
-    "summary": "EXO 官方微博 11/22 正式官宣受邀出席 11 月 28 日于中国香港举办的「2026 微博国际文化交流之夜」。",
-    "sources": [
-      {
-        "name": "EXO 官方微博官宣帖",
-        "url": "https://m.weibo.cn/detail/5368008697447571"
-      }
-    ]
-  },
-  {
     "id": "ev-020",
     "title": "都暻秀 DAY OFF 巡演 首场（高阳 KINTEX）",
     "summary": "巡演首站三场：10/2 19:30、10/3 与 10/4 17:00（韩国时间）。原定场馆 Ticketlink Live Arena，后改至高阳 KINTEX 第 5 展厅。",
@@ -708,6 +686,86 @@
     "series": "都暻秀 2026–2027 亚巡 [DAY OFF]"
   },
   {
+    "id": "ev-lay-shanghai-exhibit-20261121",
+    "title": "张艺兴《闹天宫》上海松江印象城限定展福利活动",
+    "summary": "11 月 21 日至 23 日于上海松江印象城 B1 客服台限量派发 1,000 份限定冰箱贴周边，同步呼应《闹天宫》实体专辑发行季。",
+    "members": [
+      "lay"
+    ],
+    "category": "活动展览",
+    "date": "2026-11-21",
+    "endDate": "2026-11-23",
+    "city": "上海",
+    "venue": "松江印象城 B1",
+    "verification": "media",
+    "channel": "张艺兴吧",
+    "sources": [
+      {
+        "name": "张艺兴吧官方微博",
+        "url": "https://m.weibo.cn/u/1969348660"
+      }
+    ]
+  },
+  {
+    "id": "ev-xiumin-macau-20261122",
+    "title": "2026 XIUMIN in MACAU [SECRET AGENT X]",
+    "summary": "金珉锡（XIUMIN）澳门个人见面会，2026 年 11 月 22 日 19:00 于澳门百老汇舞台举办。",
+    "members": [
+      "xiumin"
+    ],
+    "category": "粉丝见面",
+    "date": "2026-11-22",
+    "timeLocal": "19:00 (CST)",
+    "city": "澳门",
+    "venue": "澳门百老汇舞台",
+    "ticket": {
+      "platform": "澳门百老汇 / StarDream 星梦引力",
+      "url": "https://www.broadwaymacau.com.mo/zh-hant/upcoming-events-and-concerts",
+      "note": "已于 11/22 举办"
+    },
+    "verification": "official",
+    "channel": "场馆官宣",
+    "sources": [
+      {
+        "name": "澳门百老汇官方演出页",
+        "url": "https://www.broadwaymacau.com.mo/zh-hant/upcoming-events-and-concerts"
+      },
+      {
+        "name": "StarDream 星梦引力官博",
+        "url": "https://m.weibo.cn/detail/5362587875411289"
+      }
+    ]
+  },
+  {
+    "id": "ev-kase-seoul-presale-20261123",
+    "title": "EXO-KASE《SILENT CITY》首尔站开票（会员预售 / 公售）",
+    "summary": "KAI & 世勋小分队首尔 Fan-Con 门票于 Melon Ticket 分三轮开售：11/23 20:00 KST 韩国 EXO-L 会员预售、11/24 全球会员预售、11/25 一般公售。",
+    "members": [
+      "kai",
+      "sehun"
+    ],
+    "category": "票务",
+    "date": "2026-11-23",
+    "endDate": "2026-11-25",
+    "timeKST": "20:00",
+    "city": "首尔",
+    "venue": "Melon Ticket 线上",
+    "ticket": {
+      "platform": "Melon Ticket",
+      "url": "https://weverse.io/exo/notice/40964",
+      "onSale": "11/23 会员预售 · 11/24 全球预售 · 11/25 公售",
+      "note": "高丽大学化汀体育馆 2027.01.09–10 场次"
+    },
+    "verification": "official",
+    "channel": "Weverse",
+    "sources": [
+      {
+        "name": "EXO Weverse 公告 / TopStarNews",
+        "url": "https://global.topstarnews.net/en/articleView.html?idxno=16275744"
+      }
+    ]
+  },
+  {
     "id": "ev-009",
     "title": "灿烈生日派对 2026 CHANYEOL B-day PARTY [B-side]",
     "summary": "11/26（周四）20:00（韩国时间）于 YES24 LIVE HALL 举行，全席 77,000 韩元，每人限购 1 张。粉丝俱乐部认证 10/19 14:00–10/26 23:59，会员预售 10/26 20:00–23:59，一般发售 10/27 20:00 起。同步开放 Weverse 线上直播票，票档与销售时段见 Weverse Shop 公告页。",
@@ -741,6 +799,60 @@
       {
         "name": "EXO 官方微博帖（新浪镜像）",
         "url": "https://www.sina.cn/news/detail/5355719941426625.html"
+      }
+    ]
+  },
+  {
+    "id": "ev-wb-cultural-night-20261128",
+    "date": "2026-11-28",
+    "title": "2026 微博国际文化交流之夜（中国·香港）",
+    "category": "演唱会",
+    "city": "香港",
+    "venue": "中国·香港（微博国际文化交流之夜盛典）",
+    "members": [
+      "group",
+      "kai",
+      "sehun"
+    ],
+    "verification": "official",
+    "channel": "微博",
+    "summary": "EXO 官方微博 11/22 正式官宣受邀出席 11 月 28 日于中国香港举办的「2026 微博国际文化交流之夜」。",
+    "sources": [
+      {
+        "name": "EXO 官方微博官宣帖",
+        "url": "https://m.weibo.cn/detail/5368008697447571"
+      }
+    ]
+  },
+  {
+    "id": "ev-baekhyun-macau-20261128",
+    "title": "2026 BAEKHYUN LAND in MACAU（连开两场）",
+    "summary": "边伯贤澳门个人粉丝见面会，11/28（周六）18:00 与 11/29（周日）17:00 在澳门新濠影汇综艺馆连开两场（演出约 90 分钟）。11/17 中午 12:00 已于大麦、新濠影汇及携程开票，两场门票开售即售罄。",
+    "members": [
+      "baekhyun"
+    ],
+    "category": "粉丝见面",
+    "date": "2026-11-28",
+    "endDate": "2026-11-29",
+    "timeLocal": "11/28 18:00 · 11/29 17:00 (CST)",
+    "city": "澳门",
+    "venue": "新濠影汇综艺馆",
+    "ticket": {
+      "platform": "新濠影汇 / 大麦 / 携程",
+      "url": "https://www.studiocity-macau.cn/sc/events",
+      "onSale": "2026-11-17 12:00 CST（已售罄，可关注余票/回流）",
+      "note": "票价 MOP 1,010 / 1,630 / 2,040"
+    },
+    "verification": "official",
+    "channel": "场馆官宣",
+    "sources": [
+      {
+        "name": "澳门新濠影汇官方活动页",
+        "url": "https://www.studiocity-macau.cn/sc/events"
+      },
+      {
+        "name": "大麦官方微博（新浪镜像）",
+        "url": "https://sina.cn/news/detail/5364731830605947.html"
       }
     ]
   },
@@ -841,6 +953,32 @@
     ]
   },
   {
+    "id": "ev-kase-showcase-20261201",
+    "title": "EXO-KASE 迷你一辑《Waking Up The City》发行 & 出道 Showcase",
+    "summary": "KAI & 世勋小分队 EXO-KASE 首张迷你专辑（共 7 首，含两人 SOLO 曲）于 12/1 18:00 KST（北京时间 17:00）全网公开，同日 19:30 KST 在首尔 YES24 Live Hall 举行出道 Showcase 首演主打曲。",
+    "members": [
+      "kai",
+      "sehun"
+    ],
+    "category": "发行",
+    "date": "2026-12-01",
+    "timeKST": "18:00",
+    "city": "首尔",
+    "venue": "YES24 LIVE HALL（Showcase 19:30 KST）",
+    "verification": "official",
+    "channel": "Weverse",
+    "sources": [
+      {
+        "name": "Aju Press（SM 官方通稿）",
+        "url": "https://www.ajupress.com/view/20261117111813721"
+      },
+      {
+        "name": "EXO 官方微博",
+        "url": "https://m.weibo.cn/u/6272182512"
+      }
+    ]
+  },
+  {
     "id": "ev-013",
     "title": "都暻秀 DAY OFF 巡演 高雄站",
     "summary": "高雄两场：12/19 18:00、12/20 17:00（当地时间），主办 D.SHOW Taiwan，场馆为高雄流行音乐中心海音馆。市场流传经 ibon 售票（参考票价 NT$3,880–6,480），具体开售时段与最终票价以主办方及 ibon 正式售票页为准。",
@@ -909,6 +1047,33 @@
     ]
   },
   {
+    "id": "ev-suho-macau-20261226",
+    "title": "2026 K-POP Chronicle Live: SUHO Fan-Con in MACAU",
+    "summary": "EXO 队长 SUHO 首次以 SOLO 歌手身份登上澳门新濠影汇综艺馆舞台，开启冬日「CHRONICLE」音乐篇章。12 月 26 日（周六）18:00 开演，演出约 90 分钟。",
+    "members": [
+      "suho"
+    ],
+    "category": "演唱会",
+    "date": "2026-12-26",
+    "timeLocal": "18:00 (CST)",
+    "city": "澳门",
+    "venue": "新濠影汇综艺馆",
+    "ticket": {
+      "platform": "新濠影汇 / D-SHOW",
+      "url": "https://www.studiocity-macau.cn/sc/events",
+      "onSale": "2026-11-18 14:00 CST 已开票",
+      "note": "票价 MOP 899 / 1,499 / 1,799（102/113 视线受阻区另行开售）"
+    },
+    "verification": "official",
+    "channel": "场馆官宣",
+    "sources": [
+      {
+        "name": "澳门新濠影汇官方活动页",
+        "url": "https://www.studiocity-macau.cn/sc/events"
+      }
+    ]
+  },
+  {
     "id": "ev-015",
     "title": "都暻秀 DAY OFF 巡演 新加坡站",
     "summary": "2027/1/9（周六）19:00 开演，17:30 入场（新加坡时间）。主办 UnUsUaL Entertainment。票价 VIP S$328、CAT1 S$298、CAT2 S$268、CAT3 S$238；一般发售自 2026/9/23 12:00 起。",
@@ -938,6 +1103,35 @@
       }
     ],
     "series": "都暻秀 2026–2027 亚巡 [DAY OFF]"
+  },
+  {
+    "id": "ev-kase-silent-seoul",
+    "title": "EXO-KASE Fan-Con 巡演 [SILENT CITY] 首尔首站",
+    "summary": "EXO-KASE 首轮亚洲 Fan-Con 巡演首尔站，2027 年 1 月 9 日（18:00 KST）与 1 月 10 日（17:00 KST）于高丽大学化汀体育馆连开两场。",
+    "members": [
+      "kai",
+      "sehun"
+    ],
+    "category": "演唱会",
+    "date": "2027-01-09",
+    "endDate": "2027-01-10",
+    "timeKST": "18:00",
+    "city": "首尔",
+    "venue": "高丽大学化汀体育馆",
+    "series": "EXO-KASE 2027 亚巡 [SILENT CITY]",
+    "ticket": {
+      "platform": "Melon Ticket",
+      "url": "https://weverse.io/exo/notice/40964",
+      "onSale": "2026-11-23 起分轮开票"
+    },
+    "verification": "official",
+    "channel": "Weverse",
+    "sources": [
+      {
+        "name": "EXO Weverse 官方巡演公告",
+        "url": "https://weverse.io/exo/notice/40964"
+      }
+    ]
   },
   {
     "id": "ev-016",
@@ -975,6 +1169,28 @@
     "detailNote": "场馆定于亚洲国际博览馆 10 号展馆；开演时间、票价与售票平台待主办方后续公布"
   },
   {
+    "id": "ev-kase-silent-kl",
+    "title": "EXO-KASE Fan-Con 巡演 [SILENT CITY] 吉隆坡站",
+    "summary": "2027 年 1 月 16 日（周六）于吉隆坡 IDEA LIVE ARENA 举办，EXO-L 会员预售细则已在 Weverse 公开。",
+    "members": [
+      "kai",
+      "sehun"
+    ],
+    "category": "演唱会",
+    "date": "2027-01-16",
+    "city": "吉隆坡",
+    "venue": "IDEA LIVE ARENA",
+    "series": "EXO-KASE 2027 亚巡 [SILENT CITY]",
+    "verification": "official",
+    "channel": "Weverse",
+    "sources": [
+      {
+        "name": "EXO Weverse 官方巡演公告",
+        "url": "https://weverse.io/exo/notice/40964"
+      }
+    ]
+  },
+  {
     "id": "ev-017",
     "title": "都暻秀 DAY OFF 巡演 马尼拉站",
     "summary": "2027/1/23（周六）18:00（菲律宾时间），主办 Wilbros Live。票价 ₱3,200–₱16,800，11/20 经 TicketNet 开票（见开票条目）。",
@@ -1008,6 +1224,119 @@
       }
     ],
     "series": "都暻秀 2026–2027 亚巡 [DAY OFF]"
+  },
+  {
+    "id": "ev-kase-silent-macau",
+    "title": "EXO-KASE Fan-Con 巡演 [SILENT CITY] 澳门站",
+    "summary": "2027 年 1 月 23–24 日于澳门新濠影汇综艺馆连开两场。",
+    "members": [
+      "kai",
+      "sehun"
+    ],
+    "category": "演唱会",
+    "date": "2027-01-23",
+    "endDate": "2027-01-24",
+    "city": "澳门",
+    "venue": "新濠影汇综艺馆",
+    "series": "EXO-KASE 2027 亚巡 [SILENT CITY]",
+    "verification": "official",
+    "channel": "Weverse",
+    "sources": [
+      {
+        "name": "EXO Weverse 官方巡演公告",
+        "url": "https://weverse.io/exo/notice/40964"
+      }
+    ]
+  },
+  {
+    "id": "ev-kase-silent-jakarta",
+    "title": "EXO-KASE Fan-Con 巡演 [SILENT CITY] 雅加达站",
+    "summary": "2027 年 1 月 30 日（周六）于雅加达 Beach City International Stadium 举办。",
+    "members": [
+      "kai",
+      "sehun"
+    ],
+    "category": "演唱会",
+    "date": "2027-01-30",
+    "city": "雅加达",
+    "venue": "Beach City International Stadium",
+    "series": "EXO-KASE 2027 亚巡 [SILENT CITY]",
+    "verification": "official",
+    "channel": "Weverse",
+    "sources": [
+      {
+        "name": "EXO Weverse 官方巡演公告",
+        "url": "https://weverse.io/exo/notice/40964"
+      }
+    ]
+  },
+  {
+    "id": "ev-kase-silent-tokyo",
+    "title": "EXO-KASE Fan-Con 巡演 [SILENT CITY] 东京站",
+    "summary": "2027 年 2 月 4–5 日于东京 Tokyo Garden Theater 连开两场。",
+    "members": [
+      "kai",
+      "sehun"
+    ],
+    "category": "演唱会",
+    "date": "2027-02-04",
+    "endDate": "2027-02-05",
+    "city": "东京",
+    "venue": "TOKYO GARDEN THEATER",
+    "series": "EXO-KASE 2027 亚巡 [SILENT CITY]",
+    "verification": "official",
+    "channel": "Weverse",
+    "sources": [
+      {
+        "name": "EXO Weverse 官方巡演公告",
+        "url": "https://weverse.io/exo/notice/40964"
+      }
+    ]
+  },
+  {
+    "id": "ev-kase-silent-bkk",
+    "title": "EXO-KASE Fan-Con 巡演 [SILENT CITY] 曼谷站",
+    "summary": "2027 年 2 月 13–14 日于曼谷 Thunder Dome 连开两场。",
+    "members": [
+      "kai",
+      "sehun"
+    ],
+    "category": "演唱会",
+    "date": "2027-02-13",
+    "endDate": "2027-02-14",
+    "city": "曼谷",
+    "venue": "THUNDER DOME",
+    "series": "EXO-KASE 2027 亚巡 [SILENT CITY]",
+    "verification": "official",
+    "channel": "Weverse",
+    "sources": [
+      {
+        "name": "EXO Weverse 官方巡演公告",
+        "url": "https://weverse.io/exo/notice/40964"
+      }
+    ]
+  },
+  {
+    "id": "ev-kase-silent-taipei",
+    "title": "EXO-KASE Fan-Con 巡演 [SILENT CITY] 台北站",
+    "summary": "2027 年 2 月 20 日（周六）于台北南港展览馆 / Nangang Event & Entertainment Center 举办。",
+    "members": [
+      "kai",
+      "sehun"
+    ],
+    "category": "演唱会",
+    "date": "2027-02-20",
+    "city": "台北",
+    "venue": "Nangang Event & Entertainment Center",
+    "series": "EXO-KASE 2027 亚巡 [SILENT CITY]",
+    "verification": "official",
+    "channel": "Weverse",
+    "sources": [
+      {
+        "name": "EXO Weverse 官方巡演公告",
+        "url": "https://weverse.io/exo/notice/40964"
+      }
+    ]
   },
   {
     "id": "ev-018",
@@ -1074,5 +1403,49 @@
     ],
     "series": "都暻秀 2026–2027 亚巡 [DAY OFF]",
     "detailNote": "场馆定于台北流行音乐中心；开演时间、票价与售票平台待主办方后续公布"
+  },
+  {
+    "id": "ev-kase-silent-hk",
+    "title": "EXO-KASE Fan-Con 巡演 [SILENT CITY] 香港站",
+    "summary": "2027 年 3 月 13 日（周六）于香港亚洲国际博览馆 Hall 10 举办（Weverse 新增场次）。",
+    "members": [
+      "kai",
+      "sehun"
+    ],
+    "category": "演唱会",
+    "date": "2027-03-13",
+    "city": "香港",
+    "venue": "亚洲国际博览馆 Hall 10",
+    "series": "EXO-KASE 2027 亚巡 [SILENT CITY]",
+    "verification": "official",
+    "channel": "Weverse",
+    "sources": [
+      {
+        "name": "EXO Weverse 官方巡演公告",
+        "url": "https://weverse.io/exo/notice/40964"
+      }
+    ]
+  },
+  {
+    "id": "ev-kase-silent-manila",
+    "title": "EXO-KASE Fan-Con 巡演 [SILENT CITY] 马尼拉站",
+    "summary": "2027 年 3 月 21 日（周日）于马尼拉 Smart Araneta Coliseum 举办。",
+    "members": [
+      "kai",
+      "sehun"
+    ],
+    "category": "演唱会",
+    "date": "2027-03-21",
+    "city": "马尼拉",
+    "venue": "Smart Araneta Coliseum",
+    "series": "EXO-KASE 2027 亚巡 [SILENT CITY]",
+    "verification": "official",
+    "channel": "Weverse",
+    "sources": [
+      {
+        "name": "EXO Weverse 官方巡演公告",
+        "url": "https://weverse.io/exo/notice/40964"
+      }
+    ]
   }
 ]

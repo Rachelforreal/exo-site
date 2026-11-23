@@ -2,24 +2,24 @@
 import { $, $$, esc, icon, safeUrl, reduced, reveal, overlay, clamp, enhanceSegs, animateDetails } from './util.js';
 import { lazyUniverse } from './lazyuni.js';
 import { initThemes, setPower, currentPower } from './themes.js';
-import { initHero } from './hero.js?v=9';
-import { initTicker, initNow, initMembers, initChannels } from './sections.js?v=9';
-import { initSchedule } from './schedule.js?v=9';
-import { initAlbums } from './albums.js?v=9';
-import { initSearch } from './search.js?v=9';
-import { initMode } from './mode.js?v=9';
-import { initCover } from './cover.js?v=9';
-import { initRoad } from './road.js?v=9';
-import { initMaker } from './maker.js?v=9';
-import { initWallpaper } from './wallpaper.js?v=9';
-import { initPlushieEggs } from './plushies.js?v=9';
-import { withCalendar } from './calendar.js?v=9';
-import { initSubscribe } from './subscribe.js?v=9';
-import { initFeed } from './feed.js?v=10';
-import { initGuestbook } from './guestbook.js?v=9';
-import { initVibeMotion } from './vibe-motion.js?v=9';
+import { initHero } from './hero.js?v=11';
+import { initTicker, initNow, initMembers, initChannels } from './sections.js?v=16';
+import { initSchedule } from './schedule.js?v=16';
+import { initAlbums } from './albums.js?v=16';
+import { initSearch } from './search.js?v=15';
+import { initMode } from './mode.js?v=11';
+import { initCover } from './cover.js?v=15';
+import { initRoad } from './road.js?v=11';
+import { initMaker } from './maker.js?v=11';
+import { initWallpaper } from './wallpaper.js?v=11';
+import { initPlushieEggs } from './plushies.js?v=11';
+import { withCalendar } from './calendar.js?v=11';
+import { initSubscribe } from './subscribe.js?v=11';
+import { initFeed } from './feed.js?v=11';
+import { initGuestbook } from './guestbook.js?v=11';
+import { initVibeMotion } from './vibe-motion.js?v=11';
 
-const V = '10';
+const V = '16';
 const load = name => fetch(`data/${name}.json?v=${V}`).then(r => { if (!r.ok) throw new Error(`${name}: ${r.status}`); return r.json(); });
 const SECTION_PAGE = {
   now: 'index.html',
@@ -75,15 +75,22 @@ async function boot() {
     if (page && curFile !== page) location.href = `${page}#${encodeURIComponent(id)}`;
   };
 
+  const qs = new URLSearchParams(location.search);
+  const qCard = qs.get('card');
+  const qEvent = qs.get('event');
+  const qAlbum = qs.get('album');
+  const qSched = qs.get('sched');
+  const h = decodeURIComponent(location.hash.slice(1));
+
   const sched = $('#sched-list') ? initSchedule(ctx, { openMember }) : null;
   if (sched) api.focusEvent = sched.focusEvent;
-  const mem = $('#dex') ? initMembers(ctx, { focusEvent, filterMember: id => sched?.filterMember(id) }) : null;
+  const alb = $('#shelf') ? initAlbums(ctx, { initialAlbum: qAlbum }) : null;
+  const goAlbum = slug => (alb ? alb.go(slug) : (location.href = `index.html?album=${encodeURIComponent(slug)}#albums`));
+  const mem = $('#dex') ? initMembers(ctx, { focusEvent, filterMember: id => sched?.filterMember(id), goAlbum }) : null;
   // Quick Dossier Sheet opens in-page on homepage; subpages navigate directly to member.html?id=<id>.
   if (mem) api.openMember = mem.openMember;
   if ($('#ticker')) initTicker(ctx);
   if ($('#now')) initNow(ctx, { openMember, focusEvent });
-  const alb = $('#shelf') ? initAlbums(ctx) : null;
-  const goAlbum = slug => (alb ? alb.go(slug) : (location.href = `index.html?album=${encodeURIComponent(slug)}#albums`));
 
   if ($('#channels')) {
     initChannels(ctx);
@@ -152,13 +159,6 @@ async function boot() {
   }
 
   /* ---- deep links & cross-page query params ---- */
-  const qs = new URLSearchParams(location.search);
-  const qCard = qs.get('card');
-  const qEvent = qs.get('event');
-  const qAlbum = qs.get('album');
-  const qSched = qs.get('sched');
-  const h = decodeURIComponent(location.hash.slice(1));
-
   if (qCard && !$('#maker') && curFile !== 'studio.html') {
     location.href = `studio.html?card=${encodeURIComponent(qCard)}#card`;
     return;
@@ -166,7 +166,7 @@ async function boot() {
   if (qEvent && sched) {
     setTimeout(() => focusEvent(qEvent), 350);
   } else if (qAlbum && alb) {
-    setTimeout(() => alb.go(qAlbum), 350);
+    setTimeout(() => alb.go(qAlbum), 120);
   } else if (qSched !== null && sched) {
     let payload = null;
     if (qSched && qSched.startsWith('{')) {

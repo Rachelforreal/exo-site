@@ -1,55 +1,21 @@
 {
-  "updatedAt": "2026-11-23T09:05:22.727Z",
+  "updatedAt": "2026-11-23T02:13:56.163Z",
   "items": [
     {
-      "id": "wb-5368461616220829",
-      "title_zh": "EXO-KASE 'Waking Up The City' Highlight …",
-      "summary_zh": "EXO-KASE 'Waking Up The City' Highlight Medley EXO-KASE 迷你1辑 《Waking Up The City》 ➫ 2026.12.01 下午5点 (北京时间) 🎶新歌预约 QQ音乐：#EXO_KASE# EXO #weareoneEXO# #W",
+      "id": "wb-5368053904703848",
+      "title_zh": "EXO 官宣出席 11/28 香港「2026 微博国际文化交流之夜」特别来电预告",
+      "summary_zh": "#微博国际文化交流之夜神秘来电# 有件事想打电话告诉你～11月28日，相约中国· 香港，2026#微博国际文化交流之夜# ，我们不见不散！",
       "members": [
-        "kai",
-        "sehun"
+        "group"
       ],
       "category": "weibo",
       "importance": 2,
       "source": "EXO 官方微博 (@weareoneEXO)",
       "source_type": "official",
-      "url": "https://m.weibo.cn/detail/5368461616220829",
-      "title_orig": "EXO-KASE 'Waking Up The City' Highlight …",
-      "published": "2026-11-23T09:00:53.000Z",
-      "fetched": "2026-11-23T09:05:22.727Z"
-    },
-    {
-      "id": "wb-5368461531284325",
-      "title_zh": "Delete Me🕶️ 金珉锡 INB100_XIUMIN的微博视频",
-      "summary_zh": "Delete Me🕶️ 金珉锡 #金珉锡# #秀珉# #XIUMIN# #SecretAgentX# #XIUMINinMACAU# INB100_XIUMIN的微博视频",
-      "members": [
-        "xiumin"
-      ],
-      "category": "weibo",
-      "importance": 2,
-      "source": "金珉锡官方微博 (@INB100_XIUMIN)",
-      "source_type": "official",
-      "url": "https://m.weibo.cn/detail/5368461531284325",
-      "title_orig": "Delete Me🕶️ 金珉锡 INB100_XIUMIN的微博视频",
-      "published": "2026-11-23T09:00:33.000Z",
-      "fetched": "2026-11-23T09:05:22.727Z"
-    },
-    {
-      "id": "wb-5368374893743142",
-      "title_zh": "EXO-KASE将通过此次小分队专辑，带来融入两位成员各自风格的Solo歌曲",
-      "summary_zh": "EXO-KASE将通过此次小分队专辑，带来融入两位成员各自风格的Solo歌曲。由KAI演绎的收录曲《Dirty On Me》是一首以钢琴与粗犷鼓点营造出暗黑而充满挑逗性氛围的R&B歌曲，张力十足。SEHUN的Solo曲《Everybody Move》是一首潮流舞曲，歌曲传递出“放下复杂思绪与烦恼、尽",
-      "members": [
-        "kai",
-        "sehun"
-      ],
-      "category": "weibo",
-      "importance": 2,
-      "source": "EXO 官方微博 (@weareoneEXO)",
-      "source_type": "official",
-      "url": "https://m.weibo.cn/detail/5368374893743142",
-      "title_orig": "EXO-KASE将通过此次小分队专辑，带来融入两位成员各自风格的Solo歌曲",
-      "published": "2026-11-23T03:16:17.000Z",
-      "fetched": "2026-11-23T09:05:22.727Z"
+      "url": "https://m.weibo.cn/detail/5368053904703848",
+      "title_orig": "EXO 官宣出席 11/28 香港「2026 微博国际文化交流之夜」特别来电预告",
+      "published": "2026-11-22T06:00:47.000Z",
+      "fetched": "2026-11-23T02:13:56.162Z"
     },
     {
       "id": "wb-5368008697447571",
@@ -65,7 +31,23 @@
       "url": "https://m.weibo.cn/detail/5368008697447571",
       "title_orig": "EXO 官宣受邀出席 11/28 中国·香港「2026 微博国际文化交流之夜」",
       "published": "2026-11-22T03:01:09.000Z",
-      "fetched": "2026-11-23T09:05:22.727Z"
+      "fetched": "2026-11-23T02:13:56.162Z"
+    },
+    {
+      "id": "wb-5367312599224432",
+      "title_zh": "张艺兴微博更新深圳城市文化宣传寄语",
+      "summary_zh": "#看50年的中国来深圳# 千年的中国去西安，看五百年的中国去北京，看一百年的中国去上海，看五十年的中国就来深圳。",
+      "members": [
+        "lay"
+      ],
+      "category": "weibo",
+      "importance": 2,
+      "source": "张艺兴个人微博 (@张艺兴)",
+      "source_type": "official",
+      "url": "https://m.weibo.cn/detail/5367312599224432",
+      "title_orig": "张艺兴微博更新深圳城市文化宣传寄语",
+      "published": "2026-11-20T04:55:06.000Z",
+      "fetched": "2026-11-23T02:13:56.162Z"
     },
     {
       "id": "wb-5367282693571566",
@@ -82,23 +64,7 @@
       "url": "https://m.weibo.cn/detail/5367282693571566",
       "title_orig": "EXO-KASE 首张迷你专收录曲《1 of them ones》曲风公开",
       "published": "2026-11-20T02:56:16.000Z",
-      "fetched": "2026-11-23T09:05:22.727Z"
-    },
-    {
-      "id": "wb-5367029470337719",
-      "title_zh": "Changing Majors 🏎️ 金钟仁EXO",
-      "summary_zh": "Changing Majors 🏎️ #KAI#金钟仁EXO#weareoneEXO#",
-      "members": [
-        "kai"
-      ],
-      "category": "weibo",
-      "importance": 2,
-      "source": "EXO 官方微博 (@weareoneEXO)",
-      "source_type": "official",
-      "url": "https://m.weibo.cn/detail/5367029470337719",
-      "title_orig": "Changing Majors 🏎️ 金钟仁EXO",
-      "published": "2026-11-19T10:10:03.000Z",
-      "fetched": "2026-11-23T09:05:22.727Z"
+      "fetched": "2026-11-23T02:13:56.162Z"
     },
     {
       "id": "wb-5364112742944983",
@@ -114,7 +80,7 @@
       "url": "https://m.weibo.cn/detail/5364112742944983",
       "title_orig": "都暻秀全新抒情单曲《Darling》正式上线",
       "published": "2026-11-11T09:00:01.000Z",
-      "fetched": "2026-11-23T09:05:22.727Z"
+      "fetched": "2026-11-23T02:13:56.162Z"
     },
     {
       "id": "wb-5364059886323688",
@@ -130,7 +96,7 @@
       "url": "https://m.weibo.cn/detail/5364059886323688",
       "title_orig": "好久不见 感恩这份认可与肯定",
       "published": "2026-11-11T05:29:59.000Z",
-      "fetched": "2026-11-23T09:05:22.727Z"
+      "fetched": "2026-11-23T02:13:56.162Z"
     },
     {
       "id": "wb-5363841326385617",
@@ -147,7 +113,23 @@
       "url": "https://m.weibo.cn/detail/5363841326385617",
       "title_orig": "EXO-KASE 'It’s Time To Wake Up.' EXO-KAS…",
       "published": "2026-11-10T15:01:30.000Z",
-      "fetched": "2026-11-23T09:05:22.727Z"
+      "fetched": "2026-11-23T02:13:56.162Z"
+    },
+    {
+      "id": "wb-5363666027545507",
+      "title_zh": "今天再“闹”一次🔥 张艺兴的微博视频",
+      "summary_zh": "今天再“闹”一次🔥 张艺兴的微博视频",
+      "members": [
+        "lay"
+      ],
+      "category": "weibo",
+      "importance": 2,
+      "source": "张艺兴个人微博 (@张艺兴)",
+      "source_type": "official",
+      "url": "https://m.weibo.cn/detail/5363666027545507",
+      "title_orig": "今天再“闹”一次🔥 张艺兴的微博视频",
+      "published": "2026-11-10T03:24:56.000Z",
+      "fetched": "2026-11-23T02:13:56.162Z"
     },
     {
       "id": "wb-5363479118874970",
@@ -164,7 +146,7 @@
       "url": "https://m.weibo.cn/detail/5363479118874970",
       "title_orig": "EXO-KASE 迷你1辑 《Waking Up The City》 ➫ 202…",
       "published": "2026-11-09T15:02:13.000Z",
-      "fetched": "2026-11-23T09:05:22.727Z"
+      "fetched": "2026-11-23T02:13:56.163Z"
     },
     {
       "id": "wb-5292396797232803",
@@ -180,7 +162,7 @@
       "url": "https://m.weibo.cn/detail/5292396797232803",
       "title_orig": "山海有隔，爱却可抵",
       "published": "2026-04-27T11:26:27.000Z",
-      "fetched": "2026-11-23T09:05:22.727Z"
+      "fetched": "2026-11-23T02:13:56.163Z"
     },
     {
       "id": "wb-5254704801253441",
@@ -196,7 +178,7 @@
       "url": "https://m.weibo.cn/detail/5254704801253441",
       "title_orig": "跨越山海，乐见中巴建交七十五载",
       "published": "2026-01-13T11:11:55.000Z",
-      "fetched": "2026-11-23T09:05:22.727Z"
+      "fetched": "2026-11-23T02:13:56.163Z"
     }
   ]
 }

@@ -79,30 +79,45 @@ export function initNow(ctx, { openMember, focusEvent }) {
 
   const item = n => {
     const [, m, d] = n.date.split('-');
-    const long = (n.summary || '').length > 56 || !!n.missing;
-    return `<li class="item rv">
+    const firstMember = (n.members || []).find(id => id !== 'group');
+    const imgSrc = n.image || (firstMember && ctx.byId[firstMember]?.photo) || 'img/group/exist-1.webp';
+    const summaryText = n.summary || '';
+    return `<li class="item item--card rv">
       <div class="item__date"><b>${d}</b><span>${+m} 月</span></div>
-      <div class="item__tags">${badge(n.verification)}${n.channel ? `<span class="tag">${esc(n.channel)}</span>` : ''}${memberChips(ctx, n.members, 'button')}</div>
-      <h4>${esc(n.title)}</h4>
-      ${long
-        ? `<details class="item__fold"><summary><span>${esc(n.summary)}</span><i>展开全文 ↓</i></summary><p>${esc(n.summary)}</p>${n.missing ? `<p class="item__miss"><b>待补齐凭据</b>${esc(n.missing)}</p>` : ''}<div class="item__src"><span>来源</span>${sources(n.sources)}</div></details>`
-        : `<p>${esc(n.summary)}</p><div class="item__src"><span>来源</span>${sources(n.sources)}</div>`}
+      <div class="item__body">
+        <div class="item__tags">${badge(n.verification)}${n.channel ? `<span class="tag">${esc(n.channel)}</span>` : ''}${memberChips(ctx, n.members, 'button')}</div>
+        <h4>${esc(n.title)}</h4>
+        <details class="item__fold">
+          <summary><span>${esc(summaryText)}</span><i>展开详情 ↓</i></summary>
+          <p>${esc(summaryText)}</p>
+          ${n.missing ? `<p class="item__miss"><b>待补齐凭据</b>${esc(n.missing)}</p>` : ''}
+          <div class="item__src"><span>来源</span>${sources(n.sources)}</div>
+        </details>
+      </div>
+      ${imgSrc ? `<div class="item__thumb"><img src="${esc(imgSrc)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>` : ''}
     </li>`;
   };
-  const lane = (el, list, emptyText, limit) => {
+  const lane = (el, list, emptyText, limit, startCollapsed = false) => {
     if (!list.length) { el.innerHTML = `<li class="lane__empty">${emptyText}</li>`; return; }
     let expanded = false;
+    let showing = startCollapsed ? 0 : limit;
     const renderLane = () => {
-      const slice = expanded ? list : list.slice(0, limit);
+      const slice = expanded ? list : list.slice(0, showing);
       el.innerHTML = slice.map(item).join('');
       reveal(el);
     };
     renderLane();
-    if (list.length > limit) {
+    if (list.length > showing) {
       const more = document.createElement('button');
       more.type = 'button';
       more.className = 'fold-btn lane__more';
-      const syncBtn = () => { more.textContent = expanded ? `收起其余 ${list.length - limit} 条消息 ↑` : `展开其余 ${list.length - limit} 条消息 ↓`; };
+      const syncBtn = () => {
+        if (expanded) {
+          more.textContent = showing === 0 ? `收起全部 ${list.length} 条 ↑` : `收起其余 ${list.length - showing} 条 ↑`;
+        } else {
+          more.textContent = showing === 0 ? `展开查看 ${list.length} 条线索 ↓` : `展开其余 ${list.length - showing} 条动态 ↓`;
+        }
+      };
       syncBtn();
       more.addEventListener('click', () => { expanded = !expanded; renderLane(); syncBtn(); });
       el.after(more);
@@ -112,8 +127,8 @@ export function initNow(ctx, { openMember, focusEvent }) {
   const rumor = [...ctx.news.filter(n => n.verification === 'unverified')];
   const isMob = window.matchMedia('(max-width: 720px)').matches;
   const offLane = $('#lane-official'), rumLane = $('#lane-rumor');
-  if (offLane) lane(offLane, official, '最近没有新的正式消息。', isMob ? 2 : 2);
-  if (rumLane) lane(rumLane, rumor, '目前没有在流传的未证实消息。', isMob ? 1 : 2);
+  if (offLane) lane(offLane, official, '最近没有新的正式动态。', isMob ? 2 : 3, false);
+  if (rumLane) lane(rumLane, rumor, '目前没有待确认的风声线索。', isMob ? 1 : 2, isMob);
   const offCount = $('[data-count=official]'); if (offCount) offCount.textContent = official.length || '';
   const rumCount = $('[data-count=rumor]'); if (rumCount) rumCount.textContent = rumor.length || '';
   animateDetails(nowEl);
@@ -127,7 +142,7 @@ export function initNow(ctx, { openMember, focusEvent }) {
 const VERIF_SHORT = v => (v === 'official' ? '官方' : v === 'media' ? '媒体' : '待核实');
 
 /* ---------- members: Horizontal Character Band + Jelly Spring Physics + 9 Superpower Hover FX ---------- */
-export function initMembers(ctx, { focusEvent, filterMember }) {
+export function initMembers(ctx, { focusEvent, filterMember, goAlbum }) {
   const dex = $('#dex');
   if (!dex) return { openMember: id => { location.href = 'member.html?id=' + encodeURIComponent(id); } };
   const sec = $('#members');
@@ -196,7 +211,7 @@ export function initMembers(ctx, { focusEvent, filterMember }) {
             </div>
             <p class="mpanel__st">${esc(m.status || '')}</p>
             <ul class="mpanel__stats" aria-label="收录统计">
-              <li><b>${works.length}</b>代表作</li>
+              <li><b>${works.filter(w => w.status !== 'announced').length}</b>作品条目</li>
               <li><b>${varList.length}</b>综艺档案</li>
               <li><b>${schedCount}</b>${pUp.length ? '个人日程' : '团体日程'}</li>
             </ul>
@@ -231,7 +246,7 @@ export function initMembers(ctx, { focusEvent, filterMember }) {
           ${unitTags ? `<div class="mcard__units">${unitTags}</div>` : ''}
           <p class="mcard__st">${esc(m.status || '')}</p>
           <ul class="mcard__metrics" aria-label="专栏收录内容概览">
-            <li><b>${works.length}</b>代表作</li>
+            <li><b>${works.filter(w => w.status !== 'announced').length}</b>作品条目</li>
             <li><b>${mNews.length || memberNewsOf(m.id).length}</b>动态</li>
             <li><b>${schedCount}</b>${pUp.length ? '个人日程' : '团体日程'}</li>
           </ul>
@@ -484,7 +499,7 @@ export function initMembers(ctx, { focusEvent, filterMember }) {
             <div class="sheet__badges">${badge(e.verification, { compact: true })}${phaseBadge(e)}</div></li>`;
         }).join('')}</ul>`
           : `<p class="sheet__none">当前暂无未结束的公开日程。</p>`}</section>
-        <section><h3>04 · 个人与小分队代表作</h3><ul class="sheet__works">${works.map(w => `<li><div class="sheet__work-top"><span class="tag">${esc(w.kind)}</span>${w.year ? `<time>${esc(w.year)}</time>` : ''}</div><b>${esc(w.title)}</b>${w.detail ? `<p>${esc(w.detail)}</p>` : ''}</li>`).join('')}</ul></section>
+        <section><h3>04 · 个人与小分队作品</h3><p class="sheet__none">${esc(m.worksScope || '作品选录。')}</p><ul class="sheet__works">${works.map(w => `<li><div class="sheet__work-top"><span class="tag">${esc(w.kind)}</span>${w.year ? `<time>${esc(w.year)}</time>` : ''}${w.status === 'announced' ? '<span class="tag">预定发行</span>' : ''}</div><b>${esc(w.title)}</b>${w.detail ? `<p>${esc(w.detail)}</p>` : ''}${w.sources?.length || w.albumSlug ? `<div class="item__src">${sources(w.sources)}${w.albumSlug ? `<a class="src" href="index.html?album=${encodeURIComponent(w.albumSlug)}#albums" data-sheet-album="${esc(w.albumSlug)}">在唱片架查看 →</a>` : ''}</div>` : ''}</li>`).join('')}</ul></section>
         ${mVarieties.length ? `<section><h3>05 · 代表综艺与团综精选</h3><ul class="sheet__works">${mVarieties.map(v => `<li><div class="sheet__work-top"><span class="tag">${esc(v.p)}</span><time>${esc(v.y)}</time></div><b>${esc(v.zh)}</b>${v.note ? `<p>${esc(v.note)}</p>` : ''}</li>`).join('')}</ul></section>` : ''}
         ${recentNews.length ? `<section><h3>06 · 近期相关动态</h3><ul class="sheet__news">${recentNews.map(n => `<li><div class="sheet__work-top">${badge(n.verification, { compact: true })}<span>${fullDate(n.date)} · ${esc(n.channel)}</span></div><b>${esc(n.title)}</b></li>`).join('')}</ul></section>` : ''}
         <section><h3>07 · 已核实官方入口</h3>${links.length ? `<div class="sheet__links">${links.map(c => `<a href="${esc(c.url)}" target="_blank" rel="noopener noreferrer">${esc(c.name)}${icon('arrow')}</a>`).join('')}</div>` : ''}
@@ -501,7 +516,9 @@ export function initMembers(ctx, { focusEvent, filterMember }) {
     const fm = e.target.closest('[data-filter-member]');
     if (fm) { overlay.close(sheet); filterMember(fm.dataset.filterMember); return; }
     const sev = e.target.closest('[data-sheet-ev]');
-    if (sev && focusEvent) { overlay.close(sheet); focusEvent(sev.dataset.sheetEv); }
+    if (sev && focusEvent) { overlay.close(sheet); focusEvent(sev.dataset.sheetEv); return; }
+    const sa = e.target.closest('[data-sheet-album]');
+    if (sa && goAlbum) { e.preventDefault(); overlay.close(sheet); goAlbum(sa.dataset.sheetAlbum); }
   });
   dex.addEventListener('click', e => {
     const q = e.target.closest('[data-quick]');

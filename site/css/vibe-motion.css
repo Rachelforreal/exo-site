@@ -593,50 +593,100 @@ html[data-mode=paper] .issue {
   color: var(--ink-2);
 }
 
-/* Boarding Pass Ritual Box ("你是哪一年登上这颗星球的？") */
-.exo-era-anchor {
+/* Sleek Collapsible EXO-L Era Companion Strip (replaces bulky boarding box) */
+.exo-era-strip {
   margin: 0;
-  padding: 18px 20px;
-  border-radius: 4px;
-  border: 1px solid rgba(var(--ink-rgb), 0.22);
-  background: var(--surface);
-  box-shadow: 0 14px 32px -18px rgba(29, 26, 22, 0.18);
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--surface, var(--glass)) 86%, transparent);
+  max-width: 100%;
+  box-sizing: border-box;
 }
-.exo-era-anchor__head {
+.exo-era-strip__row {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+}
+.exo-era-strip__info {
+  display: flex;
   align-items: baseline;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 12px;
+  gap: 6px 10px;
+  min-width: 0;
 }
-.exo-era-anchor__title {
-  font: 600 15.5px/1.3 var(--cn);
+.exo-era-strip__tag {
+  font: 600 10.5px/1 var(--sans);
+  letter-spacing: 0.14em;
+  color: var(--foil, var(--ac));
+  padding: 3px 7px;
+  border-radius: 3px;
+  background: rgba(var(--foil-rgb, var(--ac-rgb)), 0.12);
+  white-space: nowrap;
+}
+.exo-era-strip__stat {
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--ink-2);
+}
+.exo-era-strip__stat b,
+.exo-era-strip__stat strong {
+  font-family: var(--serif);
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 15px;
+}
+.exo-era-strip__acts {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.exo-era-strip__toggle {
+  padding: 4px 9px;
+  border-radius: 4px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink-2);
+  font: 500 11.5px/1.2 var(--sans);
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+.exo-era-strip__toggle:hover {
+  border-color: var(--foil, var(--ac));
   color: var(--ink);
 }
-.exo-era-anchor__sub {
-  font-size: 12px;
-  color: var(--ink-3);
+.exo-era-strip__card {
+  font: 500 11.5px/1.2 var(--sans);
+  color: var(--foil, var(--ac));
+  text-decoration: none;
+  white-space: nowrap;
 }
-.exo-era-anchor__chips {
+.exo-era-strip__card:hover { text-decoration: underline; text-underline-offset: 3px; }
+.exo-era-strip__drawer {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--line);
+}
+.exo-era-strip__chips {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-bottom: 14px;
 }
 .exo-era-chip {
-  padding: 5px 11px;
-  border-radius: 3px;
-  font-size: 12px;
-  border: 1px solid rgba(var(--ink-rgb), 0.2);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 11.5px;
+  border: 1px solid var(--line);
   background: var(--bg);
   color: var(--ink-2);
   cursor: pointer;
-  transition: all 0.24s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: all 0.22s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .exo-era-chip:hover {
-  transform: translateY(-1px);
-  border-color: var(--foil);
+  border-color: var(--foil, var(--ac));
   color: var(--ink);
 }
 .exo-era-chip[aria-pressed="true"] {
@@ -645,79 +695,131 @@ html[data-mode=paper] .issue {
   border-color: var(--ink);
   font-weight: 600;
 }
-.exo-era-boarding {
-  padding: 13px 16px;
-  background: var(--surface-2, #f3ece0);
-  border-left: 3px solid var(--foil);
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 14px;
-  align-items: center;
-}
-.exo-era-boarding__days {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-.exo-era-boarding__days b {
-  font: 600 26px/1.05 var(--serif);
-  color: var(--ink);
-}
-.exo-era-boarding__days span {
+.exo-era-strip__note {
+  margin: 8px 0 0;
   font-size: 12.5px;
-  color: var(--ink-2);
-}
-.exo-era-anchor__note {
-  margin: 4px 0 0;
-  font-size: 13px;
   line-height: 1.55;
-  color: var(--ink-2);
-}
-.exo-era-boarding__stamp {
-  display: grid;
-  place-items: center;
-  padding: 6px 11px;
-  border: 1px dashed var(--foil);
-  color: var(--foil);
-  font: 600 10.5px/1.25 var(--grot);
-  letter-spacing: 0.1em;
-  text-align: center;
-  transition: background 0.2s, transform 0.2s;
-}
-.exo-era-boarding__stamp b {
-  font-size: 12px;
-}
-.exo-era-boarding__stamp:hover {
-  background: rgba(var(--foil-rgb), 0.14);
-  transform: translateY(-1px);
+  color: var(--ink-3);
 }
 
-/* Gold-foil bookmark lyric card */
+/* Printed Archival Bookmark Lyric Card (replaces flat Excel-like box) */
 .issue__lyric {
-  margin: 0;
-  padding: 12px 15px;
+  position: relative;
+  margin: 6px 0 0;
+  padding: 26px 22px 18px;
   border-top: 0;
-  border-radius: 3px;
-  border: 1px solid rgba(var(--foil-rgb), 0.28);
-  border-left: 3px solid var(--foil);
-  background: linear-gradient(135deg, rgba(var(--foil-rgb), 0.08), transparent 80%);
+  border-radius: 10px 10px 6px 6px;
+  border: 1px solid rgba(var(--foil-rgb, var(--ac-rgb)), 0.34);
+  background:
+    radial-gradient(circle at 88% 14%, rgba(var(--foil-rgb, var(--ac-rgb)), 0.11), transparent 52%),
+    linear-gradient(180deg, var(--surface, var(--glass)) 0%, color-mix(in srgb, var(--surface-2, var(--bg)) 65%, var(--surface, var(--glass))) 100%);
+  box-shadow:
+    inset 0 0 0 4px var(--surface, transparent),
+    inset 0 0 0 5px rgba(var(--foil-rgb, var(--ac-rgb)), 0.18),
+    0 18px 34px -22px rgba(29, 26, 22, 0.28);
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 }
-.issue__lyric figcaption {
-  color: var(--foil);
-  letter-spacing: 0.18em;
+.issue__lyric.is-swapping blockquote {
+  animation: lyric-fade 0.42s cubic-bezier(0.22, 1, 0.36, 1);
+}
+@keyframes lyric-fade {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* Bookmark top ribbon & brass eyelet */
+.lyric-bm__ribbon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 34px;
+  height: 18px;
+  display: grid;
+  place-items: end center;
+  background: linear-gradient(180deg, rgba(var(--foil-rgb, var(--ac-rgb)), 0.26), rgba(var(--foil-rgb, var(--ac-rgb)), 0.04));
+  border-radius: 0 0 14px 14px;
+  pointer-events: none;
+}
+.lyric-bm__eyelet {
+  width: 9px;
+  height: 9px;
+  margin-bottom: 3px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 1.5px solid var(--foil, var(--ac));
+  box-shadow: 0 0 0 2px rgba(var(--foil-rgb, var(--ac-rgb)), 0.14);
+}
+.lyric-bm__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 12px;
+  font: 600 10px/1 var(--sans);
+  letter-spacing: 0.2em;
+  color: var(--foil, var(--ac));
+}
+.lyric-bm__next {
+  padding: 4px 9px;
+  border-radius: 99px;
+  border: 1px solid rgba(var(--foil-rgb, var(--ac-rgb)), 0.36);
+  background: rgba(var(--foil-rgb, var(--ac-rgb)), 0.08);
+  color: var(--ink-2);
+  font: 500 11px/1.1 var(--sans);
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+.lyric-bm__next:hover {
+  background: var(--foil, var(--ac));
+  color: var(--bg);
+  border-color: var(--foil, var(--ac));
 }
 .issue__lyric blockquote {
-  margin: 6px 0 4px;
-  padding-left: 0;
-  border-left: 0;
+  position: relative;
+  margin: 0;
+  padding: 2px 0 12px 16px;
+  border-left: 2px solid rgba(var(--foil-rgb, var(--ac-rgb)), 0.55);
 }
 .issue__lyric .ko {
-  font-size: 15.5px;
-  line-height: 1.45;
+  font-family: var(--serif), var(--cn);
+  font-size: clamp(17px, 1.55vw, 20.5px);
+  line-height: 1.55;
+  font-weight: 500;
+  color: var(--ink);
+  letter-spacing: 0.01em;
 }
+.issue__lyric .zh,
 .issue__lyric blockquote p + p {
-  font-size: 13px;
+  margin-top: 6px;
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: var(--ink-2);
+}
+.lyric-bm__foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed rgba(var(--foil-rgb, var(--ac-rgb)), 0.28);
+}
+.issue__lyric cite {
+  font-style: normal;
+  font-size: 11.5px;
+  color: var(--ink-3);
+  letter-spacing: 0.04em;
+}
+.lyric-bm__seal {
+  font: 600 9.5px/1 var(--grot);
+  letter-spacing: 0.16em;
+  color: var(--foil, var(--ac));
+  opacity: 0.85;
+  white-space: nowrap;
 }
 
 .issue__actions {
@@ -819,26 +921,60 @@ html[data-mode=paper] .issue {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+@media (max-width: 1100px) {
+  body {
+    padding-bottom: calc(86px + env(safe-area-inset-bottom));
+  }
+  .bar__nav {
+    width: calc(100vw - 20px);
+    max-width: 440px;
+    box-sizing: border-box;
+    padding: 4px 6px !important;
+    bottom: max(10px, env(safe-area-inset-bottom)) !important;
+  }
+  .bar__nav a {
+    min-height: 38px !important;
+    padding: 8px 11px !important;
+    font-size: 12.5px !important;
+  }
+}
 @media (max-width: 760px) {
-  /* 1. Prevent any horizontal overflow in paper cover & grids */
+  /* 1. Strict mobile anti-overflow & anti-clipping across all sections */
+  html, body, main, .sec {
+    max-width: 100%;
+    overflow-x: clip;
+  }
   html[data-mode=paper] .issue {
     grid-template-columns: minmax(0, 1fr);
-    gap: 18px;
+    gap: 16px;
     padding: calc(var(--bar) + 14px) 16px 28px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: clip;
   }
   .issue__stage,
   .issue__side,
   .issue__side--r,
   .mag-wrap,
   .mag,
-  .issue__ctrl {
+  .issue__ctrl,
+  .issue__ctrl-row,
+  .issue__pick,
+  .issue__box-strip,
+  .now__grid,
+  .lane,
+  .lane--feed,
+  .road__pane,
+  .era-reel-wrap {
     min-width: 0;
-    max-width: calc(100vw - 32px);
+    max-width: 100%;
     width: 100%;
     box-sizing: border-box;
   }
-  .mag__nav--prev { left: 6px; }
-  .mag__nav--next { right: 6px; }
+  .mag-nav--prev { left: 8px !important; }
+  .mag-nav--next { right: 8px !important; }
+  .mag-nav { width: 32px; height: 32px; font-size: 17px; }
   .mag {
     padding: 13px 13px 13px 15px;
     margin-right: 0;
@@ -866,13 +1002,18 @@ html[data-mode=paper] .issue {
   }
   .mag__meta {
     min-width: 0;
-    flex: 1 1 170px;
+    flex: 1 1 150px;
     font-size: 10.5px;
   }
   .mag__flip-btn {
     height: 28px;
     padding: 0 10px;
     font-size: 11px;
+    max-width: 100%;
+  }
+  .issue__ctrl-row {
+    flex-wrap: wrap;
+    gap: 6px;
   }
   .issue__ctrl-k {
     white-space: normal;
@@ -886,14 +1027,90 @@ html[data-mode=paper] .issue {
   }
   .sigil-pick {
     min-width: 0;
-    padding: 0 6px;
-    gap: 5px;
+    padding: 4px 4px;
+    gap: 4px;
   }
   .issue__toc {
     grid-template-columns: minmax(0, 1fr);
   }
-  .exo-era-boarding {
-    grid-template-columns: minmax(0, 1fr);
+  .issue__lyric {
+    padding: 24px 16px 15px;
+  }
+  /* Archive / Chronicle & Variety mobile anti-overflow & iOS safe layout */
+  .era-reel-wrap {
+    padding: 14px 12px;
+    margin: 4px 0 20px;
+    overflow: hidden;
+  }
+  .era-reel__bar {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .era-shot {
+    flex: 0 0 min(240px, 74vw);
+  }
+  .road__filters {
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 4px;
+    max-width: 100%;
+  }
+  .road__filters::-webkit-scrollbar { display: none; }
+  .road__filters > * { flex: 0 0 auto; white-space: nowrap; }
+  .road-bookmarks {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center;
+    gap: 6px !important;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 10px 12px !important;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .road-bookmarks::-webkit-scrollbar { display: none; }
+  .road-bookmarks__k,
+  .road-bm {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+  .road__controls {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    width: 100%;
+  }
+  .road__controls .field--search {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .road__controls .road__year {
+    width: 100%;
+    min-width: 0;
+    justify-content: space-between;
+  }
+  .road__controls .road__year select {
+    min-width: 0;
+    flex: 1;
+    max-width: 100%;
+  }
+  .road__list,
+  .variety,
+  .ry,
+  .rd,
+  .rd__t,
+  .vr,
+  .vr__t,
+  .vr__m {
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
   .gb__badges {
     flex-wrap: wrap;

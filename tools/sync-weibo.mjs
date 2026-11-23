@@ -34,21 +34,17 @@ export const VERIFIED_ACCOUNTS = {
   '6033930155': { name: 'baekhyunee7', label: '边伯贤个人微博', tier: 'official', members: ['baekhyun'] },
   '5675411775': { name: 'real__pcyyyyy', label: '朴灿烈个人微博', tier: 'official', members: ['chanyeol'] },
   '5340280308': { name: 'wu世勋-EXO', label: '吴世勋个人微博', tier: 'official', members: ['sehun'] },
+  '7918730710': { name: 'INB100_BAEKHYUN', label: '边伯贤官方微博', tier: 'official', members: ['baekhyun'] },
   '7917658577': { name: 'INB100_XIUMIN', label: '金珉锡官方微博', tier: 'official', members: ['xiumin'] },
   '7917780127': { name: 'INB100_CHEN', label: '金钟大官方微博', tier: 'official', members: ['chen'] },
-  '5521056657': { name: '微博韩流', label: '微博韩流官方号', tier: 'media', members: ['group'] },
+  '8019164595': { name: 'StarDream星梦引力', label: 'StarDream 主办官博', tier: 'official', members: ['group'] },
+  '5521056657': { name: '微博韩流', label: '微博韩流', tier: 'media', members: ['group'] },
   '2800982237': { name: '新浪韩娱', label: '新浪韩娱', tier: 'media', members: ['group'] },
-  '1665103091': { name: '酷狗音乐', label: '酷狗音乐官方微博', tier: 'media', members: ['group'] },
-  // 九位成员吧主 / 粉丝站官方微博
-  '5284450066': { name: '金珉锡吧_MinSeokBAR', label: '金珉锡吧', tier: 'media', members: ['xiumin'] },
-  '3315140063': { name: '金俊勉吧_SuhoBar北京分会', label: '金俊勉吧', tier: 'media', members: ['suho'] },
+  // 2026 活跃成员大吧 / 资源站（实测在更）
+  '3694863325': { name: '边伯贤FearlessBaek', label: '边伯贤大吧 FearlessBaek', tier: 'media', members: ['baekhyun'] },
+  '3675857830': { name: 'Nacho_都暻秀', label: '都暻秀资源站 Nacho', tier: 'media', members: ['do'] },
   '1969348660': { name: '张艺兴吧', label: '张艺兴吧', tier: 'media', members: ['lay'] },
-  '2702500972': { name: '边伯贤吧_BaekHyunBar', label: '边伯贤吧', tier: 'media', members: ['baekhyun'] },
-  '5716140286': { name: '金钟大吧', label: '金钟大吧', tier: 'media', members: ['chen'] },
-  '7336354367': { name: 'X-朴灿烈吧CHANBAR', label: '朴灿烈吧', tier: 'media', members: ['chanyeol'] },
   '2694760221': { name: '都暻秀吧DohkyungsooBar', label: '都暻秀吧', tier: 'media', members: ['do'] },
-  '5786583932': { name: '金钟仁吧KAIBar', label: '金钟仁吧', tier: 'media', members: ['kai'] },
-  '1789532611': { name: '吴世勋吧', label: '吴世勋吧', tier: 'media', members: ['sehun'] },
 };
 
 const SEARCH_QUERIES = [
@@ -140,7 +136,58 @@ export async function mintWeiboVisitorCookie() {
 // ============================================================================
 export async function fetchLatestWeiboPosts(cookie) {
   const byMid = new Map();
+  const ingestMblog = (mb, fallbackAcc = null) => {
+    if (!mb || !mb.user) return;
+    const uid = String(mb.user.id);
+    const acc = VERIFIED_ACCOUNTS[uid] || fallbackAcc;
+    if (!acc) return;
+    const mid = String(mb.id || mb.mid);
+    if (byMid.has(mid)) return;
+    const date = toYMD(mb.created_at);
+    if (!date.startsWith('2026')) return;
+    const text = stripHtml(mb.longText?.longTextContent || mb.text || '');
+    if (!text || text.length < 8) return;
+    if (/我投给了|铁粉打卡|脱坑出专|转发微博|超话签到|超级话题签到|发帖打榜|净化|垃圾词条|反黑|控评|空瓶|轮博|做数据|转评赞|每日一善|抽奖|团购|拼车|代拍|出卡|收卡|团票单号|实物图|冬日set|应援物|周边预售|租机|暖到你|不要忘记.*签到|签到.*不要忘记|【视频】26\d{4}|【图片】26\d{4}|【预览】26\d{4}|【饭拍】|【高清】26\d{4}/i.test(text)) return;
+    const pic = mb.bmiddle_pic || mb.thumbnail_pic || mb.pics?.[0]?.url || '';
+    byMid.set(mid, {
+      mid,
+      uid,
+      date,
+      publishedISO: mb.created_at ? new Date(mb.created_at).toISOString() : new Date().toISOString(),
+      text,
+      pic,
+      url: `https://m.weibo.cn/detail/${mid}`,
+      account: acc,
+    });
+  };
 
+  // A. 直接拉取白名单官博与活跃大吧的主页时间线
+  const directUids = ['6272182512', '7918730710', '7917780127', '8019164595', '5582937157', '3694863325', '3675857830', '1969348660'];
+  for (const uid of directUids) {
+    const acc = VERIFIED_ACCOUNTS[uid];
+    if (!acc) continue;
+    try {
+      const tUrl = `https://m.weibo.cn/api/container/getIndex?type=uid&value=${uid}&containerid=107603${uid}`;
+      const rt = await fetch(tUrl, {
+        headers: {
+          'cookie': cookie,
+          'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
+          'referer': `https://m.weibo.cn/u/${uid}`,
+          'x-requested-with': 'XMLHttpRequest',
+        },
+        signal: AbortSignal.timeout(9000),
+      });
+      if (!rt.ok) continue;
+      const tj = await rt.json();
+      for (const c of (tj?.data?.cards || [])) {
+        if (c.card_type === 9 && c.mblog) ingestMblog(c.mblog, acc);
+      }
+    } catch (e) {
+      console.warn(`[主页跳过] ${acc.name}: ${e.message}`);
+    }
+  }
+
+  // B. 补充关键词搜索
   for (const q of SEARCH_QUERIES) {
     const qUrl = `https://m.weibo.cn/api/container/getIndex?containerid=${encodeURIComponent('100103type=1&q=' + q)}&page_type=searchall`;
     try {
@@ -157,31 +204,7 @@ export async function fetchLatestWeiboPosts(cookie) {
       const sj = await rs.json();
       for (const c of (sj?.data?.cards || [])) {
         for (const item of (c.card_group || [c])) {
-          const mb = item?.mblog;
-          if (!mb || !mb.user) continue;
-          const uid = String(mb.user.id);
-          const acc = VERIFIED_ACCOUNTS[uid];
-          if (!acc) continue; // 只收录白名单内官方与权威媒体账号
-
-          const mid = String(mb.id || mb.mid);
-          if (byMid.has(mid)) continue;
-
-          const date = toYMD(mb.created_at);
-          if (!date.startsWith('2026')) continue; // 仅同步 2026 当期最新动态
-
-          const text = stripHtml(mb.longText?.longTextContent || mb.text || '');
-          if (!text || text.length < 6) continue;
-          if (/我投给了|铁粉打卡|脱坑出专/.test(text)) continue;
-
-          byMid.set(mid, {
-            mid,
-            uid,
-            date,
-            publishedISO: mb.created_at ? new Date(mb.created_at).toISOString() : new Date().toISOString(),
-            text,
-            url: `https://m.weibo.cn/detail/${mid}`,
-            account: acc,
-          });
+          ingestMblog(item?.mblog);
         }
       }
     } catch (e) {

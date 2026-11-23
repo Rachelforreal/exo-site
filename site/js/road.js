@@ -97,7 +97,7 @@ export function initRoad(ctx) {
   // Update tab counts so users immediately see how rich both archives are
   const roadTabBtn = $('[data-tab="road"]', sec);
   const varTabBtn = $('[data-tab="variety"]', sec);
-  if (roadTabBtn) roadTabBtn.innerHTML = `来时路编年 <i>${road.length + supplementalRoad.length}</i>`;
+  if (roadTabBtn) roadTabBtn.innerHTML = `大事编年 <i>${road.length + supplementalRoad.length}</i>`;
   if (varTabBtn) varTabBtn.innerHTML = `综艺合集 <i>${variety.length}</i>`;
 
   // 1. Road Chronology Filters & List
@@ -191,7 +191,7 @@ export function initRoad(ctx) {
       { year: '2023', label: '2023 ·《EXIST》盛夏重逢' },
       { year: '2026', label: '2026 ·《REVERXE》重披王冠' },
     ];
-    bmBar.innerHTML = `<span class="road-bookmarks__k">MILESTONE BOOKMARKS · 走心节点直达：</span>` +
+    bmBar.innerHTML = `<span class="road-bookmarks__k">关键年份直达</span>` +
       BOOKMARKS.map(b => `<button type="button" class="road-bm jelly-press" data-bm-year="${b.year}">${b.label}</button>`).join('');
     list.before(bmBar);
     bmBar.addEventListener('click', e => {

@@ -438,3 +438,9 @@ button.mchip:active { transform: scale(.97); }
   .ticker__in { animation: none; }
   .mp-hero__ph img#mp-img { view-transition-name: none; }
 }
+
+/* ── Mobile overflow safeguard (Android & narrow viewports) ── */
+html, body {
+  overflow-x: clip;
+  max-width: 100%;
+}

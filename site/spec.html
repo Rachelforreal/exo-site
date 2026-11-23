@@ -267,7 +267,7 @@
     <div class="spec-grid" style="margin-bottom:16px">
       <article class="spec-box">
         <h3>三页结构分层（IA）</h3>
-        <p><strong>01 · <code>index.html</code>（观测刊首页）</strong>聚焦封面、此刻速览、九人专栏、双轴行程与官方渠道；<strong>02 · <code>archive.html</code>（编年与综艺馆）</strong>承载 21 张专辑舞台、来时路与 52 档综艺；<strong>03 · <code>studio.html</code>（工坊与官娃馆）</strong>集中承载 DIY 壁纸、入坑纪念卡与 Q 版官娃贴纸架，<code>member.html</code> 提供单人深度专栏。</p>
+        <p><strong>01 · <code>index.html</code>（观测刊首页）</strong>聚焦封面、此刻速览、九人专栏、双轴行程与官方渠道；<strong>02 · <code>archive.html</code>（编年与综艺馆）</strong>承载来时路与综艺；团体、个人及分队唱片架位于首页；<strong>03 · <code>studio.html</code>（工坊与官娃馆）</strong>集中承载 DIY 壁纸、入坑纪念卡与 Q 版官娃贴纸架，<code>member.html</code> 提供单人深度专栏。</p>
       </article>
       <article class="spec-box">
         <h3>5 格核心导航与触控热区</h3>
@@ -320,7 +320,7 @@
   import { exportMemberPoster, presentExportModal } from './js/share.js';
   initMode();
 
-  const load = n => fetch(`data/${n}.json?v=5`).then(r => r.json());
+  const load = n => fetch(`data/${n}.json?v=16`).then(r => r.json());
   const [members, albums, events, news, channels, archive] = await Promise.all(['members', 'albums', 'events', 'news', 'channels', 'archive'].map(load));
   const icsText = await fetch('cal/exo.ics?v=5').then(r => (r.ok ? r.text() : '')).catch(() => '');
   const probePage = p => fetch(p, { method: 'HEAD' }).then(r => r.ok || r.status === 405 ? (r.ok ? true : fetch(p).then(g => g.ok)) : false).catch(() => false);
@@ -352,7 +352,8 @@
     ['广域编辑文案净空检查（成员/专辑/行程/消息/渠道）', !badCopyMatch, badCopyMatch ? `检测到禁用词：${badCopyMatch[0]}` : '0 处爬虫日志、空泛抒情或内部审计腔残留'],
     ['行程场馆与「待公布」标注一致性检查', venueContradictions.length === 0, venueContradictions.length ? `冲突条目：${venueContradictions.map(e => e.id).join(', ')}` : '0 条已填场馆却自称场馆待公布的矛盾记录'],
     ['21 张团体专辑「标志变形 × 时代意象」全覆盖', albumsWithDistinctMotif.length === 21, `${albumsWithDistinctMotif.length} / 21 张均具独立六边形标志演变与里程碑`],
-    ['9 位成员代表作与画册去重核实（无错配时代标签）', membersComplete.length === 9 && falseEraLabels.length === 0, `${membersComplete.length} / 9 位成员档案完整、画册无重复且时代标签全部核实`],
+    ['唱片目录覆盖九人并分开团体、个人、分队与企划', ['group', 'solo', 'unit', 'project'].every(s => albums.some(a => a.scope === s)) && members.every(m => albums.some(a => (a.members || []).includes(m.id))) && albums.every(a => a.tracks?.length && a.sources?.length), `${albums.length} 张唱片均有曲目与来源，9 人均有关联发行`],
+    ['9 位成员作品与画册结构、时代标签检查', membersComplete.length === 9 && falseEraLabels.length === 0, `${membersComplete.length} / 9 位成员满足收录与去重结构检查；${falseEraLabels.length} 位成员的 LOVE SHOT / OBSESSION 标签仍触发待复核规则。此项不代替逐图人工核验。`],
     ['双轴正交验证：「已确认」与「进行中」同时成立', ongoingConfirmed.length >= 1, `当前命中 ${ongoingConfirmed.length} 条（${ongoingConfirmed.map(e => e.id + ':' + e.title).join(' / ')}）`],
     ['跨日活动起止时刻分离校验（timeKST ⊥ endTimeKST）', multiDaySpanOk, '跨日预售起止时刻独立建模，不再把截止时刻误标为开场时刻'],
     ['逾期传闻防误标：已过日期未证实条目独立归类', staleRumors.length >= 1 && staleRumors.every(e => eventState(e).phaseLabel.includes('未见证实')), `命中 ${staleRumors.length} 条（${staleRumors[0]?.id} 标为「日期已过 · 未见证实」）`],

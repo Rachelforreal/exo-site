@@ -9,7 +9,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:ev-007@exolneverland.com
-DTSTAMP:20261123T090529Z
+DTSTAMP:20261123T031559Z
 SUMMARY:「bubble for INB100」服务终止
 DTSTART:20261120T020000Z
 DTEND:20261120T040000Z
@@ -21,8 +21,22 @@ DESCRIPTION:CBX 三人告知粉丝 9/30 起停止使用 Bubble，并于 10/
 URL:https://www.exolneverland.com/member.html?id=baekhyun
 END:VEVENT
 BEGIN:VEVENT
+UID:ev-baekhyun-macau-20261128@exolneverland.com
+DTSTAMP:20261123T031559Z
+SUMMARY:2026 BAEKHYUN LAND in MACAU（连开两场）
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261130
+DESCRIPTION:边伯贤澳门个人粉丝见面会，11/28（周六）18:00 
+ 与 11/29（周日）17:00 在澳门新濠影汇综艺馆连开两场（
+ 演出约 90 分钟）。11/17 中午 12:00 已于大麦、新濠影汇及
+ 携程开票，两场门票开售即售罄。\n核验：官方\nhttps://ww
+ w.studiocity-macau.cn/sc/events
+LOCATION:新濠影汇综艺馆\, 澳门
+URL:https://www.exolneverland.com/member.html?id=baekhyun
+END:VEVENT
+BEGIN:VEVENT
 UID:birthday-baekhyun@exolneverland.com
-DTSTAMP:20261123T090529Z
+DTSTAMP:20261123T031559Z
 DTSTART;VALUE=DATE:19920506
 DTEND;VALUE=DATE:19920507
 RRULE:FREQ=YEARLY

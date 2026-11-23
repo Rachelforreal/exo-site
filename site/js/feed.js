@@ -3,7 +3,13 @@
 import { $, esc, safeUrl, badge } from './util.js';
 
 const MEMBER = { xiumin: '珉锡', suho: '俊勉', lay: '艺兴', baekhyun: '伯贤', chen: '钟大', chanyeol: '灿烈', do: '暻秀', kai: '钟仁', sehun: '世勋', group: 'EXO' };
-const MAX = 12;
+const MEMBER_IMG = {
+  xiumin: 'img/members/xiumin.webp', suho: 'img/members/suho-2.webp', lay: 'img/members/lay.webp',
+  baekhyun: 'img/members/baekhyun.webp', chen: 'img/members/chen.webp', chanyeol: 'img/members/chanyeol-2.webp',
+  do: 'img/members/do-2.webp', kai: 'img/members/kai-2.webp', sehun: 'img/members/sehun-2.webp',
+  group: 'img/group/exist-1.webp'
+};
+const MAX = 18;
 
 const ago = iso => {
   const m = Math.round((Date.now() - Date.parse(iso)) / 60000);
@@ -21,11 +27,16 @@ const row = it => {
   const url = safeUrl(it.url);
   const title = esc(it.title_zh || it.title_orig);
   const chips = (it.members || []).filter(m => MEMBER[m]).map(m => `<span class="tag">${MEMBER[m]}</span>`).join('');
+  const firstM = (it.members || []).find(m => m !== 'group' && MEMBER_IMG[m]) || 'group';
+  const thumb = it.image || MEMBER_IMG[firstM];
   return `<li class="fitem">
-    <div class="fitem__tags">${badge(it.source_type === 'official' ? 'official' : 'media')}${chips}<time class="fitem__ago" datetime="${esc(it.published)}">${ago(it.published)}</time></div>
-    <h4>${url ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${title}</a>` : title}</h4>
-    ${it.summary_zh ? `<p>${esc(it.summary_zh)}</p>` : ''}
-    <span class="fitem__src">${esc(it.source || '')}</span>
+    <div class="fitem__main">
+      <div class="fitem__tags">${badge(it.source_type === 'official' ? 'official' : 'media')}${chips}<time class="fitem__ago" datetime="${esc(it.published)}">${ago(it.published)}</time></div>
+      <h4>${url ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${title}</a>` : title}</h4>
+      ${it.summary_zh ? `<p>${esc(it.summary_zh)}</p>` : ''}
+      <span class="fitem__src">${esc(it.source || '')}</span>
+    </div>
+    ${thumb ? `<div class="fitem__thumb"><img src="${esc(thumb)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>` : ''}
   </li>`;
 };
 
@@ -46,8 +57,30 @@ export async function initFeed() {
   }
   const items = (Array.isArray(data?.items) ? data.items : []).filter(i => i && (i.title_zh || i.title_orig)).slice(0, MAX);
   if (items.length) {
-    $('#feed-list').innerHTML = items.map(row).join('');
+    const listEl = $('#feed-list');
+    const isMob = window.matchMedia('(max-width: 720px)').matches;
+    const initLimit = isMob ? 2 : 4;
+    let expanded = false;
+    const paint = () => {
+      const vis = expanded ? items : items.slice(0, initLimit);
+      listEl.innerHTML = vis.map(row).join('');
+    };
+    paint();
     const c = $('#feed-count'); if (c) c.textContent = items.length;
+    if (items.length > initLimit) {
+      let btn = box.querySelector('.feed__more');
+      if (!btn) {
+        btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'fold-btn feed__more';
+        listEl.after(btn);
+      }
+      const syncBtn = () => {
+        btn.textContent = expanded ? `收起其余 ${items.length - initLimit} 条快讯 ↑` : `展开其余 ${items.length - initLimit} 条微博与大吧快讯 ↓`;
+      };
+      syncBtn();
+      btn.addEventListener('click', () => { expanded = !expanded; paint(); syncBtn(); });
+    }
     box.hidden = false;
   }
 

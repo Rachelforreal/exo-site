@@ -82,31 +82,51 @@ export function initCover(ctx, { openMember, focusEvent } = {}) {
   if (annivAlbum) todayParts.push(`今日恰逢《${annivAlbum.title}》发行 ${ty - +annivAlbum.date.slice(0, 4)} 周年`);
   const todayLine = todayParts.length
     ? todayParts.join('；') + '。'
-    : '这份手工装帧的十四年纪念礼盒，把九颗行星的画报小卡、来时路与银海约定都妥帖收好。';
+    : '收录九位成员最新动态、演出行程、历代专辑与画报档案。';
 
   $('[data-issue-no]', root).textContent = no.toLocaleString('en-US');
-  $('[data-issue-today]', root).innerHTML = `<b>${ty}.${String(tm).padStart(2, '0')}.${String(td).padStart(2, '0')} · ${WD[new Date(Date.UTC(ty, tm - 1, td)).getUTCDay()]} · 礼盒扉页记</b>自 2012.04.08 初遇第 ${no.toLocaleString('en-US')} 天。${esc(todayLine)}`;
+  $('[data-issue-today]', root).innerHTML = `<b>${ty}.${String(tm).padStart(2, '0')}.${String(td).padStart(2, '0')} · ${WD[new Date(Date.UTC(ty, tm - 1, td)).getUTCDay()]}</b>自 2012.04.08 初遇第 ${no.toLocaleString('en-US')} 天。${esc(todayLine)}`;
   renderCheckin($('[data-checkin]', root), today, bday?.zh || '');
   $('[data-issue-line]', root).textContent = `NO. ${no.toLocaleString('en-US')} · ${ty}.${String(tm).padStart(2, '0')}.${String(td).padStart(2, '0')}`;
 
-  /* lyric: the album whose anniversary is today, otherwise rotate through the eras */
+  /* lyric: the album whose anniversary is today, otherwise rotate through the eras, with interactive next button */
   const withLyric = ctx.albums.filter(a => a.lyric);
-  const la = annivAlbum?.lyric ? annivAlbum : withLyric[no % withLyric.length];
-  if (la) { $('[data-lyric-ko]', root).textContent = la.lyric[0]; $('[data-lyric-zh]', root).textContent = la.lyric[1]; $('[data-lyric-src]', root).textContent = `${la.lead} · 《${la.title}》 · ${la.date.slice(0, 4)}`; }
+  let lyricIdx = annivAlbum?.lyric ? Math.max(0, withLyric.indexOf(annivAlbum)) : (withLyric.length ? no % withLyric.length : 0);
+  const paintLyric = idx => {
+    const la = withLyric[idx];
+    if (!la) return;
+    $('[data-lyric-ko]', root).textContent = la.lyric[0];
+    $('[data-lyric-zh]', root).textContent = la.lyric[1];
+    $('[data-lyric-src]', root).textContent = `${la.lead} · 《${la.title}》 · ${la.date.slice(0, 4)}`;
+  };
+  paintLyric(lyricIdx);
+  const nextLyricBtn = $('[data-lyric-next]', root);
+  if (nextLyricBtn && withLyric.length > 1) {
+    nextLyricBtn.addEventListener('click', () => {
+      lyricIdx = (lyricIdx + 1) % withLyric.length;
+      const fig = $('.issue__lyric', root);
+      if (fig) {
+        fig.classList.remove('is-swapping');
+        void fig.offsetWidth;
+        fig.classList.add('is-swapping');
+      }
+      paintLyric(lyricIdx);
+    });
+  }
 
   /* cover colophon leads (below portrait, never obscuring the face/body) + table of contents */
   const official = ctx.news.filter(n => n.verification === 'official').sort((a, b) => b.date.localeCompare(a.date))[0];
   const confirmedNewsCount = ctx.news.filter(n => n.verification !== 'unverified').length;
-  const nextAnniv = ctx.albums.map(a => { let y = ty; let d = `${y}${a.date.slice(4)}`; if (d < today) d = `${++y}${a.date.slice(4)}`; return { a, d, n: y - +a.date.slice(0, 4), dd: dayDiff(d, today) }; }).filter(x => x.n > 0).sort((x, y) => x.dd - y.dd)[0];
+  const nextAnniv = ctx.albums.filter(a => a.date.length === 10).map(a => { let y = ty; let d = `${y}${a.date.slice(4)}`; if (d < today) d = `${++y}${a.date.slice(4)}`; return { a, d, n: y - +a.date.slice(0, 4), dd: dayDiff(d, today) }; }).filter(x => x.n > 0).sort((x, y) => x.dd - y.dd)[0];
   const lastRoad = (ctx.archive?.road || []).filter(r => r.d <= today).slice(-1)[0];
 
   const toc = [
-    ['members', '九人画报带', '01–09 横向果冻人物带 · 悬停触发超能力粒子'],
-    ['now', '此刻星讯', official ? `${confirmedNewsCount} 条已核验 · ${official.title}` : '官方通告与观察匣双栏对照'],
-    ['schedule', '纪念票根夹', `${ongoingList.length} 项进行中 · ${confirmedActive.length - ongoingList.length} 场即将开演（KST / CST）`],
-    ['albums', '历代唱片架', nextAnniv ? `21 张团体专辑 · 距《${nextAnniv.a.title}》${nextAnniv.n} 周年 D-${nextAnniv.dd}` : '2012–2026 六边形徽标演变与夹页手记'],
-    ['road', '来时路与团综', lastRoad ? `十四年编年 · 52 档综艺 · 最新：${lastRoad.t}` : '《MAMA》《咆哮》《约定》《REVERXE》共同记忆'],
-    ['maker', '官娃与工坊', '7 只官娃简笔画 + 2 枚姓名印记 · DIY 壁纸与 L 卡'],
+    ['members', '九人画报带', '01–09 九位成员多时期画报与单人档案'],
+    ['now', '此刻星讯', official ? `${confirmedNewsCount} 条动态 · ${official.title}` : '官博、场馆与成员大吧动态'],
+    ['schedule', '行程与票务', `${ongoingList.length} 项进行中 · ${confirmedActive.length - ongoingList.length} 场即将开演（KST / CST）`],
+    ['albums', '历代唱片架', nextAnniv ? `${ctx.albums.length} 张唱片 · 距《${nextAnniv.a.title}》${nextAnniv.n} 周年 D-${nextAnniv.dd}` : `${ctx.albums.length} 张团体、个人与分队唱片`],
+    ['explore', '编年与综艺', lastRoad ? `十四年大事编年 · 52 档综艺 · 最新：${lastRoad.t}` : '《MAMA》《咆哮》《约定》《REVERXE》档案'],
+    ['explore', '官娃与工坊', '官娃贴纸 · DIY 锁屏壁纸与专属 L 卡'],
   ];
   $('[data-toc]', root).innerHTML = toc.map(([id, t, s], i) => `<li><a href="#${id}"><i>${['01', '02', '03', '04', '05', '06'][i]}</i><span><b>${t}</b><span>${esc(s)}</span></span></a></li>`).join('');
 

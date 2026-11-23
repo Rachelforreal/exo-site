@@ -233,51 +233,54 @@ export function initVibeMotion() {
     });
   }
 
-  // 8. "Which year did you land?" EXO-L Era Onboarding Boarding Pass Ritual
+  // 8. Refined collapsible EXO-L Era Companion Strip (replaces bulky boarding box)
   const eraMount = $('#exoEraMount') || $('.issue__side');
   if (eraMount && !$('#exoEraAnchor')) {
     const ERAS = [
-      { id: '2012', date: '2012-04-08', label: '2012 · MAMA 初遇', note: '从百日 23 支预告起，看着十二道光降落未知行星的那一年。' },
-      { id: '2013', date: '2013-08-05', label: '2013 · 咆哮入坑', note: '校服和一镜到底的《Growl》，整个夏天都在循环的百万奇迹。' },
-      { id: '2015', date: '2015-03-30', label: '2015 · 约定之年', note: '「谢谢你等我」，每次听到《Promise》前奏还是会鼻酸。' },
-      { id: '2016', date: '2016-06-09', label: '2016 · Monster', note: '白昼与暗黑双概念封神，舞台上永远的教科书。' },
-      { id: '2018', date: '2018-11-02', label: '2018 · Tempo', note: '那段无伴奏阿卡贝拉一出来，就知道还是无人能替的 EXO。' },
-      { id: '2021', date: '2021-06-07', label: '2021 · DFTF 归来', note: '军白期里像收到一封来自宇宙航母的家书，心一下子就定了。' },
-      { id: '2023', date: '2023-07-10', label: '2023 · EXIST', note: '十年之后依然清爽游刃有余的《Cream Soda》盛夏重逢。' },
-      { id: '2026', date: '2026-01-19', label: '2026 · REVERXE', note: '全员军毕合流后的正规八辑，新的十四年也一起走下去。' }
+      { id: '2012', date: '2012-04-08', short: 'MAMA', label: '2012 · MAMA', note: '从初遇起，十二道光降落未知行星。' },
+      { id: '2013', date: '2013-08-05', short: '咆哮', label: '2013 · 咆哮', note: '一镜到底的《Growl》，整个夏天的百万奇迹。' },
+      { id: '2015', date: '2015-03-30', short: '约定', label: '2015 · 约定', note: '每次听到《Promise》前奏依然会动容。' },
+      { id: '2016', date: '2016-06-09', short: 'Monster', label: '2016 · Monster', note: '白昼与暗黑双概念，舞台上的教科书。' },
+      { id: '2018', date: '2018-11-02', short: 'Tempo', label: '2018 · Tempo', note: '无伴奏阿卡贝拉响起，仍是无可替代的 EXO。' },
+      { id: '2021', date: '2021-06-07', short: 'DFTF', label: '2021 · DFTF', note: '军白期里一封让人心安的宇宙家书。' },
+      { id: '2023', date: '2023-07-10', short: 'EXIST', label: '2023 · EXIST', note: '十年之后依然游刃有余的盛夏重逢。' },
+      { id: '2026', date: '2026-01-19', short: 'REVERXE', label: '2026 · REVERXE', note: '全员归位后的正规八辑，故事继续翻页。' }
     ];
     let picked = localStorage.getItem('exo-era-anchor') || '2015';
+    let drawerOpen = false;
     const box = document.createElement('div');
     box.id = 'exoEraAnchor';
-    box.className = 'exo-era-anchor';
+    box.className = 'exo-era-strip';
     const renderAnchor = () => {
       const cur = ERAS.find(x => x.id === picked) || ERAS[2];
       const days = Math.max(1, Math.floor((Date.now() - new Date(cur.date).getTime()) / 86400000));
       box.innerHTML = `
-        <div class="exo-era-anchor__head">
-          <span class="exo-era-anchor__title">你是哪一年登上这颗星球的？</span>
-          <span class="exo-era-anchor__sub">选择入坑节点，印进你的专属票根与 L 卡</span>
-        </div>
-        <div class="exo-era-anchor__chips">
-          ${ERAS.map(er => `<button type="button" class="exo-era-chip" data-era-pick="${er.id}" aria-pressed="${er.id === picked}">${er.label}</button>`).join('')}
-        </div>
-        <div class="exo-era-boarding">
-          <div class="exo-era-boarding__main">
-            <div class="exo-era-boarding__days"><b>${days.toLocaleString()} 天</b><span>从 ${cur.id} 年走到今天</span></div>
-            <p class="exo-era-anchor__note">${cur.note}</p>
+        <div class="exo-era-strip__row">
+          <div class="exo-era-strip__info">
+            <span class="exo-era-strip__tag">入坑纪年</span>
+            <span class="exo-era-strip__stat"><b>${cur.id}</b>《${cur.short}》起已同行 <strong>${days.toLocaleString()}</strong> 天</span>
           </div>
-          <a class="exo-era-boarding__stamp" href="studio.html#card" title="去印制专属 EXO-L 入坑纪念卡">
-            <span>CLASS OF</span>
-            <b>${cur.id}</b>
-          </a>
+          <div class="exo-era-strip__acts">
+            <button type="button" class="exo-era-strip__toggle" data-era-toggle aria-expanded="${drawerOpen}">${drawerOpen ? '收起 ▴' : '切换年份 ▾'}</button>
+            <a class="exo-era-strip__card" href="studio.html#card">印入 L 卡 →</a>
+          </div>
         </div>
+        ${drawerOpen ? `<div class="exo-era-strip__drawer">
+          <div class="exo-era-strip__chips">
+            ${ERAS.map(er => `<button type="button" class="exo-era-chip" data-era-pick="${er.id}" aria-pressed="${er.id === picked}">${er.label}</button>`).join('')}
+          </div>
+          <p class="exo-era-strip__note">${cur.note}</p>
+        </div>` : ''}
       `;
+      const tgl = $('[data-era-toggle]', box);
+      if (tgl) tgl.addEventListener('click', () => { drawerOpen = !drawerOpen; renderAnchor(); });
       $$('[data-era-pick]', box).forEach(b => {
         b.addEventListener('click', () => {
           picked = b.dataset.eraPick;
           const matchEra = ERAS.find(x => x.id === picked);
           localStorage.setItem('exo-era-anchor', picked);
           if (matchEra) localStorage.setItem('exo-era-date', matchEra.date);
+          drawerOpen = false;
           springWobble(box);
           renderAnchor();
         });

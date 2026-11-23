@@ -385,3 +385,46 @@ html[data-mode=paper] .portal-card:hover { box-shadow: 0 24px 44px -28px rgba(17
   .facts { grid-template-columns: 1fr; }
   .foot__love { white-space: normal; }
 }
+
+/* Editorial thumbnail layout for #now news cards */
+.item--card {
+  display: grid !important;
+  grid-template-columns: 42px minmax(0, 1fr) 74px !important;
+  gap: 6px 12px !important;
+  align-items: start;
+}
+.item--card .item__date { grid-column: 1; grid-row: 1; }
+.item--card .item__body { grid-column: 2; grid-row: 1; min-width: 0; }
+.item--card .item__body h4 { margin-top: 6px; overflow-wrap: anywhere; word-break: break-word; }
+.item--card .item__thumb {
+  grid-column: 3;
+  grid-row: 1;
+  width: 74px;
+  height: 90px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--line-2);
+  background: var(--surface-2, rgba(var(--ink-rgb), .06));
+}
+.item--card .item__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 18%;
+  display: block;
+}
+.item--card .item__fold summary span,
+.item--card .item__fold p {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+@media (max-width: 640px) {
+  .item--card {
+    grid-template-columns: 34px minmax(0, 1fr) 62px !important;
+    gap: 4px 10px !important;
+  }
+  .item--card .item__thumb {
+    width: 62px;
+    height: 76px;
+  }
+}

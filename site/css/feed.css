@@ -4,14 +4,18 @@
 .lane--feed .lane__head { grid-template-columns: 1fr auto; }
 .feed__note { margin-top: 12px; padding: 9px 12px; border-radius: 10px; background: rgba(var(--ink-rgb), .05); border-left: 2px solid var(--ink-3); color: var(--ink-2); font-size: 13.5px; line-height: 1.65; }
 .feed__list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(20px, 3vw, 48px); }
-.fitem { padding: 16px 0; border-bottom: 1px solid var(--line-2); min-width: 0; }
+.fitem { padding: 14px 0; border-bottom: 1px solid var(--line-2); min-width: 0; display: grid; grid-template-columns: minmax(0, 1fr) 66px; gap: 12px; align-items: start; }
+.fitem__main { min-width: 0; }
 .fitem__tags { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
-.fitem__ago { margin-left: auto; font-size: 12.5px; color: var(--ink-3); white-space: nowrap; }
-.fitem h4 { font: 600 16px/1.55 var(--cn); margin-top: 8px; text-wrap: pretty; }
+.fitem__ago { margin-left: auto; font-size: 12px; color: var(--ink-3); white-space: nowrap; }
+.fitem h4 { font: 600 15.5px/1.5 var(--cn); margin-top: 7px; text-wrap: pretty; overflow-wrap: anywhere; word-break: break-word; }
 .fitem h4 a { color: inherit; text-decoration: none; background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat; transition: background-size .3s; }
 .fitem h4 a:hover, .fitem h4 a:focus-visible { background-size: 100% 1px; }
-.fitem p { color: var(--ink-2); font-size: 14px; line-height: 1.7; margin-top: 4px; }
-.fitem__src { display: block; margin-top: 6px; font-size: 12.5px; color: var(--ink-3); }
+.fitem p { color: var(--ink-2); font-size: 13.5px; line-height: 1.65; margin-top: 4px; overflow-wrap: anywhere; word-break: break-word; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.fitem__src { display: block; margin-top: 6px; font-size: 12px; color: var(--ink-3); overflow-wrap: anywhere; }
+.fitem__thumb { width: 66px; height: 80px; border-radius: 6px; overflow: hidden; border: 1px solid var(--line-2); background: rgba(var(--ink-rgb), .05); }
+.fitem__thumb img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 18%; display: block; }
+.feed__more { margin-top: 14px; }
 /* paper: the generic `html[data-mode=paper] .lane` rule already supplies the card colour and removes blur */
 html[data-mode=paper] .lane--feed { border-top-color: var(--ink-2); }
 @media (max-width: 860px) { .feed__list { grid-template-columns: 1fr; } }

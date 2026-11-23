@@ -17,16 +17,16 @@
     "color2": "#7fb6ff",
     "scene": 1,
     "solo": [
-      "《Brand New》EP · 2022",
-      "《Interview X》EP · 2025"
+      "《Brand New》 EP · 2022",
+      "《Interview X》 EP · 2025"
     ],
     "photo": "img/members/xiumin.webp",
-    "photo2": "img/group/exist-2.jpg",
+    "photo2": "img/members/xiumin.webp",
     "thumb": "img/members/xiumin-s.webp",
-    "photoEra": "EXIST · Cream Soda 概念照 · 2023",
-    "photo2Era": "EXIST 团体概念画报 · 2023",
+    "photoEra": "2023 · EXIST 回归概念照",
+    "photo2Era": "2023 · EXIST 回归概念照",
     "agency": "INB100（首尔中央地方法院 2026.09.15 裁定中止专属合约效力，至一审判决）",
-    "status": "与伯贤、CHEN 共同推进对 INB100 的结算与合约本案诉讼，首次庭审延至 2026 年 12 月；粉丝订阅沟通已于 10 月迁往 Fromm。",
+    "status": "11 月 22 日在澳门百老汇舞台举办《2026 XIUMIN in MACAU [SECRET AGENT X]》个人专场；同时推进合约与结算本案诉讼，日常沟通已迁至 Fromm。",
     "latest": "个人迷你 2 辑《Interview X》（2025）；团体正规 8 辑《REVERXE》（2026.01.19）",
     "channels": [
       {
@@ -54,44 +54,268 @@
     ],
     "works": [
       {
-        "kind": "个人 EP",
-        "title": "《Brand New》",
-        "year": "2022",
-        "detail": "首张个人迷你专辑 · 90 年代 New Jack Swing 舞曲主打"
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《Memory Balloon》",
+        "year": "2025-12-15",
+        "detail": "数字单曲。",
+        "sources": [
+          {
+            "name": "INB100 官方作品目录",
+            "url": "http://inb100.com/41"
+          }
+        ]
       },
       {
-        "kind": "个人 EP",
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《Overdrop》",
+        "year": "2025-10-20",
+        "detail": "数字单曲。",
+        "sources": [
+          {
+            "name": "INB100 官方作品目录",
+            "url": "http://inb100.com/41"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人迷你专辑",
         "title": "《Interview X》",
-        "year": "2025",
-        "detail": "第二张个人迷你专辑"
+        "year": "2025-03-10",
+        "detail": "个人迷你 2 辑。",
+        "sources": [
+          {
+            "name": "INB100 官方作品目录",
+            "url": "http://inb100.com/41"
+          }
+        ]
       },
       {
-        "kind": "小分队",
-        "title": "EXO-CBX《Hey Mama!》《Blooming Days》",
-        "year": "2016–2018",
-        "detail": "与伯贤、CHEN 组成首支小分队，兼发日文正规辑《MAGIC》"
+        "category": "projects",
+        "kind": "合作／企划",
+        "title": "100RED《The Last Christmas》",
+        "year": "2024-12-10",
+        "detail": "厂牌群星冬日合作，不是 XIUMIN 个人专辑。",
+        "sources": [
+          {
+            "name": "INB100 官方作品目录",
+            "url": "http://inb100.com/41"
+          }
+        ]
       },
       {
-        "kind": "见面会",
-        "title": "首尔生日见面会（XSCALA）",
-        "year": "2026.03",
-        "detail": "2026 年最近一次公开个人线下专场（03.21）"
+        "category": "ost",
+        "kind": "OST",
+        "title": "《Daisy》",
+        "year": "2023-09-15",
+        "detail": "《社长爱豆超市》OST Part. 1。",
+        "sources": [
+          {
+            "name": "INB100 官方作品目录",
+            "url": "http://inb100.com/41"
+          }
+        ]
+      },
+      {
+        "category": "projects",
+        "kind": "合作／企划",
+        "title": "《Our Spring : Who?》",
+        "year": "2023-04-09",
+        "detail": "与 EUNHA 合作。",
+        "sources": [
+          {
+            "name": "Qobuz · XIUMIN 发行目录",
+            "url": "https://www.qobuz.com/au-en/interpreter/xiumin/4943004"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人迷你专辑",
+        "title": "《Brand New》",
+        "year": "2022-09-26",
+        "detail": "个人迷你 1 辑。",
+        "sources": [
+          {
+            "name": "INB100 官方作品目录",
+            "url": "http://inb100.com/41"
+          }
+        ]
+      },
+      {
+        "category": "ost",
+        "kind": "OST",
+        "title": "《To my one and only you》",
+        "year": "2021-01-31",
+        "detail": "《哲仁王后》OST Part. 7。",
+        "sources": [
+          {
+            "name": "INB100 官方作品目录",
+            "url": "http://inb100.com/41"
+          }
+        ]
+      },
+      {
+        "category": "units",
+        "kind": "分队 OST",
+        "title": "EXO-CBX《Be My Love》",
+        "year": "2019-07-17",
+        "detail": "《恋爱播放列表 4》OST Part. 1。",
+        "sources": [
+          {
+            "name": "INB100 官方作品目录",
+            "url": "http://inb100.com/41"
+          }
+        ]
+      },
+      {
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《You（이유）》",
+        "year": "2019",
+        "detail": "SM STATION 个人单曲。",
+        "sources": [
+          {
+            "name": "Apple Music · XIUMIN",
+            "url": "https://music.apple.com/us/artist/xiumin/1053793430"
+          }
+        ]
+      },
+      {
+        "category": "units",
+        "kind": "分队正规专辑",
+        "title": "EXO-CBX《MAGIC》",
+        "year": "2018-05-09",
+        "detail": "日本首张正规专辑。",
+        "sources": [
+          {
+            "name": "EXO 日本官网 · CBX 发行目录",
+            "url": "https://exo-jp.net/en/discography/index.php?page=7"
+          }
+        ]
+      },
+      {
+        "category": "units",
+        "kind": "分队迷你专辑",
+        "title": "EXO-CBX《Blooming Days》",
+        "year": "2018-04-10",
+        "detail": "韩语迷你 2 辑。",
+        "sources": [
+          {
+            "name": "INB100 官方作品目录",
+            "url": "http://inb100.com/41"
+          }
+        ]
+      },
+      {
+        "category": "units",
+        "kind": "分队迷你专辑",
+        "title": "EXO-CBX《GIRLS》",
+        "year": "2017-05-24",
+        "detail": "日本出道迷你专辑。",
+        "sources": [
+          {
+            "name": "EXO 日本官网 · CBX 发行目录",
+            "url": "https://exo-jp.net/en/discography/index.php?page=7"
+          }
+        ]
+      },
+      {
+        "category": "projects",
+        "kind": "合作／企划",
+        "title": "《Young & Free》",
+        "year": "2017",
+        "detail": "与 MARK 合作。",
+        "sources": [
+          {
+            "name": "Apple Music · XIUMIN",
+            "url": "https://music.apple.com/us/artist/xiumin/1053793430"
+          }
+        ]
+      },
+      {
+        "category": "units",
+        "kind": "分队迷你专辑",
+        "title": "EXO-CBX《Hey Mama!》",
+        "year": "2016-10-31",
+        "detail": "韩语迷你 1 辑。",
+        "sources": [
+          {
+            "name": "INB100 官方作品目录",
+            "url": "http://inb100.com/41"
+          }
+        ]
+      },
+      {
+        "category": "ost",
+        "kind": "OST",
+        "title": "《For You》",
+        "year": "2016-08-25",
+        "detail": "CHEN、BAEKHYUN、XIUMIN 联名演唱《步步惊心：丽》OST Part. 1。",
+        "sources": [
+          {
+            "name": "INB100 官方作品目录",
+            "url": "http://inb100.com/41"
+          }
+        ]
+      },
+      {
+        "category": "projects",
+        "kind": "合作／企划",
+        "title": "《Call You Bae》",
+        "year": "2016",
+        "detail": "JIMIN 主艺人，XIUMIN 客席合作。",
+        "sources": [
+          {
+            "name": "Apple Music · XIUMIN",
+            "url": "https://music.apple.com/us/artist/xiumin/1053793430"
+          }
+        ]
+      },
+      {
+        "category": "ost",
+        "kind": "OST",
+        "title": "《You Are The One》",
+        "year": "2015-10-30",
+        "detail": "《爱上挑战》OST Part. 1。",
+        "sources": [
+          {
+            "name": "INB100 官方作品目录",
+            "url": "http://inb100.com/41"
+          }
+        ]
       }
     ],
     "gallery": [
       {
         "src": "img/members/xiumin.webp",
-        "era": "EXIST · Cream Soda 概念照 · 2023"
+        "era": "2023 · EXIST 回归概念照"
       },
       {
-        "src": "img/group/exist-2.jpg",
-        "era": "EXIST 团体概念画报 · 2023"
+        "src": "img/members/xiumin-7.webp",
+        "era": "2023 · EXIST 回归概念照"
       },
       {
-        "src": "img/group/dftf-2.jpg",
-        "era": "DON'T FIGHT THE FEELING 团体概念画报 · 2021"
+        "src": "img/members/xiumin-2.webp",
+        "era": "2022 · Brand New 个人概念照"
+      },
+      {
+        "src": "img/members/xiumin-3.webp",
+        "era": "2022 · Brand New 个人概念照"
+      },
+      {
+        "src": "img/members/xiumin-4.webp",
+        "era": "2021 · DFTF 特别专概念照"
+      },
+      {
+        "src": "img/members/xiumin-6.webp",
+        "era": "2018 · TEMPO · LOVE SHOT 概念照"
       }
-    ]
+    ],
+    "worksCheckedAt": "2026-11-23",
+    "worksScope": "收录个人专辑与部分单曲、OST及合作发行，并非全部歌曲目录。分队与企划单独列示，同作品不同版本合并收录。"
   },
   {
     "id": "suho",
@@ -111,17 +335,18 @@
     "color2": "#3f7dff",
     "scene": 2,
     "solo": [
-      "《Self-Portrait》EP · 2020",
-      "《Grey Suit》EP · 2022",
-      "《1 to 3》EP · 2024"
+      "《Self-Portrait》 EP · 2020",
+      "《Grey Suit》 EP · 2022",
+      "《1 to 3》 EP · 2024",
+      "《Who Are You》 EP · 2025"
     ],
-    "photo": "img/members/suho.webp",
-    "photo2": "img/members/suho-2.webp",
+    "photo": "img/members/suho-2.webp",
+    "photo2": "img/members/suho-3.webp",
     "thumb": "img/members/suho-s.webp",
-    "photoEra": "EXIST · Cream Soda 概念照 · 2023",
-    "photo2Era": "REVERXE · Crown 概念照 · 2026",
+    "photoEra": "2026 · REVERXE 概念照 I",
+    "photo2Era": "2026 · REVERXE 概念照 II",
     "agency": "SM Entertainment",
-    "status": "11 月 6–8 日带队完成首尔 KSPO Dome 安可演唱会《EXhOrizon [dot]》三场演出；目前作为固定成员出演 SBS 街头音乐综艺《The Listen》第 6 季（每周三 22:50 KST）。",
+    "status": "刚结束首尔安可巡演《EXhOrizon [dot]》，常驻出演 SBS《The Listen》第 6 季，并将于 12 月 26 日在澳门新濠影汇举办《CHRONICLE》个人 Fan-Con。",
     "latest": "节目合作单曲《Let's Stay Well》（2026.10.04）；团体正规 8 辑《REVERXE》（2026.01.19）",
     "channels": [
       {
@@ -143,48 +368,237 @@
     "units": [],
     "works": [
       {
-        "kind": "个人 EP",
-        "title": "《Self-Portrait（自画像）》",
-        "year": "2020",
-        "detail": "首张个人迷你专辑 · 主打《Let's Love》，全专参与概念与作词"
-      },
-      {
-        "kind": "个人 EP",
-        "title": "《Grey Suit》",
-        "year": "2022",
-        "detail": "退伍回归迷你 2 辑 · 现代摇滚乐队编制"
-      },
-      {
-        "kind": "个人 EP",
-        "title": "《1 to 3》",
-        "year": "2024",
-        "detail": "迷你 3 辑 · 双主打英伦摇滚与复古放克"
-      },
-      {
+        "category": "singles",
         "kind": "节目单曲",
         "title": "《Let's Stay Well》",
-        "year": "2026.10",
-        "detail": "SBS《The Listen 6》项目单曲"
+        "year": "2026-10-04",
+        "detail": "节目企划单曲。",
+        "sources": [
+          {
+            "name": "Apple Music · SUHO",
+            "url": "https://music.apple.com/us/artist/suho/80064157"
+          }
+        ]
+      },
+      {
+        "category": "ost",
+        "kind": "OST",
+        "title": "《Butterflies in my heart》",
+        "year": "2026-02-05",
+        "detail": "《I am SOLO》OST Part. 2。",
+        "sources": [
+          {
+            "name": "Apple Music · SUHO",
+            "url": "https://music.apple.com/us/artist/suho/80064157"
+          }
+        ]
+      },
+      {
+        "category": "projects",
+        "kind": "合作／企划",
+        "title": "《In Trouble》",
+        "year": "2026",
+        "detail": "多位歌手共同署名的合作曲，不是个人专辑。",
+        "sources": [
+          {
+            "name": "Apple Music · SUHO",
+            "url": "https://music.apple.com/us/artist/suho/80064157"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人迷你专辑",
+        "title": "《Who Are You》",
+        "year": "2025-09-22",
+        "detail": "个人迷你 4 辑，7 首。",
+        "sources": [
+          {
+            "name": "EXO 日本官网 · Who Are You",
+            "url": "https://exo-jp.net/en/news/detail.php?id=1128165"
+          }
+        ]
+      },
+      {
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《Winter is coming》",
+        "year": "2025",
+        "detail": "Seasons of Love 0.3 项目单曲。",
+        "sources": [
+          {
+            "name": "Apple Music · SUHO",
+            "url": "https://music.apple.com/us/artist/suho/80064157"
+          }
+        ]
+      },
+      {
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《I'll be here》",
+        "year": "2025",
+        "detail": "数字单曲。",
+        "sources": [
+          {
+            "name": "Apple Music · SUHO",
+            "url": "https://music.apple.com/us/artist/suho/80064157"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人迷你专辑",
+        "title": "《1 to 3》",
+        "year": "2024",
+        "detail": "个人迷你 3 辑。",
+        "sources": [
+          {
+            "name": "Apple Music · SUHO",
+            "url": "https://music.apple.com/us/artist/suho/80064157"
+          }
+        ]
+      },
+      {
+        "category": "singles",
+        "kind": "先行单曲",
+        "title": "《Cheese (feat. WENDY)》",
+        "year": "2024",
+        "detail": "《1 to 3》先行曲。",
+        "sources": [
+          {
+            "name": "Apple Music · SUHO",
+            "url": "https://music.apple.com/us/artist/suho/80064157"
+          }
+        ]
+      },
+      {
+        "category": "ost",
+        "kind": "OST",
+        "title": "《Love You More Gradually》",
+        "year": "2024",
+        "detail": "《世子消失了》OST Part. 1。",
+        "sources": [
+          {
+            "name": "Apple Music · SUHO",
+            "url": "https://music.apple.com/us/artist/suho/80064157"
+          }
+        ]
+      },
+      {
+        "category": "ost",
+        "kind": "OST",
+        "title": "《FOREVER》",
+        "year": "2023",
+        "detail": "《京城怪物》OST Part. 1。",
+        "sources": [
+          {
+            "name": "Apple Music · SUHO",
+            "url": "https://music.apple.com/us/artist/suho/80064157"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人迷你专辑",
+        "title": "《Grey Suit》",
+        "year": "2022",
+        "detail": "个人迷你 2 辑。",
+        "sources": [
+          {
+            "name": "Apple Music · SUHO",
+            "url": "https://music.apple.com/us/artist/suho/80064157"
+          }
+        ]
+      },
+      {
+        "category": "ost",
+        "kind": "OST",
+        "title": "《Call me a Freak》",
+        "year": "2022",
+        "detail": "《真剑胜负》OST Part. 4。",
+        "sources": [
+          {
+            "name": "Apple Music · SUHO",
+            "url": "https://music.apple.com/us/artist/suho/80064157"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人迷你专辑",
+        "title": "《Self-Portrait》",
+        "year": "2020",
+        "detail": "个人迷你 1 辑。",
+        "sources": [
+          {
+            "name": "Apple Music · SUHO",
+            "url": "https://music.apple.com/us/artist/suho/80064157"
+          }
+        ]
+      },
+      {
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《Dinner》",
+        "year": "2018",
+        "detail": "与 Jang Jane 合作。",
+        "sources": [
+          {
+            "name": "Apple Music · SUHO",
+            "url": "https://music.apple.com/us/artist/suho/80064157"
+          }
+        ]
+      },
+      {
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《Curtain》",
+        "year": "2017",
+        "detail": "SM STATION；与宋英珠合作。",
+        "sources": [
+          {
+            "name": "Apple Music · SUHO",
+            "url": "https://music.apple.com/us/artist/suho/80064157"
+          }
+        ]
       }
     ],
     "gallery": [
       {
-        "src": "img/members/suho.webp",
-        "era": "EXIST · Cream Soda 概念照 · 2023"
-      },
-      {
         "src": "img/members/suho-2.webp",
-        "era": "REVERXE · Crown 概念照 I · 2026"
+        "era": "2026 · REVERXE 概念照 I"
       },
       {
-        "src": "img/members/suho-3.jpg",
-        "era": "REVERXE · Crown 概念照 II · 2026"
+        "src": "img/members/suho-3.webp",
+        "era": "2026 · REVERXE 概念照 II"
       },
       {
-        "src": "img/members/suho-4.jpg",
-        "era": "REVERXE · 旷野预告画报 · 2026"
+        "src": "img/members/suho-4.webp",
+        "era": "2026 · REVERXE 预告画报"
+      },
+      {
+        "src": "img/members/suho-6.webp",
+        "era": "2024 · 1 to 3 个人概念照"
+      },
+      {
+        "src": "img/members/suho.webp",
+        "era": "2023 · EXIST 回归概念照"
+      },
+      {
+        "src": "img/members/suho-7.webp",
+        "era": "2022 · Grey Suit 个人概念照"
+      },
+      {
+        "src": "img/members/suho-5.webp",
+        "era": "官方精选 · 官方画报与造型写真"
+      },
+      {
+        "src": "img/members/suho-8.webp",
+        "era": "2018 · TEMPO · LOVE SHOT 概念照"
       }
-    ]
+    ],
+    "worksCheckedAt": "2026-11-23",
+    "worksScope": "收录个人专辑与部分单曲、OST及合作发行，并非全部歌曲目录。分队与企划单独列示，同作品不同版本合并收录。"
   },
   {
     "id": "lay",
@@ -204,18 +618,26 @@
     "color2": "#6fd6a0",
     "scene": 3,
     "solo": [
-      "《Lose Control》EP · 2016",
-      "《NAMANANA》· 2018",
-      "《莲》· 2020",
-      "《西》EP · 2022"
+      "《LOSE CONTROL》 EP · 2016",
+      "《SHEEP》 · 2017",
+      "《Winter Special Gift》 EP · 2017",
+      "《NAMANANA》 · 2018",
+      "《HONEY》 EP · 2019",
+      "《莲（LIT）》 · 2020",
+      "《PRODUCER》 · 2021",
+      "《東（EAST）》 EP · 2021",
+      "《西（WEST）》 EP · 2022",
+      "《STEP》 · 2024",
+      "《闹天宫（ROCK THE HEAVENLY PALACE）》 · 2025",
+      "《斗战胜佛（Flawed Crown）》 · 2026"
     ],
-    "photo": "img/members/lay.webp",
-    "photo2": "img/members/lay-2.webp",
+    "photo": "img/members/lay-2.webp",
+    "photo2": "img/members/lay-4.webp",
     "thumb": "img/members/lay-s.webp",
-    "photoEra": "REVERXE · Crown 概念照 · 2026",
-    "photo2Era": "REVERXE · Crown 概念照 · 2026",
+    "photoEra": "2026 · REVERXE 概念照 II",
+    "photo2Era": "2026 · REVERXE 预告画报",
     "agency": "张艺兴工作室（个人事务）· SM Entertainment（团体唱片合作）",
-    "status": "参与 2026 团体正规 8 辑《REVERXE》全专录音（未参与打歌与巡演场次）；11 月 10 日开启实体专辑《闹天宫》预售，11 月 11 日获授第二十二届中美电影节「国际影视艺术交流大使」。",
+    "status": "《闹天宫》实体专辑预售及上海限定展进行中，11 月获第二十二届中美电影节「国际影视艺术交流大使」并官宣君佩全球首位品牌代言人。",
     "latest": "实体专辑《闹天宫》（2026.11.10 开启预售）；团体正规 8 辑《REVERXE》（2026.01.19）",
     "channels": [
       {
@@ -245,50 +667,320 @@
     "units": [],
     "works": [
       {
-        "kind": "个人 EP",
-        "title": "《LOSE CONTROL》",
-        "year": "2016",
-        "detail": "首张个人迷你专辑 · 全专包办词曲编制作"
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《Bad Girl》",
+        "year": "2026-10-08",
+        "detail": "数字单曲。",
+        "sources": [
+          {
+            "name": "Apple Music · LAY",
+            "url": "https://music.apple.com/us/artist/lay/1118027719"
+          }
+        ]
       },
       {
-        "kind": "个人正规",
-        "title": "《NAMANANA（梦不落雨林）》",
-        "year": "2018",
-        "detail": "中美同步发行双语正规专辑 · M-Pop 概念起点"
+        "category": "projects",
+        "kind": "合作／企划",
+        "title": "D.N.A《Think About It》",
+        "year": "2026-08-07",
+        "detail": "LAY、颜人中、GALI、TEN、李治廷联合署名。",
+        "sources": [
+          {
+            "name": "Spotify · 联名署名与发行日期",
+            "url": "https://open.spotify.com/track/3XCJcVl19AgBqfzL93BLfC"
+          }
+        ]
       },
       {
-        "kind": "个人正规",
-        "title": "《莲（LIT）》",
-        "year": "2020",
-        "detail": "上下篇双章结构 · 传统鼓点融合都市 Trap"
+        "category": "albums",
+        "kind": "个人正规专辑",
+        "title": "《斗战胜佛（Flawed Crown）》",
+        "year": "2026",
+        "detail": "个人正规专辑；不与《闹天宫》混为一张。",
+        "sources": [
+          {
+            "name": "Apple Music · LAY",
+            "url": "https://music.apple.com/us/artist/lay/1118027719"
+          }
+        ]
       },
       {
-        "kind": "个人 EP",
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《Crossfire》",
+        "year": "2026",
+        "detail": "另有 Rich The Kid 合作版本，在此合并记录。",
+        "sources": [
+          {
+            "name": "Apple Music · LAY",
+            "url": "https://music.apple.com/us/artist/lay/1118027719"
+          }
+        ]
+      },
+      {
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《故香》",
+        "year": "2026",
+        "detail": "数字单曲。",
+        "sources": [
+          {
+            "name": "Apple Music · LAY",
+            "url": "https://music.apple.com/us/artist/lay/1118027719"
+          }
+        ]
+      },
+      {
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《Call My Name》",
+        "year": "2026",
+        "detail": "数字单曲。",
+        "sources": [
+          {
+            "name": "Apple Music · LAY",
+            "url": "https://music.apple.com/us/artist/lay/1118027719"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人正规专辑",
+        "title": "《闹天宫（ROCK THE HEAVENLY PALACE）》",
+        "year": "2025",
+        "detail": "个人正规专辑。",
+        "sources": [
+          {
+            "name": "Apple Music · LAY",
+            "url": "https://music.apple.com/us/artist/lay/1118027719"
+          },
+          {
+            "name": "LAY 官方发行目录",
+            "url": "https://www.youtube.com/@layzhang/releases"
+          }
+        ]
+      },
+      {
+        "category": "projects",
+        "kind": "合作／企划",
+        "title": "《为你揭晓》",
+        "year": "2025",
+        "detail": "与林俊杰合作。",
+        "sources": [
+          {
+            "name": "LAY 官方发行目录",
+            "url": "https://www.youtube.com/@layzhang/releases"
+          }
+        ]
+      },
+      {
+        "category": "projects",
+        "kind": "合作／企划",
+        "title": "《easy》",
+        "year": "2025",
+        "detail": "与 JVKE 合作。",
+        "sources": [
+          {
+            "name": "Apple Music · LAY",
+            "url": "https://music.apple.com/us/artist/lay/1118027719"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人正规专辑",
+        "title": "《STEP》",
+        "year": "2024-06-14",
+        "detail": "全英文专辑，含后续 Deluxe Version。",
+        "sources": [
+          {
+            "name": "Apple Music · STEP",
+            "url": "https://music.apple.com/cn/album/step/1746479514"
+          }
+        ]
+      },
+      {
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《Run Back To You》",
+        "year": "2024",
+        "detail": "与 Lauv 合作。",
+        "sources": [
+          {
+            "name": "Apple Music · LAY",
+            "url": "https://music.apple.com/us/artist/lay/1118027719"
+          }
+        ]
+      },
+      {
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《Psychic》",
+        "year": "2024",
+        "detail": "数字单曲；不同语言版合并记录。",
+        "sources": [
+          {
+            "name": "Apple Music · LAY",
+            "url": "https://music.apple.com/us/artist/lay/1118027719"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人迷你专辑",
         "title": "《西（WEST）》",
         "year": "2022",
-        "detail": "国风电子与 R&B 迷你专辑"
+        "detail": "个人迷你专辑。",
+        "sources": [
+          {
+            "name": "LAY 官方发行目录",
+            "url": "https://www.youtube.com/@layzhang/releases"
+          }
+        ]
       },
       {
-        "kind": "实体新作",
-        "title": "《闹天宫》",
-        "year": "2026.11",
-        "detail": "《斗战胜佛》前传实体专辑（11.10 开启预售）"
+        "category": "projects",
+        "kind": "合作／企划",
+        "title": "《Dawn to Dusk》",
+        "year": "2022",
+        "detail": "与 24kGoldn 合作发行；不当作个人正规专辑。",
+        "sources": [
+          {
+            "name": "LAY 官方发行目录",
+            "url": "https://www.youtube.com/@layzhang/releases"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人专辑",
+        "title": "《PRODUCER》",
+        "year": "2021",
+        "detail": "个人专辑。",
+        "sources": [
+          {
+            "name": "Apple Music · LAY",
+            "url": "https://music.apple.com/us/artist/lay/1118027719"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人迷你专辑",
+        "title": "《東（EAST）》",
+        "year": "2021",
+        "detail": "个人迷你专辑。",
+        "sources": [
+          {
+            "name": "LAY 官方发行目录",
+            "url": "https://www.youtube.com/@layzhang/releases"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人正规专辑",
+        "title": "《莲（LIT）》",
+        "year": "2020",
+        "detail": "分两部分发行；在此合并为同一专辑条目。",
+        "sources": [
+          {
+            "name": "Apple Music · LAY",
+            "url": "https://music.apple.com/us/artist/lay/1118027719"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人迷你专辑",
+        "title": "《HONEY》",
+        "year": "2019",
+        "detail": "个人迷你专辑。",
+        "sources": [
+          {
+            "name": "LAY 官方发行目录",
+            "url": "https://www.youtube.com/@layzhang/releases"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人正规专辑",
+        "title": "《NAMANANA》",
+        "year": "2018",
+        "detail": "中英双语个人正规专辑。",
+        "sources": [
+          {
+            "name": "Apple Music · LAY",
+            "url": "https://music.apple.com/us/artist/lay/1118027719"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人正规专辑",
+        "title": "《SHEEP》",
+        "year": "2017",
+        "detail": "个人正规专辑。",
+        "sources": [
+          {
+            "name": "Apple Music · LAY",
+            "url": "https://music.apple.com/us/artist/lay/1118027719"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人迷你专辑",
+        "title": "《Winter Special Gift》",
+        "year": "2017",
+        "detail": "冬季特别迷你专辑。",
+        "sources": [
+          {
+            "name": "LAY 官方发行目录",
+            "url": "https://www.youtube.com/@layzhang/releases"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人迷你专辑",
+        "title": "《LOSE CONTROL》",
+        "year": "2016",
+        "detail": "首张个人迷你专辑。",
+        "sources": [
+          {
+            "name": "LAY 官方发行目录",
+            "url": "https://www.youtube.com/@layzhang/releases"
+          }
+        ]
       }
     ],
     "gallery": [
       {
-        "src": "img/members/lay.webp",
-        "era": "REVERXE · Crown 概念照 I · 2026"
-      },
-      {
         "src": "img/members/lay-2.webp",
-        "era": "REVERXE · Crown 概念照 II · 2026"
+        "era": "2026 · REVERXE 概念照 II"
       },
       {
-        "src": "img/members/lay-4.jpg",
-        "era": "REVERXE · 旷野预告画报 · 2026"
+        "src": "img/members/lay-4.webp",
+        "era": "2026 · REVERXE 预告画报"
+      },
+      {
+        "src": "img/members/lay.webp",
+        "era": "2026 · REVERXE 概念照 I"
+      },
+      {
+        "src": "img/members/lay-7.webp",
+        "era": "2021 · DFTF 特别专概念照"
+      },
+      {
+        "src": "img/members/lay-5.webp",
+        "era": "2018 · TEMPO · LOVE SHOT 概念照"
       }
-    ]
+    ],
+    "worksCheckedAt": "2026-11-23",
+    "worksScope": "收录个人专辑与部分单曲、OST及合作发行，并非全部歌曲目录。分队与企划单独列示，同作品不同版本合并收录。"
   },
   {
     "id": "baekhyun",
@@ -308,18 +1000,20 @@
     "color2": "#ffc86b",
     "scene": 4,
     "solo": [
-      "《City Lights》EP · 2019",
-      "《Delight》EP · 2020",
-      "《Bambi》EP · 2021",
-      "《Hello, World》EP · 2024"
+      "《City Lights》 EP · 2019",
+      "《Delight》 EP · 2020",
+      "《BAEKHYUN》 EP · 2021",
+      "《Bambi》 EP · 2021",
+      "《Hello, World》 EP · 2024",
+      "《Essence of Reverie》 EP · 2025"
     ],
-    "photo": "img/members/baekhyun.webp",
-    "photo2": "img/members/baekhyun-2.webp",
+    "photo": "img/members/baekhyun-2.webp",
+    "photo2": "img/members/baekhyun.webp",
     "thumb": "img/members/baekhyun-s.webp",
-    "photoEra": "EXIST · Cream Soda 概念照 · 2023",
-    "photo2Era": "EXIST · Cream Soda 概念照 · 2023",
+    "photoEra": "2023 · EXIST 回归概念照 II",
+    "photo2Era": "2023 · EXIST 回归概念照 I",
     "agency": "Bion Entertainment（本人任代表，2026.11.09 完成企划业登记）；与 INB100 专属合约效力中止中",
-    "status": "法院 9 月 15 日裁定中止与 INB100 专属合约效力后，其任代表的 Bion Entertainment 已于 11 月 9 日在首尔江南区厅完成大众文化艺术企划业登记；合约本案首次庭审延至 12 月。",
+    "status": "11 月 28–29 日在澳门新濠影汇综艺馆连开两场《2026 BAEKHYUN LAND in MACAU》见面会，开票即售罄；日常通过 Fromm 与粉丝互动。",
     "latest": "个人迷你 4 辑《Hello, World》（2024）；团体正规 8 辑《REVERXE》（2026.01.19）",
     "channels": [
       {
@@ -348,46 +1042,376 @@
     ],
     "works": [
       {
-        "kind": "个人 EP",
-        "title": "《City Lights》",
-        "year": "2019",
-        "detail": "首张个人迷你专辑 · 主打《UN Village》确立个人 R&B 风格"
+        "category": "ost",
+        "kind": "节目原声收录曲",
+        "title": "《Trojan Horse (Prod By THE HUB)》",
+        "year": "2026-10-21",
+        "detail": "收录于 Street World Fighter: Directors’ War Original Vol. 6 (FINAL)；该合辑另三首不是伯贤演唱。",
+        "sources": [
+          {
+            "name": "Qobuz · 节目原声逐曲署名",
+            "url": "https://www.qobuz.com/au-en/album/street-world-fighter-directors-war-sdf-original-vol-6-final-baekhyun-street-world-fighter-directors-war-sdf/c3ej6r2h2v31w"
+          }
+        ]
       },
       {
-        "kind": "个人 EP",
+        "category": "projects",
+        "kind": "合作／企划",
+        "title": "HEARTSTEEL《Live My Life》",
+        "year": "2026-09-18",
+        "detail": "联合署名包括伯贤、Connor Price、Anderson .Paak、Nic D；不是伯贤个人专辑。",
+        "sources": [
+          {
+            "name": "Spotify · HEARTSTEEL 联名署名",
+            "url": "https://open.spotify.com/track/2vC7UJ62Skqd0cQtDZ2cIc"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人迷你专辑",
+        "title": "《Essence of Reverie》",
+        "year": "2025-05-19",
+        "detail": "韩语个人迷你 5 辑，7 首。",
+        "sources": [
+          {
+            "name": "BAEKHYUN 官方作品目录",
+            "url": "https://baekhyun-official.jp/profile"
+          }
+        ]
+      },
+      {
+        "category": "singles",
+        "kind": "先行单曲",
+        "title": "《Chocolate》",
+        "year": "2025",
+        "detail": "《Essence of Reverie》先行单曲。",
+        "sources": [
+          {
+            "name": "Apple Music · BAEKHYUN",
+            "url": "https://music.apple.com/jp/artist/baekhyun/987357639"
+          }
+        ]
+      },
+      {
+        "category": "projects",
+        "kind": "合作／企划",
+        "title": "《Do What You Do》",
+        "year": "2025",
+        "detail": "合作发行。",
+        "sources": [
+          {
+            "name": "Apple Music · BAEKHYUN",
+            "url": "https://music.apple.com/jp/artist/baekhyun/987357639"
+          }
+        ]
+      },
+      {
+        "category": "projects",
+        "kind": "合作／企划",
+        "title": "100RED《The Last Christmas》",
+        "year": "2024-12-10",
+        "detail": "厂牌群星冬日合作，不是伯贤个人专辑。",
+        "sources": [
+          {
+            "name": "TIDAL · BAEKHYUN 发行目录",
+            "url": "https://tidal.com/artist/9980794"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人迷你专辑",
+        "title": "《Hello, World》",
+        "year": "2024-09-06",
+        "detail": "韩语个人迷你 4 辑。",
+        "sources": [
+          {
+            "name": "BAEKHYUN 官方作品目录",
+            "url": "https://baekhyun-official.jp/profile"
+          }
+        ]
+      },
+      {
+        "category": "projects",
+        "kind": "合作／企划",
+        "title": "HEARTSTEEL《PARANOIA》",
+        "year": "2023-10-24",
+        "detail": "英雄联盟虚拟组合企划；伯贤参与演唱。",
+        "sources": [
+          {
+            "name": "BAEKHYUN 官方作品目录",
+            "url": "https://baekhyun-official.jp/profile"
+          }
+        ]
+      },
+      {
+        "category": "ost",
+        "kind": "OST",
+        "title": "《Hello》",
+        "year": "2023",
+        "detail": "《浪漫医生金师傅 3》OST Part. 1。",
+        "sources": [
+          {
+            "name": "BAEKHYUN 官方作品目录",
+            "url": "https://baekhyun-official.jp/profile"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人迷你专辑",
+        "title": "《Bambi》",
+        "year": "2021-03-30",
+        "detail": "韩语个人迷你 3 辑。",
+        "sources": [
+          {
+            "name": "BAEKHYUN 官方作品目录",
+            "url": "https://baekhyun-official.jp/profile"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "日文迷你专辑",
+        "title": "《BAEKHYUN》",
+        "year": "2021-01-20",
+        "detail": "日本首张迷你专辑。",
+        "sources": [
+          {
+            "name": "BAEKHYUN 官方作品目录",
+            "url": "https://baekhyun-official.jp/profile"
+          }
+        ]
+      },
+      {
+        "category": "ost",
+        "kind": "OST",
+        "title": "《Is it me?》",
+        "year": "2021",
+        "detail": "《红天机》OST Part. 1。",
+        "sources": [
+          {
+            "name": "BAEKHYUN 官方作品目录",
+            "url": "https://baekhyun-official.jp/profile"
+          }
+        ]
+      },
+      {
+        "category": "ost",
+        "kind": "OST",
+        "title": "《U》",
+        "year": "2021",
+        "detail": "《某天，灭亡走进我家门》OST Part. 3。",
+        "sources": [
+          {
+            "name": "BAEKHYUN 官方作品目录",
+            "url": "https://baekhyun-official.jp/profile"
+          }
+        ]
+      },
+      {
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《Amusement Park》",
+        "year": "2020-12-21",
+        "detail": "数字单曲。",
+        "sources": [
+          {
+            "name": "BAEKHYUN 官方作品目录",
+            "url": "https://baekhyun-official.jp/profile"
+          }
+        ]
+      },
+      {
+        "category": "projects",
+        "kind": "企划组合正规专辑",
+        "title": "SuperM《Super One》",
+        "year": "2020-09-25",
+        "detail": "企划组合首张正规专辑；所列为全球首发日期。",
+        "sources": [
+          {
+            "name": "环球音乐 · Super One 发行公告",
+            "url": "https://www.universalmusic.ca/press-releases/superms-debut-album-super-one-is-out-today/"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人迷你专辑",
         "title": "《Delight》",
         "year": "2020",
-        "detail": "主打《Candy》· 个人首张突破百万销量迷你专辑"
+        "detail": "个人迷你 2 辑。",
+        "sources": [
+          {
+            "name": "BAEKHYUN 官方作品目录",
+            "url": "https://baekhyun-official.jp/profile"
+          }
+        ]
       },
       {
-        "kind": "个人 EP",
-        "title": "《Bambi》",
-        "year": "2021",
-        "detail": "入伍前发行的全 R&B 概念迷你 3 辑"
+        "category": "ost",
+        "kind": "OST",
+        "title": "《My Love》",
+        "year": "2020",
+        "detail": "《浪漫医生金师傅 2》OST Part. 1。",
+        "sources": [
+          {
+            "name": "BAEKHYUN 官方作品目录",
+            "url": "https://baekhyun-official.jp/profile"
+          }
+        ]
       },
       {
-        "kind": "个人 EP",
-        "title": "《Hello, World》",
-        "year": "2024",
-        "detail": "个人迷你 4 辑 · 主打《Pineapple Slice》"
+        "category": "projects",
+        "kind": "企划组合迷你专辑",
+        "title": "SuperM《SuperM》",
+        "year": "2019-10-04",
+        "detail": "伯贤、KAI 参与的跨团企划组合首张迷你专辑。",
+        "sources": [
+          {
+            "name": "环球音乐 · SuperM 发行目录",
+            "url": "https://www.universal-music.co.jp/superm/discography"
+          }
+        ]
       },
       {
-        "kind": "小分队",
-        "title": "EXO-CBX / SuperM",
-        "year": "2016–2020",
-        "detail": "EXO-CBX 主唱；跨团企划组合 SuperM 队长"
+        "category": "units",
+        "kind": "分队 OST",
+        "title": "EXO-CBX《Be My Love》",
+        "year": "2019-07-17",
+        "detail": "《恋爱播放列表 4》OST Part. 1。",
+        "sources": [
+          {
+            "name": "INB100 官方作品目录",
+            "url": "http://inb100.com/41"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人迷你专辑",
+        "title": "《City Lights》",
+        "year": "2019",
+        "detail": "个人迷你 1 辑。",
+        "sources": [
+          {
+            "name": "BAEKHYUN 官方作品目录",
+            "url": "https://baekhyun-official.jp/profile"
+          }
+        ]
+      },
+      {
+        "category": "units",
+        "kind": "分队正规专辑",
+        "title": "EXO-CBX《MAGIC》",
+        "year": "2018-05-09",
+        "detail": "日本首张正规专辑。",
+        "sources": [
+          {
+            "name": "EXO 日本官网 · CBX 发行目录",
+            "url": "https://exo-jp.net/en/discography/index.php?page=7"
+          }
+        ]
+      },
+      {
+        "category": "units",
+        "kind": "分队迷你专辑",
+        "title": "EXO-CBX《Blooming Days》",
+        "year": "2018-04-10",
+        "detail": "韩语迷你 2 辑。",
+        "sources": [
+          {
+            "name": "INB100 官方作品目录",
+            "url": "http://inb100.com/41"
+          }
+        ]
+      },
+      {
+        "category": "units",
+        "kind": "分队迷你专辑",
+        "title": "EXO-CBX《GIRLS》",
+        "year": "2017-05-24",
+        "detail": "日本出道迷你专辑。",
+        "sources": [
+          {
+            "name": "EXO 日本官网 · CBX 发行目录",
+            "url": "https://exo-jp.net/en/discography/index.php?page=7"
+          }
+        ]
+      },
+      {
+        "category": "units",
+        "kind": "分队迷你专辑",
+        "title": "EXO-CBX《Hey Mama!》",
+        "year": "2016-10-31",
+        "detail": "韩语迷你 1 辑。",
+        "sources": [
+          {
+            "name": "INB100 官方作品目录",
+            "url": "http://inb100.com/41"
+          }
+        ]
+      },
+      {
+        "category": "ost",
+        "kind": "OST",
+        "title": "《For You》",
+        "year": "2016-08-25",
+        "detail": "CHEN、BAEKHYUN、XIUMIN 联名演唱《步步惊心：丽》OST Part. 1。",
+        "sources": [
+          {
+            "name": "INB100 官方作品目录",
+            "url": "http://inb100.com/41"
+          }
+        ]
+      },
+      {
+        "category": "projects",
+        "kind": "合作／企划",
+        "title": "《Dream》",
+        "year": "2016",
+        "detail": "与 Suzy 合作。",
+        "sources": [
+          {
+            "name": "Spotify · BAEKHYUN",
+            "url": "https://open.spotify.com/intl-ja/artist/4ufh0WuMZh6y4Dmdnklvdl"
+          }
+        ]
       }
     ],
     "gallery": [
       {
-        "src": "img/members/baekhyun.webp",
-        "era": "EXIST · Cream Soda 概念照 I · 2023"
+        "src": "img/members/baekhyun-2.webp",
+        "era": "2023 · EXIST 回归概念照 II"
       },
       {
-        "src": "img/members/baekhyun-2.webp",
-        "era": "EXIST · Cream Soda 概念照 II · 2023"
+        "src": "img/members/baekhyun.webp",
+        "era": "2023 · EXIST 回归概念照 I"
+      },
+      {
+        "src": "img/members/baekhyun-4.webp",
+        "era": "官方精选 · 官方画报与造型写真"
+      },
+      {
+        "src": "img/members/baekhyun-5.webp",
+        "era": "官方精选 · 官方画报与造型写真"
+      },
+      {
+        "src": "img/members/baekhyun-6.webp",
+        "era": "官方精选 · 官方画报与造型写真"
+      },
+      {
+        "src": "img/members/baekhyun-7.webp",
+        "era": "2020 · Solo 专辑概念照"
+      },
+      {
+        "src": "img/members/baekhyun-8.webp",
+        "era": "2020 · Solo 专辑概念照"
       }
-    ]
+    ],
+    "worksCheckedAt": "2026-11-23",
+    "worksScope": "收录个人专辑与部分单曲、OST及合作发行，并非全部歌曲目录。分队与企划单独列示，同作品不同版本合并收录。"
   },
   {
     "id": "chen",
@@ -407,18 +1431,20 @@
     "color2": "#8fa8ff",
     "scene": 5,
     "solo": [
-      "《April, and a Flower》EP · 2019",
-      "《Dear my dear》EP · 2019",
-      "《Last Scene》EP · 2022",
-      "《DOOR》EP · 2024"
+      "《April, and a Flower》 EP · 2019",
+      "《Dear my dear》 EP · 2019",
+      "《Last Scene》 EP · 2022",
+      "《Polaris（ポラリス）》 EP · 2023",
+      "《DOOR》 EP · 2024",
+      "《Arcadia》 EP · 2025"
     ],
-    "photo": "img/members/chen.webp",
-    "photo2": "img/members/chen-2.webp",
+    "photo": "img/members/chen-6.webp",
+    "photo2": "img/members/chen-7.webp",
     "thumb": "img/members/chen-s.webp",
-    "photoEra": "EXIST · Cream Soda 概念照 · 2023",
-    "photo2Era": "EXIST · Cream Soda 概念照 · 2023",
+    "photoEra": "2024 · DOOR 个人概念照",
+    "photo2Era": "2024 · DOOR 个人概念照",
     "agency": "INB100（首尔中央地方法院 2026.09.15 裁定中止专属合约效力，至一审判决）",
-    "status": "与 XIUMIN、伯贤共同推进对 INB100 的合约本案诉讼（首审延至 12 月）。此前社交平台流传的 11 月 14 日澳门见面会未见主办方或艺人方第一方页面证实。",
+    "status": "11 月 14 日完成澳门个人见面会《ONCE UPON A NIGHT》，持续公开演出幕后与营业日记；同时携迷你五辑《Arcadia》展开个人活动。",
     "latest": "个人迷你 4 辑《DOOR》（2024）；团体正规 8 辑《REVERXE》（2026.01.19）",
     "channels": [
       {
@@ -442,46 +1468,333 @@
     ],
     "works": [
       {
-        "kind": "个人 EP",
-        "title": "《April, and a Flower（四月，和花）》",
-        "year": "2019",
-        "detail": "首张个人迷你专辑 · 主打《Beautiful goodbye》"
+        "category": "albums",
+        "kind": "个人迷你专辑",
+        "title": "《Arcadia》",
+        "year": "2025-09-29",
+        "detail": "个人迷你 5 辑。",
+        "sources": [
+          {
+            "name": "Apple Music · CHEN",
+            "url": "https://music.apple.com/us/artist/chen/902290176"
+          }
+        ]
       },
       {
-        "kind": "个人 EP",
-        "title": "《Dear my dear（致亲爱的你）》",
-        "year": "2019",
-        "detail": "迷你 2 辑 · 主打《Shall we?》复古抒情曲"
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《Broken Party》",
+        "year": "2025",
+        "detail": "数字单曲。",
+        "sources": [
+          {
+            "name": "Apple Music · CHEN",
+            "url": "https://music.apple.com/us/artist/chen/902290176"
+          }
+        ]
       },
       {
-        "kind": "个人 EP",
-        "title": "《Last Scene》",
-        "year": "2022",
-        "detail": "退伍回归迷你 3 辑 · 秋季叙事抒情"
+        "category": "projects",
+        "kind": "合作／企划",
+        "title": "100RED《The Last Christmas》",
+        "year": "2024-12-10",
+        "detail": "厂牌群星冬日合作。",
+        "sources": [
+          {
+            "name": "CHEN 官方作品目录",
+            "url": "https://chen-official.jp/profile"
+          }
+        ]
       },
       {
-        "kind": "个人 EP",
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《Beyond:》",
+        "year": "2024-10-01",
+        "detail": "数字单曲发行。",
+        "sources": [
+          {
+            "name": "CHEN 官方作品目录",
+            "url": "https://chen-official.jp/profile"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人迷你专辑",
         "title": "《DOOR》",
-        "year": "2024",
-        "detail": "个人迷你 4 辑 · 参与多首收录曲作词"
+        "year": "2024-05-28",
+        "detail": "韩语个人迷你 4 辑。",
+        "sources": [
+          {
+            "name": "CHEN 官方作品目录",
+            "url": "https://chen-official.jp/profile"
+          }
+        ]
       },
       {
-        "kind": "小分队",
-        "title": "EXO-CBX《Hey Mama!》《Blooming Days》",
-        "year": "2016–2018",
-        "detail": "首支小分队高音主唱，横跨韩日巡演"
+        "category": "ost",
+        "kind": "OST",
+        "title": "《The Way To Love Myself》",
+        "year": "2024-02-10",
+        "detail": "《低谷医生》OST Part. 3。",
+        "sources": [
+          {
+            "name": "CHEN 官方作品目录",
+            "url": "https://chen-official.jp/profile"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "现场专辑",
+        "title": "《CHEN JAPAN TOUR 2023 - Polaris -》",
+        "year": "2024",
+        "detail": "现场音源；与 2023 年录音室迷你专辑《Polaris》分开。",
+        "sources": [
+          {
+            "name": "Apple Music · CHEN",
+            "url": "https://music.apple.com/us/artist/chen/902290176"
+          },
+          {
+            "name": "EXO 日本官网 · Polaris",
+            "url": "https://exo-jp.net/chen/2023"
+          }
+        ]
+      },
+      {
+        "category": "ost",
+        "kind": "OST",
+        "title": "《Don't Remember》",
+        "year": "2024",
+        "detail": "《浪漫这一家》OST Part. 2。",
+        "sources": [
+          {
+            "name": "Apple Music · CHEN",
+            "url": "https://music.apple.com/us/artist/chen/902290176"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "日文迷你专辑",
+        "title": "《Polaris（ポラリス）》",
+        "year": "2023-08-17",
+        "detail": "日本首张迷你专辑。",
+        "sources": [
+          {
+            "name": "EXO 日本官网 · Polaris",
+            "url": "https://exo-jp.net/chen/2023"
+          }
+        ]
+      },
+      {
+        "category": "ost",
+        "kind": "OST",
+        "title": "《Heaven For You》",
+        "year": "2022-11-25",
+        "detail": "《消防厅旁警察厅》OST Part. 3。",
+        "sources": [
+          {
+            "name": "CHEN 官方作品目录",
+            "url": "https://chen-official.jp/profile"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人迷你专辑",
+        "title": "《Last Scene》",
+        "year": "2022-11-14",
+        "detail": "个人迷你 3 辑。",
+        "sources": [
+          {
+            "name": "CHEN 官方作品目录",
+            "url": "https://chen-official.jp/profile"
+          }
+        ]
+      },
+      {
+        "category": "ost",
+        "kind": "OST",
+        "title": "《An Unfamiliar Day》",
+        "year": "2022-06-17",
+        "detail": "《医法刑事》OST Part. 2。",
+        "sources": [
+          {
+            "name": "CHEN 官方作品目录",
+            "url": "https://chen-official.jp/profile"
+          }
+        ]
+      },
+      {
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《Hello》",
+        "year": "2020-10-15",
+        "detail": "数字单曲。",
+        "sources": [
+          {
+            "name": "CHEN 官方作品目录",
+            "url": "https://chen-official.jp/profile"
+          }
+        ]
+      },
+      {
+        "category": "units",
+        "kind": "分队 OST",
+        "title": "EXO-CBX《Be My Love》",
+        "year": "2019-07-17",
+        "detail": "《恋爱播放列表 4》OST Part. 1。",
+        "sources": [
+          {
+            "name": "INB100 官方作品目录",
+            "url": "http://inb100.com/41"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人迷你专辑",
+        "title": "《April, and a Flower》",
+        "year": "2019",
+        "detail": "个人迷你 1 辑。",
+        "sources": [
+          {
+            "name": "Spotify · CHEN 发行目录",
+            "url": "https://open.spotify.com/artist/0UEP2XBR9aC5NBKcAKnBIq"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人迷你专辑",
+        "title": "《Dear my dear》",
+        "year": "2019",
+        "detail": "个人迷你 2 辑。",
+        "sources": [
+          {
+            "name": "Spotify · CHEN 发行目录",
+            "url": "https://open.spotify.com/artist/0UEP2XBR9aC5NBKcAKnBIq"
+          }
+        ]
+      },
+      {
+        "category": "units",
+        "kind": "分队正规专辑",
+        "title": "EXO-CBX《MAGIC》",
+        "year": "2018-05-09",
+        "detail": "日本首张正规专辑。",
+        "sources": [
+          {
+            "name": "EXO 日本官网 · CBX 发行目录",
+            "url": "https://exo-jp.net/en/discography/index.php?page=7"
+          }
+        ]
+      },
+      {
+        "category": "units",
+        "kind": "分队迷你专辑",
+        "title": "EXO-CBX《Blooming Days》",
+        "year": "2018-04-10",
+        "detail": "韩语迷你 2 辑。",
+        "sources": [
+          {
+            "name": "INB100 官方作品目录",
+            "url": "http://inb100.com/41"
+          }
+        ]
+      },
+      {
+        "category": "units",
+        "kind": "分队迷你专辑",
+        "title": "EXO-CBX《GIRLS》",
+        "year": "2017-05-24",
+        "detail": "日本出道迷你专辑。",
+        "sources": [
+          {
+            "name": "EXO 日本官网 · CBX 发行目录",
+            "url": "https://exo-jp.net/en/discography/index.php?page=7"
+          }
+        ]
+      },
+      {
+        "category": "units",
+        "kind": "分队迷你专辑",
+        "title": "EXO-CBX《Hey Mama!》",
+        "year": "2016-10-31",
+        "detail": "韩语迷你 1 辑。",
+        "sources": [
+          {
+            "name": "INB100 官方作品目录",
+            "url": "http://inb100.com/41"
+          }
+        ]
+      },
+      {
+        "category": "ost",
+        "kind": "OST",
+        "title": "《For You》",
+        "year": "2016-08-25",
+        "detail": "CHEN、BAEKHYUN、XIUMIN 联名演唱《步步惊心：丽》OST Part. 1。",
+        "sources": [
+          {
+            "name": "INB100 官方作品目录",
+            "url": "http://inb100.com/41"
+          }
+        ]
+      },
+      {
+        "category": "ost",
+        "kind": "OST",
+        "title": "《Everytime》",
+        "year": "2016",
+        "detail": "与 Punch 合唱《太阳的后裔》OST Part. 2。",
+        "sources": [
+          {
+            "name": "Spotify · CHEN",
+            "url": "https://open.spotify.com/artist/0UEP2XBR9aC5NBKcAKnBIq"
+          }
+        ]
+      },
+      {
+        "category": "ost",
+        "kind": "OST",
+        "title": "《Best Luck》",
+        "year": "2014",
+        "detail": "《没关系，是爱情啊》OST Part. 1。",
+        "sources": [
+          {
+            "name": "Spotify · CHEN",
+            "url": "https://open.spotify.com/artist/0UEP2XBR9aC5NBKcAKnBIq"
+          }
+        ]
       }
     ],
     "gallery": [
       {
-        "src": "img/members/chen.webp",
-        "era": "EXIST · Cream Soda 概念照 I · 2023"
+        "src": "img/members/chen-6.webp",
+        "era": "2024 · DOOR 个人概念照"
       },
       {
-        "src": "img/members/chen-2.webp",
-        "era": "EXIST · Cream Soda 概念照 II · 2023"
+        "src": "img/members/chen-7.webp",
+        "era": "2024 · DOOR 个人概念照"
+      },
+      {
+        "src": "img/members/chen.webp",
+        "era": "2023 · EXIST 回归概念照 I"
+      },
+      {
+        "src": "img/members/chen-4.webp",
+        "era": "官方精选 · 官方画报与造型写真"
+      },
+      {
+        "src": "img/members/chen-5.webp",
+        "era": "官方精选 · 官方画报与造型写真"
       }
-    ]
+    ],
+    "worksCheckedAt": "2026-11-23",
+    "worksScope": "收录个人专辑与部分单曲、OST及合作发行，并非全部歌曲目录。分队与企划单独列示，同作品不同版本合并收录。"
   },
   {
     "id": "chanyeol",
@@ -501,16 +1814,18 @@
     "color2": "#ff4d3d",
     "scene": 6,
     "solo": [
-      "《Black Out》EP · 2024",
-      "《Upside Down》EP · 2025"
+      "《Black Out》 EP · 2024",
+      "《Upside Down》 EP · 2025",
+      "《日々（Hibi）》 EP · 2025",
+      "《旅（Tabi）》 EP · 2026"
     ],
-    "photo": "img/members/chanyeol.webp",
-    "photo2": "img/members/chanyeol-2.webp",
+    "photo": "img/members/chanyeol-2.webp",
+    "photo2": "img/members/chanyeol-3.webp",
     "thumb": "img/members/chanyeol-s.webp",
-    "photoEra": "EXIST · Cream Soda 概念照 · 2023",
-    "photo2Era": "REVERXE · Crown 概念照 · 2026",
+    "photoEra": "2026 · REVERXE 概念照 I",
+    "photo2Era": "2026 · REVERXE 概念照 II",
     "agency": "SM Entertainment",
-    "status": "11 月 6–8 日完成首尔团体安可演出，11 月 11 日在东京 Zepp DiverCity 收官日本巡演《-The Route-》；11 月 26 日将于首尔 YES24 LIVE HALL 举办生日派对《[B-side]》（同步 Weverse 直播）。",
+    "status": "11 月 11 日在东京圆满收官日本四城巡演《-The Route-》，将于 11 月 26 日在首尔 YES24 Live Hall 举办生日会《2026 CHANYEOL B-day PARTY [B-side]》。",
     "latest": "日本迷你 2 辑《旅 (Tabi)》（2026.09.28 数字 / 10.02 实体，主打《Song For You》）",
     "channels": [
       {
@@ -542,48 +1857,259 @@
     ],
     "works": [
       {
-        "kind": "个人 EP",
-        "title": "《Black Out》",
-        "year": "2024",
-        "detail": "出道 12 年首张个人迷你专辑 · 流行摇滚曲风"
+        "category": "albums",
+        "kind": "日文迷你专辑",
+        "title": "《旅（Tabi）》",
+        "year": "2026-10-02",
+        "detail": "日本迷你 2 辑，6 首。",
+        "sources": [
+          {
+            "name": "EXO 日本官网 · Tabi",
+            "url": "https://exo-jp.net/en/news/detail.php?id=1135736"
+          }
+        ]
       },
       {
-        "kind": "个人 EP",
+        "category": "albums",
+        "kind": "个人迷你专辑",
         "title": "《Upside Down》",
         "year": "2025",
-        "detail": "个人第二张迷你专辑"
+        "detail": "韩语个人迷你 2 辑。",
+        "sources": [
+          {
+            "name": "Apple Music · CHANYEOL",
+            "url": "https://music.apple.com/id/artist/chanyeol/935192676?l=id"
+          }
+        ]
       },
       {
-        "kind": "日文 EP",
-        "title": "《旅 (Tabi)》",
-        "year": "2026.10",
-        "detail": "日本第 2 张迷你专辑（收录 6 首，主打《Song For You》）"
+        "category": "albums",
+        "kind": "日文迷你专辑",
+        "title": "《日々（Hibi）》",
+        "year": "2025",
+        "detail": "日本首张迷你专辑。",
+        "sources": [
+          {
+            "name": "Apple Music · CHANYEOL",
+            "url": "https://music.apple.com/id/artist/chanyeol/935192676?l=id"
+          }
+        ]
       },
       {
-        "kind": "小分队",
-        "title": "EXO-SC《What a Life》《1 Billion Views》",
-        "year": "2019–2020",
-        "detail": "与吴世勋组成双人小分队，全专参与词曲创作"
+        "category": "projects",
+        "kind": "合作／企划",
+        "title": "《From the Beginning Till Now》",
+        "year": "2025",
+        "detail": "韩流 20 周年项目 Part. 6。",
+        "sources": [
+          {
+            "name": "Apple Music · CHANYEOL",
+            "url": "https://music.apple.com/id/artist/chanyeol/935192676?l=id"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人迷你专辑",
+        "title": "《Black Out》",
+        "year": "2024",
+        "detail": "个人迷你 1 辑。",
+        "sources": [
+          {
+            "name": "Apple Music · CHANYEOL",
+            "url": "https://music.apple.com/id/artist/chanyeol/935192676?l=id"
+          }
+        ]
+      },
+      {
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《GBGN》",
+        "year": "2024",
+        "detail": "中文单曲。",
+        "sources": [
+          {
+            "name": "Apple Music · CHANYEOL",
+            "url": "https://music.apple.com/id/artist/chanyeol/935192676?l=id"
+          }
+        ]
+      },
+      {
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《Baby, Don't Cry（人鱼的眼泪）》",
+        "year": "2024",
+        "detail": "数字单曲。",
+        "sources": [
+          {
+            "name": "Apple Music · CHANYEOL",
+            "url": "https://music.apple.com/id/artist/chanyeol/935192676?l=id"
+          }
+        ]
+      },
+      {
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《Good Enough》",
+        "year": "2023",
+        "detail": "数字单曲。",
+        "sources": [
+          {
+            "name": "Apple Music · CHANYEOL",
+            "url": "https://music.apple.com/id/artist/chanyeol/935192676?l=id"
+          }
+        ]
+      },
+      {
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《Tomorrow》",
+        "year": "2021",
+        "detail": "SM STATION 单曲。",
+        "sources": [
+          {
+            "name": "Apple Music · CHANYEOL",
+            "url": "https://music.apple.com/id/artist/chanyeol/935192676?l=id"
+          }
+        ]
+      },
+      {
+        "category": "units",
+        "kind": "分队混音单曲",
+        "title": "EXO-SC《iScreaM Vol. 4 : 1 Billion Views Remix》",
+        "year": "2020-08-28",
+        "detail": "Mar Vista Remix。",
+        "sources": [
+          {
+            "name": "Qobuz · EXO-SC 发行目录",
+            "url": "https://www.qobuz.com/us-en/interpreter/exo-sc/4942606"
+          }
+        ]
+      },
+      {
+        "category": "units",
+        "kind": "分队正规专辑",
+        "title": "EXO-SC《1 Billion Views》",
+        "year": "2020-07-13",
+        "detail": "首张正规专辑；含灿烈《Nothin’》和世勋《On Me》。",
+        "sources": [
+          {
+            "name": "Apple Music · 1 Billion Views",
+            "url": "https://music.apple.com/us/album/1-billion-views-the-1st-album/1522828394"
+          }
+        ]
+      },
+      {
+        "category": "units",
+        "kind": "分队先行单曲",
+        "title": "EXO-SC《Telephone (feat. 10cm)》",
+        "year": "2020-07-07",
+        "detail": "《1 Billion Views》先行单曲。",
+        "sources": [
+          {
+            "name": "Qobuz · EXO-SC 发行目录",
+            "url": "https://www.qobuz.com/us-en/interpreter/exo-sc/4942606"
+          }
+        ]
+      },
+      {
+        "category": "projects",
+        "kind": "合作／企划",
+        "title": "《Yours》",
+        "year": "2020",
+        "detail": "Raiden、CHANYEOL 合作，LeeHi、CHANGMO 客席。",
+        "sources": [
+          {
+            "name": "Apple Music · CHANYEOL",
+            "url": "https://music.apple.com/id/artist/chanyeol/935192676?l=id"
+          }
+        ]
+      },
+      {
+        "category": "units",
+        "kind": "分队迷你专辑",
+        "title": "EXO-SC《What a life》",
+        "year": "2019-07-22",
+        "detail": "首张迷你专辑；灿烈、世勋。",
+        "sources": [
+          {
+            "name": "Qobuz · EXO-SC 发行目录",
+            "url": "https://www.qobuz.com/us-en/interpreter/exo-sc/4942606"
+          }
+        ]
+      },
+      {
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《SSFW》",
+        "year": "2019",
+        "detail": "个人单曲。",
+        "sources": [
+          {
+            "name": "Apple Music · CHANYEOL",
+            "url": "https://music.apple.com/id/artist/chanyeol/935192676?l=id"
+          }
+        ]
+      },
+      {
+        "category": "projects",
+        "kind": "合作／企划",
+        "title": "《We Young》",
+        "year": "2018-09-14",
+        "detail": "CHANYEOL、SEHUN 以个人联合署名发行；早于 EXO-SC 正式出道。",
+        "sources": [
+          {
+            "name": "Apple Music · CHANYEOL",
+            "url": "https://music.apple.com/id/artist/chanyeol/935192676?l=id"
+          }
+        ]
+      },
+      {
+        "category": "ost",
+        "kind": "OST",
+        "title": "《Stay With Me》",
+        "year": "2016",
+        "detail": "与 Punch 演唱《鬼怪》OST。",
+        "sources": [
+          {
+            "name": "Apple Music · CHANYEOL",
+            "url": "https://music.apple.com/id/artist/chanyeol/935192676?l=id"
+          }
+        ]
       }
     ],
     "gallery": [
       {
-        "src": "img/members/chanyeol.webp",
-        "era": "EXIST · Cream Soda 概念照 · 2023"
-      },
-      {
         "src": "img/members/chanyeol-2.webp",
-        "era": "REVERXE · Crown 概念照 I · 2026"
+        "era": "2026 · REVERXE 概念照 I"
       },
       {
-        "src": "img/members/chanyeol-3.jpg",
-        "era": "REVERXE · Crown 概念照 II · 2026"
+        "src": "img/members/chanyeol-3.webp",
+        "era": "2026 · REVERXE 概念照 II"
       },
       {
-        "src": "img/members/chanyeol-4.jpg",
-        "era": "REVERXE · 旷野预告画报 · 2026"
+        "src": "img/members/chanyeol-4.webp",
+        "era": "2026 · REVERXE 预告画报"
+      },
+      {
+        "src": "img/members/chanyeol.webp",
+        "era": "2023 · EXIST 回归概念照"
+      },
+      {
+        "src": "img/members/chanyeol-7.webp",
+        "era": "官方精选 · 官方画报与造型写真"
+      },
+      {
+        "src": "img/members/chanyeol-8.webp",
+        "era": "官方精选 · 官方画报与造型写真"
+      },
+      {
+        "src": "img/members/chanyeol-5.webp",
+        "era": "2018 · TEMPO · LOVE SHOT 概念照"
       }
-    ]
+    ],
+    "worksCheckedAt": "2026-11-23",
+    "worksScope": "收录个人专辑与部分单曲、OST及合作发行，并非全部歌曲目录。分队与企划单独列示，同作品不同版本合并收录。"
   },
   {
     "id": "do",
@@ -603,18 +2129,19 @@
     "color2": "#b8743c",
     "scene": 7,
     "solo": [
-      "《Empathy》EP · 2021",
-      "《Expectation》EP · 2023",
-      "《Blossom》EP · 2024",
-      "《Bliss》正规 · 2025"
+      "《Empathy（共感）》 EP · 2021",
+      "《Expectation（期待）》 EP · 2023",
+      "《BLOSSOM（成长）》 EP · 2024",
+      "《BLISS》 · 2025",
+      "《DOPAMINE》 EP · 2026"
     ],
-    "photo": "img/members/do.webp",
-    "photo2": "img/members/do-2.webp",
+    "photo": "img/members/do-2.webp",
+    "photo2": "img/members/do-4.webp",
     "thumb": "img/members/do-s.webp",
-    "photoEra": "EXIST · Cream Soda 概念照 · 2023",
-    "photo2Era": "REVERXE · Crown 概念照 · 2026",
+    "photoEra": "2026 · REVERXE 概念照 I",
+    "photo2Era": "2026 · REVERXE 概念照 II",
     "agency": "Blitzway（唱片发行署名 Blitzway Music）",
-    "status": "11 月完成团体安可演出并发行数字单曲《Darling》；个人亚洲巡演《DAY OFF》持续推进：11 月曼谷与雅加达、12 月高雄，2027 年 1–3 月依次前往新加坡、香港、马尼拉、东京与台北。",
+    "status": "11 月 11 日发行冬日单曲《Darling》，2026–2027 亚巡《DAY OFF》刚结束曼谷与雅加达站，12 月起陆续前往高雄、新加坡、香港、马尼拉、东京与台北。",
     "latest": "数字单曲《Darling》（2026.11.11）；个人迷你 4 辑《DOPAMINE》（2026.09.08）",
     "channels": [
       {
@@ -644,58 +2171,236 @@
     "units": [],
     "works": [
       {
-        "kind": "个人 EP",
-        "title": "《Empathy（共感）》",
-        "year": "2021",
-        "detail": "首张个人迷你专辑 · 原声吉他主打《Rose》亲自作词"
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《Darling》",
+        "year": "2026-11-11",
+        "detail": "数字单曲。",
+        "sources": [
+          {
+            "name": "Spotify · D.O.",
+            "url": "https://open.spotify.com/artist/2CQZr2RPZmrcvDnaod1ldC"
+          },
+          {
+            "name": "每日经济 · 发行报道",
+            "url": "https://www.mk.co.kr/en/musics/12202660"
+          }
+        ]
       },
       {
-        "kind": "个人 EP",
+        "category": "albums",
+        "kind": "个人迷你专辑",
+        "title": "《DOPAMINE》",
+        "year": "2026.09",
+        "detail": "个人迷你 4 辑。",
+        "sources": [
+          {
+            "name": "Spotify · D.O.",
+            "url": "https://open.spotify.com/artist/2CQZr2RPZmrcvDnaod1ldC"
+          },
+          {
+            "name": "每日经济 · 发行报道",
+            "url": "https://www.mk.co.kr/en/musics/12202660"
+          }
+        ]
+      },
+      {
+        "category": "projects",
+        "kind": "合作／企划",
+        "title": "《If It Were Me》",
+        "year": "2025-11-07",
+        "detail": "与 Na Yoon Kwon 合作。",
+        "sources": [
+          {
+            "name": "Spotify · D.O.",
+            "url": "https://open.spotify.com/artist/2CQZr2RPZmrcvDnaod1ldC"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人正规专辑",
+        "title": "《BLISS》",
+        "year": "2025-07-07",
+        "detail": "首张个人正规专辑。",
+        "sources": [
+          {
+            "name": "Apple Music · BLISS",
+            "url": "https://music.apple.com/us/album/the-1st-full-album-bliss/1823614705"
+          }
+        ]
+      },
+      {
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《Snowfall at Night》",
+        "year": "2025",
+        "detail": "数字单曲。",
+        "sources": [
+          {
+            "name": "Spotify · D.O.",
+            "url": "https://open.spotify.com/artist/2CQZr2RPZmrcvDnaod1ldC"
+          }
+        ]
+      },
+      {
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《DUMB》",
+        "year": "2025",
+        "detail": "PENOMECO 客席合作。",
+        "sources": [
+          {
+            "name": "Spotify · D.O.",
+            "url": "https://open.spotify.com/artist/2CQZr2RPZmrcvDnaod1ldC"
+          }
+        ]
+      },
+      {
+        "category": "ost",
+        "kind": "OST",
+        "title": "《FOREVER》",
+        "year": "2025",
+        "detail": "《机智住院医生生活》OST Part. 6。",
+        "sources": [
+          {
+            "name": "Apple Music · D.O.",
+            "url": "https://music.apple.com/us/artist/d-o/1364148883"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人迷你专辑",
+        "title": "《BLOSSOM（成长）》",
+        "year": "2024",
+        "detail": "个人迷你 3 辑。",
+        "sources": [
+          {
+            "name": "Apple Music · D.O.",
+            "url": "https://music.apple.com/us/artist/d-o/1364148883"
+          }
+        ]
+      },
+      {
+        "category": "projects",
+        "kind": "合作／企划",
+        "title": "《Small girl》",
+        "year": "2024",
+        "detail": "李泳知主艺人，D.O. 客席；收录《16 Fantasy》。",
+        "sources": [
+          {
+            "name": "Apple Music · D.O.",
+            "url": "https://music.apple.com/us/artist/d-o/1364148883"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人迷你专辑",
         "title": "《Expectation（期待）》",
         "year": "2023",
-        "detail": "迷你 2 辑 · 收录先行曲《I Do》与主打《Somebody》"
+        "detail": "个人迷你 2 辑。",
+        "sources": [
+          {
+            "name": "Apple Music · D.O.",
+            "url": "https://music.apple.com/us/artist/d-o/1364148883"
+          }
+        ]
       },
       {
-        "kind": "个人 EP",
-        "title": "《Blossom（成长）》",
-        "year": "2024",
-        "detail": "迷你 3 辑 · 主打《Mars》"
+        "category": "singles",
+        "kind": "先行单曲",
+        "title": "《I Do》",
+        "year": "2023",
+        "detail": "《Expectation》先行曲。",
+        "sources": [
+          {
+            "name": "Apple Music · D.O.",
+            "url": "https://music.apple.com/us/artist/d-o/1364148883"
+          }
+        ]
       },
       {
-        "kind": "个人正规",
-        "title": "《Bliss》",
-        "year": "2025",
-        "detail": "首张个人正规专辑"
+        "category": "albums",
+        "kind": "个人迷你专辑",
+        "title": "《Empathy（共感）》",
+        "year": "2021",
+        "detail": "个人迷你 1 辑。",
+        "sources": [
+          {
+            "name": "Apple Music · D.O.",
+            "url": "https://music.apple.com/us/artist/d-o/1364148883"
+          }
+        ]
       },
       {
-        "kind": "近期新作",
-        "title": "《DOPAMINE》EP · 单曲《Darling》",
-        "year": "2026",
-        "detail": "9 月推出迷你 4 辑，11 月 11 日发行巡演季新单曲"
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《That's okay》",
+        "year": "2019",
+        "detail": "SM STATION 单曲。",
+        "sources": [
+          {
+            "name": "Apple Music · D.O.",
+            "url": "https://music.apple.com/us/artist/d-o/1364148883"
+          }
+        ]
+      },
+      {
+        "category": "projects",
+        "kind": "合作／企划",
+        "title": "《Tell Me (What Is Love)》",
+        "year": "2016",
+        "detail": "与刘永镇合作。",
+        "sources": [
+          {
+            "name": "Apple Music · D.O.",
+            "url": "https://music.apple.com/us/artist/d-o/1364148883"
+          }
+        ]
       }
     ],
     "gallery": [
       {
-        "src": "img/members/do.webp",
-        "era": "EXIST · Cream Soda 概念照 I · 2023"
-      },
-      {
         "src": "img/members/do-2.webp",
-        "era": "REVERXE · Crown 概念照 I · 2026"
+        "era": "2026 · REVERXE 概念照 I"
       },
       {
-        "src": "img/members/do-3.jpg",
-        "era": "EXIST · Cream Soda 概念照 II · 2023"
+        "src": "img/members/do-4.webp",
+        "era": "2026 · REVERXE 概念照 II"
       },
       {
-        "src": "img/members/do-4.jpg",
-        "era": "REVERXE · Crown 概念照 II · 2026"
+        "src": "img/members/do-5.webp",
+        "era": "2026 · REVERXE 预告画报"
       },
       {
-        "src": "img/members/do-5.jpg",
-        "era": "REVERXE · 旷野预告画报 · 2026"
+        "src": "img/members/do-7.webp",
+        "era": "2024 · Blossom 个人概念照"
+      },
+      {
+        "src": "img/members/do-3.webp",
+        "era": "2023 · EXIST 回归概念照 II"
+      },
+      {
+        "src": "img/members/do.webp",
+        "era": "2023 · EXIST 回归概念照 I"
+      },
+      {
+        "src": "img/members/do-6.webp",
+        "era": "官方精选 · 官方画报与造型写真"
+      },
+      {
+        "src": "img/members/do-8.webp",
+        "era": "官方精选 · 官方画报与造型写真"
+      },
+      {
+        "src": "img/members/do-9.webp",
+        "era": "2021 · DFTF 特别专概念照"
       }
-    ]
+    ],
+    "worksCheckedAt": "2026-11-23",
+    "worksScope": "收录个人专辑与部分单曲、OST及合作发行，并非全部歌曲目录。分队与企划单独列示，同作品不同版本合并收录。"
   },
   {
     "id": "kai",
@@ -715,18 +2420,18 @@
     "color2": "#a57bff",
     "scene": 8,
     "solo": [
-      "《KAI (开)》EP · 2020",
-      "《Peaches》EP · 2021",
-      "《Rover》EP · 2023",
-      "《Wait On Me》EP · 2025"
+      "《KAI（开）》 EP · 2020",
+      "《Peaches》 EP · 2021",
+      "《Rover》 EP · 2023",
+      "《Wait On Me》 EP · 2025"
     ],
-    "photo": "img/members/kai.webp",
-    "photo2": "img/members/kai-2.webp",
+    "photo": "img/members/kai-2.webp",
+    "photo2": "img/members/kai-3.webp",
     "thumb": "img/members/kai-s.webp",
-    "photoEra": "EXIST · Cream Soda 概念照 · 2023",
-    "photo2Era": "REVERXE · Crown 概念照 · 2026",
+    "photoEra": "2026 · REVERXE 概念照 I",
+    "photo2Era": "2026 · REVERXE 概念照 II",
     "agency": "SM Entertainment",
-    "status": "与吴世勋组成全新双人小分队 EXO-KASE，首张迷你专辑《Waking Up The City》正在预售（11.10–11.30），定于 12 月 1 日 18:00 KST 正式出道；同期搭档出演 ENA《地球玛布尔世界旅行 4》。",
+    "status": "与世勋组成小分队 EXO-KASE，12 月 1 日发行首张迷你专辑《Waking Up The City》并在首尔举行出道 Showcase，2027 年 1 月启动九城亚巡《SILENT CITY》。",
     "latest": "EXO-KASE 迷你 1 辑《Waking Up The City》（预售中，2026.12.01 发行）；团体《REVERXE》（2026.01.19）",
     "channels": [
       {
@@ -751,54 +2456,164 @@
     ],
     "works": [
       {
-        "kind": "个人 EP",
-        "title": "《KAI (开)》",
-        "year": "2020",
-        "detail": "首张个人迷你专辑 · 主打《Mmmh》与全专视觉短片《FILM : KAI》"
+        "category": "units",
+        "kind": "分队迷你专辑",
+        "title": "EXO-KASE《Waking Up The City》",
+        "year": "2026-12-01",
+        "detail": "KAI、世勋；预定发行，当前仍在预售，未计入已发行作品。",
+        "sources": [
+          {
+            "name": "EXO 官方 Weverse · 预售公告",
+            "url": "https://weverse.io/exo/notice/40889"
+          },
+          {
+            "name": "EXO 官方 · 发行预告",
+            "url": "https://x.com/weareoneEXO/status/2120169835598659810"
+          }
+        ],
+        "status": "announced"
       },
       {
-        "kind": "个人 EP",
-        "title": "《Peaches》",
-        "year": "2021",
-        "detail": "迷你 2 辑 · 轻柔中板 R&B"
+        "category": "albums",
+        "kind": "个人迷你专辑",
+        "title": "《Wait On Me》",
+        "year": "2025-04-21",
+        "detail": "个人迷你 4 辑，7 首。",
+        "sources": [
+          {
+            "name": "Apple Music · Wait On Me",
+            "url": "https://music.apple.com/us/album/wait-on-me-the-4th-mini-album/1807956819"
+          }
+        ]
       },
       {
-        "kind": "个人 EP",
+        "category": "singles",
+        "kind": "先行单曲",
+        "title": "《Adult Swim》",
+        "year": "2025",
+        "detail": "《Wait On Me》先行单曲。",
+        "sources": [
+          {
+            "name": "Apple Music · KAI",
+            "url": "https://music.apple.com/us/artist/kai/1508288900"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人迷你专辑",
         "title": "《Rover》",
         "year": "2023",
-        "detail": "迷你 3 辑 · Dancehall 节奏主打，获音乐银行与音乐中心一位"
+        "detail": "个人迷你 3 辑。",
+        "sources": [
+          {
+            "name": "Apple Music · KAI",
+            "url": "https://music.apple.com/us/artist/kai/1508288900"
+          }
+        ]
       },
       {
-        "kind": "个人 EP",
-        "title": "《Wait On Me》",
-        "year": "2025",
-        "detail": "退伍回归个人迷你 4 辑"
+        "category": "singles",
+        "kind": "混音单曲",
+        "title": "《iScreaM Vol. 14 : Peaches Remixes》",
+        "year": "2022-02-24",
+        "detail": "收录 SUMIN、No2zcat 两个混音版本。",
+        "sources": [
+          {
+            "name": "Apple Music · Peaches Remixes",
+            "url": "https://music.apple.com/us/album/iscream-vol-14-peaches-remixes-single/1610694211"
+          }
+        ]
       },
       {
-        "kind": "小分队",
-        "title": "EXO-KASE《Waking Up The City》",
-        "year": "2026.12",
-        "detail": "与吴世勋组成新小分队，收录 7 首含各自 SOLO 曲"
+        "category": "albums",
+        "kind": "个人迷你专辑",
+        "title": "《Peaches》",
+        "year": "2021",
+        "detail": "个人迷你 2 辑。",
+        "sources": [
+          {
+            "name": "Apple Music · KAI",
+            "url": "https://music.apple.com/us/artist/kai/1508288900"
+          }
+        ]
+      },
+      {
+        "category": "projects",
+        "kind": "企划组合正规专辑",
+        "title": "SuperM《Super One》",
+        "year": "2020-09-25",
+        "detail": "企划组合首张正规专辑；所列为全球首发日期。",
+        "sources": [
+          {
+            "name": "环球音乐 · Super One 发行公告",
+            "url": "https://www.universalmusic.ca/press-releases/superms-debut-album-super-one-is-out-today/"
+          }
+        ]
+      },
+      {
+        "category": "albums",
+        "kind": "个人迷你专辑",
+        "title": "《KAI（开）》",
+        "year": "2020",
+        "detail": "个人迷你 1 辑。",
+        "sources": [
+          {
+            "name": "Apple Music · KAI",
+            "url": "https://music.apple.com/us/artist/kai/1508288900"
+          }
+        ]
+      },
+      {
+        "category": "projects",
+        "kind": "企划组合迷你专辑",
+        "title": "SuperM《SuperM》",
+        "year": "2019-10-04",
+        "detail": "伯贤、KAI 参与的跨团企划组合首张迷你专辑。",
+        "sources": [
+          {
+            "name": "环球音乐 · SuperM 发行目录",
+            "url": "https://www.universal-music.co.jp/superm/discography"
+          }
+        ]
       }
     ],
     "gallery": [
       {
-        "src": "img/members/kai.webp",
-        "era": "EXIST · Cream Soda 概念照 · 2023"
-      },
-      {
         "src": "img/members/kai-2.webp",
-        "era": "REVERXE · Crown 概念照 I · 2026"
+        "era": "2026 · REVERXE 概念照 I"
       },
       {
-        "src": "img/members/kai-3.jpg",
-        "era": "REVERXE · Crown 概念照 II · 2026"
+        "src": "img/members/kai-3.webp",
+        "era": "2026 · REVERXE 概念照 II"
       },
       {
-        "src": "img/members/kai-4.jpg",
-        "era": "REVERXE · 旷野预告画报 · 2026"
+        "src": "img/members/kai-4.webp",
+        "era": "2026 · REVERXE 预告画报"
+      },
+      {
+        "src": "img/members/kai-6.webp",
+        "era": "2025 · Wait On Me 个人概念照"
+      },
+      {
+        "src": "img/members/kai-7.webp",
+        "era": "2025 · Wait On Me 个人概念照"
+      },
+      {
+        "src": "img/members/kai.webp",
+        "era": "2023 · EXIST 回归概念照"
+      },
+      {
+        "src": "img/members/kai-5.webp",
+        "era": "官方精选 · 官方画报与造型写真"
+      },
+      {
+        "src": "img/members/kai-8.webp",
+        "era": "2023 · EXIST 回归概念照 II"
       }
-    ]
+    ],
+    "worksCheckedAt": "2026-11-23",
+    "worksScope": "收录个人专辑与部分单曲、OST及合作发行，并非全部歌曲目录。分队与企划单独列示，同作品不同版本合并收录。"
   },
   {
     "id": "sehun",
@@ -818,16 +2633,15 @@
     "color2": "#5ecbe0",
     "scene": 9,
     "solo": [
-      "EXO-SC《What a Life》· 2019",
-      "EXO-SC《1 Billion Views》· 2020"
+      "《失重色（Fade）》单曲 · 2026"
     ],
-    "photo": "img/members/sehun.webp",
-    "photo2": "img/members/sehun-2.webp",
+    "photo": "img/members/sehun-2.webp",
+    "photo2": "img/members/sehun-4.webp",
     "thumb": "img/members/sehun-s.webp",
-    "photoEra": "EXIST · Cream Soda 概念照 · 2023",
-    "photo2Era": "REVERXE · Crown 概念照 · 2026",
+    "photoEra": "2026 · REVERXE 概念照 I",
+    "photo2Era": "2026 · REVERXE 概念照 II",
     "agency": "SM Entertainment",
-    "status": "与 KAI 组成新小分队 EXO-KASE，出道迷你专辑《Waking Up The City》（共 7 首，含个人 SOLO 曲）预售进行中，12 月 1 日正式发行；同期搭档出演 ENA《地球玛布尔世界旅行 4》。",
+    "status": "与 KAI 组成小分队 EXO-KASE，12 月 1 日发行首张迷你专辑《Waking Up The City》并开启出道 Showcase，2027 年 1 月起展开九城亚巡《SILENT CITY》。",
     "latest": "EXO-KASE 迷你 1 辑《Waking Up The City》（预售中，2026.12.01 发行）；团体《REVERXE》（2026.01.19）",
     "channels": [
       {
@@ -852,51 +2666,154 @@
     ],
     "works": [
       {
-        "kind": "小分队",
-        "title": "EXO-SC《What a Life》",
-        "year": "2019",
-        "detail": "与朴灿烈组成首支双人小分队 · 三主打迷你专辑"
-      },
-      {
-        "kind": "小分队",
-        "title": "EXO-SC《1 Billion Views》",
-        "year": "2020",
-        "detail": "正规 1 辑 · 收录首支个人独唱曲《On Me》"
-      },
-      {
-        "kind": "团体回归",
-        "title": "正规 8 辑《REVERXE》与世巡《EXhOrizon》",
-        "year": "2026",
-        "detail": "退伍归队后完整参与正规八辑及 27 场巡演与首尔安可场"
-      },
-      {
-        "kind": "小分队",
+        "category": "units",
+        "kind": "分队迷你专辑",
         "title": "EXO-KASE《Waking Up The City》",
-        "year": "2026.12",
-        "detail": "与金钟仁组成新小分队，收录 7 首含个人 SOLO 曲"
+        "year": "2026-12-01",
+        "detail": "KAI、世勋；预定发行，当前仍在预售，未计入已发行作品。",
+        "sources": [
+          {
+            "name": "EXO 官方 Weverse · 预售公告",
+            "url": "https://weverse.io/exo/notice/40889"
+          },
+          {
+            "name": "EXO 官方 · 发行预告",
+            "url": "https://x.com/weareoneEXO/status/2120169835598659810"
+          }
+        ],
+        "status": "announced"
+      },
+      {
+        "category": "singles",
+        "kind": "单曲",
+        "title": "《失重色（Fade）》",
+        "year": "2026-07-29",
+        "detail": "中文特别单曲；NCT WISH Sion 客席，Warner Music China 项目。",
+        "sources": [
+          {
+            "name": "STARNEWS · 发行报道",
+            "url": "https://www.starnewskorea.com/en/music/2026/07/29/2026072909031376329"
+          }
+        ]
+      },
+      {
+        "category": "units",
+        "kind": "分队混音单曲",
+        "title": "EXO-SC《iScreaM Vol. 4 : 1 Billion Views Remix》",
+        "year": "2020-08-28",
+        "detail": "Mar Vista Remix。",
+        "sources": [
+          {
+            "name": "Qobuz · EXO-SC 发行目录",
+            "url": "https://www.qobuz.com/us-en/interpreter/exo-sc/4942606"
+          }
+        ]
+      },
+      {
+        "category": "tracks",
+        "kind": "分队专辑内个人曲",
+        "title": "《On Me》",
+        "year": "2020-07-13",
+        "detail": "世勋个人演唱，收录于 EXO-SC《1 Billion Views》。",
+        "sources": [
+          {
+            "name": "Apple Music · 1 Billion Views",
+            "url": "https://music.apple.com/us/album/1-billion-views-the-1st-album/1522828394"
+          }
+        ]
+      },
+      {
+        "category": "units",
+        "kind": "分队正规专辑",
+        "title": "EXO-SC《1 Billion Views》",
+        "year": "2020-07-13",
+        "detail": "首张正规专辑；含灿烈《Nothin’》和世勋《On Me》。",
+        "sources": [
+          {
+            "name": "Apple Music · 1 Billion Views",
+            "url": "https://music.apple.com/us/album/1-billion-views-the-1st-album/1522828394"
+          }
+        ]
+      },
+      {
+        "category": "units",
+        "kind": "分队先行单曲",
+        "title": "EXO-SC《Telephone (feat. 10cm)》",
+        "year": "2020-07-07",
+        "detail": "《1 Billion Views》先行单曲。",
+        "sources": [
+          {
+            "name": "Qobuz · EXO-SC 发行目录",
+            "url": "https://www.qobuz.com/us-en/interpreter/exo-sc/4942606"
+          }
+        ]
+      },
+      {
+        "category": "units",
+        "kind": "分队迷你专辑",
+        "title": "EXO-SC《What a life》",
+        "year": "2019-07-22",
+        "detail": "首张迷你专辑；灿烈、世勋。",
+        "sources": [
+          {
+            "name": "Qobuz · EXO-SC 发行目录",
+            "url": "https://www.qobuz.com/us-en/interpreter/exo-sc/4942606"
+          }
+        ]
+      },
+      {
+        "category": "projects",
+        "kind": "合作／企划",
+        "title": "《We Young》",
+        "year": "2018-09-14",
+        "detail": "与 CHANYEOL 联合署名发行，不是 SEHUN 个人专辑。",
+        "sources": [
+          {
+            "name": "Apple Music · CHANYEOL",
+            "url": "https://music.apple.com/id/artist/chanyeol/935192676?l=id"
+          }
+        ]
       }
     ],
     "gallery": [
       {
-        "src": "img/members/sehun.webp",
-        "era": "EXIST · Cream Soda 概念照 I · 2023"
-      },
-      {
         "src": "img/members/sehun-2.webp",
-        "era": "REVERXE · Crown 概念照 I · 2026"
+        "era": "2026 · REVERXE 概念照 I"
       },
       {
-        "src": "img/members/sehun-3.jpg",
-        "era": "EXIST · Cream Soda 概念照 II · 2023"
+        "src": "img/members/sehun-4.webp",
+        "era": "2026 · REVERXE 概念照 II"
       },
       {
-        "src": "img/members/sehun-4.jpg",
-        "era": "REVERXE · Crown 概念照 II · 2026"
+        "src": "img/members/sehun-5.webp",
+        "era": "2026 · REVERXE 预告画报"
       },
       {
-        "src": "img/members/sehun-5.jpg",
-        "era": "REVERXE · 旷野预告画报 · 2026"
+        "src": "img/members/sehun-3.webp",
+        "era": "2023 · EXIST 回归概念照 II"
+      },
+      {
+        "src": "img/members/sehun.webp",
+        "era": "2023 · EXIST 回归概念照 I"
+      },
+      {
+        "src": "img/members/sehun-6.webp",
+        "era": "2023 · EXIST 回归概念照"
+      },
+      {
+        "src": "img/members/sehun-8.webp",
+        "era": "2023 · EXIST 回归概念照"
+      },
+      {
+        "src": "img/members/sehun-7.webp",
+        "era": "2018 · TEMPO · LOVE SHOT 概念照"
+      },
+      {
+        "src": "img/members/sehun-9.webp",
+        "era": "2021 · DFTF 特别专概念照"
       }
-    ]
+    ],
+    "worksCheckedAt": "2026-11-23",
+    "worksScope": "收录个人专辑与部分单曲、OST及合作发行，并非全部歌曲目录。分队与企划单独列示，同作品不同版本合并收录。"
   }
 ]

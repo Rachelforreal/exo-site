@@ -542,17 +542,19 @@ html[data-mode=paper] .mpanel__card {
 /* Multi-Era Photo Switcher Thumbnails inside Expanded Panel */
 .mpanel__looks {
   position: absolute; top: 56px; right: 14px; z-index: 6;
-  display: flex; flex-direction: column; gap: 7px;
+  display: flex; flex-direction: column; gap: 6px;
+  max-height: 244px; overflow-y: auto; scrollbar-width: none; padding: 3px;
   opacity: 0; pointer-events: none;
   transform: translate3d(12px, 0, 0);
   transition: opacity .32s var(--ease-silk), transform .45s var(--ease-jelly);
 }
+.mpanel__looks::-webkit-scrollbar { display: none; }
 .mpanel.is-open .mpanel__looks {
   opacity: 1; pointer-events: auto;
   transform: translate3d(0, 0, 0);
 }
 .mpanel__look {
-  width: 38px; height: 48px; padding: 0; border-radius: 9px; overflow: hidden;
+  width: 36px; height: 46px; flex: 0 0 auto; padding: 0; border-radius: 8px; overflow: hidden;
   border: 1.5px solid rgba(255, 255, 255, .36); background: #0c1020;
   box-shadow: 0 6px 16px rgba(0, 0, 0, .4);
   transition: transform .36s var(--ease-jelly), border-color .22s;
@@ -643,8 +645,9 @@ html[data-mode=paper] .mpanel__card {
     opacity: 1; pointer-events: auto; transform: none;
     width: calc(100% - 32px); left: 16px; bottom: 16px;
   }
-  .mpanel__looks { opacity: 1; pointer-events: auto; transform: none; flex-direction: row; top: 52px; right: 12px; }
-  .mpanel__look { width: 32px; height: 40px; }
+  .mpanel__looks { opacity: 1; pointer-events: auto; transform: none; flex-direction: row; top: 52px; left: 12px; right: 12px; max-width: calc(100% - 24px); overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+  .mpanel__looks::-webkit-scrollbar { display: none; }
+  .mpanel__look { width: 32px; height: 40px; flex: 0 0 auto; }
   .mstrip.has-open .mpanel:not(.is-open) .mpanel__img { filter: none; }
 }
 

@@ -19,17 +19,17 @@
 <style>html{background:#080b13;color:#f2eee7}html[data-mode=paper]{background:#f6f1e7;color:#1d1a16}</style>
 <script>try{var q=new URLSearchParams(location.search).get("mode"),s=localStorage.getItem("exo-mode");document.documentElement.dataset.mode=(q==="galaxy"||q==="paper")?q:(s==="galaxy"?"galaxy":"paper")}catch(e){document.documentElement.dataset.mode="paper"}</script>
 <link rel="stylesheet" href="fonts/web/fonts.css?v=2">
-<link rel="stylesheet" href="css/main.css?v=9">
-<link rel="stylesheet" href="css/sections.css?v=9">
-<link rel="stylesheet" href="css/albums.css?v=9">
-<link rel="stylesheet" href="css/extra.css?v=9">
-<link rel="stylesheet" href="css/paper.css?v=9">
+<link rel="stylesheet" href="css/main.css?v=10">
+<link rel="stylesheet" href="css/sections.css?v=10">
+<link rel="stylesheet" href="css/albums.css?v=12">
+<link rel="stylesheet" href="css/extra.css?v=10">
+<link rel="stylesheet" href="css/paper.css?v=10">
 <link rel="stylesheet" href="css/share.css?v=4">
 <link rel="stylesheet" href="css/subscribe.css?v=3">
 <link rel="stylesheet" href="css/checkin.css?v=2">
-<link rel="stylesheet" href="css/feed.css?v=2">
+<link rel="stylesheet" href="css/feed.css?v=3">
 <link rel="stylesheet" href="css/guestbook.css?v=3">
-<link rel="stylesheet" href="css/vibe-motion.css?v=9">
+<link rel="stylesheet" href="css/vibe-motion.css?v=10">
 <script>
   // apply the saved power theme before first paint
   try { var p = localStorage.getItem('exo-power'); if (p) document.documentElement.dataset.power = p; } catch (e) {}
@@ -81,7 +81,7 @@
     <a href="#now" data-nav="now">此刻星讯</a>
     <a href="#schedule" data-nav="schedule">票根与票夹</a>
     <a href="#albums" data-nav="albums">唱片封套</a>
-    <a href="archive.html">来时路与团综</a>
+    <a href="archive.html">编年与综艺</a>
     <a href="studio.html">官娃与工坊</a>
   </nav>
   <div class="bar__tools">
@@ -169,7 +169,18 @@
     <!-- "Which year did you land?" Boarding Pass Ritual mounts here via #exoEraAnchor -->
     <div id="exoEraMount"></div>
 
-    <figure class="issue__lyric"><figcaption>DAILY LYRIC BOOKMARK · 今日歌词书签</figcaption><blockquote><p class="ko" data-lyric-ko></p><p data-lyric-zh></p></blockquote><cite data-lyric-src></cite></figure>
+    <figure class="issue__lyric" aria-label="今日歌词书签">
+      <div class="lyric-bm__ribbon" aria-hidden="true"><span class="lyric-bm__eyelet"></span></div>
+      <figcaption class="lyric-bm__head">
+        <span>LYRIC BOOKMARK · 今日歌词书签</span>
+        <button class="lyric-bm__next" type="button" data-lyric-next aria-label="换一句歌词">换一句 ↻</button>
+      </figcaption>
+      <blockquote><p class="ko" data-lyric-ko></p><p class="zh" data-lyric-zh></p></blockquote>
+      <footer class="lyric-bm__foot">
+        <cite data-lyric-src></cite>
+        <span class="lyric-bm__seal" aria-hidden="true">EXO · 14TH</span>
+      </footer>
+    </figure>
 
     <div class="issue__actions">
       <a class="cbtn" href="studio.html">带这张小卡去做 DIY 壁纸 →</a>
@@ -199,7 +210,7 @@
       <span class="ln"><span class="w">WE</span> <span class="w">ARE</span></span>
       <span class="ln ln--one"><em class="w">ONE</em><svg class="hero__sigil glyph" viewBox="0 0 48 48" aria-hidden="true"><use data-power-glyph href="#g-galaxy"/></svg></span>
     </h1>
-    <p class="hero__sub">收录 EXO 团体与九位成员的核实动态、双时区行程、二十一张专辑标志演变与单人专栏。<br>点击画卷人物可速览档案；右上角「超能力」可独立切换全站主题。</p>
+    <p class="hero__sub">收录 EXO 团体与九位成员的核实动态、双时区行程、团体、个人与分队唱片收藏与单人专栏。<br>点击画卷人物可速览档案；右上角「超能力」可独立切换全站主题。</p>
   </div>
 
   <div class="film" id="film" aria-label="成员合照长卷，可左右拖动">
@@ -233,10 +244,10 @@
   <header class="sec__head">
     <p class="sec__no">02</p>
     <div>
-      <p class="kicker">CHAPTER II // STARLIGHT DISPATCH · 此刻星讯与重逢倒计时</p>
+      <p class="kicker">02 · STARLIGHT DISPATCH</p>
       <h2 class="sec__h" id="now-h">此刻，<em>EXO</em></h2>
     </div>
-    <p class="sec__lead">紧跟正在开售的官方预约与下一场重逢。左栏收好板上钉钉的官宣与权威报道，右栏把还在传的风声单独放进观察匣——不漏掉每一份期待，也不被没凭据的爆料带着跑。</p>
+    <p class="sec__lead">近期演出、回归与各成员动态汇总，确认消息与待核实线索分开陈列。</p>
   </header>
 
   <div class="now__grid">
@@ -245,8 +256,8 @@
     <div class="lane lane--official">
       <header class="lane__head">
         <span class="seal seal--official"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-check"/></svg></span>
-        <div><h3>一号信笺 · 已确认星讯</h3><p>已直连 EXO 官博与成员官方微博 / 权威媒体报道</p></div>
-        <button class="cbtn cbtn--ghost cbtn--sm" type="button" data-weibo-sync title="从微博官方账号拉取最新动态并分拣到四大板块">同步最新微博 ↻</button>
+        <div><h3>最新动态</h3><p>官博、场馆公告与成员大吧</p></div>
+        <button class="cbtn cbtn--ghost cbtn--sm" type="button" data-weibo-sync title="刷新最新微博与大吧动态">刷新 ↻</button>
         <span class="lane__count" data-count="official"></span>
       </header>
       <ol class="lane__list" id="lane-official"></ol>
@@ -255,20 +266,19 @@
     <div class="lane lane--rumor">
       <header class="lane__head">
         <span class="seal seal--rumor"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-question"/></svg></span>
-        <div><h3>二号观察匣 · 待核实风声</h3><p>社交平台流传线索，附尚待官宣补齐的凭据</p></div>
+        <div><h3>待确认线索</h3><p>尚未官宣的风声与票务传闻</p></div>
         <span class="lane__count" data-count="rumor"></span>
       </header>
       <ol class="lane__list" id="lane-rumor"></ol>
     </div>
   </div>
 
-  <!-- feed:begin 快讯 · 自动整理 (worker/ -> /api/news & data/weibo-feed.json; js/feed.js) -->
+  <!-- feed:begin 快讯 (worker/ -> /api/news & data/weibo-feed.json; js/feed.js?v=10) -->
   <div class="lane lane--feed" id="feed" hidden>
     <header class="lane__head">
-      <div><h3>微博直连 · 每日自动分拣流</h3><p>自动从 @weareoneEXO 官博、成员本人及工作室微博拉取并同步至四大板块</p></div>
+      <div><h3>微博与大吧快讯</h3><p>来自官博、成员工作室及活跃大吧</p></div>
       <span class="lane__count" id="feed-count"></span>
     </header>
-    <p class="feed__note">每条均经官方微博 UID 白名单核验，并自动分拣至「此刻星讯」「票根与票夹」「唱片封套」与「来时路与团综」</p>
     <ul class="feed__list" id="feed-list"></ul>
   </div>
   <!-- feed:end -->
@@ -323,12 +333,24 @@
   <header class="sec__head">
     <p class="sec__no">04</p>
     <div>
-      <p class="kicker">BOX INSERT 04 // DISCOGRAPHY &amp; EMBLEMS · 历代唱片封套</p>
-      <h2 class="sec__h" id="albums-h">二十一张专辑，<em>二十一枚标志</em></h2>
+      <p class="kicker">BOX INSERT 04 // DISCOGRAPHY · 历代唱片封套</p>
+      <h2 class="sec__h" id="albums-h">团体、个人与分队<em>唱片收藏</em></h2>
     </div>
-    <p class="sec__lead">从 2012《MAMA》到 2026《REVERXE》，二十一次把正六边形画成新的宇宙。拨动唱片架翻看历代徽标变形、完整曲目单、那句最戳人的双语歌词与大赏荣光。</p>
+    <p class="sec__lead">EXO 团体、九位成员、EXO-CBX、EXO-SC 与 SuperM。录音室与现场发行一并收藏，单曲及 OST 另见成员作品页。</p>
   </header>
 
+  <div class="album-catalog" id="album-filters">
+    <div class="seg album-catalog__scope" role="group" aria-label="唱片归属">
+      <button type="button" data-album-scope="all" aria-pressed="true">全部</button>
+      <button type="button" data-album-scope="group" aria-pressed="false">EXO 团体</button>
+      <button type="button" data-album-scope="solo" aria-pressed="false">个人</button>
+      <button type="button" data-album-scope="unit" aria-pressed="false">小分队</button>
+      <button type="button" data-album-scope="project" aria-pressed="false">企划组合</button>
+    </div>
+    <label class="album-catalog__member">成员<select id="album-member" aria-label="筛选唱片成员"><option value="all">全部成员</option></select></label>
+    <p class="album-catalog__count" id="album-count" aria-live="polite"></p>
+  </div>
+  <div class="album-empty" id="album-empty" hidden></div>
   <div class="shelf" id="shelf" aria-label="专辑列表，可左右拖动"><div class="shelf__track" id="shelf-track" role="tablist"></div></div>
   <div class="stage" id="stage" role="tabpanel" aria-live="polite"></div>
 </section>
@@ -341,13 +363,13 @@
       <p class="kicker">BOX INSERT 05 // ARCHIVE BOOK &amp; CRAFT KIT · 礼盒下层分册</p>
       <h2 class="sec__h" id="explore-h">深度<em>档案馆与星球工坊</em></h2>
     </div>
-    <p class="sec__lead">礼盒下层还藏着两册厚厚的纪念内页：一册收齐十四年来时路、历代概念画报与 52 档下饭团综；一册放着 7 只官娃简笔画、DIY 锁屏壁纸与你的专属 EXO-L 入坑纪念卡。</p>
+    <p class="sec__lead">除了首页的实时行程与专辑架，还单独整理了两本分册：一本收齐十四年大事编年、历代概念画报与 52 档综艺；一本提供官娃贴纸、DIY 锁屏壁纸与专属入坑纪念卡。</p>
   </header>
   <div class="portal-grid">
     <a class="portal-card" href="archive.html">
-      <small>VOLUME I · 来时路与团综纪念册</small>
-      <h3>来时路编年 · 画报长廊 · 52 档综艺与信源 ↗</h3>
-      <p>翻阅 2012–2026 团体与个人里程碑（含《MAMA》《咆哮》《约定》《REVERXE》纪念签）、历代回归画报长廊与 52 档团综补档指南。</p>
+      <small>VOLUME I · 编年与综艺馆</small>
+      <h3>大事编年 · 画报长廊 · 52 档综艺 ↗</h3>
+      <p>翻阅 2012–2026 团体与个人重要节点（《MAMA》《咆哮》《约定》《REVERXE》）、历代回归画报与 52 档综艺补档指南。</p>
     </a>
     <a class="portal-card" href="studio.html">
       <small>VOLUME II · 官娃贴纸与手账工坊</small>
@@ -444,6 +466,6 @@
 <script src="vendor/ScrollTrigger.min.js"></script>
 <script src="vendor/SplitText.min.js"></script>
 <script src="vendor/lenis.min.js"></script>
-<script type="module" src="js/main.js?v=13"></script>
+<script type="module" src="js/main.js?v=16"></script>
 </body>
 </html>

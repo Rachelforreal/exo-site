@@ -95,11 +95,11 @@ export function initSearch(ctx, api = {}) {
 
   for (const a of ctx.albums) {
     idx.push({
-      group: '团体专辑',
-      title: `${a.title}（${a.zh}）`,
-      sub: `${a.date.replace(/-/g, '.')} · 主打《${a.lead}》`,
-      hay: `${a.title} ${a.zh} ${a.lead} ${a.tagline} ${a.concept} ${(a.tracks || []).join(' ')}`.toLowerCase(),
-      members: ['group'],
+      group: ({ solo: '个人专辑', unit: '分队专辑', project: '企划专辑' })[a.scope] || '团体专辑',
+      title: `${a.artist || 'EXO'} · ${a.title}${a.zh ? `（${a.zh}）` : ''}`,
+      sub: `${a.date.replace(/-/g, '.')} · ${a.type}${a.lead ? ` · 主打《${a.lead}》` : ''}`,
+      hay: `${a.artist || 'EXO'} ${(a.members || []).map(id => `${ctx.byId[id]?.zh || ''} ${ctx.byId[id]?.en || ''}`).join(' ')} ${a.title} ${a.zh} ${a.lead} ${a.tagline} ${a.concept} ${(a.tracks || []).join(' ')}`.toLowerCase(),
+      members: a.members || ['group'],
       date: a.date,
       phase: 'archive',
       img: a.thumb,
@@ -200,7 +200,7 @@ export function initSearch(ctx, api = {}) {
       return terms.every(t => it.hay.includes(t));
     });
 
-    const GROUPS = ['行程与票务', '近期动态', '团体专辑', '编年节点', '成员专栏'];
+    const GROUPS = ['行程与票务', '近期动态', '团体专辑', '个人专辑', '分队专辑', '企划专辑', '编年节点', '成员专栏'];
     const hasFilter = st.member !== 'all' || st.time !== 'all' || terms.length > 0;
     let html = '';
 

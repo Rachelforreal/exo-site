@@ -8,7 +8,7 @@ import { initMode } from './mode.js';
 import { shareMember, exportMemberPoster } from './share.js'; /* share */
 import { initSubscribe } from './subscribe.js';
 
-const load = name => fetch(`data/${name}.json?v=5`).then(r => { if (!r.ok) throw new Error(name); return r.json(); });
+const load = name => fetch(`data/${name}.json?v=16`).then(r => { if (!r.ok) throw new Error(name); return r.json(); });
 
 async function boot() {
   const [members, events, news, archive, meta] = await Promise.all(['members', 'events', 'news', 'archive', 'meta'].map(load));
@@ -54,6 +54,19 @@ async function boot() {
   const variety = (archive.variety || []).filter(v => (v.members || []).includes(m.id) || (v.members || []).includes('exo') || v.who === '全员' || v.who.includes(m.en) || (v.who.includes('CBX') && CBX.includes(m.id)));
   const unitSongs = (archive.songs || []).filter(s => (s.u === 'CBX' && CBX.includes(m.id)) || (s.u === 'SC' && SC.includes(m.id)));
   const works = m.works?.length ? m.works : (m.solo || []).map(s => { const i = s.lastIndexOf(' · '); return { kind: '个人作品', title: i > 0 ? s.slice(0, i) : s, year: i > 0 ? s.slice(i + 3) : '', detail: '' }; });
+  const releasedWorks = works.filter(w => w.status !== 'announced');
+  const announcedWorks = works.filter(w => w.status === 'announced');
+  const workGroups = [['albums', '个人专辑与 EP'], ['singles', '单曲与先行曲'], ['ost', '影视与节目原声'], ['units', '小分队作品'], ['projects', '合作与企划'], ['tracks', '专辑内个人曲']];
+  const workCard = w => `<li>
+    <div class="mp-work__top"><span class="tag">${esc(w.kind)}</span>${w.year ? `<time>${esc(w.year)}</time>` : ''}${w.status === 'announced' ? '<span class="tag">预定发行</span>' : ''}</div>
+    <b>${esc(w.title)}</b>
+    ${w.detail ? `<p>${esc(w.detail)}</p>` : ''}
+    ${w.sources?.length || w.albumSlug ? `<div class="item__src">${sources(w.sources)}${w.albumSlug ? `<a class="src" href="index.html?album=${encodeURIComponent(w.albumSlug)}#albums">在唱片架查看 →</a>` : ''}</div>` : ''}
+  </li>`;
+  const worksHTML = workGroups.map(([key, label]) => {
+    const items = releasedWorks.filter(w => (w.category || 'albums') === key);
+    return items.length ? `<div class="mp-work-group"><h3>${label} <small>${items.length} 项</small></h3><ol class="mp-works-cards">${items.map(workCard).join('')}</ol></div>` : '';
+  }).join('');
   const looks = m.gallery?.length ? m.gallery.map(g => [g.src, g.era]) : [[m.photo2, m.photo2Era], [m.photo, m.photoEra]].filter(x => x[0]);
   const links = (m.channels || []).filter(c => safeUrl(c.url));
   const agency = String(m.agency || '').split(/[（(]/)[0].trim();
@@ -118,7 +131,7 @@ async function boot() {
       <dl class="mp-stats">
         <div><dt>出生日期</dt><dd>${fullDate(m.birth)}<small>${age} 岁</small></dd></div>
         <div class="is-hot"><dt>距下次生日</dt><dd>${dd === 0 ? '今天' : 'D-' + dd}<small>${md(nb)} 生日</small></dd></div>
-        <div><dt>代表作收录</dt><dd>${works.length} 项${unitSongs.length ? `<small>含分队曲 ${unitSongs.length} 首</small>` : '<small>个人及企划</small>'}</dd></div>
+        <div><dt>作品条目收录</dt><dd>${releasedWorks.length} 项<small>${announcedWorks.length ? `另有 ${announcedWorks.length} 项预定发行` : '含个人、合作与分队'}</small></dd></div>
         <div><dt>所属经纪</dt><dd title="${esc(m.agency)}">${esc(agency)}</dd></div>
       </dl>
       <div class="mp-btns"><button class="cbtn" type="button" data-keep-power>将全站主题设为「${esc(m.power.zh)}」</button><a class="cbtn cbtn--ghost" href="studio.html?card=${m.id}#card">制作他的纪念卡 →</a><button class="cbtn cbtn--ghost" type="button" data-subscribe="member" data-member-id="${m.id}" data-title="${esc(m.zh)} · 单人日程">订阅他的日历</button><!-- share:begin --><button class="cbtn cbtn--ghost" type="button" data-export-poster>导出专栏海报 ↓</button><button class="cbtn cbtn--ghost" type="button" data-share-member>复制链接</button><!-- share:end --></div>
@@ -158,11 +171,9 @@ async function boot() {
   }).join('')}</ol>` : '', `共收录个人及小分队直接相关动态 ${personalNewsCount} 条，并同步关联团体重要通告。`)}
 
   <div class="mp-cols">
-  ${sec('works', '04', 'SEC. 04 // DISCOGRAPHY · 代表作', `个人与小分队<em>作品集</em>`, `<ol class="mp-works-cards">${works.map(w => `<li>
-      <div class="mp-work__top"><span class="tag">${esc(w.kind)}</span>${w.year ? `<time>${esc(w.year)}</time>` : ''}</div>
-      <b>${esc(w.title)}</b>
-      ${w.detail ? `<p>${esc(w.detail)}</p>` : ''}
-    </li>`).join('')}</ol>
+  ${sec('works', '04', 'SEC. 04 // DISCOGRAPHY · 作品', `个人与小分队<em>作品集</em>`, `<p class="mp-unit-note">${esc(m.worksScope || '个人与小分队作品选录。')}${m.worksCheckedAt ? ` 本轮核对：${esc(m.worksCheckedAt)}。` : ''}</p>
+    ${worksHTML}
+    ${announcedWorks.length ? `<div class="mp-work-group"><h3>预定发行 <small>不计入已发行条目</small></h3><ol class="mp-works-cards">${announcedWorks.map(workCard).join('')}</ol></div>` : ''}
     ${unitSongs.length ? `<p class="mp-unit-note">站内曲库另收录其所属小分队曲目 <b>${unitSongs.length}</b> 首（可在首页「入坑纪念卡」中检索选曲）。</p>` : ''}`)}
   ${sec('ch', '05', 'SEC. 05 // VERIFIED CHANNELS · 官方入口', `已核实第一方<em>渠道</em>`, `${links.length ? `<div class="mp-links">${links.map(c => `<a href="${esc(c.url)}" target="_blank" rel="noopener noreferrer">${esc(c.name)}${icon('arrow')}</a>`).join('')}</div>` : ''}${m.channelsNote ? `<p class="mp-none" style="margin-top:${links.length ? '14px' : '0'}">${esc(m.channelsNote)}</p>` : ''}`)}
   </div>
@@ -217,7 +228,7 @@ async function boot() {
     const expBtn = e.target.closest('[data-export-poster]');
     if (expBtn) {
       expBtn.disabled = true;
-      exportMemberPoster(m, { age, dd, worksCount: works.length, photoSrc: looks[currentLookIdx]?.[0], photoEra: looks[currentLookIdx]?.[1] || '' })
+      exportMemberPoster(m, { age, dd, worksCount: releasedWorks.length, photoSrc: looks[currentLookIdx]?.[0], photoEra: looks[currentLookIdx]?.[1] || '' })
         .finally(() => { expBtn.disabled = false; });
       return;
     }
@@ -226,6 +237,10 @@ async function boot() {
     if (kp) { try { localStorage.setItem('exo-power', m.id); } catch {} kp.textContent = `全站已保存为「${m.power.zh}」主题`; }
   });
   document.documentElement.classList.add('is-ready');
+  if (location.hash) {
+    const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (target) requestAnimationFrame(() => target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' }));
+  }
 }
 
 initSubscribe();
