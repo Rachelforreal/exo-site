@@ -14,11 +14,29 @@ const base = read('data/base.json');
 const lyrics = read('data/lyrics.json');
 const awards = existsSync(root + 'data/new/awards.json') ? read('data/new/awards.json') : { albums: {} };
 
-// straight copies: the newer data is authoritative
-for (const k of ['members', 'news', 'events', 'channels', 'hero', 'meta']) out(k, read(`data/new/${k}.json`));
+// Source member facts remain authoritative; album links and missing album cards derive from the shared catalog.
+const albumCatalog = existsSync(root + 'data/new/album-catalog.json') ? read('data/new/album-catalog.json') : { items: [], overrides: {} };
+const albumKey = s => String(s || '').toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
+for (const k of ['members', 'news', 'events', 'channels', 'hero', 'meta']) {
+  const value = read(`data/new/${k}.json`);
+  if (k === 'members') for (const m of value) {
+    m.works = m.works || [];
+    for (const a of (albumCatalog.items || []).filter(a => a.scope !== 'group' && a.members.includes(m.id))) {
+      const category = a.scope === 'solo' ? 'albums' : a.scope === 'unit' ? 'units' : 'projects';
+      const title = a.scope === 'solo' ? `《${a.title}》` : `${a.artist}《${a.title}》`;
+      const key = albumKey(title);
+      const existing = m.works.find(w => w.category === category && albumKey(w.title) === key);
+      if (existing) existing.albumSlug = a.slug;
+      else m.works.push({ category, kind: a.type, title, year: a.date, detail: a.concept, sources: a.sources, albumSlug: a.slug });
+    }
+    m.works.sort((a, b) => String(b.year).replace(/\./g, '-').localeCompare(String(a.year).replace(/\./g, '-')));
+  }
+  out(k, value);
+}
 
 // albums: add the old site's era notes (matched by release date), the day's lyric, and awards
-const albums = read('data/new/albums.json').map(a => {
+const albums = read('data/new/albums.json').map(original => {
+  const a = { ...original, ...(albumCatalog.overrides?.[original.slug] || {}), scope: 'group', artist: 'EXO', members: ['group'] };
   const i = base.eras.findIndex(e => e.date === a.date);
   const e = base.eras[i];
   const aw = awards.albums?.[a.slug];
@@ -32,7 +50,17 @@ const albums = read('data/new/albums.json').map(a => {
     ...(aw ? { awards: aw } : {}),
   };
 });
-out('albums', albums);
+const allAlbums = [...albums, ...(albumCatalog.items || [])].sort((a, b) => (a.sortDate || a.date).localeCompare(b.sortDate || b.date) || a.slug.localeCompare(b.slug));
+const origSlugs = new Set(albums.map(a => a.slug));
+const seq = { group: 0, solo: 0, unit: 0, project: 0 };
+const prefix = { group: 'L', solo: 'S', unit: 'U', project: 'P' };
+for (const a of allAlbums) {
+  if (!origSlugs.has(a.slug)) {
+    const k = a.scope || 'group';
+    a.no = `${prefix[k] || 'A'}${String(++seq[k]).padStart(2, '0')}`;
+  }
+}
+out('albums', allAlbums);
 
 // The expanded archive lives with the newer research. Older copies use the base archive.
 const archive = existsSync(root + 'data/new/archive.json') ? read('data/new/archive.json') : {};
