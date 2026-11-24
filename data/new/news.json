@@ -2169,6 +2169,23 @@
     "image": "img/members/chen.webp"
   },
   {
+    "id": "wb-5362404269494035",
+    "date": "2026-11-06",
+    "title": "我们也一直在等你们 🩶 EXO",
+    "summary": "我们也一直在等你们 🩶 EXO#weareoneEXO##EXOPLANET_EXhOrizon_dot#",
+    "members": [
+      "group"
+    ],
+    "verification": "official",
+    "channel": "微博",
+    "sources": [
+      {
+        "name": "EXO 官方微博（微博原帖）",
+        "url": "https://m.weibo.cn/detail/5362404269494035"
+      }
+    ]
+  },
+  {
     "id": "bili-BV14c4q6HEUr",
     "date": "2026-11-06",
     "title": "【261106】EXO安可演唱会 朴灿烈是只眼睛漂亮的小小狗啊",
@@ -2438,6 +2455,23 @@
     ],
     "missing": "主办方「StarDream星梦引力」原始公告、携程/猫眼/UUTIX 官方售票页面、具体开演时间与票价，以及艺人方面的正式确认。",
     "image": "img/members/chen.webp"
+  },
+  {
+    "id": "bili-BV1BZHP6vEvP",
+    "date": "2026-10-24",
+    "title": "【都暻秀DAYOFF澳门】奇迹（Wonder）261018",
+    "summary": "B站 UP 主「点三口土寸」上传成员直播录屏：【都暻秀DAYOFF澳门】奇迹（Wonder）261018",
+    "members": [
+      "do"
+    ],
+    "verification": "media",
+    "channel": "Bilibili",
+    "sources": [
+      {
+        "name": "B站 · 点三口土寸",
+        "url": "https://www.bilibili.com/video/BV1BZHP6vEvP"
+      }
+    ]
   },
   {
     "id": "bili-BV1eTHN6bETb",
