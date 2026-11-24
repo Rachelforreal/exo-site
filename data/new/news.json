@@ -1,5 +1,90 @@
 [
   {
+    "id": "bili-BV125yozNE76",
+    "date": "2026-11-24",
+    "title": "【4K】Flatline - EXO  高清舞台",
+    "summary": "B站 UP 主「鉴月Moonlight」上传舞台视频：【4K】Flatline - EXO  高清舞台",
+    "members": [
+      "group"
+    ],
+    "verification": "media",
+    "channel": "Bilibili",
+    "sources": [
+      {
+        "name": "B站 · 鉴月Moonlight",
+        "url": "https://www.bilibili.com/video/BV125yozNE76"
+      }
+    ]
+  },
+  {
+    "id": "bili-BV1h9yfzjEzr",
+    "date": "2026-11-24",
+    "title": "【充电专场】一场半小时的视听盛宴！EXO团体&amp;D.O.个人舞台reaction",
+    "summary": "B站 UP 主「笨小孩rain」上传舞台视频：【充电专场】一场半小时的视听盛宴！EXO团体&amp;D.O.个人舞台reaction",
+    "members": [
+      "do"
+    ],
+    "verification": "media",
+    "channel": "Bilibili",
+    "sources": [
+      {
+        "name": "B站 · 笨小孩rain",
+        "url": "https://www.bilibili.com/video/BV1h9yfzjEzr"
+      }
+    ]
+  },
+  {
+    "id": "yt-TXVfQrRbbiQ",
+    "date": "2026-11-24",
+    "title": "네가 모르는 일들이 참 많다는 걸 🦋",
+    "summary": "XIUMIN 个人油管更新视频：네가 모르는 일들이 참 많다는 걸 🦋",
+    "members": [
+      "xiumin"
+    ],
+    "verification": "official",
+    "channel": "YouTube",
+    "sources": [
+      {
+        "name": "XIUMIN 个人油管",
+        "url": "https://www.youtube.com/watch?v=TXVfQrRbbiQ"
+      }
+    ]
+  },
+  {
+    "id": "wb-5368763522482723",
+    "date": "2026-11-24",
+    "title": "多的是你不知道的事🦋 金珉锡 INB100_XIUMIN的微博视频",
+    "summary": "多的是你不知道的事🦋 金珉锡 #金珉锡# #秀珉# #XIUMIN# #SecretAgentX# #XIUMINinMACAU# #XIUMIN的秘密计划# #秀TIME# #你不知道的事# INB100_XIUMIN的微博视频",
+    "members": [
+      "xiumin"
+    ],
+    "verification": "official",
+    "channel": "微博",
+    "sources": [
+      {
+        "name": "金珉锡官方微博（微博原帖）",
+        "url": "https://m.weibo.cn/detail/5368763522482723"
+      }
+    ]
+  },
+  {
+    "id": "wb-5368773515152002",
+    "date": "2026-11-24",
+    "title": "边伯贤 🧤美萌暖冬系列 小纸懵速来食之～",
+    "summary": "边伯贤 🧤美萌暖冬系列 小纸懵速来食之～",
+    "members": [
+      "baekhyun"
+    ],
+    "verification": "media",
+    "channel": "微博",
+    "sources": [
+      {
+        "name": "边伯贤大吧 FearlessBaek（微博原帖）",
+        "url": "https://m.weibo.cn/detail/5368773515152002"
+      }
+    ]
+  },
+  {
     "id": "wb-5368719996879488",
     "date": "2026-11-24",
     "title": "昼夜有先后，热爱不分时差",
@@ -2541,6 +2626,23 @@
     ],
     "missing": "主办方「StarDream星梦引力」原始公告、携程/猫眼/UUTIX 官方售票页面、具体开演时间与票价，以及艺人方面的正式确认。",
     "image": "img/members/chen.webp"
+  },
+  {
+    "id": "bili-BV1vAHN6wERQ",
+    "date": "2026-10-24",
+    "title": "【都暻秀DAYOFF澳门】Fit 261018（伤眼慎入…",
+    "summary": "B站 UP 主「点三口土寸」上传成员直播录屏：【都暻秀DAYOFF澳门】Fit 261018（伤眼慎入…",
+    "members": [
+      "do"
+    ],
+    "verification": "media",
+    "channel": "Bilibili",
+    "sources": [
+      {
+        "name": "B站 · 点三口土寸",
+        "url": "https://www.bilibili.com/video/BV1vAHN6wERQ"
+      }
+    ]
   },
   {
     "id": "bili-BV1BZHP6vEvP",
