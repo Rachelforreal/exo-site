@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>EXO 星球 · 给 EXO-L 的白昼与银河</title>
-<meta name="description" content="给 EXO-L 的粉丝站：成员、行程与票务、专辑档案。九种超能力主题随心切换，每条消息都注明来源，正式公告与待核实消息分开。粉丝自制，非官方。">
-<meta name="theme-color" content="#f2f0eb">
+<meta name="description" content="给 EXO-L 的粉丝站：成员、行程与票务、专辑档案。九种超能力主题随心切换，每条消息都注明来源，只收录已核实公告与行程。粉丝自制，非官方。">
+<meta name="theme-color" content="#f8f9fc">
 <meta property="og:title" content="EXO 星球 · WE ARE ONE">
 <meta property="og:description" content="成员、行程与票务、专辑档案。九种超能力主题，每条消息都注明来源。">
 <meta property="og:image" content="https://www.exolneverland.com/img/og/home.jpg">
@@ -16,23 +16,23 @@
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/web/cormorant-garamond-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/web/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<style>html{background:#080b13;color:#f2eee7}html[data-mode=paper]{background:#f6f1e7;color:#1d1a16}</style>
+<style>html{background:#080b13;color:#f2eee7}html[data-mode=paper]{background:#f8f9fc;color:#1d1a16}</style>
 <script>try{var q=(new URLSearchParams(location.search).get("mode")||"").toLowerCase(),m=(q==="galaxy"||q==="paper")?q:((q==="day"||q==="daylight")?"paper":null),s=localStorage.getItem("exo-mode");if(m)localStorage.setItem("exo-mode",m);document.documentElement.dataset.mode=m||(s==="galaxy"?"galaxy":"paper")}catch(e){document.documentElement.dataset.mode="paper"}</script>
 <link rel="stylesheet" href="fonts/web/fonts.css?v=2">
 <link rel="stylesheet" href="css/main.css?v=21">
 <link rel="stylesheet" href="css/sections.css?v=21">
-<link rel="stylesheet" href="css/albums.css?v=21">
-<link rel="stylesheet" href="css/extra.css?v=26">
-<link rel="stylesheet" href="css/paper.css?v=21">
+<link rel="stylesheet" href="css/albums.css?v=32">
+<link rel="stylesheet" href="css/extra.css?v=31">
+<link rel="stylesheet" href="css/paper.css?v=29">
 <link rel="stylesheet" href="css/share.css?v=21">
 <link rel="stylesheet" href="css/subscribe.css?v=21">
 <link rel="stylesheet" href="css/checkin.css?v=21">
 <link rel="stylesheet" href="css/feed.css?v=21">
 <link rel="stylesheet" href="css/guestbook.css?v=21">
 <link rel="stylesheet" href="css/vibe-motion.css?v=27">
-<link rel="stylesheet" href="css/collector.css?v=27">
-<link rel="stylesheet" href="css/offstage.css?v=27">
-<link rel="stylesheet" href="css/responsive-nav.css?v=28">
+<link rel="stylesheet" href="css/collector.css?v=37">
+<link rel="stylesheet" href="css/offstage.css?v=32">
+<link rel="stylesheet" href="css/responsive-nav.css?v=31">
 <script>
   // apply the saved power theme before first paint
   try { var p = localStorage.getItem('exo-power'); if (p) document.documentElement.dataset.power = p; } catch (e) {}
@@ -243,7 +243,7 @@
       <p class="kicker">02 · STARLIGHT DISPATCH</p>
       <h2 class="sec__h" id="now-h">此刻，<em>EXO</em></h2>
     </div>
-    <p class="sec__lead">近期演出、回归与各成员动态汇总，确认消息与待核实线索分开陈列。</p>
+    <p class="sec__lead">近期演出、回归与各成员已核实动态汇总。</p>
   </header>
 
   <div class="now__grid">
@@ -257,15 +257,6 @@
         <span class="lane__count" data-count="official"></span>
       </header>
       <ol class="lane__list" id="lane-official"></ol>
-    </div>
-
-    <div class="lane lane--rumor">
-      <header class="lane__head">
-        <span class="seal seal--rumor"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-question"/></svg></span>
-        <div><h3>待确认线索</h3><p>尚未官宣的风声与票务传闻</p></div>
-        <span class="lane__count" data-count="rumor"></span>
-      </header>
-      <ol class="lane__list" id="lane-rumor"></ol>
     </div>
   </div>
 
@@ -298,7 +289,7 @@
       <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-search"/></svg>
       <input type="search" id="sched-q" placeholder="搜城市、场馆、成员、专辑或活动名…" autocomplete="off" aria-label="搜索行程">
     </label>
-    <div class="subrow"><button class="cbtn cbtn--ghost" type="button" data-subscribe="exo">订阅日历 · 已确认行程与生日</button><span class="subrow__hint">自动同步至手机或电脑系统日历，待核实传闻默认排除</span></div>
+    <div class="subrow"><button class="cbtn cbtn--ghost" type="button" data-subscribe="exo">订阅日历 · 已确认行程与生日</button><span class="subrow__hint">自动同步至手机或电脑系统日历</span></div>
     <div class="sched__filters">
       <div class="seg" role="group" aria-label="时间进度" id="sched-when">
         <button type="button" data-when="active" aria-pressed="true">进行中与即将</button>
@@ -311,7 +302,6 @@
         <button type="button" data-verif="all" aria-pressed="true">全部来源</button>
         <button type="button" data-verif="confirmed" aria-pressed="false">已确认</button>
         <button type="button" data-verif="official" aria-pressed="false">仅官方</button>
-        <button type="button" data-verif="unverified" aria-pressed="false">待核实</button>
       </div>
       <div class="sched__checks">
         <label class="check"><input type="checkbox" id="sched-ticket"><span>有票务/预售入口</span></label>
