@@ -38,12 +38,12 @@
 /* ---------- 1. 35mm Contact-Sheet Filmstrip Ticker ---------- */
 .ticker {
   position: relative;
-  padding: 15px 0 !important;
+  padding: 8px 0 !important;
   background: #141210 !important;
   color: #f4ede1 !important;
-  border-top: 2px solid #141210 !important;
-  border-bottom: 2px solid #141210 !important;
-  box-shadow: inset 0 7px 0 0 #141210, inset 0 -7px 0 0 #141210;
+  border-top: 1px solid #141210 !important;
+  border-bottom: 1px solid #141210 !important;
+  box-shadow: inset 0 3px 0 0 #141210, inset 0 -3px 0 0 #141210;
 }
 .ticker::before,
 .ticker::after {
@@ -51,7 +51,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  height: 4px;
+  height: 2px;
   pointer-events: none;
   background-image: repeating-linear-gradient(
     90deg,
@@ -59,11 +59,11 @@
     transparent 8px 18px
   );
 }
-.ticker::before { top: 3px; }
-.ticker::after  { bottom: 3px; }
+.ticker::before { top: 2px; }
+.ticker::after  { bottom: 2px; }
 .ticker__in span {
   font-family: var(--serif) !important;
-  font-size: 18px !important;
+  font-size: 14px !important;
   letter-spacing: .08em !important;
 }
 .ticker__in b {
@@ -187,8 +187,8 @@ section.members {
 }
 html[data-mode=paper] section.members {
   background:
-    radial-gradient(1100px 540px at 50% 62%, rgba(168, 126, 67, .12), transparent 70%),
-    linear-gradient(180deg, #efe7d6 0%, #e7dcc6 52%, #f4ede0 100%);
+    radial-gradient(340px 220px at 50% 62%, rgba(124, 164, 242, .10), transparent 66%),
+    linear-gradient(180deg, rgba(243, 246, 252, .85) 0%, rgba(238, 242, 250, .9) 50%, #f8f9fc 100%);
 }
 .mstrip-bar {
   display: flex;
@@ -1144,9 +1144,7 @@ html[data-mode=galaxy] .mp-hero__ph {
 }
 
 html[data-mode=paper] .hero {
-  background:
-    radial-gradient(960px 440px at 50% 6%, rgba(var(--ac-rgb), .12), transparent 72%),
-    radial-gradient(640px 320px at 82% 14%, rgba(168, 126, 67, .09), transparent 70%);
+  background: transparent;
 }
 html[data-mode=paper] .hero__title em {
   background: linear-gradient(102deg, var(--ink) 0%, var(--ac) 46%, var(--ac-2) 100%);
@@ -1185,5 +1183,256 @@ html[data-mode=paper] .nextmini {
   .hero {
     min-height: 0 !important;
     padding-bottom: 86px !important;
+  }
+}
+
+
+/* 五姐姐反馈: 01 副标题细 + 主标题加粗; 04 标题与筛选居中 */
+#members .kicker { font-weight: 400 !important; opacity: .78; }
+#members .sec__h, #members .sec__h em { font-weight: 700 !important; }
+#albums .sec__head {
+  grid-template-columns: minmax(0, 1fr) !important;
+  justify-items: center !important;
+  text-align: center !important;
+  gap: 10px !important;
+}
+#albums .sec__no { margin-right: 0 !important; }
+#albums .sec__lead { max-width: 58ch; margin-inline: auto; text-align: center; }
+#albums .album-catalog { justify-content: center !important; }
+#albums .album-catalog__count { text-align: center !important; }
+
+/* ---------- 14. Mobile Layout & Weverse-Proportioned Compact Demo (<= 720px) ---------- */
+@media (max-width: 720px) {
+  :root { --gut: 14px; }
+  body { font-size: 13.5px !important; }
+
+  /* Global mobile section & typography scale-down (-2px across the board) */
+  section.sec { padding: 20px 14px !important; }
+  .sec__head { padding-bottom: 7px !important; margin-bottom: 9px !important; gap: 3px !important; }
+  .sec__no { font-size: 14px !important; font-weight: 600 !important; display: inline !important; margin-right: 5px !important; }
+  .sec__head .kicker,
+  .sec__head [class*="kicker"] {
+    font-size: 9.5px !important; font-weight: 500 !important; letter-spacing: .09em !important; opacity: .72 !important;
+    line-height: 1.3 !important;
+  }
+  .sec__h { font-size: 17px !important; font-weight: 700 !important; line-height: 1.25 !important; }
+  .sec__lead {
+    font-size: 11.5px !important; line-height: 1.45 !important; color: var(--ink-3) !important;
+    display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .gb__head span:first-child,
+  .gb-box__k { font-size: 10px !important; letter-spacing: .08em !important; }
+  .gb__compose, .gb__compose input, .gb__compose textarea, .gb-card { font-size: 12.5px !important; }
+
+  /* Hero compact mobile scale */
+  .hero { padding: 64px 0 14px !important; min-height: 0 !important; }
+  .hero__k { font-size: 9px !important; }
+  .hero__title { font-size: clamp(26px, 8vw, 34px) !important; line-height: .96 !important; margin-top: 4px !important; }
+  .hero__sub { font-size: 11px !important; line-height: 1.45 !important; margin-top: 4px !important; }
+  .hero .film {
+    margin-top: 10px !important;
+    --fh: 224px !important;
+    height: 244px !important;
+  }
+  .hero .frame:nth-child(odd) { transform: translateY(6px) !important; }
+  .hero .frame:nth-child(even) { transform: translateY(-6px) !important; }
+  .hero .frame { border-radius: 14px !important; }
+  .hero .frame--g { width: 224px !important; }
+  .hero .frame--m { width: 148px !important; }
+  .hero .frame__no { left: 10px !important; top: 8px !important; font-size: 20px !important; }
+  .hero .frame__no small { font-size: 8.5px !important; letter-spacing: .12em !important; margin-left: 5px !important; }
+  .hero .frame__glyph { right: 9px !important; top: 9px !important; width: 18px !important; height: 18px !important; }
+  .hero .frame__credit { right: 8px !important; top: 8px !important; font-size: 8px !important; letter-spacing: .1em !important; }
+  .hero .cap {
+    left: 7px !important; right: 7px !important; bottom: 7px !important;
+    height: 32px !important; padding: 0 8px 0 4px !important; gap: 5px !important;
+  }
+  .hero .cap__dot { width: 22px !important; height: 22px !important; }
+  .hero .cap__dot .glyph { width: 12px !important; height: 12px !important; }
+  .hero .cap b {
+    font-size: 11px !important; letter-spacing: .04em !important;
+    min-width: 0 !important; overflow: hidden !important; text-overflow: ellipsis !important; white-space: nowrap !important;
+  }
+  .hero .cap small { font-size: 9.5px !important; letter-spacing: .02em !important; flex: none !important; }
+  .hero .cap small::after { margin-left: 3px !important; }
+  .hero .frame--g .frame__cap { left: 10px !important; right: 10px !important; bottom: 10px !important; gap: 8px !important; }
+  .hero .frame--g .frame__cap h3 { font-size: 18px !important; letter-spacing: .08em !important; white-space: normal !important; line-height: 1.1 !important; }
+  .hero .frame--g .frame__cap p { font-size: 10px !important; letter-spacing: .03em !important; margin-top: 4px !important; line-height: 1.35 !important; }
+
+  /* 01 Member strip: 2 cards visible side-by-side, clear faces (zero occlusion) */
+  .mstrip-bar { padding: 7px 10px !important; margin-bottom: 8px !important; }
+  .mstrip-bar__hint { display: none !important; }
+  .mstrip { height: 280px !important; padding: 8px !important; }
+  .mpanel { flex: 0 0 180px !important; }
+  .mpanel__looks,
+  .mpanel__era,
+  .mpanel__units,
+  .mpanel__st,
+  .mpanel__stats { display: none !important; }
+  .mpanel__en { font-size: 13.5px !important; line-height: 1.15 !important; }
+  .mpanel__zh { font-size: 10.5px !important; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 2px !important; }
+  .mpanel__img { object-position: 50% 10% !important; }
+  .mpanel__fx {
+    -webkit-mask-image: radial-gradient(ellipse 68% 58% at 50% 38%, transparent 40%, #000 84%);
+    mask-image: radial-gradient(ellipse 68% 58% at 50% 38%, transparent 40%, #000 84%);
+  }
+  .mpanel__card::after {
+    background: linear-gradient(180deg, transparent 58%, rgba(8, 10, 20, .86) 80%, rgba(8, 10, 20, .96) 100%) !important;
+  }
+  .mpanel__reveal {
+    bottom: 8px !important; left: 8px !important; width: calc(100% - 16px) !important;
+  }
+  .mpanel__acts { margin-top: 6px !important; gap: 6px !important; }
+  .mpanel__btn { height: 26px !important; padding: 0 8px !important; font-size: 11px !important; border-radius: 6px !important; }
+
+  /* 02 Now / Ongoing / Next Stage / News Lane */
+  .next__ongoing {
+    grid-template-columns: minmax(0, 1fr) !important;
+    padding: 8px !important;
+    gap: 6px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .ongoing-bar { padding: 9px 10px !important; gap: 4px !important; }
+  .ongoing-bar__head .pbadge,
+  .ongoing-bar__head [data-phase] {
+    font-size: 12.5px !important; font-weight: 700 !important; padding: 4px 9px !important;
+  }
+  .ongoing-bar__body h4 { font-size: 12.5px !important; }
+  .next__main { padding: 11px !important; }
+  .next__title { font-size: 15.5px !important; margin-top: 4px !important; }
+  .next__sum { font-size: 11.5px !important; line-height: 1.45 !important; margin-top: 5px !important; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .next__side { display: none !important; }
+  .next__after a { padding: 5px 8px !important; font-size: 11px !important; }
+  .lane { padding: 10px !important; }
+  .lane__head { padding-bottom: 6px !important; margin-bottom: 6px !important; }
+  .lane__head h3 { font-size: 14px !important; }
+  .item--card { padding: 8px 10px !important; gap: 8px !important; }
+  .item__thumbs { width: 44px !important; }
+  .item__thumb { width: 44px !important; height: 54px !important; }
+  .item__title { font-size: 12px !important; line-height: 1.38 !important; }
+
+  /* Offstage compact scale */
+  .os-heading h3 { font-size: 16px !important; }
+  .os-card { width: 136px !important; }
+
+  /* Checked sources strip */
+  .checked { font-size: 12px !important; gap: 6px 10px !important; margin-top: 12px !important; }
+  .checked__links {
+    display: flex !important; flex-wrap: nowrap !important; overflow-x: auto !important;
+    gap: 6px !important; width: 100%; padding-bottom: 4px; scrollbar-width: none;
+  }
+  .checked__links::-webkit-scrollbar { display: none; }
+  .checked__links .pill { flex: none !important; font-size: 11px !important; padding: 3px 9px !important; height: 26px !important; }
+
+  /* 03 Schedule: compact pills & Weverse-density ticket rows */
+  #schedule .seg {
+    flex-wrap: wrap !important; overflow-x: visible !important; gap: 4px !important;
+  }
+  #schedule .seg button {
+    flex: 1 1 auto !important; height: 28px !important; padding: 0 7px !important; font-size: 11.5px !important;
+  }
+  #schedule .chips {
+    flex-wrap: wrap !important; overflow-x: visible !important;
+    margin-inline: 0 !important; padding-inline: 0 !important; gap: 5px !important;
+  }
+  #schedule .chips .pill {
+    flex: 0 1 auto !important; font-size: 11.5px !important; padding: 3px 8px !important; height: 26px !important;
+  }
+  .evlist { gap: 6px !important; }
+  .sched-group__head { padding-bottom: 3px !important; margin-bottom: 5px !important; }
+  .sched-group__head h3 { font-size: 13.5px !important; }
+  .ev { padding: 0 !important; gap: 0 !important; border-radius: 10px !important; }
+  .ev::before, .ev::after { display: none !important; }
+  .ev__date {
+    padding: 4px 9px !important;
+    flex-direction: row !important; align-items: center !important; justify-content: flex-start !important; gap: 6px !important;
+  }
+  .ev__gate { margin-bottom: 0 !important; font-size: 8.5px !important; padding: 1.5px 5px !important; }
+  .ev__date b { font-size: 13px !important; }
+  .ev__date span { font-size: 10px !important; }
+  .ev__date em { margin-left: auto !important; font-size: 9.5px !important; padding: 1.5px 6px !important; }
+  .ev__body { padding: 5px 9px !important; gap: 2px !important; }
+  .ev__tags { gap: 3px !important; }
+  .ev__tags .badge, .ev__tags .pbadge, .ev__tags .tag { font-size: 9.5px !important; padding: 1px 5px !important; line-height: 1.25 !important; }
+  .ev__tags .mchip { font-size: 9.5px !important; padding: 1px 5px 1px 2px !important; height: 17px !important; gap: 3px !important; }
+  .ev__tags .mchip img { width: 13px !important; height: 13px !important; }
+  .ev__body h4 { font-size: 13px !important; line-height: 1.3 !important; margin-top: 2px !important; }
+  .ev__meta { font-size: 10.5px !important; line-height: 1.3 !important; gap: 2px 8px !important; margin-top: 1px !important; }
+  .ev__summary { font-size: 10.5px !important; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .ev__more, .ev__stops { margin-top: 2px !important; }
+  .ev__more summary, .ev__stops summary {
+    padding: 4px 7px !important; font-size: 10px !important; line-height: 1.3 !important;
+    display: flex !important; align-items: center !important; justify-content: space-between !important; gap: 6px !important;
+  }
+  .ev__more summary i { white-space: nowrap !important; flex: none !important; font-style: normal !important; }
+  .ev__side {
+    padding: 4px 9px !important; margin-top: 0 !important;
+    border-left: 0 !important; border-top: 1px dashed var(--line) !important;
+    flex-direction: row !important; justify-content: flex-end !important;
+  }
+  .ev .star.tear-stub-btn { height: 22px !important; padding: 0 8px !important; font-size: 10px !important; }
+
+  /* 04 Albums: clean top-row cover+title, full-width actions/tracks below (zero overlap) */
+  .sleeve { width: 72px !important; }
+  .sleeve span { font-size: 13px !important; margin-top: 5px !important; }
+  .stage {
+    grid-template-columns: 92px minmax(0, 1fr) !important;
+    align-items: start !important;
+    min-height: 0 !important;
+    padding: 14px 14px 56px !important;
+    gap: 8px 12px !important;
+    border-radius: 16px !important;
+  }
+  .stage__art { width: 92px !important; max-width: 92px !important; grid-column: 1 !important; grid-row: 1 / span 4 !important; }
+  .stage__info { display: contents !important; }
+  .stage__info > * { grid-column: 1 / -1 !important; margin-top: 0 !important; }
+  .stage__k,
+  .stage__artist,
+  .stage__title,
+  .stage__zh { grid-column: 2 !important; }
+  .stage__k { font-size: 10px !important; letter-spacing: .12em !important; gap: 4px 8px !important; }
+  .stage__artist { font-size: 11px !important; margin-top: 2px !important; }
+  .stage__title { font-size: clamp(16px, 4.6vw, 20px) !important; margin: 2px 0 !important; }
+  .stage__zh { font-size: 11px !important; }
+  .stage__no { font-size: 32px !important; right: 12px !important; top: 8px !important; }
+  .stage__concept { font-size: 11.5px !important; line-height: 1.45 !important; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-top: 4px !important; }
+  .stage__cta { margin-top: 6px !important; }
+  .stage__cta .abtn { min-height: 34px !important; padding: 6px 14px !important; font-size: 12px !important; white-space: nowrap !important; }
+  .stage__sources { margin-top: 6px !important; font-size: 11px !important; }
+  .stage__nav { bottom: 12px !important; right: 12px !important; gap: 6px !important; }
+  .stage__nav button { width: 32px !important; height: 32px !important; font-size: 14px !important; }
+  .stage__memory { display: none !important; }
+
+  /* 05 Explore Portal Cards: decluttered Weverse Shop 2-column grid */
+  .portal-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+    margin-top: 12px !important;
+  }
+  .portal-card { padding: 12px !important; min-height: 0 !important; gap: 6px !important; }
+  .portal-card__roman,
+  .portal-card__badge,
+  .portal-card p:not(.portal-card__roman),
+  .portal-card__stats { display: none !important; }
+  .portal-card__vol { font-size: 9.5px !important; }
+  .portal-card h3 { font-size: 12.5px !important; line-height: 1.35 !important; }
+  .portal-card__cta { margin-top: auto !important; height: 28px !important; font-size: 11px !important; }
+
+  /* Archive: compact Era Photobook Reel & clean Bilibili variety rows */
+  .era-reel-wrap { padding: 10px !important; margin-bottom: 14px !important; }
+  .era-shot { flex: 0 0 180px !important; }
+  .era-shot__img { aspect-ratio: 16 / 9 !important; }
+  .era-shot__cap { padding: 6px 8px !important; }
+  .vr {
+    display: grid !important; grid-template-columns: 46px minmax(0, 1fr) !important;
+    gap: 5px 8px !important; padding: 10px 0 !important; align-items: start !important;
+  }
+  .vr__m {
+    grid-column: 2 !important; display: flex !important; flex-wrap: wrap !important;
+    align-items: center !important; gap: 5px !important;
+  }
+  .vr__go {
+    grid-column: 2 !important; justify-self: start !important; width: auto !important; margin-top: 2px !important;
   }
 }
