@@ -150,6 +150,64 @@
     "mirrorLabel": ""
   },
   {
+    "id": "os-yt-Lidsm6ChfyA",
+    "date": "2026-11-24",
+    "publishedAt": "2026-11-24T17:30:20+08:00",
+    "kind": "video",
+    "isCha": true,
+    "platform": "YouTube",
+    "badge": "YT Shorts",
+    "members": [
+      "chanyeol"
+    ],
+    "author": "@CHANYEOL",
+    "collab": "",
+    "song": "",
+    "duration": "0:25",
+    "title": "이제 제껍니다",
+    "captionOrig": "이제 제껍니다",
+    "captionZh": "CH CHANYEOL 油管 近 7 天更新：이제 제껍니다",
+    "cover": "img/offstage/os-yt-Lidsm6ChfyA-1.jpg",
+    "images": [
+      "img/offstage/os-yt-Lidsm6ChfyA-1.jpg"
+    ],
+    "primaryUrl": "https://www.youtube.com/shorts/Lidsm6ChfyA",
+    "primaryLabel": "前往 YouTube 原片 ↗",
+    "secondaryUrl": "",
+    "secondaryLabel": "",
+    "mirrorUrl": "https://search.bilibili.com/all?keyword=%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%A6%20%E1%84%8C%E1%85%A6%E1%84%81%E1%85%A5%E1%86%B8%E1%84%82%E1%85%B5%E1%84%83%E1%85%A1",
+    "mirrorLabel": "国内 B站搜原片 ↗"
+  },
+  {
+    "id": "os-yt-rRYWTq9f0i8",
+    "date": "2026-11-24",
+    "publishedAt": "2026-11-24T17:00:35+08:00",
+    "kind": "video",
+    "isCha": true,
+    "platform": "YouTube",
+    "badge": "YT Shorts",
+    "members": [
+      "xiumin"
+    ],
+    "author": "@XIUMIN",
+    "collab": "",
+    "song": "",
+    "duration": "0:25",
+    "title": "Secret Agent X🖤",
+    "captionOrig": "Secret Agent X🖤",
+    "captionZh": "XIUMIN 油管 近 7 天更新：Secret Agent X🖤",
+    "cover": "img/offstage/os-yt-rRYWTq9f0i8-1.jpg",
+    "images": [
+      "img/offstage/os-yt-rRYWTq9f0i8-1.jpg"
+    ],
+    "primaryUrl": "https://www.youtube.com/shorts/rRYWTq9f0i8",
+    "primaryLabel": "前往 YouTube 原片 ↗",
+    "secondaryUrl": "",
+    "secondaryLabel": "",
+    "mirrorUrl": "https://search.bilibili.com/all?keyword=Secret%20Agent%20X%F0%9F%96%A4",
+    "mirrorLabel": "国内 B站搜原片 ↗"
+  },
+  {
     "id": "os-wb-5368763522482723",
     "date": "2026-11-24",
     "publishedAt": "2026-11-24T13:00:32+08:00",
@@ -177,6 +235,35 @@
     "secondaryLabel": "",
     "mirrorUrl": "",
     "mirrorLabel": ""
+  },
+  {
+    "id": "os-yt-TXVfQrRbbiQ",
+    "date": "2026-11-24",
+    "publishedAt": "2026-11-24T13:00:21+08:00",
+    "kind": "video",
+    "isCha": true,
+    "platform": "YouTube",
+    "badge": "YT Shorts",
+    "members": [
+      "xiumin"
+    ],
+    "author": "@XIUMIN",
+    "collab": "",
+    "song": "",
+    "duration": "0:25",
+    "title": "네가 모르는 일들이 참 많다는 걸 🦋",
+    "captionOrig": "네가 모르는 일들이 참 많다는 걸 🦋",
+    "captionZh": "XIUMIN 油管 近 7 天更新：네가 모르는 일들이 참 많다는 걸 🦋",
+    "cover": "img/offstage/os-yt-TXVfQrRbbiQ-1.jpg",
+    "images": [
+      "img/offstage/os-yt-TXVfQrRbbiQ-1.jpg"
+    ],
+    "primaryUrl": "https://www.youtube.com/shorts/TXVfQrRbbiQ",
+    "primaryLabel": "前往 YouTube 原片 ↗",
+    "secondaryUrl": "",
+    "secondaryLabel": "",
+    "mirrorUrl": "https://search.bilibili.com/all?keyword=%EB%84%A4%EA%B0%80%20%EB%AA%A8%EB%A5%B4%EB%8A%94%20%EC%9D%BC%EB%93%A4%EC%9D%B4%20%EC%B0%B8%20%EB%A7%8E%EB%8B%A4%EB%8A%94%20%EA%B1%B8%20%F0%9F%A6%8B",
+    "mirrorLabel": "国内 B站搜原片 ↗"
   },
   {
     "id": "os-kase-salondrip-261124",
@@ -261,8 +348,8 @@
     "primaryLabel": "国内官方原片直看 ↗",
     "secondaryUrl": "https://www.tiktok.com/@xiumin_official",
     "secondaryLabel": "TikTok ↗",
-    "mirrorUrl": "",
-    "mirrorLabel": "",
+    "mirrorUrl": "https://search.bilibili.com/all?keyword=Delete%20Me%F0%9F%95%B6%EF%B8%8F",
+    "mirrorLabel": "国内 B站搜原片 ↗",
     "cover": "img/offstage/os-xiumin-deleteme-261123-1.webp",
     "images": [
       "img/offstage/os-xiumin-deleteme-261123-1.webp",
@@ -335,6 +422,35 @@
     "mirrorLabel": ""
   },
   {
+    "id": "os-yt-KFhQaFx_qdk",
+    "date": "2026-11-23",
+    "publishedAt": "2026-11-23T17:30:38+08:00",
+    "kind": "video",
+    "isCha": true,
+    "platform": "YouTube",
+    "badge": "YT Shorts",
+    "members": [
+      "chanyeol"
+    ],
+    "author": "@CHANYEOL",
+    "collab": "",
+    "song": "",
+    "duration": "0:25",
+    "title": "어린이집 아닙니다",
+    "captionOrig": "어린이집 아닙니다",
+    "captionZh": "CH CHANYEOL 油管 近 7 天更新：어린이집 아닙니다",
+    "cover": "img/offstage/os-yt-KFhQaFx_qdk-1.jpg",
+    "images": [
+      "img/offstage/os-yt-KFhQaFx_qdk-1.jpg"
+    ],
+    "primaryUrl": "https://www.youtube.com/shorts/KFhQaFx_qdk",
+    "primaryLabel": "前往 YouTube 原片 ↗",
+    "secondaryUrl": "",
+    "secondaryLabel": "",
+    "mirrorUrl": "https://search.bilibili.com/all?keyword=%EC%96%B4%EB%A6%B0%EC%9D%B4%EC%A7%91%20%EC%95%84%EB%8B%99%EB%8B%88%EB%8B%A4",
+    "mirrorLabel": "国内 B站搜原片 ↗"
+  },
+  {
     "id": "os-wb-5368461616220829",
     "date": "2026-11-23",
     "publishedAt": "2026-11-23T17:00:53+08:00",
@@ -361,8 +477,8 @@
     "primaryLabel": "观看原片 ↗",
     "secondaryUrl": "",
     "secondaryLabel": "",
-    "mirrorUrl": "",
-    "mirrorLabel": ""
+    "mirrorUrl": "https://search.bilibili.com/all?keyword=EXO-KASE%20%EC%97%91%EC%86%8C-%EC%B9%B4%EC%9D%B4%EC%84%B8%ED%9B%88%20'Waking%20Up%20",
+    "mirrorLabel": "国内 B站搜原片 ↗"
   },
   {
     "id": "os-do-dingo-261123",
@@ -423,6 +539,35 @@
     "secondaryLabel": "",
     "mirrorUrl": "",
     "mirrorLabel": ""
+  },
+  {
+    "id": "os-yt-BfIUI5QYNmU",
+    "date": "2026-11-22",
+    "publishedAt": "2026-11-22T17:30:30+08:00",
+    "kind": "video",
+    "isCha": true,
+    "platform": "YouTube",
+    "badge": "YT Shorts",
+    "members": [
+      "chanyeol"
+    ],
+    "author": "@CHANYEOL",
+    "collab": "",
+    "song": "",
+    "duration": "0:25",
+    "title": "카이형 미안",
+    "captionOrig": "카이형 미안",
+    "captionZh": "CH CHANYEOL 油管 近 7 天更新：카이형 미안",
+    "cover": "img/offstage/os-yt-BfIUI5QYNmU-1.jpg",
+    "images": [
+      "img/offstage/os-yt-BfIUI5QYNmU-1.jpg"
+    ],
+    "primaryUrl": "https://www.youtube.com/shorts/BfIUI5QYNmU",
+    "primaryLabel": "前往 YouTube 原片 ↗",
+    "secondaryUrl": "",
+    "secondaryLabel": "",
+    "mirrorUrl": "https://search.bilibili.com/all?keyword=%E1%84%8F%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%92%E1%85%A7%E1%86%BC%20%E1%84%86%E1%85%B5%E1%84%8B%E1%85%A1%E1%86%AB",
+    "mirrorLabel": "国内 B站搜原片 ↗"
   },
   {
     "id": "os-wb-5368053904703848",
@@ -514,6 +659,35 @@
     "mirrorLabel": ""
   },
   {
+    "id": "os-yt-u_qlKMiTF2E",
+    "date": "2026-11-21",
+    "publishedAt": "2026-11-21T17:30:38+08:00",
+    "kind": "video",
+    "isCha": true,
+    "platform": "YouTube",
+    "badge": "YT Shorts",
+    "members": [
+      "chanyeol"
+    ],
+    "author": "@CHANYEOL",
+    "collab": "",
+    "song": "",
+    "duration": "0:25",
+    "title": "정뚝떨? 사랑해!",
+    "captionOrig": "정뚝떨? 사랑해!",
+    "captionZh": "CH CHANYEOL 油管 近 7 天更新：정뚝떨? 사랑해!",
+    "cover": "img/offstage/os-yt-u_qlKMiTF2E-1.jpg",
+    "images": [
+      "img/offstage/os-yt-u_qlKMiTF2E-1.jpg"
+    ],
+    "primaryUrl": "https://www.youtube.com/shorts/u_qlKMiTF2E",
+    "primaryLabel": "前往 YouTube 原片 ↗",
+    "secondaryUrl": "",
+    "secondaryLabel": "",
+    "mirrorUrl": "https://search.bilibili.com/all?keyword=%EC%A0%95%EB%9A%9D%EB%96%A8%3F%20%EC%82%AC%EB%9E%91%ED%95%B4!",
+    "mirrorLabel": "国内 B站搜原片 ↗"
+  },
+  {
     "id": "os-wb-5367720097090948",
     "date": "2026-11-21",
     "publishedAt": "2026-11-21T15:54:21+08:00",
@@ -575,6 +749,64 @@
     "secondaryLabel": "",
     "mirrorUrl": "",
     "mirrorLabel": ""
+  },
+  {
+    "id": "os-yt-jEjU-Kc-GOQ",
+    "date": "2026-11-20",
+    "publishedAt": "2026-11-20T21:00:44+08:00",
+    "kind": "video",
+    "isCha": false,
+    "platform": "YouTube",
+    "badge": "YouTube",
+    "members": [
+      "group"
+    ],
+    "author": "@weareoneEXO",
+    "collab": "",
+    "song": "",
+    "duration": "Shorts",
+    "title": "엑소 앙콘 회식",
+    "captionOrig": "엑소 앙콘 회식",
+    "captionZh": "EXO 官方油管 近 7 天更新：엑소 앙콘 회식",
+    "cover": "img/offstage/os-yt-jEjU-Kc-GOQ-1.jpg",
+    "images": [
+      "img/offstage/os-yt-jEjU-Kc-GOQ-1.jpg"
+    ],
+    "primaryUrl": "https://www.youtube.com/watch?v=jEjU-Kc-GOQ",
+    "primaryLabel": "前往 YouTube 原片 ↗",
+    "secondaryUrl": "",
+    "secondaryLabel": "",
+    "mirrorUrl": "https://search.bilibili.com/all?keyword=%EC%97%91%EC%86%8C%20%EC%95%99%EC%BD%98%20%ED%9A%8C%EC%8B%9D",
+    "mirrorLabel": "国内 B站搜原片 ↗"
+  },
+  {
+    "id": "os-yt-rBpXZx_G0w8",
+    "date": "2026-11-20",
+    "publishedAt": "2026-11-20T17:30:15+08:00",
+    "kind": "video",
+    "isCha": true,
+    "platform": "YouTube",
+    "badge": "YT Shorts",
+    "members": [
+      "chanyeol"
+    ],
+    "author": "@CHANYEOL",
+    "collab": "",
+    "song": "",
+    "duration": "0:25",
+    "title": "뽀뽀 지옥에 갇힌 슨배님ㅋㅋ",
+    "captionOrig": "뽀뽀 지옥에 갇힌 슨배님ㅋㅋ",
+    "captionZh": "CH CHANYEOL 油管 近 7 天更新：뽀뽀 지옥에 갇힌 슨배님ㅋㅋ",
+    "cover": "img/offstage/os-yt-rBpXZx_G0w8-1.jpg",
+    "images": [
+      "img/offstage/os-yt-rBpXZx_G0w8-1.jpg"
+    ],
+    "primaryUrl": "https://www.youtube.com/shorts/rBpXZx_G0w8",
+    "primaryLabel": "前往 YouTube 原片 ↗",
+    "secondaryUrl": "",
+    "secondaryLabel": "",
+    "mirrorUrl": "https://search.bilibili.com/all?keyword=%EB%BD%80%EB%BD%80%20%EC%A7%80%EC%98%A5%EC%97%90%20%EA%B0%87%ED%9E%8C%20%EC%8A%A8%EB%B0%B0%EB%8B%98%E3%85%8B%E3%85%8B",
+    "mirrorLabel": "国内 B站搜原片 ↗"
   },
   {
     "id": "os-wb-5367310340589608",
@@ -640,6 +872,36 @@
     ]
   },
   {
+    "id": "os-yt-Z3TzfYutVA0",
+    "date": "2026-11-20",
+    "publishedAt": "2026-11-20T11:22:20+08:00",
+    "kind": "video",
+    "isCha": false,
+    "platform": "YouTube",
+    "badge": "YouTube",
+    "members": [
+      "kai",
+      "sehun"
+    ],
+    "author": "@weareoneEXO",
+    "collab": "",
+    "song": "",
+    "duration": "Shorts",
+    "title": "EXO-KASE The 1st Mini Album Fan showcase ❮Waking",
+    "captionOrig": "EXO-KASE The 1st Mini Album Fan showcase ❮Waking Up The City❯",
+    "captionZh": "EXO 官方油管 近 7 天更新：EXO-KASE The 1st Mini Album Fan showcase ❮Waking Up The City❯",
+    "cover": "img/offstage/os-yt-Z3TzfYutVA0-1.jpg",
+    "images": [
+      "img/offstage/os-yt-Z3TzfYutVA0-1.jpg"
+    ],
+    "primaryUrl": "https://www.youtube.com/watch?v=Z3TzfYutVA0",
+    "primaryLabel": "前往 YouTube 原片 ↗",
+    "secondaryUrl": "",
+    "secondaryLabel": "",
+    "mirrorUrl": "https://search.bilibili.com/all?keyword=EXO-KASE%20The%201st%20Mini%20Album%20",
+    "mirrorLabel": "国内 B站搜原片 ↗"
+  },
+  {
     "id": "os-wb-5367026945622087",
     "date": "2026-11-19",
     "publishedAt": "2026-11-19T18:00:00+08:00",
@@ -667,6 +929,64 @@
     "secondaryLabel": "",
     "mirrorUrl": "",
     "mirrorLabel": ""
+  },
+  {
+    "id": "os-yt-ezMgoIBM3SA",
+    "date": "2026-11-19",
+    "publishedAt": "2026-11-19T17:30:12+08:00",
+    "kind": "video",
+    "isCha": true,
+    "platform": "YouTube",
+    "badge": "YT Shorts",
+    "members": [
+      "chanyeol"
+    ],
+    "author": "@CHANYEOL",
+    "collab": "",
+    "song": "",
+    "duration": "0:25",
+    "title": "나 엑소 박찬열이야",
+    "captionOrig": "나 엑소 박찬열이야",
+    "captionZh": "CH CHANYEOL 油管 近 7 天更新：나 엑소 박찬열이야",
+    "cover": "img/offstage/os-yt-ezMgoIBM3SA-1.jpg",
+    "images": [
+      "img/offstage/os-yt-ezMgoIBM3SA-1.jpg"
+    ],
+    "primaryUrl": "https://www.youtube.com/shorts/ezMgoIBM3SA",
+    "primaryLabel": "前往 YouTube 原片 ↗",
+    "secondaryUrl": "",
+    "secondaryLabel": "",
+    "mirrorUrl": "https://search.bilibili.com/all?keyword=%EB%82%98%20%EC%97%91%EC%86%8C%20%EB%B0%95%EC%B0%AC%EC%97%B4%EC%9D%B4%EC%95%BC",
+    "mirrorLabel": "国内 B站搜原片 ↗"
+  },
+  {
+    "id": "os-yt-uu7eMVj906M",
+    "date": "2026-11-18",
+    "publishedAt": "2026-11-18T17:30:19+08:00",
+    "kind": "video",
+    "isCha": false,
+    "platform": "YouTube",
+    "badge": "YouTube",
+    "members": [
+      "chanyeol"
+    ],
+    "author": "@CHANYEOL",
+    "collab": "",
+    "song": "",
+    "duration": "Shorts",
+    "title": "대체 JYP 막내들이 SM 선배에게 무슨 짓을 한 거야ㅋㅋ | 찬겜동 Ep.3 킥플립",
+    "captionOrig": "대체 JYP 막내들이 SM 선배에게 무슨 짓을 한 거야ㅋㅋ | 찬겜동 Ep.3 킥플립",
+    "captionZh": "CH CHANYEOL 油管 近 7 天更新：대체 JYP 막내들이 SM 선배에게 무슨 짓을 한 거야ㅋㅋ | 찬겜동 Ep.3 킥플립",
+    "cover": "img/offstage/os-yt-uu7eMVj906M-1.jpg",
+    "images": [
+      "img/offstage/os-yt-uu7eMVj906M-1.jpg"
+    ],
+    "primaryUrl": "https://www.youtube.com/watch?v=uu7eMVj906M",
+    "primaryLabel": "前往 YouTube 原片 ↗",
+    "secondaryUrl": "",
+    "secondaryLabel": "",
+    "mirrorUrl": "https://search.bilibili.com/all?keyword=%EB%8C%80%EC%B2%B4%20JYP%20%EB%A7%89%EB%82%B4%EB%93%A4%EC%9D%B4%20SM%20%EC%84%A0%EB%B0%B0%EC%97%90%EA%B2%8C%20%EB%AC%B4%EC%8A%A8%20%EC%A7%93%EC%9D%84%20%ED%95%9C%20",
+    "mirrorLabel": "国内 B站搜原片 ↗"
   },
   {
     "id": "os-baekhyun-sg-261021",
