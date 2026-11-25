@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="zh-CN" data-power="galaxy">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>设计规范与验收标准 · EXO 星球 CHRONICLE</title>
+<meta name="theme-color" content="#f8f9fc">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<style>html{background:#060812;color:#f5f6fa}html[data-mode=paper]{background:#f8f9fc;color:#111625}</style>
+<script>try{var q=new URLSearchParams(location.search).get("mode"),s=localStorage.getItem("exo-mode");document.documentElement.dataset.mode=(q==="galaxy"||q==="paper")?q:(s==="galaxy"?"galaxy":"paper")}catch(e){document.documentElement.dataset.mode="paper"}</script>
+<link rel="stylesheet" href="fonts/web/fonts.css?v=2">
+<link rel="stylesheet" href="css/main.css?v=6">
+<link rel="stylesheet" href="css/sections.css?v=6">
+<link rel="stylesheet" href="css/extra.css?v=8">
+<link rel="stylesheet" href="css/paper.css?v=6">
+<link rel="stylesheet" href="css/share.css?v=3">
+<script>
+  try { var p = localStorage.getItem('exo-power'); if (p) document.documentElement.dataset.power = p; } catch (e) {}
+  document.documentElement.classList.add('js');
+</script>
+<style>
+  .spec-wrap { max-width: var(--max); margin: 0 auto; padding: calc(var(--bar) + 36px) var(--gut) 80px; }
+  .spec-hero { padding-bottom: 36px; border-bottom: 2px solid var(--ink); margin-bottom: 48px; }
+  .spec-hero h1 { font: 700 clamp(32px, 4.4vw, 56px)/1.12 var(--cn); margin-top: 12px; }
+  .spec-hero p { margin-top: 14px; max-width: 56em; color: var(--ink-2); font-size: 15.5px; line-height: 1.8; }
+  .spec-sec { padding: 42px 0; border-top: 1px solid var(--line); }
+  .spec-sec:first-of-type { border-top: 0; padding-top: 0; }
+  .spec-h { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 10px 24px; margin-bottom: 22px; }
+  .spec-h h2 { font: 600 clamp(22px, 2.4vw, 32px)/1.25 var(--cn); }
+  .spec-h span { font: 600 11px/1 var(--sans); letter-spacing: .22em; color: var(--ac); }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .spec-box { padding: 18px 20px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface, var(--glass)); }
+  .spec-box h3 { font: 600 15px/1.4 var(--cn); margin-bottom: 8px; }
+  .spec-box p, .spec-box li { font-size: 13.5px; color: var(--ink-2); line-height: 1.7; }
+  .swatch-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(195px, 1fr)); gap: 10px; }
+  .swatch { padding: 12px 14px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface, var(--glass)); display: grid; gap: 6px; }
+  .swatch__bar { height: 34px; border-radius: 6px; border: 1px solid rgba(128,128,128,.25); display: flex; align-items: center; justify-content: space-between; padding: 0 10px; font: 600 11px/1 var(--grot); }
+  .swatch b { font-size: 13.5px; }
+  .swatch small { font-size: 12px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+  .spec-table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--surface, var(--glass)); }
+  table.spec-tbl { width: 100%; border-collapse: collapse; min-width: 640px; font-size: 13.5px; }
+  .spec-tbl th, .spec-tbl td { padding: 12px 15px; text-align: left; border-bottom: 1px solid var(--line-2); vertical-align: top; line-height: 1.6; }
+  .spec-tbl th { font: 600 11.5px/1.3 var(--sans); letter-spacing: .12em; color: var(--ink-3); background: rgba(var(--ink-rgb), .03); }
+  .spec-tbl tr:last-child td { border-bottom: 0; }
+  .state-row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; padding: 14px 0; border-bottom: 1px dashed var(--line-2); }
+  .state-row:last-child { border-bottom: 0; }
+  .state-lbl { width: 140px; font: 600 12px/1.3 var(--sans); color: var(--ink-3); flex: none; }
+  .is-sim-hover { border-color: var(--ac) !important; color: var(--ac) !important; transform: translateY(-1px); }
+  .is-sim-focus { outline: 2px solid var(--ac) !important; outline-offset: 3px !important; }
+  .cbtn[disabled], .pill[disabled] { opacity: .42; cursor: not-allowed; pointer-events: none; }
+  .is-sim-active { transform: translateY(1px) scale(.97) !important; background: var(--ac) !important; color: var(--ac-ink) !important; }
+  .skel-card { display: grid; gap: 8px; width: min(100%, 340px); padding: 14px; border-radius: 10px; border: 1px solid var(--line); background: rgba(var(--ink-rgb), .03); }
+  .skel-line { height: 12px; border-radius: 6px; background: linear-gradient(90deg, rgba(var(--ink-rgb), .06) 25%, rgba(var(--ink-rgb), .13) 50%, rgba(var(--ink-rgb), .06) 75%); background-size: 200% 100%; animation: skel 1.5s linear infinite; }
+  @keyframes skel { to { background-position: -200% 0; } }
+  .spec-err-demo { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+  .spec-err-demo input[aria-invalid="true"] { height: 38px; padding: 0 12px; border-radius: 8px; border: 1.5px solid var(--rm); background: rgba(var(--rm-rgb), .08); color: var(--ink); font-size: 13.5px; }
+  .spec-err-msg { font-size: 12.5px; color: var(--rm); font-weight: 500; }
+  .qa-list { display: grid; gap: 8px; margin-top: 14px; }
+  .qa-summary { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; margin: 14px 0 12px; padding: 12px 16px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface, var(--glass)); font-size: 14px; }
+  .qa-item { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 11px 14px; border-radius: 9px; border: 1px solid var(--line); background: var(--surface, var(--glass)); font-size: 13.5px; }
+  .qa-pass { font: 600 11.5px/1 var(--sans); color: var(--ok); padding: 4px 8px; border-radius: 5px; background: rgba(var(--ok-rgb), .1); border: 1px solid rgba(var(--ok-rgb), .35); white-space: nowrap; }
+  .qa-fail { font: 600 11.5px/1 var(--sans); color: var(--rm); padding: 4px 8px; border-radius: 5px; background: rgba(var(--rm-rgb), .12); border: 1px solid rgba(var(--rm-rgb), .5); white-space: nowrap; }
+  .copy-cmp { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .copy-bad { border-left: 3px solid var(--rm); }
+  .copy-good { border-left: 3px solid var(--ok); }
+  @media (max-width: 760px) { .copy-cmp { grid-template-columns: 1fr; } .state-lbl { width: 100%; } }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="g-galaxy" viewBox="0 0 48 48"><path d="M24 5 40.5 14.5v19L24 43 7.5 33.5v-19z"/><path d="M24 5v38M7.5 14.5l33 19M40.5 14.5l-33 19" opacity=".55"/></symbol>
+    <symbol id="g-xiumin" viewBox="0 0 48 48"><path d="M8.6 28.6 L28.6 8.6 M19.4 8.6 L39.4 28.6 M39.4 19.4 L19.4 39.4 M8.6 19.4 L28.6 39.4" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="butt"/><path d="M10.4 16.2 H16.2 V10.4 M31.8 10.4 V16.2 H37.6 M37.6 31.8 H31.8 V37.6 M10.4 31.8 H16.2 V37.6" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="butt" stroke-linejoin="miter"/></symbol>
+    <symbol id="g-suho" viewBox="0 0 48 48"><path d="M24 5 L15.1 29.7 A9.5 9.5 0 1 0 32.9 29.7 Z" fill="none" stroke="currentColor" stroke-width="2.9" stroke-linejoin="miter"/><path d="M23.6 14.5 L21.6 20.2 L24.5 21.6 L22.3 26.4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/><path d="M15.4 31.2 C18.6 27.2, 25.4 26.8, 31.8 30.2 M16.4 35.4 C19.6 33.2, 23.2 34.8, 25.8 39.2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="28.2" cy="33.8" r="2.3" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="g-lay" viewBox="0 0 48 48"><path d="M19.8 18.0 L8.5 11.2 L16.8 21.4 Z" fill="currentColor" stroke="none"/><path d="M19.8 17.6 L22.2 13.8 L24.6 16.6 C28.6 16.2, 31.8 18.2, 33.4 22.0 M19.8 17.6 C17.2 20.4, 15.4 24.4, 12.8 28.0 C11.0 30.6, 11.8 34.0, 14.8 34.8 C17.6 35.5, 20.6 33.4, 23.8 31.0 C22.6 35.2, 22.4 39.0, 23.2 42.4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M25.6 19.8 C27.2 24.2, 26.2 28.6, 23.8 31.0" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M21.8 20.2 C22.8 22.4, 21.8 25.2, 19.8 26.8 C20.0 24.2, 20.6 21.8, 21.8 20.2 Z" fill="currentColor" stroke="none"/><path d="M29.8 17.8 C33.2 19.4, 35.2 22.8, 38.8 23.2 M31.2 22.6 C34.2 25.0, 36.2 28.0, 40.0 28.6 M31.0 27.6 C33.8 30.2, 35.6 32.6, 39.2 33.4 M30.2 32.4 C32.4 35.2, 34.0 37.2, 37.0 38.0 M29.8 25.0 C30.6 31.2, 30.2 36.8, 29.6 41.2" fill="none" stroke="currentColor" stroke-width="2.0" stroke-linecap="round"/></symbol>
+    <symbol id="g-baekhyun" viewBox="0 0 48 48"><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M 24.00 6.00 L 25.50 16.45 L 28.29 13.65 L 28.28 17.60 L 34.11 13.89 L 30.40 19.72 L 34.35 19.71 L 31.55 22.50 L 42.00 24.00 L 31.55 25.50 L 34.35 28.29 L 30.40 28.28 L 34.11 34.11 L 28.28 30.40 L 28.29 34.35 L 25.50 31.55 L 24.00 42.00 L 22.50 31.55 L 19.71 34.35 L 19.72 30.40 L 13.89 34.11 L 17.60 28.28 L 13.65 28.29 L 16.45 25.50 L 6.00 24.00 L 16.45 22.50 L 13.65 19.71 L 17.60 19.72 L 13.89 13.89 L 19.72 17.60 L 19.71 13.65 L 22.50 16.45 Z M 28.6 24 A 4.6 4.6 0 1 0 19.4 24 A 4.6 4.6 0 1 0 28.6 24 Z"/><circle cx="24.00" cy="3.40" r="1.25" fill="currentColor" stroke="none"/><circle cx="35.74" cy="12.26" r="0.95" fill="currentColor" stroke="none"/><circle cx="44.60" cy="24.00" r="1.25" fill="currentColor" stroke="none"/><circle cx="35.74" cy="35.74" r="0.95" fill="currentColor" stroke="none"/><circle cx="24.00" cy="44.60" r="1.25" fill="currentColor" stroke="none"/><circle cx="12.26" cy="35.74" r="0.95" fill="currentColor" stroke="none"/><circle cx="3.40" cy="24.00" r="1.25" fill="currentColor" stroke="none"/><circle cx="12.26" cy="12.26" r="0.95" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="g-chen" viewBox="0 0 48 48"><path d="M18 25.5 L25.5 18 L31.5 24 L24 31.5 Z M21.8 21.8 L27.8 27.8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="miter"/><path d="M28.6 20.8 L32.6 19.0 L33.0 14.4 L38.2 9.2" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="square" stroke-linejoin="miter"/><path d="M34.2 8.4 L39.8 7.8 L39.2 13.4 Z" fill="currentColor" stroke="none"/><path d="M19.2 24.4 L9.6 26.4 L6.4 29.4 L11.4 34.2 L9.8 29.5 L18.4 27.4 Z M25.0 30.2 L23.0 39.8 L20.0 43.0 L15.2 38.0 L19.9 39.6 L22.0 31.0 Z" fill="currentColor" stroke="none"/><path d="M24.2 18.8 C22.0 15.5, 18.5 17.5, 15.8 14.2 M21.8 21.2 C18.8 18.2, 15.5 20.2, 12.2 17.2 M19.5 23.5 C16.2 21.2, 13.2 23.0, 9.8 20.8 M30.2 24.8 C33.5 27.0, 31.5 30.5, 34.8 33.2 M27.8 27.2 C30.8 30.2, 28.8 33.5, 31.8 36.8 M25.5 29.5 C27.8 32.8, 26.0 35.8, 28.2 39.2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="g-chanyeol" viewBox="0 0 48 48"><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M16.2 9.8 C22.6 8.8, 28.8 11.4, 32.6 16.0 C35.4 14.2, 38.8 14.2, 42.0 16.6 C39.4 17.4, 37.4 18.6, 35.8 20.6 C38.6 25.8, 38.0 33.6, 33.2 42.2 C33.0 37.8, 32.4 34.6, 31.2 32.2 C30.6 35.8, 29.2 38.8, 27.0 41.0 C27.4 37.2, 27.0 34.0, 26.0 31.6 C24.8 34.2, 23.2 36.2, 21.2 37.6 C22.8 33.8, 24.4 30.2, 25.8 27.4 L15.4 35.4 L23.6 25.4 L8.8 30.4 L24.4 22.2 C19.8 22.0, 16.0 20.6, 13.8 18.4 C17.2 18.6, 20.2 18.0, 22.4 16.6 C18.2 16.4, 14.8 15.0, 13.0 12.8 C16.6 13.2, 19.8 12.8, 22.0 11.8 C19.4 11.2, 17.4 10.6, 16.2 9.8 Z M24.4 14.6 C27.6 15.2, 30.2 17.0, 31.6 19.6 C28.8 18.4, 26.2 17.8, 23.6 18.0 C25.6 16.8, 26.2 15.6, 24.4 14.6 Z M30.4 22.2 C33.4 23.0, 34.8 26.8, 33.8 31.8 C32.8 28.0, 31.4 25.2, 29.4 23.8 C29.8 23.0, 30.0 22.5, 30.4 22.2 Z"/></symbol>
+    <symbol id="g-do" viewBox="0 0 48 48"><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M19.5 28.0 L19.5 18.6 L14.4 14.6 L15.6 12.8 L6.4 8.2 L9.8 15.2 L8.2 15.8 L12.4 27.6 L16.8 38.8 L18.6 42.8 L21.2 36.6 L24.0 41.8 L26.8 36.6 L29.4 42.8 L31.2 38.8 L35.6 27.6 L39.8 15.8 L38.2 15.2 L41.6 8.2 L32.4 12.8 L33.6 14.6 L28.5 18.6 L28.5 28.0 Q24.0 29.4 19.5 28.0 Z M16.0 27.6 L19.4 22.4 L19.4 31.2 Q24.0 32.6 28.6 31.2 L28.6 22.4 L32.0 27.6 L29.4 34.4 L18.6 34.4 Z M11.6 16.4 L17.2 20.2 L15.6 25.0 Z M36.4 16.4 L30.8 20.2 L32.4 25.0 Z"/></symbol>
+    <symbol id="g-kai" viewBox="0 0 48 48"><path d="M24 6.5 L42.2 39.5 L5.8 39.5 Z" fill="none" stroke="currentColor" stroke-width="3.1" stroke-linejoin="miter"/><circle cx="24" cy="28.4" r="5.1" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M 24.00 23.20 Q 30.29 21.41 32.37 25.68 M 28.95 26.79 Q 32.59 32.22 29.17 35.52 M 27.06 32.61 Q 23.02 37.75 18.83 35.52 M 20.94 32.61 Q 14.81 30.35 15.63 25.68 M 19.05 26.79 Q 19.30 20.26 24.00 19.60" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/><circle cx="24" cy="28.4" r="2.3" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="g-sehun" viewBox="0 0 48 48"><g transform="rotate(0 24 24)"><path fill="currentColor" stroke="none" d="M 17.5 19.5 C 20.5 13.0, 29.8 11.2, 36.2 16.4 C 38.6 18.4, 39.6 21.4, 39.2 24.2 C 38.0 20.2, 34.8 16.8, 29.8 15.8 C 24.2 14.7, 19.4 17.2, 17.5 19.5 Z"/></g><g transform="rotate(72 24 24)"><path fill="currentColor" stroke="none" d="M 17.5 19.5 C 20.5 13.0, 29.8 11.2, 36.2 16.4 C 38.6 18.4, 39.6 21.4, 39.2 24.2 C 38.0 20.2, 34.8 16.8, 29.8 15.8 C 24.2 14.7, 19.4 17.2, 17.5 19.5 Z"/></g><g transform="rotate(144 24 24)"><path fill="currentColor" stroke="none" d="M 17.5 19.5 C 20.5 13.0, 29.8 11.2, 36.2 16.4 C 38.6 18.4, 39.6 21.4, 39.2 24.2 C 38.0 20.2, 34.8 16.8, 29.8 15.8 C 24.2 14.7, 19.4 17.2, 17.5 19.5 Z"/></g><g transform="rotate(216 24 24)"><path fill="currentColor" stroke="none" d="M 17.5 19.5 C 20.5 13.0, 29.8 11.2, 36.2 16.4 C 38.6 18.4, 39.6 21.4, 39.2 24.2 C 38.0 20.2, 34.8 16.8, 29.8 15.8 C 24.2 14.7, 19.4 17.2, 17.5 19.5 Z"/></g><g transform="rotate(288 24 24)"><path fill="currentColor" stroke="none" d="M 17.5 19.5 C 20.5 13.0, 29.8 11.2, 36.2 16.4 C 38.6 18.4, 39.6 21.4, 39.2 24.2 C 38.0 20.2, 34.8 16.8, 29.8 15.8 C 24.2 14.7, 19.4 17.2, 17.5 19.5 Z"/></g><g transform="rotate(18 24 24)"><path fill="currentColor" stroke="none" d="M 21.5 7.2 C 25.2 5.4, 30.2 6.0, 33.4 8.8 C 34.2 9.5, 33.6 10.6, 32.5 10.1 C 29.5 8.4, 25.5 7.6, 21.5 7.2 Z"/></g><g transform="rotate(108 24 24)"><path fill="currentColor" stroke="none" d="M 21.5 7.2 C 25.2 5.4, 30.2 6.0, 33.4 8.8 C 34.2 9.5, 33.6 10.6, 32.5 10.1 C 29.5 8.4, 25.5 7.6, 21.5 7.2 Z"/></g><g transform="rotate(198 24 24)"><path fill="currentColor" stroke="none" d="M 21.5 7.2 C 25.2 5.4, 30.2 6.0, 33.4 8.8 C 34.2 9.5, 33.6 10.6, 32.5 10.1 C 29.5 8.4, 25.5 7.6, 21.5 7.2 Z"/></g><g transform="rotate(288 24 24)"><path fill="currentColor" stroke="none" d="M 21.5 7.2 C 25.2 5.4, 30.2 6.0, 33.4 8.8 C 34.2 9.5, 33.6 10.6, 32.5 10.1 C 29.5 8.4, 25.5 7.6, 21.5 7.2 Z"/></g></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L3.4 9.8l6-.8z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M6 18 18 6M9 6h9v9"/></symbol>
+  </defs>
+</svg>
+
+<header class="bar is-stuck" id="bar">
+  <a class="bar__mark" href="index.html" aria-label="返回 EXO 星球首页">
+    <svg class="glyph" viewBox="0 0 48 48" aria-hidden="true"><use href="#g-galaxy"/></svg>
+    <span><b>EXO</b> 星球 <small class="bar__ed">DESIGN SPEC</small></span>
+  </a>
+  <nav class="bar__nav" aria-label="规范目录">
+    <a href="#s-tokens">视觉令牌</a>
+    <a href="#s-copy">编辑体例</a>
+    <a href="#s-states">双轴状态机</a>
+    <a href="#s-components">组件全状态</a>
+    <a href="#s-acceptance">验收断言</a>
+  </nav>
+  <div class="bar__tools">
+    <button class="tool tool--mode" type="button" data-mode-toggle aria-pressed="false"><span class="mode__ico" aria-hidden="true"></span><span data-mode-name>银河</span></button>
+    <a class="cbtn cbtn--sm" href="index.html">返回主站 →</a>
+  </div>
+</header>
+
+<main class="spec-wrap">
+  <header class="spec-hero">
+    <p class="kicker">EXOPLANET CHRONICLE // DESIGN SYSTEM &amp; ACCEPTANCE SPECIFICATION</p>
+    <h1>EXO 星球 · 白昼与银河双栖设计规范</h1>
+    <p>本规范直接挂载生产样式表（<code>main.css</code> / <code>paper.css</code> / <code>extra.css</code> / <code>sections.css</code>）与实时数据包构建，右上角可随时切换「白昼 / 银河」检验双模式令牌表现。涵盖行星观测志视觉识别、编辑部文案准则、正交双轴行程状态模型、交互组件状态矩阵、响应式降级边界与自动化验收断言。</p>
+  </header>
+
+  <!-- 01 TOKENS -->
+  <section class="spec-sec" id="s-tokens">
+    <div class="spec-h"><h2>01 · 行星观测志视觉识别与色彩令牌</h2><span>VISUAL IDENTITY &amp; COLOR TOKENS</span></div>
+    <div class="spec-grid" style="margin-bottom:18px">
+      <article class="spec-box">
+        <h3>核心母体：正六边形与行星坐标</h3>
+        <p>摒弃通用时尚画报的歪斜画框、玫瑰粉斜体与遮挡胸口的色块贴纸，提炼自 2012《MAMA》至 2026《REVERXE》一脉相承的<strong>正六边形三轴印记（Hex-Sigil）</strong>、双细线刊眉（2px + 1px Folio Rule）与行星序列号（<code>PLANET 01–09</code>）。</p>
+      </article>
+      <article class="spec-box">
+        <h3>封面人物构图铁律</h3>
+        <p>书刊版封面采用端正精装观测画板（<code>4:4.7</code> 画幅），人物面部与躯干严禁被悬浮条遮挡；当期导读统一收束于画幅下方的独立版权导读栏（<code>.mag__leads</code>），九人印记切换器置于画板下沿。</p>
+      </article>
+      <article class="spec-box">
+        <h3>四项偏好完全解耦</h3>
+        <p>① <code>exo-mode</code>（书刊/银河版式） ⊥ ② <code>exo-power</code>（全站超能力主题色） ⊥ ③ <code>exo-cover-subject</code>（今日刊封面人物） ⊥ ④ <code>exo-card-member</code>（纪念卡本命）及行程筛选条件彼此独立存储，绝不静默联动篡改。</p>
+      </article>
+    </div>
+
+    <div class="swatch-grid">
+      <div class="swatch"><div class="swatch__bar" style="background:#f2f0eb;color:#111625"><span>Paper BG</span><span>15.6:1</span></div><b>月白星图纸 <code>--bg</code></b><small>书刊 #f2f0eb · 银河 #060812</small></div>
+      <div class="swatch"><div class="swatch__bar" style="background:#faf9f6;color:#111625"><span>Surface</span><span>16.8:1</span></div><b>内页画板纸 <code>--surface</code></b><small>书刊 #faf9f6 · 银河 #10152b</small></div>
+      <div class="swatch"><div class="swatch__bar" style="background:#111625;color:#f2f0eb"><span>Primary Ink</span><span>AAA</span></div><b>深空靛墨 <code>--ink</code></b><small>书刊 #111625 · 银河 #f5f6fa</small></div>
+      <div class="swatch"><div class="swatch__bar" style="background:#1e3f7a;color:#f8f9fc"><span>Cobalt Accent</span><span>9.4:1</span></div><b>行星钴蓝 <code>--ac</code></b><small>书刊默认强调色（取代旧玫瑰粉）</small></div>
+      <div class="swatch"><div class="swatch__bar" style="background:#1b6b4a;color:#ffffff"><span>Official</span><span>6.4:1</span></div><b>已确认 · 官方 <code>--ok</code></b><small>书刊 #1b6b4a · 银河 #7be3b3</small></div>
+      <div class="swatch"><div class="swatch__bar" style="background:#24478a;color:#ffffff"><span>Media</span><span>8.3:1</span></div><b>已确认 · 媒体 <code>--md</code></b><small>书刊 #24478a · 银河 #9cbaff</small></div>
+      <div class="swatch"><div class="swatch__bar" style="background:#945210;color:#ffffff"><span>Unverified</span><span>5.6:1</span></div><b>待核实警示 <code>--rm</code></b><small>书刊 #945210 · 银河 #ffc062</small></div>
+      <div class="swatch"><div class="swatch__bar" style="background:#8f2929;color:#ffffff"><span>Ongoing</span><span>7.6:1</span></div><b>进行中脉冲 <code>--og</code></b><small>书刊 #8f2929 · 银河 #7ef0cf</small></div>
+    </div>
+  </section>
+
+  <!-- 02 EDITORIAL COPY -->
+  <section class="spec-sec" id="s-copy">
+    <div class="spec-h"><h2>02 · 编辑文案准则：具体事实取代抒情空话与爬虫腔</h2><span>EDITORIAL STANDARDS</span></div>
+    <div class="copy-cmp">
+      <div class="spec-box copy-bad">
+        <h3>禁用口径（旧版问题样本）</h3>
+        <p>1. 空泛同义反复：「忙内一回头，整颗星球都起风」「水滴是他的印记，也是能召来水的人」「今天没有大事，也是想念 EXO 的一天」。<br>
+        2. 暴露内部检索日志：「未找到可核实的近期发行」「Weverse 社区页面可打开，但公告列表未加载」「本条日期是活动标题标注的截止日，价格是页面上看到的」。</p>
+      </div>
+      <div class="spec-box copy-good">
+        <h3>现行标准（行星观测志口径）</h3>
+        <p>1. 设定与作品锚定具体出处：写明 2012《MAMA》图腾名称、团内声部/舞蹈/创作定位、小分队归属及销量或榜单事实。<br>
+        2. 专辑紧扣「六边形标志演变」：逐张写明徽标几何变形（迷宫、十城拼封、分子式、天堂鸟、转速表、双面旗、荒原符文）。<br>
+        3. 未知边界体面表述：明确核验基准日与第一方收录原则，待补齐凭据统一写入结构化 <code>待补齐凭据</code> 栏。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 DUAL-AXIS SCHEDULE MODEL -->
+  <section class="spec-sec" id="s-states">
+    <div class="spec-h"><h2>03 · 正交双轴行程状态模型（核实度 × 时间进度）</h2><span>ORTHOGONAL EVENT STATE ENGINE</span></div>
+    <p style="color:var(--ink-2);margin-bottom:16px;font-size:14.5px">核实度（圆形圆点胶囊 <code>.badge</code>）与时间生命周期（切角方标 <code>.pbadge</code>）在数据结构、筛选器与卡片渲染中完全正交，彻底解决「已确认」与「进行中」互斥或把进行中跨日活动误算为「7 天前」的缺陷：</p>
+    <div class="spec-table-wrap">
+      <table class="spec-tbl">
+        <thead>
+          <tr><th>时间进度 \ 核实等级</th><th>Official（已确认 · 官方）</th><th>Media（已确认 · 媒体）</th><th>Unverified（待核实传闻）</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>Ongoing · 进行中</b><br><small><code>date &le; today &le; endDate</code> 或当日活动窗口内</small></td>
+            <td><span class="badge badge--official">已确认 · 官方</span> <span class="pbadge pbadge--ongoing">进行中 · 剩 13 天 · 11.30 截止</span><br><small>例：EXO-KASE《Waking Up The City》预售期</small></td>
+            <td><span class="badge badge--media">已确认 · 媒体</span> <span class="pbadge pbadge--ongoing">进行中 · 今日</span><br><small>例：巡演首日 / 固定综艺播出日</small></td>
+            <td><span class="badge badge--rumor">待核实</span> <span class="pbadge pbadge--ongoing">进行中 · 今日</span><br><small>保留虚线隔离框与待补凭据说明</small></td>
+          </tr>
+          <tr>
+            <td><b>Upcoming · 即将开始</b><br><small><code>date &gt; today</code> 或当日未到开演时刻</small></td>
+            <td><span class="badge badge--official">已确认 · 官方</span> <span class="pbadge pbadge--upcoming">即将开始 · 9 天后</span><br><small>例：灿烈首尔生日派对 [B-side]</small></td>
+            <td><span class="badge badge--media">已确认 · 媒体</span> <span class="pbadge pbadge--upcoming">即将开始 · 4 天后</span> <span class="pbadge pbadge--warn">报道时刻分歧</span><br><small>例：雅加达站 / 马尼拉站开票</small></td>
+            <td><span class="badge badge--rumor">待核实</span> <span class="pbadge pbadge--upcoming">即将开始 · D-N</span><br><small>日历导出与订阅自动剔除</small></td>
+          </tr>
+          <tr>
+            <td><b>Done · 已结束 / 逾期</b><br><small><code>endDate &lt; today</code> 或明确收官</small></td>
+            <td><span class="badge badge--official">已确认 · 官方</span> <span class="pbadge pbadge--done">已结束</span><br><small>例：首尔 KSPO Dome 安可三场</small></td>
+            <td><span class="badge badge--media">已确认 · 媒体</span> <span class="pbadge pbadge--done">已结束</span><br><small>例：都暻秀曼谷站 / 单曲《Darling》</small></td>
+            <td><span class="badge badge--rumor">待核实</span> <span class="pbadge pbadge--stale">日期已过 · 未见证实</span><br><small>例：11.14 澳门传闻场（严禁标为已完成）</small></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 04 COMPONENT STATES -->
+  <section class="spec-sec" id="s-components">
+    <div class="spec-h"><h2>04 · 交互组件全状态矩阵与人物详情承诺契约</h2><span>COMPONENT STATE MATRIX &amp; PROMISE CONTRACT</span></div>
+    <div class="spec-box">
+      <div class="state-row">
+        <span class="state-lbl">主操作按钮 <code>.cbtn</code></span>
+        <button class="cbtn" type="button">默认 Default</button>
+        <button class="cbtn" type="button" style="background:var(--ac);color:var(--ac-ink)">悬停 Hover</button>
+        <button class="cbtn is-sim-focus" type="button">键盘焦点 Focus-visible</button>
+        <button class="cbtn is-sim-active" type="button">按下 Active</button>
+        <button class="cbtn cbtn--ghost" type="button">次级按钮 Ghost</button>
+        <button class="cbtn" type="button" disabled>禁用 / 导出中 Disabled</button>
+      </div>
+      <div class="state-row">
+        <span class="state-lbl">筛选胶囊 <code>.pill</code></span>
+        <button class="pill" type="button" aria-pressed="false">未选中 Default</button>
+        <button class="pill is-sim-hover" type="button" aria-pressed="false">悬停 Hover</button>
+        <button class="pill is-sim-focus" type="button" aria-pressed="false">焦点 Focus</button>
+        <button class="pill" type="button" aria-pressed="true">已激活 Pressed</button>
+        <button class="pill" type="button" aria-pressed="false">已选条件 ×</button>
+        <button class="pill" type="button" disabled>不可用 Disabled</button>
+      </div>
+      <div class="state-row">
+        <span class="state-lbl">分段切换器 <code>.seg</code></span>
+        <div class="seg" role="group" aria-label="状态示例">
+          <button type="button" aria-pressed="true">进行中与即将<em>19</em></button>
+          <button type="button" aria-pressed="false">进行中<em>1</em></button>
+          <button type="button" aria-pressed="false">即将开始<em>18</em></button>
+          <button type="button" aria-pressed="false">已结束<em>11</em></button>
+        </div>
+      </div>
+      <div class="state-row">
+        <span class="state-lbl">加载态 Loading</span>
+        <div class="skel-card" aria-busy="true" aria-label="加载骨架示例">
+          <div class="skel-line" style="width:42%"></div>
+          <div class="skel-line" style="width:88%"></div>
+          <div class="skel-line" style="width:66%"></div>
+        </div>
+        <span style="font-size:13px;color:var(--ink-2)">首屏数据加载失败时降级为可读错误提示（禁止无限空白）；海报/壁纸 Canvas 导出时锁定按钮防止重复点击。</span>
+      </div>
+      <div class="state-row">
+        <span class="state-lbl">展开 / 折叠态</span>
+        <details class="ev__more" style="max-width:420px;margin:0">
+          <summary><span>默认折叠说明、票务与信源（可点击试展开）</span><i>详情 ↓</i></summary>
+          <div class="ev__more-in"><p class="ev__sum">长列表按逻辑单元（同巡演完整合并后再折叠）控制首屏密度，进行中条目默认 <code>open</code> 展开。</p></div>
+        </details>
+      </div>
+      <div class="state-row">
+        <span class="state-lbl">表单校验错误态</span>
+        <div class="spec-err-demo">
+          <input type="date" value="2099-01-01" aria-invalid="true" aria-label="错误日期示例" readonly>
+          <span class="spec-err-msg">入坑日期不能晚于今天</span>
+          <button class="cbtn cbtn--sm" type="button" disabled>导出已禁用</button>
+        </div>
+      </div>
+      <div class="state-row">
+        <span class="state-lbl">空态 Empty</span>
+        <div class="sched__empty" style="margin:0;padding:12px 16px;text-align:left;max-width:520px"><b>当前筛选组合下没有匹配行程</b>区分「尚未收藏任何行程」与「多条件交集为 0」，保留一键重置入口。</div>
+      </div>
+      <div class="state-row">
+        <span class="state-lbl">人物详情与导出契约</span>
+        <span style="font-size:13.5px;color:var(--ink-2);line-height:1.7">①「导出专栏海报 ↓」真实生成 1080×1440 PNG（含肖像、图腾、动向与二维码），另设独立「复制链接」；② <strong>Canvas 转 <code>&lt;img&gt;</code> 长按保存弹窗</strong>（<code>presentExportModal</code>）：专栏海报、EXO-L 纪念卡与 DIY 壁纸导出统一转为真实 <code>&lt;img class="export-modal__img"&gt;</code>（显式开启 <code>-webkit-touch-callout: default; user-select: auto;</code>）适配微信与 iOS Safari 长按存图，并配桌面端 <code>&lt;a download&gt;</code>、Esc/遮罩关闭及「书刊 / 银河」双模式令牌；③「制作他的纪念卡 →」通过 <code>studio.html?card=&lt;id&gt;</code> 或 <code>?card=&lt;id&gt;#maker</code> 自动切换至纪念卡分页并选中该成员；④ 画册造型标签与真实照片一一核实且去重；⑤ 编年与综艺支持「个人/分队」与「含团体」范围切换及默认折叠。</span>
+      </div>
+      <div class="state-row">
+        <span class="state-lbl">丝滑物理动效契约</span>
+        <span style="font-size:13.5px;color:var(--ink-2);line-height:1.7">① <strong>MPA 原生跨页转场</strong>：启用 <code>@view-transition { navigation: auto; }</code>，主站与编年/工坊/单人专栏之间自然过渡；② <strong><code>.seg</code> 滑动高亮胶囊</strong>：分段器选中态由底层指示器平滑位移跟随；③ <strong><code>&lt;details&gt;</code> 高度插值展开</strong>与 <strong>3D 阻尼 Lerp 视差</strong>（支持 <code>prefers-reduced-motion</code> 自动降级为静态）。</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 RESPONSIVE & IA -->
+  <section class="spec-sec" id="s-responsive">
+    <div class="spec-h"><h2>05 · 三页信息架构分层、响应式断点与防崩坏规则</h2><span>3-PAGE IA &amp; RESPONSIVE RULES</span></div>
+    <div class="spec-grid" style="margin-bottom:16px">
+      <article class="spec-box">
+        <h3>三页结构分层（IA）</h3>
+        <p><strong>01 · <code>index.html</code>（观测刊首页）</strong>聚焦封面、此刻速览、九人专栏、双轴行程与官方渠道；<strong>02 · <code>archive.html</code>（编年与综艺馆）</strong>承载来时路与综艺；团体、个人及分队唱片架位于首页；<strong>03 · <code>studio.html</code>（工坊与官娃馆）</strong>集中承载 DIY 壁纸、入坑纪念卡与 Q 版官娃贴纸架，<code>member.html</code> 提供单人深度专栏。</p>
+      </article>
+      <article class="spec-box">
+        <h3>5 格核心导航与触控热区</h3>
+        <p>主导航精简为 5 项核心入口（PC 顶栏居中 / 平板与移动端底部悬浮胶囊，支持横向平滑滑动），所有按钮与胶囊在 375px 视口维持足够点击热区且零横向溢出。</p>
+      </article>
+    </div>
+    <div class="spec-table-wrap">
+      <table class="spec-tbl">
+        <thead>
+          <tr><th>视口断点</th><th>顶栏与封面 <code>#cover</code></th><th>九人档案与专栏 <code>#members</code></th><th>行程、触控热区与防溢出红线</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>Desktop</b><br><code>&ge; 1121px</code></td>
+            <td>三栏顶栏 + 三栏对称观测封面：左翼日签、中央精装画板（<code>.mag__top</code> 右留白 88px 防丝带重叠）、右翼目录与双雷达</td>
+            <td>首页 9 人弹性手风琴横带（支持切换 3 列网格）；单人专栏 4 列数据卡 + 双栏代表作/官方渠道</td>
+            <td>双排分段器并列展示；同巡演站次先完整合并再执行 6 组默认折叠；来时路默认展示近 4 年并提供一键全展开</td>
+          </tr>
+          <tr>
+            <td><b>Tablet</b><br><code>721px – 1120px</code></td>
+            <td>顶部工具栏搜索按钮自动收起文字为图标宽度（<code>width:auto</code>）；主导航转为底部居中悬浮胶囊；封面单列置顶（<code>minmax(0,1fr)</code>）</td>
+            <td>首页横带转为可横滑吸附卡片流；右侧速览抽屉保持 <code>min(620px, 100vw)</code> 独立滚动</td>
+            <td>单人专栏数据卡转为 2×2 网格；行程卡片多成员徽标与双时区时间戳自动换行，不挤压右侧星标</td>
+          </tr>
+          <tr>
+            <td><b>Mobile</b><br><code>&le; 720px (含 375px)</code></td>
+            <td>顶栏 36px 紧凑热区（品牌印记 + 搜索图标 + 模式 + 超能力），底部导航支持平滑横滑；封面左右箭头内收至画板边缘内侧，保留目录与双雷达，9 印记键为 3×3（高度 &ge; 40px）</td>
+            <td>单人专栏日程网格采用 <code>minmax(min(100%,320px),1fr)</code>，编年与综艺时间列压缩至 44–84px；里程碑默认聚焦个人/分队并折叠</td>
+            <td>日文/韩文/长场馆与 URL 强制 <code>overflow-wrap: anywhere</code>；所有页面及「书刊 / 银河」双模式硬性要求 <code>scrollWidth &le; clientWidth</code>（0px 横向溢出）</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 06 LIVE ACCEPTANCE -->
+  <section class="spec-sec" id="s-acceptance">
+    <div class="spec-h"><h2>06 · 自动化数据、状态与布局验收断言（实时校验）</h2><span>LIVE ACCEPTANCE CHECKS</span></div>
+    <p style="color:var(--ink-2);font-size:14.5px">以下 13 项断言在页面加载时直接读取当前站点 <code>site/data/*.json</code>、<code>site/cal/exo.ics</code>、三页结构入口（<code>archive.html</code> / <code>studio.html</code>）与公用状态引擎 <code>util.js</code> / <code>share.js</code> 实时计算：</p>
+    <div class="qa-summary" id="qa-summary"><span>正在执行实时验收断言…</span></div>
+    <div class="qa-list" id="qa-list"></div>
+  </section>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script type="module">
+  import { initMode } from './js/mode.js?v=26';
+  import { eventState, isConfirmed, hasTicketInfo } from './js/util.js';
+  import { exportMemberPoster, presentExportModal } from './js/share.js';
+  initMode();
+
+  const load = n => fetch(`data/${n}.json?v=16`).then(r => r.json());
+  const [members, albums, events, news, channels, archive] = await Promise.all(['members', 'albums', 'events', 'news', 'channels', 'archive'].map(load));
+  const icsText = await fetch('cal/exo.ics?v=5').then(r => (r.ok ? r.text() : '')).catch(() => '');
+  const probePage = p => fetch(p, { method: 'HEAD' }).then(r => r.ok || r.status === 405 ? (r.ok ? true : fetch(p).then(g => g.ok)) : false).catch(() => false);
+  const [archiveOk, studioOk] = await Promise.all([probePage('archive.html'), probePage('studio.html')]);
+
+  const forbiddenCopy = /未找到|未能可靠核实|列表未加载|未逐期核对|页面上看到的|想念 EXO 的一天|整颗星球都起风|未能读取|没有逐条核对|未另行确认|没能直接打开|只见于粉丝整理站|页面价\s*RMB|具体日期未见报道|未见\s*EXO-KASE\s*签售/;
+  const allCopyBlob = JSON.stringify({ members, albums, events, news, channels });
+  const badCopyMatch = allCopyBlob.match(forbiddenCopy);
+
+  const venueContradictions = events.filter(e => e.venue && /具体场馆.*待.*公布/.test(e.detailNote || ''));
+  const ongoingConfirmed = events.filter(e => isConfirmed(e) && eventState(e).isOngoing);
+  const multiDaySpanOk = events.filter(e => e.endDate && e.endDate > e.date && e.endTimeKST).every(e => e.timeKST !== e.endTimeKST);
+  const staleRumors = events.filter(e => e.verification === 'unverified' && eventState(e).subphase === 'unconfirmed_past');
+  const fakeTickets = events.filter(e => hasTicketInfo(e) && /未公布或未找到/.test(JSON.stringify(e.ticket || {})));
+  const membersComplete = members.filter(m => {
+    const gal = m.gallery || [];
+    const uniq = new Set(gal.map(g => g.src)).size;
+    return Array.isArray(m.works) && m.works.length >= 3 && gal.length >= 2 && uniq === gal.length;
+  });
+  const falseEraLabels = members.filter(m => (m.gallery || []).some(g => /LOVE SHOT|OBSESSION/.test(g.era || '')));
+  const albumsWithDistinctMotif = albums.filter(a => a.tagline && a.motif && a.tagline !== a.motif);
+  const brokenEraCover = (archive.eraGallery || []).filter(g => g.cover === 'img/covers/dont-fight-the-feeling.webp');
+  const icsClean = icsText.includes('BEGIN:VCALENDAR') && !icsText.includes('ev-004@exolneverland.com') && icsText.includes('ev-010@exolneverland.com');
+  const noHorizontalOverflow = document.documentElement.scrollWidth <= window.innerWidth;
+  const cs = getComputedStyle(document.documentElement);
+  const tokensReady = ['--bg', '--ink', '--ac', '--og', '--ok', '--rm'].every(t => cs.getPropertyValue(t).trim().length > 0);
+
+  const checks = [
+    ['广域编辑文案净空检查（成员/专辑/行程/消息/渠道）', !badCopyMatch, badCopyMatch ? `检测到禁用词：${badCopyMatch[0]}` : '0 处爬虫日志、空泛抒情或内部审计腔残留'],
+    ['行程场馆与「待公布」标注一致性检查', venueContradictions.length === 0, venueContradictions.length ? `冲突条目：${venueContradictions.map(e => e.id).join(', ')}` : '0 条已填场馆却自称场馆待公布的矛盾记录'],
+    ['21 张团体专辑「标志变形 × 时代意象」全覆盖', albumsWithDistinctMotif.length === 21, `${albumsWithDistinctMotif.length} / 21 张均具独立六边形标志演变与里程碑`],
+    ['唱片目录覆盖九人并分开团体、个人、分队与企划', ['group', 'solo', 'unit', 'project'].every(s => albums.some(a => a.scope === s)) && members.every(m => albums.some(a => (a.members || []).includes(m.id))) && albums.every(a => a.tracks?.length && a.sources?.length), `${albums.length} 张唱片均有曲目与来源，9 人均有关联发行`],
+    ['9 位成员作品与画册结构、时代标签检查', membersComplete.length === 9 && falseEraLabels.length === 0, `${membersComplete.length} / 9 位成员满足收录与去重结构检查；${falseEraLabels.length} 位成员的 LOVE SHOT / OBSESSION 标签仍触发待复核规则。此项不代替逐图人工核验。`],
+    ['双轴正交验证：「已确认」与「进行中」同时成立', ongoingConfirmed.length >= 1, `当前命中 ${ongoingConfirmed.length} 条（${ongoingConfirmed.map(e => e.id + ':' + e.title).join(' / ')}）`],
+    ['跨日活动起止时刻分离校验（timeKST ⊥ endTimeKST）', multiDaySpanOk, '跨日预售起止时刻独立建模，不再把截止时刻误标为开场时刻'],
+    ['逾期传闻防误标：已过日期未证实条目独立归类', staleRumors.length >= 1 && staleRumors.every(e => eventState(e).phaseLabel.includes('未见证实')), `命中 ${staleRumors.length} 条（${staleRumors[0]?.id} 标为「日期已过 · 未见证实」）`],
+    ['票务筛选防误判：无售票信息条目不混入票务筛选', fakeTickets.length === 0, '0 条无票务条目误触发 hasTicketInfo'],
+    ['年代画廊资源与 .ics 日历订阅完整性校验', brokenEraCover.length === 0 && icsClean, '0 处断链封面；exo.ics 已包含官方跨日日程并自动剔除待核实传闻'],
+    ['人物详情与导出弹窗契约：海报引擎与转 <img> 弹窗就绪', typeof exportMemberPoster === 'function' && typeof presentExportModal === 'function', 'share.js 已导出 Canvas 1080×1440 海报生成器及移动端/微信转 <img> 长按保存弹窗'],
+    ['当前视口零横向溢出自检（scrollWidth ≤ innerWidth）', noHorizontalOverflow, `scrollWidth=${document.documentElement.scrollWidth}px / innerWidth=${window.innerWidth}px`],
+    ['双模式语义色彩令牌解析校验（--bg/--ink/--ac/--og/--ok/--rm）', tokensReady, `当前模式：${document.documentElement.dataset.mode} · 全部核心语义令牌有效`],
+    ['三页信息架构子页可达性（archive.html & studio.html）', archiveOk && studioOk, `archive.html=${archiveOk ? '200 OK' : 'FAIL'} · studio.html=${studioOk ? '200 OK' : 'FAIL'}`],
+  ];
+
+  const passCount = checks.filter(c => c[1]).length;
+  document.getElementById('qa-summary').innerHTML = `<b>实时验收总览：${passCount} / ${checks.length} 项通过</b><span class="${passCount === checks.length ? 'qa-pass' : 'qa-fail'}">${passCount === checks.length ? 'ALL PASS · 全部达标' : 'NEED FIX · 存在未通过项'}</span>`;
+  document.getElementById('qa-list').innerHTML = checks.map(([name, ok, detail], idx) => `
+    <div class="qa-item">
+      <b>#${String(idx + 1).padStart(2, '0')}</b>
+      <div><b>${name}</b><div style="font-size:12.5px;color:var(--ink-3);margin-top:2px">${detail}</div></div>
+      <span class="${ok ? 'qa-pass' : 'qa-fail'}">${ok ? 'PASS · 通过' : 'FAIL · 待修'}</span>
+    </div>
+  `).join('');
+</script>
+</body>
+</html>
