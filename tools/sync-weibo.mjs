@@ -21,6 +21,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const DRY_RUN = process.argv.includes('--dry-run');
+const NO_BUILD = process.argv.includes('--no-build');
 
 // ============================================================================
 // 1. 官方与权威微博 UID 白名单（严格核验 user.id，杜绝高仿号与粉丝水帖混入官方栏）
@@ -40,11 +41,18 @@ export const VERIFIED_ACCOUNTS = {
   '8019164595': { name: 'StarDream星梦引力', label: 'StarDream 主办官博', tier: 'official', members: ['group'] },
   '5521056657': { name: '微博韩流', label: '微博韩流', tier: 'media', members: ['group'] },
   '2800982237': { name: '新浪韩娱', label: '新浪韩娱', tier: 'media', members: ['group'] },
-  // 2026 活跃成员大吧 / 资源站（实测在更）
-  '3694863325': { name: '边伯贤FearlessBaek', label: '边伯贤大吧 FearlessBaek', tier: 'media', members: ['baekhyun'] },
-  '3675857830': { name: 'Nacho_都暻秀', label: '都暻秀资源站 Nacho', tier: 'media', members: ['do'] },
+  // 2026 活跃成员大吧 / 微博吧主 / 资源站（九人全覆盖）
+  '2745468794': { name: '秀珉金珉锡FAIRYLAND', label: '金珉锡吧 FAIRYLAND', tier: 'media', members: ['xiumin'] },
+  '2608609467': { name: '金俊勉_SUHOasis', label: '金俊勉吧 SUHOasis', tier: 'media', members: ['suho'] },
   '1969348660': { name: '张艺兴吧', label: '张艺兴吧', tier: 'media', members: ['lay'] },
+  '7996410850': { name: '咩咩放映机', label: '张艺兴抖音/视频搬运站', tier: 'media', members: ['lay'] },
+  '3694863325': { name: '边伯贤FearlessBaek', label: '边伯贤大吧 FearlessBaek', tier: 'media', members: ['baekhyun'] },
+  '2609949647': { name: '金钟大_DandelionGarden', label: '金钟大吧 DandelionGarden', tier: 'media', members: ['chen'] },
+  '2030278523': { name: '朴灿烈_LOEYPARK', label: '朴灿烈吧 LOEYPARK', tier: 'media', members: ['chanyeol'] },
   '2694760221': { name: '都暻秀吧DohkyungsooBar', label: '都暻秀吧', tier: 'media', members: ['do'] },
+  '3675857830': { name: 'Nacho_都暻秀', label: '都暻秀资源站 Nacho', tier: 'media', members: ['do'] },
+  '3567115033': { name: 'ChicKai小炸鸡_金钟仁', label: '金钟仁资源站 ChicKai', tier: 'media', members: ['kai'] },
+  '2858947502': { name: '吴世勋_Ohsehunorb', label: '吴世勋吧 Ohsehunorb', tier: 'media', members: ['sehun'] },
 };
 
 const SEARCH_QUERIES = [
@@ -147,8 +155,14 @@ export async function fetchLatestWeiboPosts(cookie) {
     if (!date.startsWith('2026')) return;
     const text = stripHtml(mb.longText?.longTextContent || mb.text || '');
     if (!text || text.length < 8) return;
-    if (/我投给了|铁粉打卡|脱坑出专|转发微博|超话签到|超级话题签到|发帖打榜|净化|垃圾词条|反黑|控评|空瓶|轮博|做数据|转评赞|每日一善|抽奖|团购|拼车|代拍|出卡|收卡|团票单号|实物图|冬日set|应援物|周边预售|租机|暖到你|不要忘记.*签到|签到.*不要忘记|【视频】26\d{4}|【图片】26\d{4}|【预览】26\d{4}|【饭拍】|【高清】26\d{4}/i.test(text)) return;
-    const pic = mb.bmiddle_pic || mb.thumbnail_pic || mb.pics?.[0]?.url || '';
+    const spam = /我投给了|铁粉打卡|脱坑出专|转发微博|超话签到|超级话题签到|发帖打榜|净化|垃圾词条|反黑|控评|空瓶|轮博|做数据|转评赞|每日一善|团购|拼车|代拍|出卡|收卡|团票单号|冬日set|应援物|租机|暖到你|不要忘记.*签到|签到.*不要忘记|【视频】26\d{4}|【图片】26\d{4}|【预览】26\d{4}|【饭拍】|【高清】26\d{4}/i;
+    if (spam.test(text) || (account.tier !== 'official' && /抽奖/.test(text))) return;
+    const pics = [...new Set((mb.pics || []).map(p => p?.large?.url || p?.url).filter(Boolean))].slice(0, 9);
+    if (!pics.length) {
+      const fallback = mb.original_pic || mb.bmiddle_pic || mb.thumbnail_pic;
+      if (fallback) pics.push(fallback);
+    }
+    const pic = pics[0] || '';
     byMid.set(mid, {
       mid,
       uid,
@@ -156,6 +170,7 @@ export async function fetchLatestWeiboPosts(cookie) {
       publishedISO: mb.created_at ? new Date(mb.created_at).toISOString() : new Date().toISOString(),
       text,
       pic,
+      pics,
       url: `https://m.weibo.cn/detail/${mid}`,
       account: acc,
     });
@@ -220,6 +235,9 @@ export async function fetchLatestWeiboPosts(cookie) {
 // ============================================================================
 function buildCleanTitle(post) {
   const { text, account } = post;
+  const albumConfig = text.match(/专辑配置\s*[（(]([^）)]+)[）)]\s*EXO[-_]KASE\s*迷你\s*1?辑\s*[《「]([^》」]+)[》」]/i);
+  if (albumConfig) return `EXO-KASE 迷你 1 辑《${albumConfig[2]}》专辑配置公开（${albumConfig[1]}）`;
+  if (/261125高雄线下活动公告|高雄线下合影活动/.test(text)) return '都暻秀迷你 4 辑《DOPAMINE》Makestar 高雄线下合影活动公告';
   if (/微博国际文化交流之夜/.test(text)) {
     return /神秘来电/.test(text)
       ? 'EXO 官宣出席 11/28 香港「2026 微博国际文化交流之夜」特别来电预告'
@@ -245,7 +263,7 @@ function buildCleanTitle(post) {
   const noTags = text.replace(/#[^#]+#/g, ' ').replace(/\s+/g, ' ').trim();
   const topic = (text.match(/#([^#]+)#/) || [])[1] || '';
   const base = noTags.split(/[。！？!?\n]/)[0]?.trim() || topic || `${account.label}最新动态`;
-  return base.length > 42 ? base.slice(0, 40) + '…' : base;
+  return base.length > 58 ? base.slice(0, 58) : base;
 }
 
 export function routeWeiboToSections(post) {
@@ -253,6 +271,8 @@ export function routeWeiboToSections(post) {
   const members = detectMembers(text, account.members);
   const title = buildCleanTitle(post);
   const summary = text.replace(/\s+/g, ' ').slice(0, 150);
+  const category = /专辑|配置|新歌|音源|MV|预告|概念照|特典|回归|迷你|正规|单曲/.test(text) ? 'release' : /演唱会|巡演|见面会|盛典|出席|线下|签售|票务|演出|舞台/.test(text) ? 'stage' : 'general';
+  const images = post.pics || (post.pic ? [post.pic] : []);
 
   const result = {
     newsItem: null,
@@ -272,6 +292,9 @@ export function routeWeiboToSections(post) {
     verification: account.tier,
     channel: '微博',
     sources: [{ name: `${account.label}（微博原帖）`, url }],
+    image: images[0] || '',
+    images,
+    category,
   };
 
   result.feedItem = {
@@ -279,7 +302,9 @@ export function routeWeiboToSections(post) {
     title_zh: title,
     summary_zh: summary,
     members,
-    category: 'weibo',
+    category,
+    image: images[0] || '',
+    images,
     importance: 2,
     source: `${account.label} (@${account.name})`,
     source_type: account.tier,
@@ -420,7 +445,7 @@ export async function runWeiboSync({ dryRun = DRY_RUN } = {}) {
       writeJson('data/new/news.json', news);
       writeJson('data/new/events.json', events);
       writeJson('data/new/archive.json', archive);
-      execFileSync('node', [root + 'tools/build.mjs'], { stdio: 'inherit' });
+      if (!NO_BUILD) execFileSync('node', [root + 'tools/build.mjs'], { stdio: 'inherit' });
     }
   }
 

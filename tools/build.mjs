@@ -17,7 +17,11 @@ const awards = existsSync(root + 'data/new/awards.json') ? read('data/new/awards
 // Source member facts remain authoritative; album links and missing album cards derive from the shared catalog.
 const albumCatalog = existsSync(root + 'data/new/album-catalog.json') ? read('data/new/album-catalog.json') : { items: [], overrides: {} };
 const albumKey = s => String(s || '').toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
-for (const k of ['members', 'news', 'events', 'channels', 'hero', 'meta']) {
+for (const k of ['members', 'news', 'events', 'channels', 'hero', 'meta', 'offstage']) {
+  if (!existsSync(root + `data/new/${k}.json`)) {
+    if (k === 'offstage') out(k, []);
+    continue;
+  }
   const value = read(`data/new/${k}.json`);
   if (k === 'members') for (const m of value) {
     m.works = m.works || [];
