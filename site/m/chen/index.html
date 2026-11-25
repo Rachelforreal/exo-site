@@ -23,17 +23,20 @@
 <link rel="preload" href="fonts/web/cormorant-garamond-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/web/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>html{background:#080b13;color:#f2eee7}html[data-mode=paper]{background:#f6f1e7;color:#1d1a16}</style>
-<script>try{var q=new URLSearchParams(location.search).get("mode"),s=localStorage.getItem("exo-mode");document.documentElement.dataset.mode=(q==="galaxy"||q==="paper")?q:(s==="galaxy"?"galaxy":"paper")}catch(e){document.documentElement.dataset.mode="paper"}</script>
+<script>try{var q=(new URLSearchParams(location.search).get("mode")||"").toLowerCase(),m=(q==="galaxy"||q==="paper")?q:((q==="day"||q==="daylight")?"paper":null),s=localStorage.getItem("exo-mode");if(m)localStorage.setItem("exo-mode",m);document.documentElement.dataset.mode=m||(s==="galaxy"?"galaxy":"paper")}catch(e){document.documentElement.dataset.mode="paper"}</script>
 <link rel="stylesheet" href="fonts/web/fonts.css?v=2">
-<link rel="stylesheet" href="css/main.css?v=10">
-<link rel="stylesheet" href="css/sections.css?v=10">
-<link rel="stylesheet" href="css/albums.css?v=12">
-<link rel="stylesheet" href="css/extra.css?v=10">
-<link rel="stylesheet" href="css/member.css?v=10">
-<link rel="stylesheet" href="css/paper.css?v=10">
-<link rel="stylesheet" href="css/share.css?v=4">
-<link rel="stylesheet" href="css/subscribe.css?v=3">
-<link rel="stylesheet" href="css/vibe-motion.css?v=10">
+<link rel="stylesheet" href="css/main.css?v=21">
+<link rel="stylesheet" href="css/sections.css?v=21">
+<link rel="stylesheet" href="css/albums.css?v=21">
+<link rel="stylesheet" href="css/extra.css?v=26">
+<link rel="stylesheet" href="css/member.css?v=21">
+<link rel="stylesheet" href="css/responsive-nav.css?v=28">
+<link rel="stylesheet" href="css/paper.css?v=21">
+<link rel="stylesheet" href="css/share.css?v=21">
+<link rel="stylesheet" href="css/subscribe.css?v=21">
+<link rel="stylesheet" href="css/vibe-motion.css?v=27">
+<link rel="stylesheet" href="css/collector.css?v=27">
+<link rel="stylesheet" href="css/offstage.css?v=27">
 <script>
   // apply the saved power theme before first paint
   try { var p = localStorage.getItem('exo-power'); if (p) document.documentElement.dataset.power = p; } catch (e) {}
@@ -64,6 +67,12 @@
     <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M4 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4z"/><path d="M14 6v12" stroke-dasharray="2 2.500"/></symbol>
     <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s6.500-5.800 6.500-11a6.500 6.500 0 0 0-13 0C5.500 15.200 12 21 12 21z"/><circle cx="12" cy="10" r="2.300"/></symbol>
     <symbol id="i-question" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.500"/><path d="M9.500 9.700a2.600 2.600 0 1 1 3.700 2.400c-.800.400-1.200 1-1.200 1.900M12 17v.100"/></symbol>
+    <symbol id="i-nav-stars" viewBox="0 0 24 24"><polygon points="12 3 19.8 7.5 19.8 16.5 12 21 4.2 16.5 4.2 7.5"/><circle cx="12" cy="12" r="2.2"/></symbol>
+    <symbol id="i-nav-signal" viewBox="0 0 24 24"><circle cx="12" cy="15" r="1.8"/><path d="M8.2 11.4a5.4 5.4 0 0 1 7.6 0M5.2 8.4a9.6 9.6 0 0 1 13.6 0"/></symbol>
+    <symbol id="i-nav-orbit" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><ellipse cx="12" cy="12" rx="9.5" ry="3.8" transform="rotate(-24 12 12)"/></symbol>
+    <symbol id="i-nav-wave" viewBox="0 0 24 24"><path d="M4.5 10.5v3M8.2 7.5v9M12 4.5v15M15.8 7.5v9M19.5 10.5v3"/></symbol>
+    <symbol id="i-nav-chronicle" viewBox="0 0 24 24"><path d="M6.5 5.5v13M10.5 7.5h8M10.5 12h6M10.5 16.5h8"/><circle cx="6.5" cy="7.5" r="1.3"/><circle cx="6.5" cy="16.5" r="1.3"/></symbol>
+    <symbol id="i-nav-lab" viewBox="0 0 24 24"><path d="M12 3.2L19.5 7.5v9L12 20.8 4.5 16.5v-9z"/><path d="M12 12l7.5-4.5M12 12v8.8M12 12L4.5 7.5"/></symbol>
   </defs>
 </svg>
 
@@ -78,18 +87,19 @@
     <span><b>EXOPLANET</b> <small class="bar__ed">十四年典藏礼盒 · VOL. XIV</small></span>
   </a>
   <nav class="bar__nav" aria-label="主导航">
-    <a href="index.html#members">九人人物带</a>
-    <a href="index.html#now">此刻星讯</a>
-    <a href="index.html#schedule">票根与票夹</a>
-    <a href="index.html#albums">唱片封套</a>
-    <a href="archive.html">编年与综艺</a>
-    <a href="studio.html">官娃与工坊</a>
+    <a href="index.html#members"><svg class="nav__ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-nav-stars"/></svg><span>九星</span></a>
+    <a href="index.html#now"><svg class="nav__ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-nav-signal"/></svg><span>信号</span></a>
+    <a href="index.html#schedule"><svg class="nav__ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-nav-orbit"/></svg><span>星轨</span></a>
+    <a href="index.html#albums"><svg class="nav__ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-nav-wave"/></svg><span>声波</span></a>
+    <a href="archive.html"><svg class="nav__ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-nav-chronicle"/></svg><span>纪年</span></a>
+    <a href="studio.html"><svg class="nav__ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-nav-lab"/></svg><span>工坊</span></a>
   </nav>
   <div class="bar__tools">
+    <a class="tool tool--eribong" href="studio.html" title="点亮官娃与姓名印记">
+      <span class="eribong-dot" aria-hidden="true"></span>
+      <span data-eribong-count>爱丽棒集章 7/7</span>
+    </a>
     <button class="tool tool--mode" type="button" data-mode-toggle aria-pressed="false"><span class="mode__ico" aria-hidden="true"></span><span data-mode-name>银河</span></button>
-    <button class="tool tool--power" type="button" data-open-dial aria-haspopup="dialog" aria-label="切换超能力主题">
-      <svg class="glyph" viewBox="0 0 48 48" aria-hidden="true"><use data-power-glyph href="#g-galaxy"/></svg><span data-power-name>超能力</span>
-    </button>
   </div>
 </header>
 
@@ -99,7 +109,7 @@
   <nav class="mp__roster" aria-label="其他成员"></nav>
   <div class="foot__row">
     <p><b>EXO 星球</b> · 粉丝自制，非官方站点，与 SM Entertainment 及各成员所属公司无关。</p>
-    <p>照片版权归 SM Entertainment 及原权利人所有，仅作粉丝交流展示。 · <a class="link" href="spec.html">设计规范与验收标准</a></p>
+    <p>照片版权归 SM Entertainment 及原权利人所有，仅作粉丝交流展示。</p>
     <p class="foot__love" data-checked></p>
   </div>
 </footer>
@@ -114,6 +124,6 @@
   </div>
 </div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script type="module" src="js/member.js?v=16"></script>
+<script type="module" src="js/member.js?v=27"></script>
 </body>
 </html>
