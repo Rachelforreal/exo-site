@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>EXO 星球 · 给 EXO-L 的刊物与银河</title>
+<title>EXO 星球 · 给 EXO-L 的白昼与银河</title>
 <meta name="description" content="给 EXO-L 的粉丝站：成员、行程与票务、专辑档案。九种超能力主题随心切换，每条消息都注明来源，正式公告与待核实消息分开。粉丝自制，非官方。">
 <meta name="theme-color" content="#f2f0eb">
 <meta property="og:title" content="EXO 星球 · WE ARE ONE">
@@ -17,19 +17,22 @@
 <link rel="preload" href="fonts/web/cormorant-garamond-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/web/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>html{background:#080b13;color:#f2eee7}html[data-mode=paper]{background:#f6f1e7;color:#1d1a16}</style>
-<script>try{var q=new URLSearchParams(location.search).get("mode"),s=localStorage.getItem("exo-mode");document.documentElement.dataset.mode=(q==="galaxy"||q==="paper")?q:(s==="galaxy"?"galaxy":"paper")}catch(e){document.documentElement.dataset.mode="paper"}</script>
+<script>try{var q=(new URLSearchParams(location.search).get("mode")||"").toLowerCase(),m=(q==="galaxy"||q==="paper")?q:((q==="day"||q==="daylight")?"paper":null),s=localStorage.getItem("exo-mode");if(m)localStorage.setItem("exo-mode",m);document.documentElement.dataset.mode=m||(s==="galaxy"?"galaxy":"paper")}catch(e){document.documentElement.dataset.mode="paper"}</script>
 <link rel="stylesheet" href="fonts/web/fonts.css?v=2">
-<link rel="stylesheet" href="css/main.css?v=10">
-<link rel="stylesheet" href="css/sections.css?v=10">
-<link rel="stylesheet" href="css/albums.css?v=12">
-<link rel="stylesheet" href="css/extra.css?v=10">
-<link rel="stylesheet" href="css/paper.css?v=10">
-<link rel="stylesheet" href="css/share.css?v=4">
-<link rel="stylesheet" href="css/subscribe.css?v=3">
-<link rel="stylesheet" href="css/checkin.css?v=2">
-<link rel="stylesheet" href="css/feed.css?v=3">
-<link rel="stylesheet" href="css/guestbook.css?v=3">
-<link rel="stylesheet" href="css/vibe-motion.css?v=10">
+<link rel="stylesheet" href="css/main.css?v=21">
+<link rel="stylesheet" href="css/sections.css?v=21">
+<link rel="stylesheet" href="css/albums.css?v=21">
+<link rel="stylesheet" href="css/extra.css?v=26">
+<link rel="stylesheet" href="css/paper.css?v=21">
+<link rel="stylesheet" href="css/share.css?v=21">
+<link rel="stylesheet" href="css/subscribe.css?v=21">
+<link rel="stylesheet" href="css/checkin.css?v=21">
+<link rel="stylesheet" href="css/feed.css?v=21">
+<link rel="stylesheet" href="css/guestbook.css?v=21">
+<link rel="stylesheet" href="css/vibe-motion.css?v=27">
+<link rel="stylesheet" href="css/collector.css?v=27">
+<link rel="stylesheet" href="css/offstage.css?v=27">
+<link rel="stylesheet" href="css/responsive-nav.css?v=28">
 <script>
   // apply the saved power theme before first paint
   try { var p = localStorage.getItem('exo-power'); if (p) document.documentElement.dataset.power = p; } catch (e) {}
@@ -61,6 +64,12 @@
     <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M4 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4z"/><path d="M14 6v12" stroke-dasharray="2 2.500"/></symbol>
     <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s6.500-5.800 6.500-11a6.500 6.500 0 0 0-13 0C5.500 15.200 12 21 12 21z"/><circle cx="12" cy="10" r="2.300"/></symbol>
     <symbol id="i-question" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.500"/><path d="M9.500 9.700a2.600 2.600 0 1 1 3.700 2.400c-.800.400-1.200 1-1.200 1.900M12 17v.100"/></symbol>
+    <symbol id="i-nav-stars" viewBox="0 0 24 24"><polygon points="12 3 19.8 7.5 19.8 16.5 12 21 4.2 16.5 4.2 7.5"/><circle cx="12" cy="12" r="2.2"/></symbol>
+    <symbol id="i-nav-signal" viewBox="0 0 24 24"><circle cx="12" cy="15" r="1.8"/><path d="M8.2 11.4a5.4 5.4 0 0 1 7.6 0M5.2 8.4a9.6 9.6 0 0 1 13.6 0"/></symbol>
+    <symbol id="i-nav-orbit" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><ellipse cx="12" cy="12" rx="9.5" ry="3.8" transform="rotate(-24 12 12)"/></symbol>
+    <symbol id="i-nav-wave" viewBox="0 0 24 24"><path d="M4.5 10.5v3M8.2 7.5v9M12 4.5v15M15.8 7.5v9M19.5 10.5v3"/></symbol>
+    <symbol id="i-nav-chronicle" viewBox="0 0 24 24"><path d="M6.5 5.5v13M10.5 7.5h8M10.5 12h6M10.5 16.5h8"/><circle cx="6.5" cy="7.5" r="1.3"/><circle cx="6.5" cy="16.5" r="1.3"/></symbol>
+    <symbol id="i-nav-lab" viewBox="0 0 24 24"><path d="M12 3.2L19.5 7.5v9L12 20.8 4.5 16.5v-9z"/><path d="M12 12l7.5-4.5M12 12v8.8M12 12L4.5 7.5"/></symbol>
   </defs>
 </svg>
 
@@ -77,12 +86,12 @@
     <span><b>EXOPLANET</b> <small class="bar__ed">十四年典藏礼盒 · VOL. XIV</small></span>
   </a>
   <nav class="bar__nav" aria-label="主导航">
-    <a href="#members" data-nav="members">九人人物带</a>
-    <a href="#now" data-nav="now">此刻星讯</a>
-    <a href="#schedule" data-nav="schedule">票根与票夹</a>
-    <a href="#albums" data-nav="albums">唱片封套</a>
-    <a href="archive.html">编年与综艺</a>
-    <a href="studio.html">官娃与工坊</a>
+    <a href="#members" data-nav="members"><svg class="nav__ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-nav-stars"/></svg><span>九星</span></a>
+    <a href="#now" data-nav="now"><svg class="nav__ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-nav-signal"/></svg><span>信号</span></a>
+    <a href="#schedule" data-nav="schedule"><svg class="nav__ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-nav-orbit"/></svg><span>星轨</span></a>
+    <a href="#albums" data-nav="albums"><svg class="nav__ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-nav-wave"/></svg><span>声波</span></a>
+    <a href="archive.html"><svg class="nav__ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-nav-chronicle"/></svg><span>纪年</span></a>
+    <a href="studio.html"><svg class="nav__ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-nav-lab"/></svg><span>工坊</span></a>
   </nav>
   <div class="bar__tools">
     <a class="tool tool--eribong" href="studio.html" title="点亮官娃与姓名印记">
@@ -97,10 +106,6 @@
     </button>
     <button class="tool tool--mode" type="button" data-mode-toggle aria-pressed="false">
       <span class="mode__ico" aria-hidden="true"></span><span data-mode-name>银河</span>
-    </button>
-    <button class="tool tool--power" type="button" data-open-dial aria-haspopup="dialog" aria-label="切换超能力主题">
-      <svg class="glyph" viewBox="0 0 48 48" aria-hidden="true"><use data-power-glyph href="#g-galaxy"/></svg>
-      <span data-power-name>超能力</span>
     </button>
   </div>
 </header>
@@ -183,22 +188,13 @@
     </figure>
 
     <div class="issue__actions">
-      <a class="cbtn" href="studio.html">带这张小卡去做 DIY 壁纸 →</a>
-      <a class="cbtn cbtn--ghost" data-cover-link href="#members">进入单人专栏</a>
+      <a class="cbtn" data-cover-link href="#members">进入单人专栏</a>
       <button class="cbtn cbtn--ghost" type="button" data-cover-quick>速览档案</button>
+      <a class="cbtn cbtn--ghost" href="studio.html">DIY 壁纸工坊 →</a>
+      <button class="cbtn cbtn--ghost" type="button" data-save-cover title="导出当期封面海报">封面海报 ↓</button>
     </div>
-    <div class="issue__btns"><button class="cbtn cbtn--ghost cbtn--sm" type="button" data-save-cover>导出当期封面海报 ↓</button></div>
-  </div>
 
-  <!-- Full-Width Bottom Giftbox Compartment Ribbon -->
-  <div class="issue__side issue__side--r">
-    <div class="issue__box-strip">
-      <div class="issue__toc-wrap">
-        <p class="kicker">UNBOXING COMPARTMENTS · 礼盒六大内页分册</p>
-        <ol class="issue__toc" data-toc></ol>
-      </div>
-      <div class="issue__radar" data-next aria-label="近期关键节点"></div>
-    </div>
+    <div class="issue__radar" data-next aria-label="近期关键节点"></div>
   </div>
 </section>
 
@@ -210,7 +206,7 @@
       <span class="ln"><span class="w">WE</span> <span class="w">ARE</span></span>
       <span class="ln ln--one"><em class="w">ONE</em><svg class="hero__sigil glyph" viewBox="0 0 48 48" aria-hidden="true"><use data-power-glyph href="#g-galaxy"/></svg></span>
     </h1>
-    <p class="hero__sub">收录 EXO 团体与九位成员的核实动态、双时区行程、团体、个人与分队唱片收藏与单人专栏。<br>点击画卷人物可速览档案；右上角「超能力」可独立切换全站主题。</p>
+    <p class="hero__sub">收录 EXO 团体与九位成员的核实动态、双时区行程、历代唱片收藏与单人专栏。</p>
   </div>
 
   <div class="film" id="film" aria-label="成员合照长卷，可左右拖动">
@@ -282,6 +278,8 @@
     <ul class="feed__list" id="feed-list"></ul>
   </div>
   <!-- feed:end -->
+
+  <section id="offstage-mount" aria-label="镜头之外 · OFF STAGE"></section>
 </section>
 
 <!-- ============ SCHEDULE ============ -->
@@ -300,26 +298,28 @@
       <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-search"/></svg>
       <input type="search" id="sched-q" placeholder="搜城市、场馆、成员、专辑或活动名…" autocomplete="off" aria-label="搜索行程">
     </label>
-    <div class="seg" role="group" aria-label="时间进度" id="sched-when">
-      <button type="button" data-when="active" aria-pressed="true">进行中与即将</button>
-      <button type="button" data-when="ongoing" aria-pressed="false">进行中</button>
-      <button type="button" data-when="upcoming" aria-pressed="false">即将开始</button>
-      <button type="button" data-when="done" aria-pressed="false">已结束</button>
-      <button type="button" data-when="all" aria-pressed="false">全部</button>
-    </div>
-    <div class="seg" role="group" aria-label="核实状态" id="sched-verif">
-      <button type="button" data-verif="all" aria-pressed="true">全部来源</button>
-      <button type="button" data-verif="confirmed" aria-pressed="false">已确认</button>
-      <button type="button" data-verif="official" aria-pressed="false">仅官方</button>
-      <button type="button" data-verif="unverified" aria-pressed="false">待核实</button>
-    </div>
-    <div class="sched__checks">
-      <label class="check"><input type="checkbox" id="sched-ticket"><span>有票务/预售入口</span></label>
-      <label class="check"><input type="checkbox" id="sched-series" checked><span>合并同巡演场次</span></label>
-      <label class="check"><input type="checkbox" id="sched-star"><span>只看我收藏的</span></label>
+    <div class="subrow"><button class="cbtn cbtn--ghost" type="button" data-subscribe="exo">订阅日历 · 已确认行程与生日</button><span class="subrow__hint">自动同步至手机或电脑系统日历，待核实传闻默认排除</span></div>
+    <div class="sched__filters">
+      <div class="seg" role="group" aria-label="时间进度" id="sched-when">
+        <button type="button" data-when="active" aria-pressed="true">进行中与即将</button>
+        <button type="button" data-when="ongoing" aria-pressed="false">进行中</button>
+        <button type="button" data-when="upcoming" aria-pressed="false">即将开始</button>
+        <button type="button" data-when="done" aria-pressed="false">已结束</button>
+        <button type="button" data-when="all" aria-pressed="false">全部</button>
+      </div>
+      <div class="seg" role="group" aria-label="核实状态" id="sched-verif">
+        <button type="button" data-verif="all" aria-pressed="true">全部来源</button>
+        <button type="button" data-verif="confirmed" aria-pressed="false">已确认</button>
+        <button type="button" data-verif="official" aria-pressed="false">仅官方</button>
+        <button type="button" data-verif="unverified" aria-pressed="false">待核实</button>
+      </div>
+      <div class="sched__checks">
+        <label class="check"><input type="checkbox" id="sched-ticket"><span>有票务/预售入口</span></label>
+        <label class="check"><input type="checkbox" id="sched-series" checked><span>合并同巡演场次</span></label>
+        <label class="check"><input type="checkbox" id="sched-star"><span>只看我收藏的</span></label>
+      </div>
     </div>
   </div>
-  <div class="subrow"><button class="cbtn cbtn--ghost" type="button" data-subscribe="exo">订阅日历 · 已确认行程与生日</button><span class="subrow__hint">自动同步至手机或电脑系统日历，待核实传闻默认排除</span></div>
   <div class="chips" id="sched-members" role="group" aria-label="按成员筛选"></div>
   <div class="chips chips--cat" id="sched-cats" role="group" aria-label="按类型筛选"></div>
 
@@ -360,21 +360,55 @@
   <header class="sec__head">
     <p class="sec__no">05</p>
     <div>
-      <p class="kicker">BOX INSERT 05 // ARCHIVE BOOK &amp; CRAFT KIT · 礼盒下层分册</p>
+      <p class="kicker">VOLUME I &amp; II // EXHIBITION PAVILIONS · 礼盒下层特展分册</p>
       <h2 class="sec__h" id="explore-h">深度<em>档案馆与星球工坊</em></h2>
     </div>
-    <p class="sec__lead">除了首页的实时行程与专辑架，还单独整理了两本分册：一本收齐十四年大事编年、历代概念画报与 52 档综艺；一本提供官娃贴纸、DIY 锁屏壁纸与专属入坑纪念卡。</p>
+    <p class="sec__lead">除了首页的实时星讯、巡演登机牌与黑胶试听室，还独立装帧了两册精装馆藏：一册收录十四年 553 条大事编年与 443 档综艺补档；一册收录 Q 版官娃贴纸、DIY 壁纸画板与入坑纪念卡。</p>
   </header>
   <div class="portal-grid">
-    <a class="portal-card" href="archive.html">
-      <small>VOLUME I · 编年与综艺馆</small>
-      <h3>大事编年 · 画报长廊 · 52 档综艺 ↗</h3>
-      <p>翻阅 2012–2026 团体与个人重要节点（《MAMA》《咆哮》《约定》《REVERXE》）、历代回归画报与 52 档综艺补档指南。</p>
+    <a class="portal-card portal-card--archive" href="archive.html">
+      <div class="portal-card__bg" aria-hidden="true">
+        <img src="img/group/reverxe-1.webp" alt="" loading="lazy" decoding="async">
+      </div>
+      <div class="portal-card__content">
+        <div class="portal-card__top">
+          <span class="portal-card__vol">VOLUME I · CHRONICLE &amp; VARIETY</span>
+          <span class="portal-card__badge">2012 — 2026</span>
+        </div>
+        <div class="portal-card__mid">
+          <p class="portal-card__roman" aria-hidden="true">I</p>
+          <h3>十四年大事编年 · 概念画报长廊 · 综艺馆</h3>
+          <p>翻阅 2012–2026 团体与个人关键坐标（《MAMA》《咆哮》《约定》《REVERXE》）、历代概念大片底片与全网补档指南。</p>
+        </div>
+        <div class="portal-card__stats">
+          <div><b>553</b><span>大事编年</span></div>
+          <div><b>17</b><span>时代画报</span></div>
+          <div><b>443</b><span>综艺补档</span></div>
+          <span class="portal-card__cta">推开档案馆 ↗</span>
+        </div>
+      </div>
     </a>
-    <a class="portal-card" href="studio.html">
-      <small>VOLUME II · 官娃贴纸与手账工坊</small>
-      <h3>星球工坊 · DIY 壁纸 · L 卡与 Q 版官娃馆 ↗</h3>
-      <p>点亮 7 位成员官方娃娃简笔画与 2 枚姓名印记，上传美图自由拖拽排版，导出高清锁屏/桌面壁纸与专属入坑 L 卡。</p>
+    <a class="portal-card portal-card--studio" href="studio.html">
+      <div class="portal-card__bg" aria-hidden="true">
+        <img src="img/group/obsession-1.webp" alt="" loading="lazy" decoding="async">
+      </div>
+      <div class="portal-card__content">
+        <div class="portal-card__top">
+          <span class="portal-card__vol">VOLUME II · ATELIER &amp; PLUSHIES</span>
+          <span class="portal-card__badge">PURE LOCAL STUDIO</span>
+        </div>
+        <div class="portal-card__mid">
+          <p class="portal-card__roman" aria-hidden="true">II</p>
+          <h3>官娃简笔画图鉴 · DIY 锁屏壁纸 · 纪念 L 卡</h3>
+          <p>集齐 7 只官方娃娃简笔画与 2 枚姓名印记，上传神图自由拖拽排版，一键导出高清手机锁屏壁纸与专属入坑同行卡。</p>
+        </div>
+        <div class="portal-card__stats">
+          <div><b>9</b><span>行星印记</span></div>
+          <div><b>3</b><span>画幅比例</span></div>
+          <div><b>PNG</b><span>原图直出</span></div>
+          <span class="portal-card__cta">进入星球工坊 ↗</span>
+        </div>
+      </div>
     </a>
   </div>
 </section>
@@ -398,7 +432,7 @@
   <div class="foot__big" aria-hidden="true">WE ARE ONE</div>
   <div class="foot__row">
     <p><b>EXO 星球</b> · 粉丝自制，非官方站点，与 SM Entertainment 及各成员所属公司无关。</p>
-    <p>照片与专辑封面版权归 SM Entertainment 及原权利人所有，仅作粉丝交流展示。<button class="link" type="button" data-open-credits>图片来源</button> · <a class="link" href="spec.html">设计规范与验收标准</a> · <a class="link" href="#guestbook">给站长提意见</a></p>
+    <p>照片与专辑封面版权归 SM Entertainment 及原权利人所有，仅作粉丝交流展示。<button class="link" type="button" data-open-credits>图片来源</button> · <a class="link" href="#guestbook">给站长提意见</a></p>
     <p class="foot__love">EXO, 사랑하자 · 엑소엘, 사랑해</p>
   </div>
 </footer>
@@ -466,6 +500,6 @@
 <script src="vendor/ScrollTrigger.min.js"></script>
 <script src="vendor/SplitText.min.js"></script>
 <script src="vendor/lenis.min.js"></script>
-<script type="module" src="js/main.js?v=16"></script>
+<script type="module" src="js/main.js?v=27"></script>
 </body>
 </html>

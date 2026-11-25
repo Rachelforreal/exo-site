@@ -106,8 +106,8 @@
 <main class="spec-wrap">
   <header class="spec-hero">
     <p class="kicker">EXOPLANET CHRONICLE // DESIGN SYSTEM &amp; ACCEPTANCE SPECIFICATION</p>
-    <h1>EXO 星球 · 书刊与银河双栖设计规范</h1>
-    <p>本规范直接挂载生产样式表（<code>main.css</code> / <code>paper.css</code> / <code>extra.css</code> / <code>sections.css</code>）与实时数据包构建，右上角可随时切换「书刊 / 银河」检验双模式令牌表现。涵盖行星观测志视觉识别、编辑部文案准则、正交双轴行程状态模型、交互组件状态矩阵、响应式降级边界与自动化验收断言。</p>
+    <h1>EXO 星球 · 白昼与银河双栖设计规范</h1>
+    <p>本规范直接挂载生产样式表（<code>main.css</code> / <code>paper.css</code> / <code>extra.css</code> / <code>sections.css</code>）与实时数据包构建，右上角可随时切换「白昼 / 银河」检验双模式令牌表现。涵盖行星观测志视觉识别、编辑部文案准则、正交双轴行程状态模型、交互组件状态矩阵、响应式降级边界与自动化验收断言。</p>
   </header>
 
   <!-- 01 TOKENS -->
@@ -315,7 +315,7 @@
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script type="module">
-  import { initMode } from './js/mode.js';
+  import { initMode } from './js/mode.js?v=26';
   import { eventState, isConfirmed, hasTicketInfo } from './js/util.js';
   import { exportMemberPoster, presentExportModal } from './js/share.js';
   initMode();
