@@ -1,19 +1,22 @@
 // 单人专栏 — member.html?id=kai. One page per member, in the same two editions as the home page.
 // In 银河 the universe and particles switch to his power (without changing the visitor's saved theme),
 // and the hero carries an aura drawn for that power.
-import { $, $$, esc, glyph, icon, badge, phaseBadge, detailBadges, sources, safeUrl, reduced, todayStr, dayDiff, fullDate, md, eventTimeLabel, eventState, enhanceSegs, animateDetails } from './util.js';
+import { $, $$, esc, glyph, icon, badge, phaseBadge, detailBadges, sources, safeUrl, reduced, todayStr, dayDiff, fullDate, md, eventTimeLabel, eventState, enhanceSegs, animateDetails, memberWeeklyGallery } from './util.js';
 import { lazyUniverse } from './lazyuni.js';
 import { initThemes, setPower } from './themes.js';
-import { initMode } from './mode.js';
+import { initMode } from './mode.js?v=27';
 import { shareMember, exportMemberPoster } from './share.js'; /* share */
 import { initSubscribe } from './subscribe.js';
+import { initVibeMotion } from './vibe-motion.js?v=27';
 
-const load = name => fetch(`data/${name}.json?v=16`).then(r => { if (!r.ok) throw new Error(name); return r.json(); });
+const load = name => fetch(`data/${name}.json?v=27`).then(r => { if (!r.ok) throw new Error(name); return r.json(); });
 
 async function boot() {
   const [members, events, news, archive, meta] = await Promise.all(['members', 'events', 'news', 'archive', 'meta'].map(load));
   const byId = Object.fromEntries(members.map(m => [m.id, m]));
-  const id = new URLSearchParams(location.search).get('id') || (location.pathname.match(/\/m\/([a-z0-9-]+)\/?(?:index\.html)?$/i) || [])[1]; /* ?id= or /m/<id>/ */
+  const sp = new URLSearchParams(location.search);
+  const hashId = decodeURIComponent(location.hash.slice(1)).toLowerCase();
+  const id = (sp.get('id') || sp.get('m') || sp.get('member') || (byId[hashId] ? hashId : '') || (location.pathname.match(/\/m\/([a-z0-9-]+)\/?(?:index\.html)?$/i) || [])[1] || '').toLowerCase();
   const m = byId[id] || members[0], idx = members.indexOf(m);
   document.title = `${m.en} ${m.zh} · 单人专栏 · EXO 星球`;
 
@@ -67,7 +70,8 @@ async function boot() {
     const items = releasedWorks.filter(w => (w.category || 'albums') === key);
     return items.length ? `<div class="mp-work-group"><h3>${label} <small>${items.length} 项</small></h3><ol class="mp-works-cards">${items.map(workCard).join('')}</ol></div>` : '';
   }).join('');
-  const looks = m.gallery?.length ? m.gallery.map(g => [g.src, g.era]) : [[m.photo2, m.photo2Era], [m.photo, m.photoEra]].filter(x => x[0]);
+  const weeklyGal = memberWeeklyGallery(m);
+  const looks = weeklyGal.length ? weeklyGal.map(g => [g.src, g.era]) : [[m.photo2, m.photo2Era], [m.photo, m.photoEra]].filter(x => x[0]);
   const links = (m.channels || []).filter(c => safeUrl(c.url));
   const agency = String(m.agency || '').split(/[（(]/)[0].trim();
 
@@ -134,7 +138,7 @@ async function boot() {
         <div><dt>作品条目收录</dt><dd>${releasedWorks.length} 项<small>${announcedWorks.length ? `另有 ${announcedWorks.length} 项预定发行` : '含个人、合作与分队'}</small></dd></div>
         <div><dt>所属经纪</dt><dd title="${esc(m.agency)}">${esc(agency)}</dd></div>
       </dl>
-      <div class="mp-btns"><button class="cbtn" type="button" data-keep-power>将全站主题设为「${esc(m.power.zh)}」</button><a class="cbtn cbtn--ghost" href="studio.html?card=${m.id}#card">制作他的纪念卡 →</a><button class="cbtn cbtn--ghost" type="button" data-subscribe="member" data-member-id="${m.id}" data-title="${esc(m.zh)} · 单人日程">订阅他的日历</button><!-- share:begin --><button class="cbtn cbtn--ghost" type="button" data-export-poster>导出专栏海报 ↓</button><button class="cbtn cbtn--ghost" type="button" data-share-member>复制链接</button><!-- share:end --></div>
+      <div class="mp-btns"><a class="cbtn" href="studio.html?card=${m.id}#maker">DIY ${esc(m.en)} 壁纸 →</a><a class="cbtn cbtn--ghost" href="studio.html?card=${m.id}#card">制作他的纪念卡 →</a><button class="cbtn cbtn--ghost" type="button" data-subscribe="member" data-member-id="${m.id}" data-title="${esc(m.zh)} · 单人日程">订阅他的日历</button><!-- share:begin --><button class="cbtn cbtn--ghost" type="button" data-export-poster>导出专栏海报 ↓</button><button class="cbtn cbtn--ghost" type="button" data-share-member>复制链接</button><!-- share:end --></div>
     </div>
     <figure class="mp-hero__ph">
       <img src="${esc(looks[0][0])}" alt="${esc(m.en)} 概念照" id="mp-img" style="view-transition-name:member-portrait">
@@ -194,9 +198,10 @@ async function boot() {
   const prev = members[(idx + members.length - 1) % members.length], next = members[(idx + 1) % members.length];
   $('.mp__roster').innerHTML = `<p class="kicker">PLANETARY ROSTER · 切换其他成员专栏</p><div class="mp__grid">${members.map(x => `<a href="member.html?id=${x.id}"${x.id === m.id ? ' aria-current="page"' : ''} style="--mc:${x.color}">${glyph(x.id)}<b>${esc(x.en)}</b><span>${esc(x.zh)} · ${esc(x.power.zh)}</span></a>`).join('')}</div>
     <nav class="mp__pn"><a href="member.html?id=${prev.id}">← ${esc(prev.en)} ${esc(prev.zh)}</a><a href="index.html#members">返回全部成员</a><a href="member.html?id=${next.id}">${esc(next.en)} ${esc(next.zh)} →</a></nav>`;
-  if (meta.checkedAt) $('[data-checked]').textContent = `人工核验基准日 ${fullDate(meta.checkedAt)}`;
+  if (meta.checkedAt) $('[data-checked]').textContent = `EXO, 사랑하자 · 人工核验基准日 ${fullDate(meta.checkedAt)}`;
   enhanceSegs();
   animateDetails();
+  initVibeMotion();
 
   $('#mp').addEventListener('click', e => {
     const look = e.target.closest('[data-look]');

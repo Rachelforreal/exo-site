@@ -2,24 +2,25 @@
 import { $, $$, esc, icon, safeUrl, reduced, reveal, overlay, clamp, enhanceSegs, animateDetails } from './util.js';
 import { lazyUniverse } from './lazyuni.js';
 import { initThemes, setPower, currentPower } from './themes.js';
-import { initHero } from './hero.js?v=11';
-import { initTicker, initNow, initMembers, initChannels } from './sections.js?v=16';
-import { initSchedule } from './schedule.js?v=16';
-import { initAlbums } from './albums.js?v=16';
-import { initSearch } from './search.js?v=15';
-import { initMode } from './mode.js?v=11';
-import { initCover } from './cover.js?v=15';
-import { initRoad } from './road.js?v=11';
-import { initMaker } from './maker.js?v=11';
-import { initWallpaper } from './wallpaper.js?v=11';
-import { initPlushieEggs } from './plushies.js?v=11';
-import { withCalendar } from './calendar.js?v=11';
-import { initSubscribe } from './subscribe.js?v=11';
-import { initFeed } from './feed.js?v=11';
-import { initGuestbook } from './guestbook.js?v=11';
-import { initVibeMotion } from './vibe-motion.js?v=11';
+import { initHero } from './hero.js?v=27';
+import { initTicker, initNow, initMembers, initChannels } from './sections.js?v=27';
+import { initOffstage } from './offstage.js?v=27';
+import { initSchedule } from './schedule.js?v=27';
+import { initAlbums } from './albums.js?v=27';
+import { initSearch } from './search.js?v=27';
+import { initMode } from './mode.js?v=27';
+import { initCover } from './cover.js?v=27';
+import { initRoad } from './road.js?v=27';
+import { initMaker } from './maker.js?v=27';
+import { initWallpaper } from './wallpaper.js?v=27';
+import { initPlushieEggs } from './plushies.js?v=27';
+import { withCalendar } from './calendar.js?v=27';
+import { initSubscribe } from './subscribe.js?v=27';
+import { initFeed } from './feed.js?v=27';
+import { initGuestbook } from './guestbook.js?v=27';
+import { initVibeMotion } from './vibe-motion.js?v=27';
 
-const V = '16';
+const V = '27';
 const load = name => fetch(`data/${name}.json?v=${V}`).then(r => { if (!r.ok) throw new Error(`${name}: ${r.status}`); return r.json(); });
 const SECTION_PAGE = {
   now: 'index.html',
@@ -33,8 +34,11 @@ const SECTION_PAGE = {
 };
 
 async function boot() {
-  const [members, albums, events, news, channels, hero, meta, archive] = await Promise.all(['members', 'albums', 'events', 'news', 'channels', 'hero', 'meta', 'archive'].map(load));
-  const ctx = { members, albums, events, news, channels, hero, meta, archive, byId: Object.fromEntries(members.map(m => [m.id, m])), lenis: null };
+  const [members, albums, events, news, channels, hero, meta, archive, offstage] = await Promise.all([
+    ...['members', 'albums', 'events', 'news', 'channels', 'hero', 'meta', 'archive'].map(load),
+    load('offstage').catch(() => []),
+  ]);
+  const ctx = { members, albums, events, news, channels, hero, meta, archive, offstage, byId: Object.fromEntries(members.map(m => [m.id, m])), lenis: null };
 
   /* ---- background ---- */
   let uni = null;
@@ -90,7 +94,10 @@ async function boot() {
   // Quick Dossier Sheet opens in-page on homepage; subpages navigate directly to member.html?id=<id>.
   if (mem) api.openMember = mem.openMember;
   if ($('#ticker')) initTicker(ctx);
-  if ($('#now')) initNow(ctx, { openMember, focusEvent });
+  if ($('#now')) {
+    initNow(ctx, { openMember, focusEvent });
+    initOffstage(ctx, { openMember });
+  }
 
   if ($('#channels')) {
     initChannels(ctx);
@@ -101,7 +108,7 @@ async function boot() {
     $$('[data-open-credits]').forEach(b => b.addEventListener('click', () => overlay.open($('#credits'))));
   }
 
-  if ($('#cover')) initCover(ctx, { openMember, focusEvent });
+  if ($('#cover') && getComputedStyle($('#cover')).display !== 'none') initCover(ctx, { openMember, focusEvent });
   if ($('#road')) initRoad(ctx);
   let wp = null;
   if ($('#maker')) {

@@ -1,6 +1,6 @@
 // Schedule + ticketing: dual-axis state (verification × lifecycle), tour grouping, favourites, calendar export.
 import { $, $$, esc, glyph, icon, badge, phaseBadge, detailBadges, sources, safeUrl, reveal, store, toast, md, weekday, dayDiff, eventTimeLabel, instant, eventState, isConfirmed, hasTicketInfo, enhanceSegs, animateDetails, reduced } from './util.js';
-import { memberChips } from './sections.js?v=16';
+import { memberChips } from './sections.js?v=27';
 
 const MONTH_EN = ['JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE', 'JULY', 'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER'];
 const WHEN_LABELS = { active: '进行中与即将', ongoing: '进行中', upcoming: '即将开始', done: '已结束', all: '全部时间' };
@@ -33,15 +33,39 @@ export function initSchedule(ctx, { openMember }) {
     const u = safeUrl(t.url);
     return `<p class="ev__ticket">${icon('ticket')}${t.platform ? `<b>${esc(t.platform)}</b>` : '<b>票务 / 预售</b>'}${t.onSale ? `<span>${/演唱会|见面|票务/.test(e.category || '') ? '开票' : '开售'} ${esc(t.onSale)}</span>` : ''}${t.note ? `<span>${esc(t.note)}</span>` : ''}${u ? `<a class="src" href="${esc(u)}" target="_blank" rel="noopener noreferrer">前往页面${icon('arrow')}</a>` : ''}</p>`;
   };
+  const CITY_IATA = [
+    [/首尔|KSPO|高尺|蚕室|YES24|INSPIRE|仁川/, 'SEL'],
+    [/澳门|MACAU/i, 'MFM'],
+    [/香港|HONG KONG/i, 'HKG'],
+    [/台北|高雄|台湾|TAIPEI/i, 'TPE'],
+    [/东京|横滨|日本|TOKYO/i, 'TYO'],
+    [/大阪|神户|OSAKA/i, 'OSA'],
+    [/曼谷|BANGKOK/i, 'BKK'],
+    [/雅加达|JAKARTA/i, 'CGK'],
+    [/新加坡|SINGAPORE/i, 'SIN'],
+    [/马尼拉|MANILA/i, 'MNL'],
+    [/吉隆坡|KUALA/i, 'KUL'],
+    [/北京/, 'PEK'],
+    [/上海/, 'SHA'],
+    [/青岛/, 'TAO'],
+    [/广州|深圳/, 'CAN'],
+  ];
+  const getGateCode = e => {
+    const loc = `${e.city || ''} ${e.venue || ''} ${e.title || ''}`;
+    for (const [re, code] of CITY_IATA) if (re.test(loc)) return code;
+    return /发行|预售|专辑/.test(e.category || '') ? 'REL' : 'EXO';
+  };
   const evHTML = (e, i) => {
-    const [, mNo, d] = e.date.split('-');
+    const [yr, mNo, d] = e.date.split('-');
     const es = eventState(e);
     const first = (e.members || []).find(id => id !== 'group'); const mc = first && e.members.length === 1 ? ctx.byId[first]?.color : '';
     const time = eventTimeLabel(e);
     const range = e.endDate && e.endDate !== e.date ? `${+mNo}.${d} – ${md(e.endDate)}` : weekday(e.date);
     const hasDetails = !!(e.summary || e.detailNote || e.missing || (e.ticket && (e.ticket.platform || e.ticket.url || e.ticket.onSale || e.ticket.note)) || (e.sources && e.sources.length));
+    const gate = getGateCode(e);
+    const seatNo = `${yr.slice(2)}${mNo}-${d}`;
     return `<article class="ev rv${es.isDone ? ' is-done' : ''}${es.isOngoing ? ' is-ongoing' : ''}${e.verification === 'unverified' ? ' is-rumor' : ''}" id="ev-${esc(e.id)}" data-id="${esc(e.id)}" style="--i:${Math.min(i, 5)}${mc ? `;--mc:${mc}` : ''}">
-      <div class="ev__date"><b>${d}</b><span>${esc(range)}</span><em class="is-${es.subphase === 'unconfirmed_past' ? 'stale' : es.phase}">${esc(es.dateChip)}</em></div>
+      <div class="ev__date"><span class="ev__gate">${gate}</span><b>${d}</b><span>${esc(range)}</span><em class="is-${es.subphase === 'unconfirmed_past' ? 'stale' : es.phase}">${esc(es.dateChip)}</em></div>
       <div class="ev__body">
         <div class="ev__tags">${badge(e.verification)}${phaseBadge(e)}${detailBadges(e)}<span class="tag">${esc(e.category)}</span>${memberChips(ctx, e.members, 'button')}</div>
         <h4>${esc(e.title)}</h4>
@@ -57,7 +81,11 @@ export function initSchedule(ctx, { openMember }) {
           </div>
         </details>` : ''}
       </div>
-      <div class="ev__side"><span class="ev__stamp ev__stamp--${esc(e.verification)}" aria-hidden="true">${e.verification === 'official' ? 'OFFICIAL · 官方印鉴' : e.verification === 'media' ? 'MEDIA · 媒体报道' : 'RUMOR · 待核线索'}</span><button class="star tear-stub-btn" type="button" data-star="${esc(e.id)}" aria-pressed="${stars.has(e.id)}" aria-label="收藏这条行程">${icon('star')}<span>${stars.has(e.id) ? '已存票夹' : '撕下存根'}</span></button></div>
+      <div class="ev__side">
+        <span class="ev__barcode" aria-hidden="true"><i></i><small>NO.${seatNo}</small></span>
+        <span class="ev__stamp ev__stamp--${esc(e.verification)}" aria-hidden="true">${e.verification === 'official' ? 'OFFICIAL · 官方印鉴' : e.verification === 'media' ? 'MEDIA · 媒体报道' : 'RUMOR · 待核线索'}</span>
+        <button class="star tear-stub-btn" type="button" data-star="${esc(e.id)}" aria-pressed="${stars.has(e.id)}" aria-label="收藏这条行程">${icon('star')}<span>${stars.has(e.id) ? '已存票夹' : '撕下存根'}</span></button>
+      </div>
     </article>`;
   };
 
@@ -70,7 +98,7 @@ export function initSchedule(ctx, { openMember }) {
     const hasOfficial = items.some(x => x.verification === 'official');
     const anyOngoing = items.some(x => eventState(x).isOngoing);
     return `<article class="ev ev--series rv" style="--i:${Math.min(i, 5)}${mc ? `;--mc:${mc}` : ''}">
-      <div class="ev__date"><b>${d}</b><span>${md(firstEv.date)} – ${md(lastEv.endDate || lastEv.date)}</span><em class="is-${anyOngoing ? 'ongoing' : 'upcoming'}">共 ${items.length} 站</em></div>
+      <div class="ev__date"><span class="ev__gate">TOUR</span><b>${d}</b><span>${md(firstEv.date)} – ${md(lastEv.endDate || lastEv.date)}</span><em class="is-${anyOngoing ? 'ongoing' : 'upcoming'}">共 ${items.length} 站</em></div>
       <div class="ev__body">
         <div class="ev__tags">${badge(hasOfficial ? 'official' : firstEv.verification)}<span class="pbadge pbadge--${anyOngoing ? 'ongoing' : 'upcoming'}">${anyOngoing ? '巡演进行中' : '多站巡演合集'}</span><span class="tag">${esc(firstEv.category)}</span>${memberChips(ctx, firstEv.members, 'button')}</div>
         <h4>${esc(seriesName)}</h4>

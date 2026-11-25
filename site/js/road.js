@@ -314,7 +314,11 @@ export function initRoad(ctx) {
   `;
   vlist.before(varTools);
   const varYear = $('#var-year', varTools);
-  const programYears = v => v.y.match(/\d{4}/g) || [];
+  const varYearStr = v => String(v.y ?? v.year ?? '');
+  const varTitle = v => String(v.zh ?? v.title ?? '');
+  const varWho = v => String(v.who ?? ((v.members || []).map(id => ctx.byId[id]?.zh || id).join(' · ')));
+  const varCat = v => v.cat || (v.members?.length === 1 && v.members[0] !== 'group' ? 'solo' : 'group');
+  const programYears = v => varYearStr(v).match(/\d{4}/g) || [];
   for (const year of [...new Set(variety.flatMap(programYears))].sort()) varYear.add(new Option(year + ' 年', year));
   function resetVarPage() { varLimit = VAR_PAGE_SIZE; renderVariety(); }
   varYear.addEventListener('change', () => { vfYear = varYear.value; resetVarPage(); });
@@ -325,19 +329,20 @@ export function initRoad(ctx) {
   vlist.after(varToggle);
 
   function matchVariety(v) {
-    if (vfCat !== 'all' && v.cat !== vfCat) return false;
+    const cat = varCat(v), who = varWho(v), zh = varTitle(v), y = varYearStr(v);
+    if (vfCat !== 'all' && cat !== vfCat) return false;
     if (vfYear && !programYears(v).includes(vfYear)) return false;
     if (vfMem !== 'all') {
       const mems = v.members || [];
       if (v.programType && !mems.includes(vfMem)) return false;
       const mObj = ctx.byId[vfMem];
-      const textHit = mObj && (v.who.includes(mObj.en) || v.who.includes(mObj.zh));
+      const textHit = mObj && (who.includes(mObj.en) || who.includes(mObj.zh));
       if (!mems.includes(vfMem) && !mems.includes('exo') && !textHit) return false;
       // When filtering a specific member + solo/unit, prefer exact participation; in 'all' include full-group shows too, or mark clearly
       if (vfCat === 'solo' && !mems.includes(vfMem)) return false;
     }
     if (vfQuery) {
-      const hay = `${v.zh} ${v.t} ${v.who} ${v.p} ${v.note || ''} ${v.y} ${v.d}`.toLowerCase();
+      const hay = `${zh} ${v.t || ''} ${who} ${v.p || ''} ${v.note || ''} ${y} ${v.d || ''}`.toLowerCase();
       if (!hay.includes(vfQuery)) return false;
     }
     return true;
@@ -350,26 +355,27 @@ export function initRoad(ctx) {
     $('#var-reset', varTools).hidden = vfCat === 'all' && vfMem === 'all' && !vfQuery && !vfYear;
 
     vlist.innerHTML = shownV.map((v, i) => {
-      const q = `https://search.bilibili.com/all?keyword=${encodeURIComponent((v.cat === 'solo' ? '' : 'EXO ') + v.zh.split('（')[0])}`;
-      const sameYear = i > 0 && shownV[i - 1].y === v.y;
+      const cat = varCat(v), zh = varTitle(v), y = varYearStr(v), who = varWho(v);
+      const q = `https://search.bilibili.com/all?keyword=${encodeURIComponent((cat === 'solo' ? '' : 'EXO ') + zh.split('（')[0])}`;
+      const sameYear = i > 0 && varYearStr(shownV[i - 1]) === y;
       const sources = v.sources?.map((url, index) => `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">资料链接${v.sources.length > 1 ? ` ${index + 1}` : ''}</a>`).join(' · ');
       const provenance = [sources, v.status ? esc(v.status) : ''].filter(Boolean).join(' · ');
-      return `<li class="vr${sameYear ? ' is-same' : ''}${v.img ? ' vr--illustrated' : ''}" data-vcat-item="${esc(v.cat || 'group')}">
-        <span class="vr__y">${esc(v.y)}</span>
+      return `<li class="vr${sameYear ? ' is-same' : ''}${v.img ? ' vr--illustrated' : ''}" data-vcat-item="${esc(cat)}">
+        <span class="vr__y">${esc(y)}</span>
         <div class="vr__main">
-          ${v.img ? `<button type="button" class="vr__pic jelly-press" data-lb-src="${esc(v.img)}" data-lb-title="${esc(v.zh + ' · ' + v.t)}" aria-label="预览图片"><img src="${esc(v.img)}" alt="" loading="lazy" decoding="async"></button>` : ''}
+          ${v.img ? `<button type="button" class="vr__pic jelly-press" data-lb-src="${esc(v.img)}" data-lb-title="${esc(zh + (v.t ? ' · ' + v.t : ''))}" aria-label="预览图片"><img src="${esc(v.img)}" alt="" loading="lazy" decoding="async"></button>` : ''}
           <div class="vr__t">
             <div class="vr__badges">
-              <span class="vtag vtag--${esc(v.cat || 'group')}">${esc(v.programType || VAR_CATS[v.cat] || '综艺')}</span>
+              <span class="vtag vtag--${esc(cat)}">${esc(v.programType || v.kind || VAR_CATS[cat] || '综艺')}</span>
               <span class="vr__plat">${esc([v.p, v.d].filter(Boolean).join(' · '))}</span>
             </div>
-            <b>${esc(v.zh)}</b>
+            <b>${esc(zh)}</b>
             ${v.t ? `<span class="vr__en">${esc(v.t)}</span>` : ''}
             ${v.note ? `<p class="vr__note">${esc(v.note)}</p>` : ''}
             ${provenance ? `<small class="rd__source">${provenance}</small>` : ''}
           </div>
         </div>
-        <span class="vr__m"><b>${esc(v.who)}</b></span>
+        <span class="vr__m"><b>${esc(who)}</b></span>
         <a class="vr__go jelly-press" href="${q}" target="_blank" rel="noopener noreferrer">去 B 站补档 ↗</a>
       </li>`;
     }).join('') || `<li class="vr vr--empty"><p class="road__note">没有找到匹配的综艺，试试切换上方分类或清空关键词。</p></li>`;

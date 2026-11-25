@@ -41,50 +41,7 @@ const row = it => {
 };
 
 export async function initFeed() {
-  const box = $('#feed');
-  if (!box) return;
-  const base = apiBase();
-  let data = null;
-  try {
-    const r = await fetch(`${base}/api/news`, { signal: AbortSignal.timeout(6000), headers: { accept: 'application/json' } });
-    if (r.ok) data = await r.json();
-  } catch {}
-  if (!data?.items?.length) {
-    try {
-      const r2 = await fetch('data/weibo-feed.json', { signal: AbortSignal.timeout(6000) });
-      if (r2.ok) data = await r2.json();
-    } catch {}
-  }
-  const items = (Array.isArray(data?.items) ? data.items : []).filter(i => i && (i.title_zh || i.title_orig)).slice(0, MAX);
-  if (items.length) {
-    const listEl = $('#feed-list');
-    const isMob = window.matchMedia('(max-width: 720px)').matches;
-    const initLimit = isMob ? 2 : 4;
-    let expanded = false;
-    const paint = () => {
-      const vis = expanded ? items : items.slice(0, initLimit);
-      listEl.innerHTML = vis.map(row).join('');
-    };
-    paint();
-    const c = $('#feed-count'); if (c) c.textContent = items.length;
-    if (items.length > initLimit) {
-      let btn = box.querySelector('.feed__more');
-      if (!btn) {
-        btn = document.createElement('button');
-        btn.type = 'button';
-        btn.className = 'fold-btn feed__more';
-        listEl.after(btn);
-      }
-      const syncBtn = () => {
-        btn.textContent = expanded ? `收起其余 ${items.length - initLimit} 条快讯 ↑` : `展开其余 ${items.length - initLimit} 条微博与大吧快讯 ↓`;
-      };
-      syncBtn();
-      btn.addEventListener('click', () => { expanded = !expanded; paint(); syncBtn(); });
-    }
-    box.hidden = false;
-  }
-
-  // Wire one-click live Weibo sync button if present
+  // Wire one-click live Weibo sync button if present (duplicate bottom #feed box stays hidden so news is not shown twice)
   const syncBtn = document.querySelector('[data-weibo-sync]');
   if (syncBtn) {
     syncBtn.addEventListener('click', async () => {

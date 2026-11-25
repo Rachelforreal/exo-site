@@ -1,5 +1,5 @@
 // Hero: an endless, draggable film strip of group photos + the nine portraits, each with a clickable name capsule.
-import { $, $$, esc, glyph, reduced, clamp, dayDiff, relDay, todayStr, eventState, isConfirmed } from './util.js';
+import { $, $$, esc, glyph, reduced, clamp, dayDiff, relDay, todayStr, eventState, isConfirmed, memberPrimaryPhoto } from './util.js';
 
 export function initHero(ctx, { openMember, lenis }) {
   const film = $('#film'), track = $('#film-track'), dock = $('#dock');
@@ -10,7 +10,7 @@ export function initHero(ctx, { openMember, lenis }) {
     if (f.kind === 'member') {
       const m = by[f.member]; if (!m) return '';
       return `<button class="frame frame--m" type="button" data-member="${m.id}" style="--mc:${m.color};--mc2:${m.color2}"${hide} aria-label="${esc(m.en)} ${esc(m.zh)}，${esc(m.power.zh)}，打开名片">
-        <img src="${esc(m.photo)}" alt="" draggable="false" loading="lazy" decoding="async">
+        <img src="${esc(memberPrimaryPhoto(m, { slot: 0 }).src)}" alt="" draggable="false" loading="lazy" decoding="async">
         <span class="frame__no">${m.no}<small>${esc(m.power.en)}</small></span>${glyph(m.id, 'glyph frame__glyph')}
         <span class="cap"><i class="cap__dot">${glyph(m.id)}</i><b>${esc(m.en)}</b><small>${esc(m.zh)}</small></span>
       </button>`;
@@ -121,15 +121,15 @@ export function initHero(ctx, { openMember, lenis }) {
 
   /* ---- entrance ---- */
   const g = window.gsap;
-  if (g && !reduced && document.documentElement.dataset.mode === 'galaxy') {
+  if (g && !reduced) {
     const tl = g.timeline({ defaults: { ease: 'expo.out' } });
-    tl.from('.hero__title .w', { yPercent: 115, duration: 1.5, stagger: 0.11 }, 0.1)
-      .from('.hero__sigil', { scale: 0, rotate: -180, duration: 1.4 }, 0.7)
-      .from('.hero .eyebrow > *', { opacity: 0, y: 10, duration: 0.8, stagger: 0.05 }, 0.2)
-      .from('.hero__sub', { opacity: 0, y: 16, duration: 1 }, 0.7)
-      .from(track.children, { opacity: 0, y: 90, duration: 1.3, stagger: { each: 0.06, from: 'start' }, clearProps: 'opacity,transform' }, 0.45)
-      .from('.dock__pill', { opacity: 0, y: 18, duration: 0.8, stagger: 0.04, clearProps: 'opacity,transform' }, 1.0)
-      .from('.nextmini', { opacity: 0, y: -12, duration: 0.8, clearProps: 'opacity,transform' }, 1.2);
+    tl.from('.hero__title .w', { yPercent: 110, duration: 1.05, stagger: 0.08 }, 0.05)
+      .from('.hero__sigil', { scale: 0, rotate: -180, duration: 1.0 }, 0.35)
+      .from('.hero .eyebrow > *', { opacity: 0, y: 8, duration: 0.65, stagger: 0.04 }, 0.1)
+      .from('.hero__sub', { opacity: 0, y: 12, duration: 0.75 }, 0.35)
+      .from(track.children, { opacity: 0, y: 48, duration: 0.85, stagger: { amount: 0.38, from: 'start' }, clearProps: 'opacity,transform' }, 0.18)
+      .from('.dock__pill', { opacity: 0, y: 14, duration: 0.65, stagger: 0.03, clearProps: 'opacity,transform' }, 0.45)
+      .from('.nextmini', { opacity: 0, y: -10, duration: 0.65, clearProps: 'opacity,transform' }, 0.5);
     if (window.ScrollTrigger) g.to('.hero__title', { yPercent: -18, opacity: 0.25, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
   }
   return { centre };

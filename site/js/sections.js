@@ -1,5 +1,6 @@
 // Ticker, Now (next-up + official / unverified lanes), member dex + dossier sheet, channels.
 import { $, $$, esc, glyph, icon, badge, phaseBadge, detailBadges, sources, safeUrl, reveal, overlay, reduced, dayDiff, relDay, md, fullDate, weekday, cst, instant, dateRange, eventState, isConfirmed, nowMs, enhanceSegs, animateDetails } from './util.js';
+import * as U from './util.js';
 import { setPower, currentPower } from './themes.js';
 import { createPowerStripFX } from './powerfx.js';
 
@@ -77,67 +78,135 @@ export function initNow(ctx, { openMember, focusEvent }) {
     card.innerHTML = `${ongoingHTML}<div class="next__main"><p class="next__k"><span class="kicker">NEXT STAGE · 下一节点</span></p><h3 class="next__title">暂无已确认的新增演出或发行</h3><p class="next__sum">公开渠道发布新通告并完成信源核验后将同步至此。</p></div>`;
   }
 
+  const cleanText = s => String(s || '').replace(/#[^#\n]{1,40}#/g, ' ').replace(/\s+/g, ' ').trim();
+  const photos = n => n.images?.length ? n.images : [n.image].filter(Boolean);
   const item = n => {
+    const imgs = photos(n);
     const [, m, d] = n.date.split('-');
     const firstMember = (n.members || []).find(id => id !== 'group');
-    const imgSrc = n.image || (firstMember && ctx.byId[firstMember]?.photo) || 'img/group/exist-1.webp';
-    const summaryText = n.summary || '';
-    return `<li class="item item--card rv">
+    const imgSrc = imgs[0] || (firstMember && ctx.byId[firstMember]?.photo) || 'img/group/exist-1.webp';
+    const titleText = cleanText(n.title) || n.title || '';
+    const summaryText = cleanText(n.summary);
+    const hasExtraBody = summaryText && summaryText !== titleText && !titleText.startsWith(summaryText.slice(0, 18));
+    return `<li class="item item--card" data-news-row="${ctx.news.indexOf(n)}">
       <div class="item__date"><b>${d}</b><span>${+m} 月</span></div>
       <div class="item__body">
-        <div class="item__tags">${badge(n.verification)}${n.channel ? `<span class="tag">${esc(n.channel)}</span>` : ''}${memberChips(ctx, n.members, 'button')}</div>
-        <h4>${esc(n.title)}</h4>
+        <div class="item__tags">${badge(n.verification)}${memberChips(ctx, n.members, 'button')}</div>
         <details class="item__fold">
-          <summary><span>${esc(summaryText)}</span><i>展开详情 ↓</i></summary>
-          <p>${esc(summaryText)}</p>
+          <summary><h4 class="item__title">${esc(titleText)}</h4></summary>
+          ${hasExtraBody ? `<p>${esc(summaryText)}</p>` : ''}
           ${n.missing ? `<p class="item__miss"><b>待补齐凭据</b>${esc(n.missing)}</p>` : ''}
+          ${imgs.length > 1 ? `<div class="dispatch-previews">${imgs.map((url, i) => `<button type="button" data-news-img="${i}" aria-label="查看第 ${i + 1} 张大图"><img src="${esc(url)}" alt="" loading="lazy" referrerpolicy="no-referrer"></button>`).join('')}</div><button class="dispatch-expand" type="button" data-news-img="0">查看完整配置大图 (${imgs.length}) ↗</button>` : ''}
           <div class="item__src"><span>来源</span>${sources(n.sources)}</div>
         </details>
       </div>
-      ${imgSrc ? `<div class="item__thumb"><img src="${esc(imgSrc)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>` : ''}
+      ${imgs.length ? `<button class="item__thumb" type="button" data-news-img="0" aria-label="查看${esc(titleText)}配图"><img src="${esc(imgSrc)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">${imgs.length > 1 ? `<b class="dispatch-count">1/${imgs.length}</b>` : ''}</button>` : `<div class="item__thumb"><img src="${esc(imgSrc)}" alt="" loading="lazy"></div>`}
     </li>`;
   };
-  const lane = (el, list, emptyText, limit, startCollapsed = false) => {
+  const lane = (el, list, emptyText, pageSize) => {
+    el.parentElement?.querySelector('.lane__pager')?.remove();
     if (!list.length) { el.innerHTML = `<li class="lane__empty">${emptyText}</li>`; return; }
-    let expanded = false;
-    let showing = startCollapsed ? 0 : limit;
+    let page = 0;
+    const totalPages = Math.max(1, Math.ceil(list.length / pageSize));
+    let pager = el.parentElement?.querySelector('.lane__pager');
+    if (totalPages > 1 && !pager) {
+      pager = document.createElement('div');
+      pager.className = 'lane__pager';
+      pager.innerHTML = `
+        <span class="lane__page-info" data-page-info></span>
+        <div class="lane__page-btns">
+          <button type="button" class="lane__page-btn" data-page-step="-1" aria-label="上一页">‹</button>
+          <button type="button" class="lane__page-btn" data-page-step="1" aria-label="下一页">›</button>
+        </div>`;
+      el.after(pager);
+      pager.addEventListener('click', e => {
+        const b = e.target.closest('[data-page-step]');
+        if (!b || b.disabled) return;
+        page = Math.max(0, Math.min(totalPages - 1, page + Number(b.dataset.pageStep)));
+        renderLane();
+      });
+    } else if (totalPages <= 1 && pager) {
+      pager.hidden = true;
+    }
     const renderLane = () => {
-      const slice = expanded ? list : list.slice(0, showing);
+      const start = page * pageSize;
+      const slice = list.slice(start, start + pageSize);
       el.innerHTML = slice.map(item).join('');
-      reveal(el);
+      reveal(el); animateDetails(el);
+      if (pager && totalPages > 1) {
+        pager.hidden = false;
+        const info = pager.querySelector('[data-page-info]');
+        if (info) info.textContent = `第 ${page + 1} / ${totalPages} 页`;
+        const prevBtn = pager.querySelector('[data-page-step="-1"]');
+        const nextBtn = pager.querySelector('[data-page-step="1"]');
+        if (prevBtn) prevBtn.disabled = page <= 0;
+        if (nextBtn) nextBtn.disabled = page >= totalPages - 1;
+      }
     };
     renderLane();
-    if (list.length > showing) {
-      const more = document.createElement('button');
-      more.type = 'button';
-      more.className = 'fold-btn lane__more';
-      const syncBtn = () => {
-        if (expanded) {
-          more.textContent = showing === 0 ? `收起全部 ${list.length} 条 ↑` : `收起其余 ${list.length - showing} 条 ↑`;
-        } else {
-          more.textContent = showing === 0 ? `展开查看 ${list.length} 条线索 ↓` : `展开其余 ${list.length - showing} 条动态 ↓`;
-        }
-      };
-      syncBtn();
-      more.addEventListener('click', () => { expanded = !expanded; renderLane(); syncBtn(); });
-      el.after(more);
-    }
   };
   const official = ctx.news.filter(n => n.verification !== 'unverified');
   const rumor = [...ctx.news.filter(n => n.verification === 'unverified')];
   const isMob = window.matchMedia('(max-width: 720px)').matches;
+  const pageSize = isMob ? 3 : 4;
   const offLane = $('#lane-official'), rumLane = $('#lane-rumor');
-  if (offLane) lane(offLane, official, '最近没有新的正式动态。', isMob ? 2 : 3, false);
-  if (rumLane) lane(rumLane, rumor, '目前没有待确认的风声线索。', isMob ? 1 : 2, isMob);
-  const offCount = $('[data-count=official]'); if (offCount) offCount.textContent = official.length || '';
+  if (offLane) {
+    const tabs = document.createElement('div');
+    tabs.className = 'dispatch-tabs'; tabs.setAttribute('role', 'group'); tabs.setAttribute('aria-label', '正式动态分类');
+    tabs.innerHTML = [['all', '全部'], ['release', '回归与配置'], ['stage', '演出行程']].map(([k, label]) => `<button type="button" data-news-category="${k}" aria-controls="lane-official" aria-pressed="${k === 'all'}">${label}</button>`).join('');
+    offLane.before(tabs);
+    const rules = { release: /专辑|配置|卡面|特典|新歌|迷你|正规|单曲|MV|音源|预告|概念照|回归|预售/i, stage: /演唱会|巡演|见面会|盛典|出席|线下|签售|票务|演出|舞台|合影/i };
+    const filterNews = key => {
+      const list = official.filter(n => key === 'all' || n.category === key || rules[key].test(`${n.title} ${n.summary || ''}`));
+      $$('button', tabs).forEach(b => b.setAttribute('aria-pressed', String(b.dataset.newsCategory === key)));
+      lane(offLane, list, '这个分类暂时没有新的正式动态。', pageSize);
+      const count = $('[data-count=official]'); if (count) count.textContent = list.length;
+    };
+    tabs.addEventListener('click', e => { const b = e.target.closest('button'); if (b) filterNews(b.dataset.newsCategory); });
+    filterNews('all');
+  }
+  if (rumLane) lane(rumLane, rumor, '目前没有待确认的风声线索。', pageSize);
+  const openNewsImage = newsLightbox();
   const rumCount = $('[data-count=rumor]'); if (rumCount) rumCount.textContent = rumor.length || '';
   animateDetails(nowEl);
 
   nowEl.addEventListener('click', e => {
+    const preview = e.target.closest('[data-news-img]');
+    if (preview) {
+      const n = ctx.news[+preview.closest('[data-news-row]').dataset.newsRow];
+      openNewsImage(photos(n), cleanText(n.title), +preview.dataset.newsImg, preview); return;
+    }
     const ev = e.target.closest('[data-event]'); if (ev) { e.preventDefault(); focusEvent(ev.dataset.event); return; }
     const m = e.target.closest('button[data-member]'); if (m && m.dataset.member !== 'group') openMember(m.dataset.member, m);
   });
 }
+
+function newsLightbox() {
+  const box = document.createElement('div');
+  box.id = 'news-lightbox'; box.className = 'archive-overlay'; box.hidden = true;
+  box.setAttribute('role', 'dialog'); box.setAttribute('aria-modal', 'true'); box.setAttribute('aria-labelledby', 'news-image-title'); box.setAttribute('data-lenis-prevent', '');
+  box.innerHTML = `<div class="archive-scrim" data-news-close></div><section class="dispatch-box"><header><div><small>DISPATCH // PLATES</small><h3 id="news-image-title"></h3></div><button class="archive-round" type="button" data-news-close aria-label="关闭大图">×</button></header><div class="dispatch-image" data-lenis-prevent tabindex="0" aria-label="配图，可滚动查看"><img alt="" referrerpolicy="no-referrer"></div><footer><button class="archive-round" type="button" data-news-step="-1" aria-label="上一张">‹</button><output></output><button class="archive-round" type="button" data-news-step="1" aria-label="下一张">›</button><button type="button" class="dispatch-zoom" aria-pressed="false">放大细看</button></footer></section>`;
+  document.body.append(box);
+  const stage = $('.dispatch-image', box), img = $('img', stage), zoomBtn = $('.dispatch-zoom', box);
+  let imgs = [], i = 0, opener;
+  function zoom(on) { stage.classList.toggle('is-zoomed', on); zoomBtn.setAttribute('aria-pressed', String(on)); zoomBtn.textContent = on ? '适合宽度' : '放大细看'; }
+  function show(n) { i = (n + imgs.length) % imgs.length; zoom(false); img.src = imgs[i]; img.alt = `${$('#news-image-title', box).textContent} · 配图 ${i + 1}`; $('output', box).textContent = `${i + 1} / ${imgs.length}`; stage.scrollTo(0, 0); }
+  box.addEventListener('click', e => {
+    const b = e.target.closest('[data-news-step]'); if (b) show(i + +b.dataset.newsStep);
+    else if (e.target.closest('[data-news-close]')) overlay.close(box);
+    else if (e.target === img || e.target === zoomBtn) zoom(!stage.classList.contains('is-zoomed'));
+  });
+  box.addEventListener('keydown', e => { if (['ArrowLeft', 'ArrowRight'].includes(e.key)) { e.preventDefault(); show(i + (e.key === 'ArrowLeft' ? -1 : 1)); } });
+  box.addEventListener('overlay:closed', () => opener?.focus({ preventScroll: true }));
+  return (list, title, initial, trigger) => {
+    if (!list.length) return;
+    imgs = list; opener = trigger; $('#news-image-title', box).textContent = title;
+    $$('[data-news-step]', box).forEach(b => { b.disabled = list.length < 2; });
+    overlay.open(box, { focus: $('button[data-news-close]', box) }); box._return = trigger; show(initial);
+  };
+}
+
+const weeklyLooks = m => U.memberWeeklyGallery ? U.memberWeeklyGallery(m) : (m.gallery?.length ? m.gallery : [m.photo, m.photo2].filter(Boolean).map((src, k) => ({ src, era: [m.photoEra, m.photo2Era][k] || '' })));
 
 const VERIF_SHORT = v => (v === 'official' ? '官方' : v === 'media' ? '媒体' : '待核实');
 
@@ -172,7 +241,7 @@ export function initMembers(ctx, { focusEvent, filterMember, goAlbum }) {
       const works = m.works?.length ? m.works : (m.solo || []).map(s => ({ kind: '作品', title: s, year: '', detail: '' }));
       const varList = memberVarietyOf(m.id);
       const schedCount = pUp.length || groupUp.length;
-      const gallery = m.gallery?.length ? m.gallery : [m.photo, m.photo2].filter(Boolean).map((src, k) => ({ src, era: [m.photoEra, m.photo2Era][k] || '' }));
+      const gallery = weeklyLooks(m);
       const unitTags = (m.units || []).map(u => `<span class="mcard__unit">${esc(u)}</span>`).join('');
       return `<article class="mpanel" role="listitem" tabindex="0" data-mpanel="${m.id}" data-idx="${i}" style="--mc:${m.color};--mc2:${m.color2};--fw:1">
         <div class="mpanel__card">
@@ -237,7 +306,7 @@ export function initMembers(ctx, { focusEvent, filterMember, goAlbum }) {
       const unitTags = (m.units || []).map(u => `<span class="mcard__unit">${esc(u)}</span>`).join('');
       return `<article class="mcard rv is-in" data-member="${m.id}" style="--mc:${m.color};--mc2:${m.color2};--i:${i % 3}">
         <a class="mcard__pic" href="member.html?id=${encodeURIComponent(m.id)}" aria-label="打开 ${esc(m.en)} ${esc(m.zh)} 单人专栏">
-          <img src="${esc(m.photo)}" alt="${esc(m.en)}" loading="lazy" decoding="async">
+          <img src="${esc(weeklyLooks(m)[0].src)}" alt="${esc(m.en)}" loading="lazy" decoding="async">
         </a>
         <div class="mcard__body">${glyph(m.id, 'glyph mcard__mark')}
           <div class="mcard__top"><span class="mcard__no">NO. ${m.no}</span><span class="type">${glyph(m.id)}${esc(m.power.zh)}<small>${esc(m.power.en)}</small></span></div>
@@ -464,7 +533,7 @@ export function initMembers(ctx, { focusEvent, filterMember, goAlbum }) {
     const recentNews = memberNewsOf(m.id).slice(0, 3);
     const works = m.works?.length ? m.works : (m.solo || []).map(s => ({ kind: '个人作品', title: s, year: '', detail: '' }));
     const mVarieties = memberVarietyOf(m.id).slice(0, 6);
-    const gallery = m.gallery?.length ? m.gallery : [m.photo, m.photo2].filter(Boolean).map((src, k) => ({ src, era: [m.photoEra, m.photo2Era][k] || '' }));
+    const gallery = weeklyLooks(m);
     const links = (m.channels || []).filter(c => safeUrl(c.url));
     panel.style.setProperty('--mc', m.color); panel.style.setProperty('--mc2', m.color2);
     panel.innerHTML = `

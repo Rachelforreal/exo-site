@@ -1,7 +1,7 @@
 /* 今日刊 — the 书刊 edition's first screen. One issue a day: the issue number is the day count
    since debut, the cover person is the member whose power is on (else the member of the day),
    the lyric follows the calendar, the cover lines say something true about today. */
-import { $, $$, esc, glyph, store, todayStr, dayDiff, eventState, isConfirmed, badge, phaseBadge, md, reduced, clamp, enhanceSegs } from './util.js';
+import { $, $$, esc, glyph, store, todayStr, dayDiff, eventState, isConfirmed, badge, phaseBadge, md, reduced, clamp, enhanceSegs, memberPrimaryPhoto } from './util.js';
 import { renderCheckin } from './checkin.js';
 import { COVER_URL, STRIP_H, drawShareStrip, sizePicker, wrapLines, presentExportModal } from './share.js'; /* share */
 import { plushieSVG } from './plushies.js';
@@ -125,28 +125,30 @@ export function initCover(ctx, { openMember, focusEvent } = {}) {
     ['now', '此刻星讯', official ? `${confirmedNewsCount} 条动态 · ${official.title}` : '官博、场馆与成员大吧动态'],
     ['schedule', '行程与票务', `${ongoingList.length} 项进行中 · ${confirmedActive.length - ongoingList.length} 场即将开演（KST / CST）`],
     ['albums', '历代唱片架', nextAnniv ? `${ctx.albums.length} 张唱片 · 距《${nextAnniv.a.title}》${nextAnniv.n} 周年 D-${nextAnniv.dd}` : `${ctx.albums.length} 张团体、个人与分队唱片`],
-    ['explore', '编年与综艺', lastRoad ? `十四年大事编年 · 52 档综艺 · 最新：${lastRoad.t}` : '《MAMA》《咆哮》《约定》《REVERXE》档案'],
+    ['explore', '编年与综艺', lastRoad ? `553 条大事编年 · 443 档综艺 · 最新：${lastRoad.t}` : '《MAMA》《咆哮》《约定》《REVERXE》档案'],
     ['explore', '官娃与工坊', '官娃贴纸 · DIY 锁屏壁纸与专属 L 卡'],
   ];
-  $('[data-toc]', root).innerHTML = toc.map(([id, t, s], i) => `<li><a href="#${id}"><i>${['01', '02', '03', '04', '05', '06'][i]}</i><span><b>${t}</b><span>${esc(s)}</span></span></a></li>`).join('');
+  const tocEl = $('[data-toc]', root);
+  if (tocEl) tocEl.innerHTML = toc.map(([id, t, s], i) => `<li><a href="#${id}"><i>${['01', '02', '03', '04', '05', '06'][i]}</i><span><b>${t}</b><span>${esc(s)}</span></span></a></li>`).join('');
 
   const primaryStage = ongoingTop || nextStage;
   const secondaryStage = ongoingTop && nextStage ? nextStage : null;
-  if (primaryStage) {
+  const nextEl = $('[data-next]', root);
+  if (nextEl && primaryStage) {
     const isOg = primaryStage === ongoingTop;
-    $('[data-next]', root).innerHTML = `<div class="radar-card radar-card--ticket${isOg ? ' radar-card--ongoing' : ''}">
+    nextEl.innerHTML = `<div class="radar-card radar-card--ticket${isOg ? ' radar-card--ongoing' : ''}">
       <a class="radar-card__main" href="#schedule" data-cover-ev="${esc(primaryStage.id)}">
         <div class="radar-card__top">
           <span class="radar-card__k">${isOg ? 'LIVE TICKET · 正在进行' : 'NEXT TICKET · 下一场重逢'}</span>
           ${badge(primaryStage.verification, { compact: true })}
+          <span class="radar-card__meta">${isOg ? phaseBadge(primaryStage) : `<span class="pbadge pbadge--upcoming">${md(primaryStage.date)} · D-${nextD}</span>`}${primaryStage.city ? `<i>${esc(primaryStage.city)}</i>` : ''}</span>
         </div>
         <b>${esc(primaryStage.title)}</b>
-        <span class="radar-card__meta">${isOg ? phaseBadge(primaryStage) : `<span class="pbadge pbadge--upcoming">${md(primaryStage.date)} · D-${nextD}</span>`}${primaryStage.city ? `<i>${esc(primaryStage.city)}</i>` : ''}</span>
       </a>
       ${secondaryStage ? `<a class="radar-card__sub" href="#schedule" data-cover-ev="${esc(secondaryStage.id)}"><span>下一节点 · ${md(secondaryStage.date)}（D-${nextD}）</span><b>${esc(secondaryStage.title)} →</b></a>` : ''}
     </div>`;
-  } else {
-    $('[data-next]', root).innerHTML = '';
+  } else if (nextEl) {
+    nextEl.innerHTML = '';
   }
 
   /* cover person — independent from global power theme */
@@ -156,7 +158,7 @@ export function initCover(ctx, { openMember, focusEvent } = {}) {
   let ci = order.findIndex(m => m.id === savedCover);
   if (ci < 0) ci = bday ? order.indexOf(bday) : daily;
 
-  pick.innerHTML = order.map((m, i) => `<button type="button" class="sigil-pick" data-ci="${i}" aria-label="切换封面为 ${esc(m.en)} ${esc(m.zh)}" style="--pc:${m.color}">${glyph(m.id)}<span>${m.no}</span><b>${esc(m.zh)}</b></button>`).join('');
+  pick.innerHTML = order.map((m, i) => `<button type="button" class="sigil-pick" data-ci="${i}" aria-label="切换封面为 ${esc(m.en)} ${esc(m.zh)}" style="--pc:${m.color}">${glyph(m.id)}<span>${m.no}</span><b>${esc(m.zh.slice(-2))}</b></button>`).join('');
   const img = $('[data-cover-img]', root);
   const mag = $('[data-cover]', root);
   const veil = $('.mag__veil', root);
@@ -167,12 +169,13 @@ export function initCover(ctx, { openMember, focusEvent } = {}) {
   function cover(i, persist = false, dir = 1) {
     ci = (i + order.length) % order.length; const m = order[ci];
     if (persist) store.set('exo-cover-subject', m.id);
-    const era = m.photo2 ? m.photo2Era : m.photoEra;
+    const lead = memberPrimaryPhoto(m, { slot: 0 });
+    const era = lead.era;
     const g = window.gsap;
 
     const applyContent = () => {
       img.classList.remove('is-in'); img.onload = () => img.classList.add('is-in');
-      img.src = m.photo2 || m.photo; img.alt = `${m.en} 封面 · ${era}`;
+      img.src = lead.src; img.alt = `${m.en} 封面 · ${era}`;
       if (img.complete && img.naturalWidth) img.classList.add('is-in');
       $('[data-cover-name]', root).textContent = m.en;
       $('[data-cover-line]', root).textContent = `${m.zh} · ${m.power.zh}（${m.power.en}）`;
@@ -214,22 +217,16 @@ export function initCover(ctx, { openMember, focusEvent } = {}) {
 
     if (!firstPaint && g && !reduced && mag) {
       g.killTweensOf([mag, img, veil, '.mag__cl', '.mag__ribbon', '.mag__plush']);
-      const tl = g.timeline({ defaults: { ease: 'expo.out' } });
-      if (veil) {
-        tl.set(veil, { transformOrigin: dir > 0 ? 'left center' : 'right center', scaleX: 0, opacity: 0.92 })
-          .to(veil, { scaleX: 1, duration: 0.24, ease: 'power2.in' });
-      }
-      tl.to(mag, { rotateY: dir * -5.5, scale: 0.985, duration: 0.22, ease: 'power2.in' }, 0)
+      if (veil) g.set(veil, { opacity: 0, scaleX: 0 });
+      const tl = g.timeline({
+        defaults: { ease: 'expo.out' },
+        onComplete: () => { if (veil) g.set(veil, { opacity: 0, scaleX: 0, clearProps: 'transform' }); }
+      });
+      tl.to(mag, { rotateY: dir * -4.5, scale: 0.988, duration: 0.16, ease: 'power2.in' }, 0)
         .add(applyContent)
-        .to(mag, { rotateY: 0, scale: 1, duration: 0.72, clearProps: 'transform' });
-      if (veil) {
-        tl.set(veil, { transformOrigin: dir > 0 ? 'right center' : 'left center' })
-          .to(veil, { scaleX: 0, opacity: 0, duration: 0.52 }, '<');
-      }
-      tl.fromTo(img, { scale: 1.09 }, { scale: 1, duration: 0.95, clearProps: 'transform' }, '<')
-        .fromTo('.mag__cl', { y: 12, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, clearProps: 'transform,opacity' }, '<0.06')
-        .fromTo('.mag__plush', { scale: 0.7, rotate: -10 }, { scale: 1, rotate: 0, duration: 0.6, ease: 'back.out(1.8)', clearProps: 'transform' }, '<0.08')
-        .fromTo('.mag__ribbon', { rotate: -6 }, { rotate: 0, duration: 0.7, ease: 'elastic.out(1, 0.5)', clearProps: 'transform' }, '<');
+        .to(mag, { rotateY: 0, scale: 1, duration: 0.46, clearProps: 'transform' })
+        .fromTo(img, { scale: 1.05 }, { scale: 1, duration: 0.52, clearProps: 'transform' }, '<')
+        .fromTo('.mag__cl', { y: 8, opacity: 0 }, { y: 0, opacity: 1, duration: 0.38, clearProps: 'transform,opacity' }, '<0.04');
     } else {
       applyContent();
       if (firstPaint && g && !reduced && mag) {
@@ -363,10 +360,10 @@ export function initCover(ctx, { openMember, focusEvent } = {}) {
   autoBtn?.addEventListener('click', () => { autoOn = !autoOn; syncAutoBtn(); });
   if (!reduced) {
     setInterval(() => {
-      if (!autoOn || hovering || document.hidden || document.documentElement.dataset.mode !== 'paper') return;
+      if (!autoOn || hovering || document.hidden) return;
       if (window.scrollY > innerHeight * 0.7) return;
       cover(ci + 1, false, 1);
-    }, 5600);
+    }, 9500);
   }
 
   let sx = null;

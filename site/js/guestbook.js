@@ -1,6 +1,6 @@
 // 站长意见留言板：本地持久化 + 分类筛选 + 折叠 + 一键复制意见文本（静态预览零报错，有可选 Worker 接口时可扩展）
 import { $, $$, esc, toast, enhanceSegs, reduced } from './util.js';
-import { shatterAndRemove, triggerShockwave } from './vibe-motion.js?v=1';
+import { shatterAndRemove, triggerShockwave } from './vibe-motion.js?v=27';
 
 const STORAGE_KEY = 'exo-guestbook-v1';
 const LIKES_KEY = 'exo-guestbook-likes-v1';
@@ -203,7 +203,9 @@ export function initGuestbook(ctx) {
       const likeCount = (Number(item.likes) || 0) + (liked ? 1 : 0);
       const badgeId = badgeChoices.some(b => b.id === item.badge) ? item.badge : 'galaxy';
       const topicLabel = TOPIC_MAP[item.topic] || '建议';
+      const postDate = String(item.time || '').slice(0, 10).replace(/-/g, '.');
       return `<li class="gb-card" data-gb-id="${esc(item.id)}">
+        <span class="gb-card__postmark" aria-hidden="true"><b>EXOPLANET POST</b><small>${esc(postDate)}</small></span>
         <div class="gb-card__top">
           <div class="gb-card__who">
             <span class="gb-card__sigil" aria-hidden="true"><svg viewBox="0 0 48 48"><use href="#g-${esc(badgeId)}"/></svg></span>

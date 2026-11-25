@@ -15,6 +15,32 @@ export const todayStr = () => (/^\d{4}-\d{2}-\d{2}$/.test(TODAY_OVERRIDE || '') 
 export const nowMs = () => (/^\d{4}-\d{2}-\d{2}$/.test(TODAY_OVERRIDE || '') ? new Date(`${TODAY_OVERRIDE}T12:00:00+09:00`).getTime() : Date.now());
 const utc = s => { const [y, m, d] = s.split('-').map(Number); return Date.UTC(y, m - 1, d); };
 export const dayDiff = (a, b = todayStr()) => Math.round((utc(a) - utc(b)) / 864e5);
+
+/* ---- synchronized weekly member portraits ---- */
+const WEEK_OVERRIDE = new URLSearchParams(location.search).get('week');
+export function weekIndex(dateStr = todayStr()) {
+  if (WEEK_OVERRIDE !== null && /^-?\d+$/.test(WEEK_OVERRIDE)) return Number(WEEK_OVERRIDE);
+  return Math.floor((utc(dateStr) - Date.UTC(2012, 3, 9)) / (7 * 864e5));
+}
+export function memberWeeklyGallery(m, dateStr = todayStr()) {
+  const gallery = Array.isArray(m?.gallery) && m.gallery.length
+    ? m.gallery
+    : [m?.photo && { src: m.photo, era: m.photoEra }, m?.photo2 && { src: m.photo2, era: m.photo2Era }].filter(Boolean);
+  if (!gallery.length) return [];
+  const fresh = WEEK_OVERRIDE === null ? gallery.filter(g =>
+    (g.pinnedUntil && g.pinnedUntil >= dateStr) ||
+    (g.addedAt && dayDiff(dateStr, g.addedAt) >= 0 && dayDiff(dateStr, g.addedAt) < 7)
+  ) : [];
+  if (fresh.length) return [...fresh, ...gallery.filter(g => !fresh.includes(g))];
+  const w = ((weekIndex(dateStr) % gallery.length) + gallery.length) % gallery.length;
+  return [...gallery.slice(w), ...gallery.slice(0, w)];
+}
+export function memberPrimaryPhoto(m, { slot = 0, dateStr = todayStr() } = {}) {
+  const gallery = memberWeeklyGallery(m, dateStr);
+  const index = gallery.length ? ((slot % gallery.length) + gallery.length) % gallery.length : 0;
+  const photo = gallery[index] || {};
+  return { src: photo.src || m?.photo || '', era: photo.era || m?.photoEra || '', index, isFresh: WEEK_OVERRIDE === null && !!(photo.pinnedUntil && photo.pinnedUntil >= dateStr || photo.addedAt && dayDiff(dateStr, photo.addedAt) >= 0 && dayDiff(dateStr, photo.addedAt) < 7) };
+}
 const WD = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
 export const weekday = s => WD[new Date(utc(s)).getUTCDay()];
 export const md = s => { const [, m, d] = s.split('-'); return `${+m}.${d}`; };
