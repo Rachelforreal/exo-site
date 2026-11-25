@@ -368,10 +368,12 @@ html[data-mode=galaxy] {
 }
 
 /* ---------- 1. Spacious 2-Column Giftbox Unboxing Hero Spread (#cover) ---------- */
-html[data-mode=paper] .issue {
-  grid-template-columns: minmax(340px, 0.96fr) minmax(380px, 1.04fr);
-  gap: clamp(28px, 4.2vw, 62px);
-  padding: calc(var(--bar) + 34px) var(--gut) 56px;
+.issue,
+html[data-mode=paper] .issue,
+html[data-mode=galaxy] .issue {
+  grid-template-columns: minmax(340px, 0.92fr) minmax(380px, 1.08fr);
+  gap: clamp(28px, 4vw, 56px);
+  padding: calc(var(--bar) + 26px) var(--gut) 40px;
   align-items: start;
   min-height: 0;
 }
@@ -380,7 +382,7 @@ html[data-mode=paper] .issue {
 .issue__stage {
   display: grid;
   justify-items: stretch;
-  gap: 14px;
+  gap: 10px;
   width: 100%;
 }
 .mag-wrap {
@@ -388,8 +390,8 @@ html[data-mode=paper] .issue {
   width: 100%;
 }
 .mag {
-  padding: 18px 18px 16px 22px;
-  border-radius: 3px;
+  padding: 16px 16px 14px 20px;
+  border-radius: 4px;
   background: #fcf9f2;
   border: 1px solid rgba(29, 26, 22, 0.22);
   box-shadow:
@@ -398,6 +400,50 @@ html[data-mode=paper] .issue {
     8px 8px 0 #e6decb,
     9px 9px 0 rgba(29, 26, 22, 0.11),
     0 28px 64px -26px rgba(29, 26, 22, 0.26);
+}
+html[data-mode=galaxy] .mag {
+  background: linear-gradient(160deg, #13192e 0%, #0b0f1d 100%);
+  border-color: rgba(214, 223, 239, 0.26);
+  box-shadow:
+    4px 4px 0 #0e1326,
+    5px 5px 0 rgba(214, 223, 239, 0.16),
+    8px 8px 0 #090c18,
+    9px 9px 0 rgba(214, 223, 239, 0.12),
+    0 32px 72px -24px rgba(0, 0, 0, 0.78),
+    0 0 42px -18px var(--pc, rgba(180, 205, 255, 0.35));
+}
+html[data-mode=galaxy] .mag::before {
+  border-color: rgba(214, 223, 239, 0.22);
+}
+html[data-mode=galaxy] .mag__stamp {
+  background: rgba(14, 19, 36, 0.92);
+  color: #f3a697;
+  border-color: #f3a697;
+}
+html[data-mode=galaxy] .mag__top {
+  border-bottom-color: rgba(214, 223, 239, 0.16);
+  color: rgba(240, 244, 255, 0.72);
+}
+html[data-mode=galaxy] .mag__coord,
+html[data-mode=galaxy] .mag__meta span:first-child {
+  color: var(--pc, #c8daff);
+}
+html[data-mode=galaxy] .mag__meta {
+  color: rgba(240, 244, 255, 0.68);
+}
+html[data-mode=galaxy] .mag__flip-btn {
+  color: #f4f7ff;
+  background: rgba(214, 223, 239, 0.12);
+  border-color: rgba(214, 223, 239, 0.32);
+}
+html[data-mode=galaxy] .mag__flip-btn:hover {
+  background: rgba(214, 223, 239, 0.22);
+  border-color: var(--pc, #dce6ff);
+}
+html[data-mode=galaxy] .mag__flip-btn[aria-pressed="true"] {
+  background: var(--pc, #dce6ff);
+  color: #080b14;
+  border-color: var(--pc, #dce6ff);
 }
 /* Inner gold-foil hairline frame */
 .mag::before {
@@ -502,28 +548,29 @@ html[data-mode=paper] .issue {
 
 /* Right Column: Big Editorial Headline + Boarding Pass Ritual + Lyric Bookmark */
 .issue__side {
-  padding-top: 4px;
+  padding-top: 2px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
 }
 .issue__top-meta {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--line);
+  gap: 8px 14px;
+  padding-bottom: 10px;
+  border-bottom: 1.5px solid var(--ink);
+  box-shadow: 0 3px 0 -2px var(--line);
 }
 .issue__folio {
   width: auto;
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: 0;
-  color: var(--ink-3);
+  color: var(--ink-2);
   font-size: 11px;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.14em;
 }
 .issue__folio b {
   color: var(--foil);
@@ -532,10 +579,10 @@ html[data-mode=paper] .issue {
 }
 .issue__checkin-row {
   margin: 0;
-  padding: 4px 6px 4px 10px;
-  border-radius: 4px;
-  background: var(--surface);
-  border: 1px solid var(--line);
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  border: 0;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -543,14 +590,17 @@ html[data-mode=paper] .issue {
 .issue__checkin-row .issue__ck {
   margin: 0 !important;
   font-size: 11.5px;
-  color: var(--ink-2);
+  color: var(--ink-3);
 }
 .issue__checkin-row .issue__ckbtn {
   margin: 0 !important;
-  height: 26px;
-  padding: 0 10px;
-  font-size: 11.5px;
-  border-radius: 3px;
+  height: 24px;
+  padding: 0 9px;
+  font-size: 11px;
+  border-radius: 99px;
+  background: rgba(var(--foil-rgb, var(--ac-rgb)), 0.12);
+  border: 1px solid rgba(var(--foil-rgb, var(--ac-rgb)), 0.38);
+  color: var(--ink);
 }
 
 .issue__hero-head {
@@ -593,13 +643,14 @@ html[data-mode=paper] .issue {
   color: var(--ink-2);
 }
 
-/* Sleek Collapsible EXO-L Era Companion Strip (replaces bulky boarding box) */
+/* Sleek Collapsible EXO-L Era Companion Strip (de-boxed editorial margin rule) */
 .exo-era-strip {
   margin: 0;
-  padding: 10px 14px;
-  border-radius: 6px;
-  border: 1px solid var(--line);
-  background: color-mix(in srgb, var(--surface, var(--glass)) 86%, transparent);
+  padding: 7px 12px;
+  border-radius: 0 4px 4px 0;
+  border: 0;
+  border-left: 2.5px solid var(--foil, var(--ac));
+  background: rgba(var(--foil-rgb, var(--ac-rgb)), 0.065);
   max-width: 100%;
   box-sizing: border-box;
 }
@@ -904,14 +955,16 @@ html[data-mode=paper] .issue {
   overflow: hidden;
 }
 .issue__radar {
-  margin-top: 0;
+  margin-top: 2px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
 @media (max-width: 1080px) {
-  html[data-mode=paper] .issue {
+  .issue,
+  html[data-mode=paper] .issue,
+  html[data-mode=galaxy] .issue {
     grid-template-columns: minmax(0, 1fr);
   }
   .issue__box-strip {
@@ -944,7 +997,9 @@ html[data-mode=paper] .issue {
     max-width: 100%;
     overflow-x: clip;
   }
-  html[data-mode=paper] .issue {
+  .issue,
+  html[data-mode=paper] .issue,
+  html[data-mode=galaxy] .issue {
     grid-template-columns: minmax(0, 1fr);
     gap: 16px;
     padding: calc(var(--bar) + 14px) 16px 28px;
@@ -1343,30 +1398,25 @@ html[data-mode=paper] .issue {
   margin-bottom: clamp(32px, 3.8vw, 48px);
 }
 html[data-mode=paper] .sec__head::after {
-  content: "EXOPLANET // 14TH ANNIVERSARY BOX SET";
-  color: var(--foil);
+  display: none;
 }
 html[data-mode=paper] .mstrip-card {
   border-radius: 4px !important;
-  border: 1px solid rgba(29, 26, 22, 0.22);
+  border: 1px solid rgba(29, 26, 22, 0.16);
 }
 html[data-mode=paper] .next {
   border-radius: 4px;
-  border: 1px solid rgba(29, 26, 22, 0.22);
-  box-shadow: 0 24px 54px -32px rgba(29, 26, 22, 0.22);
+  border: 1px solid rgba(29, 26, 22, 0.16);
+  box-shadow: 0 20px 44px -32px rgba(29, 26, 22, 0.16);
 }
 html[data-mode=paper] .lane--official {
   background: var(--surface);
-  border: 1px solid rgba(29, 26, 22, 0.16);
-  border-top: 3px solid var(--ink);
+  border: 1px solid rgba(29, 26, 22, 0.14);
   border-radius: 4px;
 }
 html[data-mode=paper] .lane--rumor {
-  background:
-    repeating-linear-gradient(135deg, rgba(168, 126, 67, 0.035) 0 10px, transparent 10px 20px),
-    var(--surface);
-  border: 1px dashed rgba(158, 75, 20, 0.38);
-  border-top: 3px dashed var(--rm);
+  background: var(--surface);
+  border: 1px solid rgba(158, 75, 20, 0.24);
   border-radius: 4px;
 }
 html[data-mode=paper] .portal-card {
@@ -1575,16 +1625,56 @@ html[data-mode=paper] .portal-card {
 
 /* ---------- 7. Silky Scroll-Linked Stagger Reveal & Galaxy Silver Ocean ---------- */
 .vibe-reveal {
-  opacity: 0;
-  transform: translate3d(0, 18px, 0) scale(0.988);
-  transition:
-    opacity 0.68s cubic-bezier(0.22, 1, 0.36, 1),
-    transform 0.68s cubic-bezier(0.22, 1, 0.36, 1);
-  transition-delay: var(--stagger, 0ms);
+  opacity: 1;
+  transform: none;
 }
 .vibe-reveal.is-in {
   opacity: 1;
-  transform: translate3d(0, 0, 0) scale(1);
+  transform: none;
+  animation: rv-rise 0.42s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+html[data-mode=galaxy] .bar,
+html[data-mode=galaxy] .bar.is-stuck {
+  background: rgba(8, 11, 19, 0.82);
+  backdrop-filter: blur(18px) saturate(1.35);
+  -webkit-backdrop-filter: blur(18px) saturate(1.35);
+  border-bottom: 1px solid rgba(214, 223, 239, 0.14);
+}
+html[data-mode=galaxy] .bar__nav a.is-on,
+html[data-mode=galaxy] .bar__nav a[aria-current="page"],
+html[data-mode=galaxy] .bar__nav a[aria-current="true"] {
+  background: var(--ac) !important;
+  color: #070a16 !important;
+  font-weight: 600;
+}
+html[data-mode=galaxy] .mag__back {
+  background:
+    radial-gradient(320px circle at 85% 15%, color-mix(in srgb, var(--pc, #8db8ff) 24%, transparent), transparent 70%),
+    linear-gradient(160deg, #131a31 0%, #0b0f1e 100%);
+  color: #f4f7ff;
+}
+html[data-mode=galaxy] .mag__back-in {
+  background: rgba(16, 22, 42, 0.86);
+  border-color: rgba(214, 223, 239, 0.24);
+  box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.04);
+}
+html[data-mode=galaxy] .mag__back-top {
+  color: rgba(235, 242, 255, 0.68);
+  border-bottom-color: rgba(214, 223, 239, 0.16);
+}
+html[data-mode=galaxy] .mag__back-ko {
+  color: #ffffff;
+}
+html[data-mode=galaxy] .mag__back-zh {
+  color: rgba(238, 243, 255, 0.88);
+  background: rgba(214, 223, 239, 0.08);
+}
+html[data-mode=galaxy] .mag__back-meta {
+  color: rgba(235, 242, 255, 0.64);
+}
+html[data-mode=galaxy] .mag__back-sign {
+  color: var(--pc, #c8daff);
 }
 
 @media (prefers-reduced-motion: reduce) {
