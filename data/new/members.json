@@ -21,10 +21,10 @@
       "《Interview X》 EP · 2025"
     ],
     "photo": "img/members/xiumin.webp",
-    "photo2": "img/members/xiumin.webp",
+    "photo2": "img/members/xiumin-7.webp",
     "thumb": "img/members/xiumin-s.webp",
     "photoEra": "2023 · EXIST 回归概念照",
-    "photo2Era": "2023 · EXIST 回归概念照",
+    "photo2Era": "2023 · EXIST 回归概念照 II",
     "agency": "INB100（首尔中央地方法院 2026.09.15 裁定中止专属合约效力，至一审判决）",
     "status": "11 月 22 日在澳门百老汇舞台举办《2026 XIUMIN in MACAU [SECRET AGENT X]》个人专场；同时推进合约与结算本案诉讼，日常沟通已迁至 Fromm。",
     "latest": "个人迷你 2 辑《Interview X》（2025）；团体正规 8 辑《REVERXE》（2026.01.19）",
@@ -295,7 +295,7 @@
       },
       {
         "src": "img/members/xiumin-7.webp",
-        "era": "2023 · EXIST 回归概念照"
+        "era": "2023 · EXIST 回归概念照 II"
       },
       {
         "src": "img/members/xiumin-2.webp",
@@ -958,6 +958,16 @@
       }
     ],
     "gallery": [
+      {
+        "src": "img/members/lay-8.webp",
+        "era": "2026.11 · 电影节随拍画报 I",
+        "addedAt": "2026-11-11"
+      },
+      {
+        "src": "img/members/lay-9.webp",
+        "era": "2026.11 · 电影节随拍画报 II",
+        "addedAt": "2026-11-11"
+      },
       {
         "src": "img/members/lay-2.webp",
         "era": "2026 · REVERXE 概念照 II"
@@ -1773,6 +1783,16 @@
     ],
     "gallery": [
       {
+        "src": "img/members/chen-8.webp",
+        "era": "2026.11 · ONCE UPON A NIGHT 澳门画报",
+        "addedAt": "2026-11-17"
+      },
+      {
+        "src": "img/members/chen-9.webp",
+        "era": "2026.11 · Upside Down 官方画报",
+        "addedAt": "2026-11-16"
+      },
+      {
         "src": "img/members/chen-6.webp",
         "era": "2024 · DOOR 个人概念照"
       },
@@ -2363,6 +2383,12 @@
     ],
     "gallery": [
       {
+        "src": "img/members/do-10.webp",
+        "era": "2026.11 ·《Darling》冬日单曲概念照",
+        "addedAt": "2026-11-22",
+        "pinnedUntil": "2026-11-29"
+      },
+      {
         "src": "img/members/do-2.webp",
         "era": "2026 · REVERXE 概念照 I"
       },
@@ -2581,7 +2607,9 @@
     "gallery": [
       {
         "src": "img/members/kai-2.webp",
-        "era": "2026 · REVERXE 概念照 I"
+        "era": "2026 · REVERXE / EXO-KASE 当期精选画报",
+        "addedAt": "2026-11-24",
+        "pinnedUntil": "2026-12-01"
       },
       {
         "src": "img/members/kai-3.webp",
@@ -2776,6 +2804,12 @@
       }
     ],
     "gallery": [
+      {
+        "src": "img/members/sehun-10.webp",
+        "era": "2026.11 · EXO-KASE《Waking Up The City》概念随拍",
+        "addedAt": "2026-11-24",
+        "pinnedUntil": "2026-12-01"
+      },
       {
         "src": "img/members/sehun-2.webp",
         "era": "2026 · REVERXE 概念照 I"
