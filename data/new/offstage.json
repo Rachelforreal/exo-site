@@ -960,64 +960,6 @@
     "mirrorLabel": "国内 B站搜原片 ↗"
   },
   {
-    "id": "os-wb-5367026945622087",
-    "date": "2026-11-19",
-    "publishedAt": "2026-11-19T18:00:00+08:00",
-    "kind": "photo",
-    "isCha": false,
-    "platform": "微博",
-    "badge": "日常随拍",
-    "members": [
-      "do"
-    ],
-    "author": "@都暻秀_KYUNGSOODOH",
-    "collab": "",
-    "song": "",
-    "duration": "",
-    "title": "[🎬] ‘Darling’ Recording Behind | 都暻秀(",
-    "captionOrig": "[🎬] ‘Darling’ Recording Behind | 都暻秀(D.O.) | Darling\n \n🔗 #Darling# \n#都暻秀# #DOHKYUNGSOO#",
-    "captionZh": "[🎬] ‘Darling’ Recording Behind | 都暻秀(D.O.) | Darling 🔗",
-    "cover": "img/offstage/os-wb-5367026945622087-1.jpg",
-    "images": [
-      "img/offstage/os-wb-5367026945622087-1.jpg"
-    ],
-    "primaryUrl": "https://m.weibo.cn/detail/5367026945622087",
-    "primaryLabel": "查看原帖大图 ↗",
-    "secondaryUrl": "",
-    "secondaryLabel": "",
-    "mirrorUrl": "",
-    "mirrorLabel": ""
-  },
-  {
-    "id": "os-yt-ezMgoIBM3SA",
-    "date": "2026-11-19",
-    "publishedAt": "2026-11-19T17:30:12+08:00",
-    "kind": "video",
-    "isCha": true,
-    "platform": "YouTube",
-    "badge": "YT Shorts",
-    "members": [
-      "chanyeol"
-    ],
-    "author": "@CHANYEOL",
-    "collab": "",
-    "song": "",
-    "duration": "0:25",
-    "title": "나 엑소 박찬열이야",
-    "captionOrig": "나 엑소 박찬열이야",
-    "captionZh": "CH CHANYEOL 油管 近 7 天更新：나 엑소 박찬열이야",
-    "cover": "img/offstage/os-yt-ezMgoIBM3SA-1.jpg",
-    "images": [
-      "img/offstage/os-yt-ezMgoIBM3SA-1.jpg"
-    ],
-    "primaryUrl": "https://www.youtube.com/shorts/ezMgoIBM3SA",
-    "primaryLabel": "前往 YouTube 原片 ↗",
-    "secondaryUrl": "",
-    "secondaryLabel": "",
-    "mirrorUrl": "https://search.bilibili.com/all?keyword=%EB%82%98%20%EC%97%91%EC%86%8C%20%EB%B0%95%EC%B0%AC%EC%97%B4%EC%9D%B4%EC%95%BC",
-    "mirrorLabel": "国内 B站搜原片 ↗"
-  },
-  {
     "id": "os-baekhyun-sg-261021",
     "date": "2026-10-21",
     "kind": "video",
