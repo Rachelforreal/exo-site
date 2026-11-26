@@ -1,5 +1,39 @@
 [
   {
+    "id": "bili-BV1tey2zrEso",
+    "date": "2026-11-26",
+    "title": "“不喜欢矮的喜欢侧脸像吴世勋的”苏弟看凯文问女嘉宾理想型全程引导",
+    "summary": "B站 UP 主「日读_」上传成员直播录屏：“不喜欢矮的喜欢侧脸像吴世勋的”苏弟看凯文问女嘉宾理想型全程引导",
+    "members": [
+      "sehun"
+    ],
+    "verification": "media",
+    "channel": "Bilibili",
+    "sources": [
+      {
+        "name": "B站 · 日读_",
+        "url": "https://www.bilibili.com/video/BV1tey2zrEso"
+      }
+    ]
+  },
+  {
+    "id": "bili-BV1fGy2zdENR",
+    "date": "2026-11-26",
+    "title": "不必纠结几个人的exo，一起站在舞台上就是exo",
+    "summary": "B站 UP 主「娱乐王语嫣」上传舞台视频：不必纠结几个人的exo，一起站在舞台上就是exo",
+    "members": [
+      "group"
+    ],
+    "verification": "media",
+    "channel": "Bilibili",
+    "sources": [
+      {
+        "name": "B站 · 娱乐王语嫣",
+        "url": "https://www.bilibili.com/video/BV1fGy2zdENR"
+      }
+    ]
+  },
+  {
     "id": "bili-BV1EeymzhE9V",
     "date": "2026-11-26",
     "title": "大事很妙！EXO-KASE出道曲Waking Up The City有打歌舞台？？？",
@@ -3447,6 +3481,40 @@
     "category": "stage",
     "images": [
       "img/members/chen.webp"
+    ]
+  },
+  {
+    "id": "bili-BV11kHP61E5C",
+    "date": "2026-10-24",
+    "title": "【都暻秀】DAY OFF巡演 澳门场 261018",
+    "summary": "B站 UP 主「LH的凤梨罐头」上传成员直播录屏：【都暻秀】DAY OFF巡演 澳门场 261018",
+    "members": [
+      "do"
+    ],
+    "verification": "media",
+    "channel": "Bilibili",
+    "sources": [
+      {
+        "name": "B站 · LH的凤梨罐头",
+        "url": "https://www.bilibili.com/video/BV11kHP61E5C"
+      }
+    ]
+  },
+  {
+    "id": "bili-BV12kHP61ETh",
+    "date": "2026-10-24",
+    "title": "【都暻秀DAYOFF澳门】놀이터 (Do you remember?) 261018",
+    "summary": "B站 UP 主「点三口土寸」上传成员直播录屏：【都暻秀DAYOFF澳门】놀이터 (Do you remember?) 261018",
+    "members": [
+      "do"
+    ],
+    "verification": "media",
+    "channel": "Bilibili",
+    "sources": [
+      {
+        "name": "B站 · 点三口土寸",
+        "url": "https://www.bilibili.com/video/BV12kHP61ETh"
+      }
     ]
   },
   {
