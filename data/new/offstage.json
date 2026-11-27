@@ -867,35 +867,6 @@
     "mirrorLabel": "国内 B站搜原片 ↗"
   },
   {
-    "id": "os-wb-5367310340589608",
-    "date": "2026-11-20",
-    "publishedAt": "2026-11-20T12:46:08+08:00",
-    "kind": "photo",
-    "isCha": false,
-    "platform": "小红书",
-    "badge": "小红书",
-    "members": [
-      "lay"
-    ],
-    "author": "@张艺兴卫星台",
-    "collab": "",
-    "song": "",
-    "duration": "",
-    "title": "261120 | 小红书更新张艺兴开屏一则 神级美貌——居家版 @张艺兴 |",
-    "captionOrig": "261120 | 小红书更新张艺兴开屏一则\n\n        神级美貌——居家版\n\n@张艺兴  \n#张艺兴# | #张艺兴每时每刻#",
-    "captionZh": "261120 | 小红书更新张艺兴开屏一则 神级美貌——居家版 @张艺兴 |",
-    "cover": "img/offstage/os-wb-5367310340589608-1.jpg",
-    "images": [
-      "img/offstage/os-wb-5367310340589608-1.jpg"
-    ],
-    "primaryUrl": "https://m.weibo.cn/detail/5367310340589608",
-    "primaryLabel": "查看原帖大图 ↗",
-    "secondaryUrl": "",
-    "secondaryLabel": "",
-    "mirrorUrl": "",
-    "mirrorLabel": ""
-  },
-  {
     "id": "os-exo-encore-dinner-261120",
     "date": "2026-11-20",
     "kind": "video",
@@ -928,36 +899,6 @@
       "img/offstage/os-exo-encore-dinner-261120-1.webp",
       "img/offstage/os-exo-encore-dinner-261120-2.webp"
     ]
-  },
-  {
-    "id": "os-yt-Z3TzfYutVA0",
-    "date": "2026-11-20",
-    "publishedAt": "2026-11-20T11:22:20+08:00",
-    "kind": "video",
-    "isCha": false,
-    "platform": "YouTube",
-    "badge": "YouTube",
-    "members": [
-      "kai",
-      "sehun"
-    ],
-    "author": "@weareoneEXO",
-    "collab": "",
-    "song": "",
-    "duration": "Shorts",
-    "title": "EXO-KASE The 1st Mini Album Fan showcase ❮Waking",
-    "captionOrig": "EXO-KASE The 1st Mini Album Fan showcase ❮Waking Up The City❯",
-    "captionZh": "EXO 官方油管 近 7 天更新：EXO-KASE The 1st Mini Album Fan showcase ❮Waking Up The City❯",
-    "cover": "img/offstage/os-yt-Z3TzfYutVA0-1.jpg",
-    "images": [
-      "img/offstage/os-yt-Z3TzfYutVA0-1.jpg"
-    ],
-    "primaryUrl": "https://www.youtube.com/watch?v=Z3TzfYutVA0",
-    "primaryLabel": "前往 YouTube 原片 ↗",
-    "secondaryUrl": "",
-    "secondaryLabel": "",
-    "mirrorUrl": "https://search.bilibili.com/all?keyword=EXO-KASE%20The%201st%20Mini%20Album%20",
-    "mirrorLabel": "国内 B站搜原片 ↗"
   },
   {
     "id": "os-baekhyun-sg-261021",
