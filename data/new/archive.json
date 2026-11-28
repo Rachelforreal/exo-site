@@ -575,6 +575,29 @@
   ],
   "variety": [
     {
+      "id": "bili-BV1mt1NztEDU",
+      "year": 2026,
+      "title": "【EXO/朴灿烈】Outside-六巡vlog纯享版",
+      "kind": "直播录屏",
+      "members": [
+        "chanyeol"
+      ],
+      "note": "Bilibili · B站 · 宴我以山青in",
+      "url": "https://www.bilibili.com/video/BV1mt1NztEDU"
+    },
+    {
+      "id": "bili-BV1hK1MzgEeE",
+      "year": 2026,
+      "title": "【261128】【EXO-KASE】（吴世勋、KAI）一同走上红毯，多年舞台练就的默…",
+      "kind": "舞台直拍",
+      "members": [
+        "kai",
+        "sehun"
+      ],
+      "note": "Bilibili · B站 · EXO安利小社",
+      "url": "https://www.bilibili.com/video/BV1hK1MzgEeE"
+    },
+    {
       "id": "bili-BV1V51xzZEkG",
       "year": 2026,
       "title": "【消音舞台】朴灿烈演唱会《Hasta La Vista》",
