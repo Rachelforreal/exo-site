@@ -1,5 +1,22 @@
 [
   {
+    "id": "yt-kkKP_KP_Ut8",
+    "date": "2026-11-28",
+    "title": "궤도 경계를 멈춰주세요",
+    "summary": "CH CHANYEOL 个人油管更新视频：궤도 경계를 멈춰주세요",
+    "members": [
+      "chanyeol"
+    ],
+    "verification": "official",
+    "channel": "YouTube",
+    "sources": [
+      {
+        "name": "CH CHANYEOL 个人油管",
+        "url": "https://www.youtube.com/watch?v=kkKP_KP_Ut8"
+      }
+    ]
+  },
+  {
     "id": "bili-BV1mt1NztEDU",
     "date": "2026-11-28",
     "title": "【EXO/朴灿烈】Outside-六巡vlog纯享版",
@@ -4320,6 +4337,23 @@
     "category": "stage",
     "images": [
       "img/members/chen.webp"
+    ]
+  },
+  {
+    "id": "bili-BV1EjHP6eErS",
+    "date": "2026-10-24",
+    "title": "【都暻秀DAYOFF澳门】Guitarist 261018",
+    "summary": "B站 UP 主「点三口土寸」上传成员直播录屏：【都暻秀DAYOFF澳门】Guitarist 261018",
+    "members": [
+      "do"
+    ],
+    "verification": "media",
+    "channel": "Bilibili",
+    "sources": [
+      {
+        "name": "B站 · 点三口土寸",
+        "url": "https://www.bilibili.com/video/BV1EjHP6eErS"
+      }
     ]
   },
   {
